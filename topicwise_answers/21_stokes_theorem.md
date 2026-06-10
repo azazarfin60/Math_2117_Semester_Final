@@ -146,27 +146,35 @@ $$
 We evaluate the integral along the four segments of the square $C$:
 *   **Path 1 ($C_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
 
-    $$
-    \int_{C_1} = \int_0^2 2 dx = 4
-    $$
+    
+
+$$
+\int_{C_1} = \int_0^2 2 dx = 4
+$$
 
 *   **Path 2 ($C_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
 
-    $$
-    \int_{C_2} = \int_0^2 4 dy = 8
-    $$
+    
+
+$$
+\int_{C_2} = \int_0^2 4 dy = 8
+$$
 
 *   **Path 3 ($C_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
 
-    $$
-    \int_{C_3} = \int_2^0 4 dx = -8
-    $$
+    
+
+$$
+\int_{C_3} = \int_2^0 4 dx = -8
+$$
 
 *   **Path 4 ($C_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
 
-    $$
-    \int_{C_4} = \int_2^0 4 dy = -8
-    $$
+    
+
+$$
+\int_{C_4} = \int_2^0 4 dy = -8
+$$
 
 We sum these line integrals:
 
@@ -192,33 +200,43 @@ $$
 The surface $S$ has five faces:
 *   **Face 1 (Top, $z=2$):** $\hat{n} = \hat{k}$, $dS = dx dy$.
 
-    $$
-    (\nabla \times \vec{A}) \cdot \hat{n} = -1 \implies \iint_{\text{Top}} -1 dx dy = -1 \times \text{Area} = -4
-    $$
+    
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = -1 \implies \iint_{\text{Top}} -1 dx dy = -1 \times \text{Area} = -4
+$$
 
 *   **Face 2 (Front, $x=2$):** $\hat{n} = \hat{i}$, $dS = dy dz$.
 
-    $$
-    (\nabla \times \vec{A}) \cdot \hat{n} = -y \implies \iint_{\text{Front}} -y dy dz = \int_0^2 dz \int_0^2 -y dy = 2 \left[ -\frac{y^2}{2} \right]_0^2 = -4
-    $$
+    
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = -y \implies \iint_{\text{Front}} -y dy dz = \int_0^2 dz \int_0^2 -y dy = 2 \left[ -\frac{y^2}{2} \right]_0^2 = -4
+$$
 
 *   **Face 3 (Back, $x=0$):** $\hat{n} = -\hat{i}$, $dS = dy dz$.
 
-    $$
-    (\nabla \times \vec{A}) \cdot \hat{n} = y \implies \iint_{\text{Back}} y dy dz = \int_0^2 dz \int_0^2 y dy = 2 \left[ \frac{y^2}{2} \right]_0^2 = 4
-    $$
+    
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = y \implies \iint_{\text{Back}} y dy dz = \int_0^2 dz \int_0^2 y dy = 2 \left[ \frac{y^2}{2} \right]_0^2 = 4
+$$
 
 *   **Face 4 (Right, $y=2$):** $\hat{n} = \hat{j}$, $dS = dx dz$.
 
-    $$
-    (\nabla \times \vec{A}) \cdot \hat{n} = z - 1 \implies \iint_{\text{Right}} (z - 1) dx dz = \int_0^2 dx \int_0^2 (z - 1) dz = 2 \left[ \frac{z^2}{2} - z \right]_0^2 = 2(2 - 2) = 0
-    $$
+    
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = z - 1 \implies \iint_{\text{Right}} (z - 1) dx dz = \int_0^2 dx \int_0^2 (z - 1) dz = 2 \left[ \frac{z^2}{2} - z \right]_0^2 = 2(2 - 2) = 0
+$$
 
 *   **Face 5 (Left, $y=0$):** $\hat{n} = -\hat{j}$, $dS = dx dz$.
 
-    $$
-    (\nabla \times \vec{A}) \cdot \hat{n} = -(z - 1) \implies \iint_{\text{Left}} (1 - z) dx dz = \int_0^2 dx \int_0^2 (1 - z) dz = 2 \left[ z - \frac{z^2}{2} \right]_0^2 = 2(2 - 2) = 0
-    $$
+    
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = -(z - 1) \implies \iint_{\text{Left}} (1 - z) dx dz = \int_0^2 dx \int_0^2 (1 - z) dz = 2 \left[ z - \frac{z^2}{2} \right]_0^2 = 2(2 - 2) = 0
+$$
 
 We sum the integrals over all five faces:
 

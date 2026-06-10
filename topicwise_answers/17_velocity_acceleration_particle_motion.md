@@ -235,50 +235,63 @@ The Frenet-Serret formulas are:
 
 #### 2. Verification of Differential Equation
 We are given:
+
 $$
 \vec{r} = e^{-t}(\vec{A} \cos 2t + \vec{B} \sin 2t)
 $$
+
 We find the first derivative of $\vec{r}$ with respect to $t$:
+
 $$
 \frac{d\vec{r}}{dt} = -e^{-t}(\vec{A} \cos 2t + \vec{B} \sin 2t) + e^{-t}(-2\vec{A} \sin 2t + 2\vec{B} \cos 2t)
 $$
+
 $$
 \frac{d\vec{r}}{dt} = e^{-t} [(-\vec{A} + 2\vec{B})\cos 2t + (-2\vec{A} - \vec{B})\sin 2t]
 $$
 
 Now we find the second derivative:
+
 $$
 \frac{d^2\vec{r}}{dt^2} = -e^{-t} [(-\vec{A} + 2\vec{B})\cos 2t + (-2\vec{A} - \vec{B})\sin 2t] + e^{-t} [-2(-\vec{A} + 2\vec{B})\sin 2t + 2(-2\vec{A} - \vec{B})\cos 2t]
 $$
+
 $$
 \frac{d^2\vec{r}}{dt^2} = e^{-t} [(\vec{A} - 2\vec{B} - 4\vec{A} - 2\vec{B})\cos 2t + (2\vec{A} + \vec{B} + 2\vec{A} - 4\vec{B})\sin 2t]
 $$
+
 $$
 \frac{d^2\vec{r}}{dt^2} = e^{-t} [(-3\vec{A} - 4\vec{B})\cos 2t + (4\vec{A} - 3\vec{B})\sin 2t]
 $$
 
 We substitute these derivatives into the left-hand side of the differential equation:
+
 $$
 \text{LHS} = \frac{d^2\vec{r}}{dt^2} + 2\frac{d\vec{r}}{dt} + 5\vec{r}
 $$
+
 $$
 \text{LHS} = e^{-t} [(-3\vec{A} - 4\vec{B})\cos 2t + (4\vec{A} - 3\vec{B})\sin 2t] + 2e^{-t} [(-\vec{A} + 2\vec{B})\cos 2t + (-2\vec{A} - \vec{B})\sin 2t] + 5e^{-t} [\vec{A} \cos 2t + \vec{B} \sin 2t]
 $$
 
 Combine the coefficient terms for $\cos 2t$:
+
 $$
 (-3\vec{A} - 4\vec{B}) + 2(-\vec{A} + 2\vec{B}) + 5\vec{A} = -3\vec{A} - 4\vec{B} - 2\vec{A} + 4\vec{B} + 5\vec{A} = 0
 $$
 
 Combine the coefficient terms for $\sin 2t$:
+
 $$
 (4\vec{A} - 3\vec{B}) + 2(-2\vec{A} - \vec{B}) + 5\vec{B} = 4\vec{A} - 3\vec{B} - 4\vec{A} - 2\vec{B} + 5\vec{B} = 0
 $$
 
 So, the equation becomes:
+
 $$
 \text{LHS} = e^{-t} [0 \cos 2t + 0 \sin 2t] = 0 = \text{RHS}
 $$
+
 This confirms that $\vec{r}$ is a solution.
 
 ---

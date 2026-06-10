@@ -459,32 +459,39 @@ $$
 **Answer:**
 
 Let the surface function be:
+
 $$
 f(x, y, z) = (x - 1)^2 + y^2 + (z + 2)^2 - 9
 $$
 
 The gradient of $f$ gives a vector normal to the surface. We calculate this gradient:
+
 $$
 \vec{\nabla}f = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}
 $$
+
 $$
 \vec{\nabla}f = 2(x - 1)\hat{i} + 2y\hat{j} + 2(z + 2)\hat{k}
 $$
 
 We evaluate the gradient at $(3, 1, -4)$:
+
 $$
 \vec{\nabla}f|_{(3, 1, -4)} = 2(3 - 1)\hat{i} + 2(1)\hat{j} + 2(-4 + 2)\hat{k}
 $$
+
 $$
 \vec{\nabla}f|_{(3, 1, -4)} = 4\hat{i} + 2\hat{j} - 4\hat{k}
 $$
 
 Now we find the magnitude of this normal vector:
+
 $$
 |\vec{\nabla}f| = \sqrt{4^2 + 2^2 + (-4)^2} = \sqrt{16 + 4 + 16} = \sqrt{36} = 6
 $$
 
 We divide the normal vector by its magnitude. This gives the unit outward normal vector $\hat{n}$:
+
 $$
 \hat{n} = \frac{4\hat{i} + 2\hat{j} - 4\hat{k}}{6} = \frac{2}{3}\hat{i} + \frac{1}{3}\hat{j} - \frac{2}{3}\hat{k}
 $$

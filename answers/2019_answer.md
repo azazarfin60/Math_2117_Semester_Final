@@ -579,6 +579,7 @@ Both the double integral and the line integral equal $0$, so Green's theorem is 
 ### SECTION - B
 
 ### Q5(a) What is an inverse of a matrix? Find the inverse of the following matrix: (06)
+
 $$
 \begin{pmatrix}
 1 & 3 & 3 \\
@@ -664,6 +665,7 @@ $$
 ---
 
 ### Q5(b) What is the normal form of a matrix? Find the rank of the following matrix reducing it to the normal form: (06)
+
 $$
 \begin{pmatrix}
 3 & -2 & 0 & -7 \\
@@ -844,6 +846,7 @@ $$
 ---
 
 ### Q6(a) Discuss about the consistency of a system and then find the solution set of the system: (06)
+
 $$
 \begin{aligned}
 x + 2y + 2z &= 1 \\
@@ -946,6 +949,7 @@ $$
 ---
 
 ### Q6(b) Find the trivial solution of: (06)
+
 $$
 \begin{aligned}
 x + y + z + w &= 0 \\
@@ -1051,6 +1055,7 @@ $$
 ---
 
 ### Q7(a) Find the eigen vectors of the following matrix: (06)
+
 $$
 \begin{pmatrix}
 1 & 3 & 0 \\

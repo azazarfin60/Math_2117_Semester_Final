@@ -4,11 +4,17 @@ This file contains the organized questions and answers for **Adjoint and Inverse
 
 ---
 
-## Q1. Find the adjoint and inverse of $\begin{pmatrix}
+## Q1. Find the adjoint and inverse of 
+
+$$
+\begin{pmatrix}
 0 & 1 & 2 \\
 1 & 2 & 3 \\
 3 & 1 & 1
-\end{pmatrix}$. (05)
+\end{pmatrix}
+$$
+
+. (05)
 
 | | |
 |---|---|
@@ -187,11 +193,13 @@ $$
 
 **Answer:**
 
-$$A = \begin{bmatrix}
+$$
+A = \begin{bmatrix}
 \cos\theta & -\sin\theta & 0 \\
 \sin\theta & \cos\theta & 0 \\
 0 & 0 & 1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 **Answer:**
 
@@ -262,11 +270,13 @@ $$
 
 **Answer:**
 
-$$A = \begin{pmatrix}
+$$
+A = \begin{pmatrix}
 2 & 1 & 2 \\
 2 & 2 & 1 \\
 1 & 2 & 2
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Answer:**
 

@@ -237,15 +237,19 @@ $$
 We evaluate at the limits:
 *   At $t = 2$:
 
-    $$
-    2(2^6) + 2(2^5) + 3(2^4) + 10(2^3) = 2(64) + 2(32) + 3(16) + 10(8) = 128 + 64 + 48 + 80 = 320
-    $$
+    
+
+$$
+2(2^6) + 2(2^5) + 3(2^4) + 10(2^3) = 2(64) + 2(32) + 3(16) + 10(8) = 128 + 64 + 48 + 80 = 320
+$$
 
 *   At $t = 1$:
 
-    $$
-    2(1^6) + 2(1^5) + 3(1^4) + 10(1^3) = 2 + 2 + 3 + 10 = 17
-    $$
+    
+
+$$
+2(1^6) + 2(1^5) + 3(1^4) + 10(1^3) = 2 + 2 + 3 + 10 = 17
+$$
 
 We subtract the values:
 
@@ -267,47 +271,57 @@ So, the work done is 303.
 **Answer:**
 
 We write the line integral:
+
 $$
 \int_C \vec{F} \cdot d\vec{r} = \int_C [(5xy - 6x^2)dx + (2y - 4x)dy]
 $$
 
 We are given the curve relation:
+
 $$
 y = x^3
 $$
 
 We find the differential $dy$:
+
 $$
 dy = 3x^2 dx
 $$
 
 We substitute $y = x^3$ and $dy = 3x^2 dx$ into the line integral. The variable $x$ goes from 1 to 2:
+
 $$
 \int_C \vec{F} \cdot d\vec{r} = \int_1^2 [(5x(x^3) - 6x^2)dx + (2(x^3) - 4x)(3x^2 dx)]
 $$
+
 $$
 \int_C \vec{F} \cdot d\vec{r} = \int_1^2 [(5x^4 - 6x^2) + (6x^5 - 12x^3)] dx
 $$
+
 $$
 \int_C \vec{F} \cdot d\vec{r} = \int_1^2 (6x^5 + 5x^4 - 12x^3 - 6x^2) dx
 $$
 
 We integrate each term with respect to $x$:
+
 $$
 \int_C \vec{F} \cdot d\vec{r} = \left[ x^6 + x^5 - 3x^4 - 2x^3 \right]_1^2
 $$
 
 We evaluate at the upper limit $x = 2$:
+
 $$
 2^6 + 2^5 - 3(2^4) - 2(2^3) = 64 + 32 - 48 - 16 = 32
 $$
 
 We evaluate at the lower limit $x = 1$:
+
 $$
 1^6 + 1^5 - 3(1^4) - 2(1^3) = 1 + 1 - 3 - 2 = -3
 $$
 
 We subtract the lower limit value from the upper limit value:
+
 $$
 \int_C \vec{F} \cdot d\vec{r} = 32 - (-3) = 35
 $$

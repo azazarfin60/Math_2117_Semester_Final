@@ -4,12 +4,18 @@ This file contains the organized questions and answers for **Rank and Normal For
 
 ---
 
-## Q1. What is the rank of a matrix? Find it for $\begin{bmatrix}
+## Q1. What is the rank of a matrix? Find it for 
+
+$$
+\begin{bmatrix}
 0 & 0 & 1 & -3 & -2 \\
 0 & 1 & 2 & 6 & 0 \\
 0 & 2 & 3 & 9 & 2 \\
 0 & 1 & 1 & 3 & 2
-\end{bmatrix}$. (06)
+\end{bmatrix}
+$$
+
+. (06)
 
 | | |
 |---|---|
@@ -436,12 +442,14 @@ All three rows are non-zero. So the rank of the matrix is $3$.
 
 **Answer:**
 
-$$A = \begin{pmatrix}
+$$
+A = \begin{pmatrix}
 2 & 3 & -1 & -1 \\
 1 & -1 & -2 & -4 \\
 3 & 1 & 3 & -2 \\
 6 & 3 & 0 & -7
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Answer:**
 
@@ -613,12 +621,14 @@ $$
 
 **Answer:**
 
-$$A = \begin{bmatrix}
+$$
+A = \begin{bmatrix}
 0 & 0 & 1 & 3 & -2 \\
 0 & 1 & 2 & 6 & 0 \\
 0 & 2 & 3 & 9 & 2 \\
 0 & 1 & 1 & 3 & 2
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 **Answer:**
 
@@ -747,11 +757,13 @@ $$
 
 **Answer:**
 
-$$A = \begin{bmatrix}
+$$
+A = \begin{bmatrix}
 1 & 2 & 3 & 2 \\
 2 & 3 & 5 & 1 \\
 1 & 3 & 4 & 5
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 **Answer:**
 
@@ -919,6 +931,7 @@ The rank of a matrix is the maximum number of linearly independent rows in the m
 
 #### 2. Reduce to Echelon Form
 Let the matrix be:
+
 $$
 A = \begin{bmatrix}
 6 & 3 & -4 \\
@@ -928,6 +941,7 @@ A = \begin{bmatrix}
 $$
 
 We swap the first and third rows to put a 1 in the top-left corner:
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -938,12 +952,15 @@ $$
 $$
 
 Now we clear the first column:
+
 $$
 R_2 \to R_2 + 4R_1
 $$
+
 $$
 R_3 \to R_3 - 6R_1
 $$
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -953,9 +970,11 @@ $$
 $$
 
 Next, we eliminate the second element in the third row:
+
 $$
 R_3 \to R_3 + R_2
 $$
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -965,9 +984,11 @@ $$
 $$
 
 We divide the second row by 9 to get a leading 1:
+
 $$
 R_2 \to \frac{1}{9} R_2
 $$
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -975,10 +996,12 @@ $$
 0 & 0 & 0
 \end{bmatrix}
 $$
+
 This is the echelon form of the matrix.
 
 #### 3. Reduce to Row Canonical Form
 Starting from the echelon form:
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -988,9 +1011,11 @@ $$
 $$
 
 We eliminate the element above the leading 1 in the second row:
+
 $$
 R_1 \to R_1 - 2R_2
 $$
+
 $$
 R_1 \to \begin{bmatrix}
 1 & 2 - 2(1) & -5 - 2\left(-\frac{26}{9}\right)
@@ -1002,6 +1027,7 @@ R_1 \to \begin{bmatrix}
 $$
 
 This gives the row canonical form:
+
 $$
 \begin{bmatrix}
 1 & 0 & \frac{7}{9} \\

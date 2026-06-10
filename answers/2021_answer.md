@@ -693,12 +693,15 @@ So the decomposition is unique.
 ---
 
 ### Q5(b) Find the rank of the following matrix and hence reduce it to the canonical form: (06)
-$$A = \begin{pmatrix}
+
+$$
+A = \begin{pmatrix}
 2 & 3 & -1 & -1 \\
 1 & -1 & -2 & -4 \\
 3 & 1 & 3 & -2 \\
 6 & 3 & 0 & -7
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Answer:**
 
@@ -862,11 +865,14 @@ $$
 ---
 
 ### Q6(a) Find the inverse of the following matrix by using row operation: (06)
-$$A = \begin{pmatrix}
+
+$$
+A = \begin{pmatrix}
 2 & 1 & 2 \\
 2 & 2 & 1 \\
 1 & 2 & 2
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Answer:**
 
@@ -977,9 +983,18 @@ $$
 ---
 
 ### Q6(b) Discuss for what values of $\lambda$ the following system of equations have (i) no solution (ii) unique solution and (iii) infinite number of solutions: (06)
-$$\lambda x + y + z = 1$$
-$$x + \lambda y + z = \lambda$$
-$$x + y + \lambda z = \lambda^2$$
+
+$$
+\lambda x + y + z = 1
+$$
+
+$$
+x + \lambda y + z = \lambda
+$$
+
+$$
+x + y + \lambda z = \lambda^2
+$$
 
 **Answer:**
 
@@ -1156,8 +1171,14 @@ $$
 ---
 
 ### Q7(b) Solve the following system of differential equations by matrix method: (06)
-$$\frac{dx}{dt} = 6x - 3y$$
-$$\frac{dy}{dt} = 2x + y$$
+
+$$
+\frac{dx}{dt} = 6x - 3y
+$$
+
+$$
+\frac{dy}{dt} = 2x + y
+$$
 
 **Answer:**
 

@@ -396,32 +396,39 @@ This field looks like a sink. All vectors point radially inward toward the cente
 
 #### 1. Physical Significance of Dot Product
 The dot product represents the projection of one vector onto another. It shows how much the two vectors point in the same direction. It results in a scalar quantity. In physics, we use it to calculate work done by a force:
+
 $$
 W = \vec{F} \cdot \vec{d}
 $$
+
 Here, $W$ is work. $\vec{F}$ is force. $\vec{d}$ is displacement.
 
 #### 2. Physical Significance of Cross Product
 The cross product represents a rotational effect. It results in a new vector. This vector is perpendicular to the plane of the two original vectors. The magnitude of the cross product equals the area of the parallelogram formed by the two vectors. In physics, we use it to calculate torque:
+
 $$
 \vec{\tau} = \vec{r} \times \vec{F}
 $$
+
 Here, $\vec{\tau}$ is torque. $\vec{r}$ is the position vector. $\vec{F}$ is force.
 
 #### 3. Orthogonal Unit Vectors Verification
 First, we check the magnitude of each vector.
 
 For vector $\vec{A}$:
+
 $$
 |\vec{A}| = \sqrt{\left(\frac{2}{3}\right)^2 + \left(-\frac{2}{3}\right)^2 + \left(\frac{1}{3}\right)^2} = \sqrt{\frac{4}{9} + \frac{4}{9} + \frac{1}{9}} = \sqrt{\frac{9}{9}} = 1
 $$
 
 For vector $\vec{B}$:
+
 $$
 |\vec{B}| = \sqrt{\left(\frac{1}{3}\right)^2 + \left(\frac{2}{3}\right)^2 + \left(\frac{2}{3}\right)^2} = \sqrt{\frac{1}{9} + \frac{4}{9} + \frac{4}{9}} = \sqrt{\frac{9}{9}} = 1
 $$
 
 For vector $\vec{C}$:
+
 $$
 |\vec{C}| = \sqrt{\left(\frac{2}{3}\right)^2 + \left(\frac{1}{3}\right)^2 + \left(-\frac{2}{3}\right)^2} = \sqrt{\frac{4}{9} + \frac{1}{9} + \frac{4}{9}} = \sqrt{\frac{9}{9}} = 1
 $$
@@ -431,25 +438,31 @@ So, all three vectors are unit vectors.
 Next, we check if they are mutually orthogonal. We calculate their dot products.
 
 Dot product of $\vec{A}$ and $\vec{B}$:
+
 $$
 \vec{A} \cdot \vec{B} = \left[\frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})\right] \cdot \left[\frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})\right]
 $$
+
 $$
 \vec{A} \cdot \vec{B} = \frac{1}{9} [2(1) + (-2)(2) + 1(2)] = \frac{1}{9} [2 - 4 + 2] = 0
 $$
 
 Dot product of $\vec{B}$ and $\vec{C}$:
+
 $$
 \vec{B} \cdot \vec{C} = \left[\frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})\right] \cdot \left[\frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})\right]
 $$
+
 $$
 \vec{B} \cdot \vec{C} = \frac{1}{9} [1(2) + 2(1) + 2(-2)] = \frac{1}{9} [2 + 2 - 4] = 0
 $$
 
 Dot product of $\vec{C}$ and $\vec{A}$:
+
 $$
 \vec{C} \cdot \vec{A} = \left[\frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})\right] \cdot \left[\frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})\right]
 $$
+
 $$
 \vec{C} \cdot \vec{A} = \frac{1}{9} [2(2) + 1(-2) + (-2)(1)] = \frac{1}{9} [4 - 2 - 2] = 0
 $$

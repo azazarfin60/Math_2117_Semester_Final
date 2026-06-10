@@ -387,11 +387,13 @@ $$
 
 #### 1. Find Constants $a, b, c$
 A vector field $\vec{F}$ is conservative if its curl is zero:
+
 $$
 \vec{\nabla} \times \vec{F} = 0
 $$
 
 We calculate the curl of $\vec{F}$:
+
 $$
 \vec{\nabla} \times \vec{F} = \begin{vmatrix}
 \hat{i} & \hat{j} & \hat{k} \\
@@ -401,25 +403,31 @@ x + 2y + az & bx - 3y - z & 4x + cy + 2z
 $$
 
 Let us expand this determinant:
+
 $$
 \vec{\nabla} \times \vec{F} = \hat{i}\left[ \frac{\partial}{\partial y}(4x + cy + 2z) - \frac{\partial}{\partial z}(bx - 3y - z) \right] - \hat{j}\left[ \frac{\partial}{\partial x}(4x + cy + 2z) - \frac{\partial}{\partial z}(x + 2y + az) \right] + \hat{k}\left[ \frac{\partial}{\partial x}(bx - 3y - z) - \frac{\partial}{\partial y}(x + 2y + az) \right] = 0
 $$
 
 We calculate the partial derivatives:
+
 $$
 \vec{\nabla} \times \vec{F} = \hat{i}(c - (-1)) - \hat{j}(4 - a) + \hat{k}(b - 2) = 0
 $$
+
 $$
 \vec{\nabla} \times \vec{F} = \hat{i}(c + 1) + \hat{j}(a - 4) + \hat{k}(b - 2) = 0
 $$
 
 We equate the components to zero:
+
 $$
 c + 1 = 0 \implies c = -1
 $$
+
 $$
 a - 4 = 0 \implies a = 4
 $$
+
 $$
 b - 2 = 0 \implies b = 2
 $$
@@ -428,61 +436,77 @@ So, the constants are $a = 4$, $b = 2$, and $c = -1$.
 
 #### 2. Find Scalar Potential
 We substitute $a$, $b$, and $c$ back into $\vec{F}$:
+
 $$
 \vec{F} = (x + 2y + 4z)\hat{i} + (2x - 3y - z)\hat{j} + (4x - y + 2z)\hat{k}
 $$
 
 Let $\phi$ be the scalar potential such that $\vec{F} = \vec{\nabla}\phi$. This gives three partial differential equations:
+
 $$
 \frac{\partial\phi}{\partial x} = x + 2y + 4z \quad \dots \text{(1)}
 $$
+
 $$
 \frac{\partial\phi}{\partial y} = 2x - 3y - z \quad \dots \text{(2)}
 $$
+
 $$
 \frac{\partial\phi}{\partial z} = 4x - y + 2z \quad \dots \text{(3)}
 $$
 
 We integrate equation (1) with respect to $x$:
+
 $$
 \phi = \frac{1}{2}x^2 + 2xy + 4xz + g(y, z) \quad \dots \text{(4)}
 $$
+
 Here, $g(y, z)$ is an arbitrary integration function.
 
 Now we differentiate equation (4) with respect to $y$. We equate it to equation (2):
+
 $$
 \frac{\partial\phi}{\partial y} = 2x + \frac{\partial g}{\partial y} = 2x - 3y - z
 $$
+
 $$
 \frac{\partial g}{\partial y} = -3y - z
 $$
 
 We integrate this with respect to $y$:
+
 $$
 g(y, z) = -\frac{3}{2}y^2 - yz + h(z)
 $$
+
 Here, $h(z)$ is an arbitrary integration function.
 
 We substitute $g(y, z)$ back into equation (4):
+
 $$
 \phi = \frac{1}{2}x^2 + 2xy + 4xz - \frac{3}{2}y^2 - yz + h(z) \quad \dots \text{(5)}
 $$
 
 Now we differentiate equation (5) with respect to $z$. We equate it to equation (3):
+
 $$
 \frac{\partial\phi}{\partial z} = 4x - y + h'(z) = 4x - y + 2z
 $$
+
 $$
 h'(z) = 2z
 $$
 
 We integrate this with respect to $z$:
+
 $$
 h(z) = z^2 + C
 $$
+
 Here, $C$ is a constant.
 
 We substitute $h(z)$ back into equation (5) to get the final potential:
+
 $$
 \phi = \frac{1}{2}x^2 - \frac{3}{2}y^2 + z^2 + 2xy + 4xz - yz + C
 $$

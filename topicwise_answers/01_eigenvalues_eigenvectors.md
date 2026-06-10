@@ -4,11 +4,17 @@ This file contains the organized questions and answers for **Eigenvalues and Eig
 
 ---
 
-## Q1. Determine the characteristic roots of $\begin{pmatrix}
+## Q1. Determine the characteristic roots of 
+
+$$
+\begin{pmatrix}
 1 & 2 & 3 \\
 0 & -4 & 2 \\
 0 & 0 & 7
-\end{pmatrix}$. (04)
+\end{pmatrix}
+$$
+
+. (04)
 
 | | |
 |---|---|
@@ -53,11 +59,17 @@ So the characteristic roots (or eigenvalues) are $1$, $-4$, and $7$.
 
 ---
 
-## Q2. What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix}
+## Q2. What are the eigen-values and eigen-vectors? Find them for the matrix 
+
+$$
+\begin{bmatrix}
 2 & 2 & 1 \\
 1 & 3 & 1 \\
 1 & 2 & 2
-\end{bmatrix}$. (12)
+\end{bmatrix}
+$$
+
+. (12)
 
 | | |
 |---|---|
@@ -716,11 +728,13 @@ $$
 
 **Answer:**
 
-$$A = \begin{bmatrix}
+$$
+A = \begin{bmatrix}
 2 & 1 & 1 \\
 -1 & 2 & -1 \\
 1 & -1 & 2
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 **Answer:**
 

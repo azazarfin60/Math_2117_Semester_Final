@@ -773,11 +773,17 @@ So we have shown that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot
 
 ---
 
-### Q5(b) Find the adjoint and inverse of $\begin{pmatrix}
+### Q5(b) Find the adjoint and inverse of 
+
+$$
+\begin{pmatrix}
 0 & 1 & 2 \\
 1 & 2 & 3 \\
 3 & 1 & 1
-\end{pmatrix}$. (05)
+\end{pmatrix}
+$$
+
+. (05)
 
 **Answer:**
 
@@ -849,11 +855,17 @@ $$
 
 ---
 
-### Q5(c) Determine the characteristic roots of $\begin{pmatrix}
+### Q5(c) Determine the characteristic roots of 
+
+$$
+\begin{pmatrix}
 1 & 2 & 3 \\
 0 & -4 & 2 \\
 0 & 0 & 7
-\end{pmatrix}$. (04)
+\end{pmatrix}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -893,12 +905,18 @@ So the characteristic roots (or eigenvalues) are $1$, $-4$, and $7$.
 
 ---
 
-### Q6(a) What is the rank of a matrix? Find it for $\begin{bmatrix}
+### Q6(a) What is the rank of a matrix? Find it for 
+
+$$
+\begin{bmatrix}
 0 & 0 & 1 & -3 & -2 \\
 0 & 1 & 2 & 6 & 0 \\
 0 & 2 & 3 & 9 & 2 \\
 0 & 1 & 1 & 3 & 2
-\end{bmatrix}$. (06)
+\end{bmatrix}
+$$
+
+. (06)
 
 **Answer:**
 
@@ -989,9 +1007,18 @@ So the rank of the matrix is $3$.
 ---
 
 ### Q6(b) Solve by elementary transformation: (06)
-$$2x_1 + 2x_2 + x_3 = 2$$
-$$3x_1 + x_2 - 2x_3 = 1$$
-$$4x_1 - 3x_2 - x_3 = 3$$
+
+$$
+2x_1 + 2x_2 + x_3 = 2
+$$
+
+$$
+3x_1 + x_2 - 2x_3 = 1
+$$
+
+$$
+4x_1 - 3x_2 - x_3 = 3
+$$
 
 **Answer:**
 
@@ -1077,11 +1104,17 @@ $$
 
 ---
 
-### Q7 What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix}
+### Q7 What are the eigen-values and eigen-vectors? Find them for the matrix 
+
+$$
+\begin{bmatrix}
 2 & 2 & 1 \\
 1 & 3 & 1 \\
 1 & 2 & 2
-\end{bmatrix}$. (12)
+\end{bmatrix}
+$$
+
+. (12)
 
 **Answer:**
 
@@ -1315,10 +1348,16 @@ y
 \end{bmatrix} \implies y = 0
 $$
 
-The eigenvectors are of the form $\begin{bmatrix}
+The eigenvectors are of the form 
+
+$$
+\begin{bmatrix}
 x \\
 0
-\end{bmatrix}$. So there is only one linearly independent eigenvector:
+\end{bmatrix}
+$$
+
+. So there is only one linearly independent eigenvector:
 
 $$
 X_1 = \begin{bmatrix}

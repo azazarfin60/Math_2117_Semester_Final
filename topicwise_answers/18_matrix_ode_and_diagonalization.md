@@ -42,10 +42,16 @@ y
 \end{bmatrix} \implies y = 0
 $$
 
-The eigenvectors are of the form $\begin{bmatrix}
+The eigenvectors are of the form 
+
+$$
+\begin{bmatrix}
 x \\
 0
-\end{bmatrix}$. So there is only one linearly independent eigenvector:
+\end{bmatrix}
+$$
+
+. So there is only one linearly independent eigenvector:
 
 $$
 X_1 = \begin{bmatrix}
@@ -204,8 +210,13 @@ where $C_1 = x_1(0)$ and $C_2 = x_2(0)$.
 
 **Answer:**
 
-$$\frac{dx}{dt} = 6x - 3y$$
-$$\frac{dy}{dt} = 2x + y$$
+$$
+\frac{dx}{dt} = 6x - 3y
+$$
+
+$$
+\frac{dy}{dt} = 2x + y
+$$
 
 **Answer:**
 

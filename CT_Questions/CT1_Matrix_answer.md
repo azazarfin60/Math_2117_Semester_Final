@@ -7,20 +7,25 @@
 ---
 
 ### Q1. Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i_1$, $i_2$, and $i_3$ are: (07)
+
 $$
 2i_1 + 3i_2 - i_3 = 5
 $$
+
 $$
 i_1 - 2i_2 + 4i_3 = 8
 $$
+
 $$
 3i_1 + i_2 + 2i_3 = -3
 $$
+
 Solve this system of linear equations by reducing its augmented matrix to echelon form to find the mesh currents.
 
 **Answer:**
 
 First, we write the augmented matrix for this system:
+
 $$
 \begin{bmatrix}
 2 & 3 & -1 & | & 5 \\
@@ -30,6 +35,7 @@ $$
 $$
 
 We swap the first and second rows to get a pivot of 1 in the top-left:
+
 $$
 \begin{bmatrix}
 1 & -2 & 4 & | & 8 \\
@@ -40,14 +46,17 @@ $$
 $$
 
 Now we make the elements below the first pivot zero. We apply two row operations:
+
 $$
 R_2 \to R_2 - 2R_1
 $$
+
 $$
 R_3 \to R_3 - 3R_1
 $$
 
 This gives the following matrix:
+
 $$
 \begin{bmatrix}
 1 & -2 & 4 & | & 8 \\
@@ -57,11 +66,13 @@ $$
 $$
 
 Next, we make the element below the second pivot zero. We subtract the second row from the third row:
+
 $$
 R_3 \to R_3 - R_2
 $$
 
 This gives:
+
 $$
 \begin{bmatrix}
 1 & -2 & 4 & | & 8 \\
@@ -71,9 +82,11 @@ $$
 $$
 
 We multiply the third row by $-1$ to make the pivot positive:
+
 $$
 R_3 \to -R_3
 $$
+
 $$
 \begin{bmatrix}
 1 & -2 & 4 & | & 8 \\
@@ -81,39 +94,49 @@ $$
 0 & 0 & 1 & | & 16
 \end{bmatrix}
 $$
+
 This is the echelon form.
 
 Now we use back substitution to find the currents.
 
 From the third row:
+
 $$
 i_3 = 16
 $$
 
 From the second row:
+
 $$
 7i_2 - 9i_3 = -11
 $$
+
 $$
 7i_2 - 9(16) = -11
 $$
+
 $$
 7i_2 - 144 = -11
 $$
+
 $$
 7i_2 = 133 \implies i_2 = 19
 $$
 
 From the first row:
+
 $$
 i_1 - 2i_2 + 4i_3 = 8
 $$
+
 $$
 i_1 - 2(19) + 4(16) = 8
 $$
+
 $$
 i_1 - 38 + 64 = 8
 $$
+
 $$
 i_1 + 26 = 8 \implies i_1 = -18
 $$
@@ -123,12 +146,15 @@ So, the mesh currents are $i_1 = -18$, $i_2 = 19$, and $i_3 = 16$.
 ---
 
 ### Q2. Find the value(s) of $k$ for which the following system of three linear equations in three variables has (i) a unique solution, (ii) no solution, and (iii) infinitely many solutions: (06)
+
 $$
 x + y + z = 3
 $$
+
 $$
 2x + 3y + z = 7
 $$
+
 $$
 3x + 5y + kz = 10
 $$
@@ -136,6 +162,7 @@ $$
 **Answer:**
 
 We write the augmented matrix for the system:
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & | & 3 \\
@@ -145,14 +172,17 @@ $$
 $$
 
 We reduce the matrix to echelon form. First, we clear the first column below the pivot:
+
 $$
 R_2 \to R_2 - 2R_1
 $$
+
 $$
 R_3 \to R_3 - 3R_1
 $$
 
 This gives:
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & | & 3 \\
@@ -162,11 +192,13 @@ $$
 $$
 
 Next, we clear the second column below the pivot:
+
 $$
 R_3 \to R_3 - 2R_2
 $$
 
 This gives the echelon form:
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & | & 3 \\
@@ -179,16 +211,20 @@ Now we analyze the solutions:
 
 #### (i) Unique Solution
 A unique solution exists when the rank of the coefficient matrix equals the number of variables. This means the third pivot must not be zero:
+
 $$
 k - 1 \neq 0 \implies k \neq 1
 $$
+
 So, the system has a unique solution for any value $k \neq 1$.
 
 #### (ii) No Solution
 No solution exists when the rank of the coefficient matrix is less than the rank of the augmented matrix. This happens when the last row has a zero coefficient for $z$ but a non-zero constant:
+
 $$
 k - 1 = 0 \implies k = 1
 $$
+
 When $k = 1$, the last row represents $0z = -1$, which is impossible. So, the system has no solution when $k = 1$.
 
 #### (iii) Infinitely Many Solutions
@@ -214,6 +250,7 @@ The rank of a matrix is the maximum number of linearly independent rows in the m
 
 #### 2. Reduce to Echelon Form
 Let the matrix be:
+
 $$
 A = \begin{bmatrix}
 6 & 3 & -4 \\
@@ -223,6 +260,7 @@ A = \begin{bmatrix}
 $$
 
 We swap the first and third rows to put a 1 in the top-left corner:
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -233,12 +271,15 @@ $$
 $$
 
 Now we clear the first column:
+
 $$
 R_2 \to R_2 + 4R_1
 $$
+
 $$
 R_3 \to R_3 - 6R_1
 $$
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -248,9 +289,11 @@ $$
 $$
 
 Next, we eliminate the second element in the third row:
+
 $$
 R_3 \to R_3 + R_2
 $$
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -260,9 +303,11 @@ $$
 $$
 
 We divide the second row by 9 to get a leading 1:
+
 $$
 R_2 \to \frac{1}{9} R_2
 $$
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -270,10 +315,12 @@ $$
 0 & 0 & 0
 \end{bmatrix}
 $$
+
 This is the echelon form of the matrix.
 
 #### 3. Reduce to Row Canonical Form
 Starting from the echelon form:
+
 $$
 \begin{bmatrix}
 1 & 2 & -5 \\
@@ -283,9 +330,11 @@ $$
 $$
 
 We eliminate the element above the leading 1 in the second row:
+
 $$
 R_1 \to R_1 - 2R_2
 $$
+
 $$
 R_1 \to \begin{bmatrix}
 1 & 2 - 2(1) & -5 - 2\left(-\frac{26}{9}\right)
@@ -297,6 +346,7 @@ R_1 \to \begin{bmatrix}
 $$
 
 This gives the row canonical form:
+
 $$
 \begin{bmatrix}
 1 & 0 & \frac{7}{9} \\

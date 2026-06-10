@@ -865,9 +865,18 @@ So the rank of the matrix is $2$.
 ---
 
 ### Q6(a) Find the value of $\lambda$ so that the following equations have a solution and solve completely in each case: (06)
-$$x + y + z = 1$$
-$$x + 2y + 4z = \lambda$$
-$$x + 4y + 10z = \lambda^2$$
+
+$$
+x + y + z = 1
+$$
+
+$$
+x + 2y + 4z = \lambda
+$$
+
+$$
+x + 4y + 10z = \lambda^2
+$$
 
 **Answer:**
 
@@ -976,9 +985,18 @@ $$
 ---
 
 ### Q6(b) Solve: (06)
-$$2x_1 - x_2 + x_3 = 0$$
-$$3x_1 + 2x_2 + x_3 = 0$$
-$$x_1 - 3x_2 + 5x_3 = 0$$
+
+$$
+2x_1 - x_2 + x_3 = 0
+$$
+
+$$
+3x_1 + 2x_2 + x_3 = 0
+$$
+
+$$
+x_1 - 3x_2 + 5x_3 = 0
+$$
 
 **Answer:**
 
