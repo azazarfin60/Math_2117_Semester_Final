@@ -6,7 +6,13 @@
 
 ---
 
-### Q1. Find constants $a, b, c$ so that $\vec{F} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}$ is a conservative force field. Also obtain the scalar potential. (03+06)
+### Q1. Find constants $a, b, c$ so that 
+
+$$
+\vec{F} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}
+$$
+
+ is a conservative force field. Also obtain the scalar potential. (03+06)
 
 **Answer:**
 
@@ -188,7 +194,13 @@ $$
 
 ---
 
-### Q3. If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate 
+### Q3. If 
+
+$$
+\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}
+$$
+
+, evaluate 
 
 $$
 \int_C \vec{F} \cdot d\vec{r}

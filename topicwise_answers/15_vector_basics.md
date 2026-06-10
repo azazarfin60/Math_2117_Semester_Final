@@ -6,7 +6,19 @@ This file contains the organized questions and answers for **Vector Basics**, pr
 
 ## Q1 (04)
 
-Find an equation for the plane perpendicular to the vector $\bar{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$ and passing through the terminal point of the vector $\bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}$.
+Find an equation for the plane perpendicular to the vector 
+
+$$
+\bar{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}
+$$
+
+ and passing through the terminal point of the vector 
+
+$$
+\bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}
+$$
+
+.
 
 | | |
 |---|---|
@@ -18,13 +30,25 @@ Find an equation for the plane perpendicular to the vector $\bar{A} = 2\hat{i} +
 
 We assume the vector $\vec{B}$ starts at the origin. Its terminal point is $P(1, 5, 3)$.
 
-The equation of a plane passing through a point $P(x\_0, y\_0, z\_0)$ and perpendicular to a normal vector $\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}$ is:
+The equation of a plane passing through a point $P(x\_0, y\_0, z\_0)$ and perpendicular to a normal vector 
+
+$$
+\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}
+$$
+
+ is:
 
 $$
 a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
 $$
 
-Substitute the point $(1, 5, 3)$ and the components of $\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$:
+Substitute the point $(1, 5, 3)$ and the components of 
+
+$$
+\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}
+$$
+
+:
 
 $$
 2(x - 1) + 3(y - 5) + 6(z - 3) = 0
@@ -93,7 +117,19 @@ $$
 
 ## Q3 (04)
 
-What is the vector? Find a unit vector parallel to the resultant of vectors $\vec{r}\_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$, $\vec{r}\_2 = \hat{i} + 2\hat{j} + \hat{k}$.
+What is the vector? Find a unit vector parallel to the resultant of vectors 
+
+$$
+\vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}
+$$
+
+, 
+
+$$
+\vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}
+$$
+
+.
 
 | | |
 |---|---|
@@ -130,7 +166,19 @@ $$
 
 ## Q4 (04)
 
-If $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$ and $\bar{B} = \hat{i} - 2\hat{j} + \hat{k}$, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$.
+If 
+
+$$
+\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\bar{B} = \hat{i} - 2\hat{j} + \hat{k}
+$$
+
+, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$.
 
 | | |
 |---|---|
@@ -171,7 +219,25 @@ $$
 
 ## Q5 (04)
 
-What are the vector and scalar quantity? Give some examples. If $\vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}$, $\vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}$ and $\vec{C} = \hat{i} + 2\hat{j} - \hat{k}$, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$.
+What are the vector and scalar quantity? Give some examples. If 
+
+$$
+\vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}
+$$
+
+, 
+
+$$
+\vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\vec{C} = \hat{i} + 2\hat{j} - \hat{k}
+$$
+
+, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$.
 
 | | |
 |---|---|
@@ -225,7 +291,19 @@ So the magnitude is $\sqrt{521}$.
 
 ## Q6 (04)
 
-What is meant by dot and cross product in vector analysis? Determine a unit vector perpendicular to the plane of $\vec{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}$ and $\vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}$.
+What is meant by dot and cross product in vector analysis? Determine a unit vector perpendicular to the plane of 
+
+$$
+\vec{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}
+$$
+
+.
 
 | | |
 |---|---|
@@ -238,7 +316,13 @@ What is meant by dot and cross product in vector analysis? Determine a unit vect
 #### 1. Definitions
 
 *   **Dot Product:** The scalar product of two vectors $\vec{A}$ and $\vec{B}$ is defined as $\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos\theta$, where $\theta$ is the angle between them.
-*   **Cross Product:** The vector product of two vectors $\vec{A}$ and $\vec{B}$ is defined as $\vec{A} \times \vec{B} = |\vec{A}||\vec{B}|\sin\theta \hat{n}$, where $\hat{n}$ is a unit vector perpendicular to the plane of the two vectors.
+*   **Cross Product:** The vector product of two vectors $\vec{A}$ and $\vec{B}$ is defined as 
+
+$$
+\vec{A} \times \vec{B} = |\vec{A}||\vec{B}|\sin\theta \hat{n}
+$$
+
+, where $\hat{n}$ is a unit vector perpendicular to the plane of the two vectors.
 
 #### 2. Find the Perpendicular Unit Vector
 
@@ -268,7 +352,13 @@ $$
 
 ## Q7 (03)
 
-Determine the angles $\alpha, \beta$, and $\gamma$ which the vector $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
+Determine the angles $\alpha, \beta$, and $\gamma$ which the vector 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+ makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
 | | |
 |---|---|
@@ -309,7 +399,25 @@ This completes the proof.
 
 ## Q8 (03)
 
-Find the constant 'a' such that the vectors $2\hat{i} - \hat{j} + \hat{k}$, $\hat{i} + 2\hat{j} - 3\hat{k}$ and $3\hat{i} + a\hat{j} + 5\hat{k}$ are coplanar.
+Find the constant 'a' such that the vectors 
+
+$$
+2\hat{i} - \hat{j} + \hat{k}
+$$
+
+, 
+
+$$
+\hat{i} + 2\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+3\hat{i} + a\hat{j} + 5\hat{k}
+$$
+
+ are coplanar.
 
 | | |
 |---|---|
@@ -359,8 +467,17 @@ So the constant is $a = -4$.
 
 **Answer:**
 
-*   (i) $\vec{V}(x, y) = x\hat{i} + y\hat{j}$
-*   (ii) $\vec{V}(x, y) = -x\hat{i} - y\hat{j}$
+*   (i) 
+
+$$
+\vec{V}(x, y) = x\hat{i} + y\hat{j}
+$$
+
+*   (ii) 
+
+$$
+\vec{V}(x, y) = -x\hat{i} - y\hat{j}
+$$
 
 **Answer:**
 
@@ -375,27 +492,73 @@ Here, $P(x, y)$ and $Q(x, y)$ are scalar functions.
 
 #### 2. Graphing the Vector Fields
 
-##### (i) $\vec{V}(x, y) = x\hat{i} + y\hat{j}$
+##### (i) 
+
+$$
+\vec{V}(x, y) = x\hat{i} + y\hat{j}
+$$
+
 For any point $(x, y)$, the vector points directly away from the origin $(0, 0)$. The length of the vector equals the distance of the point from the origin, $r = \sqrt{x^2 + y^2}$.
 
 We choose a few points to show the field:
 *   At $(1, 0)$, the vector is $\hat{i}$. It points right with a length of 1.
 *   At $(0, 1)$, the vector is $\hat{j}$. It points up with a length of 1.
-*   At $(-1, 0)$, the vector is $-\hat{i}$. It points left with a length of 1.
-*   At $(0, -1)$, the vector is $-\hat{j}$. It points down with a length of 1.
-*   At $(2, 2)$, the vector is $2\hat{i} + 2\hat{j}$. It points diagonally outward with a length of $2\sqrt{2}$.
+*   At $(-1, 0)$, the vector is 
+
+$$
+-\hat{i}
+$$
+
+. It points left with a length of 1.
+*   At $(0, -1)$, the vector is 
+
+$$
+-\hat{j}
+$$
+
+. It points down with a length of 1.
+*   At $(2, 2)$, the vector is 
+
+$$
+2\hat{i} + 2\hat{j}
+$$
+
+. It points diagonally outward with a length of $2\sqrt{2}$.
 
 This field looks like a source. All vectors point radially outward from the center.
 
-##### (ii) $\vec{V}(x, y) = -x\hat{i} - y\hat{j}$
+##### (ii) 
+
+$$
+\vec{V}(x, y) = -x\hat{i} - y\hat{j}
+$$
+
 For any point $(x, y)$, the vector points directly toward the origin $(0, 0)$. Its length equals the distance from the origin.
 
 We choose a few points to show the field:
-*   At $(1, 0)$, the vector is $-\hat{i}$. It points left with a length of 1.
-*   At $(0, 1)$, the vector is $-\hat{j}$. It points down with a length of 1.
+*   At $(1, 0)$, the vector is 
+
+$$
+-\hat{i}
+$$
+
+. It points left with a length of 1.
+*   At $(0, 1)$, the vector is 
+
+$$
+-\hat{j}
+$$
+
+. It points down with a length of 1.
 *   At $(-1, 0)$, the vector is $\hat{i}$. It points right with a length of 1.
 *   At $(0, -1)$, the vector is $\hat{j}$. It points up with a length of 1.
-*   At $(2, 2)$, the vector is $-2\hat{i} - 2\hat{j}$. It points diagonally inward with a length of $2\sqrt{2}$.
+*   At $(2, 2)$, the vector is 
+
+$$
+-2\hat{i} - 2\hat{j}
+$$
+
+. It points diagonally inward with a length of $2\sqrt{2}$.
 
 This field looks like a sink. All vectors point radially inward toward the center.
 
@@ -403,7 +566,25 @@ This field looks like a sink. All vectors point radially inward toward the cente
 
 ## Q10 (2+2+6)
 
-Explain the physical significance of dot and cross product. Show that $\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})$, $\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})$ and $\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})$ are mutually orthogonal unit vectors.
+Explain the physical significance of dot and cross product. Show that 
+
+$$
+\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})
+$$
+
+, 
+
+$$
+\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})
+$$
+
+ and 
+
+$$
+\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})
+$$
+
+ are mutually orthogonal unit vectors.
 
 | | |
 |---|---|

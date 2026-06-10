@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Line Integrals**, p
 
 ## Q1 (04)
 
-If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate 
+If 
+
+$$
+\vec{F} = 3xy\hat{i} - y^2\hat{j}
+$$
+
+, then evaluate 
 
 $$
 \int_C \vec{F} \cdot d\vec{r}
@@ -21,7 +27,13 @@ $$
 
 **Answer:**
 
-The position vector in the $xy$-plane is $\vec{r} = x\hat{i} + y\hat{j}$. So we have:
+The position vector in the $xy$-plane is 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j}
+$$
+
+. So we have:
 
 $$
 d\vec{r} = dx\hat{i} + dy\hat{j}
@@ -69,7 +81,13 @@ So the value of the line integral is $-\frac{7}{6}$.
 
 ## Q2 (06)
 
-If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate 
+If 
+
+$$
+\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
+$$
+
+, then evaluate 
 
 $$
 \int_C \bar{A} \cdot d\bar{r}
@@ -158,7 +176,13 @@ So the integral along this path is $\frac{13}{3}$.
 
 ## Q3 (04)
 
-If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate 
+If 
+
+$$
+\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
+$$
+
+, evaluate 
 
 $$
 \int_C \vec{A} \cdot d\vec{r}
@@ -217,7 +241,13 @@ So the value of the line integral is $\frac{23}{3}$.
 
 ## Q4 (03)
 
-Find the work done in moving a particle in a force field given by $\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}$ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$.
+Find the work done in moving a particle in a force field given by 
+
+$$
+\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}
+$$
+
+ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$.
 
 | | |
 |---|---|
@@ -289,7 +319,13 @@ So, the work done is 303.
 
 ## Q5 (06)
 
-If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate 
+If 
+
+$$
+\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}
+$$
+
+, evaluate 
 
 $$
 \int_C \vec{F} \cdot d\vec{r}

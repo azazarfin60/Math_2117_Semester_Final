@@ -12,7 +12,19 @@
 
 ## SECTION - A
 
-### Q1(a) What is the vector? Find a unit vector parallel to the resultant of vectors $\vec{r}\_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$, $\vec{r}\_2 = \hat{i} + 2\hat{j} + \hat{k}$. (04)
+### Q1(a) What is the vector? Find a unit vector parallel to the resultant of vectors 
+
+$$
+\vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}
+$$
+
+, 
+
+$$
+\vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -84,7 +96,19 @@ The proof is complete.
 
 ---
 
-### Q1(c) If $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$ and $\bar{B} = \hat{i} - 2\hat{j} + \hat{k}$, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$. (04)
+### Q1(c) If 
+
+$$
+\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\bar{B} = \hat{i} - 2\hat{j} + \hat{k}
+$$
+
+, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$. (04)
 
 **Answer:**
 
@@ -280,7 +304,13 @@ Since this relation holds for any curve on the surface passing through $P$, the 
 
 ---
 
-### Q3(a) Show that, $\bar{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}$ is irrotational. Find $\Phi$ such that $\bar{A} = \nabla\Phi$. (06)
+### Q3(a) Show that, 
+
+$$
+\bar{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}
+$$
+
+ is irrotational. Find $\Phi$ such that $\bar{A} = \nabla\Phi$. (06)
 
 **Answer:**
 
@@ -357,7 +387,13 @@ $$
 
 ---
 
-### Q3(b) Find the work done in moving a particle in the force field $\vec{F} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$ along: (06)
+### Q3(b) Find the work done in moving a particle in the force field 
+
+$$
+\vec{F} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
+$$
+
+ along: (06)
 *   **(i)** The curve defined by $x = t, y = t^2, z = t^3$ from $t=0$ to $t=1$.
 *   **(ii)** The straight line joining $(0, 0, 0)$ and $(1, 1, 1)$.
 
@@ -423,7 +459,13 @@ $$
 \iint_S \bar{A} \cdot \hat{n} dS
 $$
 
- where, $\bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+ where, 
+
+$$
+\bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}
+$$
+
+ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 

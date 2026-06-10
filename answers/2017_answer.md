@@ -88,7 +88,13 @@ $$
 
 ---
 
-### Q1(b) If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate 
+### Q1(b) If 
+
+$$
+\vec{F} = 3xy\hat{i} - y^2\hat{j}
+$$
+
+, then evaluate 
 
 $$
 \int_C \vec{F} \cdot d\vec{r}
@@ -98,7 +104,13 @@ $$
 
 **Answer:**
 
-The position vector in the $xy$-plane is $\vec{r} = x\hat{i} + y\hat{j}$. So we have:
+The position vector in the $xy$-plane is 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j}
+$$
+
+. So we have:
 
 $$
 d\vec{r} = dx\hat{i} + dy\hat{j}
@@ -208,7 +220,13 @@ So the directional derivative is $-\frac{20}{9}$.
 
 ---
 
-### Q2(a) If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate 
+### Q2(a) If 
+
+$$
+\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}
+$$
+
+, then evaluate 
 
 $$
 \oint_C \vec{F} \cdot d\vec{r}
@@ -325,7 +343,13 @@ $$
 \iint_S \vec{A} \cdot \hat{n} dS
 $$
 
-, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+, where 
+
+$$
+\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}
+$$
+
+ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 

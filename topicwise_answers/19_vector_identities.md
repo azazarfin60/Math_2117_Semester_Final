@@ -59,7 +59,13 @@ Show that $\nabla \times (\nabla \times \bar{A}) = -\nabla^2\bar{A} + \nabla(\na
 
 **Answer:**
 
-Let the vector be $\bar{A} = A\_x\hat{i} + A\_y\hat{j} + A\_z\hat{k}$. We calculate the curl of $\bar{A}$:
+Let the vector be 
+
+$$
+\bar{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}
+$$
+
+. We calculate the curl of $\bar{A}$:
 
 $$
 \nabla \times \bar{A} = \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z} \right)\hat{i} + \left( \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x} \right)\hat{j} + \left( \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y} \right)\hat{k}
@@ -114,7 +120,13 @@ Prove that $\nabla^2(1/r) = 0$.
 
 **Answer:**
 
-Let $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$, then $r = \sqrt{x^2 + y^2 + z^2}$.
+Let 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+, then $r = \sqrt{x^2 + y^2 + z^2}$.
 
 The partial derivatives of $r$ with respect to coordinates are:
 
@@ -189,7 +201,13 @@ $$
 \nabla \cdot (\vec{A} \times \vec{r})
 $$
 
-Here, $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ is the position vector.
+Here, 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+ is the position vector.
 
 We use the vector identity for the divergence of a cross product:
 
@@ -229,7 +247,13 @@ $$
 
 We calculate the terms:
 *   $\nabla \cdot \vec{r} = 1 + 1 + 1 = 3$. So, $\vec{A}(\nabla \cdot \vec{r}) = 3\vec{A}$.
-*   $(\vec{A} \cdot \nabla)\vec{r} = \left( A\_1 \frac{\partial}{\partial x} + A\_2 \frac{\partial}{\partial y} + A\_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}$.
+*   
+
+$$
+(\vec{A} \cdot \nabla)\vec{r} = \left( A_1 \frac{\partial}{\partial x} + A_2 \frac{\partial}{\partial y} + A_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}
+$$
+
+.
 
 This gives:
 

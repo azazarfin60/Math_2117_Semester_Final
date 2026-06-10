@@ -13,8 +13,17 @@
 ## SECTION - A
 
 ### Q1(a) What is vector field? Graph the vector fields defined by: (05)
-*   (i) $\vec{V}(x, y) = x\hat{i} + y\hat{j}$
-*   (ii) $\vec{V}(x, y) = -x\hat{i} - y\hat{j}$
+*   (i) 
+
+$$
+\vec{V}(x, y) = x\hat{i} + y\hat{j}
+$$
+
+*   (ii) 
+
+$$
+\vec{V}(x, y) = -x\hat{i} - y\hat{j}
+$$
 
 **Answer:**
 
@@ -29,27 +38,73 @@ Here, $P(x, y)$ and $Q(x, y)$ are scalar functions.
 
 #### 2. Graphing the Vector Fields
 
-##### (i) $\vec{V}(x, y) = x\hat{i} + y\hat{j}$
+##### (i) 
+
+$$
+\vec{V}(x, y) = x\hat{i} + y\hat{j}
+$$
+
 For any point $(x, y)$, the vector points directly away from the origin $(0, 0)$. The length of the vector equals the distance of the point from the origin, $r = \sqrt{x^2 + y^2}$.
 
 We choose a few points to show the field:
 *   At $(1, 0)$, the vector is $\hat{i}$. It points right with a length of 1.
 *   At $(0, 1)$, the vector is $\hat{j}$. It points up with a length of 1.
-*   At $(-1, 0)$, the vector is $-\hat{i}$. It points left with a length of 1.
-*   At $(0, -1)$, the vector is $-\hat{j}$. It points down with a length of 1.
-*   At $(2, 2)$, the vector is $2\hat{i} + 2\hat{j}$. It points diagonally outward with a length of $2\sqrt{2}$.
+*   At $(-1, 0)$, the vector is 
+
+$$
+-\hat{i}
+$$
+
+. It points left with a length of 1.
+*   At $(0, -1)$, the vector is 
+
+$$
+-\hat{j}
+$$
+
+. It points down with a length of 1.
+*   At $(2, 2)$, the vector is 
+
+$$
+2\hat{i} + 2\hat{j}
+$$
+
+. It points diagonally outward with a length of $2\sqrt{2}$.
 
 This field looks like a source. All vectors point radially outward from the center.
 
-##### (ii) $\vec{V}(x, y) = -x\hat{i} - y\hat{j}$
+##### (ii) 
+
+$$
+\vec{V}(x, y) = -x\hat{i} - y\hat{j}
+$$
+
 For any point $(x, y)$, the vector points directly toward the origin $(0, 0)$. Its length equals the distance from the origin.
 
 We choose a few points to show the field:
-*   At $(1, 0)$, the vector is $-\hat{i}$. It points left with a length of 1.
-*   At $(0, 1)$, the vector is $-\hat{j}$. It points down with a length of 1.
+*   At $(1, 0)$, the vector is 
+
+$$
+-\hat{i}
+$$
+
+. It points left with a length of 1.
+*   At $(0, 1)$, the vector is 
+
+$$
+-\hat{j}
+$$
+
+. It points down with a length of 1.
 *   At $(-1, 0)$, the vector is $\hat{i}$. It points right with a length of 1.
 *   At $(0, -1)$, the vector is $\hat{j}$. It points up with a length of 1.
-*   At $(2, 2)$, the vector is $-2\hat{i} - 2\hat{j}$. It points diagonally inward with a length of $2\sqrt{2}$.
+*   At $(2, 2)$, the vector is 
+
+$$
+-2\hat{i} - 2\hat{j}
+$$
+
+. It points diagonally inward with a length of $2\sqrt{2}$.
 
 This field looks like a sink. All vectors point radially inward toward the center.
 
@@ -153,7 +208,19 @@ This completes the proof.
 
 ---
 
-### Q2(a) Find an equation for the plane perpendicular to the vector $\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$ and passing through the terminal point of vector $\vec{B} = \hat{i} + 5\hat{j} + 3\hat{k}$. (04)
+### Q2(a) Find an equation for the plane perpendicular to the vector 
+
+$$
+\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}
+$$
+
+ and passing through the terminal point of vector 
+
+$$
+\vec{B} = \hat{i} + 5\hat{j} + 3\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -203,7 +270,13 @@ $$
 
 ---
 
-### Q2(b) A particle moves so that its position vector is given by $\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}$ where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector. (04)
+### Q2(b) A particle moves so that its position vector is given by 
+
+$$
+\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}
+$$
+
+ where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector. (04)
 
 **Answer:**
 
@@ -241,7 +314,13 @@ $$
 \vec{r} \times \vec{v} = \hat{k} \left( \omega \cos^2 \omega t + \omega \sin^2 \omega t \right) = \omega (\cos^2 \omega t + \sin^2 \omega t)\hat{k} = \omega\hat{k}
 $$
 
-The term $\omega$ is a constant. So, the vector $\omega\hat{k}$ is constant. Let $\vec{a} = \omega\hat{k}$. We get:
+The term $\omega$ is a constant. So, the vector $\omega\hat{k}$ is constant. Let 
+
+$$
+\vec{a} = \omega\hat{k}
+$$
+
+. We get:
 
 $$
 \vec{r} \times \vec{v} = \vec{a}
@@ -313,7 +392,13 @@ $$
 \nabla \cdot (\vec{A} \times \vec{r})
 $$
 
-Here, $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ is the position vector.
+Here, 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+ is the position vector.
 
 We use the vector identity for the divergence of a cross product:
 
@@ -353,7 +438,13 @@ $$
 
 We calculate the terms:
 *   $\nabla \cdot \vec{r} = 1 + 1 + 1 = 3$. So, $\vec{A}(\nabla \cdot \vec{r}) = 3\vec{A}$.
-*   $(\vec{A} \cdot \nabla)\vec{r} = \left( A\_1 \frac{\partial}{\partial x} + A\_2 \frac{\partial}{\partial y} + A\_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}$.
+*   
+
+$$
+(\vec{A} \cdot \nabla)\vec{r} = \left( A_1 \frac{\partial}{\partial x} + A_2 \frac{\partial}{\partial y} + A_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}
+$$
+
+.
 
 This gives:
 
@@ -369,7 +460,13 @@ $$
 
 ---
 
-### Q3(b) Find the work done in moving a particle in a force field given by $\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}$ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$. (03)
+### Q3(b) Find the work done in moving a particle in a force field given by 
+
+$$
+\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}
+$$
+
+ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$. (03)
 
 **Answer:**
 
@@ -611,7 +708,13 @@ The proof is complete.
 
 ---
 
-### Q4(b) Verify Stoke's theorem for $\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}$ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane. (05)
+### Q4(b) Verify Stoke's theorem for 
+
+$$
+\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}
+$$
+
+ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane. (05)
 
 **Answer:**
 
@@ -699,7 +802,13 @@ $$
 $$
 
 The surface $S$ has five faces:
-*   **Face 1 (Top, $z=2$):** $\hat{n} = \hat{k}$, $dS = dx dy$.
+*   **Face 1 (Top, $z=2$):** 
+
+$$
+\hat{n} = \hat{k}
+$$
+
+, $dS = dx dy$.
 
     
 
@@ -707,7 +816,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -1 \implies \iint_{\text{Top}} -1 dx dy = -1 \times \text{Area} = -4
 $$
 
-*   **Face 2 (Front, $x=2$):** $\hat{n} = \hat{i}$, $dS = dy dz$.
+*   **Face 2 (Front, $x=2$):** 
+
+$$
+\hat{n} = \hat{i}
+$$
+
+, $dS = dy dz$.
 
     
 
@@ -715,7 +830,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -y \implies \iint_{\text{Front}} -y dy dz = \int_0^2 dz \int_0^2 -y dy = 2 \left[ -\frac{y^2}{2} \right]_0^2 = -4
 $$
 
-*   **Face 3 (Back, $x=0$):** $\hat{n} = -\hat{i}$, $dS = dy dz$.
+*   **Face 3 (Back, $x=0$):** 
+
+$$
+\hat{n} = -\hat{i}
+$$
+
+, $dS = dy dz$.
 
     
 
@@ -723,7 +844,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = y \implies \iint_{\text{Back}} y dy dz = \int_0^2 dz \int_0^2 y dy = 2 \left[ \frac{y^2}{2} \right]_0^2 = 4
 $$
 
-*   **Face 4 (Right, $y=2$):** $\hat{n} = \hat{j}$, $dS = dx dz$.
+*   **Face 4 (Right, $y=2$):** 
+
+$$
+\hat{n} = \hat{j}
+$$
+
+, $dS = dx dz$.
 
     
 
@@ -731,7 +858,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = z - 1 \implies \iint_{\text{Right}} (z - 1) dx dz = \int_0^2 dx \int_0^2 (z - 1) dz = 2 \left[ \frac{z^2}{2} - z \right]_0^2 = 2(2 - 2) = 0
 $$
 
-*   **Face 5 (Left, $y=0$):** $\hat{n} = -\hat{j}$, $dS = dx dz$.
+*   **Face 5 (Left, $y=0$):** 
+
+$$
+\hat{n} = -\hat{j}
+$$
+
+, $dS = dx dz$.
 
     
 

@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Green's Theorem**, 
 
 ## Q1 (06)
 
-If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate 
+If 
+
+$$
+\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}
+$$
+
+, then evaluate 
 
 $$
 \oint_C \vec{F} \cdot d\vec{r}

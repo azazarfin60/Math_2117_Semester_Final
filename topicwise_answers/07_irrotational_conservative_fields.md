@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Irrotational and Co
 
 ## Q1 (03)
 
-Find the constants $a, b, c$ so that $\bar{V} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}$ is irrotational.
+Find the constants $a, b, c$ so that 
+
+$$
+\bar{V} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}
+$$
+
+ is irrotational.
 
 | | |
 |---|---|
@@ -69,7 +75,13 @@ $$
 
 ## Q2 (06)
 
-Prove that $\bar{F} = (y^2 \cos x + z^3)\hat{i} + (2y \sin x - 4)\hat{j} + (3xz^2 + 2)\hat{k}$ represents a conservative force field. Also find the scalar potential for $\bar{F}$.
+Prove that 
+
+$$
+\bar{F} = (y^2 \cos x + z^3)\hat{i} + (2y \sin x - 4)\hat{j} + (3xz^2 + 2)\hat{k}
+$$
+
+ represents a conservative force field. Also find the scalar potential for $\bar{F}$.
 
 | | |
 |---|---|
@@ -226,7 +238,13 @@ This completes the proof.
 
 ## Q4 (06)
 
-Show that, $\bar{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}$ is irrotational. Find $\Phi$ such that $\bar{A} = \nabla\Phi$.
+Show that, 
+
+$$
+\bar{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}
+$$
+
+ is irrotational. Find $\Phi$ such that $\bar{A} = \nabla\Phi$.
 
 | | |
 |---|---|
@@ -310,7 +328,13 @@ $$
 
 ## Q5 (05)
 
-Show that $\vec{F} = (y^2 + 2xz^2)\hat{i} + (2xy - z)\hat{j} + (2x^2z - y + 2z)\hat{k}$ is irrotational vector and hence find corresponding scalar potential.
+Show that 
+
+$$
+\vec{F} = (y^2 + 2xz^2)\hat{i} + (2xy - z)\hat{j} + (2x^2z - y + 2z)\hat{k}
+$$
+
+ is irrotational vector and hence find corresponding scalar potential.
 
 | | |
 |---|---|
@@ -394,7 +418,13 @@ $$
 
 ## Q6 (03+06)
 
-Find constants $a, b, c$ so that $\vec{F} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}$ is a conservative force field. Also obtain the scalar potential.
+Find constants $a, b, c$ so that 
+
+$$
+\vec{F} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}
+$$
+
+ is a conservative force field. Also obtain the scalar potential.
 
 | | |
 |---|---|

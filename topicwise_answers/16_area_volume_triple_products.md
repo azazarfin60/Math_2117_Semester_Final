@@ -6,7 +6,25 @@ This file contains the organized questions and answers for **Area, Volume, and T
 
 ## Q1 (04)
 
-Find the volume of the parallelepiped whose edges are represented by the vector $\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}$, $\bar{B} = \hat{i} + 2\hat{j} - \hat{k}$ and $\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}$.
+Find the volume of the parallelepiped whose edges are represented by the vector 
+
+$$
+\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}
+$$
+
+, 
+
+$$
+\bar{B} = \hat{i} + 2\hat{j} - \hat{k}
+$$
+
+ and 
+
+$$
+\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}
+$$
+
+.
 
 | | |
 |---|---|

@@ -116,7 +116,13 @@ So the vectors $\vec{PR}$ and $\vec{PQ}$ are parallel. Since they share the comm
 
 ---
 
-### Q1(b) Find the constants $a, b, c$ so that $\bar{V} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}$ is irrotational. (03)
+### Q1(b) Find the constants $a, b, c$ so that 
+
+$$
+\bar{V} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}
+$$
+
+ is irrotational. (03)
 
 **Answer:**
 
@@ -208,7 +214,13 @@ This completes the proof.
 
 ---
 
-### Q2(a) Prove that $\bar{F} = (y^2 \cos x + z^3)\hat{i} + (2y \sin x - 4)\hat{j} + (3xz^2 + 2)\hat{k}$ represents a conservative force field. Also find the scalar potential for $\bar{F}$. (06)
+### Q2(a) Prove that 
+
+$$
+\bar{F} = (y^2 \cos x + z^3)\hat{i} + (2y \sin x - 4)\hat{j} + (3xz^2 + 2)\hat{k}
+$$
+
+ represents a conservative force field. Also find the scalar potential for $\bar{F}$. (06)
 
 **Answer:**
 
@@ -305,7 +317,13 @@ $$
 
 ---
 
-### Q2(b) If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate 
+### Q2(b) If 
+
+$$
+\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
+$$
+
+, then evaluate 
 
 $$
 \int_C \bar{A} \cdot d\bar{r}
@@ -458,7 +476,13 @@ So the value of the triple integral is $128$.
 
 ---
 
-### Q3(b) Verify the divergence theorem for $\bar{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}$ taken over the region bounded by 
+### Q3(b) Verify the divergence theorem for 
+
+$$
+\bar{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
+$$
+
+ taken over the region bounded by 
 
 $$
 x^2 + y^2 = 4, \quad z = 0, \quad z = 3
@@ -521,9 +545,27 @@ $$
 #### 2. Evaluate Surface Integral
 
 The cylinder surface $S$ has three parts:
-1.  Top surface $S\_1$ ($z=3$): The normal vector is $\hat{n} = \hat{k}$.
-2.  Bottom surface $S\_2$ ($z=0$): The normal vector is $\hat{n} = -\hat{k}$.
-3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$.
+1.  Top surface $S\_1$ ($z=3$): The normal vector is 
+
+$$
+\hat{n} = \hat{k}
+$$
+
+.
+2.  Bottom surface $S\_2$ ($z=0$): The normal vector is 
+
+$$
+\hat{n} = -\hat{k}
+$$
+
+.
+3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is 
+
+$$
+\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
+$$
+
+.
 
 Evaluate the top surface integral:
 
@@ -595,7 +637,13 @@ Both the volume and surface integrals equal $84\pi$. The divergence theorem is v
 
 **Answer:**
 
-Let the vector be $\bar{A} = A\_x\hat{i} + A\_y\hat{j} + A\_z\hat{k}$. We calculate the curl of $\bar{A}$:
+Let the vector be 
+
+$$
+\bar{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}
+$$
+
+. We calculate the curl of $\bar{A}$:
 
 $$
 \nabla \times \bar{A} = \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z} \right)\hat{i} + \left( \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x} \right)\hat{j} + \left( \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y} \right)\hat{k}
@@ -689,7 +737,13 @@ So the equation of the tangent plane is $7x - 3y + 8z = 26$.
 
 ---
 
-### Q4(c) What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$. (04)
+### Q4(c) What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction 
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -699,7 +753,13 @@ The directional derivative is the rate of change of a scalar function at a given
 
 #### 2. Calculation
 
-Let the direction vector be $\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}$. The unit direction vector $\hat{u}$ is:
+Let the direction vector be 
+
+$$
+\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+. The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{9}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}

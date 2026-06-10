@@ -13,19 +13,43 @@
 
 ### SECTION - A
 
-### Q1(a) Find an equation for the plane perpendicular to the vector $\bar{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$ and passing through the terminal point of the vector $\bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}$. (04)
+### Q1(a) Find an equation for the plane perpendicular to the vector 
+
+$$
+\bar{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}
+$$
+
+ and passing through the terminal point of the vector 
+
+$$
+\bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
 We assume the vector $\vec{B}$ starts at the origin. Its terminal point is $P(1, 5, 3)$.
 
-The equation of a plane passing through a point $P(x\_0, y\_0, z\_0)$ and perpendicular to a normal vector $\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}$ is:
+The equation of a plane passing through a point $P(x\_0, y\_0, z\_0)$ and perpendicular to a normal vector 
+
+$$
+\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}
+$$
+
+ is:
 
 $$
 a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
 $$
 
-Substitute the point $(1, 5, 3)$ and the components of $\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$:
+Substitute the point $(1, 5, 3)$ and the components of 
+
+$$
+\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}
+$$
+
+:
 
 $$
 2(x - 1) + 3(y - 5) + 6(z - 3) = 0
@@ -45,7 +69,25 @@ So the equation of the plane is $2x + 3y + 6z = 35$.
 
 ---
 
-### Q1(b) Find the volume of the parallelepiped whose edges are represented by the vector $\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}$, $\bar{B} = \hat{i} + 2\hat{j} - \hat{k}$ and $\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}$. (04)
+### Q1(b) Find the volume of the parallelepiped whose edges are represented by the vector 
+
+$$
+\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}
+$$
+
+, 
+
+$$
+\bar{B} = \hat{i} + 2\hat{j} - \hat{k}
+$$
+
+ and 
+
+$$
+\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -136,11 +178,23 @@ $$
 
 ---
 
-### Q2(a) A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction $\hat{i} - 3\hat{j} + 2\hat{k}$. (04)
+### Q2(a) A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction 
+
+$$
+\hat{i} - 3\hat{j} + 2\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
-Let the direction vector be $\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}$. The unit direction vector $\hat{u}$ is:
+Let the direction vector be 
+
+$$
+\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}
+$$
+
+. The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}
@@ -228,7 +282,13 @@ Since the dot product of $\vec{A}$ and $\frac{d\vec{A}}{dt}$ is zero, and neithe
 
 ---
 
-### Q2(c) Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$. (04)
+### Q2(c) Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction 
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -254,7 +314,13 @@ $$
 \vec{\nabla}\phi(1, -2, 1) = \hat{j} + 6\hat{k}
 $$
 
-The direction vector is $\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}$. The unit vector $\hat{u}$ is:
+The direction vector is 
+
+$$
+\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+. The unit vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
@@ -338,7 +404,13 @@ $$
 
 **Answer:**
 
-Let $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$, then $r = \sqrt{x^2 + y^2 + z^2}$.
+Let 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+, then $r = \sqrt{x^2 + y^2 + z^2}$.
 
 The partial derivatives of $r$ with respect to coordinates are:
 
@@ -448,7 +520,13 @@ $$
 \iiint_V \nabla \cdot \bar{F} dV
 $$
 
- where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
+ where 
+
+$$
+\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}
+$$
+
+ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
 
 **Answer:**
 

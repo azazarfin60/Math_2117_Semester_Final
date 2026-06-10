@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Velocity, Accelerat
 
 ## Q1 (04)
 
-A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction $\hat{i} - 3\hat{j} + 2\hat{k}$.
+A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction 
+
+$$
+\hat{i} - 3\hat{j} + 2\hat{k}
+$$
+
+.
 
 | | |
 |---|---|
@@ -16,7 +22,13 @@ A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$
 
 **Answer:**
 
-Let the direction vector be $\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}$. The unit direction vector $\hat{u}$ is:
+Let the direction vector be 
+
+$$
+\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}
+$$
+
+. The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}
@@ -172,7 +184,13 @@ $$
 
 ## Q4 (04)
 
-A particle moves so that its position vector is given by $\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}$ where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector.
+A particle moves so that its position vector is given by 
+
+$$
+\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}
+$$
+
+ where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector.
 
 | | |
 |---|---|
@@ -215,7 +233,13 @@ $$
 \vec{r} \times \vec{v} = \hat{k} \left( \omega \cos^2 \omega t + \omega \sin^2 \omega t \right) = \omega (\cos^2 \omega t + \sin^2 \omega t)\hat{k} = \omega\hat{k}
 $$
 
-The term $\omega$ is a constant. So, the vector $\omega\hat{k}$ is constant. Let $\vec{a} = \omega\hat{k}$. We get:
+The term $\omega$ is a constant. So, the vector $\omega\hat{k}$ is constant. Let 
+
+$$
+\vec{a} = \omega\hat{k}
+$$
+
+. We get:
 
 $$
 \vec{r} \times \vec{v} = \vec{a}

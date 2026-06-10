@@ -12,7 +12,19 @@
 
 ## SECTION - A
 
-### Q1(a) Determine a unit vector perpendicular to the plane of $\bar{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}$ and $\bar{B} = 4\hat{i} + 3\hat{j} - \hat{k}$. (03)
+### Q1(a) Determine a unit vector perpendicular to the plane of 
+
+$$
+\bar{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\bar{B} = 4\hat{i} + 3\hat{j} - \hat{k}
+$$
+
+. (03)
 
 **Answer:**
 
@@ -134,7 +146,13 @@ So the torsion is $\tau = \frac{2}{(2t^2 + 1)^2}$.
 
 ---
 
-### Q2(a) Determine the angles $\alpha, \beta$, and $\gamma$ which the vector $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$. (03)
+### Q2(a) Determine the angles $\alpha, \beta$, and $\gamma$ which the vector 
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+ makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$. (03)
 
 **Answer:**
 
@@ -168,7 +186,25 @@ This completes the proof.
 
 ---
 
-### Q2(b) Find the constant 'a' such that the vectors $2\hat{i} - \hat{j} + \hat{k}$, $\hat{i} + 2\hat{j} - 3\hat{k}$ and $3\hat{i} + a\hat{j} + 5\hat{k}$ are coplanar. (03)
+### Q2(b) Find the constant 'a' such that the vectors 
+
+$$
+2\hat{i} - \hat{j} + \hat{k}
+$$
+
+, 
+
+$$
+\hat{i} + 2\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+3\hat{i} + a\hat{j} + 5\hat{k}
+$$
+
+ are coplanar. (03)
 
 **Answer:**
 
@@ -204,11 +240,23 @@ So the constant is $a = -4$.
 
 ---
 
-### Q2(c) A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction $\hat{i} - 3\hat{j} + 2\hat{k}$. (04)
+### Q2(c) A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction 
+
+$$
+\hat{i} - 3\hat{j} + 2\hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
-Let the direction vector be $\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}$. The unit direction vector $\hat{u}$ is:
+Let the direction vector be 
+
+$$
+\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}
+$$
+
+. The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}

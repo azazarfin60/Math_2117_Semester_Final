@@ -94,7 +94,13 @@ $$
 \iiint_V \nabla \cdot \bar{F} dV
 $$
 
- where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$.
+ where 
+
+$$
+\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}
+$$
+
+ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$.
 
 | | |
 |---|---|
@@ -157,7 +163,13 @@ So the value of the triple integral is $\frac{8}{3}$.
 
 ## Q3 (04)
 
-Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate 
+Let 
+
+$$
+\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}
+$$
+
+. Evaluate 
 
 $$
 \iiint_V \vec{F} dV

@@ -218,7 +218,13 @@ So the equation of the tangent plane is $7x - 3y + 8z = 26$.
 
 ## Q4 (04)
 
-What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
+What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction 
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+.
 
 | | |
 |---|---|
@@ -233,7 +239,13 @@ The directional derivative is the rate of change of a scalar function at a given
 
 #### 2. Calculation
 
-Let the direction vector be $\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}$. The unit direction vector $\hat{u}$ is:
+Let the direction vector be 
+
+$$
+\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+. The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{9}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
@@ -275,7 +287,13 @@ So the directional derivative is $\frac{37}{3}$.
 
 ## Q5 (04)
 
-Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
+Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction 
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+.
 
 | | |
 |---|---|
@@ -306,7 +324,13 @@ $$
 \vec{\nabla}\phi(1, -2, 1) = \hat{j} + 6\hat{k}
 $$
 
-The direction vector is $\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}$. The unit vector $\hat{u}$ is:
+The direction vector is 
+
+$$
+\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}
+$$
+
+. The unit vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}

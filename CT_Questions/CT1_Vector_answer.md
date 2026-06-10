@@ -6,7 +6,25 @@
 
 ---
 
-### Q1. Explain the physical significance of dot and cross product. Show that $\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})$, $\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})$ and $\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})$ are mutually orthogonal unit vectors. (2+2+6)
+### Q1. Explain the physical significance of dot and cross product. Show that 
+
+$$
+\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})
+$$
+
+, 
+
+$$
+\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})
+$$
+
+ and 
+
+$$
+\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})
+$$
+
+ are mutually orthogonal unit vectors. (2+2+6)
 
 **Answer:**
 

@@ -12,7 +12,25 @@
 
 ## SECTION - A
 
-### Q1(a) What are the vector and scalar quantity? Give some examples. If $\vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}$, $\vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}$ and $\vec{C} = \hat{i} + 2\hat{j} - \hat{k}$, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$. (04)
+### Q1(a) What are the vector and scalar quantity? Give some examples. If 
+
+$$
+\vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}
+$$
+
+, 
+
+$$
+\vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\vec{C} = \hat{i} + 2\hat{j} - \hat{k}
+$$
+
+, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$. (04)
 
 **Answer:**
 
@@ -59,14 +77,32 @@ So the magnitude is $\sqrt{521}$.
 
 ---
 
-### Q1(b) What is meant by dot and cross product in vector analysis? Determine a unit vector perpendicular to the plane of $\vec{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}$ and $\vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}$. (04)
+### Q1(b) What is meant by dot and cross product in vector analysis? Determine a unit vector perpendicular to the plane of 
+
+$$
+\vec{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}
+$$
+
+ and 
+
+$$
+\vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}
+$$
+
+. (04)
 
 **Answer:**
 
 #### 1. Definitions
 
 *   **Dot Product:** The scalar product of two vectors $\vec{A}$ and $\vec{B}$ is defined as $\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos\theta$, where $\theta$ is the angle between them.
-*   **Cross Product:** The vector product of two vectors $\vec{A}$ and $\vec{B}$ is defined as $\vec{A} \times \vec{B} = |\vec{A}||\vec{B}|\sin\theta \hat{n}$, where $\hat{n}$ is a unit vector perpendicular to the plane of the two vectors.
+*   **Cross Product:** The vector product of two vectors $\vec{A}$ and $\vec{B}$ is defined as 
+
+$$
+\vec{A} \times \vec{B} = |\vec{A}||\vec{B}|\sin\theta \hat{n}
+$$
+
+, where $\hat{n}$ is a unit vector perpendicular to the plane of the two vectors.
 
 #### 2. Find the Perpendicular Unit Vector
 
@@ -172,7 +208,13 @@ So the directional derivative is $\frac{1}{\sqrt{17}}$.
 
 ---
 
-### Q2(b) Show that $\vec{F} = (y^2 + 2xz^2)\hat{i} + (2xy - z)\hat{j} + (2x^2z - y + 2z)\hat{k}$ is irrotational vector and hence find corresponding scalar potential. (05)
+### Q2(b) Show that 
+
+$$
+\vec{F} = (y^2 + 2xz^2)\hat{i} + (2xy - z)\hat{j} + (2x^2z - y + 2z)\hat{k}
+$$
+
+ is irrotational vector and hence find corresponding scalar potential. (05)
 
 **Answer:**
 
@@ -381,7 +423,13 @@ So the angle between the surfaces is $\cos^{-1}\left( \frac{8}{3\sqrt{21}} \righ
 
 ---
 
-### Q3(b) If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate 
+### Q3(b) If 
+
+$$
+\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
+$$
+
+, evaluate 
 
 $$
 \int_C \vec{A} \cdot d\vec{r}
@@ -433,7 +481,13 @@ So the value of the line integral is $\frac{23}{3}$.
 
 ---
 
-### Q3(c) Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate 
+### Q3(c) Let 
+
+$$
+\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}
+$$
+
+. Evaluate 
 
 $$
 \iiint_V \vec{F} dV
@@ -573,7 +627,13 @@ The proof is complete.
 
 ---
 
-### Q4(b) Verify the divergence theorem for $\vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}$, taken over the region bounded by $x^2 + y^2 = 4$, $z=0$ and $z=3$. (06)
+### Q4(b) Verify the divergence theorem for 
+
+$$
+\vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
+$$
+
+, taken over the region bounded by $x^2 + y^2 = 4$, $z=0$ and $z=3$. (06)
 
 **Answer:**
 
@@ -624,14 +684,44 @@ $$
 #### 2. Evaluate Surface Integral
 
 The surface $S$ consists of three parts:
-*   **Bottom cap $S\_1$:** $z=0$, $\hat{n} = -\hat{k}$. Since $z=0$, $\vec{A} \cdot \hat{n} = -z^2 = 0$.
-*   **Top cap $S\_2$:** $z=3$, $\hat{n} = \hat{k}$. Here $\vec{A} \cdot \hat{n} = z^2 = 9$:
+*   **Bottom cap $S\_1$:** $z=0$, 
+
+$$
+\hat{n} = -\hat{k}
+$$
+
+. Since $z=0$, 
+
+$$
+\vec{A} \cdot \hat{n} = -z^2 = 0
+$$
+
+.
+*   **Top cap $S\_2$:** $z=3$, 
+
+$$
+\hat{n} = \hat{k}
+$$
+
+. Here 
+
+$$
+\vec{A} \cdot \hat{n} = z^2 = 9
+$$
+
+:
 
 $$
 \iint_{S_2} \vec{A} \cdot \hat{n} dS = 9 \times \text{Area}(S_2) = 9 \times \pi(2^2) = 36\pi
 $$
 
-*   **Curved side $S\_3$:** $x^2 + y^2 = 4$, $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$. Calculate the dot product:
+*   **Curved side $S\_3$:** $x^2 + y^2 = 4$, 
+
+$$
+\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
+$$
+
+. Calculate the dot product:
 
 $$
 \vec{A} \cdot \hat{n} = (4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{2} \right) = 2x^2 - y^3

@@ -113,7 +113,13 @@ The proof is complete.
 
 ## Q2 (05)
 
-Verify Stoke's theorem for $\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}$ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane.
+Verify Stoke's theorem for 
+
+$$
+\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}
+$$
+
+ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane.
 
 | | |
 |---|---|
@@ -206,7 +212,13 @@ $$
 $$
 
 The surface $S$ has five faces:
-*   **Face 1 (Top, $z=2$):** $\hat{n} = \hat{k}$, $dS = dx dy$.
+*   **Face 1 (Top, $z=2$):** 
+
+$$
+\hat{n} = \hat{k}
+$$
+
+, $dS = dx dy$.
 
     
 
@@ -214,7 +226,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -1 \implies \iint_{\text{Top}} -1 dx dy = -1 \times \text{Area} = -4
 $$
 
-*   **Face 2 (Front, $x=2$):** $\hat{n} = \hat{i}$, $dS = dy dz$.
+*   **Face 2 (Front, $x=2$):** 
+
+$$
+\hat{n} = \hat{i}
+$$
+
+, $dS = dy dz$.
 
     
 
@@ -222,7 +240,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -y \implies \iint_{\text{Front}} -y dy dz = \int_0^2 dz \int_0^2 -y dy = 2 \left[ -\frac{y^2}{2} \right]_0^2 = -4
 $$
 
-*   **Face 3 (Back, $x=0$):** $\hat{n} = -\hat{i}$, $dS = dy dz$.
+*   **Face 3 (Back, $x=0$):** 
+
+$$
+\hat{n} = -\hat{i}
+$$
+
+, $dS = dy dz$.
 
     
 
@@ -230,7 +254,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = y \implies \iint_{\text{Back}} y dy dz = \int_0^2 dz \int_0^2 y dy = 2 \left[ \frac{y^2}{2} \right]_0^2 = 4
 $$
 
-*   **Face 4 (Right, $y=2$):** $\hat{n} = \hat{j}$, $dS = dx dz$.
+*   **Face 4 (Right, $y=2$):** 
+
+$$
+\hat{n} = \hat{j}
+$$
+
+, $dS = dx dz$.
 
     
 
@@ -238,7 +268,13 @@ $$
 (\nabla \times \vec{A}) \cdot \hat{n} = z - 1 \implies \iint_{\text{Right}} (z - 1) dx dz = \int_0^2 dx \int_0^2 (z - 1) dz = 2 \left[ \frac{z^2}{2} - z \right]_0^2 = 2(2 - 2) = 0
 $$
 
-*   **Face 5 (Left, $y=0$):** $\hat{n} = -\hat{j}$, $dS = dx dz$.
+*   **Face 5 (Left, $y=0$):** 
+
+$$
+\hat{n} = -\hat{j}
+$$
+
+, $dS = dx dz$.
 
     
 

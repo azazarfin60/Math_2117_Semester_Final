@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Divergence Theorem*
 
 ## Q1 (06)
 
-Verify the divergence theorem for $\bar{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}$ taken over the region bounded by 
+Verify the divergence theorem for 
+
+$$
+\bar{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
+$$
+
+ taken over the region bounded by 
 
 $$
 x^2 + y^2 = 4, \quad z = 0, \quad z = 3
@@ -75,9 +81,27 @@ $$
 #### 2. Evaluate Surface Integral
 
 The cylinder surface $S$ has three parts:
-1.  Top surface $S\_1$ ($z=3$): The normal vector is $\hat{n} = \hat{k}$.
-2.  Bottom surface $S\_2$ ($z=0$): The normal vector is $\hat{n} = -\hat{k}$.
-3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$.
+1.  Top surface $S\_1$ ($z=3$): The normal vector is 
+
+$$
+\hat{n} = \hat{k}
+$$
+
+.
+2.  Bottom surface $S\_2$ ($z=0$): The normal vector is 
+
+$$
+\hat{n} = -\hat{k}
+$$
+
+.
+3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is 
+
+$$
+\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
+$$
+
+.
 
 Evaluate the top surface integral:
 
