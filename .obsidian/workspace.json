@@ -198,8 +198,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "3ae7ba81d6a5152b",
+  "active": "fe0bf55f9e624f56",
   "lastOpenFiles": [
+    "analysis_report.md",
     "math_fix_guideline.md",
     "topicwise_answers/1.01_eigenvalues_eigenvectors.md",
     "topicwise_answers/00-index.md",
@@ -225,7 +226,6 @@
     "topicwise_answers/2.01_greens_theorem.md",
     "topicwise_answers/1.07_matrix_ode_and_diagonalization.md",
     "topicwise_answers/1.06_matrix_types_and_properties.md",
-    "topicwise_answers/1.05_adjoint_and_inverse.md",
     "topicwise_answers",
     "dup_analysis.txt",
     "CT_Questions/MathMatrixCT1.jpg",
