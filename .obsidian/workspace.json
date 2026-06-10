@@ -22,31 +22,17 @@
             }
           },
           {
-            "id": "9e3e2b5b7574de65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "topicwise_answers/13_linear_dependence_independence.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13_linear_dependence_independence"
-            }
-          },
-          {
             "id": "3ae7ba81d6a5152b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prev._Year_Questions/2023.md",
-                "mode": "source",
+                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2023"
+              "title": "1.02_system_of_linear_equations"
             }
           }
         ],
@@ -123,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 13_linear_dependence_independence"
+              "title": "Backlinks for 1.02_system_of_linear_equations"
             }
           },
           {
@@ -142,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 13_linear_dependence_independence"
+              "title": "Outgoing links from 1.02_system_of_linear_equations"
             }
           },
           {
@@ -185,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 13_linear_dependence_independence"
+              "title": "Outline of 1.02_system_of_linear_equations"
             }
           }
         ]
@@ -212,34 +198,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "9e3e2b5b7574de65",
+  "active": "3ae7ba81d6a5152b",
   "lastOpenFiles": [
-    "topicwise_answers/12_basis_and_dimension.md",
-    "topicwise_answers/11_vector_space_subspace_direct_sum.md",
-    "topicwise_answers/06_line_integrals.md",
-    "topicwise_answers/04_greens_theorem.md",
-    "topicwise_answers/01_eigenvalues_eigenvectors.md",
-    "Prev._Year_Questions/2019.md",
-    "Prev._Year_Questions/2024.md",
-    "Prev._Year_Questions/2023.md",
-    "Prev._Year_Questions/2021.md",
-    "Prev._Year_Questions/2020.md",
-    "answers/2019_answer.md",
-    "Prev._Year_Questions/2018.md",
-    "Prev._Year_Questions/2017.md",
-    "answers/2018_answer.md",
-    "question_mapping.md",
+    "topicwise_answers/1.01_eigenvalues_eigenvectors.md",
     "topicwise_answers/00-index.md",
-    "topicwise_answers/25_linear_transformations.md",
-    "topicwise_answers/24_curvature_and_torsion.md",
-    "topicwise_answers/23_volume_integrals.md",
-    "topicwise_answers/22_surface_integrals.md",
-    "topicwise_answers/21_stokes_theorem.md",
-    "topicwise_answers/20_divergence_theorem.md",
-    "topicwise_answers/19_vector_identities.md",
-    "topicwise_answers/18_matrix_ode_and_diagonalization.md",
-    "topicwise_answers/17_velocity_acceleration_particle_motion.md",
-    "topicwise_answers/16_area_volume_triple_products.md",
+    "Prev._Year_Questions/2023.md",
+    "topicwise_answers/13_linear_dependence_independence.md",
+    "topicwise_answers/3.05_linear_transformations.md",
+    "topicwise_answers/3.04_linear_combination.md",
+    "topicwise_answers/3.03_linear_dependence_independence.md",
+    "topicwise_answers/3.02_basis_and_dimension.md",
+    "topicwise_answers/3.01_vector_space_subspace_direct_sum.md",
+    "topicwise_answers/2.13_curvature_and_torsion.md",
+    "topicwise_answers/2.12_volume_integrals.md",
+    "topicwise_answers/2.11_surface_integrals.md",
+    "topicwise_answers/2.10_stokes_theorem.md",
+    "topicwise_answers/2.09_divergence_theorem.md",
+    "topicwise_answers/2.08_vector_identities.md",
+    "topicwise_answers/2.07_velocity_acceleration_particle_motion.md",
+    "topicwise_answers/2.06_area_volume_triple_products.md",
+    "topicwise_answers/2.05_vector_basics.md",
+    "topicwise_answers/2.04_irrotational_conservative_fields.md",
+    "topicwise_answers/2.03_line_integrals.md",
+    "topicwise_answers/2.02_gradient_and_directional_derivative.md",
+    "topicwise_answers/2.01_greens_theorem.md",
+    "topicwise_answers/1.07_matrix_ode_and_diagonalization.md",
+    "topicwise_answers/1.06_matrix_types_and_properties.md",
+    "topicwise_answers/1.05_adjoint_and_inverse.md",
+    "topicwise_answers/1.04_cayley_hamilton_theorem.md",
     "topicwise_answers",
     "dup_analysis.txt",
     "CT_Questions/MathMatrixCT1.jpg",
