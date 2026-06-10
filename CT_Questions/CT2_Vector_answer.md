@@ -18,7 +18,11 @@ $$
 
 We calculate the curl of $\vec{F}$:
 $$
-\vec{\nabla} \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x + 2y + az & bx - 3y - z & 4x + cy + 2z \end{vmatrix} = 0
+\vec{\nabla} \times \vec{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x + 2y + az & bx - 3y - z & 4x + cy + 2z
+\end{vmatrix} = 0
 $$
 
 Let us expand this determinant:

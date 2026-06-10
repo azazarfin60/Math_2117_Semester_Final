@@ -22,7 +22,11 @@ $$4x_1 - 3x_2 - x_3 = 3$$
 We write the augmented matrix of the system:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 3 & 1 & -2 & | & 1 \\ 4 & -3 & -1 & | & 3 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+3 & 1 & -2 & | & 1 \\
+4 & -3 & -1 & | & 3
+\end{bmatrix}
 $$
 
 We perform row operations to reduce it:
@@ -32,19 +36,31 @@ We perform row operations to reduce it:
 This gives:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & -4 & -7 & | & -4 \\ 0 & -7 & -3 & | & -1 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & -4 & -7 & | & -4 \\
+0 & -7 & -3 & | & -1
+\end{bmatrix}
 $$
 
 Multiply the second and third rows by $-1$:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & 4 & 7 & | & 4 \\ 0 & 7 & 3 & | & 1 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & 4 & 7 & | & 4 \\
+0 & 7 & 3 & | & 1
+\end{bmatrix}
 $$
 
 Now perform row operation $R_3 \to 4R_3 - 7R_2$:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & 4 & 7 & | & 4 \\ 0 & 0 & -37 & | & -24 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & 4 & 7 & | & 4 \\
+0 & 0 & -37 & | & -24
+\end{bmatrix}
 $$
 
 Now we solve the variables by back substitution. From the third row:
@@ -103,7 +119,11 @@ $$x + 4y + 10z = \lambda^2$$
 We write the augmented matrix of the system:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 1 & 2 & 4 & | & \lambda \\ 1 & 4 & 10 & | & \lambda^2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+1 & 2 & 4 & | & \lambda \\
+1 & 4 & 10 & | & \lambda^2
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -113,13 +133,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & \lambda - 1 \\ 0 & 3 & 9 & | & \lambda^2 - 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & \lambda - 1 \\
+0 & 3 & 9 & | & \lambda^2 - 1
+\end{bmatrix}
 $$
 
 Now eliminate row 3 using row 2 ($R_3 \to R_3 - 3R_2$):
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & \lambda - 1 \\ 0 & 0 & 0 & | & \lambda^2 - 3\lambda + 2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & \lambda - 1 \\
+0 & 0 & 0 & | & \lambda^2 - 3\lambda + 2
+\end{bmatrix}
 $$
 
 A solution exists if the system is consistent:
@@ -135,7 +163,11 @@ We solve the system for each case:
 The augmented matrix is:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & 0 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & 0 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 From row 2:
@@ -161,7 +193,11 @@ $$
 The augmented matrix is:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & 1 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & 1 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 From row 2:
@@ -202,13 +238,21 @@ $$x_1 - 3x_2 + 5x_3 = 0$$
 We write the augmented matrix of this homogeneous system:
 
 $$
-\begin{bmatrix} 2 & -1 & 1 & | & 0 \\ 3 & 2 & 1 & | & 0 \\ 1 & -3 & 5 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+2 & -1 & 1 & | & 0 \\
+3 & 2 & 1 & | & 0 \\
+1 & -3 & 5 & | & 0
+\end{bmatrix}
 $$
 
 We swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
 
 $$
-\begin{bmatrix} 1 & -3 & 5 & | & 0 \\ 3 & 2 & 1 & | & 0 \\ 2 & -1 & 1 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 & | & 0 \\
+3 & 2 & 1 & | & 0 \\
+2 & -1 & 1 & | & 0
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -218,13 +262,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 & | & 0 \\ 0 & 11 & -14 & | & 0 \\ 0 & 5 & -9 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 & | & 0 \\
+0 & 11 & -14 & | & 0 \\
+0 & 5 & -9 & | & 0
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to 11R_3 - 5R_2$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 & | & 0 \\ 0 & 11 & -14 & | & 0 \\ 0 & 0 & -29 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 & | & 0 \\
+0 & 11 & -14 & | & 0 \\
+0 & 0 & -29 & | & 0
+\end{bmatrix}
 $$
 
 By back substitution, we solve the system:
@@ -482,7 +534,11 @@ $$x + 2y + \lambda z = \mu$$
 We write the augmented matrix of the system:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 1 & 2 & 3 & | & 10 \\ 1 & 2 & \lambda & | & \mu \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+1 & 2 & 3 & | & 10 \\
+1 & 2 & \lambda & | & \mu
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -492,13 +548,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 0 & 1 & 2 & | & 4 \\ 0 & 1 & \lambda - 1 & | & \mu - 6 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+0 & 1 & 2 & | & 4 \\
+0 & 1 & \lambda - 1 & | & \mu - 6
+\end{bmatrix}
 $$
 
 Now eliminate row 3 using row 2 ($R_3 \to R_3 - R_2$):
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 0 & 1 & 2 & | & 4 \\ 0 & 0 & \lambda - 3 & | & \mu - 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+0 & 1 & 2 & | & 4 \\
+0 & 0 & \lambda - 3 & | & \mu - 10
+\end{bmatrix}
 $$
 
 Now we investigate:
@@ -549,19 +613,35 @@ $$x + y + \lambda z = \lambda^2$$
 We write the determinant of the coefficient matrix:
 
 $$
-D = \begin{vmatrix} \lambda & 1 & 1 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix}
+D = \begin{vmatrix}
+\lambda & 1 & 1 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix}
 $$
 
 Add rows 2 and 3 to row 1:
 
 $$
-D = \begin{vmatrix} \lambda+2 & \lambda+2 & \lambda+2 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix} = (\lambda + 2) \begin{vmatrix} 1 & 1 & 1 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix}
+D = \begin{vmatrix}
+\lambda+2 & \lambda+2 & \lambda+2 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix} = (\lambda + 2) \begin{vmatrix}
+1 & 1 & 1 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix}
 $$
 
 Apply column operations ($C_2 \to C_2 - C_1$, $C_3 \to C_3 - C_1$):
 
 $$
-D = (\lambda + 2) \begin{vmatrix} 1 & 0 & 0 \\ 1 & \lambda-1 & 0 \\ 1 & 0 & \lambda-1 \end{vmatrix} = (\lambda + 2)(\lambda - 1)^2
+D = (\lambda + 2) \begin{vmatrix}
+1 & 0 & 0 \\
+1 & \lambda-1 & 0 \\
+1 & 0 & \lambda-1
+\end{vmatrix} = (\lambda + 2)(\lambda - 1)^2
 $$
 
 We investigate the cases:
@@ -636,7 +716,11 @@ $$x + 5y - 4z = 5$$
 We write the augmented matrix:
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 2 & 1 & 1 & | & 1 \\ 1 & 5 & -4 & | & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+2 & 1 & 1 & | & 1 \\
+1 & 5 & -4 & | & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -646,19 +730,31 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 0 & -3 & 3 & | & -3 \\ 0 & 3 & -3 & | & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+0 & -3 & 3 & | & -3 \\
+0 & 3 & -3 & | & 3
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to R_3 + R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 0 & -3 & 3 & | & -3 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+0 & -3 & 3 & | & -3 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 Scale row 2 ($R_2 \to -1/3 R_2$):
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 0 & 1 & -1 & | & 1 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+0 & 1 & -1 & | & 1 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 This system is consistent. From row 2:

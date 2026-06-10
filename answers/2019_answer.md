@@ -58,13 +58,26 @@ $$
 We calculate the scalar triple product using the determinant:
 
 $$
-\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} 2 & -3 & 4 \\ 1 & 2 & -1 \\ 3 & -1 & 2 \end{vmatrix}
+\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix}
+2 & -3 & 4 \\
+1 & 2 & -1 \\
+3 & -1 & 2
+\end{vmatrix}
 $$
 
 Expand along the first row:
 
 $$
-= 2 \begin{vmatrix} 2 & -1 \\ -1 & 2 \end{vmatrix} - (-3) \begin{vmatrix} 1 & -1 \\ 3 & 2 \end{vmatrix} + 4 \begin{vmatrix} 1 & 2 \\ 3 & -1 \end{vmatrix}
+= 2 \begin{vmatrix}
+2 & -1 \\
+-1 & 2
+\end{vmatrix} - (-3) \begin{vmatrix}
+1 & -1 \\
+3 & 2
+\end{vmatrix} + 4 \begin{vmatrix}
+1 & 2 \\
+3 & -1
+\end{vmatrix}
 $$
 
 $$
@@ -402,7 +415,11 @@ $$
 Writing this in determinant form:
 
 $$
-\vec{\nabla} \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ \frac{\partial\phi}{\partial x} & \frac{\partial\phi}{\partial y} & \frac{\partial\phi}{\partial z} \end{vmatrix}
+\vec{\nabla} \times \vec{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+\frac{\partial\phi}{\partial x} & \frac{\partial\phi}{\partial y} & \frac{\partial\phi}{\partial z}
+\end{vmatrix}
 $$
 
 $$
@@ -663,7 +680,15 @@ $$
 By applying a finite sequence of elementary row and column operations, any non-zero matrix $A$ of rank $r$ can be reduced to one of the following forms:
 
 $$
-[I_r], \quad [I_r \quad | \quad 0], \quad \begin{bmatrix} I_r \\ -- \\ 0 \end{bmatrix}, \quad \begin{bmatrix} I_r & | & 0 \\ -- & - & -- \\ 0 & | & 0 \end{bmatrix}
+[I_r], \quad [I_r \quad | \quad 0], \quad \begin{bmatrix}
+I_r \\
+-- \\
+0
+\end{bmatrix}, \quad \begin{bmatrix}
+I_r & | & 0 \\
+-- & - & -- \\
+0 & | & 0
+\end{bmatrix}
 $$
 
 where $I_r$ is the identity matrix of order $r$. This form is called the **normal form** (or **canonical form**) of the matrix. The rank of the matrix is equal to the order of the identity matrix $I_r$ in this form.
@@ -1089,7 +1114,15 @@ $$
 0 & 3 & 0 \\
 3 & -3 & -1 \\
 0 & -1 & 0
-\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1 and row 3, we get $y = 0$. Substitute $y=0$ into row 2:
@@ -1101,7 +1134,11 @@ $$
 Let $x = 1$. The first eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}
+X_1 = \begin{bmatrix}
+1 \\
+0 \\
+3
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda_2 = 3$
@@ -1111,7 +1148,15 @@ $$
 -2 & 3 & 0 \\
 3 & -5 & -1 \\
 0 & -1 & -2
-\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1:
@@ -1129,7 +1174,11 @@ $$
 Let $y = 2$. Then $x = 3$ and $z = -1$. The second eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 3 \\ 2 \\ -1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+3 \\
+2 \\
+-1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda_3 = -4$
@@ -1139,7 +1188,15 @@ $$
 5 & 3 & 0 \\
 3 & 2 & -1 \\
 0 & -1 & 5
-\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1:
@@ -1157,12 +1214,20 @@ $$
 Let $x = 3$. Then $y = -5$ and $z = -1$. The third eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 3 \\ -5 \\ -1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+3 \\
+-5 \\
+-1
+\end{bmatrix}
 $$
 
 ---
 
-### Q7(b) Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix}$ and hence find $A^{-1}$. (06)
+### Q7(b) Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix}$ and hence find $A^{-1}$. (06)
 
 **Answer:**
 
@@ -1171,7 +1236,11 @@ $$
 The characteristic equation is $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & -1 & 1 \\ -1 & 2-\lambda & -1 \\ 1 & -1 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & -1 & 1 \\
+-1 & 2-\lambda & -1 \\
+1 & -1 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 Calculate the determinant:
@@ -1199,17 +1268,57 @@ $$
 We calculate $A^2$ and $A^3$:
 
 $$
-A^2 = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix}
+A^2 = \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix} \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix} = \begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix}
 $$
 
 $$
-A^3 = A^2 A = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix}
+A^3 = A^2 A = \begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix} \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix} = \begin{pmatrix}
+22 & -21 & 21 \\
+-21 & 22 & -21 \\
+21 & -21 & 22
+\end{pmatrix}
 $$
 
 Now substitute $A^3$, $A^2$, $A$, and $I$ into the expression:
 
 $$
-A^3 - 6A^2 + 9A - 4I = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix} - \begin{pmatrix} 36 & -30 & 30 \\ -30 & 36 & -30 \\ 30 & -30 & 36 \end{pmatrix} + \begin{pmatrix} 18 & -9 & 9 \\ -9 & 18 & -9 \\ 9 & -9 & 18 \end{pmatrix} - \begin{pmatrix} 4 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & 4 \end{pmatrix}
+A^3 - 6A^2 + 9A - 4I = \begin{pmatrix}
+22 & -21 & 21 \\
+-21 & 22 & -21 \\
+21 & -21 & 22
+\end{pmatrix} - \begin{pmatrix}
+36 & -30 & 30 \\
+-30 & 36 & -30 \\
+30 & -30 & 36
+\end{pmatrix} + \begin{pmatrix}
+18 & -9 & 9 \\
+-9 & 18 & -9 \\
+9 & -9 & 18
+\end{pmatrix} - \begin{pmatrix}
+4 & 0 & 0 \\
+0 & 4 & 0 \\
+0 & 0 & 4
+\end{pmatrix}
 $$
 
 Calculate the matrix elements:
@@ -1227,11 +1336,31 @@ A^2 - 6A + 9I - 4A^{-1} = 0 \implies 4A^{-1} = A^2 - 6A + 9I
 $$
 
 $$
-4A^{-1} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} - \begin{pmatrix} 12 & -6 & 6 \\ -6 & 12 & -6 \\ 6 & -6 & 12 \end{pmatrix} + \begin{pmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{pmatrix}
+4A^{-1} = \begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix} - \begin{pmatrix}
+12 & -6 & 6 \\
+-6 & 12 & -6 \\
+6 & -6 & 12
+\end{pmatrix} + \begin{pmatrix}
+9 & 0 & 0 \\
+0 & 9 & 0 \\
+0 & 0 & 9
+\end{pmatrix}
 $$
 
 $$
-4A^{-1} = \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix} \implies A^{-1} = \frac{1}{4} \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix}
+4A^{-1} = \begin{pmatrix}
+3 & 1 & -1 \\
+1 & 3 & 1 \\
+-1 & 1 & 3
+\end{pmatrix} \implies A^{-1} = \frac{1}{4} \begin{pmatrix}
+3 & 1 & -1 \\
+1 & 3 & 1 \\
+-1 & 1 & 3
+\end{pmatrix}
 $$
 
 ---

@@ -23,7 +23,11 @@ This file contains the organized questions and answers for **Basis and Dimension
 We write the generating vectors as rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 2 & 3 & 1 & -4 \\ 3 & 8 & -3 & -5 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+2 & 3 & 1 & -4 \\
+3 & 8 & -3 & -5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -33,13 +37,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 14 & -18 & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 14 & -18 & 4
+\end{bmatrix}
 $$
 
 Now eliminate row 3 using row 2 ($R_3 \to R_3 - 2R_2$):
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 The non-zero rows of this echelon matrix form a basis for $w$:
@@ -87,7 +99,12 @@ $$
 We write these vectors as the rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 2 & -3 & 9 & -1 \\ 1 & 0 & 6 & -5 \\ 2 & -5 & 7 & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+2 & -3 & 9 & -1 \\
+1 & 0 & 6 & -5 \\
+2 & -5 & 7 & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -98,7 +115,12 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 0 & 1 & 1 & -3 \\ 0 & 2 & 2 & -6 \\ 0 & -1 & -1 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+0 & 1 & 1 & -3 \\
+0 & 2 & 2 & -6 \\
+0 & -1 & -1 & 3
+\end{bmatrix}
 $$
 
 Now perform operations on row 3 and row 4:
@@ -108,7 +130,12 @@ Now perform operations on row 3 and row 4:
 This gives the echelon form:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 0 & 1 & 1 & -3 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+0 & 1 & 1 & -3 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 The non-zero rows form the basis vectors for the subspace:
@@ -142,7 +169,12 @@ $$
 We write the vectors as rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 1 & 2 & 3 & 2 \\ 2 & 5 & 6 & 4 \\ 2 & 6 & 8 & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & 2 & 3 & 2 \\
+2 & 5 & 6 & 4 \\
+2 & 6 & 8 & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -153,7 +185,12 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 3 & 4 & 2 \\ 0 & 4 & 6 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 2 & 1 \\
+0 & 3 & 4 & 2 \\
+0 & 4 & 6 & 3
+\end{bmatrix}
 $$
 
 Apply operations:
@@ -163,13 +200,23 @@ Apply operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & -2 & -1 \\ 0 & 0 & -2 & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 2 & 1 \\
+0 & 0 & -2 & -1 \\
+0 & 0 & -2 & -1
+\end{bmatrix}
 $$
 
 Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & -2 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 2 & 1 \\
+0 & 0 & -2 & -1 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Since the last row is zero, the vectors are linearly dependent. Therefore, they do not form a basis of $\mathbb{R}^4$.
@@ -194,19 +241,31 @@ $$
 We write the spanning vectors as the rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 0 & -1 & 0 \\ 2 & 0 & 2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+0 & -1 & 0 \\
+2 & 0 & 2
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 0 & -1 & 0 \\ 0 & -4 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+0 & -1 & 0 \\
+0 & -4 & 0
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to R_3 - 4R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 0 & -1 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+0 & -1 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 The non-zero rows of the echelon matrix form a basis:

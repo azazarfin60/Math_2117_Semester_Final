@@ -4,7 +4,11 @@ This file contains the organized questions and answers for **Eigenvalues and Eig
 
 ---
 
-## Q1. Determine the characteristic roots of $\begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}$. (04)
+## Q1. Determine the characteristic roots of $\begin{pmatrix}
+1 & 2 & 3 \\
+0 & -4 & 2 \\
+0 & 0 & 7
+\end{pmatrix}$. (04)
 
 | | |
 |---|---|
@@ -16,13 +20,21 @@ This file contains the organized questions and answers for **Eigenvalues and Eig
 Let the matrix be:
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}
+A = \begin{pmatrix}
+1 & 2 & 3 \\
+0 & -4 & 2 \\
+0 & 0 & 7
+\end{pmatrix}
 $$
 
 The characteristic equation is defined by $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 1-\lambda & 2 & 3 \\ 0 & -4-\lambda & 2 \\ 0 & 0 & 7-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+1-\lambda & 2 & 3 \\
+0 & -4-\lambda & 2 \\
+0 & 0 & 7-\lambda
+\end{vmatrix} = 0
 $$
 
 Since this is an upper triangular matrix, its determinant is simply the product of its diagonal elements:
@@ -41,7 +53,11 @@ So the characteristic roots (or eigenvalues) are $1$, $-4$, and $7$.
 
 ---
 
-## Q2. What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$. (12)
+## Q2. What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}$. (12)
 
 | | |
 |---|---|
@@ -66,13 +82,21 @@ then $\lambda$ is called an **eigenvalue** of $A$, and $X$ is called the corresp
 Let the matrix be:
 
 $$
-A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}
+A = \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}
 $$
 
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 2 & 1 \\ 1 & 3-\lambda & 1 \\ 1 & 2 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & 2 & 1 \\
+1 & 3-\lambda & 1 \\
+1 & 2 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 Expanding the determinant:
@@ -110,14 +134,30 @@ We solve the system $(A - \lambda I)X = 0$ for each eigenvalue:
 The system is:
 
 $$
-\begin{bmatrix} -3 & 2 & 1 \\ 1 & -2 & 1 \\ 1 & 2 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-3 & 2 & 1 \\
+1 & -2 & 1 \\
+1 & 2 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 We apply row operations:
 *   Swap $R_1 \leftrightarrow R_2$:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ -3 & 2 & 1 \\ 1 & 2 & -3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+-3 & 2 & 1 \\
+1 & 2 & -3
+\end{bmatrix}
 $$
 
 *   $R_2 \to R_2 + 3R_1$
@@ -126,14 +166,22 @@ $$
 This gives:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ 0 & -4 & 4 \\ 0 & 4 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+0 & -4 & 4 \\
+0 & 4 & -4
+\end{bmatrix}
 $$
 
 *   $R_3 \to R_3 + R_2$
 *   Divide row 2 by $-4$:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+0 & 1 & -1 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 This gives the relationships:
@@ -149,7 +197,11 @@ $$
 Let $z = 1$. This gives the eigenvector:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 1$
@@ -157,7 +209,19 @@ $$
 The system is:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+1 & 2 & 1 \\
+1 & 2 & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 This reduces to a single equation:
@@ -169,13 +233,33 @@ $$
 Here we have two free variables. Let $y = s$ and $z = t$. The eigenvectors are:
 
 $$
-X = \begin{bmatrix} -2s - t \\ s \\ t \end{bmatrix} = s \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix} + t \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X = \begin{bmatrix}
+-2s - t \\
+s \\
+t
+\end{bmatrix} = s \begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix} + t \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 So the two linearly independent eigenvectors for $\lambda = 1$ are:
 
 $$
-X_2 = \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix}, \quad X_3 = \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -252,7 +336,15 @@ $$
 0 & 3 & 0 \\
 3 & -3 & -1 \\
 0 & -1 & 0
-\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1 and row 3, we get $y = 0$. Substitute $y=0$ into row 2:
@@ -264,7 +356,11 @@ $$
 Let $x = 1$. The first eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}
+X_1 = \begin{bmatrix}
+1 \\
+0 \\
+3
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda_2 = 3$
@@ -274,7 +370,15 @@ $$
 -2 & 3 & 0 \\
 3 & -5 & -1 \\
 0 & -1 & -2
-\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1:
@@ -292,7 +396,11 @@ $$
 Let $y = 2$. Then $x = 3$ and $z = -1$. The second eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 3 \\ 2 \\ -1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+3 \\
+2 \\
+-1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda_3 = -4$
@@ -302,7 +410,15 @@ $$
 5 & 3 & 0 \\
 3 & 2 & -1 \\
 0 & -1 & 5
-\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1:
@@ -320,12 +436,20 @@ $$
 Let $x = 3$. Then $y = -5$ and $z = -1$. The third eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 3 \\ -5 \\ -1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+3 \\
+-5 \\
+-1
+\end{bmatrix}
 $$
 
 ---
 
-## Q4. Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix} 1 & 1 & -2 \\ -1 & 2 & 1 \\ 0 & 1 & -1 \end{bmatrix}$. (06)
+## Q4. Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix}
+1 & 1 & -2 \\
+-1 & 2 & 1 \\
+0 & 1 & -1
+\end{bmatrix}$. (06)
 
 | | |
 |---|---|
@@ -339,7 +463,11 @@ $$
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 1-\lambda & 1 & -2 \\ -1 & 2-\lambda & 1 \\ 0 & 1 & -1-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+1-\lambda & 1 & -2 \\
+-1 & 2-\lambda & 1 \\
+0 & 1 & -1-\lambda
+\end{vmatrix} = 0
 $$
 
 Expanding the determinant yields the equation:
@@ -367,7 +495,19 @@ $$
 We solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 & -2 \\ -1 & 1 & 1 \\ 0 & 1 & -2 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & -2 \\
+-1 & 1 & 1 \\
+0 & 1 & -2
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1:
@@ -385,7 +525,11 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} 3 \\ 2 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+3 \\
+2 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = -1$
@@ -393,7 +537,19 @@ $$
 We solve $(A + I)X = 0$:
 
 $$
-\begin{bmatrix} 2 & 1 & -2 \\ -1 & 3 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & -2 \\
+-1 & 3 & 1 \\
+0 & 1 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 3:
@@ -411,7 +567,11 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda = 2$
@@ -419,7 +579,19 @@ $$
 We solve $(A - 2I)X = 0$:
 
 $$
-\begin{bmatrix} -1 & 1 & -2 \\ -1 & 0 & 1 \\ 0 & 1 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-1 & 1 & -2 \\
+-1 & 0 & 1 \\
+0 & 1 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 2:
@@ -437,12 +609,19 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 1 \\ 3 \\ 1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+1 \\
+3 \\
+1
+\end{bmatrix}
 $$
 
 ---
 
-## Q5. Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix} 2 & 3 \\ 1 & 4 \end{bmatrix}$. (06)
+## Q5. Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix}
+2 & 3 \\
+1 & 4
+\end{bmatrix}$. (06)
 
 | | |
 |---|---|
@@ -456,7 +635,10 @@ $$
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 3 \\ 1 & 4-\lambda \end{vmatrix} = 0 \implies (2-\lambda)(4-\lambda) - 3 = 0
+\begin{vmatrix}
+2-\lambda & 3 \\
+1 & 4-\lambda
+\end{vmatrix} = 0 \implies (2-\lambda)(4-\lambda) - 3 = 0
 $$
 
 $$
@@ -476,13 +658,25 @@ $$
 We solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 3 \\ 1 & 3 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies x + 3y = 0 \implies x = -3y
+\begin{bmatrix}
+1 & 3 \\
+1 & 3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \implies x + 3y = 0 \implies x = -3y
 $$
 
 Let $y = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} -3 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+-3 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 5$
@@ -490,13 +684,25 @@ $$
 We solve $(A - 5I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 3 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies x - y = 0 \implies x = y
+\begin{bmatrix}
+-3 & 3 \\
+1 & -1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \implies x - y = 0 \implies x = y
 $$
 
 Let $y = 1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -510,7 +716,11 @@ $$
 
 **Answer:**
 
-$$A = \begin{bmatrix} 2 & 1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix}$$
+$$A = \begin{bmatrix}
+2 & 1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{bmatrix}$$
 
 **Answer:**
 
@@ -519,7 +729,11 @@ $$A = \begin{bmatrix} 2 & 1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix}$$
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 1 & 1 \\ -1 & 2-\lambda & -1 \\ 1 & -1 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & 1 & 1 \\
+-1 & 2-\lambda & -1 \\
+1 & -1 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 The expansion of this determinant yields:
@@ -541,19 +755,39 @@ $$
 We solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ -1 & 1 & -1 \\ 1 & -1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+-1 & 1 & -1 \\
+1 & -1 & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 Perform operations $R_2 \to R_2 + R_1$, $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ 0 & 2 & 0 \\ 0 & -2 & 0 \end{bmatrix} \implies y = 0 \quad \text{and} \quad x + z = 0 \implies x = -z
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 0 \\
+0 & -2 & 0
+\end{bmatrix} \implies y = 0 \quad \text{and} \quad x + z = 0 \implies x = -z
 $$
 
 Let $z = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 2$
@@ -561,7 +795,19 @@ $$
 We solve $(A - 2I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 & 1 \\ -1 & 0 & -1 \\ 1 & -1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 1 \\
+-1 & 0 & -1 \\
+1 & -1 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1: $y + z = 0 \implies y = -z$. From row 2: $-x - z = 0 \implies x = -z$.
@@ -569,7 +815,11 @@ From row 1: $y + z = 0 \implies y = -z$. From row 2: $-x - z = 0 \implies x = -z
 Let $z = -1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+1 \\
+-1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda = 3$
@@ -577,19 +827,39 @@ $$
 We solve $(A - 3I)X = 0$:
 
 $$
-\begin{bmatrix} -1 & 1 & 1 \\ -1 & -1 & -1 \\ 1 & -1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-1 & 1 & 1 \\
+-1 & -1 & -1 \\
+1 & -1 & -1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 Subtract row 1 from row 2 ($R_2 \to R_2 - R_1$):
 
 $$
-\begin{bmatrix} -1 & 1 & 1 \\ 0 & -2 & -2 \\ 1 & -1 & -1 \end{bmatrix} \implies y + z = 0 \implies y = -z \quad \text{and} \quad x = 0
+\begin{bmatrix}
+-1 & 1 & 1 \\
+0 & -2 & -2 \\
+1 & -1 & -1
+\end{bmatrix} \implies y + z = 0 \implies y = -z \quad \text{and} \quad x = 0
 $$
 
 Let $z = 1$. The eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 0 \\ -1 \\ 1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+0 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -678,7 +948,19 @@ $$
 We solve $(A - 2I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ 1 & 3 & 1 \\ 1 & 1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 3 & 1 \\
+1 & 1 & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 We apply row operations:
@@ -688,7 +970,11 @@ We apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 From the second row, we get $2y = 0 \implies y = 0$.
@@ -697,14 +983,30 @@ From the first row, we get $x + y + z = 0 \implies x + z = 0 \implies x = -z$.
 Let $z = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 3$
 We solve $(A - 3I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 & 1 \\ 1 & 2 & 1 \\ 1 & 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 1 \\
+1 & 2 & 1 \\
+1 & 1 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From the first row, we get $y + z = 0 \implies y = -z$.
@@ -713,20 +1015,40 @@ From the third row, we get $x + y = 0 \implies x = -y = z$.
 Let $z = 1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda = 6$
 We solve $(A - 6I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 1 & 1 \\ 1 & -1 & 1 \\ 1 & 1 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-3 & 1 & 1 \\
+1 & -1 & 1 \\
+1 & 1 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 We swap rows $R_1 \leftrightarrow R_2$:
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ -3 & 1 & 1 \\ 1 & 1 & -3 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+-3 & 1 & 1 \\
+1 & 1 & -3
+\end{bmatrix}
 $$
 
 We apply row operations:
@@ -736,19 +1058,31 @@ We apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ 0 & -2 & 4 \\ 0 & 2 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+0 & -2 & 4 \\
+0 & 2 & -4
+\end{bmatrix}
 $$
 
 We scale the second row ($R_2 \to -\frac{1}{2}R_2$):
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & -2 \\ 0 & 2 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+0 & 1 & -2 \\
+0 & 2 & -4
+\end{bmatrix}
 $$
 
 We perform $R_3 \to R_3 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & -2 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+0 & 1 & -2 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 From the second row, we get $y - 2z = 0 \implies y = 2z$.
@@ -757,7 +1091,11 @@ From the first row, we get $x - y + z = 0 \implies x - 2z + z = 0 \implies x = z
 Let $z = 1$. The eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+1 \\
+2 \\
+1
+\end{bmatrix}
 $$
 
 ---

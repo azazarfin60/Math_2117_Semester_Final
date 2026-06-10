@@ -37,7 +37,11 @@ $$
 Calculate the cross product of the first two derivatives:
 
 $$
-\vec{r}' \times \vec{r}'' = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 2t & 2t^2 \\ 0 & 2 & 4t \end{vmatrix} = \hat{i}(8t^2 - 4t^2) - \hat{j}(4t - 0) + \hat{k}(2 - 0) = 4t^2\hat{i} - 4t\hat{j} + 2\hat{k}
+\vec{r}' \times \vec{r}'' = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+1 & 2t & 2t^2 \\
+0 & 2 & 4t
+\end{vmatrix} = \hat{i}(8t^2 - 4t^2) - \hat{j}(4t - 0) + \hat{k}(2 - 0) = 4t^2\hat{i} - 4t\hat{j} + 2\hat{k}
 $$
 
 Find the magnitudes:

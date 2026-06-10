@@ -66,7 +66,11 @@ $$
 Now calculate the term $\vec{\nabla} \times (A_1\hat{i})$:
 
 $$
-\vec{\nabla} \times (A_1\hat{i}) = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ A_1 & 0 & 0 \end{vmatrix} = \frac{\partial A_1}{\partial z}\hat{j} - \frac{\partial A_1}{\partial y}\hat{k}
+\vec{\nabla} \times (A_1\hat{i}) = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+A_1 & 0 & 0
+\end{vmatrix} = \frac{\partial A_1}{\partial z}\hat{j} - \frac{\partial A_1}{\partial y}\hat{k}
 $$
 
 For the surface $z - f(x, y) = 0$, the normal vector gives the relation:
@@ -174,7 +178,11 @@ $$
 First, we find the curl of $\vec{A}$:
 
 $$
-\nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y-z+2 & yz+4 & -xz \end{vmatrix}
+\nabla \times \vec{A} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y-z+2 & yz+4 & -xz
+\end{vmatrix}
 $$
 
 $$

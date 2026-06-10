@@ -21,7 +21,11 @@
 We set up a matrix with the given vectors as its rows. The vectors are linearly dependent if the determinant of this matrix is zero:
 
 $$
-D = \begin{vmatrix} 2 & 1 & -3 \\ 1 & 0 & -4 \\ 4 & 3 & -1 \end{vmatrix}
+D = \begin{vmatrix}
+2 & 1 & -3 \\
+1 & 0 & -4 \\
+4 & 3 & -1
+\end{vmatrix}
 $$
 
 We expand the determinant along the first row:
@@ -119,7 +123,11 @@ $$
 We set up the curl calculation:
 
 $$
-\bar{\nabla} \times \bar{V} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x + 2y + az & bx - 3y - z & 4x + cy + 2z \end{vmatrix} = 0
+\bar{\nabla} \times \bar{V} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x + 2y + az & bx - 3y - z & 4x + cy + 2z
+\end{vmatrix} = 0
 $$
 
 Expand the determinant:
@@ -197,7 +205,11 @@ This completes the proof.
 The force field is conservative if its curl is zero:
 
 $$
-\bar{\nabla} \times \bar{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y^2 \cos x + z^3 & 2y \sin x - 4 & 3xz^2 + 2 \end{vmatrix}
+\bar{\nabla} \times \bar{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y^2 \cos x + z^3 & 2y \sin x - 4 & 3xz^2 + 2
+\end{vmatrix}
 $$
 
 Calculate the components:
@@ -686,7 +698,10 @@ $$
 *Example:*
 
 $$
-\begin{pmatrix} 1 & 2 \\ 2 & 5 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 \\
+2 & 5
+\end{pmatrix}
 $$
 
 #### Skew-Symmetric Matrix
@@ -702,7 +717,10 @@ The diagonal elements of a skew-symmetric matrix are always zero.
 *Example:*
 
 $$
-\begin{pmatrix} 0 & -3 \\ 3 & 0 \end{pmatrix}
+\begin{pmatrix}
+0 & -3 \\
+3 & 0
+\end{pmatrix}
 $$
 
 #### Hermitian Matrix
@@ -716,7 +734,10 @@ $$
 *Example:*
 
 $$
-\begin{pmatrix} 2 & 1+i \\ 1-i & 3 \end{pmatrix}
+\begin{pmatrix}
+2 & 1+i \\
+1-i & 3
+\end{pmatrix}
 $$
 
 ---
@@ -780,7 +801,12 @@ So the statement is true for $n=k+1$. The proof is complete.
 
 ---
 
-### Q5(c) What is rank of a matrix? Find the rank of $A = \begin{pmatrix} 1 & -2 & 1 & -1 \\ 1 & 1 & -2 & 3 \\ 4 & 1 & -5 & 8 \\ 5 & -7 & 2 & -1 \end{pmatrix}$. (04)
+### Q5(c) What is rank of a matrix? Find the rank of $A = \begin{pmatrix}
+1 & -2 & 1 & -1 \\
+1 & 1 & -2 & 3 \\
+4 & 1 & -5 & 8 \\
+5 & -7 & 2 & -1
+\end{pmatrix}$. (04)
 
 **Answer:**
 
@@ -793,7 +819,12 @@ The rank of a matrix is the maximum number of linearly independent rows in it. I
 Let the matrix be:
 
 $$
-A = \begin{pmatrix} 1 & -2 & 1 & -1 \\ 1 & 1 & -2 & 3 \\ 4 & 1 & -5 & 8 \\ 5 & -7 & 2 & -1 \end{pmatrix}
+A = \begin{pmatrix}
+1 & -2 & 1 & -1 \\
+1 & 1 & -2 & 3 \\
+4 & 1 & -5 & 8 \\
+5 & -7 & 2 & -1
+\end{pmatrix}
 $$
 
 We apply row operations:
@@ -804,7 +835,12 @@ We apply row operations:
 This gives:
 
 $$
-\begin{pmatrix} 1 & -2 & 1 & -1 \\ 0 & 3 & -3 & 4 \\ 0 & 9 & -9 & 12 \\ 0 & 3 & -3 & 4 \end{pmatrix}
+\begin{pmatrix}
+1 & -2 & 1 & -1 \\
+0 & 3 & -3 & 4 \\
+0 & 9 & -9 & 12 \\
+0 & 3 & -3 & 4
+\end{pmatrix}
 $$
 
 Now perform operations on rows 3 and 4:
@@ -814,7 +850,12 @@ Now perform operations on rows 3 and 4:
 This gives:
 
 $$
-\begin{pmatrix} 1 & -2 & 1 & -1 \\ 0 & 3 & -3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & -2 & 1 & -1 \\
+0 & 3 & -3 & 4 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 The matrix is now in echelon form. The number of non-zero rows is $2$.
@@ -833,7 +874,11 @@ $$x + 4y + 10z = \lambda^2$$
 We write the augmented matrix of the system:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 1 & 2 & 4 & | & \lambda \\ 1 & 4 & 10 & | & \lambda^2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+1 & 2 & 4 & | & \lambda \\
+1 & 4 & 10 & | & \lambda^2
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -843,13 +888,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & \lambda - 1 \\ 0 & 3 & 9 & | & \lambda^2 - 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & \lambda - 1 \\
+0 & 3 & 9 & | & \lambda^2 - 1
+\end{bmatrix}
 $$
 
 Now eliminate row 3 using row 2 ($R_3 \to R_3 - 3R_2$):
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & \lambda - 1 \\ 0 & 0 & 0 & | & \lambda^2 - 3\lambda + 2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & \lambda - 1 \\
+0 & 0 & 0 & | & \lambda^2 - 3\lambda + 2
+\end{bmatrix}
 $$
 
 A solution exists if the system is consistent:
@@ -865,7 +918,11 @@ We solve the system for each case:
 The augmented matrix is:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & 0 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & 0 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 From row 2:
@@ -891,7 +948,11 @@ $$
 The augmented matrix is:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & 1 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & 1 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 From row 2:
@@ -924,13 +985,21 @@ $$x_1 - 3x_2 + 5x_3 = 0$$
 We write the augmented matrix of this homogeneous system:
 
 $$
-\begin{bmatrix} 2 & -1 & 1 & | & 0 \\ 3 & 2 & 1 & | & 0 \\ 1 & -3 & 5 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+2 & -1 & 1 & | & 0 \\
+3 & 2 & 1 & | & 0 \\
+1 & -3 & 5 & | & 0
+\end{bmatrix}
 $$
 
 We swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
 
 $$
-\begin{bmatrix} 1 & -3 & 5 & | & 0 \\ 3 & 2 & 1 & | & 0 \\ 2 & -1 & 1 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 & | & 0 \\
+3 & 2 & 1 & | & 0 \\
+2 & -1 & 1 & | & 0
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -940,13 +1009,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 & | & 0 \\ 0 & 11 & -14 & | & 0 \\ 0 & 5 & -9 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 & | & 0 \\
+0 & 11 & -14 & | & 0 \\
+0 & 5 & -9 & | & 0
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to 11R_3 - 5R_2$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 & | & 0 \\ 0 & 11 & -14 & | & 0 \\ 0 & 0 & -29 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 & | & 0 \\
+0 & 11 & -14 & | & 0 \\
+0 & 0 & -29 & | & 0
+\end{bmatrix}
 $$
 
 By back substitution, we solve the system:
@@ -962,7 +1039,11 @@ $$
 
 ---
 
-### Q7(a) Define eigen values and eigen vectors. Find the eigen values and associated eigen vectors of $B = \begin{pmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{pmatrix}$. (06)
+### Q7(a) Define eigen values and eigen vectors. Find the eigen values and associated eigen vectors of $B = \begin{pmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{pmatrix}$. (06)
 
 **Answer:**
 
@@ -975,7 +1056,11 @@ Let $B$ be a square matrix. If there is a scalar $\lambda$ and a non-zero vector
 We solve the characteristic equation $|B - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 2 & 1 \\ 1 & 3-\lambda & 1 \\ 1 & 2 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & 2 & 1 \\
+1 & 3-\lambda & 1 \\
+1 & 2 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 The expansion of this determinant gives the polynomial:
@@ -1001,7 +1086,19 @@ $$
 We solve $(B - 5I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 2 & 1 \\ 1 & -2 & 1 \\ 1 & 2 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-3 & 2 & 1 \\
+1 & -2 & 1 \\
+1 & 2 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 Reducing the matrix yields:
@@ -1013,7 +1110,11 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
+X_1 = \begin{pmatrix}
+1 \\
+1 \\
+1
+\end{pmatrix}
 $$
 
 ##### Case 2: For $\lambda = 1$
@@ -1021,7 +1122,19 @@ $$
 We solve $(B - I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+1 & 2 & 1 \\
+1 & 2 & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 This reduces to:
@@ -1033,13 +1146,29 @@ $$
 Let $y = s$ and $z = t$. The eigenvectors are:
 
 $$
-X = s \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} + t \begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix}
+X = s \begin{pmatrix}
+-2 \\
+1 \\
+0
+\end{pmatrix} + t \begin{pmatrix}
+-1 \\
+0 \\
+1
+\end{pmatrix}
 $$
 
 So the two eigenvectors are:
 
 $$
-X_2 = \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix}, \quad X_3 = \begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix}
+X_2 = \begin{pmatrix}
+-2 \\
+1 \\
+0
+\end{pmatrix}, \quad X_3 = \begin{pmatrix}
+-1 \\
+0 \\
+1
+\end{pmatrix}
 $$
 
 ---
@@ -1182,7 +1311,11 @@ A non-empty subset $W$ of a vector space $V$ is a subspace if $W$ is closed unde
 We set up a matrix with these vectors as its columns and calculate its determinant:
 
 $$
-D = \begin{vmatrix} 1 & 1 & 2 \\ 2 & -3 & -1 \\ -3 & 2 & 5 \end{vmatrix}
+D = \begin{vmatrix}
+1 & 1 & 2 \\
+2 & -3 & -1 \\
+-3 & 2 & 5
+\end{vmatrix}
 $$
 
 Expand along the first row:
@@ -1213,7 +1346,11 @@ Since the determinant is not zero ($D = -30 \neq 0$), the vectors are linearly i
 We write the generating vectors as rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 2 & 3 & 1 & -4 \\ 3 & 8 & -3 & -5 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+2 & 3 & 1 & -4 \\
+3 & 8 & -3 & -5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -1223,13 +1360,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 14 & -18 & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 14 & -18 & 4
+\end{bmatrix}
 $$
 
 Now eliminate row 3 using row 2 ($R_3 \to R_3 - 2R_2$):
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 The non-zero rows of this echelon matrix form a basis for $w$:

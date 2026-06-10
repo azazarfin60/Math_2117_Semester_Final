@@ -22,13 +22,26 @@ $$
 We calculate the scalar triple product using the determinant:
 
 $$
-\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} 2 & -3 & 4 \\ 1 & 2 & -1 \\ 3 & -1 & 2 \end{vmatrix}
+\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix}
+2 & -3 & 4 \\
+1 & 2 & -1 \\
+3 & -1 & 2
+\end{vmatrix}
 $$
 
 Expand along the first row:
 
 $$
-= 2 \begin{vmatrix} 2 & -1 \\ -1 & 2 \end{vmatrix} - (-3) \begin{vmatrix} 1 & -1 \\ 3 & 2 \end{vmatrix} + 4 \begin{vmatrix} 1 & 2 \\ 3 & -1 \end{vmatrix}
+= 2 \begin{vmatrix}
+2 & -1 \\
+-1 & 2
+\end{vmatrix} - (-3) \begin{vmatrix}
+1 & -1 \\
+3 & 2
+\end{vmatrix} + 4 \begin{vmatrix}
+1 & 2 \\
+3 & -1
+\end{vmatrix}
 $$
 
 $$
@@ -119,7 +132,11 @@ $$
 Calculate the cross product of these side vectors:
 
 $$
-\vec{PQ} \times \vec{PR} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -2 & 0 & -5 \\ 1 & -2 & -1 \end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
+\vec{PQ} \times \vec{PR} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+-2 & 0 & -5 \\
+1 & -2 & -1
+\end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
 $$
 
 Find the magnitude of the cross product:

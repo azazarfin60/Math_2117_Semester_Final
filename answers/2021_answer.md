@@ -73,7 +73,11 @@ So the magnitude is $\sqrt{521}$.
 We calculate the cross product of $\vec{A}$ and $\vec{B}$ to get a perpendicular vector:
 
 $$
-\vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & -6 & -3 \\ 4 & 3 & -1 \end{vmatrix} = \hat{i}(6 - (-9)) - \hat{j}(-2 - (-12)) + \hat{k}(6 - (-24)) = 15\hat{i} - 10\hat{j} + 30\hat{k}
+\vec{A} \times \vec{B} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+2 & -6 & -3 \\
+4 & 3 & -1
+\end{vmatrix} = \hat{i}(6 - (-9)) - \hat{j}(-2 - (-12)) + \hat{k}(6 - (-24)) = 15\hat{i} - 10\hat{j} + 30\hat{k}
 $$
 
 Find the magnitude of this cross product:
@@ -109,7 +113,11 @@ $$
 Calculate the cross product of these side vectors:
 
 $$
-\vec{PQ} \times \vec{PR} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -2 & 0 & -5 \\ 1 & -2 & -1 \end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
+\vec{PQ} \times \vec{PR} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+-2 & 0 & -5 \\
+1 & -2 & -1
+\end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
 $$
 
 Find the magnitude of the cross product:
@@ -173,7 +181,11 @@ So the directional derivative is $\frac{1}{\sqrt{17}}$.
 A vector field $\vec{F}$ is irrotational if its curl is zero:
 
 $$
-\vec{\nabla} \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y^2 + 2xz^2 & 2xy - z & 2x^2z - y + 2z \end{vmatrix}
+\vec{\nabla} \times \vec{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y^2 + 2xz^2 & 2xy - z & 2x^2z - y + 2z
+\end{vmatrix}
 $$
 
 Calculate the components of the curl:
@@ -681,20 +693,35 @@ So the decomposition is unique.
 ---
 
 ### Q5(b) Find the rank of the following matrix and hence reduce it to the canonical form: (06)
-$$A = \begin{pmatrix} 2 & 3 & -1 & -1 \\ 1 & -1 & -2 & -4 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{pmatrix}$$
+$$A = \begin{pmatrix}
+2 & 3 & -1 & -1 \\
+1 & -1 & -2 & -4 \\
+3 & 1 & 3 & -2 \\
+6 & 3 & 0 & -7
+\end{pmatrix}$$
 
 **Answer:**
 
 We write the matrix:
 
 $$
-A = \begin{pmatrix} 2 & 3 & -1 & -1 \\ 1 & -1 & -2 & -4 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{pmatrix}
+A = \begin{pmatrix}
+2 & 3 & -1 & -1 \\
+1 & -1 & -2 & -4 \\
+3 & 1 & 3 & -2 \\
+6 & 3 & 0 & -7
+\end{pmatrix}
 $$
 
 Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
 
 $$
-\begin{pmatrix} 1 & -1 & -2 & -4 \\ 2 & 3 & -1 & -1 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{pmatrix}
+\begin{pmatrix}
+1 & -1 & -2 & -4 \\
+2 & 3 & -1 & -1 \\
+3 & 1 & 3 & -2 \\
+6 & 3 & 0 & -7
+\end{pmatrix}
 $$
 
 Apply row operations:
@@ -705,7 +732,12 @@ Apply row operations:
 This gives:
 
 $$
-\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 4 & 9 & 10 \\ 0 & 9 & 12 & 17 \end{pmatrix}
+\begin{pmatrix}
+1 & -1 & -2 & -4 \\
+0 & 5 & 3 & 7 \\
+0 & 4 & 9 & 10 \\
+0 & 9 & 12 & 17
+\end{pmatrix}
 $$
 
 Apply operations:
@@ -715,19 +747,34 @@ Apply operations:
 This gives:
 
 $$
-\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 33 & 22 \\ 0 & 0 & 33 & 22 \end{pmatrix}
+\begin{pmatrix}
+1 & -1 & -2 & -4 \\
+0 & 5 & 3 & 7 \\
+0 & 0 & 33 & 22 \\
+0 & 0 & 33 & 22
+\end{pmatrix}
 $$
 
 Simplify row 3 and row 4 ($R_3 \to \frac{1}{11}R_3$, $R_4 \to \frac{1}{11}R_4$):
 
 $$
-\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 3 & 2 \end{pmatrix}
+\begin{pmatrix}
+1 & -1 & -2 & -4 \\
+0 & 5 & 3 & 7 \\
+0 & 0 & 3 & 2 \\
+0 & 0 & 3 & 2
+\end{pmatrix}
 $$
 
 Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
 
 $$
-\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & -1 & -2 & -4 \\
+0 & 5 & 3 & 7 \\
+0 & 0 & 3 & 2 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 Since there are 3 non-zero rows in the echelon form, the rank is:
@@ -746,13 +793,23 @@ We apply column operations to clear the first row:
 This gives:
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 5 & 3 & 7 \\
+0 & 0 & 3 & 2 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 Scale row 2 ($R_2 \to \frac{1}{5}R_2$):
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 3/5 & 7/5 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 3/5 & 7/5 \\
+0 & 0 & 3 & 2 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 Clear the second row using column operations:
@@ -762,44 +819,75 @@ Clear the second row using column operations:
 This gives:
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 3 & 2 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 Scale row 3 ($R_3 \to \frac{1}{3}R_3$):
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 2/3 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 2/3 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 Clear the third column element ($C_4 \to C_4 - \frac{2}{3}C_3$):
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 This is the canonical form $[I_3 | 0]$:
 
 $$
-\begin{pmatrix} I_3 & | & 0 \\ -- & - & -- \\ 0 & | & 0 \end{pmatrix}
+\begin{pmatrix}
+I_3 & | & 0 \\
+-- & - & -- \\
+0 & | & 0
+\end{pmatrix}
 $$
 
 ---
 
 ### Q6(a) Find the inverse of the following matrix by using row operation: (06)
-$$A = \begin{pmatrix} 2 & 1 & 2 \\ 2 & 2 & 1 \\ 1 & 2 & 2 \end{pmatrix}$$
+$$A = \begin{pmatrix}
+2 & 1 & 2 \\
+2 & 2 & 1 \\
+1 & 2 & 2
+\end{pmatrix}$$
 
 **Answer:**
 
 We write the augmented matrix $[A | I]$:
 
 $$
-\begin{bmatrix} 2 & 1 & 2 & | & 1 & 0 & 0 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 1 & 2 & 2 & | & 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 2 & | & 1 & 0 & 0 \\
+2 & 2 & 1 & | & 0 & 1 & 0 \\
+1 & 2 & 2 & | & 0 & 0 & 1
+\end{bmatrix}
 $$
 
 Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 2 & 1 & 2 & | & 1 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+2 & 2 & 1 & | & 0 & 1 & 0 \\
+2 & 1 & 2 & | & 1 & 0 & 0
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -809,49 +897,81 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & -2 & -3 & | & 0 & 1 & -2 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & -2 & -3 & | & 0 & 1 & -2 \\
+0 & -3 & -2 & | & 1 & 0 & -2
+\end{bmatrix}
 $$
 
 Multiply row 2 by $-1/2$ ($R_2 \to -1/2 R_2$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & -3 & -2 & | & 1 & 0 & -2
+\end{bmatrix}
 $$
 
 Eliminate the third row element ($R_3 \to R_3 + 3R_2$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 5/2 & | & 1 & -3/2 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & 0 & 5/2 & | & 1 & -3/2 & 1
+\end{bmatrix}
 $$
 
 Multiply row 3 by $2/5$ ($R_3 \to 2/5 R_3$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 Perform the operation $R_2 \to R_2 - \frac{3}{2}R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 Perform the operation $R_1 \to R_1 - 2R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & 0 & | & -4/5 & 6/5 & 1/5 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 0 & | & -4/5 & 6/5 & 1/5 \\
+0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 Perform the operation $R_1 \to R_1 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & 0 & 0 & | & 2/5 & 2/5 & -3/5 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & | & 2/5 & 2/5 & -3/5 \\
+0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 So the inverse is:
 
 $$
-A^{-1} = \frac{1}{5} \begin{pmatrix} 2 & 2 & -3 \\ -3 & 2 & 2 \\ 2 & -3 & 2 \end{pmatrix}
+A^{-1} = \frac{1}{5} \begin{pmatrix}
+2 & 2 & -3 \\
+-3 & 2 & 2 \\
+2 & -3 & 2
+\end{pmatrix}
 $$
 
 ---
@@ -866,19 +986,35 @@ $$x + y + \lambda z = \lambda^2$$
 We write the determinant of the coefficient matrix:
 
 $$
-D = \begin{vmatrix} \lambda & 1 & 1 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix}
+D = \begin{vmatrix}
+\lambda & 1 & 1 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix}
 $$
 
 Add rows 2 and 3 to row 1:
 
 $$
-D = \begin{vmatrix} \lambda+2 & \lambda+2 & \lambda+2 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix} = (\lambda + 2) \begin{vmatrix} 1 & 1 & 1 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix}
+D = \begin{vmatrix}
+\lambda+2 & \lambda+2 & \lambda+2 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix} = (\lambda + 2) \begin{vmatrix}
+1 & 1 & 1 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix}
 $$
 
 Apply column operations ($C_2 \to C_2 - C_1$, $C_3 \to C_3 - C_1$):
 
 $$
-D = (\lambda + 2) \begin{vmatrix} 1 & 0 & 0 \\ 1 & \lambda-1 & 0 \\ 1 & 0 & \lambda-1 \end{vmatrix} = (\lambda + 2)(\lambda - 1)^2
+D = (\lambda + 2) \begin{vmatrix}
+1 & 0 & 0 \\
+1 & \lambda-1 & 0 \\
+1 & 0 & \lambda-1
+\end{vmatrix} = (\lambda + 2)(\lambda - 1)^2
 $$
 
 We investigate the cases:
@@ -935,7 +1071,10 @@ This is a contradiction. So there is no solution when $\lambda = -2$.
 
 ---
 
-### Q7(a) Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix} 2 & 3 \\ 1 & 4 \end{bmatrix}$. (06)
+### Q7(a) Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix}
+2 & 3 \\
+1 & 4
+\end{bmatrix}$. (06)
 
 **Answer:**
 
@@ -944,7 +1083,10 @@ This is a contradiction. So there is no solution when $\lambda = -2$.
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 3 \\ 1 & 4-\lambda \end{vmatrix} = 0 \implies (2-\lambda)(4-\lambda) - 3 = 0
+\begin{vmatrix}
+2-\lambda & 3 \\
+1 & 4-\lambda
+\end{vmatrix} = 0 \implies (2-\lambda)(4-\lambda) - 3 = 0
 $$
 
 $$
@@ -964,13 +1106,25 @@ $$
 We solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 3 \\ 1 & 3 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies x + 3y = 0 \implies x = -3y
+\begin{bmatrix}
+1 & 3 \\
+1 & 3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \implies x + 3y = 0 \implies x = -3y
 $$
 
 Let $y = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} -3 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+-3 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 5$
@@ -978,13 +1132,25 @@ $$
 We solve $(A - 5I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 3 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies x - y = 0 \implies x = y
+\begin{bmatrix}
+-3 & 3 \\
+1 & -1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \implies x - y = 0 \implies x = y
 $$
 
 Let $y = 1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -998,13 +1164,19 @@ $$\frac{dy}{dt} = 2x + y$$
 We write the system in matrix form:
 
 $$
-\frac{dX}{dt} = M X, \quad \text{where } M = \begin{bmatrix} 6 & -3 \\ 2 & 1 \end{bmatrix}
+\frac{dX}{dt} = M X, \quad \text{where } M = \begin{bmatrix}
+6 & -3 \\
+2 & 1
+\end{bmatrix}
 $$
 
 First we find the eigenvalues of $M$ by solving $|M - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 6-\lambda & -3 \\ 2 & 1-\lambda \end{vmatrix} = 0 \implies (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = 0
+\begin{vmatrix}
+6-\lambda & -3 \\
+2 & 1-\lambda
+\end{vmatrix} = 0 \implies (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = 0
 $$
 
 $$
@@ -1015,31 +1187,52 @@ Now find the eigenvectors:
 *   **For $\lambda = 3$:**
 
 $$
-M - 3I = \begin{bmatrix} 3 & -3 \\ 2 & -2 \end{bmatrix} \implies 3x - 3y = 0 \implies x = y
+M - 3I = \begin{bmatrix}
+3 & -3 \\
+2 & -2
+\end{bmatrix} \implies 3x - 3y = 0 \implies x = y
 $$
 
 The eigenvector is:
 
 $$
-v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+v_1 = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 *   **For $\lambda = 4$:**
 
 $$
-M - 4I = \begin{bmatrix} 2 & -3 \\ 2 & -3 \end{bmatrix} \implies 2x - 3y = 0 \implies x = \frac{3}{2}y
+M - 4I = \begin{bmatrix}
+2 & -3 \\
+2 & -3
+\end{bmatrix} \implies 2x - 3y = 0 \implies x = \frac{3}{2}y
 $$
 
 The eigenvector (for $y=2$) is:
 
 $$
-v_2 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+v_2 = \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}
 $$
 
 The general solution is a linear combination of the fundamental solutions:
 
 $$
-\begin{bmatrix} x(t) \\ y(t) \end{bmatrix} = C_1 e^{3t} \begin{bmatrix} 1 \\ 1 \end{bmatrix} + C_2 e^{4t} \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+\begin{bmatrix}
+x(t) \\
+y(t)
+\end{bmatrix} = C_1 e^{3t} \begin{bmatrix}
+1 \\
+1
+\end{bmatrix} + C_2 e^{4t} \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}
 $$
 
 So the system solution is:
@@ -1081,7 +1274,11 @@ $$
 We write the augmented matrix of this system:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 1 & 2 & -1 & | & -2 \\ 1 & 3 & 1 & | & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+1 & 2 & -1 & | & -2 \\
+1 & 3 & 1 & | & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -1091,13 +1288,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 0 & 1 & -3 & | & -3 \\ 0 & 2 & -1 & | & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+0 & 1 & -3 & | & -3 \\
+0 & 2 & -1 & | & 4
+\end{bmatrix}
 $$
 
 Now perform the operation $R_3 \to R_3 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 0 & 1 & -3 & | & -3 \\ 0 & 0 & 5 & | & 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+0 & 1 & -3 & | & -3 \\
+0 & 0 & 5 & | & 10
+\end{bmatrix}
 $$
 
 By back substitution, we solve the coefficients:
@@ -1120,7 +1325,12 @@ $$
 We write the vectors as rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 1 & 2 & 3 & 2 \\ 2 & 5 & 6 & 4 \\ 2 & 6 & 8 & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & 2 & 3 & 2 \\
+2 & 5 & 6 & 4 \\
+2 & 6 & 8 & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -1131,7 +1341,12 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 3 & 4 & 2 \\ 0 & 4 & 6 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 2 & 1 \\
+0 & 3 & 4 & 2 \\
+0 & 4 & 6 & 3
+\end{bmatrix}
 $$
 
 Apply operations:
@@ -1141,13 +1356,23 @@ Apply operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & -2 & -1 \\ 0 & 0 & -2 & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 2 & 1 \\
+0 & 0 & -2 & -1 \\
+0 & 0 & -2 & -1
+\end{bmatrix}
 $$
 
 Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & -2 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 2 & 1 \\
+0 & 0 & -2 & -1 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Since the last row is zero, the vectors are linearly dependent. Therefore, they do not form a basis of $\mathbb{R}^4$.

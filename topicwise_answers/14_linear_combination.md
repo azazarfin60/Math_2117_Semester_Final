@@ -37,7 +37,11 @@ $$
 We write the augmented matrix of this system:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 1 & 2 & -1 & | & -2 \\ 1 & 3 & 1 & | & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+1 & 2 & -1 & | & -2 \\
+1 & 3 & 1 & | & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -47,13 +51,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 0 & 1 & -3 & | & -3 \\ 0 & 2 & -1 & | & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+0 & 1 & -3 & | & -3 \\
+0 & 2 & -1 & | & 4
+\end{bmatrix}
 $$
 
 Now perform the operation $R_3 \to R_3 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 0 & 1 & -3 & | & -3 \\ 0 & 0 & 5 & | & 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+0 & 1 & -3 & | & -3 \\
+0 & 0 & 5 & | & 10
+\end{bmatrix}
 $$
 
 By back substitution, we solve the coefficients:
@@ -101,7 +113,11 @@ $$
 We write the augmented matrix and swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
 
 $$
-\begin{bmatrix} 1 & -1 & 2 & | & 9 \\ 2 & 1 & 3 & | & 5 \\ 4 & 3 & 5 & | & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 2 & | & 9 \\
+2 & 1 & 3 & | & 5 \\
+4 & 3 & 5 & | & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -111,13 +127,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -1 & 2 & | & 9 \\ 0 & 3 & -1 & | & -13 \\ 0 & 7 & -3 & | & -31 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 2 & | & 9 \\
+0 & 3 & -1 & | & -13 \\
+0 & 7 & -3 & | & -31
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to 3R_3 - 7R_2$:
 
 $$
-\begin{bmatrix} 1 & -1 & 2 & | & 9 \\ 0 & 3 & -1 & | & -13 \\ 0 & 0 & -2 & | & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 2 & | & 9 \\
+0 & 3 & -1 & | & -13 \\
+0 & 0 & -2 & | & -2
+\end{bmatrix}
 $$
 
 Now solve for the coefficients by back substitution:

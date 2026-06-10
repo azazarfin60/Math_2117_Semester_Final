@@ -91,7 +91,11 @@ The proof is complete.
 We calculate the cross product of the two vectors to find a perpendicular direction:
 
 $$
-\bar{A} \times \bar{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & 1 & -3 \\ 1 & -2 & 1 \end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
+\bar{A} \times \bar{B} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+2 & 1 & -3 \\
+1 & -2 & 1
+\end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
 $$
 
 We simplify the perpendicular direction to:
@@ -193,7 +197,11 @@ $$
 Calculate the cross product of the first two derivatives:
 
 $$
-\vec{r}' \times \vec{r}'' = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 2t & 2t^2 \\ 0 & 2 & 4t \end{vmatrix} = \hat{i}(8t^2 - 4t^2) - \hat{j}(4t - 0) + \hat{k}(2 - 0) = 4t^2\hat{i} - 4t\hat{j} + 2\hat{k}
+\vec{r}' \times \vec{r}'' = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+1 & 2t & 2t^2 \\
+0 & 2 & 4t
+\end{vmatrix} = \hat{i}(8t^2 - 4t^2) - \hat{j}(4t - 0) + \hat{k}(2 - 0) = 4t^2\hat{i} - 4t\hat{j} + 2\hat{k}
 $$
 
 Find the magnitudes:
@@ -281,7 +289,11 @@ Since this relation holds for any curve on the surface passing through $P$, the 
 The field is irrotational if its curl is zero:
 
 $$
-\bar{\nabla} \times \bar{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ 6xy + z^3 & 3x^2 - z & 3xz^2 - y \end{vmatrix}
+\bar{\nabla} \times \bar{A} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+6xy + z^3 & 3x^2 - z & 3xz^2 - y
+\end{vmatrix}
 $$
 
 Calculate the components:
@@ -660,7 +672,11 @@ The decomposition is unique.
 ---
 
 ### Q5(c) Define inverse of a matrix. Find the adjoint of matrix $A$ and hence find $A^{-1}$, where: (05)
-$$A = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+$$A = \begin{bmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}$$
 
 **Answer:**
 
@@ -693,24 +709,40 @@ $$
 This gives the cofactor matrix $C$:
 
 $$
-C = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+C = \begin{bmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 The adjoint matrix is the transpose of the cofactor matrix:
 
 $$
-\text{adj}(A) = C^T = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\text{adj}(A) = C^T = \begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 Since the determinant is 1, the inverse is:
 
 $$
-A^{-1} = \frac{1}{|A|} \text{adj}(A) = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = \begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 ---
 
-### Q6(a) What is the rank of a matrix? Find the rank of the matrix, $A = \begin{bmatrix} 6 & 1 & 8 & 3 \\ 2 & 1 & 0 & 2 \\ 4 & -1 & -8 & -3 \end{bmatrix}$. (05)
+### Q6(a) What is the rank of a matrix? Find the rank of the matrix, $A = \begin{bmatrix}
+6 & 1 & 8 & 3 \\
+2 & 1 & 0 & 2 \\
+4 & -1 & -8 & -3
+\end{bmatrix}$. (05)
 
 **Answer:**
 
@@ -723,13 +755,21 @@ The rank of a matrix is the maximum number of linearly independent row vectors i
 Let the matrix be:
 
 $$
-A = \begin{bmatrix} 6 & 1 & 8 & 3 \\ 2 & 1 & 0 & 2 \\ 4 & -1 & -8 & -3 \end{bmatrix}
+A = \begin{bmatrix}
+6 & 1 & 8 & 3 \\
+2 & 1 & 0 & 2 \\
+4 & -1 & -8 & -3
+\end{bmatrix}
 $$
 
 We swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
 
 $$
-\begin{bmatrix} 2 & 1 & 0 & 2 \\ 6 & 1 & 8 & 3 \\ 4 & -1 & -8 & -3 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 0 & 2 \\
+6 & 1 & 8 & 3 \\
+4 & -1 & -8 & -3
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -739,13 +779,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 2 & 1 & 0 & 2 \\ 0 & -2 & 8 & -3 \\ 0 & -3 & -8 & -7 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 0 & 2 \\
+0 & -2 & 8 & -3 \\
+0 & -3 & -8 & -7
+\end{bmatrix}
 $$
 
 Perform the operation $R_3 \to 2R_3 - 3R_2$:
 
 $$
-\begin{bmatrix} 2 & 1 & 0 & 2 \\ 0 & -2 & 8 & -3 \\ 0 & 0 & -40 & -5 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 0 & 2 \\
+0 & -2 & 8 & -3 \\
+0 & 0 & -40 & -5
+\end{bmatrix}
 $$
 
 All three rows are non-zero. So the rank of the matrix is $3$.
@@ -762,7 +810,11 @@ $$x + 2y + \lambda z = \mu$$
 We write the augmented matrix of the system:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 1 & 2 & 3 & | & 10 \\ 1 & 2 & \lambda & | & \mu \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+1 & 2 & 3 & | & 10 \\
+1 & 2 & \lambda & | & \mu
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -772,13 +824,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 0 & 1 & 2 & | & 4 \\ 0 & 1 & \lambda - 1 & | & \mu - 6 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+0 & 1 & 2 & | & 4 \\
+0 & 1 & \lambda - 1 & | & \mu - 6
+\end{bmatrix}
 $$
 
 Now eliminate row 3 using row 2 ($R_3 \to R_3 - R_2$):
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 0 & 1 & 2 & | & 4 \\ 0 & 0 & \lambda - 3 & | & \mu - 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+0 & 1 & 2 & | & 4 \\
+0 & 0 & \lambda - 3 & | & \mu - 10
+\end{bmatrix}
 $$
 
 Now we investigate:
@@ -811,7 +871,11 @@ $$
 
 ---
 
-### Q7(a) Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix} 1 & 1 & -2 \\ -1 & 2 & 1 \\ 0 & 1 & -1 \end{bmatrix}$. (06)
+### Q7(a) Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix}
+1 & 1 & -2 \\
+-1 & 2 & 1 \\
+0 & 1 & -1
+\end{bmatrix}$. (06)
 
 **Answer:**
 
@@ -820,7 +884,11 @@ $$
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 1-\lambda & 1 & -2 \\ -1 & 2-\lambda & 1 \\ 0 & 1 & -1-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+1-\lambda & 1 & -2 \\
+-1 & 2-\lambda & 1 \\
+0 & 1 & -1-\lambda
+\end{vmatrix} = 0
 $$
 
 Expanding the determinant yields the equation:
@@ -848,7 +916,19 @@ $$
 We solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 & -2 \\ -1 & 1 & 1 \\ 0 & 1 & -2 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & -2 \\
+-1 & 1 & 1 \\
+0 & 1 & -2
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 1:
@@ -866,7 +946,11 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} 3 \\ 2 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+3 \\
+2 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = -1$
@@ -874,7 +958,19 @@ $$
 We solve $(A + I)X = 0$:
 
 $$
-\begin{bmatrix} 2 & 1 & -2 \\ -1 & 3 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & -2 \\
+-1 & 3 & 1 \\
+0 & 1 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 3:
@@ -892,7 +988,11 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda = 2$
@@ -900,7 +1000,19 @@ $$
 We solve $(A - 2I)X = 0$:
 
 $$
-\begin{bmatrix} -1 & 1 & -2 \\ -1 & 0 & 1 \\ 0 & 1 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-1 & 1 & -2 \\
+-1 & 0 & 1 \\
+0 & 1 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From row 2:
@@ -918,7 +1030,11 @@ $$
 Let $z = 1$. The eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 1 \\ 3 \\ 1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+1 \\
+3 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -932,13 +1048,19 @@ $$\frac{dy}{dt} = 2x + y$$
 We write the system in matrix form:
 
 $$
-\frac{dX}{dt} = M X, \quad \text{where } M = \begin{bmatrix} 6 & -3 \\ 2 & 1 \end{bmatrix}
+\frac{dX}{dt} = M X, \quad \text{where } M = \begin{bmatrix}
+6 & -3 \\
+2 & 1
+\end{bmatrix}
 $$
 
 First we find the eigenvalues of $M$ by solving $|M - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 6-\lambda & -3 \\ 2 & 1-\lambda \end{vmatrix} = 0 \implies (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = 0
+\begin{vmatrix}
+6-\lambda & -3 \\
+2 & 1-\lambda
+\end{vmatrix} = 0 \implies (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = 0
 $$
 
 $$
@@ -949,31 +1071,52 @@ Now find the eigenvectors:
 *   **For $\lambda = 3$:**
 
 $$
-M - 3I = \begin{bmatrix} 3 & -3 \\ 2 & -2 \end{bmatrix} \implies 3x - 3y = 0 \implies x = y
+M - 3I = \begin{bmatrix}
+3 & -3 \\
+2 & -2
+\end{bmatrix} \implies 3x - 3y = 0 \implies x = y
 $$
 
 The eigenvector is:
 
 $$
-v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+v_1 = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 *   **For $\lambda = 4$:**
 
 $$
-M - 4I = \begin{bmatrix} 2 & -3 \\ 2 & -3 \end{bmatrix} \implies 2x - 3y = 0 \implies x = \frac{3}{2}y
+M - 4I = \begin{bmatrix}
+2 & -3 \\
+2 & -3
+\end{bmatrix} \implies 2x - 3y = 0 \implies x = \frac{3}{2}y
 $$
 
 The eigenvector (for $y=2$) is:
 
 $$
-v_2 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+v_2 = \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}
 $$
 
 The general solution is a linear combination of the fundamental solutions:
 
 $$
-\begin{bmatrix} x(t) \\ y(t) \end{bmatrix} = C_1 e^{3t} \begin{bmatrix} 1 \\ 1 \end{bmatrix} + C_2 e^{4t} \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+\begin{bmatrix}
+x(t) \\
+y(t)
+\end{bmatrix} = C_1 e^{3t} \begin{bmatrix}
+1 \\
+1
+\end{bmatrix} + C_2 e^{4t} \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}
 $$
 
 So the system solution is:
@@ -1015,7 +1158,11 @@ $$
 We write the augmented matrix of this system:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 1 & 2 & -1 & | & -2 \\ 1 & 3 & 1 & | & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+1 & 2 & -1 & | & -2 \\
+1 & 3 & 1 & | & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -1025,13 +1172,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 0 & 1 & -3 & | & -3 \\ 0 & 2 & -1 & | & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+0 & 1 & -3 & | & -3 \\
+0 & 2 & -1 & | & 4
+\end{bmatrix}
 $$
 
 Now perform the operation $R_3 \to R_3 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & | & 1 \\ 0 & 1 & -3 & | & -3 \\ 0 & 0 & 5 & | & 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & | & 1 \\
+0 & 1 & -3 & | & -3 \\
+0 & 0 & 5 & | & 10
+\end{bmatrix}
 $$
 
 By back substitution, we solve the coefficients:
@@ -1111,7 +1266,12 @@ $$
 We write these vectors as the rows of a matrix:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 2 & -3 & 9 & -1 \\ 1 & 0 & 6 & -5 \\ 2 & -5 & 7 & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+2 & -3 & 9 & -1 \\
+1 & 0 & 6 & -5 \\
+2 & -5 & 7 & 5
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -1122,7 +1282,12 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 0 & 1 & 1 & -3 \\ 0 & 2 & 2 & -6 \\ 0 & -1 & -1 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+0 & 1 & 1 & -3 \\
+0 & 2 & 2 & -6 \\
+0 & -1 & -1 & 3
+\end{bmatrix}
 $$
 
 Now perform operations on row 3 and row 4:
@@ -1132,7 +1297,12 @@ Now perform operations on row 3 and row 4:
 This gives the echelon form:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 0 & 1 & 1 & -3 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+0 & 1 & 1 & -3 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 The non-zero rows form the basis vectors for the subspace:

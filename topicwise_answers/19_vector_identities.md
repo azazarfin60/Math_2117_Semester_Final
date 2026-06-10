@@ -194,7 +194,11 @@ We are given that $\nabla \times \vec{A} = 0$. So, the first term is zero.
 Next, we calculate the curl of the position vector $\vec{r}$:
 
 $$
-\nabla \times \vec{r} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x & y & z \end{vmatrix} = \hat{i}(0) - \hat{j}(0) + \hat{k}(0) = \vec{0}
+\nabla \times \vec{r} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x & y & z
+\end{vmatrix} = \hat{i}(0) - \hat{j}(0) + \hat{k}(0) = \vec{0}
 $$
 
 So, the second term is also zero:

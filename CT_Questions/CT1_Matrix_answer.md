@@ -198,7 +198,11 @@ So, there is no value of $k$ that gives infinitely many solutions.
 
 ---
 
-### Q3. What is meant by the rank of a matrix? Reduce the matrix $A = \begin{bmatrix} 6 & 3 & -4 \\ -4 & 1 & -6 \\ 1 & 2 & -5 \end{bmatrix}$ (07)
+### Q3. What is meant by the rank of a matrix? Reduce the matrix $A = \begin{bmatrix}
+6 & 3 & -4 \\
+-4 & 1 & -6 \\
+1 & 2 & -5
+\end{bmatrix}$ (07)
 *   **(i)** to echelon form
 *   **(ii)** to row canonical form, and
 *   **(iii)** determine the rank of the matrix.
@@ -211,12 +215,20 @@ The rank of a matrix is the maximum number of linearly independent rows in the m
 #### 2. Reduce to Echelon Form
 Let the matrix be:
 $$
-A = \begin{bmatrix} 6 & 3 & -4 \\ -4 & 1 & -6 \\ 1 & 2 & -5 \end{bmatrix}
+A = \begin{bmatrix}
+6 & 3 & -4 \\
+-4 & 1 & -6 \\
+1 & 2 & -5
+\end{bmatrix}
 $$
 
 We swap the first and third rows to put a 1 in the top-left corner:
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ -4 & 1 & -6 \\ 6 & 3 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+-4 & 1 & -6 \\
+6 & 3 & -4
+\end{bmatrix}
 \quad (R_1 \leftrightarrow R_3)
 $$
 
@@ -228,7 +240,11 @@ $$
 R_3 \to R_3 - 6R_1
 $$
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 9 & -26 \\ 0 & -9 & 26 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 9 & -26 \\
+0 & -9 & 26
+\end{bmatrix}
 $$
 
 Next, we eliminate the second element in the third row:
@@ -236,7 +252,11 @@ $$
 R_3 \to R_3 + R_2
 $$
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 9 & -26 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 9 & -26 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 We divide the second row by 9 to get a leading 1:
@@ -244,14 +264,22 @@ $$
 R_2 \to \frac{1}{9} R_2
 $$
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 1 & -\frac{26}{9} \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 This is the echelon form of the matrix.
 
 #### 3. Reduce to Row Canonical Form
 Starting from the echelon form:
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 1 & -\frac{26}{9} \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 We eliminate the element above the leading 1 in the second row:
@@ -259,12 +287,22 @@ $$
 R_1 \to R_1 - 2R_2
 $$
 $$
-R_1 \to \begin{bmatrix} 1 & 2 - 2(1) & -5 - 2\left(-\frac{26}{9}\right) \end{bmatrix} = \begin{bmatrix} 1 & 0 & -5 + \frac{52}{9} \end{bmatrix} = \begin{bmatrix} 1 & 0 & \frac{7}{9} \end{bmatrix}
+R_1 \to \begin{bmatrix}
+1 & 2 - 2(1) & -5 - 2\left(-\frac{26}{9}\right)
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & -5 + \frac{52}{9}
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & \frac{7}{9}
+\end{bmatrix}
 $$
 
 This gives the row canonical form:
 $$
-\begin{bmatrix} 1 & 0 & \frac{7}{9} \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & \frac{7}{9} \\
+0 & 1 & -\frac{26}{9} \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 #### 4. Determine the Rank

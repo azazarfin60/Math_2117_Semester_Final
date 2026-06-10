@@ -134,7 +134,11 @@ $$
 We calculate the cross product of the two vectors to find a perpendicular direction:
 
 $$
-\bar{A} \times \bar{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & 1 & -3 \\ 1 & -2 & 1 \end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
+\bar{A} \times \bar{B} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+2 & 1 & -3 \\
+1 & -2 & 1
+\end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
 $$
 
 We simplify the perpendicular direction to:
@@ -229,7 +233,11 @@ So the magnitude is $\sqrt{521}$.
 We calculate the cross product of $\vec{A}$ and $\vec{B}$ to get a perpendicular vector:
 
 $$
-\vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & -6 & -3 \\ 4 & 3 & -1 \end{vmatrix} = \hat{i}(6 - (-9)) - \hat{j}(-2 - (-12)) + \hat{k}(6 - (-24)) = 15\hat{i} - 10\hat{j} + 30\hat{k}
+\vec{A} \times \vec{B} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+2 & -6 & -3 \\
+4 & 3 & -1
+\end{vmatrix} = \hat{i}(6 - (-9)) - \hat{j}(-2 - (-12)) + \hat{k}(6 - (-24)) = 15\hat{i} - 10\hat{j} + 30\hat{k}
 $$
 
 Find the magnitude of this cross product:
@@ -297,7 +305,11 @@ This completes the proof.
 Three vectors are coplanar if and only if their scalar triple product is zero. We set up the determinant:
 
 $$
-\begin{vmatrix} 2 & -1 & 1 \\ 1 & 2 & -3 \\ 3 & a & 5 \end{vmatrix} = 0
+\begin{vmatrix}
+2 & -1 & 1 \\
+1 & 2 & -3 \\
+3 & a & 5
+\end{vmatrix} = 0
 $$
 
 Expand this determinant along the first row:

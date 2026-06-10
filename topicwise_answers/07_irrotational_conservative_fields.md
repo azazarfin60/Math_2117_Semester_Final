@@ -22,7 +22,11 @@ $$
 We set up the curl calculation:
 
 $$
-\bar{\nabla} \times \bar{V} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x + 2y + az & bx - 3y - z & 4x + cy + 2z \end{vmatrix} = 0
+\bar{\nabla} \times \bar{V} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x + 2y + az & bx - 3y - z & 4x + cy + 2z
+\end{vmatrix} = 0
 $$
 
 Expand the determinant:
@@ -69,7 +73,11 @@ So the constants are $a = 4$, $b = 2$, and $c = -1$.
 The force field is conservative if its curl is zero:
 
 $$
-\bar{\nabla} \times \bar{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y^2 \cos x + z^3 & 2y \sin x - 4 & 3xz^2 + 2 \end{vmatrix}
+\bar{\nabla} \times \bar{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y^2 \cos x + z^3 & 2y \sin x - 4 & 3xz^2 + 2
+\end{vmatrix}
 $$
 
 Calculate the components:
@@ -177,7 +185,11 @@ $$
 Writing this in determinant form:
 
 $$
-\vec{\nabla} \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ \frac{\partial\phi}{\partial x} & \frac{\partial\phi}{\partial y} & \frac{\partial\phi}{\partial z} \end{vmatrix}
+\vec{\nabla} \times \vec{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+\frac{\partial\phi}{\partial x} & \frac{\partial\phi}{\partial y} & \frac{\partial\phi}{\partial z}
+\end{vmatrix}
 $$
 
 $$
@@ -214,7 +226,11 @@ This completes the proof.
 The field is irrotational if its curl is zero:
 
 $$
-\bar{\nabla} \times \bar{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ 6xy + z^3 & 3x^2 - z & 3xz^2 - y \end{vmatrix}
+\bar{\nabla} \times \bar{A} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+6xy + z^3 & 3x^2 - z & 3xz^2 - y
+\end{vmatrix}
 $$
 
 Calculate the components:
@@ -292,7 +308,11 @@ $$
 A vector field $\vec{F}$ is irrotational if its curl is zero:
 
 $$
-\vec{\nabla} \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y^2 + 2xz^2 & 2xy - z & 2x^2z - y + 2z \end{vmatrix}
+\vec{\nabla} \times \vec{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y^2 + 2xz^2 & 2xy - z & 2x^2z - y + 2z
+\end{vmatrix}
 $$
 
 Calculate the components of the curl:
@@ -373,7 +393,11 @@ $$
 
 We calculate the curl of $\vec{F}$:
 $$
-\vec{\nabla} \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x + 2y + az & bx - 3y - z & 4x + cy + 2z \end{vmatrix} = 0
+\vec{\nabla} \times \vec{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x + 2y + az & bx - 3y - z & 4x + cy + 2z
+\end{vmatrix} = 0
 $$
 
 Let us expand this determinant:

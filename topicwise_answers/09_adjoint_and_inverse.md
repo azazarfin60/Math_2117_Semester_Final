@@ -4,7 +4,11 @@ This file contains the organized questions and answers for **Adjoint and Inverse
 
 ---
 
-## Q1. Find the adjoint and inverse of $\begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}$. (05)
+## Q1. Find the adjoint and inverse of $\begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3 \\
+3 & 1 & 1
+\end{pmatrix}$. (05)
 
 | | |
 |---|---|
@@ -16,7 +20,11 @@ This file contains the organized questions and answers for **Adjoint and Inverse
 Let the matrix be:
 
 $$
-A = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}
+A = \begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3 \\
+3 & 1 & 1
+\end{pmatrix}
 $$
 
 First we find the determinant of $A$:
@@ -44,19 +52,35 @@ $$
 This gives the cofactor matrix $C$:
 
 $$
-C = \begin{pmatrix} -1 & 8 & -5 \\ 1 & -6 & 3 \\ -1 & 2 & -1 \end{pmatrix}
+C = \begin{pmatrix}
+-1 & 8 & -5 \\
+1 & -6 & 3 \\
+-1 & 2 & -1
+\end{pmatrix}
 $$
 
 The adjoint of $A$ is the transpose of the cofactor matrix:
 
 $$
-\text{adj}(A) = C^T = \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix}
+\text{adj}(A) = C^T = \begin{pmatrix}
+-1 & 1 & -1 \\
+8 & -6 & 2 \\
+-5 & 3 & -1
+\end{pmatrix}
 $$
 
 Now we find the inverse matrix $A^{-1}$:
 
 $$
-A^{-1} = \frac{1}{|A|} \text{adj}(A) = -\frac{1}{2} \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix} = \begin{pmatrix} 1/2 & -1/2 & 1/2 \\ -4 & 3 & -1 \\ 5/2 & -3/2 & 1/2 \end{pmatrix}
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = -\frac{1}{2} \begin{pmatrix}
+-1 & 1 & -1 \\
+8 & -6 & 2 \\
+-5 & 3 & -1
+\end{pmatrix} = \begin{pmatrix}
+1/2 & -1/2 & 1/2 \\
+-4 & 3 & -1 \\
+5/2 & -3/2 & 1/2
+\end{pmatrix}
 $$
 
 ---
@@ -163,7 +187,11 @@ $$
 
 **Answer:**
 
-$$A = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+$$A = \begin{bmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}$$
 
 **Answer:**
 
@@ -196,19 +224,31 @@ $$
 This gives the cofactor matrix $C$:
 
 $$
-C = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+C = \begin{bmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 The adjoint matrix is the transpose of the cofactor matrix:
 
 $$
-\text{adj}(A) = C^T = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\text{adj}(A) = C^T = \begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 Since the determinant is 1, the inverse is:
 
 $$
-A^{-1} = \frac{1}{|A|} \text{adj}(A) = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = \begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 ---
@@ -222,20 +262,32 @@ $$
 
 **Answer:**
 
-$$A = \begin{pmatrix} 2 & 1 & 2 \\ 2 & 2 & 1 \\ 1 & 2 & 2 \end{pmatrix}$$
+$$A = \begin{pmatrix}
+2 & 1 & 2 \\
+2 & 2 & 1 \\
+1 & 2 & 2
+\end{pmatrix}$$
 
 **Answer:**
 
 We write the augmented matrix $[A | I]$:
 
 $$
-\begin{bmatrix} 2 & 1 & 2 & | & 1 & 0 & 0 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 1 & 2 & 2 & | & 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 2 & | & 1 & 0 & 0 \\
+2 & 2 & 1 & | & 0 & 1 & 0 \\
+1 & 2 & 2 & | & 0 & 0 & 1
+\end{bmatrix}
 $$
 
 Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 2 & 1 & 2 & | & 1 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+2 & 2 & 1 & | & 0 & 1 & 0 \\
+2 & 1 & 2 & | & 1 & 0 & 0
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -245,54 +297,90 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & -2 & -3 & | & 0 & 1 & -2 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & -2 & -3 & | & 0 & 1 & -2 \\
+0 & -3 & -2 & | & 1 & 0 & -2
+\end{bmatrix}
 $$
 
 Multiply row 2 by $-1/2$ ($R_2 \to -1/2 R_2$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & -3 & -2 & | & 1 & 0 & -2
+\end{bmatrix}
 $$
 
 Eliminate the third row element ($R_3 \to R_3 + 3R_2$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 5/2 & | & 1 & -3/2 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & 0 & 5/2 & | & 1 & -3/2 & 1
+\end{bmatrix}
 $$
 
 Multiply row 3 by $2/5$ ($R_3 \to 2/5 R_3$):
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 Perform the operation $R_2 \to R_2 - \frac{3}{2}R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 Perform the operation $R_1 \to R_1 - 2R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & 0 & | & -4/5 & 6/5 & 1/5 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 0 & | & -4/5 & 6/5 & 1/5 \\
+0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 Perform the operation $R_1 \to R_1 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & 0 & 0 & | & 2/5 & 2/5 & -3/5 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & | & 2/5 & 2/5 & -3/5 \\
+0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\
+0 & 0 & 1 & | & 2/5 & -3/5 & 2/5
+\end{bmatrix}
 $$
 
 So the inverse is:
 
 $$
-A^{-1} = \frac{1}{5} \begin{pmatrix} 2 & 2 & -3 \\ -3 & 2 & 2 \\ 2 & -3 & 2 \end{pmatrix}
+A^{-1} = \frac{1}{5} \begin{pmatrix}
+2 & 2 & -3 \\
+-3 & 2 & 2 \\
+2 & -3 & 2
+\end{pmatrix}
 $$
 
 ---
 
-## Q5. Find the inverse of the matrix $A = \begin{bmatrix} 1 & 3 & 5 \\ 2 & 4 & 5 \\ 3 & 7 & 6 \end{bmatrix}$ using row transformation. (05)
+## Q5. Find the inverse of the matrix $A = \begin{bmatrix}
+1 & 3 & 5 \\
+2 & 4 & 5 \\
+3 & 7 & 6
+\end{bmatrix}$ using row transformation. (05)
 
 | | |
 |---|---|
@@ -304,7 +392,11 @@ $$
 We set up the augmented matrix $[A | I]$:
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 2 & 4 & 5 & | & 0 & 1 & 0 \\ 3 & 7 & 6 & | & 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+2 & 4 & 5 & | & 0 & 1 & 0 \\
+3 & 7 & 6 & | & 0 & 0 & 1
+\end{bmatrix}
 $$
 
 Apply row operations:
@@ -314,13 +406,21 @@ Apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & -2 & -5 & | & -2 & 1 & 0 \\ 0 & -2 & -9 & | & -3 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+0 & -2 & -5 & | & -2 & 1 & 0 \\
+0 & -2 & -9 & | & -3 & 0 & 1
+\end{bmatrix}
 $$
 
 Subtract row 2 from row 3 ($R_3 \to R_3 - R_2$):
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & -2 & -5 & | & -2 & 1 & 0 \\ 0 & 0 & -4 & | & -1 & -1 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+0 & -2 & -5 & | & -2 & 1 & 0 \\
+0 & 0 & -4 & | & -1 & -1 & 1
+\end{bmatrix}
 $$
 
 Multiply row 2 by $-1/2$ and row 3 by $-1/4$:
@@ -330,31 +430,51 @@ Multiply row 2 by $-1/2$ and row 3 by $-1/4$:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & 1 & 5/2 & | & 1 & -1/2 & 0 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+0 & 1 & 5/2 & | & 1 & -1/2 & 0 \\
+0 & 0 & 1 & | & 1/4 & 1/4 & -1/4
+\end{bmatrix}
 $$
 
 Perform the operation $R_2 \to R_2 - \frac{5}{2}R_3$:
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\
+0 & 0 & 1 & | & 1/4 & 1/4 & -1/4
+\end{bmatrix}
 $$
 
 Perform the operation $R_1 \to R_1 - 5R_3$:
 
 $$
-\begin{bmatrix} 1 & 3 & 0 & | & -1/4 & -5/4 & 5/4 \\ 0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 0 & | & -1/4 & -5/4 & 5/4 \\
+0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\
+0 & 0 & 1 & | & 1/4 & 1/4 & -1/4
+\end{bmatrix}
 $$
 
 Perform the operation $R_1 \to R_1 - 3R_2$:
 
 $$
-\begin{bmatrix} 1 & 0 & 0 & | & -11/8 & 17/8 & -5/8 \\ 0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & | & -11/8 & 17/8 & -5/8 \\
+0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\
+0 & 0 & 1 & | & 1/4 & 1/4 & -1/4
+\end{bmatrix}
 $$
 
 So the inverse is:
 
 $$
-A^{-1} = \frac{1}{8} \begin{bmatrix} -11 & 17 & -5 \\ 3 & -9 & 5 \\ 2 & 2 & -2 \end{bmatrix}
+A^{-1} = \frac{1}{8} \begin{bmatrix}
+-11 & 17 & -5 \\
+3 & -9 & 5 \\
+2 & 2 & -2
+\end{bmatrix}
 $$
 
 ---

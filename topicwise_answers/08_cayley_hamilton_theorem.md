@@ -115,7 +115,11 @@ So $p(A) = 0$. The theorem is proven.
 
 ---
 
-## Q2. Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix}$ and hence find $A^{-1}$. (06)
+## Q2. Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix}$ and hence find $A^{-1}$. (06)
 
 | | |
 |---|---|
@@ -129,7 +133,11 @@ So $p(A) = 0$. The theorem is proven.
 The characteristic equation is $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & -1 & 1 \\ -1 & 2-\lambda & -1 \\ 1 & -1 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & -1 & 1 \\
+-1 & 2-\lambda & -1 \\
+1 & -1 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 Calculate the determinant:
@@ -157,17 +165,57 @@ $$
 We calculate $A^2$ and $A^3$:
 
 $$
-A^2 = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix}
+A^2 = \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix} \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix} = \begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix}
 $$
 
 $$
-A^3 = A^2 A = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix}
+A^3 = A^2 A = \begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix} \begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix} = \begin{pmatrix}
+22 & -21 & 21 \\
+-21 & 22 & -21 \\
+21 & -21 & 22
+\end{pmatrix}
 $$
 
 Now substitute $A^3$, $A^2$, $A$, and $I$ into the expression:
 
 $$
-A^3 - 6A^2 + 9A - 4I = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix} - \begin{pmatrix} 36 & -30 & 30 \\ -30 & 36 & -30 \\ 30 & -30 & 36 \end{pmatrix} + \begin{pmatrix} 18 & -9 & 9 \\ -9 & 18 & -9 \\ 9 & -9 & 18 \end{pmatrix} - \begin{pmatrix} 4 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & 4 \end{pmatrix}
+A^3 - 6A^2 + 9A - 4I = \begin{pmatrix}
+22 & -21 & 21 \\
+-21 & 22 & -21 \\
+21 & -21 & 22
+\end{pmatrix} - \begin{pmatrix}
+36 & -30 & 30 \\
+-30 & 36 & -30 \\
+30 & -30 & 36
+\end{pmatrix} + \begin{pmatrix}
+18 & -9 & 9 \\
+-9 & 18 & -9 \\
+9 & -9 & 18
+\end{pmatrix} - \begin{pmatrix}
+4 & 0 & 0 \\
+0 & 4 & 0 \\
+0 & 0 & 4
+\end{pmatrix}
 $$
 
 Calculate the matrix elements:
@@ -185,11 +233,31 @@ A^2 - 6A + 9I - 4A^{-1} = 0 \implies 4A^{-1} = A^2 - 6A + 9I
 $$
 
 $$
-4A^{-1} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} - \begin{pmatrix} 12 & -6 & 6 \\ -6 & 12 & -6 \\ 6 & -6 & 12 \end{pmatrix} + \begin{pmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{pmatrix}
+4A^{-1} = \begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix} - \begin{pmatrix}
+12 & -6 & 6 \\
+-6 & 12 & -6 \\
+6 & -6 & 12
+\end{pmatrix} + \begin{pmatrix}
+9 & 0 & 0 \\
+0 & 9 & 0 \\
+0 & 0 & 9
+\end{pmatrix}
 $$
 
 $$
-4A^{-1} = \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix} \implies A^{-1} = \frac{1}{4} \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix}
+4A^{-1} = \begin{pmatrix}
+3 & 1 & -1 \\
+1 & 3 & 1 \\
+-1 & 1 & 3
+\end{pmatrix} \implies A^{-1} = \frac{1}{4} \begin{pmatrix}
+3 & 1 & -1 \\
+1 & 3 & 1 \\
+-1 & 1 & 3
+\end{pmatrix}
 $$
 
 ---
@@ -264,19 +332,59 @@ $$
 First, we calculate $A^2$:
 
 $$
-A^2 = A \cdot A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix}
+A^2 = A \cdot A = \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} = \begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix}
 $$
 
 Next, we calculate $A^3$:
 
 $$
-A^3 = A^2 \cdot A = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix}
+A^3 = A^2 \cdot A = \begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} = \begin{bmatrix}
+32 & 62 & 31 \\
+31 & 63 & 31 \\
+31 & 62 & 32
+\end{bmatrix}
 $$
 
 Now we compute $A^3 - 7A^2 + 11A - 5I$:
 
 $$
-\begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix} - 7\begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} + 11\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} - 5\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+32 & 62 & 31 \\
+31 & 63 & 31 \\
+31 & 62 & 32
+\end{bmatrix} - 7\begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} + 11\begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} - 5\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 $$
@@ -285,7 +393,11 @@ $$
 31-42+11 & 63-91+33-5 & 31-42+11 \\
 31-42+11 & 62-84+22 & 32-49+22-5
 \end{bmatrix}
-= \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+= \begin{bmatrix}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 All entries are zero. Cayley-Hamilton's Theorem is verified.
@@ -308,7 +420,19 @@ $$
 We compute the right side:
 
 $$
-A^2 - 7A + 11I = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} - \begin{bmatrix} 14 & 14 & 7 \\ 7 & 21 & 7 \\ 7 & 14 & 14 \end{bmatrix} + \begin{bmatrix} 11 & 0 & 0 \\ 0 & 11 & 0 \\ 0 & 0 & 11 \end{bmatrix}
+A^2 - 7A + 11I = \begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} - \begin{bmatrix}
+14 & 14 & 7 \\
+7 & 21 & 7 \\
+7 & 14 & 14
+\end{bmatrix} + \begin{bmatrix}
+11 & 0 & 0 \\
+0 & 11 & 0 \\
+0 & 0 & 11
+\end{bmatrix}
 $$
 
 $$
@@ -317,13 +441,21 @@ $$
 6-7+0 & 13-21+11 & 6-7+0 \\
 6-7+0 & 12-14+0 & 7-14+11
 \end{bmatrix}
-= \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+= \begin{bmatrix}
+4 & -2 & -1 \\
+-1 & 3 & -1 \\
+-1 & -2 & 4
+\end{bmatrix}
 $$
 
 So, the inverse is:
 
 $$
-A^{-1} = \frac{1}{5} \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+A^{-1} = \frac{1}{5} \begin{bmatrix}
+4 & -2 & -1 \\
+-1 & 3 & -1 \\
+-1 & -2 & 4
+\end{bmatrix}
 $$
 
 ---

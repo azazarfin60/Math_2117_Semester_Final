@@ -18,7 +18,11 @@ This file contains the organized questions and answers for **Linear Dependence a
 We set up a matrix with the given vectors as its rows. The vectors are linearly dependent if the determinant of this matrix is zero:
 
 $$
-D = \begin{vmatrix} 2 & 1 & -3 \\ 1 & 0 & -4 \\ 4 & 3 & -1 \end{vmatrix}
+D = \begin{vmatrix}
+2 & 1 & -3 \\
+1 & 0 & -4 \\
+4 & 3 & -1
+\end{vmatrix}
 $$
 
 We expand the determinant along the first row:
@@ -122,7 +126,11 @@ So the vectors $\vec{PR}$ and $\vec{PQ}$ are parallel. Since they share the comm
 We set up a matrix with these vectors as its columns and calculate its determinant:
 
 $$
-D = \begin{vmatrix} 1 & 1 & 2 \\ 2 & -3 & -1 \\ -3 & 2 & 5 \end{vmatrix}
+D = \begin{vmatrix}
+1 & 1 & 2 \\
+2 & -3 & -1 \\
+-3 & 2 & 5
+\end{vmatrix}
 $$
 
 Expand along the first row:
@@ -313,7 +321,11 @@ has only the trivial solution $c_1 = c_2 = \dots = c_n = 0$. If there is a solut
 We set up a matrix with these vectors as rows and check its determinant:
 
 $$
-D = \begin{vmatrix} 1 & 1 & 0 \\ 1 & 3 & 2 \\ 4 & 9 & 5 \end{vmatrix}
+D = \begin{vmatrix}
+1 & 1 & 0 \\
+1 & 3 & 2 \\
+4 & 9 & 5
+\end{vmatrix}
 $$
 
 We calculate the determinant:
@@ -333,7 +345,11 @@ $$
 We set up a matrix with these vectors as rows and check its determinant:
 
 $$
-D = \begin{vmatrix} 1 & 2 & 3 \\ 2 & 5 & 7 \\ 1 & 3 & 5 \end{vmatrix}
+D = \begin{vmatrix}
+1 & 2 & 3 \\
+2 & 5 & 7 \\
+1 & 3 & 5
+\end{vmatrix}
 $$
 
 We calculate the determinant:

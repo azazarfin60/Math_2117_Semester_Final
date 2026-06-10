@@ -716,20 +716,32 @@ So we have shown that $(-k)u = k(-u) = -ku$.
 
 ## SECTION - B
 
-### Q5(a) If $A_\alpha = \begin{pmatrix} \cos\alpha & \sin\alpha \\ -\sin\alpha & \cos\alpha \end{pmatrix}$, then show that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$. (03)
+### Q5(a) If $A_\alpha = \begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha
+\end{pmatrix}$, then show that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$. (03)
 
 **Answer:**
 
 Let us multiply the two matrices $A_\alpha$ and $A_\beta$:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos\alpha & \sin\alpha \\ -\sin\alpha & \cos\alpha \end{pmatrix} \begin{pmatrix} \cos\beta & \sin\beta \\ -\sin\beta & \cos\beta \end{pmatrix}
+A_\alpha \cdot A_\beta = \begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha
+\end{pmatrix} \begin{pmatrix}
+\cos\beta & \sin\beta \\
+-\sin\beta & \cos\beta
+\end{pmatrix}
 $$
 
 Multiply rows by columns:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos\alpha\cos\beta - \sin\alpha\sin\beta & \cos\alpha\sin\beta + \sin\alpha\cos\beta \\ -\sin\alpha\cos\beta - \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta \end{pmatrix}
+A_\alpha \cdot A_\beta = \begin{pmatrix}
+\cos\alpha\cos\beta - \sin\alpha\sin\beta & \cos\alpha\sin\beta + \sin\alpha\cos\beta \\
+-\sin\alpha\cos\beta - \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta
+\end{pmatrix}
 $$
 
 We apply standard trigonometric addition formulas:
@@ -745,7 +757,10 @@ $$
 Substitute these identities back into the product matrix:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos(\alpha+\beta) & \sin(\alpha+\beta) \\ -\sin(\alpha+\beta) & \cos(\alpha+\beta) \end{pmatrix} = A_{\alpha+\beta}
+A_\alpha \cdot A_\beta = \begin{pmatrix}
+\cos(\alpha+\beta) & \sin(\alpha+\beta) \\
+-\sin(\alpha+\beta) & \cos(\alpha+\beta)
+\end{pmatrix} = A_{\alpha+\beta}
 $$
 
 Since addition of angles is commutative ($\alpha + \beta = \beta + \alpha$), we also have:
@@ -758,14 +773,22 @@ So we have shown that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot
 
 ---
 
-### Q5(b) Find the adjoint and inverse of $\begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}$. (05)
+### Q5(b) Find the adjoint and inverse of $\begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3 \\
+3 & 1 & 1
+\end{pmatrix}$. (05)
 
 **Answer:**
 
 Let the matrix be:
 
 $$
-A = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}
+A = \begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3 \\
+3 & 1 & 1
+\end{pmatrix}
 $$
 
 First we find the determinant of $A$:
@@ -793,37 +816,65 @@ $$
 This gives the cofactor matrix $C$:
 
 $$
-C = \begin{pmatrix} -1 & 8 & -5 \\ 1 & -6 & 3 \\ -1 & 2 & -1 \end{pmatrix}
+C = \begin{pmatrix}
+-1 & 8 & -5 \\
+1 & -6 & 3 \\
+-1 & 2 & -1
+\end{pmatrix}
 $$
 
 The adjoint of $A$ is the transpose of the cofactor matrix:
 
 $$
-\text{adj}(A) = C^T = \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix}
+\text{adj}(A) = C^T = \begin{pmatrix}
+-1 & 1 & -1 \\
+8 & -6 & 2 \\
+-5 & 3 & -1
+\end{pmatrix}
 $$
 
 Now we find the inverse matrix $A^{-1}$:
 
 $$
-A^{-1} = \frac{1}{|A|} \text{adj}(A) = -\frac{1}{2} \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix} = \begin{pmatrix} 1/2 & -1/2 & 1/2 \\ -4 & 3 & -1 \\ 5/2 & -3/2 & 1/2 \end{pmatrix}
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = -\frac{1}{2} \begin{pmatrix}
+-1 & 1 & -1 \\
+8 & -6 & 2 \\
+-5 & 3 & -1
+\end{pmatrix} = \begin{pmatrix}
+1/2 & -1/2 & 1/2 \\
+-4 & 3 & -1 \\
+5/2 & -3/2 & 1/2
+\end{pmatrix}
 $$
 
 ---
 
-### Q5(c) Determine the characteristic roots of $\begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}$. (04)
+### Q5(c) Determine the characteristic roots of $\begin{pmatrix}
+1 & 2 & 3 \\
+0 & -4 & 2 \\
+0 & 0 & 7
+\end{pmatrix}$. (04)
 
 **Answer:**
 
 Let the matrix be:
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}
+A = \begin{pmatrix}
+1 & 2 & 3 \\
+0 & -4 & 2 \\
+0 & 0 & 7
+\end{pmatrix}
 $$
 
 The characteristic equation is defined by $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 1-\lambda & 2 & 3 \\ 0 & -4-\lambda & 2 \\ 0 & 0 & 7-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+1-\lambda & 2 & 3 \\
+0 & -4-\lambda & 2 \\
+0 & 0 & 7-\lambda
+\end{vmatrix} = 0
 $$
 
 Since this is an upper triangular matrix, its determinant is simply the product of its diagonal elements:
@@ -842,7 +893,12 @@ So the characteristic roots (or eigenvalues) are $1$, $-4$, and $7$.
 
 ---
 
-### Q6(a) What is the rank of a matrix? Find it for $\begin{bmatrix} 0 & 0 & 1 & -3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}$. (06)
+### Q6(a) What is the rank of a matrix? Find it for $\begin{bmatrix}
+0 & 0 & 1 & -3 & -2 \\
+0 & 1 & 2 & 6 & 0 \\
+0 & 2 & 3 & 9 & 2 \\
+0 & 1 & 1 & 3 & 2
+\end{bmatrix}$. (06)
 
 **Answer:**
 
@@ -855,13 +911,23 @@ The rank of a matrix is the maximum number of linearly independent row vectors (
 Let the matrix be:
 
 $$
-A = \begin{bmatrix} 0 & 0 & 1 & -3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+A = \begin{bmatrix}
+0 & 0 & 1 & -3 & -2 \\
+0 & 1 & 2 & 6 & 0 \\
+0 & 2 & 3 & 9 & 2 \\
+0 & 1 & 1 & 3 & 2
+\end{bmatrix}
 $$
 
 We swap the first and second rows ($R_1 \leftrightarrow R_2$) to place a non-zero leading entry in the first row:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 2 & 3 & 9 & 2 \\
+0 & 1 & 1 & 3 & 2
+\end{bmatrix}
 $$
 
 Now we perform row operations to make the entries below the leading entry of $R_1$ zero:
@@ -871,7 +937,12 @@ Now we perform row operations to make the entries below the leading entry of $R_
 This gives:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & -1 & -3 & 2 \\ 0 & 0 & -1 & -3 & 2 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & -1 & -3 & 2 \\
+0 & 0 & -1 & -3 & 2
+\end{bmatrix}
 $$
 
 Next we make the entries below the leading entry of $R_2$ zero:
@@ -881,19 +952,34 @@ Next we make the entries below the leading entry of $R_2$ zero:
 This gives:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & -6 & 0 \\ 0 & 0 & 0 & -6 & 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & 0 & -6 & 0 \\
+0 & 0 & 0 & -6 & 0
+\end{bmatrix}
 $$
 
 Now eliminate the last entry in row 4 using row 3 ($R_4 \to R_4 - R_3$):
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & -6 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & 0 & -6 & 0 \\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Divide row 3 by $-6$:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 This matrix is now in row-echelon form. The number of non-zero rows is $3$.
@@ -912,7 +998,11 @@ $$4x_1 - 3x_2 - x_3 = 3$$
 We write the augmented matrix of the system:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 3 & 1 & -2 & | & 1 \\ 4 & -3 & -1 & | & 3 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+3 & 1 & -2 & | & 1 \\
+4 & -3 & -1 & | & 3
+\end{bmatrix}
 $$
 
 We perform row operations to reduce it:
@@ -922,19 +1012,31 @@ We perform row operations to reduce it:
 This gives:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & -4 & -7 & | & -4 \\ 0 & -7 & -3 & | & -1 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & -4 & -7 & | & -4 \\
+0 & -7 & -3 & | & -1
+\end{bmatrix}
 $$
 
 Multiply the second and third rows by $-1$:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & 4 & 7 & | & 4 \\ 0 & 7 & 3 & | & 1 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & 4 & 7 & | & 4 \\
+0 & 7 & 3 & | & 1
+\end{bmatrix}
 $$
 
 Now perform row operation $R_3 \to 4R_3 - 7R_2$:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & 4 & 7 & | & 4 \\ 0 & 0 & -37 & | & -24 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & 4 & 7 & | & 4 \\
+0 & 0 & -37 & | & -24
+\end{bmatrix}
 $$
 
 Now we solve the variables by back substitution. From the third row:
@@ -975,7 +1077,11 @@ $$
 
 ---
 
-### Q7 What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$. (12)
+### Q7 What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}$. (12)
 
 **Answer:**
 
@@ -994,13 +1100,21 @@ then $\lambda$ is called an **eigenvalue** of $A$, and $X$ is called the corresp
 Let the matrix be:
 
 $$
-A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}
+A = \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}
 $$
 
 We solve the characteristic equation $|A - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 2 & 1 \\ 1 & 3-\lambda & 1 \\ 1 & 2 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & 2 & 1 \\
+1 & 3-\lambda & 1 \\
+1 & 2 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 Expanding the determinant:
@@ -1038,14 +1152,30 @@ We solve the system $(A - \lambda I)X = 0$ for each eigenvalue:
 The system is:
 
 $$
-\begin{bmatrix} -3 & 2 & 1 \\ 1 & -2 & 1 \\ 1 & 2 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-3 & 2 & 1 \\
+1 & -2 & 1 \\
+1 & 2 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 We apply row operations:
 *   Swap $R_1 \leftrightarrow R_2$:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ -3 & 2 & 1 \\ 1 & 2 & -3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+-3 & 2 & 1 \\
+1 & 2 & -3
+\end{bmatrix}
 $$
 
 *   $R_2 \to R_2 + 3R_1$
@@ -1054,14 +1184,22 @@ $$
 This gives:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ 0 & -4 & 4 \\ 0 & 4 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+0 & -4 & 4 \\
+0 & 4 & -4
+\end{bmatrix}
 $$
 
 *   $R_3 \to R_3 + R_2$
 *   Divide row 2 by $-4$:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+0 & 1 & -1 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 This gives the relationships:
@@ -1077,7 +1215,11 @@ $$
 Let $z = 1$. This gives the eigenvector:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 1$
@@ -1085,7 +1227,19 @@ $$
 The system is:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+1 & 2 & 1 \\
+1 & 2 & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 This reduces to a single equation:
@@ -1097,24 +1251,50 @@ $$
 Here we have two free variables. Let $y = s$ and $z = t$. The eigenvectors are:
 
 $$
-X = \begin{bmatrix} -2s - t \\ s \\ t \end{bmatrix} = s \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix} + t \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X = \begin{bmatrix}
+-2s - t \\
+s \\
+t
+\end{bmatrix} = s \begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix} + t \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 So the two linearly independent eigenvectors for $\lambda = 1$ are:
 
 $$
-X_2 = \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix}, \quad X_3 = \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ---
 
-### Q8 Diagonalize the matrix $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$. Hence evaluate $e^A$, and then solve $\frac{dx_1}{dt} = x_2$, $\frac{dx_2}{dt} = x_1$. (12)
+### Q8 Diagonalize the matrix $A = \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}$. Hence evaluate $e^A$, and then solve $\frac{dx_1}{dt} = x_2$, $\frac{dx_2}{dt} = x_1$. (12)
 
 **Answer:**
 
 #### 1. Diagonalization check
 
-Let $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$. Its eigenvalues are the diagonal entries:
+Let $A = \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}$. Its eigenvalues are the diagonal entries:
 
 $$
 \lambda_1 = 1, \quad \lambda_2 = 1
@@ -1123,13 +1303,28 @@ $$
 To check if $A$ is diagonalizable, we find the eigenvectors by solving $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies y = 0
+\begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \implies y = 0
 $$
 
-The eigenvectors are of the form $\begin{bmatrix} x \\ 0 \end{bmatrix}$. So there is only one linearly independent eigenvector:
+The eigenvectors are of the form $\begin{bmatrix}
+x \\
+0
+\end{bmatrix}$. So there is only one linearly independent eigenvector:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}
+X_1 = \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
 $$
 
 Since the geometric multiplicity (1) is less than the algebraic multiplicity (2), **the matrix $A$ is not diagonalizable**.
@@ -1139,7 +1334,10 @@ Since the geometric multiplicity (1) is less than the algebraic multiplicity (2)
 Even though $A$ is not diagonalizable, we can evaluate $e^A$ using the power series definition. We decompose $A$ into:
 
 $$
-A = I + B, \quad \text{where } B = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}
+A = I + B, \quad \text{where } B = \begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix}
 $$
 
 Since the identity matrix $I$ commutes with any matrix ($IB = BI$), we can write:
@@ -1148,18 +1346,36 @@ $$
 e^A = e^{I + B} = e^I \cdot e^B = e \cdot e^B
 $$
 
-Note that $B^2 = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}$. So $B^n = 0$ for all $n \geq 2$.
+Note that $B^2 = \begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix} \begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix} = \begin{bmatrix}
+0 & 0 \\
+0 & 0
+\end{bmatrix}$. So $B^n = 0$ for all $n \geq 2$.
 
 Using the series definition for $e^B$:
 
 $$
-e^B = I + B + \frac{B^2}{2!} + \dots = I + B = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}
+e^B = I + B + \frac{B^2}{2!} + \dots = I + B = \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}
 $$
 
 Therefore:
 
 $$
-e^A = e \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} e & e \\ 0 & e \end{bmatrix}
+e^A = e \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix} = \begin{bmatrix}
+e & e \\
+0 & e
+\end{bmatrix}
 $$
 
 #### 3. Solving the differential equations
@@ -1209,13 +1425,28 @@ $$
 We calculate the matrix exponential $e^{At}$ by decomposing $At = It + Bt$:
 
 $$
-e^{At} = e^t e^{Bt} = e^t (I + Bt) = e^t \begin{bmatrix} 1 & t \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} e^t & t e^t \\ 0 & e^t \end{bmatrix}
+e^{At} = e^t e^{Bt} = e^t (I + Bt) = e^t \begin{bmatrix}
+1 & t \\
+0 & 1
+\end{bmatrix} = \begin{bmatrix}
+e^t & t e^t \\
+0 & e^t
+\end{bmatrix}
 $$
 
 So the solution is:
 
 $$
-\begin{bmatrix} x_1(t) \\ x_2(t) \end{bmatrix} = \begin{bmatrix} e^t & t e^t \\ 0 & e^t \end{bmatrix} \begin{bmatrix} x_1(0) \\ x_2(0) \end{bmatrix}
+\begin{bmatrix}
+x_1(t) \\
+x_2(t)
+\end{bmatrix} = \begin{bmatrix}
+e^t & t e^t \\
+0 & e^t
+\end{bmatrix} \begin{bmatrix}
+x_1(0) \\
+x_2(0)
+\end{bmatrix}
 $$
 
 This gives the general solution:

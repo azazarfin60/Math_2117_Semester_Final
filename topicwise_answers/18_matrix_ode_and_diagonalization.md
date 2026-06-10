@@ -4,7 +4,10 @@ This file contains the organized questions and answers for **Matrix ODE and Diag
 
 ---
 
-## Q1. Diagonalize the matrix $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$. Hence evaluate $e^A$, and then solve $\frac{dx_1}{dt} = x_2$, $\frac{dx_2}{dt} = x_1$. (12)
+## Q1. Diagonalize the matrix $A = \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}$. Hence evaluate $e^A$, and then solve $\frac{dx_1}{dt} = x_2$, $\frac{dx_2}{dt} = x_1$. (12)
 
 | | |
 |---|---|
@@ -15,7 +18,10 @@ This file contains the organized questions and answers for **Matrix ODE and Diag
 
 #### 1. Diagonalization check
 
-Let $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$. Its eigenvalues are the diagonal entries:
+Let $A = \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}$. Its eigenvalues are the diagonal entries:
 
 $$
 \lambda_1 = 1, \quad \lambda_2 = 1
@@ -24,13 +30,28 @@ $$
 To check if $A$ is diagonalizable, we find the eigenvectors by solving $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies y = 0
+\begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix} \implies y = 0
 $$
 
-The eigenvectors are of the form $\begin{bmatrix} x \\ 0 \end{bmatrix}$. So there is only one linearly independent eigenvector:
+The eigenvectors are of the form $\begin{bmatrix}
+x \\
+0
+\end{bmatrix}$. So there is only one linearly independent eigenvector:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}
+X_1 = \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
 $$
 
 Since the geometric multiplicity (1) is less than the algebraic multiplicity (2), **the matrix $A$ is not diagonalizable**.
@@ -40,7 +61,10 @@ Since the geometric multiplicity (1) is less than the algebraic multiplicity (2)
 Even though $A$ is not diagonalizable, we can evaluate $e^A$ using the power series definition. We decompose $A$ into:
 
 $$
-A = I + B, \quad \text{where } B = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}
+A = I + B, \quad \text{where } B = \begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix}
 $$
 
 Since the identity matrix $I$ commutes with any matrix ($IB = BI$), we can write:
@@ -49,18 +73,36 @@ $$
 e^A = e^{I + B} = e^I \cdot e^B = e \cdot e^B
 $$
 
-Note that $B^2 = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}$. So $B^n = 0$ for all $n \geq 2$.
+Note that $B^2 = \begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix} \begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix} = \begin{bmatrix}
+0 & 0 \\
+0 & 0
+\end{bmatrix}$. So $B^n = 0$ for all $n \geq 2$.
 
 Using the series definition for $e^B$:
 
 $$
-e^B = I + B + \frac{B^2}{2!} + \dots = I + B = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}
+e^B = I + B + \frac{B^2}{2!} + \dots = I + B = \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}
 $$
 
 Therefore:
 
 $$
-e^A = e \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} e & e \\ 0 & e \end{bmatrix}
+e^A = e \begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix} = \begin{bmatrix}
+e & e \\
+0 & e
+\end{bmatrix}
 $$
 
 #### 3. Solving the differential equations
@@ -110,13 +152,28 @@ $$
 We calculate the matrix exponential $e^{At}$ by decomposing $At = It + Bt$:
 
 $$
-e^{At} = e^t e^{Bt} = e^t (I + Bt) = e^t \begin{bmatrix} 1 & t \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} e^t & t e^t \\ 0 & e^t \end{bmatrix}
+e^{At} = e^t e^{Bt} = e^t (I + Bt) = e^t \begin{bmatrix}
+1 & t \\
+0 & 1
+\end{bmatrix} = \begin{bmatrix}
+e^t & t e^t \\
+0 & e^t
+\end{bmatrix}
 $$
 
 So the solution is:
 
 $$
-\begin{bmatrix} x_1(t) \\ x_2(t) \end{bmatrix} = \begin{bmatrix} e^t & t e^t \\ 0 & e^t \end{bmatrix} \begin{bmatrix} x_1(0) \\ x_2(0) \end{bmatrix}
+\begin{bmatrix}
+x_1(t) \\
+x_2(t)
+\end{bmatrix} = \begin{bmatrix}
+e^t & t e^t \\
+0 & e^t
+\end{bmatrix} \begin{bmatrix}
+x_1(0) \\
+x_2(0)
+\end{bmatrix}
 $$
 
 This gives the general solution:
@@ -155,13 +212,19 @@ $$\frac{dy}{dt} = 2x + y$$
 We write the system in matrix form:
 
 $$
-\frac{dX}{dt} = M X, \quad \text{where } M = \begin{bmatrix} 6 & -3 \\ 2 & 1 \end{bmatrix}
+\frac{dX}{dt} = M X, \quad \text{where } M = \begin{bmatrix}
+6 & -3 \\
+2 & 1
+\end{bmatrix}
 $$
 
 First we find the eigenvalues of $M$ by solving $|M - \lambda I| = 0$:
 
 $$
-\begin{vmatrix} 6-\lambda & -3 \\ 2 & 1-\lambda \end{vmatrix} = 0 \implies (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = 0
+\begin{vmatrix}
+6-\lambda & -3 \\
+2 & 1-\lambda
+\end{vmatrix} = 0 \implies (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = 0
 $$
 
 $$
@@ -172,31 +235,52 @@ Now find the eigenvectors:
 *   **For $\lambda = 3$:**
 
 $$
-M - 3I = \begin{bmatrix} 3 & -3 \\ 2 & -2 \end{bmatrix} \implies 3x - 3y = 0 \implies x = y
+M - 3I = \begin{bmatrix}
+3 & -3 \\
+2 & -2
+\end{bmatrix} \implies 3x - 3y = 0 \implies x = y
 $$
 
 The eigenvector is:
 
 $$
-v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+v_1 = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 *   **For $\lambda = 4$:**
 
 $$
-M - 4I = \begin{bmatrix} 2 & -3 \\ 2 & -3 \end{bmatrix} \implies 2x - 3y = 0 \implies x = \frac{3}{2}y
+M - 4I = \begin{bmatrix}
+2 & -3 \\
+2 & -3
+\end{bmatrix} \implies 2x - 3y = 0 \implies x = \frac{3}{2}y
 $$
 
 The eigenvector (for $y=2$) is:
 
 $$
-v_2 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+v_2 = \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}
 $$
 
 The general solution is a linear combination of the fundamental solutions:
 
 $$
-\begin{bmatrix} x(t) \\ y(t) \end{bmatrix} = C_1 e^{3t} \begin{bmatrix} 1 \\ 1 \end{bmatrix} + C_2 e^{4t} \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+\begin{bmatrix}
+x(t) \\
+y(t)
+\end{bmatrix} = C_1 e^{3t} \begin{bmatrix}
+1 \\
+1
+\end{bmatrix} + C_2 e^{4t} \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}
 $$
 
 So the system solution is:

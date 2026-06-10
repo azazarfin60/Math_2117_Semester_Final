@@ -192,7 +192,11 @@ The dot product is zero. So, the velocity vector $\vec{v}$ is perpendicular to $
 We calculate the cross product:
 
 $$
-\vec{r} \times \vec{v} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \cos \omega t & \sin \omega t & 0 \\ -\omega \sin \omega t & \omega \cos \omega t & 0 \end{vmatrix}
+\vec{r} \times \vec{v} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\cos \omega t & \sin \omega t & 0 \\
+-\omega \sin \omega t & \omega \cos \omega t & 0
+\end{vmatrix}
 $$
 
 $$

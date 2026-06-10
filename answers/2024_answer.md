@@ -214,7 +214,11 @@ The dot product is zero. So, the velocity vector $\vec{v}$ is perpendicular to $
 We calculate the cross product:
 
 $$
-\vec{r} \times \vec{v} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \cos \omega t & \sin \omega t & 0 \\ -\omega \sin \omega t & \omega \cos \omega t & 0 \end{vmatrix}
+\vec{r} \times \vec{v} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\cos \omega t & \sin \omega t & 0 \\
+-\omega \sin \omega t & \omega \cos \omega t & 0
+\end{vmatrix}
 $$
 
 $$
@@ -304,7 +308,11 @@ We are given that $\nabla \times \vec{A} = 0$. So, the first term is zero.
 Next, we calculate the curl of the position vector $\vec{r}$:
 
 $$
-\nabla \times \vec{r} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x & y & z \end{vmatrix} = \hat{i}(0) - \hat{j}(0) + \hat{k}(0) = \vec{0}
+\nabla \times \vec{r} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x & y & z
+\end{vmatrix} = \hat{i}(0) - \hat{j}(0) + \hat{k}(0) = \vec{0}
 $$
 
 So, the second term is also zero:
@@ -622,7 +630,11 @@ $$
 First, we find the curl of $\vec{A}$:
 
 $$
-\nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y-z+2 & yz+4 & -xz \end{vmatrix}
+\nabla \times \vec{A} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y-z+2 & yz+4 & -xz
+\end{vmatrix}
 $$
 
 $$
@@ -906,19 +918,59 @@ $$
 First, we calculate $A^2$:
 
 $$
-A^2 = A \cdot A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix}
+A^2 = A \cdot A = \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} = \begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix}
 $$
 
 Next, we calculate $A^3$:
 
 $$
-A^3 = A^2 \cdot A = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix}
+A^3 = A^2 \cdot A = \begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} = \begin{bmatrix}
+32 & 62 & 31 \\
+31 & 63 & 31 \\
+31 & 62 & 32
+\end{bmatrix}
 $$
 
 Now we compute $A^3 - 7A^2 + 11A - 5I$:
 
 $$
-\begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix} - 7\begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} + 11\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} - 5\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+32 & 62 & 31 \\
+31 & 63 & 31 \\
+31 & 62 & 32
+\end{bmatrix} - 7\begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} + 11\begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix} - 5\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 $$
@@ -927,7 +979,11 @@ $$
 31-42+11 & 63-91+33-5 & 31-42+11 \\
 31-42+11 & 62-84+22 & 32-49+22-5
 \end{bmatrix}
-= \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+= \begin{bmatrix}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 All entries are zero. Cayley-Hamilton's Theorem is verified.
@@ -950,7 +1006,19 @@ $$
 We compute the right side:
 
 $$
-A^2 - 7A + 11I = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} - \begin{bmatrix} 14 & 14 & 7 \\ 7 & 21 & 7 \\ 7 & 14 & 14 \end{bmatrix} + \begin{bmatrix} 11 & 0 & 0 \\ 0 & 11 & 0 \\ 0 & 0 & 11 \end{bmatrix}
+A^2 - 7A + 11I = \begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} - \begin{bmatrix}
+14 & 14 & 7 \\
+7 & 21 & 7 \\
+7 & 14 & 14
+\end{bmatrix} + \begin{bmatrix}
+11 & 0 & 0 \\
+0 & 11 & 0 \\
+0 & 0 & 11
+\end{bmatrix}
 $$
 
 $$
@@ -959,13 +1027,21 @@ $$
 6-7+0 & 13-21+11 & 6-7+0 \\
 6-7+0 & 12-14+0 & 7-14+11
 \end{bmatrix}
-= \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+= \begin{bmatrix}
+4 & -2 & -1 \\
+-1 & 3 & -1 \\
+-1 & -2 & 4
+\end{bmatrix}
 $$
 
 So, the inverse is:
 
 $$
-A^{-1} = \frac{1}{5} \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+A^{-1} = \frac{1}{5} \begin{bmatrix}
+4 & -2 & -1 \\
+-1 & 3 & -1 \\
+-1 & -2 & 4
+\end{bmatrix}
 $$
 
 ---
@@ -1047,7 +1123,19 @@ $$
 We solve $(A - 2I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ 1 & 3 & 1 \\ 1 & 1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 3 & 1 \\
+1 & 1 & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 We apply row operations:
@@ -1057,7 +1145,11 @@ We apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 From the second row, we get $2y = 0 \implies y = 0$.
@@ -1066,14 +1158,30 @@ From the first row, we get $x + y + z = 0 \implies x + z = 0 \implies x = -z$.
 Let $z = 1$. The eigenvector is:
 
 $$
-X_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 2: For $\lambda = 3$
 We solve $(A - 3I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 & 1 \\ 1 & 2 & 1 \\ 1 & 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 1 \\
+1 & 2 & 1 \\
+1 & 1 & 0
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 From the first row, we get $y + z = 0 \implies y = -z$.
@@ -1082,20 +1190,40 @@ From the third row, we get $x + y = 0 \implies x = -y = z$.
 Let $z = 1$. The eigenvector is:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix}
+1 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 ##### Case 3: For $\lambda = 6$
 We solve $(A - 6I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 1 & 1 \\ 1 & -1 & 1 \\ 1 & 1 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-3 & 1 & 1 \\
+1 & -1 & 1 \\
+1 & 1 & -3
+\end{bmatrix} \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix}
+0 \\
+0 \\
+0
+\end{bmatrix}
 $$
 
 We swap rows $R_1 \leftrightarrow R_2$:
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ -3 & 1 & 1 \\ 1 & 1 & -3 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+-3 & 1 & 1 \\
+1 & 1 & -3
+\end{bmatrix}
 $$
 
 We apply row operations:
@@ -1105,19 +1233,31 @@ We apply row operations:
 This gives:
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ 0 & -2 & 4 \\ 0 & 2 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+0 & -2 & 4 \\
+0 & 2 & -4
+\end{bmatrix}
 $$
 
 We scale the second row ($R_2 \to -\frac{1}{2}R_2$):
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & -2 \\ 0 & 2 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+0 & 1 & -2 \\
+0 & 2 & -4
+\end{bmatrix}
 $$
 
 We perform $R_3 \to R_3 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & -2 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -1 & 1 \\
+0 & 1 & -2 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 From the second row, we get $y - 2z = 0 \implies y = 2z$.
@@ -1126,7 +1266,11 @@ From the first row, we get $x - y + z = 0 \implies x - 2z + z = 0 \implies x = z
 Let $z = 1$. The eigenvector is:
 
 $$
-X_3 = \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}
+X_3 = \begin{bmatrix}
+1 \\
+2 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -1274,7 +1418,11 @@ has only the trivial solution $c_1 = c_2 = \dots = c_n = 0$. If there is a solut
 We set up a matrix with these vectors as rows and check its determinant:
 
 $$
-D = \begin{vmatrix} 1 & 1 & 0 \\ 1 & 3 & 2 \\ 4 & 9 & 5 \end{vmatrix}
+D = \begin{vmatrix}
+1 & 1 & 0 \\
+1 & 3 & 2 \\
+4 & 9 & 5
+\end{vmatrix}
 $$
 
 We calculate the determinant:
@@ -1294,7 +1442,11 @@ $$
 We set up a matrix with these vectors as rows and check its determinant:
 
 $$
-D = \begin{vmatrix} 1 & 2 & 3 \\ 2 & 5 & 7 \\ 1 & 3 & 5 \end{vmatrix}
+D = \begin{vmatrix}
+1 & 2 & 3 \\
+2 & 5 & 7 \\
+1 & 3 & 5
+\end{vmatrix}
 $$
 
 We calculate the determinant:

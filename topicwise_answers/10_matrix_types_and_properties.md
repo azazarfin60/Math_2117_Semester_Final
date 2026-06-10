@@ -4,7 +4,10 @@ This file contains the organized questions and answers for **Matrix Types and Pr
 
 ---
 
-## Q1. If $A_\alpha = \begin{pmatrix} \cos\alpha & \sin\alpha \\ -\sin\alpha & \cos\alpha \end{pmatrix}$, then show that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$. (03)
+## Q1. If $A_\alpha = \begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha
+\end{pmatrix}$, then show that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$. (03)
 
 | | |
 |---|---|
@@ -16,13 +19,22 @@ This file contains the organized questions and answers for **Matrix Types and Pr
 Let us multiply the two matrices $A_\alpha$ and $A_\beta$:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos\alpha & \sin\alpha \\ -\sin\alpha & \cos\alpha \end{pmatrix} \begin{pmatrix} \cos\beta & \sin\beta \\ -\sin\beta & \cos\beta \end{pmatrix}
+A_\alpha \cdot A_\beta = \begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha
+\end{pmatrix} \begin{pmatrix}
+\cos\beta & \sin\beta \\
+-\sin\beta & \cos\beta
+\end{pmatrix}
 $$
 
 Multiply rows by columns:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos\alpha\cos\beta - \sin\alpha\sin\beta & \cos\alpha\sin\beta + \sin\alpha\cos\beta \\ -\sin\alpha\cos\beta - \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta \end{pmatrix}
+A_\alpha \cdot A_\beta = \begin{pmatrix}
+\cos\alpha\cos\beta - \sin\alpha\sin\beta & \cos\alpha\sin\beta + \sin\alpha\cos\beta \\
+-\sin\alpha\cos\beta - \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta
+\end{pmatrix}
 $$
 
 We apply standard trigonometric addition formulas:
@@ -38,7 +50,10 @@ $$
 Substitute these identities back into the product matrix:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos(\alpha+\beta) & \sin(\alpha+\beta) \\ -\sin(\alpha+\beta) & \cos(\alpha+\beta) \end{pmatrix} = A_{\alpha+\beta}
+A_\alpha \cdot A_\beta = \begin{pmatrix}
+\cos(\alpha+\beta) & \sin(\alpha+\beta) \\
+-\sin(\alpha+\beta) & \cos(\alpha+\beta)
+\end{pmatrix} = A_{\alpha+\beta}
 $$
 
 Since addition of angles is commutative ($\alpha + \beta = \beta + \alpha$), we also have:
@@ -71,7 +86,10 @@ $$
 *Example:*
 
 $$
-\begin{pmatrix} 1 & 2 \\ 2 & 5 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 \\
+2 & 5
+\end{pmatrix}
 $$
 
 #### Skew-Symmetric Matrix
@@ -87,7 +105,10 @@ The diagonal elements of a skew-symmetric matrix are always zero.
 *Example:*
 
 $$
-\begin{pmatrix} 0 & -3 \\ 3 & 0 \end{pmatrix}
+\begin{pmatrix}
+0 & -3 \\
+3 & 0
+\end{pmatrix}
 $$
 
 #### Hermitian Matrix
@@ -101,7 +122,10 @@ $$
 *Example:*
 
 $$
-\begin{pmatrix} 2 & 1+i \\ 1-i & 3 \end{pmatrix}
+\begin{pmatrix}
+2 & 1+i \\
+1-i & 3
+\end{pmatrix}
 $$
 
 ---
