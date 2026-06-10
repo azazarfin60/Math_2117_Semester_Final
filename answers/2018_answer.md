@@ -12,7 +12,13 @@
 
 ## SECTION - A
 
-### Q1(a) Show that the vectors $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$, $\bar{B} = \hat{i} - 4\hat{k}$, $\bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}$ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear. (06)
+### Q1(a) Show that the vectors 
+
+$$
+\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}, \quad \bar{B} = \hat{i} - 4\hat{k}, \quad \bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}
+$$
+
+ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear. (06)
 
 **Answer:**
 
@@ -156,7 +162,13 @@ $$
 b - 2 = 0 \implies b = 2
 $$
 
-So the constants are $a = 4$, $b = 2$, and $c = -1$.
+So the constants are 
+
+$$
+a = 4, \quad b = 2, \quad c = -1
+$$
+
+.
 
 ---
 
@@ -293,7 +305,13 @@ $$
 
 ---
 
-### Q2(b) If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int\_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
+### Q2(b) If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate 
+
+$$
+\int_C \bar{A} \cdot d\bar{r}
+$$
+
+ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
 *   **(i)** $x = t, y = t^2, z = t^3$
 *   **(ii)** the straight line joining $(0,0,0)$ to $(1,1,1)$.
 
@@ -365,7 +383,13 @@ So the integral along this path is $\frac{13}{3}$.
 
 ---
 
-### Q3(a) Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate $\iiint\_V \Phi dV$. (06)
+### Q3(a) Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate 
+
+$$
+\iiint_V \Phi dV
+$$
+
+. (06)
 
 **Answer:**
 
@@ -434,7 +458,13 @@ So the value of the triple integral is $128$.
 
 ---
 
-### Q3(b) Verify the divergence theorem for $\bar{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}$ taken over the region bounded by $x^2 + y^2 = 4$, $z = 0$, $z = 3$. (06)
+### Q3(b) Verify the divergence theorem for $\bar{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}$ taken over the region bounded by 
+
+$$
+x^2 + y^2 = 4, \quad z = 0, \quad z = 3
+$$
+
+. (06)
 
 **Answer:**
 
@@ -452,7 +482,13 @@ $$
 \bar{\nabla} \cdot \bar{A} = \frac{\partial}{\partial x}(4x) + \frac{\partial}{\partial y}(-2y^2) + \frac{\partial}{\partial z}(z^2) = 4 - 4y + 2z
 $$
 
-We use cylindrical coordinates: $x = r\cos\phi$, $y = r\sin\phi$, $z = z$, and $dV = r dr d\phi dz$. The limits are:
+We use cylindrical coordinates: 
+
+$$
+x = r\cos\phi, \quad y = r\sin\phi, \quad z = z
+$$
+
+, and $dV = r dr d\phi dz$. The limits are:
 
 $$
 r \in [0, 2], \quad \phi \in [0, 2\pi], \quad z \in [0, 3]
@@ -515,13 +551,31 @@ $$
 \bar{A} \cdot \hat{n} = (4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{2} \right) = 2x^2 - y^3
 $$
 
-We use cylindrical coordinates: $x = 2\cos\phi$, $y = 2\sin\phi$, and $dS = 2 d\phi dz$.
+We use cylindrical coordinates: 
+
+$$
+x = 2\cos\phi, \quad y = 2\sin\phi, \quad dS = 2 d\phi dz
+$$
+
+.
 
 $$
 \iint_{S_3} \bar{A} \cdot \hat{n} dS = \int_0^3 \int_0^{2\pi} \left[ 2(4\cos^2\phi) - 8\sin^3\phi \right] 2 d\phi dz
 $$
 
-We use the standard integral properties: $\int\_0^{2\pi} \cos^2\phi d\phi = \pi$ and $\int\_0^{2\pi} \sin^3\phi d\phi = 0$.
+We use the standard integral properties: 
+
+$$
+\int_0^{2\pi} \cos^2\phi d\phi = \pi
+$$
+
+ and 
+
+$$
+\int_0^{2\pi} \sin^3\phi d\phi = 0
+$$
+
+.
 
 $$
 \iint_{S_3} \bar{A} \cdot \hat{n} dS = \int_0^3 16\pi dz = 48\pi

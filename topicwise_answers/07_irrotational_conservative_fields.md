@@ -57,7 +57,13 @@ $$
 b - 2 = 0 \implies b = 2
 $$
 
-So the constants are $a = 4$, $b = 2$, and $c = -1$.
+So the constants are 
+
+$$
+a = 4, \quad b = 2, \quad c = -1
+$$
+
+.
 
 ---
 
@@ -444,7 +450,13 @@ $$
 b - 2 = 0 \implies b = 2
 $$
 
-So, the constants are $a = 4$, $b = 2$, and $c = -1$.
+So, the constants are 
+
+$$
+a = 4, \quad b = 2, \quad c = -1
+$$
+
+.
 
 #### 2. Find Scalar Potential
 We substitute $a$, $b$, and $c$ back into $\vec{F}$:

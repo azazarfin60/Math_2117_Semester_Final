@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Surface Integrals**
 
 ## Q1 (06)
 
-Evaluate $\iint\_S \vec{A} \cdot \hat{n} dS$, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$.
+Evaluate 
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS
+$$
+
+, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$.
 
 | | |
 |---|---|

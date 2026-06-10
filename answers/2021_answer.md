@@ -265,7 +265,13 @@ $$
 \vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}
 $$
 
-We apply this structure by letting $\vec{a} = \bar{\nabla}$, $\vec{b} = \bar{\nabla}$, and $\vec{c} = \bar{V}$.
+We apply this structure by letting 
+
+$$
+\vec{a} = \bar{\nabla}, \quad \vec{b} = \bar{\nabla}, \quad \vec{c} = \bar{V}
+$$
+
+.
 
 Since $\bar{\nabla}$ acts as an operator, we write the components of the curl of the curl:
 
@@ -375,7 +381,13 @@ So the angle between the surfaces is $\cos^{-1}\left( \frac{8}{3\sqrt{21}} \righ
 
 ---
 
-### Q3(b) If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int\_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$. (04)
+### Q3(b) If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate 
+
+$$
+\int_C \vec{A} \cdot d\vec{r}
+$$
+
+ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$. (04)
 
 **Answer:**
 
@@ -421,7 +433,13 @@ So the value of the line integral is $\frac{23}{3}$.
 
 ---
 
-### Q3(c) Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate $\iiint\_V \vec{F} dV$, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
+### Q3(c) Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate 
+
+$$
+\iiint_V \vec{F} dV
+$$
+
+, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
 
 **Answer:**
 
@@ -509,7 +527,13 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b \left[ \int_{y_1(x)}^{y_2(x)} \frac{\partial P}{\partial y} dy \right] dx = \int_a^b \left[ P(x, y_2(x)) - P(x, y_1(x)) \right] dx \quad \dots \text{(1)}
 $$
 
-Now evaluate the line integral $\oint\_C P dx$. The closed boundary curve $C$ consists of two parts:
+Now evaluate the line integral 
+
+$$
+\oint_C P dx
+$$
+
+. The closed boundary curve $C$ consists of two parts:
 *   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
 *   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
@@ -567,7 +591,13 @@ $$
 
 #### 1. Evaluate Volume Integral
 
-We use cylindrical coordinates: $x = r\cos\theta$, $y = r\sin\theta$, $z = z$ with Jacobian $r$. The limits are $r \in [0, 2]$, $\theta \in [0, 2\pi]$, and $z \in [0, 3]$:
+We use cylindrical coordinates: 
+
+$$
+x = r\cos\theta, \quad y = r\sin\theta, \quad z = z
+$$
+
+ with Jacobian $r$. The limits are $r \in [0, 2]$, $\theta \in [0, 2\pi]$, and $z \in [0, 3]$:
 
 $$
 \iiint_V (4 - 4y + 2z) dV = \int_0^2 \int_0^{2\pi} \int_0^3 (4 - 4r\sin\theta + 2z) r dz d\theta dr
@@ -613,7 +643,19 @@ $$
 \iint_{S_3} (2x^2 - y^3) dS = \int_0^3 \int_0^{2\pi} \left[ 8\cos^2\theta - 8\sin^3\theta \right] 2 d\theta dz = 6 \int_0^{2\pi} (8\cos^2\theta - 8\sin^3\theta) d\theta
 $$
 
-Since $\int\_0^{2\pi} \cos^2\theta d\theta = \pi$ and $\int\_0^{2\pi} \sin^3\theta d\theta = 0$:
+Since 
+
+$$
+\int_0^{2\pi} \cos^2\theta d\theta = \pi
+$$
+
+ and 
+
+$$
+\int_0^{2\pi} \sin^3\theta d\theta = 0
+$$
+
+:
 
 $$
 \iint_{S_3} \vec{A} \cdot \hat{n} dS = 6 [ 8\pi - 0 ] = 48\pi

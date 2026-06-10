@@ -129,7 +129,13 @@ $$
 $$
 
 The surface $S$ consists of the five faces of the cube above the $xy$-plane. The bottom face $z = 0$ is open.
-The boundary curve $C$ is the square in the $xy$-plane ($z = 0$) bounded by $x=0$, $x=2$, $y=0$, and $y=2$.
+The boundary curve $C$ is the square in the $xy$-plane ($z = 0$) bounded by 
+
+$$
+x=0, \quad x=2, \quad y=0
+$$
+
+, and $y=2$.
 
 #### 1. Evaluate the Line Integral
 Along the boundary curve $C$ in the plane $z = 0$, we have $z = 0$ and $dz = 0$.

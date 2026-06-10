@@ -88,7 +88,13 @@ $$
 
 ---
 
-### Q1(b) If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int\_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
+### Q1(b) If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate 
+
+$$
+\int_C \vec{F} \cdot d\vec{r}
+$$
+
+, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
 
 **Answer:**
 
@@ -202,7 +208,13 @@ So the directional derivative is $-\frac{20}{9}$.
 
 ---
 
-### Q2(a) If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate $\oint\_C \vec{F} \cdot d\vec{r}$ around the curve $C$ of the following figure: (06)
+### Q2(a) If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate 
+
+$$
+\oint_C \vec{F} \cdot d\vec{r}
+$$
+
+ around the curve $C$ of the following figure: (06)
 
 > [!NOTE]
 > **Figure Description:** The curve $C$ is a closed loop in the first quadrant of the $xy$-plane. It is bounded by the parabolas $y = x^2$ and $y^2 = x$. The curves intersect at the points $(0,0)$ and $(1,1)$. The boundary is traversed in the counterclockwise direction.
@@ -307,7 +319,13 @@ Both methods yield the same result of $-\frac{49}{30}$.
 
 ---
 
-### Q2(b) Evaluate $\iint\_S \vec{A} \cdot \hat{n} dS$, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+### Q2(b) Evaluate 
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS
+$$
+
+, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 
@@ -417,7 +435,13 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b \left[ \int_{y_1(x)}^{y_2(x)} \frac{\partial P}{\partial y} dy \right] dx = \int_a^b \left[ P(x, y_2(x)) - P(x, y_1(x)) \right] dx \quad \dots \text{(1)}
 $$
 
-Now evaluate the line integral $\oint\_C P dx$. The closed boundary curve $C$ consists of two parts:
+Now evaluate the line integral 
+
+$$
+\oint_C P dx
+$$
+
+. The closed boundary curve $C$ consists of two parts:
 *   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
 *   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
@@ -457,7 +481,13 @@ The proof is complete.
 
 ---
 
-### Q3(b) Evaluate $\oint\_C (y - \sin x)dx + \cos y dy$ where $C$ is the triangle of the adjoining figure: (06)
+### Q3(b) Evaluate 
+
+$$
+\oint_C (y - \sin x)dx + \cos y dy
+$$
+
+ where $C$ is the triangle of the adjoining figure: (06)
 
 > [!NOTE]
 > **Figure Description:** The curve $C$ is a triangle in the $xy$-plane with vertices at $(0,0)$, $(\pi/2, 0)$, and $(\pi/2, 1)$. The boundary is traversed in the counterclockwise direction.
@@ -484,7 +514,13 @@ $$
 \oint_C (P dx + Q dy) = \iint_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \iint_R (0 - 1) dA = -\iint_R dA
 $$
 
-The integral $\iint\_R dA$ is simply the area of the triangular region $R$:
+The integral 
+
+$$
+\iint_R dA
+$$
+
+ is simply the area of the triangular region $R$:
 
 $$
 \text{Area}(R) = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times \frac{\pi}{2} \times 1 = \frac{\pi}{4}

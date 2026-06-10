@@ -55,7 +55,13 @@ This field looks like a sink. All vectors point radially inward toward the cente
 
 ---
 
-### Q1(b) Show that a necessary and sufficient condition that the vectors $\vec{A} = A\_1\hat{i} + A\_2\hat{j} + A\_3\hat{k}$, $\vec{B} = B\_1\hat{i} + B\_2\hat{j} + B\_3\hat{k}$, $\vec{C} = C\_1\hat{i} + C\_2\hat{j} + C\_3\hat{k}$ be linearly independent is that the determinant (05)
+### Q1(b) Show that a necessary and sufficient condition that the vectors 
+
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}, \quad \vec{B} = B_1\hat{i} + B_2\hat{j} + B_3\hat{k}, \quad \vec{C} = C_1\hat{i} + C_2\hat{j} + C_3\hat{k}
+$$
+
+ be linearly independent is that the determinant (05)
 
 $$
 \begin{vmatrix}
@@ -81,7 +87,13 @@ $$
 a(A_1\hat{i} + A_2\hat{j} + A_3\hat{k}) + b(B_1\hat{i} + B_2\hat{j} + B_3\hat{k}) + c(C_1\hat{i} + C_2\hat{j} + C_3\hat{k}) = \vec{0}
 $$
 
-We group the components for $\hat{i}$, $\hat{j}$, and $\hat{k}$:
+We group the components for 
+
+$$
+\hat{i}, \quad \hat{j}, \quad \hat{k}
+$$
+
+:
 
 $$
 (a A_1 + b B_1 + c C_1)\hat{i} + (a A_2 + b B_2 + c C_2)\hat{j} + (a A_3 + b B_3 + c C_3)\hat{k} = \vec{0}
@@ -263,7 +275,13 @@ $$
 \frac{\partial Q}{\partial z} = \frac{\partial}{\partial z}(3x^2y - y^3z^2) = -2y^3z
 $$
 
-We substitute $x = 1$, $y = -2$, and $z = -1$:
+We substitute 
+
+$$
+x = 1, \quad y = -2, \quad z = -1
+$$
+
+:
 
 $$
 \frac{\partial Q}{\partial x} = 6(1)(-2) = -12
@@ -493,8 +511,17 @@ R = \{ (x, y) \mid c \leq y \leq d, \quad x_1(y) \leq x \leq x_2(y) \}
 $$
 
 We split the proof into two parts:
-*   **Part 1:** Show that $\oint\_C P dx = -\iint\_R \frac{\partial P}{\partial y} dx dy$
-*   **Part 2:** Show that $\oint\_C Q dy = \iint\_R \frac{\partial Q}{\partial x} dx dy$
+*   **Part 1:** Show that 
+
+$$
+\oint_C P dx = -\iint_R \frac{\partial P}{\partial y} dx dy
+$$
+
+*   **Part 2:** Show that 
+
+$$
+\oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy
+$$
 
 ##### Part 1
 We evaluate the double integral:
@@ -509,7 +536,13 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b [P(x, y_2(x)) - P(x, y_1(x))] dx \quad \dots (1)
 $$
 
-Now we evaluate the line integral $\oint\_C P dx$ along the boundary $C$. The boundary has two parts:
+Now we evaluate the line integral 
+
+$$
+\oint_C P dx
+$$
+
+ along the boundary $C$. The boundary has two parts:
 *   $C\_1$ is the lower curve $y = y\_1(x)$ going from $x = a$ to $x = b$.
 *   $C\_2$ is the upper curve $y = y\_2(x)$ going from $x = b$ to $x = a$.
 
@@ -542,7 +575,13 @@ $$
 \iint_R \frac{\partial Q}{\partial x} dx dy = \int_c^d \left[ \int_{x_1(y)}^{x_2(y)} \frac{\partial Q}{\partial x} dx \right] dy = \int_c^d [Q(x_2(y), y) - Q(x_1(y), y)] dy \quad \dots (3)
 $$
 
-Now we evaluate the line integral $\oint\_C Q dy$. The boundary curve $C$ consists of:
+Now we evaluate the line integral 
+
+$$
+\oint_C Q dy
+$$
+
+. The boundary curve $C$ consists of:
 *   $C\_1$ is the left curve $x = x\_1(y)$ going from $y = d$ to $y = c$.
 *   $C\_2$ is the right curve $x = x\_2(y)$ going from $y = c$ to $y = d$.
 
@@ -583,7 +622,13 @@ $$
 $$
 
 The surface $S$ consists of the five faces of the cube above the $xy$-plane. The bottom face $z = 0$ is open.
-The boundary curve $C$ is the square in the $xy$-plane ($z = 0$) bounded by $x=0$, $x=2$, $y=0$, and $y=2$.
+The boundary curve $C$ is the square in the $xy$-plane ($z = 0$) bounded by 
+
+$$
+x=0, \quad x=2, \quad y=0
+$$
+
+, and $y=2$.
 
 #### 1. Evaluate the Line Integral
 Along the boundary curve $C$ in the plane $z = 0$, we have $z = 0$ and $dz = 0$.

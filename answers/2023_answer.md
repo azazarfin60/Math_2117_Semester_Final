@@ -364,7 +364,13 @@ The proof is complete.
 
 ---
 
-### Q3(b) Verify Green's theorem in the plane for $\oint\_C (xy + y^2)dx + x^2dy$, where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
+### Q3(b) Verify Green's theorem in the plane for 
+
+$$
+\oint_C (xy + y^2)dx + x^2dy
+$$
+
+, where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
 
 **Answer:**
 

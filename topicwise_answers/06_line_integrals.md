@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Line Integrals**, p
 
 ## Q1 (04)
 
-If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int\_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$.
+If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate 
+
+$$
+\int_C \vec{F} \cdot d\vec{r}
+$$
+
+, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$.
 
 | | |
 |---|---|
@@ -63,7 +69,13 @@ So the value of the line integral is $-\frac{7}{6}$.
 
 ## Q2 (06)
 
-If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int\_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$:
+If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate 
+
+$$
+\int_C \bar{A} \cdot d\bar{r}
+$$
+
+ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$:
 
 | | |
 |---|---|
@@ -146,7 +158,13 @@ So the integral along this path is $\frac{13}{3}$.
 
 ## Q3 (04)
 
-If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int\_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$.
+If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate 
+
+$$
+\int_C \vec{A} \cdot d\vec{r}
+$$
+
+ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$.
 
 | | |
 |---|---|
@@ -271,7 +289,13 @@ So, the work done is 303.
 
 ## Q5 (06)
 
-If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate $\int\_C \vec{F} \cdot d\vec{r}$ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$.
+If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate 
+
+$$
+\int_C \vec{F} \cdot d\vec{r}
+$$
+
+ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$.
 
 | | |
 |---|---|

@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Linear Dependence a
 
 ## Q1 (06)
 
-Show that the vectors $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$, $\bar{B} = \hat{i} - 4\hat{k}$, $\bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}$ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear.
+Show that the vectors 
+
+$$
+\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}, \quad \bar{B} = \hat{i} - 4\hat{k}, \quad \bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}
+$$
+
+ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear.
 
 | | |
 |---|---|
@@ -207,7 +213,13 @@ Since the only solution is $c\_1 = c\_2 = c\_3 = 0$, the vectors $u + v$, $u - v
 
 ## Q4 (05)
 
-Show that a necessary and sufficient condition that the vectors $\vec{A} = A\_1\hat{i} + A\_2\hat{j} + A\_3\hat{k}$, $\vec{B} = B\_1\hat{i} + B\_2\hat{j} + B\_3\hat{k}$, $\vec{C} = C\_1\hat{i} + C\_2\hat{j} + C\_3\hat{k}$ be linearly independent is that the determinant
+Show that a necessary and sufficient condition that the vectors 
+
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}, \quad \vec{B} = B_1\hat{i} + B_2\hat{j} + B_3\hat{k}, \quad \vec{C} = C_1\hat{i} + C_2\hat{j} + C_3\hat{k}
+$$
+
+ be linearly independent is that the determinant
 
 | | |
 |---|---|
@@ -240,7 +252,13 @@ $$
 a(A_1\hat{i} + A_2\hat{j} + A_3\hat{k}) + b(B_1\hat{i} + B_2\hat{j} + B_3\hat{k}) + c(C_1\hat{i} + C_2\hat{j} + C_3\hat{k}) = \vec{0}
 $$
 
-We group the components for $\hat{i}$, $\hat{j}$, and $\hat{k}$:
+We group the components for 
+
+$$
+\hat{i}, \quad \hat{j}, \quad \hat{k}
+$$
+
+:
 
 $$
 (a A_1 + b B_1 + c C_1)\hat{i} + (a A_2 + b B_2 + c C_2)\hat{j} + (a A_3 + b B_3 + c C_3)\hat{k} = \vec{0}

@@ -57,7 +57,13 @@ $$
 b - 2 = 0 \implies b = 2
 $$
 
-So, the constants are $a = 4$, $b = 2$, and $c = -1$.
+So, the constants are 
+
+$$
+a = 4, \quad b = 2, \quad c = -1
+$$
+
+.
 
 #### 2. Find Scalar Potential
 We substitute $a$, $b$, and $c$ back into $\vec{F}$:
@@ -182,7 +188,13 @@ $$
 
 ---
 
-### Q3. If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate $\int\_C \vec{F} \cdot d\vec{r}$ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
+### Q3. If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate 
+
+$$
+\int_C \vec{F} \cdot d\vec{r}
+$$
+
+ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
 
 **Answer:**
 

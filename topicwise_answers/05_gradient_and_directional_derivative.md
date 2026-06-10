@@ -443,7 +443,13 @@ $$
 \frac{\partial Q}{\partial z} = \frac{\partial}{\partial z}(3x^2y - y^3z^2) = -2y^3z
 $$
 
-We substitute $x = 1$, $y = -2$, and $z = -1$:
+We substitute 
+
+$$
+x = 1, \quad y = -2, \quad z = -1
+$$
+
+:
 
 $$
 \frac{\partial Q}{\partial x} = 6(1)(-2) = -12

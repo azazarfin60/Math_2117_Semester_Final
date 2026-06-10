@@ -442,7 +442,13 @@ This completes the proof.
 
 ---
 
-### Q4(a) Evaluate $\iiint\_V \nabla \cdot \bar{F} dV$ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
+### Q4(a) Evaluate 
+
+$$
+\iiint_V \nabla \cdot \bar{F} dV
+$$
+
+ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
 
 **Answer:**
 
@@ -498,7 +504,13 @@ So the value of the triple integral is $\frac{8}{3}$.
 
 ---
 
-### Q4(b) Verify Green's theorem in the plane for $\oint\_C (2x - y^2)dx - xydy$ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$. (06)
+### Q4(b) Verify Green's theorem in the plane for 
+
+$$
+\oint_C (2x - y^2)dx - xydy
+$$
+
+ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$. (06)
 
 **Answer:**
 
@@ -526,7 +538,13 @@ $$
 
 #### 1. Evaluate Double Integral
 
-The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates ($x = r\cos\theta$, $y = r\sin\theta$, $dA = r \, dr \, d\theta$):
+The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates (
+
+$$
+x = r\cos\theta, \quad y = r\sin\theta, \quad dA = r \, dr \, d\theta
+$$
+
+):
 
 $$
 \iint_R y \, dA = \int_{\theta=0}^{2\pi} \int_{r=1}^3 (r\sin\theta) r \, dr \, d\theta = \left( \int_1^3 r^2 \, dr \right) \left( \int_0^{2\pi} \sin\theta \, d\theta \right)

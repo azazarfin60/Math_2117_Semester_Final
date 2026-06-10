@@ -6,7 +6,13 @@ This file contains the organized questions and answers for **Green's Theorem**, 
 
 ## Q1 (06)
 
-If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate $\oint\_C \vec{F} \cdot d\vec{r}$ around the curve $C$ of the following figure:
+If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate 
+
+$$
+\oint_C \vec{F} \cdot d\vec{r}
+$$
+
+ around the curve $C$ of the following figure:
 
 | | |
 |---|---|
@@ -160,7 +166,13 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b \left[ \int_{y_1(x)}^{y_2(x)} \frac{\partial P}{\partial y} dy \right] dx = \int_a^b \left[ P(x, y_2(x)) - P(x, y_1(x)) \right] dx \quad \dots \text{(1)}
 $$
 
-Now evaluate the line integral $\oint\_C P dx$. The closed boundary curve $C$ consists of two parts:
+Now evaluate the line integral 
+
+$$
+\oint_C P dx
+$$
+
+. The closed boundary curve $C$ consists of two parts:
 *   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
 *   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
@@ -202,7 +214,13 @@ The proof is complete.
 
 ## Q3 (06)
 
-Evaluate $\oint\_C (y - \sin x)dx + \cos y dy$ where $C$ is the triangle of the adjoining figure:
+Evaluate 
+
+$$
+\oint_C (y - \sin x)dx + \cos y dy
+$$
+
+ where $C$ is the triangle of the adjoining figure:
 
 | | |
 |---|---|
@@ -236,7 +254,13 @@ $$
 \oint_C (P dx + Q dy) = \iint_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \iint_R (0 - 1) dA = -\iint_R dA
 $$
 
-The integral $\iint\_R dA$ is simply the area of the triangular region $R$:
+The integral 
+
+$$
+\iint_R dA
+$$
+
+ is simply the area of the triangular region $R$:
 
 $$
 \text{Area}(R) = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times \frac{\pi}{2} \times 1 = \frac{\pi}{4}
@@ -295,7 +319,13 @@ Both methods yield the same result of $-\frac{\pi}{4}$.
 
 ## Q4 (06)
 
-Verify Green's theorem in the plane for $\oint\_C (2x - y^2)dx - xydy$ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$.
+Verify Green's theorem in the plane for 
+
+$$
+\oint_C (2x - y^2)dx - xydy
+$$
+
+ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$.
 
 | | |
 |---|---|
@@ -328,7 +358,13 @@ $$
 
 #### 1. Evaluate Double Integral
 
-The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates ($x = r\cos\theta$, $y = r\sin\theta$, $dA = r \, dr \, d\theta$):
+The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates (
+
+$$
+x = r\cos\theta, \quad y = r\sin\theta, \quad dA = r \, dr \, d\theta
+$$
+
+):
 
 $$
 \iint_R y \, dA = \int_{\theta=0}^{2\pi} \int_{r=1}^3 (r\sin\theta) r \, dr \, d\theta = \left( \int_1^3 r^2 \, dr \right) \left( \int_0^{2\pi} \sin\theta \, d\theta \right)
@@ -384,7 +420,13 @@ Both the double integral and the line integral equal $0$, so Green's theorem is 
 
 ## Q5 (06)
 
-Verify Green's theorem in the plane for $\oint\_C (xy + y^2)dx + x^2dy$ where $C$ is a closed region bounded by $y = x$ and $y = x^2$.
+Verify Green's theorem in the plane for 
+
+$$
+\oint_C (xy + y^2)dx + x^2dy
+$$
+
+ where $C$ is a closed region bounded by $y = x$ and $y = x^2$.
 
 | | |
 |---|---|

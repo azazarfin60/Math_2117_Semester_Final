@@ -141,7 +141,13 @@ $$
 i_1 + 26 = 8 \implies i_1 = -18
 $$
 
-So, the mesh currents are $i\_1 = -18$, $i\_2 = 19$, and $i\_3 = 16$.
+So, the mesh currents are 
+
+$$
+i_1 = -18, \quad i_2 = 19, \quad i_3 = 16
+$$
+
+.
 
 ---
 

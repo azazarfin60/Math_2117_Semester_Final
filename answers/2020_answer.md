@@ -417,7 +417,13 @@ So the work done along this straight line is $\frac{13}{3}$.
 
 ---
 
-### Q4(a) Evaluate $\iint\_S \bar{A} \cdot \hat{n} dS$ where, $\bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+### Q4(a) Evaluate 
+
+$$
+\iint_S \bar{A} \cdot \hat{n} dS
+$$
+
+ where, $\bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 
@@ -485,7 +491,13 @@ So the value of the surface integral is $90$.
 
 ---
 
-### Q4(b) Verify Green's theorem in the plane for $\oint\_C (xy + y^2)dx + x^2dy$ where $C$ is a closed region bounded by $y = x$ and $y = x^2$. (06)
+### Q4(b) Verify Green's theorem in the plane for 
+
+$$
+\oint_C (xy + y^2)dx + x^2dy
+$$
+
+ where $C$ is a closed region bounded by $y = x$ and $y = x^2$. (06)
 
 **Answer:**
 
