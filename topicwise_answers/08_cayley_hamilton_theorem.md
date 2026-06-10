@@ -1,0 +1,330 @@
+# Topic 08: Cayley-Hamilton Theorem
+
+This file contains the organized questions and answers for **Cayley-Hamilton Theorem**, priority ranked as **Priority 8** based on frequency and exam weight.
+
+---
+
+## Q1. State and prove Cayley-Hamilton theorem. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-7b |
+| **Source** | 2018 Q7(b) [06 marks] |
+
+**Answer:**
+
+#### Statement
+
+Every square matrix satisfies its own characteristic equation. If the characteristic polynomial of a matrix $A$ of order $n$ is:
+
+$$
+p(\lambda) = (-1)^n \lambda^n + c_{n-1} \lambda^{n-1} + \dots + c_0 = 0
+$$
+
+then we have:
+
+$$
+p(A) = (-1)^n A^n + c_{n-1} A^{n-1} + \dots + c_0 I = 0
+$$
+
+#### Proof
+
+The characteristic matrix is $A - \lambda I$. The adjoint matrix $\text{adj}(A - \lambda I)$ contains polynomial elements in $\lambda$ of degree at most $n-1$. We can write it as:
+
+$$
+\text{adj}(A - \lambda I) = B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0
+$$
+
+where $B_i$ are constant matrices of order $n$. We use the fundamental matrix relation:
+
+$$
+(A - \lambda I) \text{adj}(A - \lambda I) = |A - \lambda I| I
+$$
+
+Let the characteristic polynomial be $|A - \lambda I| = c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n$. Substitute this and the adjoint expression:
+
+$$
+(A - \lambda I)(B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0) = (c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n) I
+$$
+
+Multiply the terms on the left side:
+
+$$
+A B_{n-1} \lambda^{n-1} + \dots + A B_0 - B_{n-1} \lambda^n - \dots - B_0 \lambda = c_0 I + c_1 I \lambda + \dots + (-1)^n I \lambda^n
+$$
+
+Equating the coefficients of like powers of $\lambda$:
+
+$$
+A B_0 = c_0 I
+$$
+
+$$
+A B_1 - B_0 = c_1 I
+$$
+
+$$
+A B_2 - B_1 = c_2 I
+$$
+
+$$
+\dots
+$$
+
+$$
+A B_{n-1} - B_{n-2} = c_{n-1} I
+$$
+
+$$
+-B_{n-1} = (-1)^n I
+$$
+
+Now we pre-multiply these equations by $I, A, A^2, \dots, A^n$ respectively:
+
+$$
+A B_0 = c_0 I
+$$
+
+$$
+A^2 B_1 - A B_0 = c_1 A
+$$
+
+$$
+A^3 B_2 - A^2 B_1 = c_2 A^2
+$$
+
+$$
+\dots
+$$
+
+$$
+A^n B_{n-1} - A^{n-1} B_{n-2} = c_{n-1} A^{n-1}
+$$
+
+$$
+-A^n B_{n-1} = (-1)^n A^n
+$$
+
+Add all these equations together. The terms on the left side cancel out to zero:
+
+$$
+0 = c_0 I + c_1 A + c_2 A^2 + \dots + (-1)^n A^n = p(A)
+$$
+
+So $p(A) = 0$. The theorem is proven.
+
+---
+
+## Q2. Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix}$ and hence find $A^{-1}$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-7b |
+| **Source** | 2019 Q7(b) [06 marks] |
+
+**Answer:**
+
+#### 1. Find characteristic equation
+
+The characteristic equation is $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix} 2-\lambda & -1 & 1 \\ -1 & 2-\lambda & -1 \\ 1 & -1 & 2-\lambda \end{vmatrix} = 0
+$$
+
+Calculate the determinant:
+
+$$
+(2-\lambda)\left[ (2-\lambda)^2 - 1 \right] - (-1)\left[ -(2-\lambda) - (-1) \right] + 1\left[ 1 - (2-\lambda) \right] = 0
+$$
+
+$$
+(2-\lambda)(\lambda^2 - 4\lambda + 3) + (\lambda - 1) + (\lambda - 1) = 0
+$$
+
+$$
+-\lambda^3 + 6\lambda^2 - 9\lambda + 4 = 0 \implies \lambda^3 - 6\lambda^2 + 9\lambda - 4I = 0
+$$
+
+#### 2. Verification of Cayley-Hamilton Theorem
+
+According to the theorem, the matrix $A$ satisfies its own characteristic equation:
+
+$$
+A^3 - 6A^2 + 9A - 4I = 0
+$$
+
+We calculate $A^2$ and $A^3$:
+
+$$
+A^2 = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix}
+$$
+
+$$
+A^3 = A^2 A = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix} = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix}
+$$
+
+Now substitute $A^3$, $A^2$, $A$, and $I$ into the expression:
+
+$$
+A^3 - 6A^2 + 9A - 4I = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix} - \begin{pmatrix} 36 & -30 & 30 \\ -30 & 36 & -30 \\ 30 & -30 & 36 \end{pmatrix} + \begin{pmatrix} 18 & -9 & 9 \\ -9 & 18 & -9 \\ 9 & -9 & 18 \end{pmatrix} - \begin{pmatrix} 4 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & 4 \end{pmatrix}
+$$
+
+Calculate the matrix elements:
+*   Diagonal elements: $22 - 36 + 18 - 4 = 0$
+*   Off-diagonal elements (e.g. Row 1 Col 2): $-21 - (-30) + (-9) - 0 = 0$
+
+All entries are zero. Cayley-Hamilton's Theorem is verified.
+
+#### 3. Find $A^{-1}$
+
+Multiply the equation by $A^{-1}$:
+
+$$
+A^2 - 6A + 9I - 4A^{-1} = 0 \implies 4A^{-1} = A^2 - 6A + 9I
+$$
+
+$$
+4A^{-1} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} - \begin{pmatrix} 12 & -6 & 6 \\ -6 & 12 & -6 \\ 6 & -6 & 12 \end{pmatrix} + \begin{pmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{pmatrix}
+$$
+
+$$
+4A^{-1} = \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix} \implies A^{-1} = \frac{1}{4} \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix}
+$$
+
+---
+
+## Q3. Verify Cayley Hamilton's theorem for the matrix: (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-6a |
+| **Source** | 2024 Q6(a) [05 marks] |
+
+**Answer:**
+
+$$
+A = \begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}
+$$
+
+Hence compute $A^{-1}$.
+
+**Answer:**
+
+#### 1. Characteristic Equation
+We find the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix}
+2 - \lambda & 2 & 1 \\
+1 & 3 - \lambda & 1 \\
+1 & 2 & 2 - \lambda
+\end{vmatrix} = 0
+$$
+
+We expand the determinant:
+
+$$
+(2 - \lambda) \left[ (3 - \lambda)(2 - \lambda) - 2 \right] - 2 \left[ 1(2 - \lambda) - 1 \right] + 1 \left[ 2 - (3 - \lambda) \right] = 0
+$$
+
+$$
+(2 - \lambda) \left[ \lambda^2 - 5\lambda + 4 \right] - 2 \left[ 1 - \lambda \right] + 1 \left[ \lambda - 1 \right] = 0
+$$
+
+$$
+(2\lambda^2 - 10\lambda + 8 - \lambda^3 + 5\lambda^2 - 4\lambda) - (2 - 2\lambda) + (\lambda - 1) = 0
+$$
+
+$$
+-\lambda^3 + 7\lambda^2 - 14\lambda + 8 - 2 + 2\lambda + \lambda - 1 = 0
+$$
+
+$$
+-\lambda^3 + 7\lambda^2 - 11\lambda + 5 = 0
+$$
+
+We multiply by $-1$:
+
+$$
+\lambda^3 - 7\lambda^2 + 11\lambda - 5 = 0
+$$
+
+#### 2. Verification of Cayley-Hamilton Theorem
+We show that matrix $A$ satisfies this equation:
+
+$$
+A^3 - 7A^2 + 11A - 5I = 0
+$$
+
+First, we calculate $A^2$:
+
+$$
+A^2 = A \cdot A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix}
+$$
+
+Next, we calculate $A^3$:
+
+$$
+A^3 = A^2 \cdot A = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix}
+$$
+
+Now we compute $A^3 - 7A^2 + 11A - 5I$:
+
+$$
+\begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix} - 7\begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} + 11\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} - 5\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix}
+32-49+22-5 & 62-84+22 & 31-42+11 \\
+31-42+11 & 63-91+33-5 & 31-42+11 \\
+31-42+11 & 62-84+22 & 32-49+22-5
+\end{bmatrix}
+= \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+All entries are zero. Cayley-Hamilton's Theorem is verified.
+
+#### 3. Compute $A^{-1}$
+We multiply the characteristic equation by $A^{-1}$:
+
+$$
+A^{-1}(A^3 - 7A^2 + 11A - 5I) = 0
+$$
+
+$$
+A^2 - 7A + 11I - 5A^{-1} = 0 \implies 5A^{-1} = A^2 - 7A + 11I
+$$
+
+$$
+A^{-1} = \frac{1}{5}(A^2 - 7A + 11I)
+$$
+
+We compute the right side:
+
+$$
+A^2 - 7A + 11I = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} - \begin{bmatrix} 14 & 14 & 7 \\ 7 & 21 & 7 \\ 7 & 14 & 14 \end{bmatrix} + \begin{bmatrix} 11 & 0 & 0 \\ 0 & 11 & 0 \\ 0 & 0 & 11 \end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix}
+7-14+11 & 12-14+0 & 6-7+0 \\
+6-7+0 & 13-21+11 & 6-7+0 \\
+6-7+0 & 12-14+0 & 7-14+11
+\end{bmatrix}
+= \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+$$
+
+So, the inverse is:
+
+$$
+A^{-1} = \frac{1}{5} \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+$$
+
+---
+

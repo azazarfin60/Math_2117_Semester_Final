@@ -1,0 +1,86 @@
+# Topic 22: Surface Integrals
+
+This file contains the organized questions and answers for **Surface Integrals**, priority ranked as **Priority 22** based on frequency and exam weight.
+
+---
+
+## Q1. Evaluate $\iint_S \vec{A} \cdot \hat{n} dS$, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-2b | PYQ-2020-4a |
+| **Appeared in** | 2017 Q2(b) [06 marks], 2020 Q4(a) [06 marks] |
+| **Frequency** | ⭐⭐ (2 times) |
+
+**Answer:**
+
+Let the cylinder surface be defined by the function:
+
+$$
+g(x, y, z) = x^2 + y^2 - 16 = 0
+$$
+
+The gradient of $g$ points normal to this surface:
+
+$$
+\vec{\nabla}g = 2x\hat{i} + 2y\hat{j}
+$$
+
+We find the unit outward normal vector $\hat{n}$:
+
+$$
+\hat{n} = \frac{\vec{\nabla}g}{|\vec{\nabla}g|} = \frac{2x\hat{i} + 2y\hat{j}}{\sqrt{4x^2 + 4y^2}} = \frac{2x\hat{i} + 2y\hat{j}}{2\sqrt{16}} = \frac{x\hat{i} + y\hat{j}}{4}
+$$
+
+Now calculate the dot product $\vec{A} \cdot \hat{n}$:
+
+$$
+\vec{A} \cdot \hat{n} = (z\hat{i} + x\hat{j} - 3y^2z\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{4} \right) = \frac{xz + xy}{4}
+$$
+
+Next we project the cylinder surface $S$ onto the $yz$-plane. The projection region $R$ is bounded by:
+
+$$
+y \in [0, 4], \quad z \in [0, 5]
+$$
+
+For this projection, the surface area element $dS$ is related to $dy dz$ by:
+
+$$
+dS = \frac{dydz}{|\hat{n} \cdot \hat{i}|} = \frac{dydz}{|x/4|} = \frac{4}{x} dydz
+$$
+
+Now we set up the surface integral over the region $R$:
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS = \iint_R \left( \frac{xz + xy}{4} \right) \left( \frac{4}{x} dydz \right)
+$$
+
+Simplify the integrand:
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS = \iint_R (z + y) dydz
+$$
+
+Set up the limits of integration:
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS = \int_{y=0}^4 \int_{z=0}^5 (y + z) dz dy
+$$
+
+Integrate with respect to $z$:
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS = \int_0^4 \left[ yz + \frac{z^2}{2} \right]_0^5 dy = \int_0^4 \left( 5y + \frac{25}{2} \right) dy
+$$
+
+Now integrate with respect to $y$:
+
+$$
+\iint_S \vec{A} \cdot \hat{n} dS = \left[ \frac{5y^2}{2} + \frac{25}{2}y \right]_0^4 = \frac{5(16)}{2} + \frac{25(4)}{2} = 40 + 50 = 90
+$$
+
+So the value of the surface integral is $90$.
+
+---
+

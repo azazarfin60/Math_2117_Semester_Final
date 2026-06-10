@@ -1,0 +1,493 @@
+# Topic 05: Gradient and Directional Derivative
+
+This file contains the organized questions and answers for **Gradient and Directional Derivative**, priority ranked as **Priority 5** based on frequency and exam weight.
+
+---
+
+## Q1. Find the angle between the surfaces $x^2 + y^2 + z^2 = 9$ and $z = x^2 + y^2 - 3$ at the point $(2, -1, 2)$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-1a | PYQ-2019-3a | PYQ-2021-3a |
+| **Appeared in** | 2017 Q1(a) [04 marks], 2019 Q3(a) [04 marks], 2021 Q3(a) [04 marks] |
+| **Frequency** | ⭐⭐⭐ (3 times) |
+
+**Answer:**
+
+Let the first surface be defined by the function:
+
+$$
+f_1(x, y, z) = x^2 + y^2 + z^2 - 9 = 0
+$$
+
+The gradient of $f_1$ gives the normal vector to this surface:
+
+$$
+\vec{\nabla}f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}
+$$
+
+At the point $P(2, -1, 2)$, the normal vector $\vec{n}_1$ is:
+
+$$
+\vec{n}_1 = 2(2)\hat{i} + 2(-1)\hat{j} + 2(2)\hat{k} = 4\hat{i} - 2\hat{j} + 4\hat{k}
+$$
+
+Let the second surface be defined by the function:
+
+$$
+f_2(x, y, z) = x^2 + y^2 - z - 3 = 0
+$$
+
+The gradient of $f_2$ gives the normal vector to this surface:
+
+$$
+\vec{\nabla}f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}
+$$
+
+At the point $P(2, -1, 2)$, the normal vector $\vec{n}_2$ is:
+
+$$
+\vec{n}_2 = 2(2)\hat{i} + 2(-1)\hat{j} - \hat{k} = 4\hat{i} - 2\hat{j} - \hat{k}
+$$
+
+Let $\theta$ be the angle between these two surfaces. We use the dot product of their normal vectors:
+
+$$
+\cos\theta = \frac{\vec{n}_1 \cdot \vec{n}_2}{|\vec{n}_1||\vec{n}_2|}
+$$
+
+Calculate the dot product:
+
+$$
+\vec{n}_1 \cdot \vec{n}_2 = (4)(4) + (-2)(-2) + (4)(-1) = 16 + 4 - 4 = 16
+$$
+
+Calculate the magnitudes of the normal vectors:
+
+$$
+|\vec{n}_1| = \sqrt{4^2 + (-2)^2 + 4^2} = \sqrt{16 + 4 + 16} = \sqrt{36} = 6
+$$
+
+$$
+|\vec{n}_2| = \sqrt{4^2 + (-2)^2 + (-1)^2} = \sqrt{16 + 4 + 1} = \sqrt{21}
+$$
+
+Substitute these values back into the cosine equation:
+
+$$
+\cos\theta = \frac{16}{6\sqrt{21}} = \frac{8}{3\sqrt{21}}
+$$
+
+So the angle $\theta$ is:
+
+$$
+\theta = \cos^{-1}\left(\frac{8}{3\sqrt{21}}\right)
+$$
+
+---
+
+## Q2. Find the directional derivative of $\phi = 4e^{2x - y + z}$ at $(1, 1, -1)$ in a direction toward the point $(-3, 5, 6)$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-1c |
+| **Source** | 2017 Q1(c) [04 marks] |
+
+**Answer:**
+
+Let $P$ be the point $(1, 1, -1)$ and $Q$ be the point $(-3, 5, 6)$.
+
+The direction vector from $P$ to $Q$ is:
+
+$$
+\vec{d} = \vec{PQ} = (-3 - 1)\hat{i} + (5 - 1)\hat{j} + (6 - (-1))\hat{k} = -4\hat{i} + 4\hat{j} + 7\hat{k}
+$$
+
+We find the unit vector $\hat{u}$ in this direction:
+
+$$
+\hat{u} = \frac{\vec{d}}{|\vec{d}|} = \frac{-4\hat{i} + 4\hat{j} + 7\hat{k}}{\sqrt{(-4)^2 + 4^2 + 7^2}} = \frac{-4\hat{i} + 4\hat{j} + 7\hat{k}}{\sqrt{16 + 16 + 49}} = \frac{-4\hat{i} + 4\hat{j} + 7\hat{k}}{\sqrt{81}} = \frac{-4\hat{i} + 4\hat{j} + 7\hat{k}}{9}
+$$
+
+Next we find the gradient of $\phi$:
+
+$$
+\vec{\nabla}\phi = \frac{\partial\phi}{\partial x}\hat{i} + \frac{\partial\phi}{\partial y}\hat{j} + \frac{\partial\phi}{\partial z}\hat{k}
+$$
+
+For $\phi = 4e^{2x - y + z}$, we calculate the partial derivatives:
+
+$$
+\frac{\partial\phi}{\partial x} = 8e^{2x - y + z}
+$$
+
+$$
+\frac{\partial\phi}{\partial y} = -4e^{2x - y + z}
+$$
+
+$$
+\frac{\partial\phi}{\partial z} = 4e^{2x - y + z}
+$$
+
+So the gradient vector is:
+
+$$
+\vec{\nabla}\phi = 4e^{2x - y + z} (2\hat{i} - \hat{j} + \hat{k})
+$$
+
+At the point $P(1, 1, -1)$, the exponent is $2(1) - 1 + (-1) = 0$. So we get:
+
+$$
+\vec{\nabla}\phi|_P = 4e^0 (2\hat{i} - \hat{j} + \hat{k}) = 8\hat{i} - 4\hat{j} + 4\hat{k}
+$$
+
+The directional derivative is the dot product of the gradient and the unit vector:
+
+$$
+D_{\hat{u}}\phi = \vec{\nabla}\phi|_P \cdot \hat{u} = (8\hat{i} - 4\hat{j} + 4\hat{k}) \cdot \left( \frac{-4\hat{i} + 4\hat{j} + 7\hat{k}}{9} \right)
+$$
+
+$$
+D_{\hat{u}}\phi = \frac{(8)(-4) + (-4)(4) + (4)(7)}{9} = \frac{-32 - 16 + 28}{9} = \frac{-20}{9}
+$$
+
+So the directional derivative is $-\frac{20}{9}$.
+
+---
+
+## Q3. Find an equation for the tangent plane to the surface $2xz^2 - 3xy - 4x = 7$ at the point $(1, -1, 2)$. (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-4b |
+| **Source** | 2018 Q4(b) [03 marks] |
+
+**Answer:**
+
+Let the surface be defined by the function:
+
+$$
+F(x, y, z) = 2xz^2 - 3xy - 4x - 7 = 0
+$$
+
+The gradient of $F$ gives the normal vector to the surface:
+
+$$
+\vec{\nabla}F = \frac{\partial F}{\partial x}\hat{i} + \frac{\partial F}{\partial y}\hat{j} + \frac{\partial F}{\partial z}\hat{k}
+$$
+
+Calculate the partial derivatives:
+
+$$
+\frac{\partial F}{\partial x} = 2z^2 - 3y - 4
+$$
+
+$$
+\frac{\partial F}{\partial y} = -3x
+$$
+
+$$
+\frac{\partial F}{\partial z} = 4xz
+$$
+
+At the point $(1, -1, 2)$, the gradient vector is:
+
+$$
+\vec{\nabla}F = (2(4) - 3(-1) - 4)\hat{i} - 3(1)\hat{j} + 4(1)(2)\hat{k} = 7\hat{i} - 3\hat{j} + 8\hat{k}
+$$
+
+The equation of the tangent plane at $(x_0, y_0, z_0) = (1, -1, 2)$ is:
+
+$$
+7(x - 1) - 3(y - (-1)) + 8(z - 2) = 0
+$$
+
+$$
+7x - 7 - 3y - 3 + 8z - 16 = 0 \implies 7x - 3y + 8z = 26
+$$
+
+So the equation of the tangent plane is $7x - 3y + 8z = 26$.
+
+---
+
+## Q4. What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-4c |
+| **Source** | 2018 Q4(c) [04 marks] |
+
+**Answer:**
+
+#### 1. Definition
+
+The directional derivative is the rate of change of a scalar function at a given point in a specific direction. It equals the dot product of the function's gradient and the unit direction vector.
+
+#### 2. Calculation
+
+Let the direction vector be $\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}$. The unit direction vector $\hat{u}$ is:
+
+$$
+\hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{9}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
+$$
+
+Next we find the gradient of $\phi = x^2yz + 4xz^2$:
+
+$$
+\vec{\nabla}\phi = (2xyz + 4z^2)\hat{i} + x^2z\hat{j} + (x^2y + 8xz)\hat{k}
+$$
+
+At the point $(1, -2, -1)$, the gradient vector is:
+
+$$
+\vec{\nabla}\phi = (2(1)(-2)(-1) + 4(1))\hat{i} + (1)(-1)\hat{j} + ((1)(-2) + 8(1)(-1))\hat{k}
+$$
+
+$$
+\vec{\nabla}\phi = (4 + 4)\hat{i} - \hat{j} + (-2 - 8)\hat{k} = 8\hat{i} - \hat{j} - 10\hat{k}
+$$
+
+The directional derivative is:
+
+$$
+D_{\hat{u}}\phi = \vec{\nabla}\phi \cdot \hat{u} = (8\hat{i} - \hat{j} - 10\hat{k}) \cdot \left( \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3} \right)
+$$
+
+$$
+D_{\hat{u}}\phi = \frac{8(2) + (-1)(-1) + (-10)(-2)}{3} = \frac{16 + 1 + 20}{3} = \frac{37}{3}
+$$
+
+So the directional derivative is $\frac{37}{3}$.
+
+---
+
+## SECTION - B
+
+---
+
+## Q5. Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-2c |
+| **Source** | 2019 Q2(c) [04 marks] |
+
+**Answer:**
+
+The gradient of $\phi$ is:
+
+$$
+\vec{\nabla}\phi = \frac{\partial\phi}{\partial x}\hat{i} + \frac{\partial\phi}{\partial y}\hat{j} + \frac{\partial\phi}{\partial z}\hat{k}
+$$
+
+$$
+\vec{\nabla}\phi = (2xyz + 4z^2)\hat{i} + x^2z\hat{j} + (x^2y + 8xz)\hat{k}
+$$
+
+Evaluate this gradient at the point $(1, -2, 1)$:
+
+*   $\frac{\partial\phi}{\partial x} = 2(1)(-2)(1) + 4(1)^2 = -4 + 4 = 0$
+*   $\frac{\partial\phi}{\partial y} = (1)^2(1) = 1$
+*   $\frac{\partial\phi}{\partial z} = (1)^2(-2) + 8(1)(1) = -2 + 8 = 6$
+
+So the gradient vector is:
+
+$$
+\vec{\nabla}\phi(1, -2, 1) = \hat{j} + 6\hat{k}
+$$
+
+The direction vector is $\vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}$. The unit vector $\hat{u}$ is:
+
+$$
+\hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
+$$
+
+The directional derivative is the dot product of the gradient and the unit vector:
+
+$$
+D_{\hat{u}}\phi = \vec{\nabla}\phi \cdot \hat{u} = (\hat{j} + 6\hat{k}) \cdot \left( \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3} \right) = \frac{0(2) + 1(-1) + 6(-2)}{3} = -\frac{13}{3}
+$$
+
+---
+
+## Q6. Show that, $\nabla\Phi$ is a vector perpendicular to the surface $\Phi(x, y, z) = C$, where $C$ is a constant. (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2020-2c |
+| **Source** | 2020 Q2(c) [03 marks] |
+
+**Answer:**
+
+Let $P$ be a point on the surface $\Phi(x, y, z) = C$. Let the vector function:
+
+$$
+\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}
+$$
+
+define any curve that lies entirely on the surface and passes through $P$.
+
+Since all points of the curve lie on the surface, they satisfy the surface equation:
+
+$$
+\Phi(x(t), y(t), z(t)) = C
+$$
+
+Differentiate this equation with respect to $t$ using the chain rule:
+
+$$
+\frac{\partial\Phi}{\partial x}\frac{dx}{dt} + \frac{\partial\Phi}{\partial y}\frac{dy}{dt} + \frac{\partial\Phi}{\partial z}\frac{dz}{dt} = 0
+$$
+
+We can write this as a dot product:
+
+$$
+\left( \frac{\partial\Phi}{\partial x}\hat{i} + \frac{\partial\Phi}{\partial y}\hat{j} + \frac{\partial\Phi}{\partial z}\hat{k} \right) \cdot \left( \frac{dx}{dt}\hat{i} + \frac{dy}{dt}\hat{j} + \frac{dz}{dt}\hat{k} \right) = 0
+$$
+
+$$
+\vec{\nabla}\Phi \cdot \frac{d\vec{r}}{dt} = 0
+$$
+
+Here the vector $\frac{d\vec{r}}{dt}$ is a tangent vector to the curve. Because the dot product is zero, $\vec{\nabla}\Phi$ is perpendicular to this tangent vector.
+
+Since this relation holds for any curve on the surface passing through $P$, the gradient vector $\vec{\nabla}\Phi$ is perpendicular to the surface.
+
+---
+
+## Q7. Find the directional derivative of the scalar function $f(x, y, z) = x^2 + xy + z^2$ at the point $A(1, -1, -1)$ in the direction of the line $AB$ where $B$ has co-ordinates $(3, 2, 1)$. (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-2a |
+| **Source** | 2021 Q2(a) [03 marks] |
+
+**Answer:**
+
+We construct the direction vector $\vec{AB}$:
+
+$$
+\vec{AB} = (3 - 1)\hat{i} + (2 - (-1))\hat{j} + (1 - (-1))\hat{k} = 2\hat{i} + 3\hat{j} + 2\hat{k}
+$$
+
+Find the unit vector $\hat{u}$ in this direction:
+
+$$
+\hat{u} = \frac{2\hat{i} + 3\hat{j} + 2\hat{k}}{\sqrt{2^2 + 3^2 + 2^2}} = \frac{2\hat{i} + 3\hat{j} + 2\hat{k}}{\sqrt{17}}
+$$
+
+Calculate the gradient of the function $f = x^2 + xy + z^2$:
+
+$$
+\vec{\nabla}f = (2x + y)\hat{i} + x\hat{j} + 2z\hat{k}
+$$
+
+Evaluate the gradient at the point $A(1, -1, -1)$:
+
+$$
+\vec{\nabla}f(A) = (2(1) - 1)\hat{i} + (1)\hat{j} + 2(-1)\hat{k} = \hat{i} + \hat{j} - 2\hat{k}
+$$
+
+The directional derivative is the dot product of the gradient and the unit vector:
+
+$$
+D_{\hat{u}}f = \vec{\nabla}f \cdot \hat{u} = (\hat{i} + \hat{j} - 2\hat{k}) \cdot \left( \frac{2\hat{i} + 3\hat{j} + 2\hat{k}}{\sqrt{17}} \right) = \frac{2 + 3 - 4}{\sqrt{17}} = \frac{1}{\sqrt{17}}
+$$
+
+So the directional derivative is $\frac{1}{\sqrt{17}}$.
+
+---
+
+## Q8. If $Q = 3x^2y - y^3z^2$ find $\nabla Q$ at the point $(1, -2, -1)$. (02)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-2c |
+| **Source** | 2024 Q2(c) [02 marks] |
+
+**Answer:**
+
+The gradient of $Q$ is:
+
+$$
+\nabla Q = \frac{\partial Q}{\partial x}\hat{i} + \frac{\partial Q}{\partial y}\hat{j} + \frac{\partial Q}{\partial z}\hat{k}
+$$
+
+We calculate the partial derivatives:
+
+$$
+\frac{\partial Q}{\partial x} = \frac{\partial}{\partial x}(3x^2y - y^3z^2) = 6xy
+$$
+
+$$
+\frac{\partial Q}{\partial y} = \frac{\partial}{\partial y}(3x^2y - y^3z^2) = 3x^2 - 3y^2z^2
+$$
+
+$$
+\frac{\partial Q}{\partial z} = \frac{\partial}{\partial z}(3x^2y - y^3z^2) = -2y^3z
+$$
+
+We substitute $x = 1$, $y = -2$, and $z = -1$:
+
+$$
+\frac{\partial Q}{\partial x} = 6(1)(-2) = -12
+$$
+
+$$
+\frac{\partial Q}{\partial y} = 3(1)^2 - 3(-2)^2(-1)^2 = 3 - 3(4)(1) = 3 - 12 = -9
+$$
+
+$$
+\frac{\partial Q}{\partial z} = -2(-2)^3(-1) = -2(-8)(-1) = -16
+$$
+
+So, the gradient at $(1, -2, -1)$ is:
+
+$$
+\nabla Q = -12\hat{i} - 9\hat{j} - 16\hat{k}
+$$
+
+---
+
+## Q9. Find the unit outward drawn normal to the surface $(x - 1)^2 + y^2 + (z + 2)^2 = 9$ at the point $(3, 1, -4)$. (05)
+
+| | |
+|---|---|
+| **ID** | CT2V-2 |
+| **Source** | CT2V Q2 [05 marks] |
+
+**Answer:**
+
+Let the surface function be:
+$$
+f(x, y, z) = (x - 1)^2 + y^2 + (z + 2)^2 - 9
+$$
+
+The gradient of $f$ gives a vector normal to the surface. We calculate this gradient:
+$$
+\vec{\nabla}f = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}
+$$
+$$
+\vec{\nabla}f = 2(x - 1)\hat{i} + 2y\hat{j} + 2(z + 2)\hat{k}
+$$
+
+We evaluate the gradient at $(3, 1, -4)$:
+$$
+\vec{\nabla}f|_{(3, 1, -4)} = 2(3 - 1)\hat{i} + 2(1)\hat{j} + 2(-4 + 2)\hat{k}
+$$
+$$
+\vec{\nabla}f|_{(3, 1, -4)} = 4\hat{i} + 2\hat{j} - 4\hat{k}
+$$
+
+Now we find the magnitude of this normal vector:
+$$
+|\vec{\nabla}f| = \sqrt{4^2 + 2^2 + (-4)^2} = \sqrt{16 + 4 + 16} = \sqrt{36} = 6
+$$
+
+We divide the normal vector by its magnitude. This gives the unit outward normal vector $\hat{n}$:
+$$
+\hat{n} = \frac{4\hat{i} + 2\hat{j} - 4\hat{k}}{6} = \frac{2}{3}\hat{i} + \frac{1}{3}\hat{j} - \frac{2}{3}\hat{k}
+$$
+
+---
+

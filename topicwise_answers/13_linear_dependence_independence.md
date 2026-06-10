@@ -1,0 +1,348 @@
+# Topic 13: Linear Dependence and Independence
+
+This file contains the organized questions and answers for **Linear Dependence and Independence**, priority ranked as **Priority 13** based on frequency and exam weight.
+
+---
+
+## Q1. Show that the vectors $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$, $\bar{B} = \hat{i} - 4\hat{k}$, $\bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}$ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-1a |
+| **Source** | 2018 Q1(a) [06 marks] |
+
+**Answer:**
+
+#### 1. Show Linear Dependence
+
+We set up a matrix with the given vectors as its rows. The vectors are linearly dependent if the determinant of this matrix is zero:
+
+$$
+D = \begin{vmatrix} 2 & 1 & -3 \\ 1 & 0 & -4 \\ 4 & 3 & -1 \end{vmatrix}
+$$
+
+We expand the determinant along the first row:
+
+$$
+D = 2(0( -1) - (-4)(3)) - 1(1( -1) - (-4)(4)) - 3(1(3) - 0(4))
+$$
+
+$$
+D = 2(12) - 1(-1 + 16) - 3(3) = 24 - 15 - 9 = 0
+$$
+
+Since the determinant is zero, the vectors are coplanar. So they are linearly dependent.
+
+#### 2. Determine the Relation
+
+We write the linear combination equal to the zero vector:
+
+$$
+x\bar{A} + y\bar{B} + z\bar{C} = 0
+$$
+
+Substitute the vectors:
+
+$$
+x(2\hat{i} + \hat{j} - 3\hat{k}) + y(\hat{i} - 4\hat{k}) + z(4\hat{i} + 3\hat{j} - \hat{k}) = 0
+$$
+
+This gives a system of three equations:
+
+$$
+2x + y + 4z = 0 \quad \dots \text{(1)}
+$$
+
+$$
+x + 3z = 0 \implies x = -3z \quad \dots \text{(2)}
+$$
+
+$$
+-3x - 4y - z = 0 \quad \dots \text{(3)}
+$$
+
+We substitute $x = -3z$ into equation (1):
+
+$$
+2(-3z) + y + 4z = 0 \implies -6z + y + 4z = 0 \implies y = 2z
+$$
+
+Let $z = 1$. This gives:
+
+$$
+x = -3, \quad y = 2, \quad z = 1
+$$
+
+Substitute these values into the linear combination:
+
+$$
+-3\bar{A} + 2\bar{B} + \bar{C} = 0 \implies \bar{C} = 3\bar{A} - 2\bar{B}
+$$
+
+This is the required relation.
+
+#### 3. Show Terminal Points are Collinear
+
+Let $P, Q, R$ be the terminal points of the position vectors $\bar{A}, \bar{B}, \bar{C}$ from the origin. We find the vectors representing the line segments:
+
+$$
+\vec{PQ} = \bar{B} - \bar{A} = (\hat{i} - 4\hat{k}) - (2\hat{i} + \hat{j} - 3\hat{k}) = -\hat{i} - \hat{j} - \hat{k}
+$$
+
+$$
+\vec{PR} = \bar{C} - \bar{A} = (4\hat{i} + 3\hat{j} - \hat{k}) - (2\hat{i} + \hat{j} - 3\hat{k}) = 2\hat{i} + 2\hat{j} + 2\hat{k}
+$$
+
+We see that:
+
+$$
+\vec{PR} = -2\vec{PQ}
+$$
+
+So the vectors $\vec{PR}$ and $\vec{PQ}$ are parallel. Since they share the common point $P$, the terminal points $P, Q, R$ are collinear.
+
+---
+
+## Q2. Define linearly dependent and independent vectors. Determine whether or not the vectors in $\mathbb{R}^3$ are linearly dependent: $(1, 2, -3)$, $(1, -3, 2)$, $(2, -1, 5)$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-8b |
+| **Source** | 2018 Q8(b) [04 marks] |
+
+**Answer:**
+
+#### 1. Definitions
+
+*   **Linearly Dependent:** A set of vectors is linearly dependent if a non-trivial linear combination of them equals the zero vector.
+*   **Linearly Independent:** A set of vectors is linearly independent if the only linear combination that equals the zero vector is the trivial one (where all coefficients are zero).
+
+#### 2. Check the given vectors
+
+We set up a matrix with these vectors as its columns and calculate its determinant:
+
+$$
+D = \begin{vmatrix} 1 & 1 & 2 \\ 2 & -3 & -1 \\ -3 & 2 & 5 \end{vmatrix}
+$$
+
+Expand along the first row:
+
+$$
+D = 1((-3)(5) - (-1)(2)) - 1(2(5) - (-1)(-3)) + 2(2(2) - (-3)(-3))
+$$
+
+$$
+D = 1(-15 + 2) - 1(10 - 3) + 2(4 - 9) = -13 - 7 - 10 = -30
+$$
+
+Since the determinant is not zero ($D = -30 \neq 0$), the vectors are linearly independent. So they are not linearly dependent.
+
+---
+
+## Q3. Suppose the vectors $u, v, w$ are linearly independent. Show that the vectors $u + v, u - v, u - 2v + w$ are also linearly independent. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2020-8b | PYQ-2021-8c |
+| **Appeared in** | 2020 Q8(b) [04 marks], 2021 Q8(c) [04 marks] |
+| **Frequency** | ⭐⭐ (2 times) |
+
+**Answer:**
+
+We set a linear combination of these vectors equal to the zero vector:
+
+$$
+c_1 (u + v) + c_2 (u - v) + c_3 (u - 2v + w) = 0
+$$
+
+Group the terms by vectors $u, v,$ and $w$:
+
+$$
+(c_1 + c_2 + c_3) u + (c_1 - c_2 - 2c_3) v + c_3 w = 0
+$$
+
+Since the vectors $u, v, w$ are linearly independent, their coefficients must equal zero:
+
+$$
+c_1 + c_2 + c_3 = 0 \quad \dots \text{(1)}
+$$
+
+$$
+c_1 - c_2 - 2c_3 = 0 \quad \dots \text{(2)}
+$$
+
+$$
+c_3 = 0 \quad \dots \text{(3)}
+$$
+
+Substitute $c_3 = 0$ from equation (3) into equations (1) and (2):
+
+$$
+c_1 + c_2 = 0
+$$
+
+$$
+c_1 - c_2 = 0
+$$
+
+Adding these equations gives $2c_1 = 0 \implies c_1 = 0$. This then gives $c_2 = 0$.
+
+Since the only solution is $c_1 = c_2 = c_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
+
+---
+
+## Q4. Show that a necessary and sufficient condition that the vectors $\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$, $\vec{B} = B_1\hat{i} + B_2\hat{j} + B_3\hat{k}$, $\vec{C} = C_1\hat{i} + C_2\hat{j} + C_3\hat{k}$ be linearly independent is that the determinant (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-1b |
+| **Source** | 2024 Q1(b) [05 marks] |
+
+**Answer:**
+
+$$
+\begin{vmatrix}
+A_1 & A_2 & A_3 \\
+B_1 & B_2 & B_3 \\
+C_1 & C_2 & C_3
+\end{vmatrix}
+$$
+
+be different from zero.
+
+**Answer:**
+
+Let $a$, $b$, and $c$ be scalars. We set their linear combination to zero:
+
+$$
+a\vec{A} + b\vec{B} + c\vec{C} = \vec{0}
+$$
+
+We substitute the vector components:
+
+$$
+a(A_1\hat{i} + A_2\hat{j} + A_3\hat{k}) + b(B_1\hat{i} + B_2\hat{j} + B_3\hat{k}) + c(C_1\hat{i} + C_2\hat{j} + C_3\hat{k}) = \vec{0}
+$$
+
+We group the components for $\hat{i}$, $\hat{j}$, and $\hat{k}$:
+
+$$
+(a A_1 + b B_1 + c C_1)\hat{i} + (a A_2 + b B_2 + c C_2)\hat{j} + (a A_3 + b B_3 + c C_3)\hat{k} = \vec{0}
+$$
+
+This gives a homogeneous system of three linear equations:
+
+$$
+\begin{aligned}
+A_1 a + B_1 b + C_1 c &= 0 \\
+A_2 a + B_2 b + C_2 c &= 0 \\
+A_3 a + B_3 b + C_3 c &= 0
+\end{aligned}
+$$
+
+The vectors $\vec{A}$, $\vec{B}$, and $\vec{C}$ are linearly independent if and only if the system has only the trivial solution:
+
+$$
+a = b = c = 0
+$$
+
+A homogeneous system has only the trivial solution if and only if the determinant of its coefficient matrix is not zero. We write this determinant:
+
+$$
+D = \begin{vmatrix}
+A_1 & B_1 & C_1 \\
+A_2 & B_2 & C_2 \\
+A_3 & B_3 & C_3
+\end{vmatrix}
+$$
+
+We know that transposing a matrix does not change its determinant. So we can swap rows and columns:
+
+$$
+\begin{vmatrix}
+A_1 & B_1 & C_1 \\
+A_2 & B_2 & C_2 \\
+A_3 & B_3 & C_3
+\end{vmatrix} = \begin{vmatrix}
+A_1 & A_2 & A_3 \\
+B_1 & B_2 & B_3 \\
+C_1 & C_2 & C_3
+\end{vmatrix}
+$$
+
+Therefore, the vectors are linearly independent if and only if:
+
+$$
+\begin{vmatrix}
+A_1 & A_2 & A_3 \\
+B_1 & B_2 & B_3 \\
+C_1 & C_2 & C_3
+\end{vmatrix} \neq 0
+$$
+
+This completes the proof.
+
+---
+
+## Q5. What is a linearly independent vector? Determine whether the vectors are linearly independent or not: (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-7c |
+| **Source** | 2024 Q7(c) [05 marks] |
+
+**Answer:**
+
+*   (i) $u = (1, 1, 0), v = (1, 3, 2), w = (4, 9, 5)$
+*   (ii) $u = (1, 2, 3), v = (2, 5, 7), w = (1, 3, 5)$
+
+**Answer:**
+
+#### 1. Definition of Linearly Independent Vectors
+A set of vectors $\{v_1, v_2, \dots, v_n\}$ is linearly independent if the equation:
+
+$$
+c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0
+$$
+
+has only the trivial solution $c_1 = c_2 = \dots = c_n = 0$. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
+
+#### 2. Determine Linear Independence
+
+##### (i) $u = (1, 1, 0), v = (1, 3, 2), w = (4, 9, 5)$
+We set up a matrix with these vectors as rows and check its determinant:
+
+$$
+D = \begin{vmatrix} 1 & 1 & 0 \\ 1 & 3 & 2 \\ 4 & 9 & 5 \end{vmatrix}
+$$
+
+We calculate the determinant:
+
+$$
+D = 1(15 - 18) - 1(5 - 8) + 0 = -3 - (-3) = 0
+$$
+
+The determinant is zero. So, the vectors are **linearly dependent**.
+We can find a non-trivial linear combination:
+
+$$
+3u + 5v - 2w = 3(1, 1, 0) + 5(1, 3, 2) - 2(4, 9, 5) = (3+5-8, 3+15-18, 0+10-10) = (0, 0, 0)
+$$
+
+##### (ii) $u = (1, 2, 3), v = (2, 5, 7), w = (1, 3, 5)$
+We set up a matrix with these vectors as rows and check its determinant:
+
+$$
+D = \begin{vmatrix} 1 & 2 & 3 \\ 2 & 5 & 7 \\ 1 & 3 & 5 \end{vmatrix}
+$$
+
+We calculate the determinant:
+
+$$
+D = 1(25 - 21) - 2(10 - 7) + 3(6 - 5) = 4 - 6 + 3 = 1
+$$
+
+The determinant is 1, which is not zero. So, the vectors are **linearly independent**.
+
+---
+

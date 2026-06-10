@@ -1,0 +1,228 @@
+# Topic 21: Stokes' Theorem
+
+This file contains the organized questions and answers for **Stokes' Theorem**, priority ranked as **Priority 21** based on frequency and exam weight.
+
+---
+
+## Q1. State and Prove Stokes' theorem. (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2023-3a |
+| **Source** | 2023 Q3(a) [05 marks] |
+
+**Answer:**
+
+#### Statement
+
+Let $S$ be an open, two-sided surface bounded by a closed, non-self-intersecting curve $C$. If $\vec{A}$ has continuous first-order partial derivatives, then:
+
+$$
+\oint_C \vec{A} \cdot d\vec{r} = \iint_S (\vec{\nabla} \times \vec{A}) \cdot \hat{n} dS
+$$
+
+Here the boundary curve $C$ is traversed in the positive (counterclockwise) direction.
+
+#### Proof
+
+Let us prove this for a surface $S$ which can be projected uniquely onto coordinate planes. Let the surface equation be $z = f(x, y)$ over a region $R$ in the $xy$-plane.
+
+Let the vector field be:
+
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
+$$
+
+We prove the identity for the component $A_1$:
+
+$$
+\oint_C A_1 dx = \iint_S \left[ \vec{\nabla} \times (A_1\hat{i}) \right] \cdot \hat{n} dS \quad \dots \text{(1)}
+$$
+
+Since the curve $C$ is the boundary of the surface $z = f(x, y)$, we project the line integral onto the $xy$-plane:
+
+$$
+\oint_C A_1(x, y, z) dx = \oint_{C'} A_1(x, y, f(x, y)) dx
+$$
+
+Apply Green's theorem in the plane to the projected curve $C'$:
+
+$$
+\oint_{C'} A_1(x, y, f(x, y)) dx = \iint_R -\frac{\partial}{\partial y} \left[ A_1(x, y, f(x, y)) \right] dA
+$$
+
+Using the chain rule, we compute:
+
+$$
+\frac{\partial}{\partial y} \left[ A_1(x, y, f(x, y)) \right] = \frac{\partial A_1}{\partial y} + \frac{\partial A_1}{\partial z}\frac{\partial z}{\partial y}
+$$
+
+So the integral becomes:
+
+$$
+\oint_C A_1 dx = \iint_R \left( -\frac{\partial A_1}{\partial y} - \frac{\partial A_1}{\partial z}\frac{\partial z}{\partial y} \right) dx dy \quad \dots \text{(2)}
+$$
+
+Now calculate the term $\vec{\nabla} \times (A_1\hat{i})$:
+
+$$
+\vec{\nabla} \times (A_1\hat{i}) = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ A_1 & 0 & 0 \end{vmatrix} = \frac{\partial A_1}{\partial z}\hat{j} - \frac{\partial A_1}{\partial y}\hat{k}
+$$
+
+For the surface $z - f(x, y) = 0$, the normal vector gives the relation:
+
+$$
+\hat{n} dS = \left( -\frac{\partial z}{\partial x}\hat{i} - \frac{\partial z}{\partial y}\hat{j} + \hat{k} \right) dx dy
+$$
+
+Calculate the dot product:
+
+$$
+\left[ \vec{\nabla} \times (A_1\hat{i}) \right] \cdot \hat{n} dS = \left( \frac{\partial A_1}{\partial z}\hat{j} - \frac{\partial A_1}{\partial y}\hat{k} \right) \cdot \left( -\frac{\partial z}{\partial x}\hat{i} - \frac{\partial z}{\partial y}\hat{j} + \hat{k} \right) dx dy
+$$
+
+$$
+\left[ \vec{\nabla} \times (A_1\hat{i}) \right] \cdot \hat{n} dS = \left( -\frac{\partial A_1}{\partial z}\frac{\partial z}{\partial y} - \frac{\partial A_1}{\partial y} \right) dx dy \quad \dots \text{(3)}
+$$
+
+Comparing equations (2) and (3) shows that they are equal.
+
+By applying the same projection method for the components $A_2$ and $A_3$, we get:
+
+$$
+\oint_C A_2 dy = \iint_S \left[ \vec{\nabla} \times (A_2\hat{j}) \right] \cdot \hat{n} dS
+$$
+
+$$
+\oint_C A_3 dz = \iint_S \left[ \vec{\nabla} \times (A_3\hat{k}) \right] \cdot \hat{n} dS
+$$
+
+Adding these three relations gives:
+
+$$
+\oint_C \vec{A} \cdot d\vec{r} = \iint_S (\vec{\nabla} \times \vec{A}) \cdot \hat{n} dS
+$$
+
+The proof is complete.
+
+---
+
+## Q2. Verify Stoke's theorem for $\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}$ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane. (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-4b |
+| **Source** | 2024 Q4(b) [05 marks] |
+
+**Answer:**
+
+Stokes' theorem states:
+
+$$
+\oint_C \vec{A} \cdot d\vec{r} = \iint_S (\nabla \times \vec{A}) \cdot \hat{n} dS
+$$
+
+The surface $S$ consists of the five faces of the cube above the $xy$-plane. The bottom face $z = 0$ is open.
+The boundary curve $C$ is the square in the $xy$-plane ($z = 0$) bounded by $x=0$, $x=2$, $y=0$, and $y=2$.
+
+#### 1. Evaluate the Line Integral
+Along the boundary curve $C$ in the plane $z = 0$, we have $z = 0$ and $dz = 0$.
+The vector field simplifies to:
+
+$$
+\vec{A} = (y + 2)\hat{i} + 4\hat{j}
+$$
+
+The line integral is:
+
+$$
+\oint_C \vec{A} \cdot d\vec{r} = \oint_C (y + 2) dx + 4 dy
+$$
+
+We evaluate the integral along the four segments of the square $C$:
+*   **Path 1 ($C_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
+
+    $$
+    \int_{C_1} = \int_0^2 2 dx = 4
+    $$
+
+*   **Path 2 ($C_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
+
+    $$
+    \int_{C_2} = \int_0^2 4 dy = 8
+    $$
+
+*   **Path 3 ($C_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
+
+    $$
+    \int_{C_3} = \int_2^0 4 dx = -8
+    $$
+
+*   **Path 4 ($C_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
+
+    $$
+    \int_{C_4} = \int_2^0 4 dy = -8
+    $$
+
+We sum these line integrals:
+
+$$
+\oint_C \vec{A} \cdot d\vec{r} = 4 + 8 - 8 - 8 = -4
+$$
+
+#### 2. Evaluate the Surface Integral
+First, we find the curl of $\vec{A}$:
+
+$$
+\nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y-z+2 & yz+4 & -xz \end{vmatrix}
+$$
+
+$$
+= \hat{i} \left[ 0 - y \right] - \hat{j} \left[ -z - (-1) \right] + \hat{k} \left[ 0 - 1 \right] = -y\hat{i} + (z - 1)\hat{j} - \hat{k}
+$$
+
+The surface $S$ has five faces:
+*   **Face 1 (Top, $z=2$):** $\hat{n} = \hat{k}$, $dS = dx dy$.
+
+    $$
+    (\nabla \times \vec{A}) \cdot \hat{n} = -1 \implies \iint_{\text{Top}} -1 dx dy = -1 \times \text{Area} = -4
+    $$
+
+*   **Face 2 (Front, $x=2$):** $\hat{n} = \hat{i}$, $dS = dy dz$.
+
+    $$
+    (\nabla \times \vec{A}) \cdot \hat{n} = -y \implies \iint_{\text{Front}} -y dy dz = \int_0^2 dz \int_0^2 -y dy = 2 \left[ -\frac{y^2}{2} \right]_0^2 = -4
+    $$
+
+*   **Face 3 (Back, $x=0$):** $\hat{n} = -\hat{i}$, $dS = dy dz$.
+
+    $$
+    (\nabla \times \vec{A}) \cdot \hat{n} = y \implies \iint_{\text{Back}} y dy dz = \int_0^2 dz \int_0^2 y dy = 2 \left[ \frac{y^2}{2} \right]_0^2 = 4
+    $$
+
+*   **Face 4 (Right, $y=2$):** $\hat{n} = \hat{j}$, $dS = dx dz$.
+
+    $$
+    (\nabla \times \vec{A}) \cdot \hat{n} = z - 1 \implies \iint_{\text{Right}} (z - 1) dx dz = \int_0^2 dx \int_0^2 (z - 1) dz = 2 \left[ \frac{z^2}{2} - z \right]_0^2 = 2(2 - 2) = 0
+    $$
+
+*   **Face 5 (Left, $y=0$):** $\hat{n} = -\hat{j}$, $dS = dx dz$.
+
+    $$
+    (\nabla \times \vec{A}) \cdot \hat{n} = -(z - 1) \implies \iint_{\text{Left}} (1 - z) dx dz = \int_0^2 dx \int_0^2 (1 - z) dz = 2 \left[ z - \frac{z^2}{2} \right]_0^2 = 2(2 - 2) = 0
+    $$
+
+We sum the integrals over all five faces:
+
+$$
+\iint_S (\nabla \times \vec{A}) \cdot \hat{n} dS = -4 - 4 + 4 + 0 + 0 = -4
+$$
+
+Both integrals yield $-4$. Stokes' theorem is verified.
+
+---
+
+## SECTION - B
+
+---
+

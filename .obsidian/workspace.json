@@ -1,0 +1,253 @@
+{
+  "main": {
+    "id": "58a6352a4fe31cb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "337b4da6b58c3198",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72d77f67cb804aec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "answers/2019_answer.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2019_answer"
+            }
+          },
+          {
+            "id": "9e3e2b5b7574de65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13_linear_dependence_independence"
+            }
+          },
+          {
+            "id": "3ae7ba81d6a5152b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prev._Year_Questions/2023.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "18fdd00401293c9c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c75839aff181c22b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe0bf55f9e624f56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f7fb04639447c94c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d64345722d37ab04",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "39dca84d26ddfce7",
+    "type": "split",
+    "children": [
+      {
+        "id": "6de0f803c8dc3134",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b833617862158b82",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 13_linear_dependence_independence"
+            }
+          },
+          {
+            "id": "d98590dea76b19ce",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 13_linear_dependence_independence"
+            }
+          },
+          {
+            "id": "5774261aec95fcb8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "59c8bd53ba149420",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "83e1e02f18af30dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "topicwise_answers/13_linear_dependence_independence.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 13_linear_dependence_independence"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "9e3e2b5b7574de65",
+  "lastOpenFiles": [
+    "topicwise_answers/12_basis_and_dimension.md",
+    "topicwise_answers/11_vector_space_subspace_direct_sum.md",
+    "topicwise_answers/06_line_integrals.md",
+    "topicwise_answers/04_greens_theorem.md",
+    "topicwise_answers/01_eigenvalues_eigenvectors.md",
+    "Prev._Year_Questions/2019.md",
+    "Prev._Year_Questions/2024.md",
+    "Prev._Year_Questions/2023.md",
+    "Prev._Year_Questions/2021.md",
+    "Prev._Year_Questions/2020.md",
+    "answers/2019_answer.md",
+    "Prev._Year_Questions/2018.md",
+    "Prev._Year_Questions/2017.md",
+    "answers/2018_answer.md",
+    "question_mapping.md",
+    "topicwise_answers/00-index.md",
+    "topicwise_answers/25_linear_transformations.md",
+    "topicwise_answers/24_curvature_and_torsion.md",
+    "topicwise_answers/23_volume_integrals.md",
+    "topicwise_answers/22_surface_integrals.md",
+    "topicwise_answers/21_stokes_theorem.md",
+    "topicwise_answers/20_divergence_theorem.md",
+    "topicwise_answers/19_vector_identities.md",
+    "topicwise_answers/18_matrix_ode_and_diagonalization.md",
+    "topicwise_answers/17_velocity_acceleration_particle_motion.md",
+    "topicwise_answers/16_area_volume_triple_products.md",
+    "topicwise_answers",
+    "dup_analysis.txt",
+    "CT_Questions/MathMatrixCT1.jpg",
+    "CT_Questions/VectorCT2.jpg",
+    "CT_Questions/CT2.jpg",
+    "CT_Questions/MathLinearCT1.jpg",
+    "CT_Questions/VectorCT1.jpg",
+    "CT_Questions",
+    "answers"
+  ]
+}

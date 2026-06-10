@@ -1,0 +1,771 @@
+# Topic 03: Rank and Normal Form
+
+This file contains the organized questions and answers for **Rank and Normal Form**, priority ranked as **Priority 3** based on frequency and exam weight.
+
+---
+
+## Q1. What is the rank of a matrix? Find it for $\begin{bmatrix} 0 & 0 & 1 & -3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-6a |
+| **Source** | 2017 Q6(a) [06 marks] |
+
+**Answer:**
+
+#### Rank of a Matrix
+
+The rank of a matrix is the maximum number of linearly independent row vectors (or column vectors) in it. It equals the number of non-zero rows when the matrix is reduced to its row-echelon form.
+
+#### Finding the Rank
+
+Let the matrix be:
+
+$$
+A = \begin{bmatrix} 0 & 0 & 1 & -3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+$$
+
+We swap the first and second rows ($R_1 \leftrightarrow R_2$) to place a non-zero leading entry in the first row:
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+$$
+
+Now we perform row operations to make the entries below the leading entry of $R_1$ zero:
+*   $R_3 \to R_3 - 2R_1$
+*   $R_4 \to R_4 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & -1 & -3 & 2 \\ 0 & 0 & -1 & -3 & 2 \end{bmatrix}
+$$
+
+Next we make the entries below the leading entry of $R_2$ zero:
+*   $R_3 \to R_3 + R_2$
+*   $R_4 \to R_4 + R_2$
+
+This gives:
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & -6 & 0 \\ 0 & 0 & 0 & -6 & 0 \end{bmatrix}
+$$
+
+Now eliminate the last entry in row 4 using row 3 ($R_4 \to R_4 - R_3$):
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & -6 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Divide row 3 by $-6$:
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+This matrix is now in row-echelon form. The number of non-zero rows is $3$.
+
+So the rank of the matrix is $3$.
+
+---
+
+## Q2. What is rank of a matrix? Find the rank of $A = \begin{pmatrix} 1 & -2 & 1 & -1 \\ 1 & 1 & -2 & 3 \\ 4 & 1 & -5 & 8 \\ 5 & -7 & 2 & -1 \end{pmatrix}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-5c |
+| **Source** | 2018 Q5(c) [04 marks] |
+
+**Answer:**
+
+#### Rank of a Matrix
+
+The rank of a matrix is the maximum number of linearly independent rows in it. It equals the number of non-zero rows in its row-echelon form.
+
+#### Finding the Rank
+
+Let the matrix be:
+
+$$
+A = \begin{pmatrix} 1 & -2 & 1 & -1 \\ 1 & 1 & -2 & 3 \\ 4 & 1 & -5 & 8 \\ 5 & -7 & 2 & -1 \end{pmatrix}
+$$
+
+We apply row operations:
+*   $R_2 \to R_2 - R_1$
+*   $R_3 \to R_3 - 4R_1$
+*   $R_4 \to R_4 - 5R_1$
+
+This gives:
+
+$$
+\begin{pmatrix} 1 & -2 & 1 & -1 \\ 0 & 3 & -3 & 4 \\ 0 & 9 & -9 & 12 \\ 0 & 3 & -3 & 4 \end{pmatrix}
+$$
+
+Now perform operations on rows 3 and 4:
+*   $R_3 \to R_3 - 3R_2$
+*   $R_4 \to R_4 - R_2$
+
+This gives:
+
+$$
+\begin{pmatrix} 1 & -2 & 1 & -1 \\ 0 & 3 & -3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+The matrix is now in echelon form. The number of non-zero rows is $2$.
+
+So the rank of the matrix is $2$.
+
+---
+
+## Q3. What is the normal form of a matrix? Find the rank of the following matrix reducing it to the normal form: (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-5b |
+| **Source** | 2019 Q5(b) [06 marks] |
+
+**Answer:**
+
+$$
+\begin{pmatrix}
+3 & -2 & 0 & -7 \\
+0 & 2 & 1 & -5 \\
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6
+\end{pmatrix}
+$$
+
+**Answer:**
+
+#### 1. Definition of Normal Form
+
+By applying a finite sequence of elementary row and column operations, any non-zero matrix $A$ of rank $r$ can be reduced to one of the following forms:
+
+$$
+[I_r], \quad [I_r \quad | \quad 0], \quad \begin{bmatrix} I_r \\ -- \\ 0 \end{bmatrix}, \quad \begin{bmatrix} I_r & | & 0 \\ -- & - & -- \\ 0 & | & 0 \end{bmatrix}
+$$
+
+where $I_r$ is the identity matrix of order $r$. This form is called the **normal form** (or **canonical form**) of the matrix. The rank of the matrix is equal to the order of the identity matrix $I_r$ in this form.
+
+#### 2. Reduction to Normal Form
+
+We write the matrix:
+
+$$
+A = \begin{pmatrix}
+3 & -2 & 0 & -7 \\
+0 & 2 & 1 & -5 \\
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6
+\end{pmatrix}
+$$
+
+Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 2 & 1 & -5 \\
+3 & -2 & 0 & -7 \\
+0 & 1 & 1 & -6
+\end{pmatrix}
+$$
+
+Apply row operation:
+*   $R_3 \to R_3 - 3R_1$
+
+This gives:
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 2 & 1 & -5 \\
+0 & 4 & 6 & -10 \\
+0 & 1 & 1 & -6
+\end{pmatrix}
+$$
+
+Swap row 2 and row 4 ($R_2 \leftrightarrow R_4$):
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6 \\
+0 & 4 & 6 & -10 \\
+0 & 2 & 1 & -5
+\end{pmatrix}
+$$
+
+Apply row operations:
+*   $R_3 \to R_3 - 4R_2$
+*   $R_4 \to R_4 - 2R_2$
+
+This yields:
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6 \\
+0 & 0 & 2 & 14 \\
+0 & 0 & -1 & 7
+\end{pmatrix}
+$$
+
+Scale row 3 ($R_3 \to \frac{1}{2}R_3$):
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6 \\
+0 & 0 & 1 & 7 \\
+0 & 0 & -1 & 7
+\end{pmatrix}
+$$
+
+Add row 3 to row 4 ($R_4 \to R_4 + R_3$):
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6 \\
+0 & 0 & 1 & 7 \\
+0 & 0 & 0 & 14
+\end{pmatrix}
+$$
+
+Scale row 4 ($R_4 \to \frac{1}{14}R_4$):
+
+$$
+\begin{pmatrix}
+1 & -2 & -2 & 1 \\
+0 & 1 & 1 & -6 \\
+0 & 0 & 1 & 7 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+Now apply column operations to clear the off-diagonal elements. First, clear elements in row 1:
+*   $C_2 \to C_2 + 2C_1$
+*   $C_3 \to C_3 + 2C_1$
+*   $C_4 \to C_4 - C_1$
+
+This gives:
+
+$$
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 1 & -6 \\
+0 & 0 & 1 & 7 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+Clear elements in row 2:
+*   $C_3 \to C_3 - C_2$
+*   $C_4 \to C_4 + 6C_2$
+
+This gives:
+
+$$
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 7 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+Clear elements in row 3:
+*   $C_4 \to C_4 - 7C_3$
+
+This yields the identity matrix of order 4:
+
+$$
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} = I_4
+$$
+
+So the normal form is $I_4$, and the rank of the matrix is:
+
+$$
+\text{Rank} = 4
+$$
+
+---
+
+## Q4. What is the rank of a matrix? Find the rank of the matrix, $A = \begin{bmatrix} 6 & 1 & 8 & 3 \\ 2 & 1 & 0 & 2 \\ 4 & -1 & -8 & -3 \end{bmatrix}$. (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2020-6a |
+| **Source** | 2020 Q6(a) [05 marks] |
+
+**Answer:**
+
+#### 1. Definition of Rank
+
+The rank of a matrix is the maximum number of linearly independent row vectors in the matrix.
+
+#### 2. Find the Rank
+
+Let the matrix be:
+
+$$
+A = \begin{bmatrix} 6 & 1 & 8 & 3 \\ 2 & 1 & 0 & 2 \\ 4 & -1 & -8 & -3 \end{bmatrix}
+$$
+
+We swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+
+$$
+\begin{bmatrix} 2 & 1 & 0 & 2 \\ 6 & 1 & 8 & 3 \\ 4 & -1 & -8 & -3 \end{bmatrix}
+$$
+
+Apply row operations:
+*   $R_2 \to R_2 - 3R_1$
+*   $R_3 \to R_3 - 2R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 2 & 1 & 0 & 2 \\ 0 & -2 & 8 & -3 \\ 0 & -3 & -8 & -7 \end{bmatrix}
+$$
+
+Perform the operation $R_3 \to 2R_3 - 3R_2$:
+
+$$
+\begin{bmatrix} 2 & 1 & 0 & 2 \\ 0 & -2 & 8 & -3 \\ 0 & 0 & -40 & -5 \end{bmatrix}
+$$
+
+All three rows are non-zero. So the rank of the matrix is $3$.
+
+---
+
+## Q5. Find the rank of the following matrix and hence reduce it to the canonical form: (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-5b |
+| **Source** | 2021 Q5(b) [06 marks] |
+
+**Answer:**
+
+$$A = \begin{pmatrix} 2 & 3 & -1 & -1 \\ 1 & -1 & -2 & -4 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{pmatrix}$$
+
+**Answer:**
+
+We write the matrix:
+
+$$
+A = \begin{pmatrix} 2 & 3 & -1 & -1 \\ 1 & -1 & -2 & -4 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{pmatrix}
+$$
+
+Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+
+$$
+\begin{pmatrix} 1 & -1 & -2 & -4 \\ 2 & 3 & -1 & -1 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{pmatrix}
+$$
+
+Apply row operations:
+*   $R_2 \to R_2 - 2R_1$
+*   $R_3 \to R_3 - 3R_1$
+*   $R_4 \to R_4 - 6R_1$
+
+This gives:
+
+$$
+\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 4 & 9 & 10 \\ 0 & 9 & 12 & 17 \end{pmatrix}
+$$
+
+Apply operations:
+*   $R_3 \to 5R_3 - 4R_2$
+*   $R_4 \to 5R_4 - 9R_2$
+
+This gives:
+
+$$
+\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 33 & 22 \\ 0 & 0 & 33 & 22 \end{pmatrix}
+$$
+
+Simplify row 3 and row 4 ($R_3 \to \frac{1}{11}R_3$, $R_4 \to \frac{1}{11}R_4$):
+
+$$
+\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 3 & 2 \end{pmatrix}
+$$
+
+Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
+
+$$
+\begin{pmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+Since there are 3 non-zero rows in the echelon form, the rank is:
+
+$$
+\text{Rank} = 3
+$$
+
+#### Reduce to Canonical Form
+
+We apply column operations to clear the first row:
+*   $C_2 \to C_2 + C_1$
+*   $C_3 \to C_3 + 2C_1$
+*   $C_4 \to C_4 + 4C_1$
+
+This gives:
+
+$$
+\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 5 & 3 & 7 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+Scale row 2 ($R_2 \to \frac{1}{5}R_2$):
+
+$$
+\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 3/5 & 7/5 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+Clear the second row using column operations:
+*   $C_3 \to C_3 - \frac{3}{5}C_2$
+*   $C_4 \to C_4 - \frac{7}{5}C_2$
+
+This gives:
+
+$$
+\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+Scale row 3 ($R_3 \to \frac{1}{3}R_3$):
+
+$$
+\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 2/3 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+Clear the third column element ($C_4 \to C_4 - \frac{2}{3}C_3$):
+
+$$
+\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+$$
+
+This is the canonical form $[I_3 | 0]$:
+
+$$
+\begin{pmatrix} I_3 & | & 0 \\ -- & - & -- \\ 0 & | & 0 \end{pmatrix}
+$$
+
+---
+
+## Q6. Reduce the following matrix to the canonical form: (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2023-4c |
+| **Source** | 2023 Q4(c) [03 marks] |
+
+**Answer:**
+
+$$A = \begin{bmatrix} 0 & 0 & 1 & 3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}$$
+
+**Answer:**
+
+We write the matrix:
+
+$$
+A = \begin{bmatrix} 0 & 0 & 1 & 3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+$$
+
+Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & 3 & -2 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+$$
+
+Apply row operations:
+*   $R_3 \to R_3 - 2R_1$
+*   $R_4 \to R_4 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & 3 & -2 \\ 0 & 0 & -1 & -3 & 2 \\ 0 & 0 & -1 & -3 & 2 \end{bmatrix}
+$$
+
+Apply row operations:
+*   $R_3 \to R_3 + R_2$
+*   $R_4 \to R_4 + R_2$
+
+This yields:
+
+$$
+\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & 3 & -2 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Clear columns using column operations:
+*   $C_3 \to C_3 - 2C_2$
+*   $C_4 \to C_4 - 6C_2$
+
+This gives:
+
+$$
+\begin{bmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 3 & -2 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Clear column elements using column 3:
+*   $C_4 \to C_4 - 3C_3$
+*   $C_5 \to C_5 + 2C_3$
+
+This gives:
+
+$$
+\begin{bmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Now swap columns to group the identity matrix blocks. Swap $C_1 \leftrightarrow C_2$:
+
+$$
+\begin{bmatrix} 1 & 0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Swap $C_2 \leftrightarrow C_3$:
+
+$$
+\begin{bmatrix} 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+This is the canonical form $[I_2 | 0]$:
+
+$$
+\begin{pmatrix} I_2 & | & 0 \\ -- & - & -- \\ 0 & | & 0 \end{pmatrix}
+$$
+
+---
+
+## Q7. Find the rank of the following matrix: (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2023-4d |
+| **Source** | 2023 Q4(d) [03 marks] |
+
+**Answer:**
+
+$$A = \begin{bmatrix} 1 & 2 & 3 & 2 \\ 2 & 3 & 5 & 1 \\ 1 & 3 & 4 & 5 \end{bmatrix}$$
+
+**Answer:**
+
+We write the matrix:
+
+$$
+A = \begin{bmatrix} 1 & 2 & 3 & 2 \\ 2 & 3 & 5 & 1 \\ 1 & 3 & 4 & 5 \end{bmatrix}
+$$
+
+Apply row operations:
+*   $R_2 \to R_2 - 2R_1$
+*   $R_3 \to R_3 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 1 & 1 & 3 \end{bmatrix}
+$$
+
+Add row 2 to row 3 ($R_3 \to R_3 + R_2$):
+
+$$
+\begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+There are 2 non-zero rows in the echelon form. So the rank of the matrix is:
+
+$$
+\text{Rank} = 2
+$$
+
+---
+
+## SECTION - B
+
+---
+
+## Q8. Define rank of a matrix. Find the rank of: (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-5a |
+| **Source** | 2024 Q5(a) [05 marks] |
+
+**Answer:**
+
+$$
+A = \begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & 3 & -2 & 1 \\
+2 & 0 & -3 & 2 \\
+3 & 3 & -3 & 3
+\end{bmatrix}
+$$
+
+**Answer:**
+
+#### 1. Definition of Rank
+The rank of a matrix is the maximum number of linearly independent row vectors in the matrix. This is also equal to the maximum number of linearly independent column vectors.
+
+#### 2. Find the Rank of Matrix $A$
+We write the matrix:
+
+$$
+A = \begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & 3 & -2 & 1 \\
+2 & 0 & -3 & 2 \\
+3 & 3 & -3 & 3
+\end{bmatrix}
+$$
+
+We apply row operations to reduce it to echelon form:
+*   $R_2 \to R_2 - R_1$
+*   $R_3 \to R_3 - 2R_1$
+*   $R_4 \to R_4 - 3R_1$
+
+This gives:
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & -2 & -5 & 0 \\
+0 & 0 & -6 & 0
+\end{bmatrix}
+$$
+
+Next, we apply:
+*   $R_3 \to R_3 + R_2$
+
+This gives:
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & 0 & -8 & 0 \\
+0 & 0 & -6 & 0
+\end{bmatrix}
+$$
+
+We scale the third row ($R_3 \to -\frac{1}{8}R_3$):
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & -6 & 0
+\end{bmatrix}
+$$
+
+Now we apply:
+*   $R_4 \to R_4 + 6R_3$
+
+This yields:
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+$$
+
+There are 3 non-zero rows in the echelon form. Thus, the rank of the matrix is 3.
+
+---
+
+## Q9. What is meant by the rank of a matrix? Reduce the matrix $A = \begin{bmatrix} 6 & 3 & -4 \\ -4 & 1 & -6 \\ 1 & 2 & -5 \end{bmatrix}$ (07)
+
+| | |
+|---|---|
+| **ID** | CT1M-3 |
+| **Source** | CT1M Q3 [07 marks] |
+
+**Answer:**
+
+*   **(i)** to echelon form
+*   **(ii)** to row canonical form, and
+*   **(iii)** determine the rank of the matrix.
+
+**Answer:**
+
+#### 1. Definition of Rank
+The rank of a matrix is the maximum number of linearly independent rows in the matrix. It also equals the number of non-zero rows in its row echelon form.
+
+#### 2. Reduce to Echelon Form
+Let the matrix be:
+$$
+A = \begin{bmatrix} 6 & 3 & -4 \\ -4 & 1 & -6 \\ 1 & 2 & -5 \end{bmatrix}
+$$
+
+We swap the first and third rows to put a 1 in the top-left corner:
+$$
+\begin{bmatrix} 1 & 2 & -5 \\ -4 & 1 & -6 \\ 6 & 3 & -4 \end{bmatrix}
+\quad (R_1 \leftrightarrow R_3)
+$$
+
+Now we clear the first column:
+$$
+R_2 \to R_2 + 4R_1
+$$
+$$
+R_3 \to R_3 - 6R_1
+$$
+$$
+\begin{bmatrix} 1 & 2 & -5 \\ 0 & 9 & -26 \\ 0 & -9 & 26 \end{bmatrix}
+$$
+
+Next, we eliminate the second element in the third row:
+$$
+R_3 \to R_3 + R_2
+$$
+$$
+\begin{bmatrix} 1 & 2 & -5 \\ 0 & 9 & -26 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+We divide the second row by 9 to get a leading 1:
+$$
+R_2 \to \frac{1}{9} R_2
+$$
+$$
+\begin{bmatrix} 1 & 2 & -5 \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+$$
+This is the echelon form of the matrix.
+
+#### 3. Reduce to Row Canonical Form
+Starting from the echelon form:
+$$
+\begin{bmatrix} 1 & 2 & -5 \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+We eliminate the element above the leading 1 in the second row:
+$$
+R_1 \to R_1 - 2R_2
+$$
+$$
+R_1 \to \begin{bmatrix} 1 & 2 - 2(1) & -5 - 2\left(-\frac{26}{9}\right) \end{bmatrix} = \begin{bmatrix} 1 & 0 & -5 + \frac{52}{9} \end{bmatrix} = \begin{bmatrix} 1 & 0 & \frac{7}{9} \end{bmatrix}
+$$
+
+This gives the row canonical form:
+$$
+\begin{bmatrix} 1 & 0 & \frac{7}{9} \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+#### 4. Determine the Rank
+The row echelon form has two non-zero rows. So, the rank of the matrix $A$ is 2.
+
+---
+
+[⬅ CT-2 (Vector) Answer](CT2_Vector_answer.md) | [🏠 Index](00-index.md)
+
+---
+

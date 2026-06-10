@@ -1,0 +1,195 @@
+# Topic 16: Area, Volume, and Triple Products
+
+This file contains the organized questions and answers for **Area, Volume, and Triple Products**, priority ranked as **Priority 16** based on frequency and exam weight.
+
+---
+
+## Q1. Find the volume of the parallelepiped whose edges are represented by the vector $\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}$, $\bar{B} = \hat{i} + 2\hat{j} - \hat{k}$ and $\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-1b |
+| **Source** | 2019 Q1(b) [04 marks] |
+
+**Answer:**
+
+The volume $V$ of a parallelepiped with adjacent edges represented by vectors $\vec{A}$, $\vec{B}$, and $\vec{C}$ is given by the absolute value of their scalar triple product:
+
+$$
+V = | \vec{A} \cdot (\vec{B} \times \vec{C}) |
+$$
+
+We calculate the scalar triple product using the determinant:
+
+$$
+\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} 2 & -3 & 4 \\ 1 & 2 & -1 \\ 3 & -1 & 2 \end{vmatrix}
+$$
+
+Expand along the first row:
+
+$$
+= 2 \begin{vmatrix} 2 & -1 \\ -1 & 2 \end{vmatrix} - (-3) \begin{vmatrix} 1 & -1 \\ 3 & 2 \end{vmatrix} + 4 \begin{vmatrix} 1 & 2 \\ 3 & -1 \end{vmatrix}
+$$
+
+$$
+= 2 [ 4 - 1 ] + 3 [ 2 - (-3) ] + 4 [ -1 - 6 ]
+$$
+
+$$
+= 2(3) + 3(5) + 4(-7) = 6 + 15 - 28 = -7
+$$
+
+Taking the absolute value:
+
+$$
+V = |-7| = 7 \text{ cubic units}
+$$
+
+---
+
+## Q2. Define triple product of vectors. Show that, $\bar{A} \cdot (\bar{B} \times \bar{C})$ is in absolute value equal to the volume of a parallelepiped with sides $\bar{A}$, $\bar{B}$ and $\bar{C}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2020-1b |
+| **Source** | 2020 Q1(b) [04 marks] |
+
+**Answer:**
+
+#### 1. Definition
+
+A triple product is a product involving three vectors. There are two kinds:
+*   **Scalar Triple Product:** The expression $\bar{A} \cdot (\bar{B} \times \bar{C})$, which results in a scalar.
+*   **Vector Triple Product:** The expression $\bar{A} \times (\bar{B} \times \bar{C})$, which results in a vector.
+
+#### 2. Geometric Proof
+
+Let the three vectors $\bar{A}$, $\bar{B}$, and $\bar{C}$ represent the three adjacent edges of a parallelepiped.
+
+The cross product vector $\bar{B} \times \bar{C}$ is perpendicular to the base face of the parallelepiped. The magnitude of this cross product is the area of the base parallelogram:
+
+$$
+\text{Area of Base} = |\bar{B} \times \bar{C}|
+$$
+
+Let $\theta$ be the angle between the vector $\bar{A}$ and the normal vector $\bar{B} \times \bar{C}$. The height $h$ of the parallelepiped is the projection of $\bar{A}$ along this normal vector:
+
+$$
+h = |\bar{A}| \cos\theta
+$$
+
+Now calculate the scalar triple product:
+
+$$
+\bar{A} \cdot (\bar{B} \times \bar{C}) = |\bar{A}| |\bar{B} \times \bar{C}| \cos\theta = h \times (\text{Area of Base}) = \text{Volume of Parallelepiped}
+$$
+
+Since a volume is always positive, we take the absolute value:
+
+$$
+\text{Volume} = |\bar{A} \cdot (\bar{B} \times \bar{C})|
+$$
+
+The proof is complete.
+
+---
+
+## Q3. Find the area of a triangle with vertices at $(3, -1, 2)$, $(1, -1, -3)$ and $(4, -3, 1)$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-1c | PYQ-2023-1b |
+| **Appeared in** | 2021 Q1(c) [04 marks], 2023 Q1(b) [03 marks] |
+| **Frequency** | ⭐⭐ (2 times) |
+
+**Answer:**
+
+Let the vertices of the triangle be $P(3, -1, 2)$, $Q(1, -1, -3)$, and $R(4, -3, 1)$.
+
+We construct two side vectors starting from point $P$:
+
+$$
+\vec{PQ} = (1 - 3)\hat{i} + (-1 - (-1))\hat{j} + (-3 - 2)\hat{k} = -2\hat{i} - 5\hat{k}
+$$
+
+$$
+\vec{PR} = (4 - 3)\hat{i} + (-3 - (-1))\hat{j} + (1 - 2)\hat{k} = \hat{i} - 2\hat{j} - \hat{k}
+$$
+
+Calculate the cross product of these side vectors:
+
+$$
+\vec{PQ} \times \vec{PR} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -2 & 0 & -5 \\ 1 & -2 & -1 \end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
+$$
+
+Find the magnitude of the cross product:
+
+$$
+|\vec{PQ} \times \vec{PR}| = \sqrt{(-10)^2 + (-7)^2 + 4^2} = \sqrt{100 + 49 + 16} = \sqrt{165}
+$$
+
+The area of the triangle is:
+
+$$
+\text{Area} = \frac{1}{2}|\vec{PQ} \times \vec{PR}| = \frac{1}{2}\sqrt{165}
+$$
+
+---
+
+## Q4. Evaluate: (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-3c |
+| **Source** | 2024 Q3(c) [04 marks] |
+
+**Answer:**
+
+$$
+\iint_R \sqrt{x^2 + y^2} dxdy
+$$
+
+over the region $R$ in the $xy$ plane bounded by $x^2 + y^2 = 36$.
+
+**Answer:**
+
+We switch to polar coordinates:
+
+$$
+x = r\cos\theta, \quad y = r\sin\theta, \quad dxdy = r dr d\theta
+$$
+
+The region $R$ is a disk of radius 6 centered at the origin, because $x^2 + y^2 = 36 = 6^2$.
+
+The integration limits are:
+*   $r$ goes from 0 to 6
+*   $\theta$ goes from 0 to $2\pi$
+
+The integrand is:
+
+$$
+\sqrt{x^2 + y^2} = r
+$$
+
+We rewrite the double integral:
+
+$$
+\iint_R \sqrt{x^2 + y^2} dxdy = \int_0^{2\pi} \int_0^6 r \cdot r dr d\theta = \int_0^{2\pi} \int_0^6 r^2 dr d\theta
+$$
+
+We integrate with respect to $r$:
+
+$$
+\int_0^6 r^2 dr = \left[ \frac{r^3}{3} \right]_0^6 = \frac{216}{3} = 72
+$$
+
+We integrate with respect to $\theta$:
+
+$$
+\int_0^{2\pi} 72 d\theta = 72 \cdot 2\pi = 144\pi
+$$
+
+The value of the integral is $144\pi$.
+
+---
+

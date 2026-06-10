@@ -1,0 +1,198 @@
+# Topic 23: Volume Integrals
+
+This file contains the organized questions and answers for **Volume Integrals**, priority ranked as **Priority 23** based on frequency and exam weight.
+
+---
+
+## Q1. Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate $\iiint_V \Phi dV$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-3a |
+| **Source** | 2018 Q3(a) [06 marks] |
+
+**Answer:**
+
+We set up the limits of integration for the region $V$:
+*   The variable $z$ goes from the plane $z = 0$ to the plane $z = 8 - 4x - 2y$.
+*   For $z=0$, the boundary is $4x + 2y = 8 \implies y = 4 - 2x$. So $y$ goes from $0$ to $4 - 2x$.
+*   For $y=z=0$, the boundary is $4x = 8 \implies x = 2$. So $x$ goes from $0$ to $2$.
+
+We write the triple integral:
+
+$$
+\iiint_V \Phi dV = \int_{x=0}^2 \int_{y=0}^{4-2x} \int_{z=0}^{8-4x-2y} 45x^2y dz dy dx
+$$
+
+Integrate with respect to $z$:
+
+$$
+\iiint_V \Phi dV = 45 \int_0^2 x^2 \int_0^{4-2x} y [z]_0^{8-4x-2y} dy dx = 45 \int_0^2 x^2 \int_0^{4-2x} y (8 - 4x - 2y) dy dx
+$$
+
+$$
+\iiint_V \Phi dV = 45 \int_0^2 x^2 \int_0^{4-2x} \left[ (8 - 4x)y - 2y^2 \right] dy dx
+$$
+
+Integrate with respect to $y$:
+
+$$
+\iiint_V \Phi dV = 45 \int_0^2 x^2 \left[ (8 - 4x)\frac{y^2}{2} - \frac{2y^3}{3} \right]_0^{4-2x} dx
+$$
+
+$$
+\iiint_V \Phi dV = 45 \int_0^2 x^2 \left[ (4 - 2x)(4-2x)^2 - \frac{2}{3}(4-2x)^3 \right] dx
+$$
+
+$$
+\iiint_V \Phi dV = 45 \int_0^2 x^2 \left[ (4-2x)^3 - \frac{2}{3}(4-2x)^3 \right] dx = 45 \int_0^2 x^2 \left[ \frac{1}{3}(4-2x)^3 \right] dx
+$$
+
+Factor out $2^3 = 8$ from $(4-2x)^3$:
+
+$$
+\iiint_V \Phi dV = 15 \int_0^2 x^2 \left[ 8(2-x)^3 \right] dx = 120 \int_0^2 x^2 (2-x)^3 dx
+$$
+
+Expand $(2-x)^3 = 8 - 12x + 6x^2 - x^3$:
+
+$$
+\iiint_V \Phi dV = 120 \int_0^2 (8x^2 - 12x^3 + 6x^4 - x^5) dx
+$$
+
+Now integrate with respect to $x$:
+
+$$
+\iiint_V \Phi dV = 120 \left[ \frac{8}{3}x^3 - 3x^4 + \frac{6}{5}x^5 - \frac{x^6}{6} \right]_0^2
+$$
+
+$$
+\iiint_V \Phi dV = 120 \left( \frac{64}{3} - 48 + \frac{192}{5} - \frac{64}{6} \right) = 120 \left( \frac{32}{3} - 48 + \frac{192}{5} \right)
+$$
+
+$$
+\iiint_V \Phi dV = 120 \left( \frac{160 - 720 + 576}{15} \right) = 120 \left( \frac{16}{15} \right) = 8 \times 16 = 128
+$$
+
+So the value of the triple integral is $128$.
+
+---
+
+## Q2. Evaluate $\iiint_V \nabla \cdot \bar{F} dV$ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-4a |
+| **Source** | 2019 Q4(a) [06 marks] |
+
+**Answer:**
+
+First, we calculate the divergence of the vector field $\vec{F}$:
+
+$$
+\vec{\nabla} \cdot \vec{F} = \frac{\partial}{\partial x}(2x^2 - 3z) + \frac{\partial}{\partial y}(-2xy) + \frac{\partial}{\partial z}(-4x)
+$$
+
+$$
+= 4x - 2x + 0 = 2x
+$$
+
+The region $V$ is a tetrahedron bounded by the coordinate planes and the plane $2x + 2y + z = 4$. We find the integration limits:
+
+*   The variable $z$ goes from $0$ to $4 - 2x - 2y$.
+*   For $z=0$, the boundary is $2x + 2y = 4 \implies y = 2 - x$. So $y$ goes from $0$ to $2 - x$.
+*   For $y=z=0$, the boundary is $2x = 4 \implies x = 2$. So $x$ goes from $0$ to $2$.
+
+We set up the triple integral:
+
+$$
+I = \iiint_V 2x \, dV = \int_{x=0}^2 \int_{y=0}^{2-x} \int_{z=0}^{4-2x-2y} 2x \, dz \, dy \, dx
+$$
+
+Integrate with respect to $z$:
+
+$$
+I = \int_{x=0}^2 \int_{y=0}^{2-x} 2x [z]_0^{4-2x-2y} \, dy \, dx = \int_{x=0}^2 \int_{y=0}^{2-x} 2x(4 - 2x - 2y) \, dy \, dx
+$$
+
+$$
+= \int_0^2 2x \left[ (4 - 2x)y - y^2 \right]_0^{2-x} \, dx
+$$
+
+Since $4 - 2x = 2(2 - x)$, we substitute:
+
+$$
+I = \int_0^2 2x \left[ 2(2-x)(2-x) - (2-x)^2 \right] \, dx = \int_0^2 2x (2-x)^2 \, dx
+$$
+
+$$
+= \int_0^2 2x (4 - 4x + x^2) \, dx = \int_0^2 (8x - 8x^2 + 2x^3) \, dx
+$$
+
+Integrate with respect to $x$:
+
+$$
+I = \left[ 4x^2 - \frac{8}{3}x^3 + \frac{1}{2}x^4 \right]_0^2 = 4(4) - \frac{8}{3}(8) + \frac{1}{2}(16) = 16 - \frac{64}{3} + 8 = 24 - \frac{64}{3} = \frac{8}{3}
+$$
+
+So the value of the triple integral is $\frac{8}{3}$.
+
+---
+
+## Q3. Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate $\iiint_V \vec{F} dV$, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-3c |
+| **Source** | 2021 Q3(c) [04 marks] |
+
+**Answer:**
+
+The boundaries of the region $V$ are $x$ from $0$ to $2$, $y$ from $0$ to $6$, and $z$ from $x^2$ to $4$.
+
+We set up the triple integral:
+
+$$
+\iiint_V \vec{F} dV = \int_{y=0}^6 \int_{x=0}^2 \int_{z=x^2}^4 (2xz\hat{i} - x\hat{j} + y^2\hat{k}) dz dx dy
+$$
+
+We integrate each component separately:
+
+#### 1. $\hat{i}$-component
+
+$$
+\int_0^6 \int_0^2 \int_{x^2}^4 2xz dz dx dy = \left( \int_0^6 dy \right) \int_0^2 \left[ xz^2 \right]_{x^2}^4 dx = 6 \int_0^2 (16x - x^5) dx
+$$
+
+$$
+= 6 \left[ 8x^2 - \frac{x^6}{6} \right]_0^2 = 6 \left( 32 - \frac{64}{6} \right) = 192 - 64 = 128
+$$
+
+#### 2. $\hat{j}$-component
+
+$$
+\int_0^6 \int_0^2 \int_{x^2}^4 -x dz dx dy = 6 \int_0^2 -x(4 - x^2) dx = 6 \int_0^2 (x^3 - 4x) dx
+$$
+
+$$
+= 6 \left[ \frac{x^4}{4} - 2x^2 \right]_0^2 = 6(4 - 8) = -24
+$$
+
+#### 3. $\hat{k}$-component
+
+$$
+\int_0^6 \int_0^2 \int_{x^2}^4 y^2 dz dx dy = \left( \int_0^6 y^2 dy \right) \left( \int_0^2 (4 - x^2) dx \right)
+$$
+
+$$
+= \left[ \frac{y^3}{3} \right]_0^6 \times \left[ 4x - \frac{x^3}{3} \right]_0^2 = 72 \times \left( 8 - \frac{8}{3} \right) = 72 \times \frac{16}{3} = 384
+$$
+
+#### Combine Components
+
+$$
+\iiint_V \vec{F} dV = 128\hat{i} - 24\hat{j} + 384\hat{k}
+$$
+
+---
+

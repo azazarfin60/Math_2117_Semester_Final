@@ -1,0 +1,764 @@
+# Topic 01: Eigenvalues and Eigenvectors
+
+This file contains the organized questions and answers for **Eigenvalues and Eigenvectors**, priority ranked as **Priority 1** based on frequency and exam weight.
+
+---
+
+## Q1. Determine the characteristic roots of $\begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-5c |
+| **Source** | 2017 Q5(c) [04 marks] |
+
+**Answer:**
+
+Let the matrix be:
+
+$$
+A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}
+$$
+
+The characteristic equation is defined by $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix} 1-\lambda & 2 & 3 \\ 0 & -4-\lambda & 2 \\ 0 & 0 & 7-\lambda \end{vmatrix} = 0
+$$
+
+Since this is an upper triangular matrix, its determinant is simply the product of its diagonal elements:
+
+$$
+(1-\lambda)(-4-\lambda)(7-\lambda) = 0
+$$
+
+This equation has three roots:
+
+$$
+\lambda = 1, \quad \lambda = -4, \quad \lambda = 7
+$$
+
+So the characteristic roots (or eigenvalues) are $1$, $-4$, and $7$.
+
+---
+
+## Q2. What are the eigen-values and eigen-vectors? Find them for the matrix $\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$. (12)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-7 | PYQ-2018-7a |
+| **Appeared in** | 2017 Q7 [12 marks], 2018 Q7(a) [06 marks] |
+| **Frequency** | ⭐⭐ (2 times) |
+
+**Answer:**
+
+#### Definitions
+
+Let $A$ be a square matrix of order $n$. If there exists a non-zero vector $X$ and a scalar $\lambda$ such that:
+
+$$
+AX = \lambda X
+$$
+
+then $\lambda$ is called an **eigenvalue** of $A$, and $X$ is called the corresponding **eigenvector**.
+
+#### Finding eigenvalues
+
+Let the matrix be:
+
+$$
+A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}
+$$
+
+We solve the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix} 2-\lambda & 2 & 1 \\ 1 & 3-\lambda & 1 \\ 1 & 2 & 2-\lambda \end{vmatrix} = 0
+$$
+
+Expanding the determinant:
+
+$$
+(2-\lambda)\left[ (3-\lambda)(2-\lambda) - 2 \right] - 2\left[ (2-\lambda) - 1 \right] + 1\left[ 2 - (3-\lambda) \right] = 0
+$$
+
+$$
+(2-\lambda)\left[ \lambda^2 - 5\lambda + 4 \right] - 2[1-\lambda] + [\lambda - 1] = 0
+$$
+
+$$
+-\lambda^3 + 7\lambda^2 - 11\lambda + 5 = 0 \implies \lambda^3 - 7\lambda^2 + 11\lambda - 5 = 0
+$$
+
+For $\lambda = 1$, the equation holds ($1 - 7 + 11 - 5 = 0$). Dividing by $\lambda - 1$ gives:
+
+$$
+(\lambda-1)(\lambda^2 - 6\lambda + 5) = 0 \implies (\lambda-1)(\lambda-1)(\lambda-5) = 0
+$$
+
+So the eigenvalues are:
+
+$$
+\lambda = 5, \quad \lambda = 1, \quad \lambda = 1
+$$
+
+#### Finding eigenvectors
+
+We solve the system $(A - \lambda I)X = 0$ for each eigenvalue:
+
+##### Case 1: For $\lambda = 5$
+
+The system is:
+
+$$
+\begin{bmatrix} -3 & 2 & 1 \\ 1 & -2 & 1 \\ 1 & 2 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+We apply row operations:
+*   Swap $R_1 \leftrightarrow R_2$:
+
+$$
+\begin{bmatrix} 1 & -2 & 1 \\ -3 & 2 & 1 \\ 1 & 2 & -3 \end{bmatrix}
+$$
+
+*   $R_2 \to R_2 + 3R_1$
+*   $R_3 \to R_3 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & -2 & 1 \\ 0 & -4 & 4 \\ 0 & 4 & -4 \end{bmatrix}
+$$
+
+*   $R_3 \to R_3 + R_2$
+*   Divide row 2 by $-4$:
+
+$$
+\begin{bmatrix} 1 & -2 & 1 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+This gives the relationships:
+
+$$
+y - z = 0 \implies y = z
+$$
+
+$$
+x - 2y + z = 0 \implies x - 2z + z = 0 \implies x = z
+$$
+
+Let $z = 1$. This gives the eigenvector:
+
+$$
+X_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
+$$
+
+##### Case 2: For $\lambda = 1$
+
+The system is:
+
+$$
+\begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+This reduces to a single equation:
+
+$$
+x + 2y + z = 0 \implies x = -2y - z
+$$
+
+Here we have two free variables. Let $y = s$ and $z = t$. The eigenvectors are:
+
+$$
+X = \begin{bmatrix} -2s - t \\ s \\ t \end{bmatrix} = s \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix} + t \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+$$
+
+So the two linearly independent eigenvectors for $\lambda = 1$ are:
+
+$$
+X_2 = \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+$$
+
+---
+
+## Q3. Find the eigen vectors of the following matrix: (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-7a |
+| **Source** | 2019 Q7(a) [06 marks] |
+
+**Answer:**
+
+$$
+\begin{pmatrix}
+1 & 3 & 0 \\
+3 & -2 & -1 \\
+0 & -1 & 1
+\end{pmatrix}
+$$
+
+**Answer:**
+
+#### 1. Find the Eigenvalues
+
+We solve the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix}
+1 - \lambda & 3 & 0 \\
+3 & -2 - \lambda & -1 \\
+0 & -1 & 1 - \lambda
+\end{vmatrix} = 0
+$$
+
+Expand the determinant along row 1:
+
+$$
+(1 - \lambda) \left[ (-2 - \lambda)(1 - \lambda) - (-1)(-1) \right] - 3 \left[ 3(1 - \lambda) - 0 \right] = 0
+$$
+
+$$
+(1 - \lambda) \left[ (\lambda + 2)(\lambda - 1) - 1 \right] - 9(1 - \lambda) = 0
+$$
+
+$$
+(1 - \lambda) \left[ \lambda^2 + \lambda - 2 - 1 - 9 \right] = 0
+$$
+
+$$
+(1 - \lambda) \left[ \lambda^2 + \lambda - 12 \right] = 0
+$$
+
+Factor the quadratic term:
+
+$$
+(1 - \lambda)(\lambda + 4)(\lambda - 3) = 0
+$$
+
+So the eigenvalues are:
+
+$$
+\lambda_1 = 1, \quad \lambda_2 = 3, \quad \lambda_3 = -4
+$$
+
+#### 2. Find the Eigenvectors
+
+We solve the system $(A - \lambda I)X = 0$ for each eigenvalue:
+
+##### Case 1: For $\lambda_1 = 1$
+
+$$
+\begin{bmatrix}
+0 & 3 & 0 \\
+3 & -3 & -1 \\
+0 & -1 & 0
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 1 and row 3, we get $y = 0$. Substitute $y=0$ into row 2:
+
+$$
+3x - 3(0) - z = 0 \implies z = 3x
+$$
+
+Let $x = 1$. The first eigenvector is:
+
+$$
+X_1 = \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}
+$$
+
+##### Case 2: For $\lambda_2 = 3$
+
+$$
+\begin{bmatrix}
+-2 & 3 & 0 \\
+3 & -5 & -1 \\
+0 & -1 & -2
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 1:
+
+$$
+-2x + 3y = 0 \implies x = \frac{3}{2}y
+$$
+
+From row 3:
+
+$$
+-y - 2z = 0 \implies z = -\frac{1}{2}y
+$$
+
+Let $y = 2$. Then $x = 3$ and $z = -1$. The second eigenvector is:
+
+$$
+X_2 = \begin{bmatrix} 3 \\ 2 \\ -1 \end{bmatrix}
+$$
+
+##### Case 3: For $\lambda_3 = -4$
+
+$$
+\begin{bmatrix}
+5 & 3 & 0 \\
+3 & 2 & -1 \\
+0 & -1 & 5
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 1:
+
+$$
+5x + 3y = 0 \implies y = -\frac{5}{3}x
+$$
+
+From row 3:
+
+$$
+-y + 5z = 0 \implies z = \frac{1}{5}y = \frac{1}{5}\left(-\frac{5}{3}x\right) = -\frac{1}{3}x
+$$
+
+Let $x = 3$. Then $y = -5$ and $z = -1$. The third eigenvector is:
+
+$$
+X_3 = \begin{bmatrix} 3 \\ -5 \\ -1 \end{bmatrix}
+$$
+
+---
+
+## Q4. Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix} 1 & 1 & -2 \\ -1 & 2 & 1 \\ 0 & 1 & -1 \end{bmatrix}$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2020-7a |
+| **Source** | 2020 Q7(a) [06 marks] |
+
+**Answer:**
+
+#### 1. Find Eigenvalues
+
+We solve the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix} 1-\lambda & 1 & -2 \\ -1 & 2-\lambda & 1 \\ 0 & 1 & -1-\lambda \end{vmatrix} = 0
+$$
+
+Expanding the determinant yields the equation:
+
+$$
+\lambda^3 - 2\lambda^2 - \lambda + 2 = 0
+$$
+
+Factor the expression:
+
+$$
+(\lambda - 1)(\lambda + 1)(\lambda - 2) = 0
+$$
+
+So the eigenvalues are:
+
+$$
+\lambda = 1, \quad \lambda = -1, \quad \lambda = 2
+$$
+
+#### 2. Find Eigenvectors
+
+##### Case 1: For $\lambda = 1$
+
+We solve $(A - I)X = 0$:
+
+$$
+\begin{bmatrix} 0 & 1 & -2 \\ -1 & 1 & 1 \\ 0 & 1 & -2 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 1:
+
+$$
+y - 2z = 0 \implies y = 2z
+$$
+
+From row 2:
+
+$$
+-x + y + z = 0 \implies x = y + z = 3z
+$$
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_1 = \begin{bmatrix} 3 \\ 2 \\ 1 \end{bmatrix}
+$$
+
+##### Case 2: For $\lambda = -1$
+
+We solve $(A + I)X = 0$:
+
+$$
+\begin{bmatrix} 2 & 1 & -2 \\ -1 & 3 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 3:
+
+$$
+y = 0
+$$
+
+From row 1:
+
+$$
+2x - 2z = 0 \implies x = z
+$$
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_2 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}
+$$
+
+##### Case 3: For $\lambda = 2$
+
+We solve $(A - 2I)X = 0$:
+
+$$
+\begin{bmatrix} -1 & 1 & -2 \\ -1 & 0 & 1 \\ 0 & 1 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 2:
+
+$$
+-x + z = 0 \implies x = z
+$$
+
+From row 3:
+
+$$
+y - 3z = 0 \implies y = 3z
+$$
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_3 = \begin{bmatrix} 1 \\ 3 \\ 1 \end{bmatrix}
+$$
+
+---
+
+## Q5. Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix} 2 & 3 \\ 1 & 4 \end{bmatrix}$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-7a |
+| **Source** | 2021 Q7(a) [06 marks] |
+
+**Answer:**
+
+#### 1. Find Eigenvalues
+
+We solve the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix} 2-\lambda & 3 \\ 1 & 4-\lambda \end{vmatrix} = 0 \implies (2-\lambda)(4-\lambda) - 3 = 0
+$$
+
+$$
+\lambda^2 - 6\lambda + 5 = 0 \implies (\lambda - 1)(\lambda - 5) = 0
+$$
+
+So the eigenvalues are:
+
+$$
+\lambda = 1, \quad \lambda = 5
+$$
+
+#### 2. Find Eigenvectors
+
+##### Case 1: For $\lambda = 1$
+
+We solve $(A - I)X = 0$:
+
+$$
+\begin{bmatrix} 1 & 3 \\ 1 & 3 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies x + 3y = 0 \implies x = -3y
+$$
+
+Let $y = 1$. The eigenvector is:
+
+$$
+X_1 = \begin{bmatrix} -3 \\ 1 \end{bmatrix}
+$$
+
+##### Case 2: For $\lambda = 5$
+
+We solve $(A - 5I)X = 0$:
+
+$$
+\begin{bmatrix} -3 & 3 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies x - y = 0 \implies x = y
+$$
+
+Let $y = 1$. The eigenvector is:
+
+$$
+X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+$$
+
+---
+
+## Q6. Find the eigen values and eigen vectors of the matrix: (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2023-6a |
+| **Source** | 2023 Q6(a) [05 marks] |
+
+**Answer:**
+
+$$A = \begin{bmatrix} 2 & 1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix}$$
+
+**Answer:**
+
+#### 1. Find Eigenvalues
+
+We solve the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix} 2-\lambda & 1 & 1 \\ -1 & 2-\lambda & -1 \\ 1 & -1 & 2-\lambda \end{vmatrix} = 0
+$$
+
+The expansion of this determinant yields:
+
+$$
+(2-\lambda)(\lambda-1)(\lambda-3) = 0
+$$
+
+So the eigenvalues are:
+
+$$
+\lambda = 1, \quad \lambda = 2, \quad \lambda = 3
+$$
+
+#### 2. Find Eigenvectors
+
+##### Case 1: For $\lambda = 1$
+
+We solve $(A - I)X = 0$:
+
+$$
+\begin{bmatrix} 1 & 1 & 1 \\ -1 & 1 & -1 \\ 1 & -1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+Perform operations $R_2 \to R_2 + R_1$, $R_3 \to R_3 - R_1$:
+
+$$
+\begin{bmatrix} 1 & 1 & 1 \\ 0 & 2 & 0 \\ 0 & -2 & 0 \end{bmatrix} \implies y = 0 \quad \text{and} \quad x + z = 0 \implies x = -z
+$$
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+$$
+
+##### Case 2: For $\lambda = 2$
+
+We solve $(A - 2I)X = 0$:
+
+$$
+\begin{bmatrix} 0 & 1 & 1 \\ -1 & 0 & -1 \\ 1 & -1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From row 1: $y + z = 0 \implies y = -z$. From row 2: $-x - z = 0 \implies x = -z$.
+
+Let $z = -1$. The eigenvector is:
+
+$$
+X_2 = \begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix}
+$$
+
+##### Case 3: For $\lambda = 3$
+
+We solve $(A - 3I)X = 0$:
+
+$$
+\begin{bmatrix} -1 & 1 & 1 \\ -1 & -1 & -1 \\ 1 & -1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+Subtract row 1 from row 2 ($R_2 \to R_2 - R_1$):
+
+$$
+\begin{bmatrix} -1 & 1 & 1 \\ 0 & -2 & -2 \\ 1 & -1 & -1 \end{bmatrix} \implies y + z = 0 \implies y = -z \quad \text{and} \quad x = 0
+$$
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_3 = \begin{bmatrix} 0 \\ -1 \\ 1 \end{bmatrix}
+$$
+
+---
+
+## Q7. Find the eigen vectors of the matrix: (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-6b |
+| **Source** | 2024 Q6(b) [05 marks] |
+
+**Answer:**
+
+$$
+A = \begin{bmatrix}
+3 & 1 & 1 \\
+1 & 5 & 1 \\
+1 & 1 & 3
+\end{bmatrix}
+$$
+
+**Answer:**
+
+#### 1. Find the Eigenvalues
+We solve the characteristic equation $|A - \lambda I| = 0$:
+
+$$
+\begin{vmatrix}
+3 - \lambda & 1 & 1 \\
+1 & 5 - \lambda & 1 \\
+1 & 1 & 3 - \lambda
+\end{vmatrix} = 0
+$$
+
+We expand the determinant:
+
+$$
+(3 - \lambda) \left[ (5 - \lambda)(3 - \lambda) - 1 \right] - 1 \left[ (3 - \lambda) - 1 \right] + 1 \left[ 1 - (5 - \lambda) \right] = 0
+$$
+
+$$
+(3 - \lambda) \left[ \lambda^2 - 8\lambda + 14 \right] - (2 - \lambda) + (\lambda - 4) = 0
+$$
+
+$$
+(3\lambda^2 - 24\lambda + 42 - \lambda^3 + 8\lambda^2 - 14\lambda) - 2 + \lambda + \lambda - 4 = 0
+$$
+
+$$
+-\lambda^3 + 11\lambda^2 - 36\lambda + 36 = 0
+$$
+
+We multiply by $-1$:
+
+$$
+\lambda^3 - 11\lambda^2 + 36\lambda - 36 = 0
+$$
+
+We find the roots of this polynomial. We test $\lambda = 2$:
+
+$$
+2^3 - 11(2^2) + 36(2) - 36 = 8 - 44 + 72 - 36 = 0
+$$
+
+So, $\lambda = 2$ is a root. We factor it out:
+
+$$
+(\lambda - 2)(\lambda^2 - 9\lambda + 18) = 0
+$$
+
+We factor the quadratic term:
+
+$$
+(\lambda - 2)(\lambda - 3)(\lambda - 6) = 0
+$$
+
+The eigenvalues are:
+
+$$
+\lambda = 2, \quad \lambda = 3, \quad \lambda = 6
+$$
+
+#### 2. Find the Eigenvectors
+
+##### Case 1: For $\lambda = 2$
+We solve $(A - 2I)X = 0$:
+
+$$
+\begin{bmatrix} 1 & 1 & 1 \\ 1 & 3 & 1 \\ 1 & 1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+We apply row operations:
+*   $R_2 \to R_2 - R_1$
+*   $R_3 \to R_3 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & 1 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+From the second row, we get $2y = 0 \implies y = 0$.
+From the first row, we get $x + y + z = 0 \implies x + z = 0 \implies x = -z$.
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+$$
+
+##### Case 2: For $\lambda = 3$
+We solve $(A - 3I)X = 0$:
+
+$$
+\begin{bmatrix} 0 & 1 & 1 \\ 1 & 2 & 1 \\ 1 & 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+From the first row, we get $y + z = 0 \implies y = -z$.
+From the third row, we get $x + y = 0 \implies x = -y = z$.
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_2 = \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}
+$$
+
+##### Case 3: For $\lambda = 6$
+We solve $(A - 6I)X = 0$:
+
+$$
+\begin{bmatrix} -3 & 1 & 1 \\ 1 & -1 & 1 \\ 1 & 1 & -3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+We swap rows $R_1 \leftrightarrow R_2$:
+
+$$
+\begin{bmatrix} 1 & -1 & 1 \\ -3 & 1 & 1 \\ 1 & 1 & -3 \end{bmatrix}
+$$
+
+We apply row operations:
+*   $R_2 \to R_2 + 3R_1$
+*   $R_3 \to R_3 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & -1 & 1 \\ 0 & -2 & 4 \\ 0 & 2 & -4 \end{bmatrix}
+$$
+
+We scale the second row ($R_2 \to -\frac{1}{2}R_2$):
+
+$$
+\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & -2 \\ 0 & 2 & -4 \end{bmatrix}
+$$
+
+We perform $R_3 \to R_3 - 2R_2$:
+
+$$
+\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & -2 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+From the second row, we get $y - 2z = 0 \implies y = 2z$.
+From the first row, we get $x - y + z = 0 \implies x - 2z + z = 0 \implies x = z$.
+
+Let $z = 1$. The eigenvector is:
+
+$$
+X_3 = \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}
+$$
+
+---
+

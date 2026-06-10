@@ -1,0 +1,361 @@
+# Topic 09: Adjoint and Inverse
+
+This file contains the organized questions and answers for **Adjoint and Inverse**, priority ranked as **Priority 9** based on frequency and exam weight.
+
+---
+
+## Q1. Find the adjoint and inverse of $\begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}$. (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-5b |
+| **Source** | 2017 Q5(b) [05 marks] |
+
+**Answer:**
+
+Let the matrix be:
+
+$$
+A = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}
+$$
+
+First we find the determinant of $A$:
+
+$$
+|A| = 0(2-3) - 1(1-9) + 2(1-6) = 0 + 8 - 10 = -2
+$$
+
+Since the determinant is not zero, the inverse exists.
+
+Next we find the cofactor elements $C_{ij}$ of the matrix:
+
+$$
+C_{11} = +(2-3) = -1, \quad C_{12} = -(1-9) = 8, \quad C_{13} = +(1-6) = -5
+$$
+
+$$
+C_{21} = -(1-2) = 1, \quad C_{22} = +(0-6) = -6, \quad C_{23} = -(0-3) = 3
+$$
+
+$$
+C_{31} = +(3-4) = -1, \quad C_{32} = -(0-2) = 2, \quad C_{33} = +(0-1) = -1
+$$
+
+This gives the cofactor matrix $C$:
+
+$$
+C = \begin{pmatrix} -1 & 8 & -5 \\ 1 & -6 & 3 \\ -1 & 2 & -1 \end{pmatrix}
+$$
+
+The adjoint of $A$ is the transpose of the cofactor matrix:
+
+$$
+\text{adj}(A) = C^T = \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix}
+$$
+
+Now we find the inverse matrix $A^{-1}$:
+
+$$
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = -\frac{1}{2} \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix} = \begin{pmatrix} 1/2 & -1/2 & 1/2 \\ -4 & 3 & -1 \\ 5/2 & -3/2 & 1/2 \end{pmatrix}
+$$
+
+---
+
+## Q2. What is an inverse of a matrix? Find the inverse of the following matrix: (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-5a |
+| **Source** | 2019 Q5(a) [06 marks] |
+
+**Answer:**
+
+$$
+\begin{pmatrix}
+1 & 3 & 3 \\
+1 & 4 & 3 \\
+1 & 3 & 4
+\end{pmatrix}
+$$
+
+**Answer:**
+
+#### 1. Definition of Inverse Matrix
+
+Let $A$ be a square matrix of order $n$. If there exists a square matrix $B$ of order $n$ such that:
+
+$$
+AB = BA = I_n
+$$
+
+(where $I_n$ is the identity matrix of order $n$), then $B$ is called the inverse of $A$. The inverse matrix is unique and is denoted by $A^{-1}$.
+
+#### 2. Find the Inverse
+
+We set up the augmented matrix $[A | I]$:
+
+$$
+\begin{bmatrix}
+1 & 3 & 3 & | & 1 & 0 & 0 \\
+1 & 4 & 3 & | & 0 & 1 & 0 \\
+1 & 3 & 4 & | & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+Apply row operations to clear the first column:
+*   $R_2 \to R_2 - R_1$
+*   $R_3 \to R_3 - R_1$
+
+This gives:
+
+$$
+\begin{bmatrix}
+1 & 3 & 3 & | & 1 & 0 & 0 \\
+0 & 1 & 0 & | & -1 & 1 & 0 \\
+0 & 0 & 1 & | & -1 & 0 & 1
+\end{bmatrix}
+$$
+
+Apply row operation to clear the second column:
+*   $R_1 \to R_1 - 3R_2$
+
+This gives:
+
+$$
+\begin{bmatrix}
+1 & 0 & 3 & | & 4 & -3 & 0 \\
+0 & 1 & 0 & | & -1 & 1 & 0 \\
+0 & 0 & 1 & | & -1 & 0 & 1
+\end{bmatrix}
+$$
+
+Apply row operation to clear the third column:
+*   $R_1 \to R_1 - 3R_3$
+
+This yields:
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & | & 7 & -3 & -3 \\
+0 & 1 & 0 & | & -1 & 1 & 0 \\
+0 & 0 & 1 & | & -1 & 0 & 1
+\end{bmatrix}
+$$
+
+So the inverse matrix is:
+
+$$
+A^{-1} = \begin{pmatrix}
+7 & -3 & -3 \\
+-1 & 1 & 0 \\
+-1 & 0 & 1
+\end{pmatrix}
+$$
+
+---
+
+## Q3. Define inverse of a matrix. Find the adjoint of matrix $A$ and hence find $A^{-1}$, where: (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2020-5c |
+| **Source** | 2020 Q5(c) [05 marks] |
+
+**Answer:**
+
+$$A = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+**Answer:**
+
+#### 1. Definition
+
+Let $A$ be a square matrix. If there is a matrix $B$ such that $AB = BA = I$, then $B$ is the inverse of $A$ (written as $A^{-1}$).
+
+#### 2. Find Adjoint and Inverse
+
+We find the determinant of $A$:
+
+$$
+|A| = 1(\cos^2\theta - (-\sin^2\theta)) = \cos^2\theta + \sin^2\theta = 1
+$$
+
+Find the cofactors $C_{ij}$:
+
+$$
+C_{11} = \cos\theta, \quad C_{12} = -\sin\theta, \quad C_{13} = 0
+$$
+
+$$
+C_{21} = \sin\theta, \quad C_{22} = \cos\theta, \quad C_{23} = 0
+$$
+
+$$
+C_{31} = 0, \quad C_{32} = 0, \quad C_{33} = 1
+$$
+
+This gives the cofactor matrix $C$:
+
+$$
+C = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+The adjoint matrix is the transpose of the cofactor matrix:
+
+$$
+\text{adj}(A) = C^T = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+Since the determinant is 1, the inverse is:
+
+$$
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+---
+
+## Q4. Find the inverse of the following matrix by using row operation: (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-6a |
+| **Source** | 2021 Q6(a) [06 marks] |
+
+**Answer:**
+
+$$A = \begin{pmatrix} 2 & 1 & 2 \\ 2 & 2 & 1 \\ 1 & 2 & 2 \end{pmatrix}$$
+
+**Answer:**
+
+We write the augmented matrix $[A | I]$:
+
+$$
+\begin{bmatrix} 2 & 1 & 2 & | & 1 & 0 & 0 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 1 & 2 & 2 & | & 0 & 0 & 1 \end{bmatrix}
+$$
+
+Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+
+$$
+\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 2 & 1 & 2 & | & 1 & 0 & 0 \end{bmatrix}
+$$
+
+Apply row operations:
+*   $R_2 \to R_2 - 2R_1$
+*   $R_3 \to R_3 - 2R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & -2 & -3 & | & 0 & 1 & -2 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+$$
+
+Multiply row 2 by $-1/2$ ($R_2 \to -1/2 R_2$):
+
+$$
+\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+$$
+
+Eliminate the third row element ($R_3 \to R_3 + 3R_2$):
+
+$$
+\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 5/2 & | & 1 & -3/2 & 1 \end{bmatrix}
+$$
+
+Multiply row 3 by $2/5$ ($R_3 \to 2/5 R_3$):
+
+$$
+\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+$$
+
+Perform the operation $R_2 \to R_2 - \frac{3}{2}R_3$:
+
+$$
+\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+$$
+
+Perform the operation $R_1 \to R_1 - 2R_3$:
+
+$$
+\begin{bmatrix} 1 & 2 & 0 & | & -4/5 & 6/5 & 1/5 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+$$
+
+Perform the operation $R_1 \to R_1 - 2R_2$:
+
+$$
+\begin{bmatrix} 1 & 0 & 0 & | & 2/5 & 2/5 & -3/5 \\ 0 & 1 & 0 & | & -3/5 & 2/5 & 2/5 \\ 0 & 0 & 1 & | & 2/5 & -3/5 & 2/5 \end{bmatrix}
+$$
+
+So the inverse is:
+
+$$
+A^{-1} = \frac{1}{5} \begin{pmatrix} 2 & 2 & -3 \\ -3 & 2 & 2 \\ 2 & -3 & 2 \end{pmatrix}
+$$
+
+---
+
+## Q5. Find the inverse of the matrix $A = \begin{bmatrix} 1 & 3 & 5 \\ 2 & 4 & 5 \\ 3 & 7 & 6 \end{bmatrix}$ using row transformation. (05)
+
+| | |
+|---|---|
+| **ID** | PYQ-2023-5b |
+| **Source** | 2023 Q5(b) [05 marks] |
+
+**Answer:**
+
+We set up the augmented matrix $[A | I]$:
+
+$$
+\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 2 & 4 & 5 & | & 0 & 1 & 0 \\ 3 & 7 & 6 & | & 0 & 0 & 1 \end{bmatrix}
+$$
+
+Apply row operations:
+*   $R_2 \to R_2 - 2R_1$
+*   $R_3 \to R_3 - 3R_1$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & -2 & -5 & | & -2 & 1 & 0 \\ 0 & -2 & -9 & | & -3 & 0 & 1 \end{bmatrix}
+$$
+
+Subtract row 2 from row 3 ($R_3 \to R_3 - R_2$):
+
+$$
+\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & -2 & -5 & | & -2 & 1 & 0 \\ 0 & 0 & -4 & | & -1 & -1 & 1 \end{bmatrix}
+$$
+
+Multiply row 2 by $-1/2$ and row 3 by $-1/4$:
+*   $R_2 \to -1/2 R_2$
+*   $R_3 \to -1/4 R_3$
+
+This gives:
+
+$$
+\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & 1 & 5/2 & | & 1 & -1/2 & 0 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+$$
+
+Perform the operation $R_2 \to R_2 - \frac{5}{2}R_3$:
+
+$$
+\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+$$
+
+Perform the operation $R_1 \to R_1 - 5R_3$:
+
+$$
+\begin{bmatrix} 1 & 3 & 0 & | & -1/4 & -5/4 & 5/4 \\ 0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+$$
+
+Perform the operation $R_1 \to R_1 - 3R_2$:
+
+$$
+\begin{bmatrix} 1 & 0 & 0 & | & -11/8 & 17/8 & -5/8 \\ 0 & 1 & 0 & | & 3/8 & -9/8 & 5/8 \\ 0 & 0 & 1 & | & 1/4 & 1/4 & -1/4 \end{bmatrix}
+$$
+
+So the inverse is:
+
+$$
+A^{-1} = \frac{1}{8} \begin{bmatrix} -11 & 17 & -5 \\ 3 & -9 & 5 \\ 2 & 2 & -2 \end{bmatrix}
+$$
+
+---
+

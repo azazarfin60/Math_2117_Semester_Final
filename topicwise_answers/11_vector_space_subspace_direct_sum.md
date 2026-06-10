@@ -1,0 +1,430 @@
+# Topic 11: Vector Space, Subspace, and Direct Sum
+
+This file contains the organized questions and answers for **Vector Space, Subspace, and Direct Sum**, priority ranked as **Priority 11** based on frequency and exam weight.
+
+---
+
+## Q1. Define vector space and subspace. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-4a |
+| **Source** | 2017 Q4(a) [04 marks] |
+
+**Answer:**
+
+#### Vector Space
+
+Let $V$ be a non-empty set of objects called vectors. Let $K$ be a field of scalars. We define two operations on this set: vector addition ($u + v$) and scalar multiplication ($k u$). The set $V$ is called a vector space over the field $K$ if it satisfies these ten rules:
+
+1.  **Closure under Addition:** If $u, v \in V$, then $u + v \in V$.
+2.  **Commutative Law:** $u + v = v + u$ for all $u, v \in V$.
+3.  **Associative Law:** $(u + v) + w = u + (v + w)$ for all $u, v, w \in V$.
+4.  **Additive Identity:** There is a zero vector $0 \in V$ such that $u + 0 = u$ for all $u \in V$.
+5.  **Additive Inverse:** For each $u \in V$, there is a vector $-u \in V$ such that $u + (-u) = 0$.
+6.  **Closure under Scalar Multiplication:** If $u \in V$ and $k \in K$, then $k u \in V$.
+7.  **Distributive Law 1:** $k(u + v) = ku + kv$ for all $u, v \in V$ and $k \in K$.
+8.  **Distributive Law 2:** $(a + b)u = au + bu$ for all $u \in V$ and $a, b \in K$.
+9.  **Associativity of Multiplication:** $a(bu) = (ab)u$ for all $u \in V$ and $a, b \in K$.
+10. **Unitary Identity:** $1u = u$ for all $u \in V$, where $1$ is the multiplicative identity in $K$.
+
+#### Subspace
+
+Let $W$ be a non-empty subset of a vector space $V$ over a field $K$. We call $W$ a subspace of $V$ if $W$ is itself a vector space under the same operations defined on $V$.
+
+In practice, $W$ is a subspace if and only if it satisfies these two closure properties:
+1.  **Closed under Addition:** If $u, v \in W$, then $u + v \in W$.
+2.  **Closed under Scalar Multiplication:** If $u \in W$ and $k \in K$, then $k u \in W$.
+
+---
+
+## Q2. Let $V$ be a vector space over a field $k$, prove that: (08)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-4b |
+| **Source** | 2017 Q4(b) [08 marks] |
+
+**Answer:**
+
+*   **i)** $k0 = 0$
+*   **ii)** $0u = 0$
+*   **iii)** If $ku = 0$, then $k = 0$ or $u = 0$
+*   **iv)** $(-k)u = k(-u) = -ku$
+
+**Answer:**
+
+#### Proof of i): $k0 = 0$
+
+Using properties of the zero vector, we know:
+
+$$
+0 + 0 = 0
+$$
+
+Multiply both sides by the scalar $k$:
+
+$$
+k(0 + 0) = k0
+$$
+
+Use the distributive property of vector spaces:
+
+$$
+k0 + k0 = k0
+$$
+
+Now add the additive inverse vector $-k0$ to both sides:
+
+$$
+(k0 + k0) + (-k0) = k0 + (-k0)
+$$
+
+Apply the associative law of addition:
+
+$$
+k0 + (k0 + (-k0)) = 0
+$$
+
+$$
+k0 + 0 = 0 \implies k0 = 0
+$$
+
+This completes the proof.
+
+#### Proof of ii): $0u = 0$
+
+Using properties of scalar addition in the field $k$, we know:
+
+$$
+0 + 0 = 0
+$$
+
+Multiply both sides by the vector $u$:
+
+$$
+(0 + 0)u = 0u
+$$
+
+Use the distributive property:
+
+$$
+0u + 0u = 0u
+$$
+
+Now add the additive inverse vector $-0u$ to both sides:
+
+$$
+(0u + 0u) + (-0u) = 0u + (-0u)
+$$
+
+Apply the associative law of addition:
+
+$$
+0u + (0u + (-0u)) = 0
+$$
+
+$$
+0u + 0 = 0 \implies 0u = 0
+$$
+
+This completes the proof.
+
+#### Proof of iii): If $ku = 0$, then $k = 0$ or $u = 0$
+
+Assume $ku = 0$. If the scalar $k = 0$, then the statement is already true.
+
+But if $k \neq 0$, then its multiplicative inverse $k^{-1}$ exists in the field $k$. We multiply both sides of the equation by $k^{-1}$:
+
+$$
+k^{-1}(ku) = k^{-1}0
+$$
+
+Use the associative property of scalar multiplication and the fact that $k^{-1}0 = 0$ (from property i):
+
+$$
+(k^{-1}k)u = 0
+$$
+
+$$
+1u = 0
+$$
+
+Since $1u = u$ (unitary property):
+
+$$
+u = 0
+$$
+
+So either $k = 0$ or $u = 0$. This completes the proof.
+
+#### Proof of iv): $(-k)u = k(-u) = -ku$
+
+The vector $-ku$ is the unique additive inverse of $ku$, which means $ku + (-ku) = 0$.
+
+To show $(-k)u = -ku$, we add them together and show the result is the zero vector:
+
+$$
+ku + (-k)u = (k + (-k))u = 0u = 0 \quad \text{(using property ii)}
+$$
+
+Since the sum is zero, $(-k)u$ is indeed the additive inverse of $ku$:
+
+$$
+(-k)u = -ku
+$$
+
+To show $k(-u) = -ku$, we do the same:
+
+$$
+ku + k(-u) = k(u + (-u)) = k0 = 0 \quad \text{(using property i)}
+$$
+
+So $k(-u)$ is also the additive inverse of $ku$:
+
+$$
+k(-u) = -ku
+$$
+
+So we have shown that $(-k)u = k(-u) = -ku$.
+
+---
+
+## SECTION - B
+
+---
+
+## Q3. Define vector space and subspace with examples. (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-8a |
+| **Source** | 2018 Q8(a) [03 marks] |
+
+**Answer:**
+
+#### Vector Space
+
+Let $V$ be a non-empty set of vectors and $K$ be a field of scalars. $V$ is a vector space if it satisfies closure, commutative, associative, identity, inverse, and distributive properties under vector addition and scalar multiplication.
+
+*Example:* The space $\mathbb{R}^3$ of all real triples under standard addition and multiplication.
+
+#### Subspace
+
+A non-empty subset $W$ of a vector space $V$ is a subspace if $W$ is closed under addition ($u,v \in W \implies u+v \in W$) and closed under scalar multiplication ($u \in W, k \in K \implies ku \in W$).
+
+*Example:* The plane $z = 0$ in $\mathbb{R}^3$, defined by $W = \{(x, y, 0) \mid x, y \in \mathbb{R}\}$.
+
+---
+
+## Q4. Prove that the vector space $V$ is the direct sum of its subspaces $U$ and $W$ if and only if (i) $V = U + W$, (ii) $U \cap W = \{0\}$. (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2019-8a |
+| **Source** | 2019 Q8(a) [06 marks] |
+
+**Answer:**
+
+#### 1. Forward Direction ($\implies$)
+
+Assume $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
+
+By definition of direct sum, every vector $v \in V$ can be uniquely written as:
+
+$$
+v = u + w \quad \text{where } u \in U \text{ and } w \in W
+$$
+
+*   Since every $v \in V$ can be written as $u+w$, we have:
+
+$$
+V = U + W
+$$
+
+*   Now let us prove $U \cap W = \{0\}$. Let $v \in U \cap W$.
+    *   Since $v \in U$, we can write $v = v + 0$ (where $v \in U$ and $0 \in W$).
+    *   Since $v \in W$, we can write $v = 0 + v$ (where $0 \in U$ and $v \in W$).
+    *   But by uniqueness of the decomposition of $v$, these two expressions must be identical:
+
+$$
+v = 0 \quad \text{and} \quad 0 = v \implies v = 0
+$$
+
+Thus, $U \cap W = \{0\}$.
+
+#### 2. Reverse Direction ($\impliedby$)
+
+Assume (i) $V = U + W$ and (ii) $U \cap W = \{0\}$.
+
+Since $V = U + W$, every vector $v \in V$ can be written as:
+
+$$
+v = u + w \quad \text{where } u \in U \text{ and } w \in W
+$$
+
+We must show that this representation is unique.
+
+Suppose $v$ can be represented in two ways:
+
+$$
+v = u_1 + w_1 \quad \text{and} \quad v = u_2 + w_2
+$$
+
+where $u_1, u_2 \in U$ and $w_1, w_2 \in W$.
+
+Equating the two expressions:
+
+$$
+u_1 + w_1 = u_2 + w_2 \implies u_1 - u_2 = w_2 - w_1
+$$
+
+*   Since $U$ is a subspace, $u_1 - u_2 \in U$.
+*   Since $W$ is a subspace, $w_2 - w_1 \in W$.
+
+Since $u_1 - u_2 = w_2 - w_1$, this vector belongs to both $U$ and $W$:
+
+$$
+u_1 - u_2 \in U \cap W \quad \text{and} \quad w_2 - w_1 \in U \cap W
+$$
+
+But we are given $U \cap W = \{0\}$. Therefore:
+
+$$
+u_1 - u_2 = 0 \implies u_1 = u_2
+$$
+
+$$
+w_2 - w_1 = 0 \implies w_1 = w_2
+$$
+
+Since $u_1 = u_2$ and $w_1 = w_2$, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
+
+---
+
+## Q5. Define sum and direct sum with examples. (02)
+
+| | |
+|---|---|
+| **ID** | PYQ-2023-8a |
+| **Source** | 2023 Q8(a) [02 marks] |
+
+**Answer:**
+
+*   **Sum of Subspaces:** Let $U$ and $W$ be subspaces of a vector space $V$. The sum $U + W$ is the set of all vectors $u + w$ where $u \in U$ and $w \in W$.
+    *Example:* In $\mathbb{R}^2$, let $U$ be the $x$-axis and $W$ be the $y$-axis. Then $U + W = \mathbb{R}^2$.
+*   **Direct Sum of Subspaces:** Let $U$ and $W$ be subspaces of $V$. The sum $U + W$ is a direct sum (written $U \oplus W$) if every element in the sum can be written uniquely as $u + w$. This occurs if and only if $U \cap W = \{0\}$.
+    *Example:* In $\mathbb{R}^2$, let $U$ be the $x$-axis and $W$ be the $y$-axis. Their intersection is only the origin $\{(0, 0)\}$. So $U \oplus W = \mathbb{R}^2$.
+
+---
+
+## Q6. Define direct sum. Give an example of direct sum. (02)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-7b |
+| **Source** | 2024 Q7(b) [02 marks] |
+
+**Answer:**
+
+#### 1. Definition
+Let $V$ be a vector space. Let $U$ and $W$ be subspaces of $V$. We say $V$ is the direct sum of $U$ and $W$, written as $V = U \oplus W$, if:
+*   $V = U + W$. This means every vector $v \in V$ can be written as $v = u + w$ for some $u \in U$ and $w \in W$.
+*   $U \cap W = \{0\}$. This means the intersection of $U$ and $W$ contains only the zero vector.
+
+Equivalently, every vector $v \in V$ can be written uniquely as $v = u + w$, where $u \in U$ and $w \in W$.
+
+#### 2. Example
+Let $V = \mathbb{R}^2$ be the two-dimensional real plane.
+Let $U$ be the x-axis, which is the subspace of all vectors of the form $(x, 0)$:
+
+$$
+U = \{ (x, 0) \mid x \in \mathbb{R} \}
+$$
+
+Let $W$ be the y-axis, which is the subspace of all vectors of the form $(0, y)$:
+
+$$
+W = \{ (0, y) \mid y \in \mathbb{R} \}
+$$
+
+We show that $\mathbb{R}^2 = U \oplus W$:
+*   Any vector $v = (a, b) \in \mathbb{R}^2$ can be written as $(a, b) = (a, 0) + (0, b)$, where $(a, 0) \in U$ and $(0, b) \in W$.
+*   The only vector that lies on both the x-axis and the y-axis is the origin $(0, 0)$. So, $U \cap W = \{(0, 0)\}$.
+
+Thus, $V$ is the direct sum of $U$ and $W$.
+
+---
+
+## Q7. What is vector space? Also define the basis and dimension of a vector space. (02)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-8a |
+| **Source** | 2024 Q8(a) [02 marks] |
+
+**Answer:**
+
+#### 1. Vector Space
+A vector space $V$ over a field $F$ is a set of elements (called vectors) together with two operations: vector addition and scalar multiplication. These operations must satisfy the following eight axioms for all vectors $u, v, w \in V$ and scalars $a, b \in F$:
+*   **Associativity of addition:** $u + (v + w) = (u + v) + w$
+*   **Commutativity of addition:** $u + v = v + u$
+*   **Identity element of addition:** There exists a zero vector $0 \in V$ such that $u + 0 = u$.
+*   **Inverse elements of addition:** For every $u \in V$, there exists an element $-u \in V$ such that $u + (-u) = 0$.
+*   **Compatibility of scalar multiplication:** $a(bu) = (ab)u$
+*   **Identity element of scalar multiplication:** $1u = u$, where $1$ is the multiplicative identity in $F$.
+*   **Distributivity of scalar multiplication over vector addition:** $a(u + v) = au + av$
+*   **Distributivity of scalar multiplication over field addition:** $(a + b)u = au + bu$
+
+#### 2. Basis of a Vector Space
+A subset $B = \{v_1, v_2, \dots, v_n\}$ of a vector space $V$ is a basis of $V$ if:
+*   The set $B$ is linearly independent.
+*   The set $B$ spans $V$. This means any vector in $V$ can be written as a linear combination of vectors in $B$.
+
+#### 3. Dimension of a Vector Space
+The dimension of a vector space $V$ is the number of vectors in any basis of $V$.
+
+---
+
+## Q8. Let $U$ consists of all vectors in $\mathbb{R}^3$ whose entries are equal that is $u = \{(a, b, c) \mid a = b = c\}$, prove that $U$ is a vector space over $\mathbb{R}$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-8b |
+| **Source** | 2024 Q8(b) [04 marks] |
+
+**Answer:**
+
+Since $U$ is a subset of the vector space $\mathbb{R}^3$, we can show it is a subspace. A subspace of $\mathbb{R}^3$ is itself a vector space. We check the three subspace criteria:
+
+#### 1. Contains the Zero Vector
+The zero vector of $\mathbb{R}^3$ is $(0, 0, 0)$. Since $0 = 0 = 0$, we have:
+
+$$
+(0, 0, 0) \in U
+$$
+
+#### 2. Closed Under Vector Addition
+Let $u_1 = (a_1, a_1, a_1) \in U$ and $u_2 = (a_2, a_2, a_2) \in U$, where $a_1, a_2 \in \mathbb{R}$.
+We add these vectors:
+
+$$
+u_1 + u_2 = (a_1 + a_2, a_1 + a_2, a_1 + a_2)
+$$
+
+All three components of the sum vector are equal to $a_1 + a_2$. So, the sum vector is in $U$.
+
+#### 3. Closed Under Scalar Multiplication
+Let $u = (a, a, a) \in U$ and $k \in \mathbb{R}$ be a scalar.
+We multiply the vector by the scalar:
+
+$$
+k u = (ka, ka, ka)
+$$
+
+All three components of the resulting vector are equal to $ka$. So, this vector is in $U$.
+
+Since $U$ satisfies all three conditions, it is a subspace of $\mathbb{R}^3$. Therefore, $U$ is a vector space over $\mathbb{R}$.
+
+---
+

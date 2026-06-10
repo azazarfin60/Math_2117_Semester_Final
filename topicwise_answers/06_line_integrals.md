@@ -1,0 +1,322 @@
+# Topic 06: Line Integrals
+
+This file contains the organized questions and answers for **Line Integrals**, priority ranked as **Priority 6** based on frequency and exam weight.
+
+---
+
+## Q1. If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2017-1b |
+| **Source** | 2017 Q1(b) [04 marks] |
+
+**Answer:**
+
+The position vector in the $xy$-plane is $\vec{r} = x\hat{i} + y\hat{j}$. So we have:
+
+$$
+d\vec{r} = dx\hat{i} + dy\hat{j}
+$$
+
+We can write the line integral as:
+
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_C (3xy\hat{i} - y^2\hat{j}) \cdot (dx\hat{i} + dy\hat{j}) = \int_C \left( 3xy dx - y^2 dy \right)
+$$
+
+The path $C$ is defined by $y = 2x^2$. This gives:
+
+$$
+dy = 4x dx
+$$
+
+We substitute these terms into our integral. The limit for $x$ goes from $0$ to $1$:
+
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_0^1 \left[ 3x(2x^2) - (2x^2)^2 (4x) \right] dx
+$$
+
+Simplify the integrand:
+
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_0^1 \left( 6x^3 - 16x^5 \right) dx
+$$
+
+Now integrate term by term:
+
+$$
+\int_C \vec{F} \cdot d\vec{r} = \left[ \frac{6x^4}{4} - \frac{16x^6}{6} \right]_0^1 = \left[ \frac{3}{2}x^4 - \frac{8}{3}x^6 \right]_0^1
+$$
+
+Evaluate at the limits:
+
+$$
+\int_C \vec{F} \cdot d\vec{r} = \left( \frac{3}{2} - \frac{8}{3} \right) - 0 = \frac{9 - 16}{6} = -\frac{7}{6}
+$$
+
+So the value of the line integral is $-\frac{7}{6}$.
+
+---
+
+## Q2. If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
+
+| | |
+|---|---|
+| **ID** | PYQ-2018-2b | PYQ-2020-3b |
+| **Appeared in** | 2018 Q2(b) [06 marks], 2020 Q3(b) [06 marks] |
+| **Frequency** | ⭐⭐ (2 times) |
+
+**Answer:**
+
+*   **(i)** $x = t, y = t^2, z = t^3$
+*   **(ii)** the straight line joining $(0,0,0)$ to $(1,1,1)$.
+
+**Answer:**
+
+We write the line integral as:
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \int_C \left[ (3x^2 + 6y)dx - 14yz dy + 20xz^2 dz \right]
+$$
+
+#### Path (i): $x = t, y = t^2, z = t^3$
+
+Here we calculate the differentials:
+
+$$
+dx = dt, \quad dy = 2t dt, \quad dz = 3t^2 dt
+$$
+
+As the path goes from $(0,0,0)$ to $(1,1,1)$, the parameter $t$ goes from $0$ to $1$. Substitute these into the integral:
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \int_0^1 \left[ (3t^2 + 6t^2)dt - 14(t^2)(t^3)(2t dt) + 20(t)(t^3)^2 (3t^2 dt) \right]
+$$
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \int_0^1 \left( 9t^2 - 28t^6 + 60t^9 \right) dt
+$$
+
+Integrate the terms:
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \left[ 3t^3 - 4t^7 + 6t^{10} \right]_0^1 = 3 - 4 + 6 = 5
+$$
+
+So the integral along this path is $5$.
+
+#### Path (ii): The straight line
+
+The straight line from $(0,0,0)$ to $(1,1,1)$ is defined by:
+
+$$
+x = t, \quad y = t, \quad z = t
+$$
+
+with $t$ from $0$ to $1$. The differentials are:
+
+$$
+dx = dt, \quad dy = dt, \quad dz = dt
+$$
+
+Substitute these into the integral:
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \int_0^1 \left[ (3t^2 + 6t)dt - 14(t)(t)dt + 20(t)(t)^2 dt \right]
+$$
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \int_0^1 \left( 20t^3 - 11t^2 + 6t \right) dt
+$$
+
+Integrate the terms:
+
+$$
+\int_C \bar{A} \cdot d\bar{r} = \left[ 5t^4 - \frac{11}{3}t^3 + 3t^2 \right]_0^1 = 5 - \frac{11}{3} + 3 = 8 - \frac{11}{3} = \frac{13}{3}
+$$
+
+So the integral along this path is $\frac{13}{3}$.
+
+---
+
+## Q3. If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$. (04)
+
+| | |
+|---|---|
+| **ID** | PYQ-2021-3b |
+| **Source** | 2021 Q3(b) [04 marks] |
+
+**Answer:**
+
+We write the line integral as:
+
+$$
+\int_C \vec{A} \cdot d\vec{r} = \int_C \left[ (3x^2 + 6y)dx - 14yz dy + 20xz^2 dz \right]
+$$
+
+We divide the path $C$ into three line segments:
+
+#### 1. Segment $C_1$: From $(0,0,0)$ to $(1,0,0)$
+
+On this segment, $y=0$ and $z=0$, which means $dy=0$ and $dz=0$. The variable $x$ goes from $0$ to $1$:
+
+$$
+\int_{C_1} \vec{A} \cdot d\vec{r} = \int_{x=0}^1 (3x^2 + 0) dx = [x^3]_0^1 = 1
+$$
+
+#### 2. Segment $C_2$: From $(1,0,0)$ to $(1,1,0)$
+
+On this segment, $x=1$ and $z=0$, which means $dx=0$ and $dz=0$. The variable $y$ goes from $0$ to $1$:
+
+$$
+\int_{C_2} \vec{A} \cdot d\vec{r} = \int_{y=0}^1 -14y(0) dy = 0
+$$
+
+#### 3. Segment $C_3$: From $(1,1,0)$ to $(1,1,1)$
+
+On this segment, $x=1$ and $y=1$, which means $dx=0$ and $dy=0$. The variable $z$ goes from $0$ to $1$:
+
+$$
+\int_{C_3} \vec{A} \cdot d\vec{r} = \int_{z=0}^1 20(1)z^2 dz = \left[ \frac{20}{3}z^3 \right]_0^1 = \frac{20}{3}
+$$
+
+#### Total Line Integral
+
+$$
+\int_C \vec{A} \cdot d\vec{r} = \int_{C_1} + \int_{C_2} + \int_{C_3} = 1 + 0 + \frac{20}{3} = \frac{23}{3}
+$$
+
+So the value of the line integral is $\frac{23}{3}$.
+
+---
+
+## Q4. Find the work done in moving a particle in a force field given by $\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}$ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$. (03)
+
+| | |
+|---|---|
+| **ID** | PYQ-2024-3b |
+| **Source** | 2024 Q3(b) [03 marks] |
+
+**Answer:**
+
+The work done is:
+
+$$
+W = \int_C \vec{F} \cdot d\vec{r} = \int_C (3xy dx - 5z dy + 10x dz)
+$$
+
+We express all terms using the parameter $t$:
+*   $x = t^2 + 1 \implies dx = 2t dt$
+*   $y = 2t^2 \implies dy = 4t dt$
+*   $z = t^3 \implies dz = 3t^2 dt$
+
+We substitute these into the integrand:
+1.  $3xy dx = 3(t^2 + 1)(2t^2)(2t dt) = 12t^3(t^2 + 1) dt = (12t^5 + 12t^3) dt$
+2.  $-5z dy = -5(t^3)(4t dt) = -20t^4 dt$
+3.  $10x dz = 10(t^2 + 1)(3t^2 dt) = 30t^2(t^2 + 1) dt = (30t^4 + 30t^2) dt$
+
+We sum these three parts:
+
+$$
+\vec{F} \cdot d\vec{r} = (12t^5 + 12t^3 - 20t^4 + 30t^4 + 30t^2) dt = (12t^5 + 10t^4 + 12t^3 + 30t^2) dt
+$$
+
+We integrate from $t = 1$ to $t = 2$:
+
+$$
+W = \int_1^2 (12t^5 + 10t^4 + 12t^3 + 30t^2) dt
+$$
+
+We find the antiderivative:
+
+$$
+\int (12t^5 + 10t^4 + 12t^3 + 30t^2) dt = 2t^6 + 2t^5 + 3t^4 + 10t^3
+$$
+
+We evaluate at the limits:
+*   At $t = 2$:
+
+    $$
+    2(2^6) + 2(2^5) + 3(2^4) + 10(2^3) = 2(64) + 2(32) + 3(16) + 10(8) = 128 + 64 + 48 + 80 = 320
+    $$
+
+*   At $t = 1$:
+
+    $$
+    2(1^6) + 2(1^5) + 3(1^4) + 10(1^3) = 2 + 2 + 3 + 10 = 17
+    $$
+
+We subtract the values:
+
+$$
+W = 320 - 17 = 303
+$$
+
+So, the work done is 303.
+
+---
+
+## Q5. If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate $\int_C \vec{F} \cdot d\vec{r}$ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
+
+| | |
+|---|---|
+| **ID** | CT2V-3 |
+| **Source** | CT2V Q3 [06 marks] |
+
+**Answer:**
+
+We write the line integral:
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_C [(5xy - 6x^2)dx + (2y - 4x)dy]
+$$
+
+We are given the curve relation:
+$$
+y = x^3
+$$
+
+We find the differential $dy$:
+$$
+dy = 3x^2 dx
+$$
+
+We substitute $y = x^3$ and $dy = 3x^2 dx$ into the line integral. The variable $x$ goes from 1 to 2:
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_1^2 [(5x(x^3) - 6x^2)dx + (2(x^3) - 4x)(3x^2 dx)]
+$$
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_1^2 [(5x^4 - 6x^2) + (6x^5 - 12x^3)] dx
+$$
+$$
+\int_C \vec{F} \cdot d\vec{r} = \int_1^2 (6x^5 + 5x^4 - 12x^3 - 6x^2) dx
+$$
+
+We integrate each term with respect to $x$:
+$$
+\int_C \vec{F} \cdot d\vec{r} = \left[ x^6 + x^5 - 3x^4 - 2x^3 \right]_1^2
+$$
+
+We evaluate at the upper limit $x = 2$:
+$$
+2^6 + 2^5 - 3(2^4) - 2(2^3) = 64 + 32 - 48 - 16 = 32
+$$
+
+We evaluate at the lower limit $x = 1$:
+$$
+1^6 + 1^5 - 3(1^4) - 2(1^3) = 1 + 1 - 3 - 2 = -3
+$$
+
+We subtract the lower limit value from the upper limit value:
+$$
+\int_C \vec{F} \cdot d\vec{r} = 32 - (-3) = 35
+$$
+
+So, the value of the line integral is 35.
+
+---
+
+[⬅ CT-1 (Vector) Answer](CT1_Vector_answer.md) | [🏠 Index](00-index.md) | [CT-1 (Matrix) Answer ➡](CT1_Matrix_answer.md)
+
+---
+
