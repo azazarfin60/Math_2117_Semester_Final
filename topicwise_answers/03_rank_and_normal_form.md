@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Rank and Normal For
 
 ---
 
-## Q1. What is the rank of a matrix? Find it for 
+## Q1 (06)
+
+What is the rank of a matrix? Find it for 
 
 $$
 \begin{bmatrix}
@@ -15,7 +17,7 @@ $$
 \end{bmatrix}
 $$
 
-. (06)
+.
 
 | | |
 |---|---|
@@ -41,7 +43,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-We swap the first and second rows ($R_1 \leftrightarrow R_2$) to place a non-zero leading entry in the first row:
+We swap the first and second rows ($R\_1 \leftrightarrow R\_2$) to place a non-zero leading entry in the first row:
 
 $$
 \begin{bmatrix}
@@ -52,9 +54,9 @@ $$
 \end{bmatrix}
 $$
 
-Now we perform row operations to make the entries below the leading entry of $R_1$ zero:
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - R_1$
+Now we perform row operations to make the entries below the leading entry of $R\_1$ zero:
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - R\_1$
 
 This gives:
 
@@ -67,9 +69,9 @@ $$
 \end{bmatrix}
 $$
 
-Next we make the entries below the leading entry of $R_2$ zero:
-*   $R_3 \to R_3 + R_2$
-*   $R_4 \to R_4 + R_2$
+Next we make the entries below the leading entry of $R\_2$ zero:
+*   $R\_3 \to R\_3 + R\_2$
+*   $R\_4 \to R\_4 + R\_2$
 
 This gives:
 
@@ -82,7 +84,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate the last entry in row 4 using row 3 ($R_4 \to R_4 - R_3$):
+Now eliminate the last entry in row 4 using row 3 ($R\_4 \to R\_4 - R\_3$):
 
 $$
 \begin{bmatrix}
@@ -110,12 +112,20 @@ So the rank of the matrix is $3$.
 
 ---
 
-## Q2. What is rank of a matrix? Find the rank of $A = \begin{pmatrix}
+## Q2 (04)
+
+What is rank of a matrix? Find the rank of 
+
+$$
+A = \begin{pmatrix}
 1 & -2 & 1 & -1 \\
 1 & 1 & -2 & 3 \\
 4 & 1 & -5 & 8 \\
 5 & -7 & 2 & -1
-\end{pmatrix}$. (04)
+\end{pmatrix}
+$$
+
+.
 
 | | |
 |---|---|
@@ -142,9 +152,9 @@ A = \begin{pmatrix}
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 4R_1$
-*   $R_4 \to R_4 - 5R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 4R\_1$
+*   $R\_4 \to R\_4 - 5R\_1$
 
 This gives:
 
@@ -158,8 +168,8 @@ $$
 $$
 
 Now perform operations on rows 3 and 4:
-*   $R_3 \to R_3 - 3R_2$
-*   $R_4 \to R_4 - R_2$
+*   $R\_3 \to R\_3 - 3R\_2$
+*   $R\_4 \to R\_4 - R\_2$
 
 This gives:
 
@@ -214,7 +224,7 @@ I_r & | & 0 \\
 \end{bmatrix}
 $$
 
-where $I_r$ is the identity matrix of order $r$. This form is called the **normal form** (or **canonical form**) of the matrix. The rank of the matrix is equal to the order of the identity matrix $I_r$ in this form.
+where $I\_r$ is the identity matrix of order $r$. This form is called the **normal form** (or **canonical form**) of the matrix. The rank of the matrix is equal to the order of the identity matrix $I\_r$ in this form.
 
 #### 2. Reduction to Normal Form
 
@@ -229,7 +239,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+Swap row 1 and row 3 ($R\_1 \leftrightarrow R\_3$):
 
 $$
 \begin{pmatrix}
@@ -241,7 +251,7 @@ $$
 $$
 
 Apply row operation:
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -254,7 +264,7 @@ $$
 \end{pmatrix}
 $$
 
-Swap row 2 and row 4 ($R_2 \leftrightarrow R_4$):
+Swap row 2 and row 4 ($R\_2 \leftrightarrow R\_4$):
 
 $$
 \begin{pmatrix}
@@ -266,8 +276,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 - 4R_2$
-*   $R_4 \to R_4 - 2R_2$
+*   $R\_3 \to R\_3 - 4R\_2$
+*   $R\_4 \to R\_4 - 2R\_2$
 
 This yields:
 
@@ -280,7 +290,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 3 ($R_3 \to \frac{1}{2}R_3$):
+Scale row 3 ($R\_3 \to \frac{1}{2}R\_3$):
 
 $$
 \begin{pmatrix}
@@ -291,7 +301,7 @@ $$
 \end{pmatrix}
 $$
 
-Add row 3 to row 4 ($R_4 \to R_4 + R_3$):
+Add row 3 to row 4 ($R\_4 \to R\_4 + R\_3$):
 
 $$
 \begin{pmatrix}
@@ -302,7 +312,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 4 ($R_4 \to \frac{1}{14}R_4$):
+Scale row 4 ($R\_4 \to \frac{1}{14}R\_4$):
 
 $$
 \begin{pmatrix}
@@ -314,9 +324,9 @@ $$
 $$
 
 Now apply column operations to clear the off-diagonal elements. First, clear elements in row 1:
-*   $C_2 \to C_2 + 2C_1$
-*   $C_3 \to C_3 + 2C_1$
-*   $C_4 \to C_4 - C_1$
+*   $C\_2 \to C\_2 + 2C\_1$
+*   $C\_3 \to C\_3 + 2C\_1$
+*   $C\_4 \to C\_4 - C\_1$
 
 This gives:
 
@@ -330,8 +340,8 @@ $$
 $$
 
 Clear elements in row 2:
-*   $C_3 \to C_3 - C_2$
-*   $C_4 \to C_4 + 6C_2$
+*   $C\_3 \to C\_3 - C\_2$
+*   $C\_4 \to C\_4 + 6C\_2$
 
 This gives:
 
@@ -345,7 +355,7 @@ $$
 $$
 
 Clear elements in row 3:
-*   $C_4 \to C_4 - 7C_3$
+*   $C\_4 \to C\_4 - 7C\_3$
 
 This yields the identity matrix of order 4:
 
@@ -358,7 +368,7 @@ $$
 \end{pmatrix} = I_4
 $$
 
-So the normal form is $I_4$, and the rank of the matrix is:
+So the normal form is $I\_4$, and the rank of the matrix is:
 
 $$
 \text{Rank} = 4
@@ -366,11 +376,19 @@ $$
 
 ---
 
-## Q4. What is the rank of a matrix? Find the rank of the matrix, $A = \begin{bmatrix}
+## Q4 (05)
+
+What is the rank of a matrix? Find the rank of the matrix, 
+
+$$
+A = \begin{bmatrix}
 6 & 1 & 8 & 3 \\
 2 & 1 & 0 & 2 \\
 4 & -1 & -8 & -3
-\end{bmatrix}$. (05)
+\end{bmatrix}
+$$
+
+.
 
 | | |
 |---|---|
@@ -395,7 +413,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-We swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+We swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{bmatrix}
@@ -406,8 +424,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 3R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - 3R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -419,7 +437,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to 2R_3 - 3R_2$:
+Perform the operation $R\_3 \to 2R\_3 - 3R\_2$:
 
 $$
 \begin{bmatrix}
@@ -464,7 +482,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+Swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{pmatrix}
@@ -476,9 +494,9 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
-*   $R_4 \to R_4 - 6R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
+*   $R\_4 \to R\_4 - 6R\_1$
 
 This gives:
 
@@ -492,8 +510,8 @@ $$
 $$
 
 Apply operations:
-*   $R_3 \to 5R_3 - 4R_2$
-*   $R_4 \to 5R_4 - 9R_2$
+*   $R\_3 \to 5R\_3 - 4R\_2$
+*   $R\_4 \to 5R\_4 - 9R\_2$
 
 This gives:
 
@@ -506,7 +524,7 @@ $$
 \end{pmatrix}
 $$
 
-Simplify row 3 and row 4 ($R_3 \to \frac{1}{11}R_3$, $R_4 \to \frac{1}{11}R_4$):
+Simplify row 3 and row 4 ($R\_3 \to \frac{1}{11}R\_3$, $R\_4 \to \frac{1}{11}R\_4$):
 
 $$
 \begin{pmatrix}
@@ -517,7 +535,7 @@ $$
 \end{pmatrix}
 $$
 
-Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
+Subtract row 3 from row 4 ($R\_4 \to R\_4 - R\_3$):
 
 $$
 \begin{pmatrix}
@@ -537,9 +555,9 @@ $$
 #### Reduce to Canonical Form
 
 We apply column operations to clear the first row:
-*   $C_2 \to C_2 + C_1$
-*   $C_3 \to C_3 + 2C_1$
-*   $C_4 \to C_4 + 4C_1$
+*   $C\_2 \to C\_2 + C\_1$
+*   $C\_3 \to C\_3 + 2C\_1$
+*   $C\_4 \to C\_4 + 4C\_1$
 
 This gives:
 
@@ -552,7 +570,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 2 ($R_2 \to \frac{1}{5}R_2$):
+Scale row 2 ($R\_2 \to \frac{1}{5}R\_2$):
 
 $$
 \begin{pmatrix}
@@ -564,8 +582,8 @@ $$
 $$
 
 Clear the second row using column operations:
-*   $C_3 \to C_3 - \frac{3}{5}C_2$
-*   $C_4 \to C_4 - \frac{7}{5}C_2$
+*   $C\_3 \to C\_3 - \frac{3}{5}C\_2$
+*   $C\_4 \to C\_4 - \frac{7}{5}C\_2$
 
 This gives:
 
@@ -578,7 +596,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 3 ($R_3 \to \frac{1}{3}R_3$):
+Scale row 3 ($R\_3 \to \frac{1}{3}R\_3$):
 
 $$
 \begin{pmatrix}
@@ -589,7 +607,7 @@ $$
 \end{pmatrix}
 $$
 
-Clear the third column element ($C_4 \to C_4 - \frac{2}{3}C_3$):
+Clear the third column element ($C\_4 \to C\_4 - \frac{2}{3}C\_3$):
 
 $$
 \begin{pmatrix}
@@ -600,7 +618,7 @@ $$
 \end{pmatrix}
 $$
 
-This is the canonical form $[I_3 | 0]$:
+This is the canonical form $[I\_3 | 0]$:
 
 $$
 \begin{pmatrix}
@@ -643,7 +661,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+Swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{bmatrix}
@@ -655,8 +673,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - R_1$
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - R\_1$
 
 This gives:
 
@@ -670,8 +688,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 + R_2$
-*   $R_4 \to R_4 + R_2$
+*   $R\_3 \to R\_3 + R\_2$
+*   $R\_4 \to R\_4 + R\_2$
 
 This yields:
 
@@ -685,8 +703,8 @@ $$
 $$
 
 Clear columns using column operations:
-*   $C_3 \to C_3 - 2C_2$
-*   $C_4 \to C_4 - 6C_2$
+*   $C\_3 \to C\_3 - 2C\_2$
+*   $C\_4 \to C\_4 - 6C\_2$
 
 This gives:
 
@@ -700,8 +718,8 @@ $$
 $$
 
 Clear column elements using column 3:
-*   $C_4 \to C_4 - 3C_3$
-*   $C_5 \to C_5 + 2C_3$
+*   $C\_4 \to C\_4 - 3C\_3$
+*   $C\_5 \to C\_5 + 2C\_3$
 
 This gives:
 
@@ -714,7 +732,7 @@ $$
 \end{bmatrix}
 $$
 
-Now swap columns to group the identity matrix blocks. Swap $C_1 \leftrightarrow C_2$:
+Now swap columns to group the identity matrix blocks. Swap $C\_1 \leftrightarrow C\_2$:
 
 $$
 \begin{bmatrix}
@@ -725,7 +743,7 @@ $$
 \end{bmatrix}
 $$
 
-Swap $C_2 \leftrightarrow C_3$:
+Swap $C\_2 \leftrightarrow C\_3$:
 
 $$
 \begin{bmatrix}
@@ -736,7 +754,7 @@ $$
 \end{bmatrix}
 $$
 
-This is the canonical form $[I_2 | 0]$:
+This is the canonical form $[I\_2 | 0]$:
 
 $$
 \begin{pmatrix}
@@ -778,8 +796,8 @@ A = \begin{bmatrix}
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -791,7 +809,7 @@ $$
 \end{bmatrix}
 $$
 
-Add row 2 to row 3 ($R_3 \to R_3 + R_2$):
+Add row 2 to row 3 ($R\_3 \to R\_3 + R\_2$):
 
 $$
 \begin{bmatrix}
@@ -849,9 +867,9 @@ A = \begin{bmatrix}
 $$
 
 We apply row operations to reduce it to echelon form:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - 3R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - 3R\_1$
 
 This gives:
 
@@ -865,7 +883,7 @@ $$
 $$
 
 Next, we apply:
-*   $R_3 \to R_3 + R_2$
+*   $R\_3 \to R\_3 + R\_2$
 
 This gives:
 
@@ -878,7 +896,7 @@ $$
 \end{bmatrix}
 $$
 
-We scale the third row ($R_3 \to -\frac{1}{8}R_3$):
+We scale the third row ($R\_3 \to -\frac{1}{8}R\_3$):
 
 $$
 \begin{bmatrix}
@@ -890,7 +908,7 @@ $$
 $$
 
 Now we apply:
-*   $R_4 \to R_4 + 6R_3$
+*   $R\_4 \to R\_4 + 6R\_3$
 
 This yields:
 
@@ -907,11 +925,17 @@ There are 3 non-zero rows in the echelon form. Thus, the rank of the matrix is 3
 
 ---
 
-## Q9. What is meant by the rank of a matrix? Reduce the matrix $A = \begin{bmatrix}
+## Q9 (07)
+
+What is meant by the rank of a matrix? Reduce the matrix 
+
+$$
+A = \begin{bmatrix}
 6 & 3 & -4 \\
 -4 & 1 & -6 \\
 1 & 2 & -5
-\end{bmatrix}$ (07)
+\end{bmatrix}
+$$
 
 | | |
 |---|---|

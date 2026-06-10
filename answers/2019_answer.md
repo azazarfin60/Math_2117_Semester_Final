@@ -19,7 +19,7 @@
 
 We assume the vector $\vec{B}$ starts at the origin. Its terminal point is $P(1, 5, 3)$.
 
-The equation of a plane passing through a point $P(x_0, y_0, z_0)$ and perpendicular to a normal vector $\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}$ is:
+The equation of a plane passing through a point $P(x\_0, y\_0, z\_0)$ and perpendicular to a normal vector $\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}$ is:
 
 $$
 a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
@@ -442,7 +442,7 @@ This completes the proof.
 
 ---
 
-### Q4(a) Evaluate $\iiint_V \nabla \cdot \bar{F} dV$ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
+### Q4(a) Evaluate $\iiint\_V \nabla \cdot \bar{F} dV$ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
 
 **Answer:**
 
@@ -498,7 +498,7 @@ So the value of the triple integral is $\frac{8}{3}$.
 
 ---
 
-### Q4(b) Verify Green's theorem in the plane for $\oint_C (2x - y^2)dx - xydy$ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$. (06)
+### Q4(b) Verify Green's theorem in the plane for $\oint\_C (2x - y^2)dx - xydy$ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$. (06)
 
 **Answer:**
 
@@ -546,9 +546,9 @@ $$
 
 #### 2. Evaluate Line Integral
 
-The closed boundary $C$ consists of two circular paths: the outer circle $C_1$ ($r=3$, traversed counterclockwise) and the inner circle $C_2$ ($r=1$, traversed clockwise):
+The closed boundary $C$ consists of two circular paths: the outer circle $C\_1$ ($r=3$, traversed counterclockwise) and the inner circle $C\_2$ ($r=1$, traversed clockwise):
 
-- **On Outer Circle $C_1$:** $x = 3\cos\theta, y = 3\sin\theta \implies dx = -3\sin\theta \, d\theta, dy = 3\cos\theta \, d\theta$ with $\theta$ from $0$ to $2\pi$:
+- **On Outer Circle $C\_1$:** $x = 3\cos\theta, y = 3\sin\theta \implies dx = -3\sin\theta \, d\theta, dy = 3\cos\theta \, d\theta$ with $\theta$ from $0$ to $2\pi$:
 
 $$
 \int_{C_1} (2x - y^2)dx - xydy = \int_0^{2\pi} \left[ (6\cos\theta - 9\sin^2\theta)(-3\sin\theta) - 9\cos\theta\sin\theta(3\cos\theta) \right] d\theta
@@ -560,7 +560,7 @@ $$
 
 (since each component integrates to $0$ over the full period $[0, 2\pi]$).
 
-- **On Inner Circle $C_2$:** $x = \cos\theta, y = \sin\theta \implies dx = -\sin\theta \, d\theta, dy = \cos\theta \, d\theta$ with $\theta$ from $2\pi$ to $0$:
+- **On Inner Circle $C\_2$:** $x = \cos\theta, y = \sin\theta \implies dx = -\sin\theta \, d\theta, dy = \cos\theta \, d\theta$ with $\theta$ from $2\pi$ to $0$:
 
 $$
 \int_{C_2} (2x - y^2)dx - xydy = \int_{2\pi}^0 \left[ (2\cos\theta - \sin^2\theta)(-\sin\theta) - \cos\theta\sin\theta(\cos\theta) \right] d\theta = 0
@@ -598,7 +598,7 @@ $$
 AB = BA = I_n
 $$
 
-(where $I_n$ is the identity matrix of order $n$), then $B$ is called the inverse of $A$. The inverse matrix is unique and is denoted by $A^{-1}$.
+(where $I\_n$ is the identity matrix of order $n$), then $B$ is called the inverse of $A$. The inverse matrix is unique and is denoted by $A^{-1}$.
 
 #### 2. Find the Inverse
 
@@ -613,8 +613,8 @@ $$
 $$
 
 Apply row operations to clear the first column:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -627,7 +627,7 @@ $$
 $$
 
 Apply row operation to clear the second column:
-*   $R_1 \to R_1 - 3R_2$
+*   $R\_1 \to R\_1 - 3R\_2$
 
 This gives:
 
@@ -640,7 +640,7 @@ $$
 $$
 
 Apply row operation to clear the third column:
-*   $R_1 \to R_1 - 3R_3$
+*   $R\_1 \to R\_1 - 3R\_3$
 
 This yields:
 
@@ -693,7 +693,7 @@ I_r & | & 0 \\
 \end{bmatrix}
 $$
 
-where $I_r$ is the identity matrix of order $r$. This form is called the **normal form** (or **canonical form**) of the matrix. The rank of the matrix is equal to the order of the identity matrix $I_r$ in this form.
+where $I\_r$ is the identity matrix of order $r$. This form is called the **normal form** (or **canonical form**) of the matrix. The rank of the matrix is equal to the order of the identity matrix $I\_r$ in this form.
 
 #### 2. Reduction to Normal Form
 
@@ -708,7 +708,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+Swap row 1 and row 3 ($R\_1 \leftrightarrow R\_3$):
 
 $$
 \begin{pmatrix}
@@ -720,7 +720,7 @@ $$
 $$
 
 Apply row operation:
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -733,7 +733,7 @@ $$
 \end{pmatrix}
 $$
 
-Swap row 2 and row 4 ($R_2 \leftrightarrow R_4$):
+Swap row 2 and row 4 ($R\_2 \leftrightarrow R\_4$):
 
 $$
 \begin{pmatrix}
@@ -745,8 +745,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 - 4R_2$
-*   $R_4 \to R_4 - 2R_2$
+*   $R\_3 \to R\_3 - 4R\_2$
+*   $R\_4 \to R\_4 - 2R\_2$
 
 This yields:
 
@@ -759,7 +759,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 3 ($R_3 \to \frac{1}{2}R_3$):
+Scale row 3 ($R\_3 \to \frac{1}{2}R\_3$):
 
 $$
 \begin{pmatrix}
@@ -770,7 +770,7 @@ $$
 \end{pmatrix}
 $$
 
-Add row 3 to row 4 ($R_4 \to R_4 + R_3$):
+Add row 3 to row 4 ($R\_4 \to R\_4 + R\_3$):
 
 $$
 \begin{pmatrix}
@@ -781,7 +781,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 4 ($R_4 \to \frac{1}{14}R_4$):
+Scale row 4 ($R\_4 \to \frac{1}{14}R\_4$):
 
 $$
 \begin{pmatrix}
@@ -793,9 +793,9 @@ $$
 $$
 
 Now apply column operations to clear the off-diagonal elements. First, clear elements in row 1:
-*   $C_2 \to C_2 + 2C_1$
-*   $C_3 \to C_3 + 2C_1$
-*   $C_4 \to C_4 - C_1$
+*   $C\_2 \to C\_2 + 2C\_1$
+*   $C\_3 \to C\_3 + 2C\_1$
+*   $C\_4 \to C\_4 - C\_1$
 
 This gives:
 
@@ -809,8 +809,8 @@ $$
 $$
 
 Clear elements in row 2:
-*   $C_3 \to C_3 - C_2$
-*   $C_4 \to C_4 + 6C_2$
+*   $C\_3 \to C\_3 - C\_2$
+*   $C\_4 \to C\_4 + 6C\_2$
 
 This gives:
 
@@ -824,7 +824,7 @@ $$
 $$
 
 Clear elements in row 3:
-*   $C_4 \to C_4 - 7C_3$
+*   $C\_4 \to C\_4 - 7C\_3$
 
 This yields the identity matrix of order 4:
 
@@ -837,7 +837,7 @@ $$
 \end{pmatrix} = I_4
 $$
 
-So the normal form is $I_4$, and the rank of the matrix is:
+So the normal form is $I\_4$, and the rank of the matrix is:
 
 $$
 \text{Rank} = 4
@@ -880,8 +880,8 @@ $$
 $$
 
 Apply row operations to clear the first column:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -895,8 +895,8 @@ $$
 $$
 
 Scale row 2 and row 3:
-*   $R_2 \to -\frac{1}{3} R_2$
-*   $R_3 \to -\frac{1}{4} R_3$
+*   $R\_2 \to -\frac{1}{3} R\_2$
+*   $R\_3 \to -\frac{1}{4} R\_3$
 
 This gives:
 
@@ -910,8 +910,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 - R_2$
-*   $R_4 \to R_4 - R_2$
+*   $R\_3 \to R\_3 - R\_2$
+*   $R\_4 \to R\_4 - R\_2$
 
 This yields the row echelon form:
 
@@ -977,8 +977,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -990,7 +990,7 @@ $$
 \end{bmatrix}
 $$
 
-Swap row 2 and row 3 ($R_2 \leftrightarrow R_3$) and multiply the new row 2 by $-1$ ($R_2 \to -R_2$):
+Swap row 2 and row 3 ($R\_2 \leftrightarrow R\_3$) and multiply the new row 2 by $-1$ ($R\_2 \to -R\_2$):
 
 $$
 \begin{bmatrix}
@@ -1001,7 +1001,7 @@ $$
 $$
 
 Apply row operation:
-*   $R_3 \to R_3 - 2R_2$
+*   $R\_3 \to R\_3 - 2R\_2$
 
 This gives:
 
@@ -1013,7 +1013,7 @@ $$
 \end{bmatrix}
 $$
 
-Scale row 3 ($R_3 \to -\frac{1}{3} R_3$):
+Scale row 3 ($R\_3 \to -\frac{1}{3} R\_3$):
 
 $$
 \begin{bmatrix}
@@ -1112,7 +1112,7 @@ $$
 
 We solve the system $(A - \lambda I)X = 0$ for each eigenvalue:
 
-##### Case 1: For $\lambda_1 = 1$
+##### Case 1: For $\lambda\_1 = 1$
 
 $$
 \begin{bmatrix}
@@ -1146,7 +1146,7 @@ X_1 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### Case 2: For $\lambda_2 = 3$
+##### Case 2: For $\lambda\_2 = 3$
 
 $$
 \begin{bmatrix}
@@ -1186,7 +1186,7 @@ X_2 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### Case 3: For $\lambda_3 = -4$
+##### Case 3: For $\lambda\_3 = -4$
 
 $$
 \begin{bmatrix}
@@ -1228,11 +1228,17 @@ $$
 
 ---
 
-### Q7(b) Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix}
+### Q7(b) Verify Cayley-Hamilton's theorem for 
+
+$$
+A = \begin{pmatrix}
 2 & -1 & 1 \\
 -1 & 2 & -1 \\
 1 & -1 & 2
-\end{pmatrix}$ and hence find $A^{-1}$. (06)
+\end{pmatrix}
+$$
+
+ and hence find $A^{-1}$. (06)
 
 **Answer:**
 
@@ -1419,7 +1425,7 @@ $$
 v = u_1 + w_1 \quad \text{and} \quad v = u_2 + w_2
 $$
 
-where $u_1, u_2 \in U$ and $w_1, w_2 \in W$.
+where $u\_1, u\_2 \in U$ and $w\_1, w\_2 \in W$.
 
 Equating the two expressions:
 
@@ -1427,10 +1433,10 @@ $$
 u_1 + w_1 = u_2 + w_2 \implies u_1 - u_2 = w_2 - w_1
 $$
 
-*   Since $U$ is a subspace, $u_1 - u_2 \in U$.
-*   Since $W$ is a subspace, $w_2 - w_1 \in W$.
+*   Since $U$ is a subspace, $u\_1 - u\_2 \in U$.
+*   Since $W$ is a subspace, $w\_2 - w\_1 \in W$.
 
-Since $u_1 - u_2 = w_2 - w_1$, this vector belongs to both $U$ and $W$:
+Since $u\_1 - u\_2 = w\_2 - w\_1$, this vector belongs to both $U$ and $W$:
 
 $$
 u_1 - u_2 \in U \cap W \quad \text{and} \quad w_2 - w_1 \in U \cap W
@@ -1446,7 +1452,7 @@ $$
 w_2 - w_1 = 0 \implies w_1 = w_2
 $$
 
-Since $u_1 = u_2$ and $w_1 = w_2$, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
+Since $u\_1 = u\_2$ and $w\_1 = w\_2$, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
 
 ---
 
@@ -1478,13 +1484,13 @@ $$
 F(0_V) = 0_U \implies 0_V \in \text{Ker}(F)
 $$
 
-2.  **Closure under Addition:** Let $v_1, v_2 \in \text{Ker}(F)$. Then $F(v_1) = 0_U$ and $F(v_2) = 0_U$.
+2.  **Closure under Addition:** Let $v\_1, v\_2 \in \text{Ker}(F)$. Then $F(v\_1) = 0\_U$ and $F(v\_2) = 0\_U$.
 
 $$
 F(v_1 + v_2) = F(v_1) + F(v_2) = 0_U + 0_U = 0_U \implies v_1 + v_2 \in \text{Ker}(F)
 $$
 
-3.  **Closure under Scalar Multiplication:** Let $v \in \text{Ker}(F)$ and let $k$ be a scalar in the field. Then $F(v) = 0_U$.
+3.  **Closure under Scalar Multiplication:** Let $v \in \text{Ker}(F)$ and let $k$ be a scalar in the field. Then $F(v) = 0\_U$.
 
 $$
 F(k v) = k F(v) = k (0_U) = 0_U \implies k v \in \text{Ker}(F)
@@ -1496,19 +1502,19 @@ Since all three properties are satisfied, $\text{Ker}(F)$ is a subspace of $V$.
 
 To show that $\text{Im}(F)$ is a subspace of $U$, we verify the three properties:
 
-1.  **Non-emptiness / Zero Vector:** Since $F(0_V) = 0_U$, the zero vector $0_U$ has a pre-image in $V$:
+1.  **Non-emptiness / Zero Vector:** Since $F(0\_V) = 0\_U$, the zero vector $0\_U$ has a pre-image in $V$:
 
 $$
 0_U \in \text{Im}(F)
 $$
 
-2.  **Closure under Addition:** Let $u_1, u_2 \in \text{Im}(F)$. Then there exist $v_1, v_2 \in V$ such that $F(v_1) = u_1$ and $F(v_2) = u_2$.
+2.  **Closure under Addition:** Let $u\_1, u\_2 \in \text{Im}(F)$. Then there exist $v\_1, v\_2 \in V$ such that $F(v\_1) = u\_1$ and $F(v\_2) = u\_2$.
 
 $$
 u_1 + u_2 = F(v_1) + F(v_2) = F(v_1 + v_2)
 $$
 
-Since $v_1 + v_2 \in V$ (as $V$ is a vector space), $u_1 + u_2$ is the image of $v_1 + v_2$, so:
+Since $v\_1 + v\_2 \in V$ (as $V$ is a vector space), $u\_1 + u\_2$ is the image of $v\_1 + v\_2$, so:
 
 $$
 u_1 + u_2 \in \text{Im}(F)

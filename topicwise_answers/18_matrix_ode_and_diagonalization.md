@@ -4,10 +4,18 @@ This file contains the organized questions and answers for **Matrix ODE and Diag
 
 ---
 
-## Q1. Diagonalize the matrix $A = \begin{bmatrix}
+## Q1 (12)
+
+Diagonalize the matrix 
+
+$$
+A = \begin{bmatrix}
 1 & 1 \\
 0 & 1
-\end{bmatrix}$. Hence evaluate $e^A$, and then solve $\frac{dx_1}{dt} = x_2$, $\frac{dx_2}{dt} = x_1$. (12)
+\end{bmatrix}
+$$
+
+. Hence evaluate $e^A$, and then solve $\frac{dx\_1}{dt} = x\_2$, $\frac{dx\_2}{dt} = x\_1$.
 
 | | |
 |---|---|
@@ -18,10 +26,16 @@ This file contains the organized questions and answers for **Matrix ODE and Diag
 
 #### 1. Diagonalization check
 
-Let $A = \begin{bmatrix}
+Let 
+
+$$
+A = \begin{bmatrix}
 1 & 1 \\
 0 & 1
-\end{bmatrix}$. Its eigenvalues are the diagonal entries:
+\end{bmatrix}
+$$
+
+. Its eigenvalues are the diagonal entries:
 
 $$
 \lambda_1 = 1, \quad \lambda_2 = 1
@@ -79,7 +93,10 @@ $$
 e^A = e^{I + B} = e^I \cdot e^B = e \cdot e^B
 $$
 
-Note that $B^2 = \begin{bmatrix}
+Note that 
+
+$$
+B^2 = \begin{bmatrix}
 0 & 1 \\
 0 & 0
 \end{bmatrix} \begin{bmatrix}
@@ -88,7 +105,10 @@ Note that $B^2 = \begin{bmatrix}
 \end{bmatrix} = \begin{bmatrix}
 0 & 0 \\
 0 & 0
-\end{bmatrix}$. So $B^n = 0$ for all $n \geq 2$.
+\end{bmatrix}
+$$
+
+. So $B^n = 0$ for all $n \geq 2$.
 
 Using the series definition for $e^B$:
 
@@ -129,13 +149,13 @@ $$
 \frac{d^2x_1}{dt^2} = \frac{dx_2}{dt} = x_1 \implies \frac{d^2x_1}{dt^2} - x_1 = 0
 $$
 
-The characteristic equation is $r^2 - 1 = 0$, which gives $r = \pm 1$. So the general solution for $x_1(t)$ is:
+The characteristic equation is $r^2 - 1 = 0$, which gives $r = \pm 1$. So the general solution for $x\_1(t)$ is:
 
 $$
 x_1(t) = C_1 e^t + C_2 e^{-t}
 $$
 
-Then we find $x_2(t)$ using the first relation:
+Then we find $x\_2(t)$ using the first relation:
 
 $$
 x_2(t) = \frac{dx_1}{dt} = C_1 e^t - C_2 e^{-t}
@@ -192,7 +212,7 @@ $$
 x_2(t) = C_2 e^t
 $$
 
-where $C_1 = x_1(0)$ and $C_2 = x_2(0)$.
+where $C\_1 = x\_1(0)$ and $C\_2 = x\_2(0)$.
 
 ---
 

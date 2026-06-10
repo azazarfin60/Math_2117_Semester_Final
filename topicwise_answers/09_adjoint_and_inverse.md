@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Adjoint and Inverse
 
 ---
 
-## Q1. Find the adjoint and inverse of 
+## Q1 (05)
+
+Find the adjoint and inverse of 
 
 $$
 \begin{pmatrix}
@@ -14,7 +16,7 @@ $$
 \end{pmatrix}
 $$
 
-. (05)
+.
 
 | | |
 |---|---|
@@ -41,7 +43,7 @@ $$
 
 Since the determinant is not zero, the inverse exists.
 
-Next we find the cofactor elements $C_{ij}$ of the matrix:
+Next we find the cofactor elements $C\_{ij}$ of the matrix:
 
 $$
 C_{11} = +(2-3) = -1, \quad C_{12} = -(1-9) = 8, \quad C_{13} = +(1-6) = -5
@@ -118,7 +120,7 @@ $$
 AB = BA = I_n
 $$
 
-(where $I_n$ is the identity matrix of order $n$), then $B$ is called the inverse of $A$. The inverse matrix is unique and is denoted by $A^{-1}$.
+(where $I\_n$ is the identity matrix of order $n$), then $B$ is called the inverse of $A$. The inverse matrix is unique and is denoted by $A^{-1}$.
 
 #### 2. Find the Inverse
 
@@ -133,8 +135,8 @@ $$
 $$
 
 Apply row operations to clear the first column:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -147,7 +149,7 @@ $$
 $$
 
 Apply row operation to clear the second column:
-*   $R_1 \to R_1 - 3R_2$
+*   $R\_1 \to R\_1 - 3R\_2$
 
 This gives:
 
@@ -160,7 +162,7 @@ $$
 $$
 
 Apply row operation to clear the third column:
-*   $R_1 \to R_1 - 3R_3$
+*   $R\_1 \to R\_1 - 3R\_3$
 
 This yields:
 
@@ -184,7 +186,9 @@ $$
 
 ---
 
-## Q3. Define inverse of a matrix. Find the adjoint of matrix $A$ and hence find $A^{-1}$, where: (05)
+## Q3 (05)
+
+Define inverse of a matrix. Find the adjoint of matrix $A$ and hence find $A^{-1}$, where:
 
 | | |
 |---|---|
@@ -215,7 +219,7 @@ $$
 |A| = 1(\cos^2\theta - (-\sin^2\theta)) = \cos^2\theta + \sin^2\theta = 1
 $$
 
-Find the cofactors $C_{ij}$:
+Find the cofactors $C\_{ij}$:
 
 $$
 C_{11} = \cos\theta, \quad C_{12} = -\sin\theta, \quad C_{13} = 0
@@ -290,7 +294,7 @@ $$
 \end{bmatrix}
 $$
 
-Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+Swap row 1 and row 3 ($R\_1 \leftrightarrow R\_3$):
 
 $$
 \begin{bmatrix}
@@ -301,8 +305,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -314,7 +318,7 @@ $$
 \end{bmatrix}
 $$
 
-Multiply row 2 by $-1/2$ ($R_2 \to -1/2 R_2$):
+Multiply row 2 by $-1/2$ ($R\_2 \to -1/2 R\_2$):
 
 $$
 \begin{bmatrix}
@@ -324,7 +328,7 @@ $$
 \end{bmatrix}
 $$
 
-Eliminate the third row element ($R_3 \to R_3 + 3R_2$):
+Eliminate the third row element ($R\_3 \to R\_3 + 3R\_2$):
 
 $$
 \begin{bmatrix}
@@ -334,7 +338,7 @@ $$
 \end{bmatrix}
 $$
 
-Multiply row 3 by $2/5$ ($R_3 \to 2/5 R_3$):
+Multiply row 3 by $2/5$ ($R\_3 \to 2/5 R\_3$):
 
 $$
 \begin{bmatrix}
@@ -344,7 +348,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_2 \to R_2 - \frac{3}{2}R_3$:
+Perform the operation $R\_2 \to R\_2 - \frac{3}{2}R\_3$:
 
 $$
 \begin{bmatrix}
@@ -354,7 +358,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 2R_3$:
+Perform the operation $R\_1 \to R\_1 - 2R\_3$:
 
 $$
 \begin{bmatrix}
@@ -364,7 +368,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 2R_2$:
+Perform the operation $R\_1 \to R\_1 - 2R\_2$:
 
 $$
 \begin{bmatrix}
@@ -386,11 +390,19 @@ $$
 
 ---
 
-## Q5. Find the inverse of the matrix $A = \begin{bmatrix}
+## Q5 (05)
+
+Find the inverse of the matrix 
+
+$$
+A = \begin{bmatrix}
 1 & 3 & 5 \\
 2 & 4 & 5 \\
 3 & 7 & 6
-\end{bmatrix}$ using row transformation. (05)
+\end{bmatrix}
+$$
+
+ using row transformation.
 
 | | |
 |---|---|
@@ -410,8 +422,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -423,7 +435,7 @@ $$
 \end{bmatrix}
 $$
 
-Subtract row 2 from row 3 ($R_3 \to R_3 - R_2$):
+Subtract row 2 from row 3 ($R\_3 \to R\_3 - R\_2$):
 
 $$
 \begin{bmatrix}
@@ -434,8 +446,8 @@ $$
 $$
 
 Multiply row 2 by $-1/2$ and row 3 by $-1/4$:
-*   $R_2 \to -1/2 R_2$
-*   $R_3 \to -1/4 R_3$
+*   $R\_2 \to -1/2 R\_2$
+*   $R\_3 \to -1/4 R\_3$
 
 This gives:
 
@@ -447,7 +459,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_2 \to R_2 - \frac{5}{2}R_3$:
+Perform the operation $R\_2 \to R\_2 - \frac{5}{2}R\_3$:
 
 $$
 \begin{bmatrix}
@@ -457,7 +469,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 5R_3$:
+Perform the operation $R\_1 \to R\_1 - 5R\_3$:
 
 $$
 \begin{bmatrix}
@@ -467,7 +479,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 3R_2$:
+Perform the operation $R\_1 \to R\_1 - 3R\_2$:
 
 $$
 \begin{bmatrix}

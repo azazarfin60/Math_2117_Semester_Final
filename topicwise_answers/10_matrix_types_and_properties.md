@@ -4,10 +4,18 @@ This file contains the organized questions and answers for **Matrix Types and Pr
 
 ---
 
-## Q1. If $A_\alpha = \begin{pmatrix}
+## Q1 (03)
+
+If 
+
+$$
+A_\alpha = \begin{pmatrix}
 \cos\alpha & \sin\alpha \\
 -\sin\alpha & \cos\alpha
-\end{pmatrix}$, then show that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$. (03)
+\end{pmatrix}
+$$
+
+, then show that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$.
 
 | | |
 |---|---|
@@ -16,7 +24,7 @@ This file contains the organized questions and answers for **Matrix Types and Pr
 
 **Answer:**
 
-Let us multiply the two matrices $A_\alpha$ and $A_\beta$:
+Let us multiply the two matrices $A\_\alpha$ and $A\_\beta$:
 
 $$
 A_\alpha \cdot A_\beta = \begin{pmatrix}
@@ -62,7 +70,7 @@ $$
 A_{\alpha+\beta} = A_{\beta+\alpha} = A_\beta \cdot A_\alpha
 $$
 
-So we have shown that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$.
+So we have shown that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$.
 
 ---
 
@@ -130,7 +138,9 @@ $$
 
 ---
 
-## Q3. Define singular matrix. If $A$ and $B$ are non-singular matrices of the same order, then show that $(AB)^{-1} = B^{-1}A^{-1}$. Hence prove that $(A^{-1})^n = (A^n)^{-1}$ for any positive integer. (05)
+## Q3 (05)
+
+Define singular matrix. If $A$ and $B$ are non-singular matrices of the same order, then show that $(AB)^{-1} = B^{-1}A^{-1}$. Hence prove that $(A^{-1})^n = (A^n)^{-1}$ for any positive integer.
 
 | | |
 |---|---|
@@ -195,7 +205,9 @@ So the statement is true for $n=k+1$. The proof is complete.
 
 ---
 
-## Q4. For two matrices $A$ and $B$, prove that $(AB)' = B'A'$. (03)
+## Q4 (03)
+
+For two matrices $A$ and $B$, prove that $(AB)' = B'A'$.
 
 | | |
 |---|---|
@@ -212,7 +224,7 @@ $$
 c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}
 $$
 
-The transpose element $(C')_{ij}$ is defined as the $(j, i)$-th element of $C$:
+The transpose element $(C')\_{ij}$ is defined as the $(j, i)$-th element of $C$:
 
 $$
 (C')_{ij} = c_{ji} = \sum_{k=1}^n a_{jk} b_{ki}
@@ -224,13 +236,13 @@ $$
 (B'A')_{ij} = \sum_{k=1}^n (B')_{ik} (A')_{kj}
 $$
 
-Using the transpose definitions $(B')_{ik} = b_{ki}$ and $(A')_{kj} = a_{jk}$, we substitute:
+Using the transpose definitions $(B')\_{ik} = b\_{ki}$ and $(A')\_{kj} = a\_{jk}$, we substitute:
 
 $$
 (B'A')_{ij} = \sum_{k=1}^n b_{ki} a_{jk} = \sum_{k=1}^n a_{jk} b_{ki}
 $$
 
-Since $(AB)'_{ij} = (B'A')_{ij}$ for all indices, we get:
+Since $(AB)'\_{ij} = (B'A')\_{ij}$ for all indices, we get:
 
 $$
 (AB)' = B'A'

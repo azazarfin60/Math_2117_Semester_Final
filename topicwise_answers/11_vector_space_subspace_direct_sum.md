@@ -38,7 +38,9 @@ In practice, $W$ is a subspace if and only if it satisfies these two closure pro
 
 ---
 
-## Q2. Let $V$ be a vector space over a field $k$, prove that: (08)
+## Q2 (08)
+
+Let $V$ be a vector space over a field $k$, prove that:
 
 | | |
 |---|---|
@@ -217,7 +219,9 @@ A non-empty subset $W$ of a vector space $V$ is a subspace if $W$ is closed unde
 
 ---
 
-## Q4. Prove that the vector space $V$ is the direct sum of its subspaces $U$ and $W$ if and only if (i) $V = U + W$, (ii) $U \cap W = \{0\}$. (06)
+## Q4 (06)
+
+Prove that the vector space $V$ is the direct sum of its subspaces $U$ and $W$ if and only if (i) $V = U + W$, (ii) $U \cap W = \{0\}$.
 
 | | |
 |---|---|
@@ -271,7 +275,7 @@ $$
 v = u_1 + w_1 \quad \text{and} \quad v = u_2 + w_2
 $$
 
-where $u_1, u_2 \in U$ and $w_1, w_2 \in W$.
+where $u\_1, u\_2 \in U$ and $w\_1, w\_2 \in W$.
 
 Equating the two expressions:
 
@@ -279,10 +283,10 @@ $$
 u_1 + w_1 = u_2 + w_2 \implies u_1 - u_2 = w_2 - w_1
 $$
 
-*   Since $U$ is a subspace, $u_1 - u_2 \in U$.
-*   Since $W$ is a subspace, $w_2 - w_1 \in W$.
+*   Since $U$ is a subspace, $u\_1 - u\_2 \in U$.
+*   Since $W$ is a subspace, $w\_2 - w\_1 \in W$.
 
-Since $u_1 - u_2 = w_2 - w_1$, this vector belongs to both $U$ and $W$:
+Since $u\_1 - u\_2 = w\_2 - w\_1$, this vector belongs to both $U$ and $W$:
 
 $$
 u_1 - u_2 \in U \cap W \quad \text{and} \quad w_2 - w_1 \in U \cap W
@@ -298,7 +302,7 @@ $$
 w_2 - w_1 = 0 \implies w_1 = w_2
 $$
 
-Since $u_1 = u_2$ and $w_1 = w_2$, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
+Since $u\_1 = u\_2$ and $w\_1 = w\_2$, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
 
 ---
 
@@ -377,7 +381,7 @@ A vector space $V$ over a field $F$ is a set of elements (called vectors) togeth
 *   **Distributivity of scalar multiplication over field addition:** $(a + b)u = au + bu$
 
 #### 2. Basis of a Vector Space
-A subset $B = \{v_1, v_2, \dots, v_n\}$ of a vector space $V$ is a basis of $V$ if:
+A subset $B = \{v\_1, v\_2, \dots, v\_n\}$ of a vector space $V$ is a basis of $V$ if:
 *   The set $B$ is linearly independent.
 *   The set $B$ spans $V$. This means any vector in $V$ can be written as a linear combination of vectors in $B$.
 
@@ -386,7 +390,9 @@ The dimension of a vector space $V$ is the number of vectors in any basis of $V$
 
 ---
 
-## Q8. Let $U$ consists of all vectors in $\mathbb{R}^3$ whose entries are equal that is $u = \{(a, b, c) \mid a = b = c\}$, prove that $U$ is a vector space over $\mathbb{R}$. (04)
+## Q8 (04)
+
+Let $U$ consists of all vectors in $\mathbb{R}^3$ whose entries are equal that is $u = \{(a, b, c) \mid a = b = c\}$, prove that $U$ is a vector space over $\mathbb{R}$.
 
 | | |
 |---|---|
@@ -405,14 +411,14 @@ $$
 $$
 
 #### 2. Closed Under Vector Addition
-Let $u_1 = (a_1, a_1, a_1) \in U$ and $u_2 = (a_2, a_2, a_2) \in U$, where $a_1, a_2 \in \mathbb{R}$.
+Let $u\_1 = (a\_1, a\_1, a\_1) \in U$ and $u\_2 = (a\_2, a\_2, a\_2) \in U$, where $a\_1, a\_2 \in \mathbb{R}$.
 We add these vectors:
 
 $$
 u_1 + u_2 = (a_1 + a_2, a_1 + a_2, a_1 + a_2)
 $$
 
-All three components of the sum vector are equal to $a_1 + a_2$. So, the sum vector is in $U$.
+All three components of the sum vector are equal to $a\_1 + a\_2$. So, the sum vector is in $U$.
 
 #### 3. Closed Under Scalar Multiplication
 Let $u = (a, a, a) \in U$ and $k \in \mathbb{R}$ be a scalar.

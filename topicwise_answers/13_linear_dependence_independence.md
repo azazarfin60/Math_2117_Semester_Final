@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Linear Dependence a
 
 ---
 
-## Q1. Show that the vectors $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$, $\bar{B} = \hat{i} - 4\hat{k}$, $\bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}$ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear. (06)
+## Q1 (06)
+
+Show that the vectors $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$, $\bar{B} = \hat{i} - 4\hat{k}$, $\bar{C} = 4\hat{i} + 3\hat{j} - \hat{k}$ are linearly dependent and determine a relation between them and hence show that the terminal points are collinear.
 
 | | |
 |---|---|
@@ -107,7 +109,9 @@ So the vectors $\vec{PR}$ and $\vec{PQ}$ are parallel. Since they share the comm
 
 ---
 
-## Q2. Define linearly dependent and independent vectors. Determine whether or not the vectors in $\mathbb{R}^3$ are linearly dependent: $(1, 2, -3)$, $(1, -3, 2)$, $(2, -1, 5)$. (04)
+## Q2 (04)
+
+Define linearly dependent and independent vectors. Determine whether or not the vectors in $\mathbb{R}^3$ are linearly dependent: $(1, 2, -3)$, $(1, -3, 2)$, $(2, -1, 5)$.
 
 | | |
 |---|---|
@@ -147,7 +151,9 @@ Since the determinant is not zero ($D = -30 \neq 0$), the vectors are linearly i
 
 ---
 
-## Q3. Suppose the vectors $u, v, w$ are linearly independent. Show that the vectors $u + v, u - v, u - 2v + w$ are also linearly independent. (04)
+## Q3 (04)
+
+Suppose the vectors $u, v, w$ are linearly independent. Show that the vectors $u + v, u - v, u - 2v + w$ are also linearly independent.
 
 | | |
 |---|---|
@@ -183,7 +189,7 @@ $$
 c_3 = 0 \quad \dots \text{(3)}
 $$
 
-Substitute $c_3 = 0$ from equation (3) into equations (1) and (2):
+Substitute $c\_3 = 0$ from equation (3) into equations (1) and (2):
 
 $$
 c_1 + c_2 = 0
@@ -193,13 +199,15 @@ $$
 c_1 - c_2 = 0
 $$
 
-Adding these equations gives $2c_1 = 0 \implies c_1 = 0$. This then gives $c_2 = 0$.
+Adding these equations gives $2c\_1 = 0 \implies c\_1 = 0$. This then gives $c\_2 = 0$.
 
-Since the only solution is $c_1 = c_2 = c_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
+Since the only solution is $c\_1 = c\_2 = c\_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
 
 ---
 
-## Q4. Show that a necessary and sufficient condition that the vectors $\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$, $\vec{B} = B_1\hat{i} + B_2\hat{j} + B_3\hat{k}$, $\vec{C} = C_1\hat{i} + C_2\hat{j} + C_3\hat{k}$ be linearly independent is that the determinant (05)
+## Q4 (05)
+
+Show that a necessary and sufficient condition that the vectors $\vec{A} = A\_1\hat{i} + A\_2\hat{j} + A\_3\hat{k}$, $\vec{B} = B\_1\hat{i} + B\_2\hat{j} + B\_3\hat{k}$, $\vec{C} = C\_1\hat{i} + C\_2\hat{j} + C\_3\hat{k}$ be linearly independent is that the determinant
 
 | | |
 |---|---|
@@ -307,13 +315,13 @@ This completes the proof.
 **Answer:**
 
 #### 1. Definition of Linearly Independent Vectors
-A set of vectors $\{v_1, v_2, \dots, v_n\}$ is linearly independent if the equation:
+A set of vectors $\{v\_1, v\_2, \dots, v\_n\}$ is linearly independent if the equation:
 
 $$
 c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0
 $$
 
-has only the trivial solution $c_1 = c_2 = \dots = c_n = 0$. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
+has only the trivial solution $c\_1 = c\_2 = \dots = c\_n = 0$. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
 
 #### 2. Determine Linear Independence
 

@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Velocity, Accelerat
 
 ---
 
-## Q1. A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction $\hat{i} - 3\hat{j} + 2\hat{k}$. (04)
+## Q1 (04)
+
+A particle moves along the curve $x = 2t^2, y = t^2 - 4t, z = 3t - 5$, where $t$ is the time. Find the components of its velocity and acceleration at time $t=1$ in the direction $\hat{i} - 3\hat{j} + 2\hat{k}$.
 
 | | |
 |---|---|
@@ -68,7 +70,9 @@ $$
 
 ---
 
-## Q2. If $\bar{A}$ has a constant magnitude show that $\bar{A}$ and $\frac{d\bar{A}}{dt}$ are perpendicular provided $\left|\frac{d\bar{A}}{dt}\right| \neq 0$. (04)
+## Q2 (04)
+
+If $\bar{A}$ has a constant magnitude show that $\bar{A}$ and $\frac{d\bar{A}}{dt}$ are perpendicular provided $\left|\frac{d\bar{A}}{dt}\right| \neq 0$.
 
 | | |
 |---|---|
@@ -107,7 +111,9 @@ Since the dot product of $\vec{A}$ and $\frac{d\vec{A}}{dt}$ is zero, and neithe
 
 ---
 
-## Q3. A particle moves along a curve whose parametric equations are $x = e^{-t}, y = 2\cos 3t, z = 2\sin 3t$, where $t$ is the time. Find the magnitudes of the velocity and acceleration at $t=0$. (04)
+## Q3 (04)
+
+A particle moves along a curve whose parametric equations are $x = e^{-t}, y = 2\cos 3t, z = 2\sin 3t$, where $t$ is the time. Find the magnitudes of the velocity and acceleration at $t=0$.
 
 | | |
 |---|---|
@@ -164,7 +170,9 @@ $$
 
 ---
 
-## Q4. A particle moves so that its position vector is given by $\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}$ where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector. (04)
+## Q4 (04)
+
+A particle moves so that its position vector is given by $\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}$ where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector.
 
 | | |
 |---|---|
@@ -217,7 +225,9 @@ This is a constant vector.
 
 ---
 
-## Q5. State Frenet-Serret formulas. Show that $\vec{r} = e^{-t}(\vec{A} \cos 2t + \vec{B} \sin 2t)$, where $\vec{A}$ and $\vec{B}$ are constant vectors, is a solution of the differential equation $\frac{d^2\vec{r}}{dt^2} + 2\frac{d\vec{r}}{dt} + 5\vec{r} = 0$. (2+8)
+## Q5 (2+8)
+
+State Frenet-Serret formulas. Show that $\vec{r} = e^{-t}(\vec{A} \cos 2t + \vec{B} \sin 2t)$, where $\vec{A}$ and $\vec{B}$ are constant vectors, is a solution of the differential equation $\frac{d^2\vec{r}}{dt^2} + 2\frac{d\vec{r}}{dt} + 5\vec{r} = 0$.
 
 | | |
 |---|---|
@@ -227,11 +237,11 @@ This is a constant vector.
 **Answer:**
 
 #### 1. Frenet-Serret Formulas
-Let $s$ be the arc length along a space curve. Let $\vec{T}$ be the unit tangent vector. Let $\vec{N}$ be the unit principal normal vector. Let $\vec{B}_b$ be the unit binormal vector. Let $\kappa$ be curvature. Let $\tau$ be torsion.
+Let $s$ be the arc length along a space curve. Let $\vec{T}$ be the unit tangent vector. Let $\vec{N}$ be the unit principal normal vector. Let $\vec{B}\_b$ be the unit binormal vector. Let $\kappa$ be curvature. Let $\tau$ be torsion.
 The Frenet-Serret formulas are:
 1. $\frac{d\vec{T}}{ds} = \kappa \vec{N}$
-2. $\frac{d\vec{N}}{ds} = -\kappa \vec{T} + \tau \vec{B}_b$
-3. $\frac{d\vec{B}_b}{ds} = -\tau \vec{N}$
+2. $\frac{d\vec{N}}{ds} = -\kappa \vec{T} + \tau \vec{B}\_b$
+3. $\frac{d\vec{B}\_b}{ds} = -\tau \vec{N}$
 
 #### 2. Verification of Differential Equation
 We are given:

@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Volume Integrals**,
 
 ---
 
-## Q1. Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate $\iiint_V \Phi dV$. (06)
+## Q1 (06)
+
+Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate $\iiint\_V \Phi dV$.
 
 | | |
 |---|---|
@@ -78,7 +80,9 @@ So the value of the triple integral is $128$.
 
 ---
 
-## Q2. Evaluate $\iiint_V \nabla \cdot \bar{F} dV$ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$. (06)
+## Q2 (06)
+
+Evaluate $\iiint\_V \nabla \cdot \bar{F} dV$ where $\bar{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is the closed region bounded by the planes $x = 0, y = 0, z = 0$ and $2x + 2y + z = 4$.
 
 | | |
 |---|---|
@@ -139,7 +143,9 @@ So the value of the triple integral is $\frac{8}{3}$.
 
 ---
 
-## Q3. Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate $\iiint_V \vec{F} dV$, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
+## Q3 (04)
+
+Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate $\iiint\_V \vec{F} dV$, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$.
 
 | | |
 |---|---|

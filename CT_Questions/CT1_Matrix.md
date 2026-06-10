@@ -10,7 +10,7 @@
 
 ---
 
-**1.** Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i_1$, $i_2$, and $i_3$ are: **(07)**
+**1.** Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i\_1$, $i\_2$, and $i\_3$ are: **(07)**
 
 $$
 2i_1 + 3i_2 - i_3 = 5
@@ -40,11 +40,17 @@ $$
 3x + 5y + kz = 10
 $$
 
-**3.** What is meant by the rank of a matrix? Reduce the matrix $A = \begin{bmatrix}
+**3.** What is meant by the rank of a matrix? Reduce the matrix 
+
+$$
+A = \begin{bmatrix}
 6 & 3 & -4 \\
 -4 & 1 & -6 \\
 1 & 2 & -5
-\end{bmatrix}$ **(07)**
+\end{bmatrix}
+$$
+
+ **(07)**
 
 *   (i) to echelon form
 *   (ii) to row canonical form, and

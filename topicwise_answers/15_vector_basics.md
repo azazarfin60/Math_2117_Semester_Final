@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Vector Basics**, pr
 
 ---
 
-## Q1. Find an equation for the plane perpendicular to the vector $\bar{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$ and passing through the terminal point of the vector $\bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}$. (04)
+## Q1 (04)
+
+Find an equation for the plane perpendicular to the vector $\bar{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}$ and passing through the terminal point of the vector $\bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}$.
 
 | | |
 |---|---|
@@ -16,7 +18,7 @@ This file contains the organized questions and answers for **Vector Basics**, pr
 
 We assume the vector $\vec{B}$ starts at the origin. Its terminal point is $P(1, 5, 3)$.
 
-The equation of a plane passing through a point $P(x_0, y_0, z_0)$ and perpendicular to a normal vector $\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}$ is:
+The equation of a plane passing through a point $P(x\_0, y\_0, z\_0)$ and perpendicular to a normal vector $\vec{A} = a\hat{i} + b\hat{j} + c\hat{k}$ is:
 
 $$
 a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
@@ -42,7 +44,9 @@ So the equation of the plane is $2x + 3y + 6z = 35$.
 
 ---
 
-## Q2. Find the acute angles which the line joining the points $(1, -3, 2)$ and $(3, -5, 1)$ makes with the coordinate axes. (04)
+## Q2 (04)
+
+Find the acute angles which the line joining the points $(1, -3, 2)$ and $(3, -5, 1)$ makes with the coordinate axes.
 
 | | |
 |---|---|
@@ -87,7 +91,9 @@ $$
 
 ---
 
-## Q3. What is the vector? Find a unit vector parallel to the resultant of vectors $\vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$, $\vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}$. (04)
+## Q3 (04)
+
+What is the vector? Find a unit vector parallel to the resultant of vectors $\vec{r}\_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$, $\vec{r}\_2 = \hat{i} + 2\hat{j} + \hat{k}$.
 
 | | |
 |---|---|
@@ -122,7 +128,9 @@ $$
 
 ---
 
-## Q4. If $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$ and $\bar{B} = \hat{i} - 2\hat{j} + \hat{k}$, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$. (04)
+## Q4 (04)
+
+If $\bar{A} = 2\hat{i} + \hat{j} - 3\hat{k}$ and $\bar{B} = \hat{i} - 2\hat{j} + \hat{k}$, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$.
 
 | | |
 |---|---|
@@ -161,7 +169,9 @@ $$
 
 ---
 
-## Q5. What are the vector and scalar quantity? Give some examples. If $\vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}$, $\vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}$ and $\vec{C} = \hat{i} + 2\hat{j} - \hat{k}$, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$. (04)
+## Q5 (04)
+
+What are the vector and scalar quantity? Give some examples. If $\vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}$, $\vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}$ and $\vec{C} = \hat{i} + 2\hat{j} - \hat{k}$, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$.
 
 | | |
 |---|---|
@@ -213,7 +223,9 @@ So the magnitude is $\sqrt{521}$.
 
 ---
 
-## Q6. What is meant by dot and cross product in vector analysis? Determine a unit vector perpendicular to the plane of $\vec{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}$ and $\vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}$. (04)
+## Q6 (04)
+
+What is meant by dot and cross product in vector analysis? Determine a unit vector perpendicular to the plane of $\vec{A} = 2\hat{i} - 6\hat{j} - 3\hat{k}$ and $\vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}$.
 
 | | |
 |---|---|
@@ -254,7 +266,9 @@ $$
 
 ---
 
-## Q7. Determine the angles $\alpha, \beta$, and $\gamma$ which the vector $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$. (03)
+## Q7 (03)
+
+Determine the angles $\alpha, \beta$, and $\gamma$ which the vector $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
 | | |
 |---|---|
@@ -293,7 +307,9 @@ This completes the proof.
 
 ---
 
-## Q8. Find the constant 'a' such that the vectors $2\hat{i} - \hat{j} + \hat{k}$, $\hat{i} + 2\hat{j} - 3\hat{k}$ and $3\hat{i} + a\hat{j} + 5\hat{k}$ are coplanar. (03)
+## Q8 (03)
+
+Find the constant 'a' such that the vectors $2\hat{i} - \hat{j} + \hat{k}$, $\hat{i} + 2\hat{j} - 3\hat{k}$ and $3\hat{i} + a\hat{j} + 5\hat{k}$ are coplanar.
 
 | | |
 |---|---|
@@ -385,7 +401,9 @@ This field looks like a sink. All vectors point radially inward toward the cente
 
 ---
 
-## Q10. Explain the physical significance of dot and cross product. Show that $\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})$, $\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})$ and $\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})$ are mutually orthogonal unit vectors. (2+2+6)
+## Q10 (2+2+6)
+
+Explain the physical significance of dot and cross product. Show that $\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})$, $\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})$ and $\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})$ are mutually orthogonal unit vectors.
 
 | | |
 |---|---|

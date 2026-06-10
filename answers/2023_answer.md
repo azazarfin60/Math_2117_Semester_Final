@@ -286,7 +286,7 @@ $$
 \vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
 $$
 
-We prove the identity for the component $A_1$:
+We prove the identity for the component $A\_1$:
 
 $$
 \oint_C A_1 dx = \iint_S \left[ \vec{\nabla} \times (A_1\hat{i}) \right] \cdot \hat{n} dS \quad \dots \text{(1)}
@@ -316,7 +316,7 @@ $$
 \oint_C A_1 dx = \iint_R \left( -\frac{\partial A_1}{\partial y} - \frac{\partial A_1}{\partial z}\frac{\partial z}{\partial y} \right) dx dy \quad \dots \text{(2)}
 $$
 
-Now calculate the term $\vec{\nabla} \times (A_1\hat{i})$:
+Now calculate the term $\vec{\nabla} \times (A\_1\hat{i})$:
 
 $$
 \vec{\nabla} \times (A_1\hat{i}) = \begin{vmatrix}
@@ -344,7 +344,7 @@ $$
 
 Comparing equations (2) and (3) shows that they are equal.
 
-By applying the same projection method for the components $A_2$ and $A_3$, we get:
+By applying the same projection method for the components $A\_2$ and $A\_3$, we get:
 
 $$
 \oint_C A_2 dy = \iint_S \left[ \vec{\nabla} \times (A_2\hat{j}) \right] \cdot \hat{n} dS
@@ -364,7 +364,7 @@ The proof is complete.
 
 ---
 
-### Q3(b) Verify Green's theorem in the plane for $\oint_C (xy + y^2)dx + x^2dy$, where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
+### Q3(b) Verify Green's theorem in the plane for $\oint\_C (xy + y^2)dx + x^2dy$, where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
 
 **Answer:**
 
@@ -413,10 +413,10 @@ $$
 #### 2. Evaluate Line Integral
 
 The closed path $C$ has two parts:
-1.  Path $C_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
-2.  Path $C_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
+1.  Path $C\_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
+2.  Path $C\_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
 
-Evaluate along Path $C_1$:
+Evaluate along Path $C\_1$:
 
 $$
 \int_{C_1} (xy + y^2)dx + x^2dy = \int_0^1 \left[ (x^3 + x^4)dx + x^2(2x dx) \right] = \int_0^1 (3x^3 + x^4) dx
@@ -426,7 +426,7 @@ $$
 \int_{C_1} = \left[ \frac{3}{4}x^4 + \frac{x^5}{5} \right]_0^1 = \frac{3}{4} + \frac{1}{5} = \frac{19}{20}
 $$
 
-Evaluate along Path $C_2$:
+Evaluate along Path $C\_2$:
 
 $$
 \int_{C_2} (xy + y^2)dx + x^2dy = \int_1^0 \left[ (x^2 + x^2)dx + x^2 dx \right] = \int_1^0 3x^2 dx = \left[ x^3 \right]_1^0 = -1
@@ -506,7 +506,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+Swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{bmatrix}
@@ -518,8 +518,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - R_1$
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - R\_1$
 
 This gives:
 
@@ -533,8 +533,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 + R_2$
-*   $R_4 \to R_4 + R_2$
+*   $R\_3 \to R\_3 + R\_2$
+*   $R\_4 \to R\_4 + R\_2$
 
 This yields:
 
@@ -548,8 +548,8 @@ $$
 $$
 
 Clear columns using column operations:
-*   $C_3 \to C_3 - 2C_2$
-*   $C_4 \to C_4 - 6C_2$
+*   $C\_3 \to C\_3 - 2C\_2$
+*   $C\_4 \to C\_4 - 6C\_2$
 
 This gives:
 
@@ -563,8 +563,8 @@ $$
 $$
 
 Clear column elements using column 3:
-*   $C_4 \to C_4 - 3C_3$
-*   $C_5 \to C_5 + 2C_3$
+*   $C\_4 \to C\_4 - 3C\_3$
+*   $C\_5 \to C\_5 + 2C\_3$
 
 This gives:
 
@@ -577,7 +577,7 @@ $$
 \end{bmatrix}
 $$
 
-Now swap columns to group the identity matrix blocks. Swap $C_1 \leftrightarrow C_2$:
+Now swap columns to group the identity matrix blocks. Swap $C\_1 \leftrightarrow C\_2$:
 
 $$
 \begin{bmatrix}
@@ -588,7 +588,7 @@ $$
 \end{bmatrix}
 $$
 
-Swap $C_2 \leftrightarrow C_3$:
+Swap $C\_2 \leftrightarrow C\_3$:
 
 $$
 \begin{bmatrix}
@@ -599,7 +599,7 @@ $$
 \end{bmatrix}
 $$
 
-This is the canonical form $[I_2 | 0]$:
+This is the canonical form $[I\_2 | 0]$:
 
 $$
 \begin{pmatrix}
@@ -634,8 +634,8 @@ A = \begin{bmatrix}
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -647,7 +647,7 @@ $$
 \end{bmatrix}
 $$
 
-Add row 2 to row 3 ($R_3 \to R_3 + R_2$):
+Add row 2 to row 3 ($R\_3 \to R\_3 + R\_2$):
 
 $$
 \begin{bmatrix}
@@ -703,11 +703,17 @@ So $A = P + Q$ is the sum of a Hermitian matrix and a Skew-Hermitian matrix.
 
 ---
 
-### Q5(b) Find the inverse of the matrix $A = \begin{bmatrix}
+### Q5(b) Find the inverse of the matrix 
+
+$$
+A = \begin{bmatrix}
 1 & 3 & 5 \\
 2 & 4 & 5 \\
 3 & 7 & 6
-\end{bmatrix}$ using row transformation. (05)
+\end{bmatrix}
+$$
+
+ using row transformation. (05)
 
 **Answer:**
 
@@ -722,8 +728,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -735,7 +741,7 @@ $$
 \end{bmatrix}
 $$
 
-Subtract row 2 from row 3 ($R_3 \to R_3 - R_2$):
+Subtract row 2 from row 3 ($R\_3 \to R\_3 - R\_2$):
 
 $$
 \begin{bmatrix}
@@ -746,8 +752,8 @@ $$
 $$
 
 Multiply row 2 by $-1/2$ and row 3 by $-1/4$:
-*   $R_2 \to -1/2 R_2$
-*   $R_3 \to -1/4 R_3$
+*   $R\_2 \to -1/2 R\_2$
+*   $R\_3 \to -1/4 R\_3$
 
 This gives:
 
@@ -759,7 +765,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_2 \to R_2 - \frac{5}{2}R_3$:
+Perform the operation $R\_2 \to R\_2 - \frac{5}{2}R\_3$:
 
 $$
 \begin{bmatrix}
@@ -769,7 +775,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 5R_3$:
+Perform the operation $R\_1 \to R\_1 - 5R\_3$:
 
 $$
 \begin{bmatrix}
@@ -779,7 +785,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 3R_2$:
+Perform the operation $R\_1 \to R\_1 - 3R\_2$:
 
 $$
 \begin{bmatrix}
@@ -859,7 +865,7 @@ z
 \end{bmatrix}
 $$
 
-Perform operations $R_2 \to R_2 + R_1$, $R_3 \to R_3 - R_1$:
+Perform operations $R\_2 \to R\_2 + R\_1$, $R\_3 \to R\_3 - R\_1$:
 
 $$
 \begin{bmatrix}
@@ -931,7 +937,7 @@ z
 \end{bmatrix}
 $$
 
-Subtract row 1 from row 2 ($R_2 \to R_2 - R_1$):
+Subtract row 1 from row 2 ($R\_2 \to R\_2 - R\_1$):
 
 $$
 \begin{bmatrix}
@@ -980,8 +986,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -993,7 +999,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to R_3 + R_2$:
+Perform the operation $R\_3 \to R\_3 + R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1003,7 +1009,7 @@ $$
 \end{bmatrix}
 $$
 
-Scale row 2 ($R_2 \to -1/3 R_2$):
+Scale row 2 ($R\_2 \to -1/3 R\_2$):
 
 $$
 \begin{bmatrix}
@@ -1033,7 +1039,7 @@ $$
 
 ---
 
-### Q7(a) Consider the vectors $v_1 = (2, 1, 4), v_2 = (1, -1, 3)$ and $v_3 = (3, 2, 5)$ in $\mathbb{R}^3$. Show that $v = (5, 9, 5)$ is a linear combination of $v_1, v_2$, and $v_3$. (05)
+### Q7(a) Consider the vectors $v\_1 = (2, 1, 4), v\_2 = (1, -1, 3)$ and $v\_3 = (3, 2, 5)$ in $\mathbb{R}^3$. Show that $v = (5, 9, 5)$ is a linear combination of $v\_1, v\_2$, and $v\_3$. (05)
 
 **Answer:**
 
@@ -1057,7 +1063,7 @@ $$
 4c_1 + 3c_2 + 5c_3 = 5
 $$
 
-We write the augmented matrix and swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+We write the augmented matrix and swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{bmatrix}
@@ -1068,8 +1074,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 4R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 4R\_1$
 
 This gives:
 
@@ -1081,7 +1087,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to 3R_3 - 7R_2$:
+Perform the operation $R\_3 \to 3R\_3 - 7R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1092,9 +1098,9 @@ $$
 $$
 
 Now solve for the coefficients by back substitution:
-*   From row 3: $-2c_3 = -2 \implies c_3 = 1$.
-*   From row 2: $3c_2 - 1 = -13 \implies 3c_2 = -12 \implies c_2 = -4$.
-*   From row 1: $c_1 - (-4) + 2(1) = 9 \implies c_1 + 6 = 9 \implies c_1 = 3$.
+*   From row 3: $-2c\_3 = -2 \implies c\_3 = 1$.
+*   From row 2: $3c\_2 - 1 = -13 \implies 3c\_2 = -12 \implies c\_2 = -4$.
+*   From row 1: $c\_1 - (-4) + 2(1) = 9 \implies c\_1 + 6 = 9 \implies c\_1 = 3$.
 
 So we can write $v$ as:
 
@@ -1120,7 +1126,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to R_3 - 2R_1$:
+Perform the operation $R\_3 \to R\_3 - 2R\_1$:
 
 $$
 \begin{bmatrix}
@@ -1130,7 +1136,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to R_3 - 4R_2$:
+Perform the operation $R\_3 \to R\_3 - 4R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1205,9 +1211,9 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - R_1$
-*   $R_4 \to R_4 - 2R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - R\_1$
+*   $R\_4 \to R\_4 - 2R\_1$
 
 This gives:
 
@@ -1221,8 +1227,8 @@ $$
 $$
 
 Now perform operations on row 3 and row 4:
-*   $R_3 \to R_3 - 2R_2$
-*   $R_4 \to R_4 + R_2$
+*   $R\_3 \to R\_3 - 2R\_2$
+*   $R\_4 \to R\_4 + R\_2$
 
 This gives the echelon form:
 
@@ -1257,7 +1263,7 @@ $$
 
 #### (i) Mapping $F(x, y, z) = 2x - 3y + 4z$
 
-Let $u = (x_1, y_1, z_1)$ and $v = (x_2, y_2, z_2)$ be vectors in $\mathbb{R}^3$.
+Let $u = (x\_1, y\_1, z\_1)$ and $v = (x\_2, y\_2, z\_2)$ be vectors in $\mathbb{R}^3$.
 *   **Check Addition:**
 
 $$

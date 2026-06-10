@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Gradient and Direct
 
 ---
 
-## Q1. Find the angle between the surfaces $x^2 + y^2 + z^2 = 9$ and $z = x^2 + y^2 - 3$ at the point $(2, -1, 2)$. (04)
+## Q1 (04)
+
+Find the angle between the surfaces $x^2 + y^2 + z^2 = 9$ and $z = x^2 + y^2 - 3$ at the point $(2, -1, 2)$.
 
 | | |
 |---|---|
@@ -20,13 +22,13 @@ $$
 f_1(x, y, z) = x^2 + y^2 + z^2 - 9 = 0
 $$
 
-The gradient of $f_1$ gives the normal vector to this surface:
+The gradient of $f\_1$ gives the normal vector to this surface:
 
 $$
 \vec{\nabla}f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}
 $$
 
-At the point $P(2, -1, 2)$, the normal vector $\vec{n}_1$ is:
+At the point $P(2, -1, 2)$, the normal vector $\vec{n}\_1$ is:
 
 $$
 \vec{n}_1 = 2(2)\hat{i} + 2(-1)\hat{j} + 2(2)\hat{k} = 4\hat{i} - 2\hat{j} + 4\hat{k}
@@ -38,13 +40,13 @@ $$
 f_2(x, y, z) = x^2 + y^2 - z - 3 = 0
 $$
 
-The gradient of $f_2$ gives the normal vector to this surface:
+The gradient of $f\_2$ gives the normal vector to this surface:
 
 $$
 \vec{\nabla}f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}
 $$
 
-At the point $P(2, -1, 2)$, the normal vector $\vec{n}_2$ is:
+At the point $P(2, -1, 2)$, the normal vector $\vec{n}\_2$ is:
 
 $$
 \vec{n}_2 = 2(2)\hat{i} + 2(-1)\hat{j} - \hat{k} = 4\hat{i} - 2\hat{j} - \hat{k}
@@ -86,7 +88,9 @@ $$
 
 ---
 
-## Q2. Find the directional derivative of $\phi = 4e^{2x - y + z}$ at $(1, 1, -1)$ in a direction toward the point $(-3, 5, 6)$. (04)
+## Q2 (04)
+
+Find the directional derivative of $\phi = 4e^{2x - y + z}$ at $(1, 1, -1)$ in a direction toward the point $(-3, 5, 6)$.
 
 | | |
 |---|---|
@@ -155,7 +159,9 @@ So the directional derivative is $-\frac{20}{9}$.
 
 ---
 
-## Q3. Find an equation for the tangent plane to the surface $2xz^2 - 3xy - 4x = 7$ at the point $(1, -1, 2)$. (03)
+## Q3 (03)
+
+Find an equation for the tangent plane to the surface $2xz^2 - 3xy - 4x = 7$ at the point $(1, -1, 2)$.
 
 | | |
 |---|---|
@@ -196,7 +202,7 @@ $$
 \vec{\nabla}F = (2(4) - 3(-1) - 4)\hat{i} - 3(1)\hat{j} + 4(1)(2)\hat{k} = 7\hat{i} - 3\hat{j} + 8\hat{k}
 $$
 
-The equation of the tangent plane at $(x_0, y_0, z_0) = (1, -1, 2)$ is:
+The equation of the tangent plane at $(x\_0, y\_0, z\_0) = (1, -1, 2)$ is:
 
 $$
 7(x - 1) - 3(y - (-1)) + 8(z - 2) = 0
@@ -210,7 +216,9 @@ So the equation of the tangent plane is $7x - 3y + 8z = 26$.
 
 ---
 
-## Q4. What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$. (04)
+## Q4 (04)
+
+What is directional derivative? Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
 
 | | |
 |---|---|
@@ -265,7 +273,9 @@ So the directional derivative is $\frac{37}{3}$.
 
 ---
 
-## Q5. Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$. (04)
+## Q5 (04)
+
+Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
 
 | | |
 |---|---|
@@ -310,7 +320,9 @@ $$
 
 ---
 
-## Q6. Show that, $\nabla\Phi$ is a vector perpendicular to the surface $\Phi(x, y, z) = C$, where $C$ is a constant. (03)
+## Q6 (03)
+
+Show that, $\nabla\Phi$ is a vector perpendicular to the surface $\Phi(x, y, z) = C$, where $C$ is a constant.
 
 | | |
 |---|---|
@@ -355,7 +367,9 @@ Since this relation holds for any curve on the surface passing through $P$, the 
 
 ---
 
-## Q7. Find the directional derivative of the scalar function $f(x, y, z) = x^2 + xy + z^2$ at the point $A(1, -1, -1)$ in the direction of the line $AB$ where $B$ has co-ordinates $(3, 2, 1)$. (03)
+## Q7 (03)
+
+Find the directional derivative of the scalar function $f(x, y, z) = x^2 + xy + z^2$ at the point $A(1, -1, -1)$ in the direction of the line $AB$ where $B$ has co-ordinates $(3, 2, 1)$.
 
 | | |
 |---|---|
@@ -398,7 +412,9 @@ So the directional derivative is $\frac{1}{\sqrt{17}}$.
 
 ---
 
-## Q8. If $Q = 3x^2y - y^3z^2$ find $\nabla Q$ at the point $(1, -2, -1)$. (02)
+## Q8 (02)
+
+If $Q = 3x^2y - y^3z^2$ find $\nabla Q$ at the point $(1, -2, -1)$.
 
 | | |
 |---|---|
@@ -449,7 +465,9 @@ $$
 
 ---
 
-## Q9. Find the unit outward drawn normal to the surface $(x - 1)^2 + y^2 + (z + 2)^2 = 9$ at the point $(3, 1, -4)$. (05)
+## Q9 (05)
+
+Find the unit outward drawn normal to the surface $(x - 1)^2 + y^2 + (z + 2)^2 = 9$ at the point $(3, 1, -4)$.
 
 | | |
 |---|---|

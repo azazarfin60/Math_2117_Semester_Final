@@ -33,7 +33,7 @@ $$
 \vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
 $$
 
-We prove the identity for the component $A_1$:
+We prove the identity for the component $A\_1$:
 
 $$
 \oint_C A_1 dx = \iint_S \left[ \vec{\nabla} \times (A_1\hat{i}) \right] \cdot \hat{n} dS \quad \dots \text{(1)}
@@ -63,7 +63,7 @@ $$
 \oint_C A_1 dx = \iint_R \left( -\frac{\partial A_1}{\partial y} - \frac{\partial A_1}{\partial z}\frac{\partial z}{\partial y} \right) dx dy \quad \dots \text{(2)}
 $$
 
-Now calculate the term $\vec{\nabla} \times (A_1\hat{i})$:
+Now calculate the term $\vec{\nabla} \times (A\_1\hat{i})$:
 
 $$
 \vec{\nabla} \times (A_1\hat{i}) = \begin{vmatrix}
@@ -91,7 +91,7 @@ $$
 
 Comparing equations (2) and (3) shows that they are equal.
 
-By applying the same projection method for the components $A_2$ and $A_3$, we get:
+By applying the same projection method for the components $A\_2$ and $A\_3$, we get:
 
 $$
 \oint_C A_2 dy = \iint_S \left[ \vec{\nabla} \times (A_2\hat{j}) \right] \cdot \hat{n} dS
@@ -111,7 +111,9 @@ The proof is complete.
 
 ---
 
-## Q2. Verify Stoke's theorem for $\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}$ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane. (05)
+## Q2 (05)
+
+Verify Stoke's theorem for $\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}$ where $S$ is the surface of the cube $x=y=z=0$; $x=y=z=2$ above xy plane.
 
 | | |
 |---|---|
@@ -144,7 +146,7 @@ $$
 $$
 
 We evaluate the integral along the four segments of the square $C$:
-*   **Path 1 ($C_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
+*   **Path 1 ($C\_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
 
     
 
@@ -152,7 +154,7 @@ $$
 \int_{C_1} = \int_0^2 2 dx = 4
 $$
 
-*   **Path 2 ($C_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
+*   **Path 2 ($C\_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
 
     
 
@@ -160,7 +162,7 @@ $$
 \int_{C_2} = \int_0^2 4 dy = 8
 $$
 
-*   **Path 3 ($C_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
+*   **Path 3 ($C\_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
 
     
 
@@ -168,7 +170,7 @@ $$
 \int_{C_3} = \int_2^0 4 dx = -8
 $$
 
-*   **Path 4 ($C_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
+*   **Path 4 ($C\_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
 
     
 

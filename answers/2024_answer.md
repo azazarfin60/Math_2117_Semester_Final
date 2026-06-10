@@ -55,7 +55,7 @@ This field looks like a sink. All vectors point radially inward toward the cente
 
 ---
 
-### Q1(b) Show that a necessary and sufficient condition that the vectors $\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$, $\vec{B} = B_1\hat{i} + B_2\hat{j} + B_3\hat{k}$, $\vec{C} = C_1\hat{i} + C_2\hat{j} + C_3\hat{k}$ be linearly independent is that the determinant (05)
+### Q1(b) Show that a necessary and sufficient condition that the vectors $\vec{A} = A\_1\hat{i} + A\_2\hat{j} + A\_3\hat{k}$, $\vec{B} = B\_1\hat{i} + B\_2\hat{j} + B\_3\hat{k}$, $\vec{C} = C\_1\hat{i} + C\_2\hat{j} + C\_3\hat{k}$ be linearly independent is that the determinant (05)
 
 $$
 \begin{vmatrix}
@@ -335,7 +335,7 @@ $$
 
 We calculate the terms:
 *   $\nabla \cdot \vec{r} = 1 + 1 + 1 = 3$. So, $\vec{A}(\nabla \cdot \vec{r}) = 3\vec{A}$.
-*   $(\vec{A} \cdot \nabla)\vec{r} = \left( A_1 \frac{\partial}{\partial x} + A_2 \frac{\partial}{\partial y} + A_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}$.
+*   $(\vec{A} \cdot \nabla)\vec{r} = \left( A\_1 \frac{\partial}{\partial x} + A\_2 \frac{\partial}{\partial y} + A\_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}$.
 
 This gives:
 
@@ -493,8 +493,8 @@ R = \{ (x, y) \mid c \leq y \leq d, \quad x_1(y) \leq x \leq x_2(y) \}
 $$
 
 We split the proof into two parts:
-*   **Part 1:** Show that $\oint_C P dx = -\iint_R \frac{\partial P}{\partial y} dx dy$
-*   **Part 2:** Show that $\oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy$
+*   **Part 1:** Show that $\oint\_C P dx = -\iint\_R \frac{\partial P}{\partial y} dx dy$
+*   **Part 2:** Show that $\oint\_C Q dy = \iint\_R \frac{\partial Q}{\partial x} dx dy$
 
 ##### Part 1
 We evaluate the double integral:
@@ -509,9 +509,9 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b [P(x, y_2(x)) - P(x, y_1(x))] dx \quad \dots (1)
 $$
 
-Now we evaluate the line integral $\oint_C P dx$ along the boundary $C$. The boundary has two parts:
-*   $C_1$ is the lower curve $y = y_1(x)$ going from $x = a$ to $x = b$.
-*   $C_2$ is the upper curve $y = y_2(x)$ going from $x = b$ to $x = a$.
+Now we evaluate the line integral $\oint\_C P dx$ along the boundary $C$. The boundary has two parts:
+*   $C\_1$ is the lower curve $y = y\_1(x)$ going from $x = a$ to $x = b$.
+*   $C\_2$ is the upper curve $y = y\_2(x)$ going from $x = b$ to $x = a$.
 
 So:
 
@@ -542,9 +542,9 @@ $$
 \iint_R \frac{\partial Q}{\partial x} dx dy = \int_c^d \left[ \int_{x_1(y)}^{x_2(y)} \frac{\partial Q}{\partial x} dx \right] dy = \int_c^d [Q(x_2(y), y) - Q(x_1(y), y)] dy \quad \dots (3)
 $$
 
-Now we evaluate the line integral $\oint_C Q dy$. The boundary curve $C$ consists of:
-*   $C_1$ is the left curve $x = x_1(y)$ going from $y = d$ to $y = c$.
-*   $C_2$ is the right curve $x = x_2(y)$ going from $y = c$ to $y = d$.
+Now we evaluate the line integral $\oint\_C Q dy$. The boundary curve $C$ consists of:
+*   $C\_1$ is the left curve $x = x\_1(y)$ going from $y = d$ to $y = c$.
+*   $C\_2$ is the right curve $x = x\_2(y)$ going from $y = c$ to $y = d$.
 
 So:
 
@@ -600,7 +600,7 @@ $$
 $$
 
 We evaluate the integral along the four segments of the square $C$:
-*   **Path 1 ($C_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
+*   **Path 1 ($C\_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
 
     
 
@@ -608,7 +608,7 @@ $$
 \int_{C_1} = \int_0^2 2 dx = 4
 $$
 
-*   **Path 2 ($C_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
+*   **Path 2 ($C\_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
 
     
 
@@ -616,7 +616,7 @@ $$
 \int_{C_2} = \int_0^2 4 dy = 8
 $$
 
-*   **Path 3 ($C_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
+*   **Path 3 ($C\_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
 
     
 
@@ -624,7 +624,7 @@ $$
 \int_{C_3} = \int_2^0 4 dx = -8
 $$
 
-*   **Path 4 ($C_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
+*   **Path 4 ($C\_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
 
     
 
@@ -735,9 +735,9 @@ A = \begin{bmatrix}
 $$
 
 We apply row operations to reduce it to echelon form:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - 3R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - 3R\_1$
 
 This gives:
 
@@ -751,7 +751,7 @@ $$
 $$
 
 Next, we apply:
-*   $R_3 \to R_3 + R_2$
+*   $R\_3 \to R\_3 + R\_2$
 
 This gives:
 
@@ -764,7 +764,7 @@ $$
 \end{bmatrix}
 $$
 
-We scale the third row ($R_3 \to -\frac{1}{8}R_3$):
+We scale the third row ($R\_3 \to -\frac{1}{8}R\_3$):
 
 $$
 \begin{bmatrix}
@@ -776,7 +776,7 @@ $$
 $$
 
 Now we apply:
-*   $R_4 \to R_4 + 6R_3$
+*   $R\_4 \to R\_4 + 6R\_3$
 
 This yields:
 
@@ -808,8 +808,8 @@ $$
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -822,7 +822,7 @@ $$
 $$
 
 Now, we perform:
-*   $R_3 \to R_3 - R_2$
+*   $R\_3 \to R\_3 - R\_2$
 
 This yields:
 
@@ -1161,8 +1161,8 @@ z
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1238,7 +1238,7 @@ z
 \end{bmatrix}
 $$
 
-We swap rows $R_1 \leftrightarrow R_2$:
+We swap rows $R\_1 \leftrightarrow R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1249,8 +1249,8 @@ $$
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 + 3R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 + 3R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1262,7 +1262,7 @@ $$
 \end{bmatrix}
 $$
 
-We scale the second row ($R_2 \to -\frac{1}{2}R_2$):
+We scale the second row ($R\_2 \to -\frac{1}{2}R\_2$):
 
 $$
 \begin{bmatrix}
@@ -1272,7 +1272,7 @@ $$
 \end{bmatrix}
 $$
 
-We perform $R_3 \to R_3 - 2R_2$:
+We perform $R\_3 \to R\_3 - 2R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1297,7 +1297,7 @@ $$
 
 ---
 
-### Q7(a) Express the polynomial $v = 3t^2 + 5t - 5$ as a linear combination of the polynomials $P_1 = t^2 + 2t + 1$, $P_2 = 2t^2 + 5t + 4$ and $P_3 = t^2 + 3t + 6$. (03)
+### Q7(a) Express the polynomial $v = 3t^2 + 5t - 5$ as a linear combination of the polynomials $P\_1 = t^2 + 2t + 1$, $P\_2 = 2t^2 + 5t + 4$ and $P\_3 = t^2 + 3t + 6$. (03)
 
 **Answer:**
 
@@ -1320,9 +1320,9 @@ $$
 $$
 
 We match the coefficients of $t^2$, $t$, and the constant terms:
-1.  $c_1 + 2c_2 + c_3 = 3$
-2.  $2c_1 + 5c_2 + 3c_3 = 5$
-3.  $c_1 + 4c_2 + 6c_3 = -5$
+1.  $c\_1 + 2c\_2 + c\_3 = 3$
+2.  $2c\_1 + 5c\_2 + 3c\_3 = 5$
+3.  $c\_1 + 4c\_2 + 6c\_3 = -5$
 
 We solve this system. From equation (1):
 
@@ -1330,7 +1330,7 @@ $$
 c_1 = 3 - 2c_2 - c_3
 $$
 
-We substitute this expression for $c_1$ into equations (2) and (3):
+We substitute this expression for $c\_1$ into equations (2) and (3):
 
 In equation (2):
 
@@ -1366,13 +1366,13 @@ $$
 3c_3 = -6 \implies c_3 = -2
 $$
 
-We use $c_3 = -2$ in equation (4):
+We use $c\_3 = -2$ in equation (4):
 
 $$
 c_2 = -1 - (-2) = 1
 $$
 
-We use $c_2 = 1$ and $c_3 = -2$ to find $c_1$:
+We use $c\_2 = 1$ and $c\_3 = -2$ to find $c\_1$:
 
 $$
 c_1 = 3 - 2(1) - (-2) = 3
@@ -1426,13 +1426,13 @@ Thus, $V$ is the direct sum of $U$ and $W$.
 **Answer:**
 
 #### 1. Definition of Linearly Independent Vectors
-A set of vectors $\{v_1, v_2, \dots, v_n\}$ is linearly independent if the equation:
+A set of vectors $\{v\_1, v\_2, \dots, v\_n\}$ is linearly independent if the equation:
 
 $$
 c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0
 $$
 
-has only the trivial solution $c_1 = c_2 = \dots = c_n = 0$. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
+has only the trivial solution $c\_1 = c\_2 = \dots = c\_n = 0$. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
 
 #### 2. Determine Linear Independence
 
@@ -1497,7 +1497,7 @@ A vector space $V$ over a field $F$ is a set of elements (called vectors) togeth
 *   **Distributivity of scalar multiplication over field addition:** $(a + b)u = au + bu$
 
 #### 2. Basis of a Vector Space
-A subset $B = \{v_1, v_2, \dots, v_n\}$ of a vector space $V$ is a basis of $V$ if:
+A subset $B = \{v\_1, v\_2, \dots, v\_n\}$ of a vector space $V$ is a basis of $V$ if:
 *   The set $B$ is linearly independent.
 *   The set $B$ spans $V$. This means any vector in $V$ can be written as a linear combination of vectors in $B$.
 
@@ -1520,14 +1520,14 @@ $$
 $$
 
 #### 2. Closed Under Vector Addition
-Let $u_1 = (a_1, a_1, a_1) \in U$ and $u_2 = (a_2, a_2, a_2) \in U$, where $a_1, a_2 \in \mathbb{R}$.
+Let $u\_1 = (a\_1, a\_1, a\_1) \in U$ and $u\_2 = (a\_2, a\_2, a\_2) \in U$, where $a\_1, a\_2 \in \mathbb{R}$.
 We add these vectors:
 
 $$
 u_1 + u_2 = (a_1 + a_2, a_1 + a_2, a_1 + a_2)
 $$
 
-All three components of the sum vector are equal to $a_1 + a_2$. So, the sum vector is in $U$.
+All three components of the sum vector are equal to $a\_1 + a\_2$. So, the sum vector is in $U$.
 
 #### 3. Closed Under Scalar Multiplication
 Let $u = (a, a, a) \in U$ and $k \in \mathbb{R}$ be a scalar.
@@ -1561,9 +1561,9 @@ M = \begin{bmatrix}
 $$
 
 We apply row operations to find its echelon form:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - 2R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - 2R\_1$
 
 This gives:
 
@@ -1577,8 +1577,8 @@ $$
 $$
 
 Next, we apply:
-*   $R_3 \to R_3 - 3R_2$
-*   $R_4 \to R_4 - 4R_2$
+*   $R\_3 \to R\_3 - 3R\_2$
+*   $R\_4 \to R\_4 - 4R\_2$
 
 This gives:
 
@@ -1592,7 +1592,7 @@ $$
 $$
 
 Now, we perform:
-*   $R_4 \to R_4 - R_3$
+*   $R\_4 \to R\_4 - R\_3$
 
 This yields:
 

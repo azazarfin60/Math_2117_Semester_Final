@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Green's Theorem**, 
 
 ---
 
-## Q1. If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate $\oint_C \vec{F} \cdot d\vec{r}$ around the curve $C$ of the following figure: (06)
+## Q1 (06)
+
+If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate $\oint\_C \vec{F} \cdot d\vec{r}$ around the curve $C$ of the following figure:
 
 | | |
 |---|---|
@@ -79,10 +81,10 @@ $$
 #### Method 2: Direct Line Integration
 
 The boundary curve $C$ consists of two paths:
-1.  Path $C_1$: Along the parabola $y = x^2$ from $(0,0)$ to $(1,1)$. Here $dy = 2x dx$.
-2.  Path $C_2$: Along the parabola $y^2 = x$ from $(1,1)$ to $(0,0)$. We can write this as $x = y^2$ from $y = 1$ to $y = 0$. Here $dx = 2y dy$.
+1.  Path $C\_1$: Along the parabola $y = x^2$ from $(0,0)$ to $(1,1)$. Here $dy = 2x dx$.
+2.  Path $C\_2$: Along the parabola $y^2 = x$ from $(1,1)$ to $(0,0)$. We can write this as $x = y^2$ from $y = 1$ to $y = 0$. Here $dx = 2y dy$.
 
-Evaluate the integral along Path $C_1$:
+Evaluate the integral along Path $C\_1$:
 
 $$
 \int_{C_1} \vec{F} \cdot d\vec{r} = \int_0^1 \left[ (2x + x^4)dx + (3x^2 - 4x)(2x dx) \right] = \int_0^1 \left( 2x + x^4 + 6x^3 - 8x^2 \right) dx
@@ -96,7 +98,7 @@ $$
 \int_{C_1} \vec{F} \cdot d\vec{r} = \frac{30 + 6 + 45 - 80}{30} = \frac{1}{30}
 $$
 
-Evaluate the integral along Path $C_2$:
+Evaluate the integral along Path $C\_2$:
 
 $$
 \int_{C_2} \vec{F} \cdot d\vec{r} = \int_1^0 \left[ (2y^2 + y^2)(2ydy) + (3y - 4y^2)dy \right] = \int_1^0 \left( 6y^3 + 3y - 4y^2 \right) dy
@@ -150,7 +152,7 @@ $$
 
 ##### Proof of Part 1
 
-Let the region $R$ be bounded by the curves $y = y_1(x)$ (lower boundary) and $y = y_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
+Let the region $R$ be bounded by the curves $y = y\_1(x)$ (lower boundary) and $y = y\_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
 
 Evaluate the double integral on the right-hand side:
 
@@ -158,9 +160,9 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b \left[ \int_{y_1(x)}^{y_2(x)} \frac{\partial P}{\partial y} dy \right] dx = \int_a^b \left[ P(x, y_2(x)) - P(x, y_1(x)) \right] dx \quad \dots \text{(1)}
 $$
 
-Now evaluate the line integral $\oint_C P dx$. The closed boundary curve $C$ consists of two parts:
-*   Path $C_1$: Along the curve $y = y_1(x)$ from $x=a$ to $x=b$.
-*   Path $C_2$: Along the curve $y = y_2(x)$ from $x=b$ to $x=a$.
+Now evaluate the line integral $\oint\_C P dx$. The closed boundary curve $C$ consists of two parts:
+*   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
+*   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
 We calculate the line integral over each path:
 
@@ -182,7 +184,7 @@ $$
 
 ##### Proof of Part 2
 
-Let the region $R$ be bounded by the curves $x = x_1(y)$ (left boundary) and $x = x_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
+Let the region $R$ be bounded by the curves $x = x\_1(y)$ (left boundary) and $x = x\_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
 
 $$
 \oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy
@@ -198,7 +200,9 @@ The proof is complete.
 
 ---
 
-## Q3. Evaluate $\oint_C (y - \sin x)dx + \cos y dy$ where $C$ is the triangle of the adjoining figure: (06)
+## Q3 (06)
+
+Evaluate $\oint\_C (y - \sin x)dx + \cos y dy$ where $C$ is the triangle of the adjoining figure:
 
 | | |
 |---|---|
@@ -232,7 +236,7 @@ $$
 \oint_C (P dx + Q dy) = \iint_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \iint_R (0 - 1) dA = -\iint_R dA
 $$
 
-The integral $\iint_R dA$ is simply the area of the triangular region $R$:
+The integral $\iint\_R dA$ is simply the area of the triangular region $R$:
 
 $$
 \text{Area}(R) = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times \frac{\pi}{2} \times 1 = \frac{\pi}{4}
@@ -247,23 +251,23 @@ $$
 #### Method 2: Direct Line Integration
 
 The boundary curve $C$ consists of three straight paths:
-1.  Path $C_1$: Along the x-axis ($y = 0$, $dy = 0$) from $(0,0)$ to $(\pi/2, 0)$.
-2.  Path $C_2$: Along the vertical line $x = \pi/2$ ($dx = 0$) from $(\pi/2, 0)$ to $(\pi/2, 1)$.
-3.  Path $C_3$: Along the line $y = \frac{2}{\pi}x$ (or $x = \frac{\pi}{2}y$, $dx = \frac{\pi}{2}dy$) from $(\pi/2, 1)$ to $(0,0)$.
+1.  Path $C\_1$: Along the x-axis ($y = 0$, $dy = 0$) from $(0,0)$ to $(\pi/2, 0)$.
+2.  Path $C\_2$: Along the vertical line $x = \pi/2$ ($dx = 0$) from $(\pi/2, 0)$ to $(\pi/2, 1)$.
+3.  Path $C\_3$: Along the line $y = \frac{2}{\pi}x$ (or $x = \frac{\pi}{2}y$, $dx = \frac{\pi}{2}dy$) from $(\pi/2, 1)$ to $(0,0)$.
 
-Evaluate the integral along Path $C_1$:
+Evaluate the integral along Path $C\_1$:
 
 $$
 \int_{C_1} (y - \sin x)dx + \cos y dy = \int_0^{\pi/2} (0 - \sin x) dx = \left[ \cos x \right]_0^{\pi/2} = \cos\left(\frac{\pi}{2}\right) - \cos(0) = 0 - 1 = -1
 $$
 
-Evaluate the integral along Path $C_2$:
+Evaluate the integral along Path $C\_2$:
 
 $$
 \int_{C_2} (y - \sin x)dx + \cos y dy = \int_0^1 \cos y dy = \left[ \sin y \right]_0^1 = \sin(1)
 $$
 
-Evaluate the integral along Path $C_3$:
+Evaluate the integral along Path $C\_3$:
 
 Here we integrate with respect to $y$ from $y = 1$ to $y = 0$:
 
@@ -289,7 +293,9 @@ Both methods yield the same result of $-\frac{\pi}{4}$.
 
 ---
 
-## Q4. Verify Green's theorem in the plane for $\oint_C (2x - y^2)dx - xydy$ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$. (06)
+## Q4 (06)
+
+Verify Green's theorem in the plane for $\oint\_C (2x - y^2)dx - xydy$ where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$.
 
 | | |
 |---|---|
@@ -342,9 +348,9 @@ $$
 
 #### 2. Evaluate Line Integral
 
-The closed boundary $C$ consists of two circular paths: the outer circle $C_1$ ($r=3$, traversed counterclockwise) and the inner circle $C_2$ ($r=1$, traversed clockwise):
+The closed boundary $C$ consists of two circular paths: the outer circle $C\_1$ ($r=3$, traversed counterclockwise) and the inner circle $C\_2$ ($r=1$, traversed clockwise):
 
-- **On Outer Circle $C_1$:** $x = 3\cos\theta, y = 3\sin\theta \implies dx = -3\sin\theta \, d\theta, dy = 3\cos\theta \, d\theta$ with $\theta$ from $0$ to $2\pi$:
+- **On Outer Circle $C\_1$:** $x = 3\cos\theta, y = 3\sin\theta \implies dx = -3\sin\theta \, d\theta, dy = 3\cos\theta \, d\theta$ with $\theta$ from $0$ to $2\pi$:
 
 $$
 \int_{C_1} (2x - y^2)dx - xydy = \int_0^{2\pi} \left[ (6\cos\theta - 9\sin^2\theta)(-3\sin\theta) - 9\cos\theta\sin\theta(3\cos\theta) \right] d\theta
@@ -356,7 +362,7 @@ $$
 
 (since each component integrates to $0$ over the full period $[0, 2\pi]$).
 
-- **On Inner Circle $C_2$:** $x = \cos\theta, y = \sin\theta \implies dx = -\sin\theta \, d\theta, dy = \cos\theta \, d\theta$ with $\theta$ from $2\pi$ to $0$:
+- **On Inner Circle $C\_2$:** $x = \cos\theta, y = \sin\theta \implies dx = -\sin\theta \, d\theta, dy = \cos\theta \, d\theta$ with $\theta$ from $2\pi$ to $0$:
 
 $$
 \int_{C_2} (2x - y^2)dx - xydy = \int_{2\pi}^0 \left[ (2\cos\theta - \sin^2\theta)(-\sin\theta) - \cos\theta\sin\theta(\cos\theta) \right] d\theta = 0
@@ -376,7 +382,9 @@ Both the double integral and the line integral equal $0$, so Green's theorem is 
 
 ---
 
-## Q5. Verify Green's theorem in the plane for $\oint_C (xy + y^2)dx + x^2dy$ where $C$ is a closed region bounded by $y = x$ and $y = x^2$. (06)
+## Q5 (06)
+
+Verify Green's theorem in the plane for $\oint\_C (xy + y^2)dx + x^2dy$ where $C$ is a closed region bounded by $y = x$ and $y = x^2$.
 
 | | |
 |---|---|
@@ -431,10 +439,10 @@ $$
 #### 2. Evaluate Line Integral
 
 The closed path $C$ has two parts:
-1.  Path $C_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
-2.  Path $C_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
+1.  Path $C\_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
+2.  Path $C\_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
 
-Evaluate along Path $C_1$:
+Evaluate along Path $C\_1$:
 
 $$
 \int_{C_1} (xy + y^2)dx + x^2dy = \int_0^1 \left[ (x^3 + x^4)dx + x^2(2x dx) \right] = \int_0^1 (3x^3 + x^4) dx
@@ -444,7 +452,7 @@ $$
 \int_{C_1} = \left[ \frac{3}{4}x^4 + \frac{x^5}{5} \right]_0^1 = \frac{3}{4} + \frac{1}{5} = \frac{19}{20}
 $$
 
-Evaluate along Path $C_2$:
+Evaluate along Path $C\_2$:
 
 $$
 \int_{C_2} (xy + y^2)dx + x^2dy = \int_1^0 \left[ (x^2 + x^2)dx + x^2 dx \right] = \int_1^0 3x^2 dx = \left[ x^3 \right]_1^0 = -1

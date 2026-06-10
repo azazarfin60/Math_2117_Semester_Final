@@ -38,8 +38,8 @@ $$
 $$
 
 We perform row operations to reduce it:
-*   $R_2 \to 2R_2 - 3R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to 2R\_2 - 3R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -61,7 +61,7 @@ $$
 \end{bmatrix}
 $$
 
-Now perform row operation $R_3 \to 4R_3 - 7R_2$:
+Now perform row operation $R\_3 \to 4R\_3 - 7R\_2$:
 
 $$
 \begin{bmatrix}
@@ -109,7 +109,9 @@ $$
 
 ---
 
-## Q2. Find the value of $\lambda$ so that the following equations have a solution and solve completely in each case: (06)
+## Q2 (06)
+
+Find the value of $\lambda$ so that the following equations have a solution and solve completely in each case:
 
 | | |
 |---|---|
@@ -143,8 +145,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -156,7 +158,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate row 3 using row 2 ($R_3 \to R_3 - 3R_2$):
+Now eliminate row 3 using row 2 ($R\_3 \to R\_3 - 3R\_2$):
 
 $$
 \begin{bmatrix}
@@ -269,7 +271,7 @@ $$
 \end{bmatrix}
 $$
 
-We swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+We swap row 1 and row 3 ($R\_1 \leftrightarrow R\_3$):
 
 $$
 \begin{bmatrix}
@@ -280,8 +282,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 3R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - 3R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -293,7 +295,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to 11R_3 - 5R_2$:
+Perform the operation $R\_3 \to 11R\_3 - 5R\_2$:
 
 $$
 \begin{bmatrix}
@@ -304,9 +306,9 @@ $$
 $$
 
 By back substitution, we solve the system:
-*   From the third row: $-29x_3 = 0 \implies x_3 = 0$.
-*   From the second row: $11x_2 - 14(0) = 0 \implies x_2 = 0$.
-*   From the first row: $x_1 - 3(0) + 5(0) = 0 \implies x_1 = 0$.
+*   From the third row: $-29x\_3 = 0 \implies x\_3 = 0$.
+*   From the second row: $11x\_2 - 14(0) = 0 \implies x\_2 = 0$.
+*   From the first row: $x\_1 - 3(0) + 5(0) = 0 \implies x\_1 = 0$.
 
 So the system only has the trivial solution:
 
@@ -358,8 +360,8 @@ $$
 $$
 
 Apply row operations to clear the first column:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -373,8 +375,8 @@ $$
 $$
 
 Scale row 2 and row 3:
-*   $R_2 \to -\frac{1}{3} R_2$
-*   $R_3 \to -\frac{1}{4} R_3$
+*   $R\_2 \to -\frac{1}{3} R\_2$
+*   $R\_3 \to -\frac{1}{4} R\_3$
 
 This gives:
 
@@ -388,8 +390,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_3 \to R_3 - R_2$
-*   $R_4 \to R_4 - R_2$
+*   $R\_3 \to R\_3 - R\_2$
+*   $R\_4 \to R\_4 - R\_2$
 
 This yields the row echelon form:
 
@@ -462,8 +464,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -475,7 +477,7 @@ $$
 \end{bmatrix}
 $$
 
-Swap row 2 and row 3 ($R_2 \leftrightarrow R_3$) and multiply the new row 2 by $-1$ ($R_2 \to -R_2$):
+Swap row 2 and row 3 ($R\_2 \leftrightarrow R\_3$) and multiply the new row 2 by $-1$ ($R\_2 \to -R\_2$):
 
 $$
 \begin{bmatrix}
@@ -486,7 +488,7 @@ $$
 $$
 
 Apply row operation:
-*   $R_3 \to R_3 - 2R_2$
+*   $R\_3 \to R\_3 - 2R\_2$
 
 This gives:
 
@@ -498,7 +500,7 @@ $$
 \end{bmatrix}
 $$
 
-Scale row 3 ($R_3 \to -\frac{1}{3} R_3$):
+Scale row 3 ($R\_3 \to -\frac{1}{3} R\_3$):
 
 $$
 \begin{bmatrix}
@@ -539,7 +541,9 @@ $$
 
 ---
 
-## Q6. Investigate for what values of $\lambda$ and $\mu$ the following system of equations have (i) no solution, (ii) unique solution, (iii) infinite number of solutions: (07)
+## Q6 (07)
+
+Investigate for what values of $\lambda$ and $\mu$ the following system of equations have (i) no solution, (ii) unique solution, (iii) infinite number of solutions:
 
 | | |
 |---|---|
@@ -574,8 +578,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -587,7 +591,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate row 3 using row 2 ($R_3 \to R_3 - R_2$):
+Now eliminate row 3 using row 2 ($R\_3 \to R\_3 - R\_2$):
 
 $$
 \begin{bmatrix}
@@ -627,7 +631,9 @@ $$
 
 ---
 
-## Q7. Discuss for what values of $\lambda$ the following system of equations have (i) no solution (ii) unique solution and (iii) infinite number of solutions: (06)
+## Q7 (06)
+
+Discuss for what values of $\lambda$ the following system of equations have (i) no solution (ii) unique solution and (iii) infinite number of solutions:
 
 | | |
 |---|---|
@@ -674,7 +680,7 @@ D = \begin{vmatrix}
 \end{vmatrix}
 $$
 
-Apply column operations ($C_2 \to C_2 - C_1$, $C_3 \to C_3 - C_1$):
+Apply column operations ($C\_2 \to C\_2 - C\_1$, $C\_3 \to C\_3 - C\_1$):
 
 $$
 D = (\lambda + 2) \begin{vmatrix}
@@ -772,8 +778,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -785,7 +791,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to R_3 + R_2$:
+Perform the operation $R\_3 \to R\_3 + R\_2$:
 
 $$
 \begin{bmatrix}
@@ -795,7 +801,7 @@ $$
 \end{bmatrix}
 $$
 
-Scale row 2 ($R_2 \to -1/3 R_2$):
+Scale row 2 ($R\_2 \to -1/3 R\_2$):
 
 $$
 \begin{bmatrix}
@@ -825,7 +831,9 @@ $$
 
 ---
 
-## Q9. Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i_1$, $i_2$, and $i_3$ are: (07)
+## Q9 (07)
+
+Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i\_1$, $i\_2$, and $i\_3$ are:
 
 | | |
 |---|---|
@@ -967,11 +975,13 @@ $$
 i_1 + 26 = 8 \implies i_1 = -18
 $$
 
-So, the mesh currents are $i_1 = -18$, $i_2 = 19$, and $i_3 = 16$.
+So, the mesh currents are $i\_1 = -18$, $i\_2 = 19$, and $i\_3 = 16$.
 
 ---
 
-## Q10. Find the value(s) of $k$ for which the following system of three linear equations in three variables has (i) a unique solution, (ii) no solution, and (iii) infinitely many solutions: (06)
+## Q10 (06)
+
+Find the value(s) of $k$ for which the following system of three linear equations in three variables has (i) a unique solution, (ii) no solution, and (iii) infinitely many solutions:
 
 | | |
 |---|---|

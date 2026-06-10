@@ -6,7 +6,7 @@
 
 ---
 
-### Q1. Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i_1$, $i_2$, and $i_3$ are: (07)
+### Q1. Consider a circuit with three mesh currents. The corresponding equations for the mesh currents $i\_1$, $i\_2$, and $i\_3$ are: (07)
 
 $$
 2i_1 + 3i_2 - i_3 = 5
@@ -141,7 +141,7 @@ $$
 i_1 + 26 = 8 \implies i_1 = -18
 $$
 
-So, the mesh currents are $i_1 = -18$, $i_2 = 19$, and $i_3 = 16$.
+So, the mesh currents are $i\_1 = -18$, $i\_2 = 19$, and $i\_3 = 16$.
 
 ---
 
@@ -234,11 +234,17 @@ So, there is no value of $k$ that gives infinitely many solutions.
 
 ---
 
-### Q3. What is meant by the rank of a matrix? Reduce the matrix $A = \begin{bmatrix}
+### Q3. What is meant by the rank of a matrix? Reduce the matrix 
+
+$$
+A = \begin{bmatrix}
 6 & 3 & -4 \\
 -4 & 1 & -6 \\
 1 & 2 & -5
-\end{bmatrix}$ (07)
+\end{bmatrix}
+$$
+
+ (07)
 *   **(i)** to echelon form
 *   **(ii)** to row canonical form, and
 *   **(iii)** determine the rank of the matrix.

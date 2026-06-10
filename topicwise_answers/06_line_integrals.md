@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Line Integrals**, p
 
 ---
 
-## Q1. If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
+## Q1 (04)
+
+If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int\_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$.
 
 | | |
 |---|---|
@@ -59,7 +61,9 @@ So the value of the line integral is $-\frac{7}{6}$.
 
 ---
 
-## Q2. If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
+## Q2 (06)
+
+If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int\_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$:
 
 | | |
 |---|---|
@@ -140,7 +144,9 @@ So the integral along this path is $\frac{13}{3}$.
 
 ---
 
-## Q3. If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$. (04)
+## Q3 (04)
+
+If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int\_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$.
 
 | | |
 |---|---|
@@ -157,7 +163,7 @@ $$
 
 We divide the path $C$ into three line segments:
 
-#### 1. Segment $C_1$: From $(0,0,0)$ to $(1,0,0)$
+#### 1. Segment $C\_1$: From $(0,0,0)$ to $(1,0,0)$
 
 On this segment, $y=0$ and $z=0$, which means $dy=0$ and $dz=0$. The variable $x$ goes from $0$ to $1$:
 
@@ -165,7 +171,7 @@ $$
 \int_{C_1} \vec{A} \cdot d\vec{r} = \int_{x=0}^1 (3x^2 + 0) dx = [x^3]_0^1 = 1
 $$
 
-#### 2. Segment $C_2$: From $(1,0,0)$ to $(1,1,0)$
+#### 2. Segment $C\_2$: From $(1,0,0)$ to $(1,1,0)$
 
 On this segment, $x=1$ and $z=0$, which means $dx=0$ and $dz=0$. The variable $y$ goes from $0$ to $1$:
 
@@ -173,7 +179,7 @@ $$
 \int_{C_2} \vec{A} \cdot d\vec{r} = \int_{y=0}^1 -14y(0) dy = 0
 $$
 
-#### 3. Segment $C_3$: From $(1,1,0)$ to $(1,1,1)$
+#### 3. Segment $C\_3$: From $(1,1,0)$ to $(1,1,1)$
 
 On this segment, $x=1$ and $y=1$, which means $dx=0$ and $dy=0$. The variable $z$ goes from $0$ to $1$:
 
@@ -191,7 +197,9 @@ So the value of the line integral is $\frac{23}{3}$.
 
 ---
 
-## Q4. Find the work done in moving a particle in a force field given by $\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}$ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$. (03)
+## Q4 (03)
+
+Find the work done in moving a particle in a force field given by $\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}$ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$.
 
 | | |
 |---|---|
@@ -261,7 +269,9 @@ So, the work done is 303.
 
 ---
 
-## Q5. If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate $\int_C \vec{F} \cdot d\vec{r}$ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
+## Q5 (06)
+
+If $\vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}$, evaluate $\int\_C \vec{F} \cdot d\vec{r}$ along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$.
 
 | | |
 |---|---|

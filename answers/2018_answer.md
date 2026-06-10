@@ -293,7 +293,7 @@ $$
 
 ---
 
-### Q2(b) If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
+### Q2(b) If $\bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, then evaluate $\int\_C \bar{A} \cdot d\bar{r}$ from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
 *   **(i)** $x = t, y = t^2, z = t^3$
 *   **(ii)** the straight line joining $(0,0,0)$ to $(1,1,1)$.
 
@@ -365,7 +365,7 @@ So the integral along this path is $\frac{13}{3}$.
 
 ---
 
-### Q3(a) Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate $\iiint_V \Phi dV$. (06)
+### Q3(a) Let $\Phi = 45x^2y$ and let $V$ denote the closed region bounded by the planes $4x + 2y + z = 8$, $x = 0, y = 0, z = 0$. Evaluate $\iiint\_V \Phi dV$. (06)
 
 **Answer:**
 
@@ -485,9 +485,9 @@ $$
 #### 2. Evaluate Surface Integral
 
 The cylinder surface $S$ has three parts:
-1.  Top surface $S_1$ ($z=3$): The normal vector is $\hat{n} = \hat{k}$.
-2.  Bottom surface $S_2$ ($z=0$): The normal vector is $\hat{n} = -\hat{k}$.
-3.  Curved wall $S_3$ ($x^2 + y^2 = 4$): The normal vector is $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$.
+1.  Top surface $S\_1$ ($z=3$): The normal vector is $\hat{n} = \hat{k}$.
+2.  Bottom surface $S\_2$ ($z=0$): The normal vector is $\hat{n} = -\hat{k}$.
+3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$.
 
 Evaluate the top surface integral:
 
@@ -521,7 +521,7 @@ $$
 \iint_{S_3} \bar{A} \cdot \hat{n} dS = \int_0^3 \int_0^{2\pi} \left[ 2(4\cos^2\phi) - 8\sin^3\phi \right] 2 d\phi dz
 $$
 
-We use the standard integral properties: $\int_0^{2\pi} \cos^2\phi d\phi = \pi$ and $\int_0^{2\pi} \sin^3\phi d\phi = 0$.
+We use the standard integral properties: $\int\_0^{2\pi} \cos^2\phi d\phi = \pi$ and $\int\_0^{2\pi} \sin^3\phi d\phi = 0$.
 
 $$
 \iint_{S_3} \bar{A} \cdot \hat{n} dS = \int_0^3 16\pi dz = 48\pi
@@ -541,7 +541,7 @@ Both the volume and surface integrals equal $84\pi$. The divergence theorem is v
 
 **Answer:**
 
-Let the vector be $\bar{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$. We calculate the curl of $\bar{A}$:
+Let the vector be $\bar{A} = A\_x\hat{i} + A\_y\hat{j} + A\_z\hat{k}$. We calculate the curl of $\bar{A}$:
 
 $$
 \nabla \times \bar{A} = \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z} \right)\hat{i} + \left( \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x} \right)\hat{j} + \left( \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y} \right)\hat{k}
@@ -563,7 +563,7 @@ $$
 (\nabla \times \bar{V})_x = \frac{\partial^2 A_y}{\partial y \partial x} - \frac{\partial^2 A_x}{\partial y^2} - \frac{\partial^2 A_x}{\partial z^2} + \frac{\partial^2 A_z}{\partial z \partial x}
 $$
 
-We add and subtract $\frac{\partial^2 A_x}{\partial x^2}$ to the expression:
+We add and subtract $\frac{\partial^2 A\_x}{\partial x^2}$ to the expression:
 
 $$
 (\nabla \times \bar{V})_x = \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_y}{\partial y \partial x} + \frac{\partial^2 A_z}{\partial z \partial x} \right) - \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right)
@@ -621,7 +621,7 @@ $$
 \vec{\nabla}F = (2(4) - 3(-1) - 4)\hat{i} - 3(1)\hat{j} + 4(1)(2)\hat{k} = 7\hat{i} - 3\hat{j} + 8\hat{k}
 $$
 
-The equation of the tangent plane at $(x_0, y_0, z_0) = (1, -1, 2)$ is:
+The equation of the tangent plane at $(x\_0, y\_0, z\_0) = (1, -1, 2)$ is:
 
 $$
 7(x - 1) - 3(y - (-1)) + 8(z - 2) = 0
@@ -801,12 +801,18 @@ So the statement is true for $n=k+1$. The proof is complete.
 
 ---
 
-### Q5(c) What is rank of a matrix? Find the rank of $A = \begin{pmatrix}
+### Q5(c) What is rank of a matrix? Find the rank of 
+
+$$
+A = \begin{pmatrix}
 1 & -2 & 1 & -1 \\
 1 & 1 & -2 & 3 \\
 4 & 1 & -5 & 8 \\
 5 & -7 & 2 & -1
-\end{pmatrix}$. (04)
+\end{pmatrix}
+$$
+
+. (04)
 
 **Answer:**
 
@@ -828,9 +834,9 @@ A = \begin{pmatrix}
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 4R_1$
-*   $R_4 \to R_4 - 5R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 4R\_1$
+*   $R\_4 \to R\_4 - 5R\_1$
 
 This gives:
 
@@ -844,8 +850,8 @@ $$
 $$
 
 Now perform operations on rows 3 and 4:
-*   $R_3 \to R_3 - 3R_2$
-*   $R_4 \to R_4 - R_2$
+*   $R\_3 \to R\_3 - 3R\_2$
+*   $R\_4 \to R\_4 - R\_2$
 
 This gives:
 
@@ -891,8 +897,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -904,7 +910,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate row 3 using row 2 ($R_3 \to R_3 - 3R_2$):
+Now eliminate row 3 using row 2 ($R\_3 \to R\_3 - 3R\_2$):
 
 $$
 \begin{bmatrix}
@@ -1010,7 +1016,7 @@ $$
 \end{bmatrix}
 $$
 
-We swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+We swap row 1 and row 3 ($R\_1 \leftrightarrow R\_3$):
 
 $$
 \begin{bmatrix}
@@ -1021,8 +1027,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 3R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - 3R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -1034,7 +1040,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to 11R_3 - 5R_2$:
+Perform the operation $R\_3 \to 11R\_3 - 5R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1045,9 +1051,9 @@ $$
 $$
 
 By back substitution, we solve the system:
-*   From the third row: $-29x_3 = 0 \implies x_3 = 0$.
-*   From the second row: $11x_2 - 14(0) = 0 \implies x_2 = 0$.
-*   From the first row: $x_1 - 3(0) + 5(0) = 0 \implies x_1 = 0$.
+*   From the third row: $-29x\_3 = 0 \implies x\_3 = 0$.
+*   From the second row: $11x\_2 - 14(0) = 0 \implies x\_2 = 0$.
+*   From the first row: $x\_1 - 3(0) + 5(0) = 0 \implies x\_1 = 0$.
 
 So the system only has the trivial solution:
 
@@ -1057,11 +1063,17 @@ $$
 
 ---
 
-### Q7(a) Define eigen values and eigen vectors. Find the eigen values and associated eigen vectors of $B = \begin{pmatrix}
+### Q7(a) Define eigen values and eigen vectors. Find the eigen values and associated eigen vectors of 
+
+$$
+B = \begin{pmatrix}
 2 & 2 & 1 \\
 1 & 3 & 1 \\
 1 & 2 & 2
-\end{pmatrix}$. (06)
+\end{pmatrix}
+$$
+
+. (06)
 
 **Answer:**
 
@@ -1217,13 +1229,13 @@ $$
 \text{adj}(A - \lambda I) = B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0
 $$
 
-where $B_i$ are constant matrices of order $n$. We use the fundamental matrix relation:
+where $B\_i$ are constant matrices of order $n$. We use the fundamental matrix relation:
 
 $$
 (A - \lambda I) \text{adj}(A - \lambda I) = |A - \lambda I| I
 $$
 
-Let the characteristic polynomial be $|A - \lambda I| = c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n$. Substitute this and the adjoint expression:
+Let the characteristic polynomial be $|A - \lambda I| = c\_0 + c\_1 \lambda + \dots + (-1)^n \lambda^n$. Substitute this and the adjoint expression:
 
 $$
 (A - \lambda I)(B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0) = (c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n) I
@@ -1372,8 +1384,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
 
 This gives:
 
@@ -1385,7 +1397,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate row 3 using row 2 ($R_3 \to R_3 - 2R_2$):
+Now eliminate row 3 using row 2 ($R\_3 \to R\_3 - 2R\_2$):
 
 $$
 \begin{bmatrix}

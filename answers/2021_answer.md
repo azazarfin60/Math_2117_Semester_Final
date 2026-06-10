@@ -283,7 +283,7 @@ $$
 [\bar{\nabla} \times (\bar{\nabla} \times \bar{V})]_x = \frac{\partial^2 V_y}{\partial y \partial x} - \frac{\partial^2 V_x}{\partial y^2} - \frac{\partial^2 V_x}{\partial z^2} + \frac{\partial^2 V_z}{\partial z \partial x}
 $$
 
-Add and subtract the term $\frac{\partial^2 V_x}{\partial x^2}$:
+Add and subtract the term $\frac{\partial^2 V\_x}{\partial x^2}$:
 
 $$
 [\bar{\nabla} \times (\bar{\nabla} \times \bar{V})]_x = \left(\frac{\partial^2 V_x}{\partial x^2} + \frac{\partial^2 V_y}{\partial y \partial x} + \frac{\partial^2 V_z}{\partial z \partial x}\right) - \left(\frac{\partial^2 V_x}{\partial x^2} + \frac{\partial^2 V_x}{\partial y^2} + \frac{\partial^2 V_x}{\partial z^2}\right)
@@ -375,7 +375,7 @@ So the angle between the surfaces is $\cos^{-1}\left( \frac{8}{3\sqrt{21}} \righ
 
 ---
 
-### Q3(b) If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$. (04)
+### Q3(b) If $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$, evaluate $\int\_C \vec{A} \cdot d\vec{r}$ along the straight lines from $(0,0,0)$ to $(1, 0, 0)$ then to $(1, 1, 0)$, and then to $(1, 1, 1)$ along the paths $C$. (04)
 
 **Answer:**
 
@@ -387,7 +387,7 @@ $$
 
 We divide the path $C$ into three line segments:
 
-#### 1. Segment $C_1$: From $(0,0,0)$ to $(1,0,0)$
+#### 1. Segment $C\_1$: From $(0,0,0)$ to $(1,0,0)$
 
 On this segment, $y=0$ and $z=0$, which means $dy=0$ and $dz=0$. The variable $x$ goes from $0$ to $1$:
 
@@ -395,7 +395,7 @@ $$
 \int_{C_1} \vec{A} \cdot d\vec{r} = \int_{x=0}^1 (3x^2 + 0) dx = [x^3]_0^1 = 1
 $$
 
-#### 2. Segment $C_2$: From $(1,0,0)$ to $(1,1,0)$
+#### 2. Segment $C\_2$: From $(1,0,0)$ to $(1,1,0)$
 
 On this segment, $x=1$ and $z=0$, which means $dx=0$ and $dz=0$. The variable $y$ goes from $0$ to $1$:
 
@@ -403,7 +403,7 @@ $$
 \int_{C_2} \vec{A} \cdot d\vec{r} = \int_{y=0}^1 -14y(0) dy = 0
 $$
 
-#### 3. Segment $C_3$: From $(1,1,0)$ to $(1,1,1)$
+#### 3. Segment $C\_3$: From $(1,1,0)$ to $(1,1,1)$
 
 On this segment, $x=1$ and $y=1$, which means $dx=0$ and $dy=0$. The variable $z$ goes from $0$ to $1$:
 
@@ -421,7 +421,7 @@ So the value of the line integral is $\frac{23}{3}$.
 
 ---
 
-### Q3(c) Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate $\iiint_V \vec{F} dV$, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
+### Q3(c) Let $\vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}$. Evaluate $\iiint\_V \vec{F} dV$, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
 
 **Answer:**
 
@@ -501,7 +501,7 @@ $$
 
 ##### Proof of Part 1
 
-Let the region $R$ be bounded by the curves $y = y_1(x)$ (lower boundary) and $y = y_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
+Let the region $R$ be bounded by the curves $y = y\_1(x)$ (lower boundary) and $y = y\_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
 
 Evaluate the double integral on the right-hand side:
 
@@ -509,9 +509,9 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b \left[ \int_{y_1(x)}^{y_2(x)} \frac{\partial P}{\partial y} dy \right] dx = \int_a^b \left[ P(x, y_2(x)) - P(x, y_1(x)) \right] dx \quad \dots \text{(1)}
 $$
 
-Now evaluate the line integral $\oint_C P dx$. The closed boundary curve $C$ consists of two parts:
-*   Path $C_1$: Along the curve $y = y_1(x)$ from $x=a$ to $x=b$.
-*   Path $C_2$: Along the curve $y = y_2(x)$ from $x=b$ to $x=a$.
+Now evaluate the line integral $\oint\_C P dx$. The closed boundary curve $C$ consists of two parts:
+*   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
+*   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
 We calculate the line integral over each path:
 
@@ -533,7 +533,7 @@ $$
 
 ##### Proof of Part 2
 
-Let the region $R$ be bounded by the curves $x = x_1(y)$ (left boundary) and $x = x_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
+Let the region $R$ be bounded by the curves $x = x\_1(y)$ (left boundary) and $x = x\_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
 
 $$
 \oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy
@@ -594,14 +594,14 @@ $$
 #### 2. Evaluate Surface Integral
 
 The surface $S$ consists of three parts:
-*   **Bottom cap $S_1$:** $z=0$, $\hat{n} = -\hat{k}$. Since $z=0$, $\vec{A} \cdot \hat{n} = -z^2 = 0$.
-*   **Top cap $S_2$:** $z=3$, $\hat{n} = \hat{k}$. Here $\vec{A} \cdot \hat{n} = z^2 = 9$:
+*   **Bottom cap $S\_1$:** $z=0$, $\hat{n} = -\hat{k}$. Since $z=0$, $\vec{A} \cdot \hat{n} = -z^2 = 0$.
+*   **Top cap $S\_2$:** $z=3$, $\hat{n} = \hat{k}$. Here $\vec{A} \cdot \hat{n} = z^2 = 9$:
 
 $$
 \iint_{S_2} \vec{A} \cdot \hat{n} dS = 9 \times \text{Area}(S_2) = 9 \times \pi(2^2) = 36\pi
 $$
 
-*   **Curved side $S_3$:** $x^2 + y^2 = 4$, $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$. Calculate the dot product:
+*   **Curved side $S\_3$:** $x^2 + y^2 = 4$, $\hat{n} = \frac{x\hat{i} + y\hat{j}}{2}$. Calculate the dot product:
 
 $$
 \vec{A} \cdot \hat{n} = (4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{2} \right) = 2x^2 - y^3
@@ -613,7 +613,7 @@ $$
 \iint_{S_3} (2x^2 - y^3) dS = \int_0^3 \int_0^{2\pi} \left[ 8\cos^2\theta - 8\sin^3\theta \right] 2 d\theta dz = 6 \int_0^{2\pi} (8\cos^2\theta - 8\sin^3\theta) d\theta
 $$
 
-Since $\int_0^{2\pi} \cos^2\theta d\theta = \pi$ and $\int_0^{2\pi} \sin^3\theta d\theta = 0$:
+Since $\int\_0^{2\pi} \cos^2\theta d\theta = \pi$ and $\int\_0^{2\pi} \sin^3\theta d\theta = 0$:
 
 $$
 \iint_{S_3} \vec{A} \cdot \hat{n} dS = 6 [ 8\pi - 0 ] = 48\pi
@@ -716,7 +716,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+Swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{pmatrix}
@@ -728,9 +728,9 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 3R_1$
-*   $R_4 \to R_4 - 6R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 3R\_1$
+*   $R\_4 \to R\_4 - 6R\_1$
 
 This gives:
 
@@ -744,8 +744,8 @@ $$
 $$
 
 Apply operations:
-*   $R_3 \to 5R_3 - 4R_2$
-*   $R_4 \to 5R_4 - 9R_2$
+*   $R\_3 \to 5R\_3 - 4R\_2$
+*   $R\_4 \to 5R\_4 - 9R\_2$
 
 This gives:
 
@@ -758,7 +758,7 @@ $$
 \end{pmatrix}
 $$
 
-Simplify row 3 and row 4 ($R_3 \to \frac{1}{11}R_3$, $R_4 \to \frac{1}{11}R_4$):
+Simplify row 3 and row 4 ($R\_3 \to \frac{1}{11}R\_3$, $R\_4 \to \frac{1}{11}R\_4$):
 
 $$
 \begin{pmatrix}
@@ -769,7 +769,7 @@ $$
 \end{pmatrix}
 $$
 
-Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
+Subtract row 3 from row 4 ($R\_4 \to R\_4 - R\_3$):
 
 $$
 \begin{pmatrix}
@@ -789,9 +789,9 @@ $$
 #### Reduce to Canonical Form
 
 We apply column operations to clear the first row:
-*   $C_2 \to C_2 + C_1$
-*   $C_3 \to C_3 + 2C_1$
-*   $C_4 \to C_4 + 4C_1$
+*   $C\_2 \to C\_2 + C\_1$
+*   $C\_3 \to C\_3 + 2C\_1$
+*   $C\_4 \to C\_4 + 4C\_1$
 
 This gives:
 
@@ -804,7 +804,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 2 ($R_2 \to \frac{1}{5}R_2$):
+Scale row 2 ($R\_2 \to \frac{1}{5}R\_2$):
 
 $$
 \begin{pmatrix}
@@ -816,8 +816,8 @@ $$
 $$
 
 Clear the second row using column operations:
-*   $C_3 \to C_3 - \frac{3}{5}C_2$
-*   $C_4 \to C_4 - \frac{7}{5}C_2$
+*   $C\_3 \to C\_3 - \frac{3}{5}C\_2$
+*   $C\_4 \to C\_4 - \frac{7}{5}C\_2$
 
 This gives:
 
@@ -830,7 +830,7 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 3 ($R_3 \to \frac{1}{3}R_3$):
+Scale row 3 ($R\_3 \to \frac{1}{3}R\_3$):
 
 $$
 \begin{pmatrix}
@@ -841,7 +841,7 @@ $$
 \end{pmatrix}
 $$
 
-Clear the third column element ($C_4 \to C_4 - \frac{2}{3}C_3$):
+Clear the third column element ($C\_4 \to C\_4 - \frac{2}{3}C\_3$):
 
 $$
 \begin{pmatrix}
@@ -852,7 +852,7 @@ $$
 \end{pmatrix}
 $$
 
-This is the canonical form $[I_3 | 0]$:
+This is the canonical form $[I\_3 | 0]$:
 
 $$
 \begin{pmatrix}
@@ -886,7 +886,7 @@ $$
 \end{bmatrix}
 $$
 
-Swap row 1 and row 3 ($R_1 \leftrightarrow R_3$):
+Swap row 1 and row 3 ($R\_1 \leftrightarrow R\_3$):
 
 $$
 \begin{bmatrix}
@@ -897,8 +897,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -910,7 +910,7 @@ $$
 \end{bmatrix}
 $$
 
-Multiply row 2 by $-1/2$ ($R_2 \to -1/2 R_2$):
+Multiply row 2 by $-1/2$ ($R\_2 \to -1/2 R\_2$):
 
 $$
 \begin{bmatrix}
@@ -920,7 +920,7 @@ $$
 \end{bmatrix}
 $$
 
-Eliminate the third row element ($R_3 \to R_3 + 3R_2$):
+Eliminate the third row element ($R\_3 \to R\_3 + 3R\_2$):
 
 $$
 \begin{bmatrix}
@@ -930,7 +930,7 @@ $$
 \end{bmatrix}
 $$
 
-Multiply row 3 by $2/5$ ($R_3 \to 2/5 R_3$):
+Multiply row 3 by $2/5$ ($R\_3 \to 2/5 R\_3$):
 
 $$
 \begin{bmatrix}
@@ -940,7 +940,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_2 \to R_2 - \frac{3}{2}R_3$:
+Perform the operation $R\_2 \to R\_2 - \frac{3}{2}R\_3$:
 
 $$
 \begin{bmatrix}
@@ -950,7 +950,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 2R_3$:
+Perform the operation $R\_1 \to R\_1 - 2R\_3$:
 
 $$
 \begin{bmatrix}
@@ -960,7 +960,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_1 \to R_1 - 2R_2$:
+Perform the operation $R\_1 \to R\_1 - 2R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1022,7 +1022,7 @@ D = \begin{vmatrix}
 \end{vmatrix}
 $$
 
-Apply column operations ($C_2 \to C_2 - C_1$, $C_3 \to C_3 - C_1$):
+Apply column operations ($C\_2 \to C\_2 - C\_1$, $C\_3 \to C\_3 - C\_1$):
 
 $$
 D = (\lambda + 2) \begin{vmatrix}
@@ -1086,10 +1086,16 @@ This is a contradiction. So there is no solution when $\lambda = -2$.
 
 ---
 
-### Q7(a) Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix}
+### Q7(a) Find the eigenvalues and the corresponding eigen vectors of the matrix 
+
+$$
+A = \begin{bmatrix}
 2 & 3 \\
 1 & 4
-\end{bmatrix}$. (06)
+\end{bmatrix}
+$$
+
+. (06)
 
 **Answer:**
 
@@ -1268,7 +1274,7 @@ $$
 
 ---
 
-### Q8(a) Express $V=(1, -2, 5)$ in $\mathbb{R}^3$ as a linear combination of the vectors $U_1 = (1, 1, 1)$, $U_2 = (1, 2, 3)$ and $U_3 = (2, -1, 1)$. (04)
+### Q8(a) Express $V=(1, -2, 5)$ in $\mathbb{R}^3$ as a linear combination of the vectors $U\_1 = (1, 1, 1)$, $U\_2 = (1, 2, 3)$ and $U\_3 = (2, -1, 1)$. (04)
 
 **Answer:**
 
@@ -1303,8 +1309,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1316,7 +1322,7 @@ $$
 \end{bmatrix}
 $$
 
-Now perform the operation $R_3 \to R_3 - 2R_2$:
+Now perform the operation $R\_3 \to R\_3 - 2R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1327,9 +1333,9 @@ $$
 $$
 
 By back substitution, we solve the coefficients:
-*   From the third row: $5c_3 = 10 \implies c_3 = 2$.
-*   From the second row: $c_2 - 3(2) = -3 \implies c_2 = 3$.
-*   From the first row: $c_1 + 3 + 2(2) = 1 \implies c_1 = -6$.
+*   From the third row: $5c\_3 = 10 \implies c\_3 = 2$.
+*   From the second row: $c\_2 - 3(2) = -3 \implies c\_2 = 3$.
+*   From the first row: $c\_1 + 3 + 2(2) = 1 \implies c\_1 = -6$.
 
 So the linear combination is:
 
@@ -1355,9 +1361,9 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - 2R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - 2R\_1$
 
 This gives:
 
@@ -1371,8 +1377,8 @@ $$
 $$
 
 Apply operations:
-*   $R_3 \to R_3 - 3R_2$
-*   $R_4 \to R_4 - 4R_2$
+*   $R\_3 \to R\_3 - 3R\_2$
+*   $R\_4 \to R\_4 - 4R\_2$
 
 This gives:
 
@@ -1385,7 +1391,7 @@ $$
 \end{bmatrix}
 $$
 
-Subtract row 3 from row 4 ($R_4 \to R_4 - R_3$):
+Subtract row 3 from row 4 ($R\_4 \to R\_4 - R\_3$):
 
 $$
 \begin{bmatrix}
@@ -1436,7 +1442,7 @@ $$
 c_3 = 0 \quad \dots \text{(3)}
 $$
 
-Substitute $c_3 = 0$ from equation (3) into equations (1) and (2):
+Substitute $c\_3 = 0$ from equation (3) into equations (1) and (2):
 
 $$
 c_1 + c_2 = 0
@@ -1446,9 +1452,9 @@ $$
 c_1 - c_2 = 0
 $$
 
-Adding these equations gives $2c_1 = 0 \implies c_1 = 0$. This then gives $c_2 = 0$.
+Adding these equations gives $2c\_1 = 0 \implies c\_1 = 0$. This then gives $c\_2 = 0$.
 
-Since the only solution is $c_1 = c_2 = c_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
+Since the only solution is $c\_1 = c\_2 = c\_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
 
 ---
 

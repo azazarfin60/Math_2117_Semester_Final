@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Eigenvalues and Eig
 
 ---
 
-## Q1. Determine the characteristic roots of 
+## Q1 (04)
+
+Determine the characteristic roots of 
 
 $$
 \begin{pmatrix}
@@ -14,7 +16,7 @@ $$
 \end{pmatrix}
 $$
 
-. (04)
+.
 
 | | |
 |---|---|
@@ -59,7 +61,9 @@ So the characteristic roots (or eigenvalues) are $1$, $-4$, and $7$.
 
 ---
 
-## Q2. What are the eigen-values and eigen-vectors? Find them for the matrix 
+## Q2 (12)
+
+What are the eigen-values and eigen-vectors? Find them for the matrix 
 
 $$
 \begin{bmatrix}
@@ -69,7 +73,7 @@ $$
 \end{bmatrix}
 $$
 
-. (12)
+.
 
 | | |
 |---|---|
@@ -162,7 +166,7 @@ z
 $$
 
 We apply row operations:
-*   Swap $R_1 \leftrightarrow R_2$:
+*   Swap $R\_1 \leftrightarrow R\_2$:
 
 $$
 \begin{bmatrix}
@@ -172,8 +176,8 @@ $$
 \end{bmatrix}
 $$
 
-*   $R_2 \to R_2 + 3R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 + 3R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -185,7 +189,7 @@ $$
 \end{bmatrix}
 $$
 
-*   $R_3 \to R_3 + R_2$
+*   $R\_3 \to R\_3 + R\_2$
 *   Divide row 2 by $-4$:
 
 $$
@@ -341,7 +345,7 @@ $$
 
 We solve the system $(A - \lambda I)X = 0$ for each eigenvalue:
 
-##### Case 1: For $\lambda_1 = 1$
+##### Case 1: For $\lambda\_1 = 1$
 
 $$
 \begin{bmatrix}
@@ -375,7 +379,7 @@ X_1 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### Case 2: For $\lambda_2 = 3$
+##### Case 2: For $\lambda\_2 = 3$
 
 $$
 \begin{bmatrix}
@@ -415,7 +419,7 @@ X_2 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### Case 3: For $\lambda_3 = -4$
+##### Case 3: For $\lambda\_3 = -4$
 
 $$
 \begin{bmatrix}
@@ -457,11 +461,19 @@ $$
 
 ---
 
-## Q4. Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix}
+## Q4 (06)
+
+Find the eigen values and the corresponding eigen vectors for the matrix 
+
+$$
+A = \begin{bmatrix}
 1 & 1 & -2 \\
 -1 & 2 & 1 \\
 0 & 1 & -1
-\end{bmatrix}$. (06)
+\end{bmatrix}
+$$
+
+.
 
 | | |
 |---|---|
@@ -630,10 +642,18 @@ $$
 
 ---
 
-## Q5. Find the eigenvalues and the corresponding eigen vectors of the matrix $A = \begin{bmatrix}
+## Q5 (06)
+
+Find the eigenvalues and the corresponding eigen vectors of the matrix 
+
+$$
+A = \begin{bmatrix}
 2 & 3 \\
 1 & 4
-\end{bmatrix}$. (06)
+\end{bmatrix}
+$$
+
+.
 
 | | |
 |---|---|
@@ -784,7 +804,7 @@ z
 \end{bmatrix}
 $$
 
-Perform operations $R_2 \to R_2 + R_1$, $R_3 \to R_3 - R_1$:
+Perform operations $R\_2 \to R\_2 + R\_1$, $R\_3 \to R\_3 - R\_1$:
 
 $$
 \begin{bmatrix}
@@ -856,7 +876,7 @@ z
 \end{bmatrix}
 $$
 
-Subtract row 1 from row 2 ($R_2 \to R_2 - R_1$):
+Subtract row 1 from row 2 ($R\_2 \to R\_2 - R\_1$):
 
 $$
 \begin{bmatrix}
@@ -978,8 +998,8 @@ z
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1055,7 +1075,7 @@ z
 \end{bmatrix}
 $$
 
-We swap rows $R_1 \leftrightarrow R_2$:
+We swap rows $R\_1 \leftrightarrow R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1066,8 +1086,8 @@ $$
 $$
 
 We apply row operations:
-*   $R_2 \to R_2 + 3R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 + 3R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1079,7 +1099,7 @@ $$
 \end{bmatrix}
 $$
 
-We scale the second row ($R_2 \to -\frac{1}{2}R_2$):
+We scale the second row ($R\_2 \to -\frac{1}{2}R\_2$):
 
 $$
 \begin{bmatrix}
@@ -1089,7 +1109,7 @@ $$
 \end{bmatrix}
 $$
 
-We perform $R_3 \to R_3 - 2R_2$:
+We perform $R\_3 \to R\_3 - 2R\_2$:
 
 $$
 \begin{bmatrix}

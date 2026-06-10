@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Vector Identities**
 
 ---
 
-## Q1. If $\bar{A}$ is a constant vector, then prove that $\nabla(\bar{r} \cdot \bar{A}) = \bar{A}$. (03)
+## Q1 (03)
+
+If $\bar{A}$ is a constant vector, then prove that $\nabla(\bar{r} \cdot \bar{A}) = \bar{A}$.
 
 | | |
 |---|---|
@@ -45,7 +47,9 @@ This completes the proof.
 
 ---
 
-## Q2. Show that $\nabla \times (\nabla \times \bar{A}) = -\nabla^2\bar{A} + \nabla(\nabla \cdot \bar{A})$. (05)
+## Q2 (05)
+
+Show that $\nabla \times (\nabla \times \bar{A}) = -\nabla^2\bar{A} + \nabla(\nabla \cdot \bar{A})$.
 
 | | |
 |---|---|
@@ -55,7 +59,7 @@ This completes the proof.
 
 **Answer:**
 
-Let the vector be $\bar{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$. We calculate the curl of $\bar{A}$:
+Let the vector be $\bar{A} = A\_x\hat{i} + A\_y\hat{j} + A\_z\hat{k}$. We calculate the curl of $\bar{A}$:
 
 $$
 \nabla \times \bar{A} = \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z} \right)\hat{i} + \left( \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x} \right)\hat{j} + \left( \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y} \right)\hat{k}
@@ -77,7 +81,7 @@ $$
 (\nabla \times \bar{V})_x = \frac{\partial^2 A_y}{\partial y \partial x} - \frac{\partial^2 A_x}{\partial y^2} - \frac{\partial^2 A_x}{\partial z^2} + \frac{\partial^2 A_z}{\partial z \partial x}
 $$
 
-We add and subtract $\frac{\partial^2 A_x}{\partial x^2}$ to the expression:
+We add and subtract $\frac{\partial^2 A\_x}{\partial x^2}$ to the expression:
 
 $$
 (\nabla \times \bar{V})_x = \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_y}{\partial y \partial x} + \frac{\partial^2 A_z}{\partial z \partial x} \right) - \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right)
@@ -99,7 +103,9 @@ $$
 
 ---
 
-## Q3. Prove that $\nabla^2(1/r) = 0$. (04)
+## Q3 (04)
+
+Prove that $\nabla^2(1/r) = 0$.
 
 | | |
 |---|---|
@@ -166,7 +172,9 @@ This completes the proof.
 
 ---
 
-## Q4. Evaluate $\nabla(\vec{A} \times \vec{r})$ if $\nabla \times \vec{A} = 0$. (03)
+## Q4 (03)
+
+Evaluate $\nabla(\vec{A} \times \vec{r})$ if $\nabla \times \vec{A} = 0$.
 
 | | |
 |---|---|
@@ -221,7 +229,7 @@ $$
 
 We calculate the terms:
 *   $\nabla \cdot \vec{r} = 1 + 1 + 1 = 3$. So, $\vec{A}(\nabla \cdot \vec{r}) = 3\vec{A}$.
-*   $(\vec{A} \cdot \nabla)\vec{r} = \left( A_1 \frac{\partial}{\partial x} + A_2 \frac{\partial}{\partial y} + A_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}$.
+*   $(\vec{A} \cdot \nabla)\vec{r} = \left( A\_1 \frac{\partial}{\partial x} + A\_2 \frac{\partial}{\partial y} + A\_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}$.
 
 This gives:
 

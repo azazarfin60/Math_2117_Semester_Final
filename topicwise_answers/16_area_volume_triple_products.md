@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Area, Volume, and T
 
 ---
 
-## Q1. Find the volume of the parallelepiped whose edges are represented by the vector $\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}$, $\bar{B} = \hat{i} + 2\hat{j} - \hat{k}$ and $\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}$. (04)
+## Q1 (04)
+
+Find the volume of the parallelepiped whose edges are represented by the vector $\bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}$, $\bar{B} = \hat{i} + 2\hat{j} - \hat{k}$ and $\bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}$.
 
 | | |
 |---|---|
@@ -60,7 +62,9 @@ $$
 
 ---
 
-## Q2. Define triple product of vectors. Show that, $\bar{A} \cdot (\bar{B} \times \bar{C})$ is in absolute value equal to the volume of a parallelepiped with sides $\bar{A}$, $\bar{B}$ and $\bar{C}$. (04)
+## Q2 (04)
+
+Define triple product of vectors. Show that, $\bar{A} \cdot (\bar{B} \times \bar{C})$ is in absolute value equal to the volume of a parallelepiped with sides $\bar{A}$, $\bar{B}$ and $\bar{C}$.
 
 | | |
 |---|---|
@@ -107,7 +111,9 @@ The proof is complete.
 
 ---
 
-## Q3. Find the area of a triangle with vertices at $(3, -1, 2)$, $(1, -1, -3)$ and $(4, -3, 1)$. (04)
+## Q3 (04)
+
+Find the area of a triangle with vertices at $(3, -1, 2)$, $(1, -1, -3)$ and $(4, -3, 1)$.
 
 | | |
 |---|---|

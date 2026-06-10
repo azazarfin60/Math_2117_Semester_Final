@@ -12,7 +12,7 @@
 
 ## SECTION - A
 
-### Q1(a) What is the vector? Find a unit vector parallel to the resultant of vectors $\vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$, $\vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}$. (04)
+### Q1(a) What is the vector? Find a unit vector parallel to the resultant of vectors $\vec{r}\_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$, $\vec{r}\_2 = \hat{i} + 2\hat{j} + \hat{k}$. (04)
 
 **Answer:**
 
@@ -417,7 +417,7 @@ So the work done along this straight line is $\frac{13}{3}$.
 
 ---
 
-### Q4(a) Evaluate $\iint_S \bar{A} \cdot \hat{n} dS$ where, $\bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+### Q4(a) Evaluate $\iint\_S \bar{A} \cdot \hat{n} dS$ where, $\bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 
@@ -485,7 +485,7 @@ So the value of the surface integral is $90$.
 
 ---
 
-### Q4(b) Verify Green's theorem in the plane for $\oint_C (xy + y^2)dx + x^2dy$ where $C$ is a closed region bounded by $y = x$ and $y = x^2$. (06)
+### Q4(b) Verify Green's theorem in the plane for $\oint\_C (xy + y^2)dx + x^2dy$ where $C$ is a closed region bounded by $y = x$ and $y = x^2$. (06)
 
 **Answer:**
 
@@ -534,10 +534,10 @@ $$
 #### 2. Evaluate Line Integral
 
 The closed path $C$ has two parts:
-1.  Path $C_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
-2.  Path $C_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
+1.  Path $C\_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
+2.  Path $C\_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
 
-Evaluate along Path $C_1$:
+Evaluate along Path $C\_1$:
 
 $$
 \int_{C_1} (xy + y^2)dx + x^2dy = \int_0^1 \left[ (x^3 + x^4)dx + x^2(2x dx) \right] = \int_0^1 (3x^3 + x^4) dx
@@ -547,7 +547,7 @@ $$
 \int_{C_1} = \left[ \frac{3}{4}x^4 + \frac{x^5}{5} \right]_0^1 = \frac{3}{4} + \frac{1}{5} = \frac{19}{20}
 $$
 
-Evaluate along Path $C_2$:
+Evaluate along Path $C\_2$:
 
 $$
 \int_{C_2} (xy + y^2)dx + x^2dy = \int_1^0 \left[ (x^2 + x^2)dx + x^2 dx \right] = \int_1^0 3x^2 dx = \left[ x^3 \right]_1^0 = -1
@@ -577,7 +577,7 @@ $$
 c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}
 $$
 
-The transpose element $(C')_{ij}$ is defined as the $(j, i)$-th element of $C$:
+The transpose element $(C')\_{ij}$ is defined as the $(j, i)$-th element of $C$:
 
 $$
 (C')_{ij} = c_{ji} = \sum_{k=1}^n a_{jk} b_{ki}
@@ -589,13 +589,13 @@ $$
 (B'A')_{ij} = \sum_{k=1}^n (B')_{ik} (A')_{kj}
 $$
 
-Using the transpose definitions $(B')_{ik} = b_{ki}$ and $(A')_{kj} = a_{jk}$, we substitute:
+Using the transpose definitions $(B')\_{ik} = b\_{ki}$ and $(A')\_{kj} = a\_{jk}$, we substitute:
 
 $$
 (B'A')_{ij} = \sum_{k=1}^n b_{ki} a_{jk} = \sum_{k=1}^n a_{jk} b_{ki}
 $$
 
-Since $(AB)'_{ij} = (B'A')_{ij}$ for all indices, we get:
+Since $(AB)'\_{ij} = (B'A')\_{ij}$ for all indices, we get:
 
 $$
 (AB)' = B'A'
@@ -695,7 +695,7 @@ $$
 |A| = 1(\cos^2\theta - (-\sin^2\theta)) = \cos^2\theta + \sin^2\theta = 1
 $$
 
-Find the cofactors $C_{ij}$:
+Find the cofactors $C\_{ij}$:
 
 $$
 C_{11} = \cos\theta, \quad C_{12} = -\sin\theta, \quad C_{13} = 0
@@ -741,11 +741,17 @@ $$
 
 ---
 
-### Q6(a) What is the rank of a matrix? Find the rank of the matrix, $A = \begin{bmatrix}
+### Q6(a) What is the rank of a matrix? Find the rank of the matrix, 
+
+$$
+A = \begin{bmatrix}
 6 & 1 & 8 & 3 \\
 2 & 1 & 0 & 2 \\
 4 & -1 & -8 & -3
-\end{bmatrix}$. (05)
+\end{bmatrix}
+$$
+
+. (05)
 
 **Answer:**
 
@@ -765,7 +771,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-We swap row 1 and row 2 ($R_1 \leftrightarrow R_2$):
+We swap row 1 and row 2 ($R\_1 \leftrightarrow R\_2$):
 
 $$
 \begin{bmatrix}
@@ -776,8 +782,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 3R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to R\_2 - 3R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -789,7 +795,7 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R_3 \to 2R_3 - 3R_2$:
+Perform the operation $R\_3 \to 2R\_3 - 3R\_2$:
 
 $$
 \begin{bmatrix}
@@ -830,8 +836,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -843,7 +849,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate row 3 using row 2 ($R_3 \to R_3 - R_2$):
+Now eliminate row 3 using row 2 ($R\_3 \to R\_3 - R\_2$):
 
 $$
 \begin{bmatrix}
@@ -883,11 +889,17 @@ $$
 
 ---
 
-### Q7(a) Find the eigen values and the corresponding eigen vectors for the matrix $A = \begin{bmatrix}
+### Q7(a) Find the eigen values and the corresponding eigen vectors for the matrix 
+
+$$
+A = \begin{bmatrix}
 1 & 1 & -2 \\
 -1 & 2 & 1 \\
 0 & 1 & -1
-\end{bmatrix}$. (06)
+\end{bmatrix}
+$$
+
+. (06)
 
 **Answer:**
 
@@ -1149,7 +1161,7 @@ $$
 
 ---
 
-### Q8(a) Write the vector $v = (1, -2, 5)$ as a linear combination of the vectors $e_1 = (1, 1, 1)$, $e_2 = (1, 2, 3)$ and $e_3 = (2, -1, 1)$. (04)
+### Q8(a) Write the vector $v = (1, -2, 5)$ as a linear combination of the vectors $e\_1 = (1, 1, 1)$, $e\_2 = (1, 2, 3)$ and $e\_3 = (2, -1, 1)$. (04)
 
 **Answer:**
 
@@ -1184,8 +1196,8 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 - R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1197,7 +1209,7 @@ $$
 \end{bmatrix}
 $$
 
-Now perform the operation $R_3 \to R_3 - 2R_2$:
+Now perform the operation $R\_3 \to R\_3 - 2R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1208,9 +1220,9 @@ $$
 $$
 
 By back substitution, we solve the coefficients:
-*   From the third row: $5c_3 = 10 \implies c_3 = 2$.
-*   From the second row: $c_2 - 3(2) = -3 \implies c_2 = 3$.
-*   From the first row: $c_1 + 3 + 2(2) = 1 \implies c_1 = -6$.
+*   From the third row: $5c\_3 = 10 \implies c\_3 = 2$.
+*   From the second row: $c\_2 - 3(2) = -3 \implies c\_2 = 3$.
+*   From the first row: $c\_1 + 3 + 2(2) = 1 \implies c\_1 = -6$.
 
 So the linear combination is:
 
@@ -1250,7 +1262,7 @@ $$
 c_3 = 0 \quad \dots \text{(3)}
 $$
 
-Substitute $c_3 = 0$ from equation (3) into equations (1) and (2):
+Substitute $c\_3 = 0$ from equation (3) into equations (1) and (2):
 
 $$
 c_1 + c_2 = 0
@@ -1260,9 +1272,9 @@ $$
 c_1 - c_2 = 0
 $$
 
-Adding these equations gives $2c_1 = 0 \implies c_1 = 0$. This then gives $c_2 = 0$.
+Adding these equations gives $2c\_1 = 0 \implies c\_1 = 0$. This then gives $c\_2 = 0$.
 
-Since the only solution is $c_1 = c_2 = c_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
+Since the only solution is $c\_1 = c\_2 = c\_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
 
 ---
 
@@ -1306,9 +1318,9 @@ $$
 $$
 
 Apply row operations:
-*   $R_2 \to R_2 - 2R_1$
-*   $R_3 \to R_3 - R_1$
-*   $R_4 \to R_4 - 2R_1$
+*   $R\_2 \to R\_2 - 2R\_1$
+*   $R\_3 \to R\_3 - R\_1$
+*   $R\_4 \to R\_4 - 2R\_1$
 
 This gives:
 
@@ -1322,8 +1334,8 @@ $$
 $$
 
 Now perform operations on row 3 and row 4:
-*   $R_3 \to R_3 - 2R_2$
-*   $R_4 \to R_4 + R_2$
+*   $R\_3 \to R\_3 - 2R\_2$
+*   $R\_4 \to R\_4 + R\_2$
 
 This gives the echelon form:
 

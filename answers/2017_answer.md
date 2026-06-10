@@ -22,13 +22,13 @@ $$
 f_1(x, y, z) = x^2 + y^2 + z^2 - 9 = 0
 $$
 
-The gradient of $f_1$ gives the normal vector to this surface:
+The gradient of $f\_1$ gives the normal vector to this surface:
 
 $$
 \vec{\nabla}f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}
 $$
 
-At the point $P(2, -1, 2)$, the normal vector $\vec{n}_1$ is:
+At the point $P(2, -1, 2)$, the normal vector $\vec{n}\_1$ is:
 
 $$
 \vec{n}_1 = 2(2)\hat{i} + 2(-1)\hat{j} + 2(2)\hat{k} = 4\hat{i} - 2\hat{j} + 4\hat{k}
@@ -40,13 +40,13 @@ $$
 f_2(x, y, z) = x^2 + y^2 - z - 3 = 0
 $$
 
-The gradient of $f_2$ gives the normal vector to this surface:
+The gradient of $f\_2$ gives the normal vector to this surface:
 
 $$
 \vec{\nabla}f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}
 $$
 
-At the point $P(2, -1, 2)$, the normal vector $\vec{n}_2$ is:
+At the point $P(2, -1, 2)$, the normal vector $\vec{n}\_2$ is:
 
 $$
 \vec{n}_2 = 2(2)\hat{i} + 2(-1)\hat{j} - \hat{k} = 4\hat{i} - 2\hat{j} - \hat{k}
@@ -88,7 +88,7 @@ $$
 
 ---
 
-### Q1(b) If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
+### Q1(b) If $\vec{F} = 3xy\hat{i} - y^2\hat{j}$, then evaluate $\int\_C \vec{F} \cdot d\vec{r}$, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
 
 **Answer:**
 
@@ -202,7 +202,7 @@ So the directional derivative is $-\frac{20}{9}$.
 
 ---
 
-### Q2(a) If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate $\oint_C \vec{F} \cdot d\vec{r}$ around the curve $C$ of the following figure: (06)
+### Q2(a) If $\vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}$, then evaluate $\oint\_C \vec{F} \cdot d\vec{r}$ around the curve $C$ of the following figure: (06)
 
 > [!NOTE]
 > **Figure Description:** The curve $C$ is a closed loop in the first quadrant of the $xy$-plane. It is bounded by the parabolas $y = x^2$ and $y^2 = x$. The curves intersect at the points $(0,0)$ and $(1,1)$. The boundary is traversed in the counterclockwise direction.
@@ -270,10 +270,10 @@ $$
 #### Method 2: Direct Line Integration
 
 The boundary curve $C$ consists of two paths:
-1.  Path $C_1$: Along the parabola $y = x^2$ from $(0,0)$ to $(1,1)$. Here $dy = 2x dx$.
-2.  Path $C_2$: Along the parabola $y^2 = x$ from $(1,1)$ to $(0,0)$. We can write this as $x = y^2$ from $y = 1$ to $y = 0$. Here $dx = 2y dy$.
+1.  Path $C\_1$: Along the parabola $y = x^2$ from $(0,0)$ to $(1,1)$. Here $dy = 2x dx$.
+2.  Path $C\_2$: Along the parabola $y^2 = x$ from $(1,1)$ to $(0,0)$. We can write this as $x = y^2$ from $y = 1$ to $y = 0$. Here $dx = 2y dy$.
 
-Evaluate the integral along Path $C_1$:
+Evaluate the integral along Path $C\_1$:
 
 $$
 \int_{C_1} \vec{F} \cdot d\vec{r} = \int_0^1 \left[ (2x + x^4)dx + (3x^2 - 4x)(2x dx) \right] = \int_0^1 \left( 2x + x^4 + 6x^3 - 8x^2 \right) dx
@@ -287,7 +287,7 @@ $$
 \int_{C_1} \vec{F} \cdot d\vec{r} = \frac{30 + 6 + 45 - 80}{30} = \frac{1}{30}
 $$
 
-Evaluate the integral along Path $C_2$:
+Evaluate the integral along Path $C\_2$:
 
 $$
 \int_{C_2} \vec{F} \cdot d\vec{r} = \int_1^0 \left[ (2y^2 + y^2)(2ydy) + (3y - 4y^2)dy \right] = \int_1^0 \left( 6y^3 + 3y - 4y^2 \right) dy
@@ -307,7 +307,7 @@ Both methods yield the same result of $-\frac{49}{30}$.
 
 ---
 
-### Q2(b) Evaluate $\iint_S \vec{A} \cdot \hat{n} dS$, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+### Q2(b) Evaluate $\iint\_S \vec{A} \cdot \hat{n} dS$, where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 
@@ -409,7 +409,7 @@ $$
 
 ##### Proof of Part 1
 
-Let the region $R$ be bounded by the curves $y = y_1(x)$ (lower boundary) and $y = y_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
+Let the region $R$ be bounded by the curves $y = y\_1(x)$ (lower boundary) and $y = y\_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
 
 Evaluate the double integral on the right-hand side:
 
@@ -417,9 +417,9 @@ $$
 \iint_R \frac{\partial P}{\partial y} dx dy = \int_a^b \left[ \int_{y_1(x)}^{y_2(x)} \frac{\partial P}{\partial y} dy \right] dx = \int_a^b \left[ P(x, y_2(x)) - P(x, y_1(x)) \right] dx \quad \dots \text{(1)}
 $$
 
-Now evaluate the line integral $\oint_C P dx$. The closed boundary curve $C$ consists of two parts:
-*   Path $C_1$: Along the curve $y = y_1(x)$ from $x=a$ to $x=b$.
-*   Path $C_2$: Along the curve $y = y_2(x)$ from $x=b$ to $x=a$.
+Now evaluate the line integral $\oint\_C P dx$. The closed boundary curve $C$ consists of two parts:
+*   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
+*   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
 We calculate the line integral over each path:
 
@@ -441,7 +441,7 @@ $$
 
 ##### Proof of Part 2
 
-Let the region $R$ be bounded by the curves $x = x_1(y)$ (left boundary) and $x = x_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
+Let the region $R$ be bounded by the curves $x = x\_1(y)$ (left boundary) and $x = x\_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
 
 $$
 \oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy
@@ -457,7 +457,7 @@ The proof is complete.
 
 ---
 
-### Q3(b) Evaluate $\oint_C (y - \sin x)dx + \cos y dy$ where $C$ is the triangle of the adjoining figure: (06)
+### Q3(b) Evaluate $\oint\_C (y - \sin x)dx + \cos y dy$ where $C$ is the triangle of the adjoining figure: (06)
 
 > [!NOTE]
 > **Figure Description:** The curve $C$ is a triangle in the $xy$-plane with vertices at $(0,0)$, $(\pi/2, 0)$, and $(\pi/2, 1)$. The boundary is traversed in the counterclockwise direction.
@@ -484,7 +484,7 @@ $$
 \oint_C (P dx + Q dy) = \iint_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \iint_R (0 - 1) dA = -\iint_R dA
 $$
 
-The integral $\iint_R dA$ is simply the area of the triangular region $R$:
+The integral $\iint\_R dA$ is simply the area of the triangular region $R$:
 
 $$
 \text{Area}(R) = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times \frac{\pi}{2} \times 1 = \frac{\pi}{4}
@@ -499,23 +499,23 @@ $$
 #### Method 2: Direct Line Integration
 
 The boundary curve $C$ consists of three straight paths:
-1.  Path $C_1$: Along the x-axis ($y = 0$, $dy = 0$) from $(0,0)$ to $(\pi/2, 0)$.
-2.  Path $C_2$: Along the vertical line $x = \pi/2$ ($dx = 0$) from $(\pi/2, 0)$ to $(\pi/2, 1)$.
-3.  Path $C_3$: Along the line $y = \frac{2}{\pi}x$ (or $x = \frac{\pi}{2}y$, $dx = \frac{\pi}{2}dy$) from $(\pi/2, 1)$ to $(0,0)$.
+1.  Path $C\_1$: Along the x-axis ($y = 0$, $dy = 0$) from $(0,0)$ to $(\pi/2, 0)$.
+2.  Path $C\_2$: Along the vertical line $x = \pi/2$ ($dx = 0$) from $(\pi/2, 0)$ to $(\pi/2, 1)$.
+3.  Path $C\_3$: Along the line $y = \frac{2}{\pi}x$ (or $x = \frac{\pi}{2}y$, $dx = \frac{\pi}{2}dy$) from $(\pi/2, 1)$ to $(0,0)$.
 
-Evaluate the integral along Path $C_1$:
+Evaluate the integral along Path $C\_1$:
 
 $$
 \int_{C_1} (y - \sin x)dx + \cos y dy = \int_0^{\pi/2} (0 - \sin x) dx = \left[ \cos x \right]_0^{\pi/2} = \cos\left(\frac{\pi}{2}\right) - \cos(0) = 0 - 1 = -1
 $$
 
-Evaluate the integral along Path $C_2$:
+Evaluate the integral along Path $C\_2$:
 
 $$
 \int_{C_2} (y - \sin x)dx + \cos y dy = \int_0^1 \cos y dy = \left[ \sin y \right]_0^1 = \sin(1)
 $$
 
-Evaluate the integral along Path $C_3$:
+Evaluate the integral along Path $C\_3$:
 
 Here we integrate with respect to $y$ from $y = 1$ to $y = 0$:
 
@@ -716,14 +716,20 @@ So we have shown that $(-k)u = k(-u) = -ku$.
 
 ## SECTION - B
 
-### Q5(a) If $A_\alpha = \begin{pmatrix}
+### Q5(a) If 
+
+$$
+A_\alpha = \begin{pmatrix}
 \cos\alpha & \sin\alpha \\
 -\sin\alpha & \cos\alpha
-\end{pmatrix}$, then show that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$. (03)
+\end{pmatrix}
+$$
+
+, then show that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$. (03)
 
 **Answer:**
 
-Let us multiply the two matrices $A_\alpha$ and $A_\beta$:
+Let us multiply the two matrices $A\_\alpha$ and $A\_\beta$:
 
 $$
 A_\alpha \cdot A_\beta = \begin{pmatrix}
@@ -769,7 +775,7 @@ $$
 A_{\alpha+\beta} = A_{\beta+\alpha} = A_\beta \cdot A_\alpha
 $$
 
-So we have shown that $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$.
+So we have shown that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$.
 
 ---
 
@@ -805,7 +811,7 @@ $$
 
 Since the determinant is not zero, the inverse exists.
 
-Next we find the cofactor elements $C_{ij}$ of the matrix:
+Next we find the cofactor elements $C\_{ij}$ of the matrix:
 
 $$
 C_{11} = +(2-3) = -1, \quad C_{12} = -(1-9) = 8, \quad C_{13} = +(1-6) = -5
@@ -937,7 +943,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-We swap the first and second rows ($R_1 \leftrightarrow R_2$) to place a non-zero leading entry in the first row:
+We swap the first and second rows ($R\_1 \leftrightarrow R\_2$) to place a non-zero leading entry in the first row:
 
 $$
 \begin{bmatrix}
@@ -948,9 +954,9 @@ $$
 \end{bmatrix}
 $$
 
-Now we perform row operations to make the entries below the leading entry of $R_1$ zero:
-*   $R_3 \to R_3 - 2R_1$
-*   $R_4 \to R_4 - R_1$
+Now we perform row operations to make the entries below the leading entry of $R\_1$ zero:
+*   $R\_3 \to R\_3 - 2R\_1$
+*   $R\_4 \to R\_4 - R\_1$
 
 This gives:
 
@@ -963,9 +969,9 @@ $$
 \end{bmatrix}
 $$
 
-Next we make the entries below the leading entry of $R_2$ zero:
-*   $R_3 \to R_3 + R_2$
-*   $R_4 \to R_4 + R_2$
+Next we make the entries below the leading entry of $R\_2$ zero:
+*   $R\_3 \to R\_3 + R\_2$
+*   $R\_4 \to R\_4 + R\_2$
 
 This gives:
 
@@ -978,7 +984,7 @@ $$
 \end{bmatrix}
 $$
 
-Now eliminate the last entry in row 4 using row 3 ($R_4 \to R_4 - R_3$):
+Now eliminate the last entry in row 4 using row 3 ($R\_4 \to R\_4 - R\_3$):
 
 $$
 \begin{bmatrix}
@@ -1033,8 +1039,8 @@ $$
 $$
 
 We perform row operations to reduce it:
-*   $R_2 \to 2R_2 - 3R_1$
-*   $R_3 \to R_3 - 2R_1$
+*   $R\_2 \to 2R\_2 - 3R\_1$
+*   $R\_3 \to R\_3 - 2R\_1$
 
 This gives:
 
@@ -1056,7 +1062,7 @@ $$
 \end{bmatrix}
 $$
 
-Now perform row operation $R_3 \to 4R_3 - 7R_2$:
+Now perform row operation $R\_3 \to 4R\_3 - 7R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1201,7 +1207,7 @@ z
 $$
 
 We apply row operations:
-*   Swap $R_1 \leftrightarrow R_2$:
+*   Swap $R\_1 \leftrightarrow R\_2$:
 
 $$
 \begin{bmatrix}
@@ -1211,8 +1217,8 @@ $$
 \end{bmatrix}
 $$
 
-*   $R_2 \to R_2 + 3R_1$
-*   $R_3 \to R_3 - R_1$
+*   $R\_2 \to R\_2 + 3R\_1$
+*   $R\_3 \to R\_3 - R\_1$
 
 This gives:
 
@@ -1224,7 +1230,7 @@ $$
 \end{bmatrix}
 $$
 
-*   $R_3 \to R_3 + R_2$
+*   $R\_3 \to R\_3 + R\_2$
 *   Divide row 2 by $-4$:
 
 $$
@@ -1315,19 +1321,31 @@ $$
 
 ---
 
-### Q8 Diagonalize the matrix $A = \begin{bmatrix}
+### Q8 Diagonalize the matrix 
+
+$$
+A = \begin{bmatrix}
 1 & 1 \\
 0 & 1
-\end{bmatrix}$. Hence evaluate $e^A$, and then solve $\frac{dx_1}{dt} = x_2$, $\frac{dx_2}{dt} = x_1$. (12)
+\end{bmatrix}
+$$
+
+. Hence evaluate $e^A$, and then solve $\frac{dx\_1}{dt} = x\_2$, $\frac{dx\_2}{dt} = x\_1$. (12)
 
 **Answer:**
 
 #### 1. Diagonalization check
 
-Let $A = \begin{bmatrix}
+Let 
+
+$$
+A = \begin{bmatrix}
 1 & 1 \\
 0 & 1
-\end{bmatrix}$. Its eigenvalues are the diagonal entries:
+\end{bmatrix}
+$$
+
+. Its eigenvalues are the diagonal entries:
 
 $$
 \lambda_1 = 1, \quad \lambda_2 = 1
@@ -1385,7 +1403,10 @@ $$
 e^A = e^{I + B} = e^I \cdot e^B = e \cdot e^B
 $$
 
-Note that $B^2 = \begin{bmatrix}
+Note that 
+
+$$
+B^2 = \begin{bmatrix}
 0 & 1 \\
 0 & 0
 \end{bmatrix} \begin{bmatrix}
@@ -1394,7 +1415,10 @@ Note that $B^2 = \begin{bmatrix}
 \end{bmatrix} = \begin{bmatrix}
 0 & 0 \\
 0 & 0
-\end{bmatrix}$. So $B^n = 0$ for all $n \geq 2$.
+\end{bmatrix}
+$$
+
+. So $B^n = 0$ for all $n \geq 2$.
 
 Using the series definition for $e^B$:
 
@@ -1435,13 +1459,13 @@ $$
 \frac{d^2x_1}{dt^2} = \frac{dx_2}{dt} = x_1 \implies \frac{d^2x_1}{dt^2} - x_1 = 0
 $$
 
-The characteristic equation is $r^2 - 1 = 0$, which gives $r = \pm 1$. So the general solution for $x_1(t)$ is:
+The characteristic equation is $r^2 - 1 = 0$, which gives $r = \pm 1$. So the general solution for $x\_1(t)$ is:
 
 $$
 x_1(t) = C_1 e^t + C_2 e^{-t}
 $$
 
-Then we find $x_2(t)$ using the first relation:
+Then we find $x\_2(t)$ using the first relation:
 
 $$
 x_2(t) = \frac{dx_1}{dt} = C_1 e^t - C_2 e^{-t}
@@ -1498,7 +1522,7 @@ $$
 x_2(t) = C_2 e^t
 $$
 
-where $C_1 = x_1(0)$ and $C_2 = x_2(0)$.
+where $C\_1 = x\_1(0)$ and $C\_2 = x\_2(0)$.
 
 ---
 

@@ -35,13 +35,13 @@ $$
 \text{adj}(A - \lambda I) = B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0
 $$
 
-where $B_i$ are constant matrices of order $n$. We use the fundamental matrix relation:
+where $B\_i$ are constant matrices of order $n$. We use the fundamental matrix relation:
 
 $$
 (A - \lambda I) \text{adj}(A - \lambda I) = |A - \lambda I| I
 $$
 
-Let the characteristic polynomial be $|A - \lambda I| = c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n$. Substitute this and the adjoint expression:
+Let the characteristic polynomial be $|A - \lambda I| = c\_0 + c\_1 \lambda + \dots + (-1)^n \lambda^n$. Substitute this and the adjoint expression:
 
 $$
 (A - \lambda I)(B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0) = (c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n) I
@@ -115,11 +115,19 @@ So $p(A) = 0$. The theorem is proven.
 
 ---
 
-## Q2. Verify Cayley-Hamilton's theorem for $A = \begin{pmatrix}
+## Q2 (06)
+
+Verify Cayley-Hamilton's theorem for 
+
+$$
+A = \begin{pmatrix}
 2 & -1 & 1 \\
 -1 & 2 & -1 \\
 1 & -1 & 2
-\end{pmatrix}$ and hence find $A^{-1}$. (06)
+\end{pmatrix}
+$$
+
+ and hence find $A^{-1}$.
 
 | | |
 |---|---|

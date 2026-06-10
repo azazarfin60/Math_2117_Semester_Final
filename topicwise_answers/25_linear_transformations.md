@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Linear Transformati
 
 ---
 
-## Q1. Define Kernel and image of a linear mapping. Let $F : V \rightarrow U$ be a linear mapping. Show that the Kernel of $F$ is a subspace of $V$ and the image of $F$ is a subspace of $U$. (06)
+## Q1 (06)
+
+Define Kernel and image of a linear mapping. Let $F : V \rightarrow U$ be a linear mapping. Show that the Kernel of $F$ is a subspace of $V$ and the image of $F$ is a subspace of $U$.
 
 | | |
 |---|---|
@@ -37,13 +39,13 @@ $$
 F(0_V) = 0_U \implies 0_V \in \text{Ker}(F)
 $$
 
-2.  **Closure under Addition:** Let $v_1, v_2 \in \text{Ker}(F)$. Then $F(v_1) = 0_U$ and $F(v_2) = 0_U$.
+2.  **Closure under Addition:** Let $v\_1, v\_2 \in \text{Ker}(F)$. Then $F(v\_1) = 0\_U$ and $F(v\_2) = 0\_U$.
 
 $$
 F(v_1 + v_2) = F(v_1) + F(v_2) = 0_U + 0_U = 0_U \implies v_1 + v_2 \in \text{Ker}(F)
 $$
 
-3.  **Closure under Scalar Multiplication:** Let $v \in \text{Ker}(F)$ and let $k$ be a scalar in the field. Then $F(v) = 0_U$.
+3.  **Closure under Scalar Multiplication:** Let $v \in \text{Ker}(F)$ and let $k$ be a scalar in the field. Then $F(v) = 0\_U$.
 
 $$
 F(k v) = k F(v) = k (0_U) = 0_U \implies k v \in \text{Ker}(F)
@@ -55,19 +57,19 @@ Since all three properties are satisfied, $\text{Ker}(F)$ is a subspace of $V$.
 
 To show that $\text{Im}(F)$ is a subspace of $U$, we verify the three properties:
 
-1.  **Non-emptiness / Zero Vector:** Since $F(0_V) = 0_U$, the zero vector $0_U$ has a pre-image in $V$:
+1.  **Non-emptiness / Zero Vector:** Since $F(0\_V) = 0\_U$, the zero vector $0\_U$ has a pre-image in $V$:
 
 $$
 0_U \in \text{Im}(F)
 $$
 
-2.  **Closure under Addition:** Let $u_1, u_2 \in \text{Im}(F)$. Then there exist $v_1, v_2 \in V$ such that $F(v_1) = u_1$ and $F(v_2) = u_2$.
+2.  **Closure under Addition:** Let $u\_1, u\_2 \in \text{Im}(F)$. Then there exist $v\_1, v\_2 \in V$ such that $F(v\_1) = u\_1$ and $F(v\_2) = u\_2$.
 
 $$
 u_1 + u_2 = F(v_1) + F(v_2) = F(v_1 + v_2)
 $$
 
-Since $v_1 + v_2 \in V$ (as $V$ is a vector space), $u_1 + u_2$ is the image of $v_1 + v_2$, so:
+Since $v\_1 + v\_2 \in V$ (as $V$ is a vector space), $u\_1 + u\_2$ is the image of $v\_1 + v\_2$, so:
 
 $$
 u_1 + u_2 \in \text{Im}(F)
@@ -89,7 +91,9 @@ Since all three properties are satisfied, $\text{Im}(F)$ is a subspace of $U$.
 
 ---
 
-## Q2. Identify that the following mappings $F$ are linear or not linear: (04)
+## Q2 (04)
+
+Identify that the following mappings $F$ are linear or not linear:
 
 | | |
 |---|---|
@@ -105,7 +109,7 @@ Since all three properties are satisfied, $\text{Im}(F)$ is a subspace of $U$.
 
 #### (i) Mapping $F(x, y, z) = 2x - 3y + 4z$
 
-Let $u = (x_1, y_1, z_1)$ and $v = (x_2, y_2, z_2)$ be vectors in $\mathbb{R}^3$.
+Let $u = (x\_1, y\_1, z\_1)$ and $v = (x\_2, y\_2, z\_2)$ be vectors in $\mathbb{R}^3$.
 *   **Check Addition:**
 
 $$

@@ -4,7 +4,9 @@ This file contains the organized questions and answers for **Curvature and Torsi
 
 ---
 
-## Q1. For the space curve $x = t, y = t^2, z = \frac{2}{3}t^3$, find the curvature $K$ and the torsion $T$. (05)
+## Q1 (05)
+
+For the space curve $x = t, y = t^2, z = \frac{2}{3}t^3$, find the curvature $K$ and the torsion $T$.
 
 | | |
 |---|---|
