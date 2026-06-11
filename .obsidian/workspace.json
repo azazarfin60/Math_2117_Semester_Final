@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
+                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.02_system_of_linear_equations"
+              "title": "03.LinearAlgebra"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
+                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1.02_system_of_linear_equations"
+              "title": "Backlinks for 03.LinearAlgebra"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
+                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 1.02_system_of_linear_equations"
+              "title": "Outgoing links from 03.LinearAlgebra"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "topicwise_answers/1.02_system_of_linear_equations.md",
+                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1.02_system_of_linear_equations"
+              "title": "Outline of 03.LinearAlgebra"
             }
           }
         ]
@@ -198,41 +198,49 @@
       "bases:Create new base": false
     }
   },
-  "active": "fe0bf55f9e624f56",
+  "active": "3ae7ba81d6a5152b",
   "lastOpenFiles": [
+    "classnote_combined_and_sorted/02.Vector.md",
+    "classnote_combined_and_sorted/01.Matrix.md",
+    "Math_class_note_by_Arif/classnote_09_A.md",
+    "classnote_combined_and_sorted/03.LinearAlgebra.md",
+    "classnote_combined_and_sorted",
+    "Math_class_note_by_Arif/classnote_05_A.md",
+    "Math_class_note_by_Arif/classnote_02_A.md",
+    "Math_class_note_by_Fahad/classnote_12_F.md",
+    "Math_class_note_by_Fahad/classnote_11_F.md",
+    "Math_class_note_by_Fahad/classnote_10_F.md",
+    "Math_class_note_by_Fahad/classnote_09_F.md",
+    "Math_class_note_by_Fahad/classnote_08_F.md",
+    "Math_class_note_by_Fahad/classnote_07_F.md",
+    "Math_class_note_by_Fahad/classnote_06_F.md",
+    "Math_class_note_by_Fahad/classnote_05_F.md",
+    "Math_class_note_by_Fahad/classnote_04_F.md",
+    "Math_class_note_by_Fahad/classnote_03_F.md",
+    "Math_class_note_by_Fahad/classnote_02_F.md",
+    "Math_class_note_by_Fahad/classnote_01_F.md",
+    "Math_class_note_by_Arif/classnote_08_A.md",
+    "Math_class_note_by_Arif/classnote_07_A.md",
+    "Math_class_note_by_Arif/classnote_06_A.md",
+    "Math_class_note_by_Arif/classnote_04_A.md",
+    "Math_class_note_by_Arif/classnote_03_A.md",
+    "Math_class_note_by_Arif/classnote_01_A.md",
+    "topicwise_answers/1.02_system_of_linear_equations.md",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-082.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-081.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-080.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-079.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-078.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-077.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-076.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-075.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-074.png",
+    "Math_class_note_by_Arif/Math_class_note_by_Arif-072.png",
+    "Math_class_note_by_Arif",
+    "Math_class_note_by_Fahad",
     "analysis_report.md",
-    "math_fix_guideline.md",
-    "topicwise_answers/1.01_eigenvalues_eigenvectors.md",
-    "topicwise_answers/00-index.md",
-    "Prev._Year_Questions/2023.md",
-    "topicwise_answers/13_linear_dependence_independence.md",
-    "topicwise_answers/3.05_linear_transformations.md",
-    "topicwise_answers/3.04_linear_combination.md",
-    "topicwise_answers/3.03_linear_dependence_independence.md",
-    "topicwise_answers/3.02_basis_and_dimension.md",
-    "topicwise_answers/3.01_vector_space_subspace_direct_sum.md",
-    "topicwise_answers/2.13_curvature_and_torsion.md",
-    "topicwise_answers/2.12_volume_integrals.md",
-    "topicwise_answers/2.11_surface_integrals.md",
-    "topicwise_answers/2.10_stokes_theorem.md",
-    "topicwise_answers/2.09_divergence_theorem.md",
-    "topicwise_answers/2.08_vector_identities.md",
-    "topicwise_answers/2.07_velocity_acceleration_particle_motion.md",
-    "topicwise_answers/2.06_area_volume_triple_products.md",
-    "topicwise_answers/2.05_vector_basics.md",
-    "topicwise_answers/2.04_irrotational_conservative_fields.md",
-    "topicwise_answers/2.03_line_integrals.md",
-    "topicwise_answers/2.02_gradient_and_directional_derivative.md",
-    "topicwise_answers/2.01_greens_theorem.md",
-    "topicwise_answers/1.07_matrix_ode_and_diagonalization.md",
-    "topicwise_answers/1.06_matrix_types_and_properties.md",
     "topicwise_answers",
     "dup_analysis.txt",
-    "CT_Questions/MathMatrixCT1.jpg",
-    "CT_Questions/VectorCT2.jpg",
-    "CT_Questions/CT2.jpg",
-    "CT_Questions/MathLinearCT1.jpg",
-    "CT_Questions/VectorCT1.jpg",
     "CT_Questions",
     "answers"
   ]
