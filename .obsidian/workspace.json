@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
+                "file": "Vector_Analysis_Book/04.gradient_divergence_curl.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03.LinearAlgebra"
+              "title": "04.gradient_divergence_curl"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
+                "file": "Vector_Analysis_Book/04.gradient_divergence_curl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 03.LinearAlgebra"
+              "title": "Backlinks for 04.gradient_divergence_curl"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
+                "file": "Vector_Analysis_Book/04.gradient_divergence_curl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 03.LinearAlgebra"
+              "title": "Outgoing links from 04.gradient_divergence_curl"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classnote_combined_and_sorted/03.LinearAlgebra.md",
+                "file": "Vector_Analysis_Book/04.gradient_divergence_curl.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 03.LinearAlgebra"
+              "title": "Outline of 04.gradient_divergence_curl"
             }
           }
         ]
@@ -200,10 +200,27 @@
   },
   "active": "3ae7ba81d6a5152b",
   "lastOpenFiles": [
+    "Vector_Analysis_Book/03.vector_differentiation.md",
+    "Vector_Analysis_Book/02.dot_and_cross_product.md",
+    "Vector_Analysis_Book/01.vectors_and_scalars.md",
+    "Vector_Analysis_Book/05.vector_integration.md",
+    "Vector_Analysis_Book/06.divergence_stokes_integral_theorems.md",
+    "Vector_Analysis_Book/04.gradient_divergence_curl.md",
+    "classnote_combined_and_sorted/03.LinearAlgebra.md",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-141.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-140.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-139.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-138.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-137.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-136.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-135.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-134.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-133.png",
+    "Vector_Analysis_Book/Schaum_Vector_Analysis_Book-132.png",
+    "Vector_Analysis_Book",
     "classnote_combined_and_sorted/02.Vector.md",
     "classnote_combined_and_sorted/01.Matrix.md",
     "Math_class_note_by_Arif/classnote_09_A.md",
-    "classnote_combined_and_sorted/03.LinearAlgebra.md",
     "classnote_combined_and_sorted",
     "Math_class_note_by_Arif/classnote_05_A.md",
     "Math_class_note_by_Arif/classnote_02_A.md",
@@ -221,24 +238,8 @@
     "Math_class_note_by_Fahad/classnote_01_F.md",
     "Math_class_note_by_Arif/classnote_08_A.md",
     "Math_class_note_by_Arif/classnote_07_A.md",
-    "Math_class_note_by_Arif/classnote_06_A.md",
-    "Math_class_note_by_Arif/classnote_04_A.md",
-    "Math_class_note_by_Arif/classnote_03_A.md",
-    "Math_class_note_by_Arif/classnote_01_A.md",
-    "topicwise_answers/1.02_system_of_linear_equations.md",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-082.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-081.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-080.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-079.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-078.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-077.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-076.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-075.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-074.png",
-    "Math_class_note_by_Arif/Math_class_note_by_Arif-072.png",
     "Math_class_note_by_Arif",
     "Math_class_note_by_Fahad",
-    "analysis_report.md",
     "topicwise_answers",
     "dup_analysis.txt",
     "CT_Questions",

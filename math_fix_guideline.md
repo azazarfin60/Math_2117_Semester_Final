@@ -15,14 +15,14 @@ Placing complex LaTeX expressions (such as vectors, integrals, or fractions) dir
 - **Standardization:** Headings were rewritten to clean, plain-text titles containing only the question number and marks (e.g., `## Q1 (04)`).
 - **Relocation:** The actual mathematical questions were moved to standard paragraph text immediately below the heading. 
 
-## 2. Subscript / Italics Conflict in Inline Math
+## 2. Subscripts inside Math Blocks
 **The Problem:**
-Markdown parsers treat underscores `_` as indicators for italics (e.g., `_text_` becomes *text*). When underscores were used for subscripts inside inline math blocks (e.g., `$A_1$`), the parser occasionally hijacked them, breaking the math and rendering corrupted text like `A{1}` instead of $A_1$.
+Escaping underscores as `\_` inside mathematical equations (both inline `$ ... $` and block math `$$ ... $$`) causes LaTeX engines (like MathJax/KaTeX) to render them as literal underscore characters (e.g. $A_1$ displaying with a visible underscore `A_1`), rather than subscripts.
 
 **The Fix:**
-- **Escaping:** All underscores inside inline math blocks (`$ ... $`) were escaped using a backslash to become `\_`. 
-- **Result:** This bypasses the Markdown parser, ensuring the expression is safely handed off to MathJax/KaTeX, which accurately renders `$A\_1$` as a proper subscript.
-- *Note:* Display block math (`$$ ... $$`) is inherently immune to this issue in most viewers, so underscores were left as `_` inside blocks.
+- **Unescaped Standard Subscripts:** Always use standard LaTeX subscript notation `_` (e.g., `$A_1$`, `$$ A_1 $$`) inside math environments.
+- **Italics Conflict resolution:** In modern Markdown editors (like VS Code or Obsidian), math blocks are parsed as math and are inherently immune to the italics conflict. If an italics conflict occurs in other environments due to multiple underscores, wrap the expressions in block math or ensure they are isolated from standard Markdown italics indicators.
+
 
 ## 3. Multi-line Inline Matrices
 **The Problem:**
@@ -55,7 +55,7 @@ This was the most visually jarring bug. When a long inline vector equation (e.g.
 If you add new questions or answers to the repository, please adhere to these formatting rules to prevent rendering bugs from returning:
 
 1. [ ] **Keep headings clean:** Never put `$` or `$$` inside a `#` or `##` heading.
-2. [ ] **Escape inline subscripts:** Use `\_` instead of `_` inside `$ ... $`.
+2. [ ] **Use unescaped subscripts inside math:** Use standard `_` (not `\_`) inside all `$ ... $` and `$$ ... $$` math blocks.
 3. [ ] **Use block math for matrices:** Always use `$$ ... $$` for `\begin{pmatrix}` or `\begin{vmatrix}`.
 4. [ ] **Use block math for integrals:** Always use `$$ ... $$` for `\int`, `\iint`, `\iiint`, and `\oint`.
 5. [ ] **Use block math for vector equations:** If you are defining a vector with unit vectors like `\hat{i}, \hat{j}, \hat{k}` (e.g., $\vec{A} = x\hat{i} + y\hat{j}$), put it in `$$ ... $$` to prevent the wrapping baseline bug. Standalone short vectors (like $\vec{A}$) can remain inline.
