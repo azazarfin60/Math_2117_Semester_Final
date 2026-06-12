@@ -1,0 +1,13 @@
+---
+title: "Math 2117: Final Exam Boss Notes"
+author: "Compiled for Exam Preparation"
+date: "June 2026"
+geometry: margin=1in
+colorlinks: true
+toccolor: blue
+header-includes:
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{graphicx}
+  - \usepackage{bm}
+---
