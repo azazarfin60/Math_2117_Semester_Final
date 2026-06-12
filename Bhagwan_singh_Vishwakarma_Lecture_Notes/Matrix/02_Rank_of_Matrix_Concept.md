@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](01_Basics_of_Matrix_and_Determinant.md) | [Index](README.md) | [Next Lecture >](03_Rank_by_Determinant_and_Echelon_Form.md)
 
-
 ## Prerequisites
 - Understanding of square matrices and determinants.
 - Familiarity with expansion of determinants by minors.

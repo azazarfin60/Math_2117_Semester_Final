@@ -260,14 +260,25 @@ $$
 <!-- Page 046 -->
 **# $\nabla \cdot (A \times r)$ if $\nabla \times A = 0$**
 
-$A = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$
-$r = x\hat{i} + y\hat{j} + z\hat{k}$
+$$
+A = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
+$$
 
-$A \times r = \hat{i}(zA_2 - yA_3) + \hat{j}(xA_3 - zA_1) + \hat{k}(yA_1 - xA_2)$
+$$
+r = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+$$
+A \times r = \hat{i}(zA_2 - yA_3) + \hat{j}(xA_3 - zA_1) + \hat{k}(yA_1 - xA_2)
+$$
 
 $\nabla \cdot (A \times r) = \frac{\partial}{\partial x}(zA_2 - yA_3) + \frac{\partial}{\partial y}(xA_3 - zA_1) + \frac{\partial}{\partial z}(yA_1 - xA_2)$
 $= z \left(\frac{\partial A_2}{\partial x} - \frac{\partial A_1}{\partial y}\right) + x \left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial z}\right) + y \left(\frac{\partial A_1}{\partial z} - \frac{\partial A_3}{\partial x}\right)$
-$= (x\hat{i} + y\hat{j} + z\hat{k}) \cdot (\nabla \times A)$
+
+$$
+= (x\hat{i} + y\hat{j} + z\hat{k}) \cdot (\nabla \times A)
+$$
+
 $= r \cdot (\nabla \times A) = 0$ since $\nabla \times A = 0$. (proved)
 
 ---
@@ -444,7 +455,12 @@ note:
 **closure property:** দুইটা element যোগ করলে যোগফল ঐ সেট এ থাকলে।
 - $\lbrace(1, 2), (2, 3)\rbrace$ it is not maintaining closure property.
 - $\mathbb{R}^n = \lbrace(a_1, a_2, a_3 \dots a_n) \mid a_1, a_2 \dots \in \mathbb{N}\rbrace$
-- $(a, b, c) = a\hat{i} + b\hat{j} + c\hat{k}$
+-
+
+$$
+(a, b, c) = a\hat{i} + b\hat{j} + c\hat{k}
+$$
+
 - $\lbrace(0, 0)\rbrace$ satisfy the closure property.
 
 **operations (mapping):**

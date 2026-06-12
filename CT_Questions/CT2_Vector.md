@@ -24,7 +24,7 @@ $$
 \vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}
 $$
 
-, evaluate
+Evaluate
 
 $$
 \int_C \vec{F} \cdot d\vec{r}

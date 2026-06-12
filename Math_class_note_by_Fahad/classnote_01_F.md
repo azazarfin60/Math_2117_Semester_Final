@@ -78,7 +78,6 @@ $$
 
 * multiply :-
 
-
 $$
 A_{m \times n} \times B_{n \times p}
 $$
@@ -93,13 +92,11 @@ $n = \text{must be equal}$.
 
 * Symmetry Matrix :- $A^t = A$
 
-
 $$
 A = \begin{bmatrix} a & h & g \\ h & b & f \\ g & f & c \end{bmatrix}
 $$
 
 Here, $A$ is a symmetric matrix.
-
 
 $$
 A^t = \begin{bmatrix} a & h & g \\ h & b & f \\ g & f & c \end{bmatrix}
@@ -110,7 +107,6 @@ $$
 
 * skew-symmetric / Anti-symmetric :- $A^t = -A$
   $* \text{main-diag} = 0$.
-
 
 $$
 A = \begin{bmatrix} 0 & h & g \\ -h & 0 & f \\ -g & -f & 0 \end{bmatrix}
@@ -141,7 +137,6 @@ $$
 - $\text{row} < \text{column} \rightarrow \text{Super-diagonal}$
 
 * Tris-sis (Tri-diagonal matrix) :-
-
 
 $$
 A = \begin{bmatrix} 1 & 5 & 0 & 0 \\ 8 & 2 & 6 & 0 \\ 0 & 9 & 3 & 7 \\ 0 & 0 & 10 & 4 \end{bmatrix}
@@ -179,7 +174,6 @@ $$
 **(chap-2)**
 - Dot product:
 
-
 $$
 \vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}| \cos\theta
 $$
@@ -187,13 +181,11 @@ $$
 (showing angle $\theta$ between vectors $\vec{A}$ and $\vec{B}$)
 - If perpendicular ($\vec{A} \perp \vec{B}$):
 
-
 $$
 \vec{A} \cdot \vec{B} = 0
 $$
 
 - If parallel (same direction):
-
 
 $$
 \vec{A} \cdot \vec{B} = AB
@@ -219,7 +211,6 @@ If in a matrix, the number of 0's preceding the (first non-zero / pivot) entry i
 
 - Example 1:
 
-
 $$
 \begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 \end{bmatrix}
 $$
@@ -229,7 +220,6 @@ is an echelon matrix.
   (Note on page: at least 2 zeros, could be more under the pivot of row 2).
 
 - Example 2:
-
 
 $$
 \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 2 \end{bmatrix}
@@ -246,13 +236,11 @@ is NOT an echelon matrix. (Notes state: "if 2 then not echelon matrix" pointing 
 
   - Example:
 
-
 $$
 \begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 \end{bmatrix} \rightarrow \text{rank} = 4
 $$
 
 - Example:
-
 
 $$
 \begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix} \rightarrow \text{rank} = 3
@@ -317,7 +305,6 @@ Rank = 3.
 
   Example:
 
-
 $$
 \begin{bmatrix} 1 & 0 & 0 & 5 \\ 0 & 1 & 0 & 5 \\ 0 & 0 & 1 & 6 \end{bmatrix}
 $$
@@ -327,13 +314,11 @@ $\star$ important in image processing.
 * Write down the workflow of converting a matrix to its row canonical form.
 * Convert the matrix to its row canonical form.
 
-
 $$
 \begin{bmatrix} 1 & 2 & 3 & 5 \\ -1 & 1 & 2 & 1 \\ 1 & 1 & 2 & 3 \end{bmatrix}
 $$
 
 - Step 1: Convert to echelon form:
-
 
 $$
 R_2 \rightarrow R_1 + R_2
@@ -363,7 +348,6 @@ which is an echelon matrix.
 
   - Step 2: Convert to row canonical form:
 
-
 $$
 R_1 \rightarrow 3R_1 - 2R_2
 $$
@@ -389,7 +373,6 @@ $$
 $$
 
 - Dividing each row to get pivots of 1:
-
 
 $$
 R_1 \rightarrow \frac{R_1}{6}

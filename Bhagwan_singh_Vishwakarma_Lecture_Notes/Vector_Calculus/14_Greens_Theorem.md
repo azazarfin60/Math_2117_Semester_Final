@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](13_Gauss_Divergence_Theorem_Part2.md) | [Index](README.md)
 
-
 ---
 
 ## Prerequisites
@@ -39,7 +38,13 @@ Just like the other theorems, Green's Theorem allows us to bypass tedious bounda
 ## Solved Problems
 
 ### Problem 1: Evaluating a Line Integral via Double Integral
-**Question:** Evaluate by Green's Theorem the line integral $\oint_C (e^{-x} \sin y \, dx + e^{-x} \cos y \, dy)$, where $C$ is the rectangle with vertices $(0,0), (\pi, 0), (\pi, \frac{\pi}{2}), (0, \frac{\pi}{2})$.
+**Question:** Evaluate by Green's Theorem the line integral
+
+$$
+\oint_C (e^{-x} \sin y \, dx + e^{-x} \cos y \, dy),
+$$
+
+Where $C$ is the rectangle with vertices $(0,0), (\pi, 0), (\pi, \frac{\pi}{2}), (0, \frac{\pi}{2})$.
 
 **Solution:**
 We identify the components $P$ and $Q$ from the integral form $\oint_C (P \, dx + Q \, dy)$:
@@ -87,7 +92,13 @@ $$
 ---
 
 ### Problem 2: Verifying Green's Theorem on a Circle
-**Question:** Verify Green's Theorem for the line integral $\oint_C (x + 2y) \, dx + (y + 3x) \, dy$ where $C$ is the unit circle $x^2 + y^2 = 1$.
+**Question:** Verify Green's Theorem for the line integral
+
+$$
+\oint_C (x + 2y) \, dx + (y + 3x) \, dy
+$$
+
+where $C$ is the unit circle $x^2 + y^2 = 1$.
 
 **Solution:**
 To verify, we must independently compute both the LHS (Line Integral) and the RHS (Double Integral).
@@ -141,7 +152,13 @@ Since **LHS = RHS = $\pi$**, Green's Theorem is verified.
 ---
 
 ### Problem 3: Verifying Green's Theorem between Curves
-**Question:** Verify Green's Theorem for $\oint_C (xy + y^2) \, dx + x^2 \, dy$ where $C$ is the closed curve bounded by $y = x^2$ and $y = x$.
+**Question:** Verify Green's Theorem for
+
+$$
+\oint_C (xy + y^2) \, dx + x^2 \, dy
+$$
+
+where $C$ is the closed curve bounded by $y = x^2$ and $y = x$.
 
 **Solution:**
 The intersection points of $y = x^2$ and $y = x$ are $(0,0)$ and $(1,1)$. 

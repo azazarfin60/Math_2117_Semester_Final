@@ -59,7 +59,13 @@ $\nabla\phi$ is perpendicular to the surface $\phi(x, y, z) = c$.
 
 ### Proof
 
-Let $\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}$ be any curve lying on the surface $\phi = c$.
+Let
+
+$$
+\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}
+$$
+
+be any curve lying on the surface $\phi = c$.
 
 Since all points of this curve satisfy $\phi(x(t), y(t), z(t)) = c$, differentiate with respect to $t$:
 
@@ -101,7 +107,12 @@ $$
 \nabla f = 2(x-1)\hat{i} + 2y\hat{j} + 2(z+2)\hat{k}
 $$
 
-At $(3, 1, -4)$: $\nabla f = 4\hat{i} + 2\hat{j} - 4\hat{k}$.
+At $(3, 1, -4)$:
+
+$$
+\nabla f = 4\hat{i} + 2\hat{j} - 4\hat{k}.
+$$
+
 
 Magnitude: $\lvert \nabla f \rvert = \sqrt{16 + 4 + 16} = 6$.
 
@@ -127,13 +138,33 @@ $$
 
 **Solution**:
 
-Surface 1: $f_1 = x^2 + y^2 + z^2 - 9$. Gradient: $\nabla f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}$.
+Surface 1: $f_1 = x^2 + y^2 + z^2 - 9$. Gradient:
 
-At $(2, -1, 2)$: $\vec{n}_1 = 4\hat{i} - 2\hat{j} + 4\hat{k}$.
+$$
+\nabla f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}.
+$$
 
-Surface 2: $f_2 = x^2 + y^2 - z - 3$. Gradient: $\nabla f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}$.
 
-At $(2, -1, 2)$: $\vec{n}_2 = 4\hat{i} - 2\hat{j} - \hat{k}$.
+At $(2, -1, 2)$:
+
+$$
+\vec{n}_1 = 4\hat{i} - 2\hat{j} + 4\hat{k}.
+$$
+
+
+Surface 2: $f_2 = x^2 + y^2 - z - 3$. Gradient:
+
+$$
+\nabla f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}.
+$$
+
+
+At $(2, -1, 2)$:
+
+$$
+\vec{n}_2 = 4\hat{i} - 2\hat{j} - \hat{k}.
+$$
+
 
 Dot product: $\vec{n}_1 \cdot \vec{n}_2 = 16 + 4 - 4 = 16$.
 

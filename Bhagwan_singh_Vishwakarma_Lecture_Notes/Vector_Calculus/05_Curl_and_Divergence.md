@@ -9,11 +9,16 @@
 **Navigation**
 [< Previous Lecture](04_Directional_Derivative.md) | [Index](README.md) | [Next Lecture >](06_Line_Integration.md)
 
-
 ---
 
 ## Prerequisites
-We have seen that applying the Del operator ($\nabla$) to a scalar function produces the gradient (a vector). In this lecture, we apply the Del operator to a **vector point function** $\vec{F}(x, y, z) = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}$. Because it is a vector operator acting on a vector function, we can do this in two ways: via a dot product (Divergence) or a cross product (Curl).
+We have seen that applying the Del operator ($\nabla$) to a scalar function produces the gradient (a vector). In this lecture, we apply the Del operator to a **vector point function**
+
+$$
+\vec{F}(x, y, z) = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}.
+$$
+
+. Because it is a vector operator acting on a vector function, we can do this in two ways: via a dot product (Divergence) or a cross product (Curl).
 
 ---
 
@@ -78,7 +83,13 @@ $$
 ## Solved Problems
 
 ### Problem 1: Solenoidal Condition
-**Question:** Determine $a$ such that the vector $\vec{F} = (x + 3y)\hat{i} + (y - 2z)\hat{j} + (x - az)\hat{k}$ is solenoidal.
+**Question:** Determine $a$ such that the vector
+
+$$
+\vec{F} = (x + 3y)\hat{i} + (y - 2z)\hat{j} + (x - az)\hat{k}
+$$
+
+is solenoidal.
 
 **Solution:**
 Since the vector is solenoidal, $\nabla \cdot \vec{F} = 0$.
@@ -92,7 +103,13 @@ $$
 $$
 
 ### Problem 2: Divergence at a Point
-**Question:** If $\vec{F} = xy\sin z\hat{i} + y^2\sin x\hat{j} + z^2\sin xy\hat{k}$, find $\text{div }\vec{F}$ at the point $(0, \pi/2, \pi/2)$.
+**Question:** If
+
+$$
+\vec{F} = xy\sin z\hat{i} + y^2\sin x\hat{j} + z^2\sin xy\hat{k},
+$$
+
+Find $\text{div }\vec{F}$ at the point $(0, \pi/2, \pi/2)$.
 
 **Solution:**
 First, compute the divergence:
@@ -116,7 +133,13 @@ $$
 $$
 
 ### Problem 3: Properties of Position Vector
-**Question:** If $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$, prove that $\text{div }\vec{r} = 3$ and $\text{curl }\vec{r} = \vec{0}$.
+**Question:** If
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k},
+$$
+
+Prove that $\text{div }\vec{r} = 3$ and $\text{curl }\vec{r} = \vec{0}$.
 
 **Solution:**
 For divergence:
@@ -131,10 +154,22 @@ $$
 \nabla \times \vec{r} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x & y & z \end{vmatrix}
 $$
 
-Evaluating the determinant gives $\hat{i}(0-0) - \hat{j}(0-0) + \hat{k}(0-0) = \vec{0}$. Both properties are proven.
+Evaluating the determinant gives
+
+$$
+\hat{i}(0-0) - \hat{j}(0-0) + \hat{k}(0-0) = \vec{0}.
+$$
+
+. Both properties are proven.
 
 ### Problem 4: Evaluating Irrotational Flow
-**Question:** Show that $\vec{F} = (\sin y + z)\hat{i} + (x\cos y - z)\hat{j} + (x - y)\hat{k}$ is irrotational.
+**Question:** Show that
+
+$$
+\vec{F} = (\sin y + z)\hat{i} + (x\cos y - z)\hat{j} + (x - y)\hat{k}
+$$
+
+is irrotational.
 
 **Solution:**
 Compute the curl:
@@ -161,7 +196,13 @@ $$
 \frac{\partial}{\partial x}(x\cos y - z) - \frac{\partial}{\partial y}(\sin y + z) = \cos y - \cos y = 0
 $$
 
-Since $\nabla \times \vec{F} = 0\hat{i} + 0\hat{j} + 0\hat{k} = \vec{0}$, the vector is irrotational.
+Since
+
+$$
+\nabla \times \vec{F} = 0\hat{i} + 0\hat{j} + 0\hat{k} = \vec{0},
+$$
+
+The vector is irrotational.
 
 ### Problem 5: Curl of a Cross Product Identity
 **Question:** If $\vec{a}$ is a constant vector and $\vec{r}$ is the position vector, prove that $\text{curl }(\vec{r} \times \vec{a}) = -2\vec{a}$.

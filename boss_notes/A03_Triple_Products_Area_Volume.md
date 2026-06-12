@@ -22,8 +22,14 @@ $$
 **Problem**: Find the area of a triangle with vertices at $P(3, -1, 2)$, $Q(1, -1, -3)$ and $R(4, -3, 1)$.
 **Solution**:
 Construct two edge vectors originating from the same point $P$:
-$\vec{PQ} = (1 - 3)\hat{i} + (-1 - (-1))\hat{j} + (-3 - 2)\hat{k} = -2\hat{i} - 5\hat{k}$
-$\vec{PR} = (4 - 3)\hat{i} + (-3 - (-1))\hat{j} + (1 - 2)\hat{k} = \hat{i} - 2\hat{j} - \hat{k}$
+
+$$
+\vec{PQ} = (1 - 3)\hat{i} + (-1 - (-1))\hat{j} + (-3 - 2)\hat{k} = -2\hat{i} - 5\hat{k}
+$$
+
+$$
+\vec{PR} = (4 - 3)\hat{i} + (-3 - (-1))\hat{j} + (1 - 2)\hat{k} = \hat{i} - 2\hat{j} - \hat{k}
+$$
 
 Calculate the cross product:
 
@@ -55,7 +61,22 @@ $$
 $$
 
 ### Worked Example: Volume (PYQ 2019)
-**Problem**: Find the volume of the parallelepiped whose edges are $\vec{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}$, $\vec{B} = \hat{i} + 2\hat{j} - \hat{k}$, and $\vec{C} = 3\hat{i} - \hat{j} + 2\hat{k}$.
+**Problem**: Find the volume of the parallelepiped whose edges are
+
+$$
+\vec{A} = 2\hat{i} - 3\hat{j} + 4\hat{k},
+$$
+
+
+$$
+\vec{B} = \hat{i} + 2\hat{j} - \hat{k},
+$$
+
+
+$$
+\vec{C} = 3\hat{i} - \hat{j} + 2\hat{k}.
+$$
+
 **Solution**:
 
 $$
@@ -77,7 +98,23 @@ If three vectors lie in the exact same plane, the 3D parallelepiped they form ha
 **Condition for Coplanarity**: Three vectors are coplanar if and only if their scalar triple product is zero.
 
 ### Worked Example: Unknown Constant (PYQ 2023)
-**Problem**: Find the constant $a$ such that $2\hat{i} - \hat{j} + \hat{k}$, $\hat{i} + 2\hat{j} - 3\hat{k}$, and $3\hat{i} + a\hat{j} + 5\hat{k}$ are coplanar.
+**Problem**: Find the constant $a$ such that
+
+$$
+2\hat{i} - \hat{j} + \hat{k},
+$$
+
+
+$$
+\hat{i} + 2\hat{j} - 3\hat{k},
+$$
+
+
+$$
+3\hat{i} + a\hat{j} + 5\hat{k}
+$$
+
+are coplanar.
 **Solution**:
 Set the scalar triple product determinant to 0:
 

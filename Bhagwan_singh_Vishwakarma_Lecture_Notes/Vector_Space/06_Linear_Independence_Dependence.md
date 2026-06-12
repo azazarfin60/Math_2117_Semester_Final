@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](05_Linear_Sum_Direct_Sum_Span.md) | [Index](README.md) | [Next Lecture >](07_Basis_Finite_Dimensional.md)
 
-
 ---
 
 ## Prerequisites

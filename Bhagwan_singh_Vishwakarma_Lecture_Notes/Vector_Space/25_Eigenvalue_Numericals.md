@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](24_Eigenvalue_Eigenvector_Theory.md) | [Index](README.md) | [Next Lecture >](26_Matrix_Eigenvalue_Problems.md)
 
-
 ---
 
 ## Prerequisites

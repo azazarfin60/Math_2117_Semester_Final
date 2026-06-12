@@ -265,7 +265,6 @@ $$
 
 * Example:
 
-
 $$
 2x + 3y - 5z = 2
 $$
@@ -279,7 +278,6 @@ $$
 $$
 
 In $AX = B$ form:
-
 
 $$
 A = \begin{bmatrix} 2 & 3 & -5 \\ 1 & 1 & -1 \\ 2 & -2 & 1 \end{bmatrix}, \quad X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad B = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
@@ -340,7 +338,6 @@ $$
 * If Rank of $A \neq$ Rank of $[A:B]$ then the system has no solution.
 
 * **solve the system:-**
-
 
 $$
 x - 2y - 5z = 2

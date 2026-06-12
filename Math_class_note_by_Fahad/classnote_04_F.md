@@ -43,7 +43,11 @@ $$
 
 ## Page 32
 
-$\star$ $\vec{R}(u) = (u-u^2)\hat{i} + 2u^3\hat{j} - 3\hat{k}$
+$\star$
+
+$$
+\vec{R}(u) = (u-u^2)\hat{i} + 2u^3\hat{j} - 3\hat{k}
+$$
 
 **(a)**
 

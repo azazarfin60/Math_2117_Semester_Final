@@ -27,8 +27,18 @@ You should memorize these results, as they often simplify complex problems:
 
 **Proof**:
 
-Let the constant vector be $\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$.
-Let the position vector be $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$.
+Let the constant vector be
+
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}.
+$$
+
+Let the position vector be
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}.
+$$
+
 
 Calculate the dot product:
 
@@ -58,7 +68,12 @@ $$
 
 **Proof**:
 
-Let $\vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$.
+Let
+
+$$
+\vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}.
+$$
+
 Let $\vec{V} = \nabla \times \vec{A}$. The components of $\vec{V}$ are:
 
 $$
@@ -119,7 +134,12 @@ $$
 \frac{\partial}{\partial x}(r^{-1}) = -r^{-2}\frac{\partial r}{\partial x} = -r^{-2}\left(\frac{x}{r}\right) = -\frac{x}{r^3}
 $$
 
-So, $\nabla(r^{-1}) = -\frac{x\hat{i} + y\hat{j} + z\hat{k}}{r^3} = -\frac{\vec{r}}{r^3}$.
+So,
+
+$$
+\nabla(r^{-1}) = -\frac{x\hat{i} + y\hat{j} + z\hat{k}}{r^3} = -\frac{\vec{r}}{r^3}.
+$$
+
 
 Now find the divergence of this gradient (which is $\nabla^2$):
 

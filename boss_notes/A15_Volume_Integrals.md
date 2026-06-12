@@ -18,7 +18,13 @@ $$
 \iiint_V \phi \, dV = \iiint_V \phi \, dx \, dy \, dz
 $$
 
-For a vector field $\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}$, you integrate each component separately:
+For a vector field
+
+$$
+\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k},
+$$
+
+You integrate each component separately:
 
 $$
 \iiint_V \vec{F} \, dV = \left(\iiint_V F_1 \, dV\right)\hat{i} + \left(\iiint_V F_2 \, dV\right)\hat{j} + \left(\iiint_V F_3 \, dV\right)\hat{k}
@@ -103,7 +109,13 @@ $$
 \iiint_V \nabla \cdot \vec{F} \, dV
 $$
 
-where $\vec{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}$ and $V$ is bounded by $x=0, y=0, z=0, 2x+2y+z=4$.
+where
+
+$$
+\vec{F} = (2x^2 - 3z)\hat{i} - 2xy\hat{j} - 4x\hat{k}
+$$
+
+and $V$ is bounded by $x=0, y=0, z=0, 2x+2y+z=4$.
 
 **Solution**:
 

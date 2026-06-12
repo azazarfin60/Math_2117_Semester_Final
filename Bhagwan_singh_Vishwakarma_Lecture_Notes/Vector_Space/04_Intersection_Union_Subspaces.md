@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](03_Vector_Subspace.md) | [Index](README.md) | [Next Lecture >](05_Linear_Sum_Direct_Sum_Span.md)
 
-
 ---
 
 ## Prerequisites

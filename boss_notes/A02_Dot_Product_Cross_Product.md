@@ -18,7 +18,23 @@ The dot product and cross product are the two fundamental ways to multiply vecto
 - **Orthogonality**: If two non-zero vectors are perpendicular (orthogonal), their dot product is 0.
 
 ### Worked Example: Mutually Orthogonal Vectors (CT)
-**Problem**: Show that $\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})$, $\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})$, and $\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})$ are mutually orthogonal unit vectors.
+**Problem**: Show that
+
+$$
+\vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k}),
+$$
+
+
+$$
+\vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k}),
+$$
+
+
+$$
+\vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})
+$$
+
+are mutually orthogonal unit vectors.
 **Solution**:
 Magnitude check for unit vectors:
 $\lvert \vec{A} \rvert = \sqrt{(2/3)^2 + (-2/3)^2 + (1/3)^2} = \sqrt{9/9} = 1$. (Same applies for $\vec{B}$ and $\vec{C}$).
@@ -38,7 +54,18 @@ Since all magnitudes are 1 and all dot products are 0, they are mutually orthogo
 - **Parallelism**: If two non-zero vectors are parallel, their cross product is $\vec{0}$.
 
 ### Worked Example: Finding Perpendicular Vectors (PYQ 2020)
-**Problem**: Find a vector of magnitude 5 perpendicular to both $\vec{A} = 2\hat{i} + \hat{j} - 3\hat{k}$ and $\vec{B} = \hat{i} - 2\hat{j} + \hat{k}$.
+**Problem**: Find a vector of magnitude 5 perpendicular to both
+
+$$
+\vec{A} = 2\hat{i} + \hat{j} - 3\hat{k}
+$$
+
+ and
+
+$$
+\vec{B} = \hat{i} - 2\hat{j} + \hat{k}.
+$$
+
 **Solution**:
 The cross product yields a perpendicular vector:
 
@@ -46,7 +73,12 @@ $$
 \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & 1 & -3 \\ 1 & -2 & 1 \end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
 $$
 
-Simplify to a base direction vector $\vec{v} = \hat{i} + \hat{j} + \hat{k}$.
+Simplify to a base direction vector
+
+$$
+\vec{v} = \hat{i} + \hat{j} + \hat{k}.
+$$
+
 Find the unit normal vector $\hat{n}$:
 
 $$

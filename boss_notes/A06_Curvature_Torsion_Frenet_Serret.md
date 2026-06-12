@@ -57,9 +57,19 @@ The three formulas are:
 
 **Solution**:
 **Step 1: Find Derivatives**
-$\vec{r}(t) = t\hat{i} + t^2\hat{j} + \frac{2}{3}t^3\hat{k}$
-$\vec{r}' = \hat{i} + 2t\hat{j} + 2t^2\hat{k}$
-$\vec{r}'' = 2\hat{j} + 4t\hat{k}$
+
+$$
+\vec{r}(t) = t\hat{i} + t^2\hat{j} + \frac{2}{3}t^3\hat{k}
+$$
+
+$$
+\vec{r}' = \hat{i} + 2t\hat{j} + 2t^2\hat{k}
+$$
+
+$$
+\vec{r}'' = 2\hat{j} + 4t\hat{k}
+$$
+
 $\vec{r}''' = 4\hat{k}$
 
 **Step 2: Cross Product and Magnitudes**

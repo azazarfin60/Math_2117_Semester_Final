@@ -75,8 +75,6 @@ $$
 \bar{A} = 2\hat{i} - 3\hat{j} + 4\hat{k}
 $$
 
-, 
-
 $$
 \bar{B} = \hat{i} + 2\hat{j} - \hat{k}
 $$
@@ -410,7 +408,7 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
 $$
 
-, then $r = \sqrt{x^2 + y^2 + z^2}$.
+Then $r = \sqrt{x^2 + y^2 + z^2}$.
 
 The partial derivatives of $r$ with respect to coordinates are:
 
@@ -616,13 +614,13 @@ $$
 
 #### 1. Evaluate Double Integral
 
-The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates (
+The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates
 
 $$
 x = r\cos\theta, \quad y = r\sin\theta, \quad dA = r \, dr \, d\theta
 $$
 
-):
+:
 
 $$
 \iint_R y \, dA = \int_{\theta=0}^{2\pi} \int_{r=1}^3 (r\sin\theta) r \, dr \, d\theta = \left( \int_1^3 r^2 \, dr \right) \left( \int_0^{2\pi} \sin\theta \, d\theta \right)

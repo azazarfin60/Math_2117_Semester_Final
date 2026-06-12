@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](07_Concept_of_Eigen_Values_and_Vectors.md) | [Index](README.md) | [Next Lecture >](09_Cayley_Hamilton_Theorem_Solved_Problems.md)
 
-
 ## Prerequisites
 - Knowledge of characteristic polynomials and characteristic equations.
 - Familiarity with matrix cofactors and the adjoint matrix identity $A \cdot \text{adj}(A) = \lvert A \rvertI$.

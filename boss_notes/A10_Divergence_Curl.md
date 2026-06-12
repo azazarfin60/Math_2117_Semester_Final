@@ -14,7 +14,13 @@ While gradient operates on scalars, divergence and curl operate on vector fields
 
 ### Definition
 
-The divergence of a vector field $\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}$ is the dot product of the Del operator and $\vec{F}$:
+The divergence of a vector field
+
+$$
+\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}
+$$
+
+is the dot product of the Del operator and $\vec{F}$:
 
 $$
 \text{div }\vec{F} = \nabla \cdot \vec{F} = \left(\hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z}\right) \cdot (F_1\hat{i} + F_2\hat{j} + F_3\hat{k})
@@ -68,7 +74,13 @@ If $\nabla \times \vec{F} = \vec{0}$ everywhere, the vector field is called **ir
 
 ## Properties of Position Vector
 
-Let the position vector be $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$. Then $r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}$.
+Let the position vector be
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}.
+$$
+
+. Then $r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}$.
 
 Two absolute must-know facts:
 
@@ -88,7 +100,13 @@ $$
 
 ## Worked Example 1: Solenoidal Condition
 
-**Problem**: Determine $a$ such that the vector $\vec{F} = (x + 3y)\hat{i} + (y - 2z)\hat{j} + (x - az)\hat{k}$ is solenoidal.
+**Problem**: Determine $a$ such that the vector
+
+$$
+\vec{F} = (x + 3y)\hat{i} + (y - 2z)\hat{j} + (x - az)\hat{k}
+$$
+
+is solenoidal.
 
 **Solution**:
 

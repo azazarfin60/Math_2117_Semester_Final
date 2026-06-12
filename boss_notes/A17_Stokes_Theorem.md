@@ -27,7 +27,13 @@ Here the boundary curve $C$ is traversed in the positive direction (determined b
 You must be able to prove Stokes' theorem by projecting the surface onto a coordinate plane and using Green's theorem.
 
 Let the surface equation be $z = f(x, y)$ over a region $R$ in the $xy$-plane.
-Let $\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$. We prove it for $A_1$ first:
+Let
+
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}.
+$$
+
+. We prove it for $A_1$ first:
 
 $$
 \oint_C A_1 dx = \iint_S [\nabla \times (A_1\hat{i})] \cdot \hat{n} dS.
@@ -77,14 +83,27 @@ Comparing (Eq 1) and (Eq 2) proves the theorem for $A_1$. The process is identic
 
 ## Worked Example: Verification (PYQ 2024)
 
-**Problem**: Verify Stokes' theorem for $\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}$ where $S$ is the surface of the cube $x=0, y=0, z=0, x=2, y=2, z=2$ above the $xy$ plane (i.e., open at the bottom).
+**Problem**: Verify Stokes' theorem for
+
+$$
+\vec{A} = (y - z + 2)\hat{i} + (yz + 4)\hat{j} - xz\hat{k}
+$$
+
+where $S$ is the surface of the cube $x=0, y=0, z=0, x=2, y=2, z=2$ above the $xy$ plane (i.e., open at the bottom).
 
 **Solution**:
 
 **Step 1: The Line Integral**
 The boundary curve $C$ is the square in the $z=0$ plane from $x=0$ to $x=2$ and $y=0$ to $y=2$.
-On $z=0, dz=0$, the vector field is $\vec{A} = (y + 2)\hat{i} + 4\hat{j}$.
-$\oint_C \vec{A} \cdot d\vec{r} = \oint_C (y + 2) dx + 4 dy$
+On $z=0, dz=0$, the vector field is
+
+$$
+\vec{A} = (y + 2)\hat{i} + 4\hat{j}.
+$$
+
+$$
+\oint_C \vec{A} \cdot d\vec{r} = \oint_C (y + 2) dx + 4 dy
+$$
 
 Path 1 ($y=0, dy=0, x$ from 0 to 2):
 
@@ -158,7 +177,13 @@ Both integrals yield $-4$. Stokes' theorem is verified.
 
 ## Exam Patterns
 
-- Verifying Stokes' theorem over a cube involves 5 surface integrals (if open at the bottom) or 6 surface integrals. Be extremely meticulous with your normal vectors ($\hat{i}, -\hat{i}, \hat{j}, -\hat{j}, \hat{k}, -\hat{k}$) for each face.
+- Verifying Stokes' theorem over a cube involves 5 surface integrals (if open at the bottom) or 6 surface integrals. Be extremely meticulous with your normal vectors
+
+$$
+\hat{i}, -\hat{i}, \hat{j}, -\hat{j}, \hat{k}, -\hat{k}
+$$
+
+For each face.
 - When asked to "evaluate using Stokes' theorem", you can choose whichever side of the equation is easier. Usually, converting a complex line integral into a surface integral via curl is the intended path.
 
 ---

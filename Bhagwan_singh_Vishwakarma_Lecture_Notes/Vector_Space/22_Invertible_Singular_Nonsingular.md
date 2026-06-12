@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](21_Rank_Nullity_Theorem.md) | [Index](README.md) | [Next Lecture >](23_Rank_Nullity_Numericals.md)
 
-
 ---
 
 ## Prerequisites

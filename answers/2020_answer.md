@@ -18,8 +18,6 @@ $$
 \vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}
 $$
 
-, 
-
 $$
 \vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}
 $$
@@ -108,7 +106,7 @@ $$
 \bar{B} = \hat{i} - 2\hat{j} + \hat{k}
 $$
 
-, find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$. (04)
+Find a vector of magnitude 5 perpendicular to both $\bar{A}$ and $\bar{B}$. (04)
 
 **Answer:**
 

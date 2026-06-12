@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](18_Fundamental_Theorem_Homomorphism.md) | [Index](README.md) | [Next Lecture >](20_Inverse_Linear_Transformation.md)
 
-
 ---
 
 ## Prerequisites

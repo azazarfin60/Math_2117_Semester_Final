@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](03_Rank_by_Determinant_and_Echelon_Form.md) | [Index](README.md) | [Next Lecture >](05_Consistency_of_Linear_Equations.md)
 
-
 ## Prerequisites
 - Knowledge of matrix rank.
 - Understanding of elementary row and column operations.

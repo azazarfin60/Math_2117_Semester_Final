@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](04_Intersection_Union_Subspaces.md) | [Index](README.md) | [Next Lecture >](06_Linear_Independence_Dependence.md)
 
-
 ---
 
 ## Prerequisites

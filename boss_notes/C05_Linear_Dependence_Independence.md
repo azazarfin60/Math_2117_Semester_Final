@@ -26,7 +26,23 @@ If you have exactly $n$ vectors in $\mathbb{R}^n$, you can form an $n \times n$ 
 
 ## Worked Example 1: Finding the Dependence Relation (PYQ 2018)
 
-**Problem**: Show that $\vec{A} = 2\hat{i} + \hat{j} - 3\hat{k}$, $\vec{B} = \hat{i} - 4\hat{k}$, and $\vec{C} = 4\hat{i} + 3\hat{j} - \hat{k}$ are linearly dependent, and determine a relation between them.
+**Problem**: Show that
+
+$$
+\vec{A} = 2\hat{i} + \hat{j} - 3\hat{k},
+$$
+
+
+$$
+\vec{B} = \hat{i} - 4\hat{k},
+$$
+
+
+$$
+\vec{C} = 4\hat{i} + 3\hat{j} - \hat{k}
+$$
+
+are linearly dependent, and determine a relation between them.
 
 **Solution**:
 **Step 1: Check Determinant**

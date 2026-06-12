@@ -38,7 +38,13 @@ This function $\phi(x, y, z)$ is called the **scalar potential** of $\vec{F}$.
 
 ## The Method: Finding Scalar Potential
 
-To find $\phi$ such that $\vec{F} = \nabla\phi$, where $\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}$:
+To find $\phi$ such that $\vec{F} = \nabla\phi$, where
+
+$$
+\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}:
+$$
+
+:
 
 1. Set up three equations:
 
@@ -65,7 +71,13 @@ $$
 
 ## Must-Know Problem 1 (PYQ 2020)
 
-**Problem**: Show that $\vec{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}$ is irrotational. Find $\phi$ such that $\vec{A} = \nabla\phi$.
+**Problem**: Show that
+
+$$
+\vec{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}
+$$
+
+is irrotational. Find $\phi$ such that $\vec{A} = \nabla\phi$.
 
 **Solution**:
 
@@ -111,7 +123,13 @@ Final Potential: $\phi = 3x^2y + xz^3 - yz + C$
 
 ## Must-Know Problem 2 (PYQ 2021)
 
-**Problem**: Show that $\vec{F} = (y^2 + 2xz^2)\hat{i} + (2xy - z)\hat{j} + (2x^2z - y + 2z)\hat{k}$ is irrotational and find scalar potential.
+**Problem**: Show that
+
+$$
+\vec{F} = (y^2 + 2xz^2)\hat{i} + (2xy - z)\hat{j} + (2x^2z - y + 2z)\hat{k}
+$$
+
+is irrotational and find scalar potential.
 
 **Solution**:
 
@@ -149,7 +167,13 @@ Final Potential: $\phi = xy^2 + x^2z^2 - yz + z^2 + C$
 
 ## Must-Know Problem 3: Finding Unknown Constants (PYQ 2018)
 
-**Problem**: Find constants $a, b, c$ so that $\vec{V} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}$ is irrotational.
+**Problem**: Find constants $a, b, c$ so that
+
+$$
+\vec{V} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}
+$$
+
+is irrotational.
 
 **Solution**:
 

@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](19_Matrix_Representation.md) | [Index](README.md) | [Next Lecture >](21_Rank_Nullity_Theorem.md)
 
-
 ---
 
 ## Prerequisites

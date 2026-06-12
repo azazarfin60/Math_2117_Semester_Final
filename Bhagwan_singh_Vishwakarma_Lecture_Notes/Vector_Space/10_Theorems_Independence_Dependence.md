@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](09_Theorems_Linear_Span.md) | [Index](README.md) | [Next Lecture >](11_Existence_Dimension_Theorem.md)
 
-
 ---
 
 ## Prerequisites

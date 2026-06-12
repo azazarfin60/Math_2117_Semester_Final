@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](08_Surface_Integral_Part2.md) | [Index](README.md) | [Next Lecture >](10_Stokes_Theorem_Part1.md)
 
-
 ---
 
 ## Prerequisites
@@ -20,7 +19,19 @@ In the preceding lectures, we explored surface integrals for flat planes and sph
 ## Solved Problems
 
 ### Problem 1: Surface Integral Over a Closed Cube
-**Question:** Evaluate $\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$, where $\mathbf{F} = 4xz\hat{\mathbf{i}} - y^2\hat{\mathbf{j}} + yz\hat{\mathbf{k}}$ and $S$ is the closed surface of the cube bounded by the planes $x = 0$, $x = a$, $y = 0$, $y = a$, $z = 0$, $z = a$.
+**Question:** Evaluate
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS,
+$$
+
+Where
+
+$$
+\mathbf{F} = 4xz\hat{\mathbf{i}} - y^2\hat{\mathbf{j}} + yz\hat{\mathbf{k}}
+$$
+
+and $S$ is the closed surface of the cube bounded by the planes $x = 0$, $x = a$, $y = 0$, $y = a$, $z = 0$, $z = a$.
 
 **Solution:**
 The closed surface $S$ of a cube consists of $6$ distinct flat faces. To evaluate the surface integral over $S$, we must evaluate the integral over each of the $6$ faces separately and sum the results.
@@ -80,7 +91,19 @@ $$
 ---
 
 ### Problem 2: Volume Integral Over a Solid Cylinder
-**Question:** Evaluate $\iiint_V (\nabla \cdot \mathbf{F}) \, dV$ where $\mathbf{F} = 4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}$, and $V$ is the solid region bounded by the cylinder $x^2 + y^2 = 4$ and the planes $z = 0$ and $z = 3$.
+**Question:** Evaluate
+
+$$
+\iiint_V (\nabla \cdot \mathbf{F}) \, dV
+$$
+
+ where
+
+$$
+\mathbf{F} = 4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}},
+$$
+
+And $V$ is the solid region bounded by the cylinder $x^2 + y^2 = 4$ and the planes $z = 0$ and $z = 3$.
 
 **Solution:**
 **Step 1: Compute the Integrand ($\nabla \cdot \mathbf{F}$)**

@@ -66,7 +66,13 @@ Comparing (Eq 1) and (Eq 2) proves Part 1. By symmetry (bounding $x$ with functi
 
 ## Worked Example 1: Evaluation (PYQ 2017)
 
-**Problem**: Evaluate $\oint_C (2x + y^2)dx + (3y - 4x)dy$ where $C$ is the boundary of the region between $y = x^2$ and $y^2 = x$.
+**Problem**: Evaluate
+
+$$
+\oint_C (2x + y^2)dx + (3y - 4x)dy
+$$
+
+where $C$ is the boundary of the region between $y = x^2$ and $y^2 = x$.
 
 **Solution**:
 Identify $P$ and $Q$:

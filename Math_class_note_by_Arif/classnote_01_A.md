@@ -117,7 +117,12 @@ $A^T = -A$
 <b>Class 2 | Mam Rupali</b>
 
 $P(1,2,3)$
-Position vector, $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k} = 1\hat{i} + 2\hat{j} + 3\hat{k}$
+Position vector,
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k} = 1\hat{i} + 2\hat{j} + 3\hat{k}
+$$
+
 init point $\rightarrow$ terminal point
 
 vector analysis
@@ -308,9 +313,17 @@ arc length - curve
 
 <b>Class 6</b>
 
-$\vec{r} = 3\cos t \hat{i} + 3\sin t \hat{j} + 4t\hat{k}$
-$\frac{d\vec{r}}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}$
-$T = \frac{\frac{d\vec{r}}{dt}}{\left| \frac{d\vec{r}}{dt} \right|} = \frac{-3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}}{\dots}$
+$$
+\vec{r} = 3\cos t \hat{i} + 3\sin t \hat{j} + 4t\hat{k}
+$$
+
+$$
+\frac{d\vec{r}}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}
+$$
+
+$$
+T = \frac{\frac{d\vec{r}}{dt}}{\left| \frac{d\vec{r}}{dt} \right|} = \frac{-3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}}{\dots}
+$$
 
 <div align="right"><b>22-11-23</b></div>
 

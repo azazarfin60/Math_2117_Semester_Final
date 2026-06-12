@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](04_Rank_by_Normal_Canonical_Form.md) | [Index](README.md) | [Next Lecture >](06_Questions_Consistency_of_Linear_Equations.md)
 
-
 ## Prerequisites
 - Proficiency in calculating the rank of a matrix.
 - Understanding of Echelon form reductions.

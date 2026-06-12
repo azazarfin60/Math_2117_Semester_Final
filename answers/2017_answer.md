@@ -94,13 +94,13 @@ $$
 \vec{F} = 3xy\hat{i} - y^2\hat{j}
 $$
 
-, then evaluate 
+Then evaluate
 
 $$
 \int_C \vec{F} \cdot d\vec{r}
 $$
 
-, when $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
+When $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
 
 **Answer:**
 
@@ -226,7 +226,7 @@ $$
 \vec{F} = (2x + y^2)\hat{i} + (3y - 4x)\hat{j}
 $$
 
-, then evaluate 
+Then evaluate
 
 $$
 \oint_C \vec{F} \cdot d\vec{r}
@@ -343,7 +343,7 @@ $$
 \iint_S \vec{A} \cdot \hat{n} dS
 $$
 
-, where 
+Where
 
 $$
 \vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}
@@ -785,7 +785,7 @@ A_\alpha = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-, then show that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$. (03)
+Then show that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$. (03)
 
 **Answer:**
 

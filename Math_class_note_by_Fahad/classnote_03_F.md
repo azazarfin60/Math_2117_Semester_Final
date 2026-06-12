@@ -251,7 +251,13 @@ $$
 
 ## Page 26
 
-$\star$ $\vec{A} = xz^3\,\hat{i} - 2x^2yz\,\hat{j} + 2xz^4\hat{k}$, $\nabla \times \vec{A} = ?$
+$\star$
+
+$$
+\vec{A} = xz^3\,\hat{i} - 2x^2yz\,\hat{j} + 2xz^4\hat{k},
+$$
+
+$\nabla \times \vec{A} = ?$
 
 $$
 \nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ xz^3 & -2x^2yz & 2xz^4 \end{vmatrix}

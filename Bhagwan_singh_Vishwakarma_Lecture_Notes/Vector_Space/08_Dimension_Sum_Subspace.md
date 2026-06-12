@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](07_Basis_Finite_Dimensional.md) | [Index](README.md) | [Next Lecture >](09_Theorems_Linear_Span.md)
 
-
 ---
 
 ## Prerequisites

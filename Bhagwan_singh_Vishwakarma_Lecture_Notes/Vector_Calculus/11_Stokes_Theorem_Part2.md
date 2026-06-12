@@ -9,18 +9,29 @@
 **Navigation**
 [< Previous Lecture](10_Stokes_Theorem_Part1.md) | [Index](README.md) | [Next Lecture >](12_Gauss_Divergence_Theorem_Part1.md)
 
-
 ---
 
 ## Prerequisites
-In the previous lecture, we verified Stokes' Theorem ($\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS$) for a rectangular boundary on a 2D plane. In this lecture, we will verify the theorem for a circular boundary and, most importantly, for a curved 3D surface (a hemisphere) to show that the theorem holds regardless of the surface geometry.
+In the previous lecture, we verified Stokes' Theorem
+
+$$
+\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS
+$$
+
+For a rectangular boundary on a 2D plane. In this lecture, we will verify the theorem for a circular boundary and, most importantly, for a curved 3D surface (a hemisphere) to show that the theorem holds regardless of the surface geometry.
 
 ---
 
 ## Solved Problems
 
 ### Problem 1: Verifying Stokes' Theorem on a Unit Circle
-**Question:** Verify Stokes' theorem for the function $\mathbf{F} = (x + 2y)\hat{\mathbf{i}} + (y + 3x)\hat{\mathbf{j}}$ where $C$ is the unit circle in the $xy$-plane.
+**Question:** Verify Stokes' theorem for the function
+
+$$
+\mathbf{F} = (x + 2y)\hat{\mathbf{i}} + (y + 3x)\hat{\mathbf{j}}
+$$
+
+where $C$ is the unit circle in the $xy$-plane.
 
 **Solution:**
 A unit circle in the $xy$-plane has the equation $x^2 + y^2 = 1$ and lies at $z = 0$.
@@ -73,7 +84,13 @@ $$
 So, LHS $= \pi$.
 
 #### Part 2: Evaluating the Surface Integral (RHS)
-We evaluate $\iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS$ over the flat unit disk bounded by the circle.
+We evaluate
+
+$$
+\iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS
+$$
+
+over the flat unit disk bounded by the circle.
 First, compute the curl:
 
 $$
@@ -99,14 +116,26 @@ So, RHS $= \pi$.
 ---
 
 ### Problem 2: Verifying Stokes' Theorem on a Hemisphere
-**Question:** Verify Stokes' theorem for $\mathbf{F} = y\hat{\mathbf{i}} + z\hat{\mathbf{j}} + x\hat{\mathbf{k}}$, where $S$ is the upper hemisphere $x^2 + y^2 + z^2 = 1 \text{ for } z \ge 0$, and $C$ is its boundary.
+**Question:** Verify Stokes' theorem for
+
+$$
+\mathbf{F} = y\hat{\mathbf{i}} + z\hat{\mathbf{j}} + x\hat{\mathbf{k}},
+$$
+
+Where $S$ is the upper hemisphere $x^2 + y^2 + z^2 = 1 \text{ for } z \ge 0$, and $C$ is its boundary.
 
 **Solution:**
 The surface $S$ is a 3D curved hemisphere dome. The boundary $C$ is the base ring of this dome lying in the $xy$-plane, which is exactly the unit circle $x^2 + y^2 = 1$ at $z=0$.
 
 #### Part 1: Evaluating the Line Integral (LHS)
 Since the boundary $C$ lies entirely in the $xy$-plane, $z = 0$ and $dz = 0$.
-The integral $\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C (y \, dx + z \, dy + x \, dz)$ simplifies to:
+The integral
+
+$$
+\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C (y \, dx + z \, dy + x \, dz)
+$$
+
+simplifies to:
 
 $$
 \oint_C y \, dx
@@ -125,7 +154,13 @@ $$
 So, LHS $= -\pi$.
 
 #### Part 2: Evaluating the Surface Integral (RHS)
-We evaluate $\iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS$ over the **curved hemispherical surface**.
+We evaluate
+
+$$
+\iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS
+$$
+
+over the **curved hemispherical surface**.
 Compute the curl:
 
 $$
@@ -179,16 +214,33 @@ So, RHS $= -\pi$.
 ---
 
 ### Practice Application
-**Question:** Evaluate $\oint_C (xy \, dx + xy^2 \, dy)$ taken round the positively oriented square with vertices $(1,0)$, $(0,1)$, $(-1,0)$, and $(0,-1)$ by using Stokes' theorem.
+**Question:** Evaluate
+
+$$
+\oint_C (xy \, dx + xy^2 \, dy)
+$$
+
+taken round the positively oriented square with vertices $(1,0)$, $(0,1)$, $(-1,0)$, and $(0,-1)$ by using Stokes' theorem.
 
 **Solution Approach:**
 Instead of evaluating $4$ separate line integrals for the square boundary, we use Stokes' Theorem to evaluate the surface integral:
-1.  $\mathbf{F} = xy\hat{\mathbf{i}} + xy^2\hat{\mathbf{j}}$.
+1.
+
+$$
+\mathbf{F} = xy\hat{\mathbf{i}} + xy^2\hat{\mathbf{j}}.
+$$
+
 2.  $\nabla \times \mathbf{F} = (y^2 - x)\hat{\mathbf{k}}$.
 3.  $\hat{\mathbf{n}} = \hat{\mathbf{k}}$ (square lies in $xy$-plane).
 4.  Integral: $\iint_S (y^2 - x) \, dx \, dy$.
 By symmetry, the $\iint_S x \, dx \, dy$ component over the centered square is $0$. 
-The remaining integral $4 \int_0^1 \int_0^{1-x} y^2 \, dy \, dx$ evaluates to exactly $\frac{1}{3}$.
+The remaining integral
+
+$$
+4 \int_0^1 \int_0^{1-x} y^2 \, dy \, dx
+$$
+
+evaluates to exactly $\frac{1}{3}$.
 
 ## What Comes Next
 We have completed our study of Stokes' Theorem. In the next phase, we will move on to the **Gauss Divergence Theorem**, which relates surface integrals to volume integrals.

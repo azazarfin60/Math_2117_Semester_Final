@@ -1,34 +1,77 @@
 <!-- Page 021 -->
-**# It moves along curve $x = 2t^2$, $y = t^2-4t$, $z = 3t-5$. Find components of its velocity and acceleration at $t = 1$ in direction $\hat{i}-3\hat{j}+2\hat{k}$**
+**# It moves along curve $x = 2t^2$, $y = t^2-4t$, $z = 3t-5$. Find components of its velocity and acceleration at $t = 1$ in direction
 
-$r = 2t^2\hat{i} + (t^2-4t)\hat{j} + (3t-5)\hat{k}$
+$$
+\hat{i}-3\hat{j}+2\hat{k}
+$$
 
-$v = \frac{dr}{dt} = 4t\hat{i} + (2t-4)\hat{j} + 3\hat{k}$
-$a = \frac{dv}{dt} = 4\hat{i} + 2\hat{j}$
+**
+
+$$
+r = 2t^2\hat{i} + (t^2-4t)\hat{j} + (3t-5)\hat{k}
+$$
+
+$$
+v = \frac{dr}{dt} = 4t\hat{i} + (2t-4)\hat{j} + 3\hat{k}
+$$
+
+$$
+a = \frac{dv}{dt} = 4\hat{i} + 2\hat{j}
+$$
 
 at $t = 1$:
-$v = 4\hat{i} - 2\hat{j} + 3\hat{k}$
-$a = 4\hat{i} + 2\hat{j}$
 
-Unit vector in direction $\hat{i}-3\hat{j}+2\hat{k}$ is:
-$\frac{\hat{i}-3\hat{j}+2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i}-3\hat{j}+2\hat{k}}{\sqrt{14}}$
+$$
+v = 4\hat{i} - 2\hat{j} + 3\hat{k}
+$$
+
+$$
+a = 4\hat{i} + 2\hat{j}
+$$
+
+Unit vector in direction
+
+$$
+\hat{i}-3\hat{j}+2\hat{k}
+$$
+
+is:
+
+$$
+\frac{\hat{i}-3\hat{j}+2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i}-3\hat{j}+2\hat{k}}{\sqrt{14}}
+$$
 
 components of velocity:
-$\frac{(4\hat{i}-2\hat{j}+3\hat{k}) \cdot (\hat{i}-3\hat{j}+2\hat{k})}{\sqrt{14}} = \frac{4+6+6}{\sqrt{14}} = \frac{16}{\sqrt{14}}$
+
+$$
+\frac{(4\hat{i}-2\hat{j}+3\hat{k}) \cdot (\hat{i}-3\hat{j}+2\hat{k})}{\sqrt{14}} = \frac{4+6+6}{\sqrt{14}} = \frac{16}{\sqrt{14}}
+$$
 
 components of acceleration:
-$\frac{(4\hat{i}+2\hat{j}) \cdot (\hat{i}-3\hat{j}+2\hat{k})}{\sqrt{14}} = \frac{4-6}{\sqrt{14}} = -\frac{2}{\sqrt{14}}$
+
+$$
+\frac{(4\hat{i}+2\hat{j}) \cdot (\hat{i}-3\hat{j}+2\hat{k})}{\sqrt{14}} = \frac{4-6}{\sqrt{14}} = -\frac{2}{\sqrt{14}}
+$$
 
 **# unit tangent vector $x = t^2+1, y = 4t-3, z = 2t^2-6t$, and at $t = 2$**
 
-$R = (t^2+1)\hat{i} + (4t-3)\hat{j} + (2t^2-6t)\hat{k}$
+$$
+R = (t^2+1)\hat{i} + (4t-3)\hat{j} + (2t^2-6t)\hat{k}
+$$
 
-$\frac{dr}{dt} = 2t\hat{i} + 4\hat{j} + (4t-6)\hat{k}$
+$$
+\frac{dr}{dt} = 2t\hat{i} + 4\hat{j} + (4t-6)\hat{k}
+$$
 
-$T = \frac{dr/dt}{|dr/dt|} = \frac{2t\hat{i} + 4\hat{j} + (4t-6)\hat{k}}{\sqrt{(2t)^2 + 4^2 + (4t-6)^2}}$
+$$
+T = \frac{dr/dt}{|dr/dt|} = \frac{2t\hat{i} + 4\hat{j} + (4t-6)\hat{k}}{\sqrt{(2t)^2 + 4^2 + (4t-6)^2}}
+$$
 
 at $t = 2$:
-$T = \frac{4\hat{i} + 4\hat{j} + 2\hat{k}}{\sqrt{4^2 + 4^2 + 2^2}} = \frac{4\hat{i} + 4\hat{j} + 2\hat{k}}{6} = \frac{2}{3}\hat{i} + \frac{2}{3}\hat{j} + \frac{1}{3}\hat{k}$
+
+$$
+T = \frac{4\hat{i} + 4\hat{j} + 2\hat{k}}{\sqrt{4^2 + 4^2 + 2^2}} = \frac{4\hat{i} + 4\hat{j} + 2\hat{k}}{6} = \frac{2}{3}\hat{i} + \frac{2}{3}\hat{j} + \frac{1}{3}\hat{k}
+$$
 
 **# IF A has a constant magnitude show that A and dA/dt are perpendicular provided $|dA/dt| \neq 0$**
 
@@ -42,25 +85,45 @@ Thus, $A \cdot \frac{dA}{dt} = 0$ and $A$ is perpendicular to $\frac{dA}{dt}$ pr
 <!-- Page 022 -->
 **# show $\vec{A} \cdot \frac{d\vec{A}}{dt} = A \frac{dA}{dt}$**
 
-$\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
+$$
+
 $A = \sqrt{A_1^2 + A_2^2 + A_3^2}$
 
 $\frac{dA}{dt} = \frac{1}{2}(A_1^2 + A_2^2 + A_3^2)^{-1/2} \left(2A_1\frac{dA_1}{dt} + 2A_2\frac{dA_2}{dt} + 2A_3\frac{dA_3}{dt}\right)$
 $\frac{dA}{dt} = \frac{A_1\frac{dA_1}{dt} + A_2\frac{dA_2}{dt} + A_3\frac{dA_3}{dt}}{(A_1^2 + A_2^2 + A_3^2)^{1/2}} = \frac{\vec{A} \cdot \frac{d\vec{A}}{dt}}{A}$
 $\Rightarrow A \frac{dA}{dt} = \vec{A} \cdot \frac{d\vec{A}}{dt}$
 
-**# $\phi(x,y,z) = xy^2z$, $A = xz\hat{i} - xy^2\hat{j} + yz^2\hat{k}$, find $\frac{\partial^3}{\partial x^2 \partial z}(\phi A)$ at $(2, -1, 1)$**
+**# $\phi(x,y,z) = xy^2z$,
 
-$\phi A = x^2 y^2 z^2 \hat{i} - x^2 y^4 z \hat{j} + x y^3 z^3 \hat{k}$
+$$
+A = xz\hat{i} - xy^2\hat{j} + yz^2\hat{k},
+$$
 
-$\frac{\partial}{\partial z}(\phi A) = 2x^2 y^2 z \hat{i} - x^2 y^4 \hat{j} + 3x y^3 z^2 \hat{k}$
+Find $\frac{\partial^3}{\partial x^2 \partial z}(\phi A)$ at $(2, -1, 1)$**
 
-$\frac{\partial^2}{\partial x \partial z}(\phi A) = 4x y^2 z \hat{i} - 2x y^4 \hat{j} + 3 y^3 z^2 \hat{k}$
+$$
+\phi A = x^2 y^2 z^2 \hat{i} - x^2 y^4 z \hat{j} + x y^3 z^3 \hat{k}
+$$
 
-$\frac{\partial^3}{\partial x^2 \partial z}(\phi A) = 4 y^2 z \hat{i} - 2 y^4 \hat{j}$
+$$
+\frac{\partial}{\partial z}(\phi A) = 2x^2 y^2 z \hat{i} - x^2 y^4 \hat{j} + 3x y^3 z^2 \hat{k}
+$$
+
+$$
+\frac{\partial^2}{\partial x \partial z}(\phi A) = 4x y^2 z \hat{i} - 2x y^4 \hat{j} + 3 y^3 z^2 \hat{k}
+$$
+
+$$
+\frac{\partial^3}{\partial x^2 \partial z}(\phi A) = 4 y^2 z \hat{i} - 2 y^4 \hat{j}
+$$
 
 at $(2, -1, 1)$:
-$\frac{\partial^3}{\partial x^2 \partial z}(\phi A) = 4(-1)^2(1)\hat{i} - 2(-1)^4\hat{j} = 4\hat{i} - 2\hat{j}$
+
+$$
+\frac{\partial^3}{\partial x^2 \partial z}(\phi A) = 4(-1)^2(1)\hat{i} - 2(-1)^4\hat{j} = 4\hat{i} - 2\hat{j}
+$$
 
 ~~**# prove Frenet-Serret formulas**~~
 since $T \cdot T = 1$, $T \cdot \frac{dT}{ds} = 0$, $\frac{dT}{ds}$ perpendicular to $T$
@@ -75,16 +138,31 @@ $\frac{dN}{ds} = \tau B - kT$
 (c) binormal $B$, torsion $\tau$, radius of torsion $\sigma = 1/\tau$
 
 (a)
-$R = 3\cos t \hat{i} + 3\sin t \hat{j} + 4t\hat{k}$
-$\frac{dR}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}$
+
+$$
+R = 3\cos t \hat{i} + 3\sin t \hat{j} + 4t\hat{k}
+$$
+
+$$
+\frac{dR}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}
+$$
+
 $\left|\frac{dR}{dt}\right| = 5$
-$T = \frac{dr/dt}{|dr/dt|} = -\frac{3}{5}\sin t \hat{i} + \frac{3}{5}\cos t \hat{j} + \frac{4}{5}\hat{k}$
+
+$$
+T = \frac{dr/dt}{|dr/dt|} = -\frac{3}{5}\sin t \hat{i} + \frac{3}{5}\cos t \hat{j} + \frac{4}{5}\hat{k}
+$$
 
 <!-- Page 023 -->
 (b)
-$\frac{dT}{dt} = \frac{d}{dt}\left(-\frac{3}{5}\sin t\right)\hat{i} + \frac{d}{dt}\left(\frac{3}{5}\cos t\right)\hat{j} + 0 = -\frac{3}{5}\cos t \hat{i} - \frac{3}{5}\sin t \hat{j}$
 
-$\frac{dT}{ds} = \frac{dT}{dt} / \frac{ds}{dt} = \frac{dT}{dt} / \left|\frac{dr}{dt}\right| = \frac{dT/dt}{5} = -\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}$
+$$
+\frac{dT}{dt} = \frac{d}{dt}\left(-\frac{3}{5}\sin t\right)\hat{i} + \frac{d}{dt}\left(\frac{3}{5}\cos t\right)\hat{j} + 0 = -\frac{3}{5}\cos t \hat{i} - \frac{3}{5}\sin t \hat{j}
+$$
+
+$$
+\frac{dT}{ds} = \frac{dT}{dt} / \frac{ds}{dt} = \frac{dT}{dt} / \left|\frac{dr}{dt}\right| = \frac{dT/dt}{5} = -\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}
+$$
 
 $\frac{dT}{ds} = kN$
 $\left|\frac{dT}{ds}\right| = |k||N| = k \quad (k \geq 0)$
@@ -92,7 +170,9 @@ $\left|\frac{dT}{ds}\right| = |k||N| = k \quad (k \geq 0)$
 $k = \left|\frac{dT}{ds}\right| = \sqrt{\left(-\frac{3}{25}\cos t\right)^2 + \left(-\frac{3}{25}\sin t\right)^2} = \frac{3}{25}$
 $\rho = \frac{1}{k} = \frac{25}{3}$
 
-$\frac{dT}{ds} = kN \Rightarrow N = \frac{1}{k}\frac{dT}{ds} = \frac{25}{3}\left(-\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}\right) = -\cos t \hat{i} - \sin t \hat{j}$
+$$
+\frac{dT}{ds} = kN \Rightarrow N = \frac{1}{k}\frac{dT}{ds} = \frac{25}{3}\left(-\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}\right) = -\cos t \hat{i} - \sin t \hat{j}
+$$
 
 (c)
 
@@ -100,10 +180,18 @@ $$
 B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\ -\cos t & -\sin t & 0 \end{vmatrix} = \frac{4}{5}\sin t \hat{i} - \frac{4}{5}\cos t \hat{j} + \frac{3}{5}\hat{k}
 $$
 
-$\frac{dB}{dt} = \frac{4}{5}\cos t \hat{i} + \frac{4}{5}\sin t \hat{j}$
-$\frac{dB}{ds} = \frac{dB/dt}{|dr/dt|} = \frac{4}{25}\cos t \hat{i} + \frac{4}{25}\sin t \hat{j}$
+$$
+\frac{dB}{dt} = \frac{4}{5}\cos t \hat{i} + \frac{4}{5}\sin t \hat{j}
+$$
 
-$-\tau N = -\tau (-\cos t \hat{i} - \sin t \hat{j}) = \frac{4}{25}\cos t \hat{i} + \frac{4}{25}\sin t \hat{j}$
+$$
+\frac{dB}{ds} = \frac{dB/dt}{|dr/dt|} = \frac{4}{25}\cos t \hat{i} + \frac{4}{25}\sin t \hat{j}
+$$
+
+$$
+-\tau N = -\tau (-\cos t \hat{i} - \sin t \hat{j}) = \frac{4}{25}\cos t \hat{i} + \frac{4}{25}\sin t \hat{j}
+$$
+
 $\Rightarrow \tau = \frac{4}{25}$
 $\sigma = \frac{1}{\tau} = \frac{25}{4}$
 
@@ -112,30 +200,50 @@ $\sigma = \frac{1}{\tau} = \frac{25}{4}$
 (a) curvature
 (b) torsion
 
-$r = t\hat{i} + t^2\hat{j} + \frac{2}{3}t^3\hat{k}$
-$\frac{dr}{dt} = \hat{i} + 2t\hat{j} + 2t^2\hat{k}$
+$$
+r = t\hat{i} + t^2\hat{j} + \frac{2}{3}t^3\hat{k}
+$$
+
+$$
+\frac{dr}{dt} = \hat{i} + 2t\hat{j} + 2t^2\hat{k}
+$$
 
 (a)
 $\frac{ds}{dt} = \left|\frac{dr}{dt}\right| = \sqrt{1^2 + (2t)^2 + (2t^2)^2} = \sqrt{1+4t^2+4t^4} = 1+2t^2$
 
-$T = \frac{dr/dt}{ds/dt} = \frac{\hat{i} + 2t\hat{j} + 2t^2\hat{k}}{1+2t^2}$
+$$
+T = \frac{dr/dt}{ds/dt} = \frac{\hat{i} + 2t\hat{j} + 2t^2\hat{k}}{1+2t^2}
+$$
 
-$\frac{dT}{dt} = \frac{(1+2t^2)(2\hat{j} + 4t\hat{k}) - (\hat{i} + 2t\hat{j} + 2t^2\hat{k})(4t)}{(1+2t^2)^2} = \frac{-4t\hat{i} + (2-4t^2)\hat{j} + 4t\hat{k}}{(1+2t^2)^2}$
+$$
+\frac{dT}{dt} = \frac{(1+2t^2)(2\hat{j} + 4t\hat{k}) - (\hat{i} + 2t\hat{j} + 2t^2\hat{k})(4t)}{(1+2t^2)^2} = \frac{-4t\hat{i} + (2-4t^2)\hat{j} + 4t\hat{k}}{(1+2t^2)^2}
+$$
 
-$\frac{dT}{ds} = \frac{dT/dt}{ds/dt} = \frac{-4t\hat{i} + (2-4t^2)\hat{j} + 4t\hat{k}}{(1+2t^2)^3}$
+$$
+\frac{dT}{ds} = \frac{dT/dt}{ds/dt} = \frac{-4t\hat{i} + (2-4t^2)\hat{j} + 4t\hat{k}}{(1+2t^2)^3}
+$$
 
 $\left|\frac{dT}{ds}\right| = |k||N| = k = \sqrt{\frac{(-4t)^2 + (2-4t^2)^2 + (4t)^2}{(1+2t^2)^6}} = \frac{2}{(1+2t^2)^2}$
 $\rho = \frac{1}{k} = \frac{(1+2t^2)^2}{2}$
 
 (b)
-$N = \frac{1}{k}\frac{dT}{ds} = \frac{-2t\hat{i} + (1-2t^2)\hat{j} + 2t\hat{k}}{1+2t^2}$
+
+$$
+N = \frac{1}{k}\frac{dT}{ds} = \frac{-2t\hat{i} + (1-2t^2)\hat{j} + 2t\hat{k}}{1+2t^2}
+$$
 
 $$
 B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{1}{1+2t^2} & \frac{2t}{1+2t^2} & \frac{2t^2}{1+2t^2} \\ \frac{-2t}{1+2t^2} & \frac{1-2t^2}{1+2t^2} & \frac{2t}{1+2t^2} \end{vmatrix} = \frac{2t^2\hat{i} - 2t\hat{j} + \hat{k}}{1+2t^2}
 $$
 
-$\frac{dB}{ds} = \frac{dB/dt}{ds/dt} = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}$
-$-\tau N = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}$
+$$
+\frac{dB}{ds} = \frac{dB/dt}{ds/dt} = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}
+$$
+
+$$
+-\tau N = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}
+$$
+
 $\Rightarrow \tau = \frac{2}{(1+2t^2)^2} = k \text{ for this curve}$
 
 <!-- Page 025 -->
@@ -270,9 +378,17 @@ $$
 **# Dependent নাকি independent**
 rank-3 হলে independent কম হলে dependent
 
-$\hat{i} + 2\hat{j} + 3\hat{k}$
-$\hat{i} + 2\hat{j} + \hat{k}$
-$\hat{i} + \hat{j} + \hat{k}$
+$$
+\hat{i} + 2\hat{j} + 3\hat{k}
+$$
+
+$$
+\hat{i} + 2\hat{j} + \hat{k}
+$$
+
+$$
+\hat{i} + \hat{j} + \hat{k}
+$$
 
 $$
 \begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 1 & 1 & 1 \end{pmatrix} - \text{rank-3 = independent}

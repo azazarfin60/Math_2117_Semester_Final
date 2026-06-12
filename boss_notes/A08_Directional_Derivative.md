@@ -38,7 +38,12 @@ It gives the rate of change of $\phi$ at $P$ in the direction $\hat{u}$.
 
 ## Worked Example 1 (PYQ 2018)
 
-**Problem**: Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
+**Problem**: Find the directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}.
+$$
+
 
 **Solution**:
 
@@ -110,11 +115,32 @@ $$
 
 **Solution**:
 
-Direction: $\vec{AB} = 2\hat{i} + 3\hat{j} + 2\hat{k}$. Unit vector: $\hat{u} = \frac{2\hat{i}+3\hat{j}+2\hat{k}}{\sqrt{17}}$.
+Direction:
 
-Gradient: $\nabla f = (2x+y)\hat{i} + x\hat{j} + 2z\hat{k}$.
+$$
+\vec{AB} = 2\hat{i} + 3\hat{j} + 2\hat{k}.
+$$
 
-At $(1,-1,-1)$: $\nabla f = \hat{i} + \hat{j} - 2\hat{k}$.
+. Unit vector:
+
+$$
+\hat{u} = \frac{2\hat{i}+3\hat{j}+2\hat{k}}{\sqrt{17}}.
+$$
+
+
+Gradient:
+
+$$
+\nabla f = (2x+y)\hat{i} + x\hat{j} + 2z\hat{k}.
+$$
+
+
+At $(1,-1,-1)$:
+
+$$
+\nabla f = \hat{i} + \hat{j} - 2\hat{k}.
+$$
+
 
 $$
 D_{\hat{u}}f = \frac{2 + 3 - 4}{\sqrt{17}} = \frac{1}{\sqrt{17}}
@@ -124,11 +150,21 @@ $$
 
 ## Worked Example 4 (PYQ 2019)
 
-**Problem**: Find directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in direction $2\hat{i} - \hat{j} - 2\hat{k}$.
+**Problem**: Find directional derivative of $\phi = x^2yz + 4xz^2$ at $(1, -2, 1)$ in direction
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}.
+$$
+
 
 **Solution**:
 
-At $(1,-2,1)$: $\nabla\phi = 0\hat{i} + \hat{j} + 6\hat{k}$.
+At $(1,-2,1)$:
+
+$$
+\nabla\phi = 0\hat{i} + \hat{j} + 6\hat{k}.
+$$
+
 
 $$
 D_{\hat{u}}\phi = \frac{0(2) + 1(-1) + 6(-2)}{3} = \frac{-13}{3}

@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](08_Dimension_Sum_Subspace.md) | [Index](README.md) | [Next Lecture >](10_Theorems_Independence_Dependence.md)
 
-
 ---
 
 ## Prerequisites

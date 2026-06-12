@@ -9,18 +9,29 @@
 **Navigation**
 [< Previous Lecture](12_Gauss_Divergence_Theorem_Part1.md) | [Index](README.md) | [Next Lecture >](14_Greens_Theorem.md)
 
-
 ---
 
 ## Prerequisites
-We previously used the Gauss Divergence Theorem ($\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS = \iiint_V (\nabla \cdot \mathbf{F}) \, dV$) to evaluate surface integrals by converting them into simpler volume integrals. In this lecture, we will perform a full **verification** of the theorem over a composite surface (a cylinder) and explore a neat trick utilizing the center of gravity to solve cone integrals instantly.
+We previously used the Gauss Divergence Theorem
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS = \iiint_V (\nabla \cdot \mathbf{F}) \, dV
+$$
+
+To evaluate surface integrals by converting them into simpler volume integrals. In this lecture, we will perform a full **verification** of the theorem over a composite surface (a cylinder) and explore a neat trick utilizing the center of gravity to solve cone integrals instantly.
 
 ---
 
 ## Solved Problems
 
 ### Problem 1: Verifying Gauss Divergence Theorem on a Cylinder
-**Question:** Verify the divergence theorem for $\mathbf{F} = 4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}$ taken over the region bounded by $x^2 + y^2 = 4$, $z=0$, and $z=3$.
+**Question:** Verify the divergence theorem for
+
+$$
+\mathbf{F} = 4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}
+$$
+
+taken over the region bounded by $x^2 + y^2 = 4$, $z=0$, and $z=3$.
 
 **Solution:**
 The region is a solid cylinder of radius $R=2$ and height $h=3$. To verify the theorem, we must evaluate both the volume integral (RHS) and the surface integral (LHS) and ensure they are equal.
@@ -32,7 +43,12 @@ $$
 \nabla \cdot \mathbf{F} = \frac{\partial}{\partial x}(4x) + \frac{\partial}{\partial y}(-2y^2) + \frac{\partial}{\partial z}(z^2) = 4 - 4y + 2z
 $$
 
-The triple integral is $\iiint_V (4 - 4y + 2z) \, dx \, dy \, dz$.
+The triple integral is
+
+$$
+\iiint_V (4 - 4y + 2z) \, dx \, dy \, dz.
+$$
+
 The bounds for the cylinder are:
 *   $z$ from $0$ to $3$.
 *   $y$ from $-\sqrt{4 - x^2}$ to $\sqrt{4 - x^2}$ (from the circular base).
@@ -91,9 +107,24 @@ The closed surface $S$ consists of $3$ parts: the bottom base ($S_1$), the top b
 *   The integral is $9 \times \text{Area}(S_2) = 9 \times (\pi \cdot 2^2) = 36\pi$.
 
 **3. Curved Lateral Surface ($S_3$ where $x^2 + y^2 = 4$):**
-*   Gradient of the surface $g = x^2 + y^2 - 4 = 0$ is $\nabla g = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}}$.
-*   Outward normal $\hat{\mathbf{n}}_3 = \frac{2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}}}{\sqrt{4x^2 + 4y^2}} = \frac{x\hat{\mathbf{i}} + y\hat{\mathbf{j}}}{2}$.
-*   $\mathbf{F} \cdot \hat{\mathbf{n}}_3 = (4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}) \cdot \frac{x\hat{\mathbf{i}} + y\hat{\mathbf{j}}}{2} = 2x^2 - y^3$.
+*   Gradient of the surface $g = x^2 + y^2 - 4 = 0$ is
+
+$$
+\nabla g = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}}.
+$$
+
+*   Outward normal
+
+$$
+\hat{\mathbf{n}}_3 = \frac{2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}}}{\sqrt{4x^2 + 4y^2}} = \frac{x\hat{\mathbf{i}} + y\hat{\mathbf{j}}}{2}.
+$$
+
+*
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}_3 = (4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}) \cdot \frac{x\hat{\mathbf{i}} + y\hat{\mathbf{j}}}{2} = 2x^2 - y^3.
+$$
+
 *   Convert to cylindrical coordinates: $x = 2\cos\theta, y = 2\sin\theta, dS_3 = R \, d\theta \, dz = 2 \, d\theta \, dz$.
 *   Limits: $\theta \in [0, 2\pi]$ and $z \in [0, 3]$.
 
@@ -105,7 +136,19 @@ $$
 = 48 \int_0^{2\pi} (\cos^2\theta - \sin^3\theta) \, d\theta
 $$
 
-Since $\int_0^{2\pi} \sin^3\theta \, d\theta = 0$ over a full period, and $\int_0^{2\pi} \cos^2\theta \, d\theta = \pi$:
+Since
+
+$$
+\int_0^{2\pi} \sin^3\theta \, d\theta = 0
+$$
+
+ over a full period, and
+
+$$
+\int_0^{2\pi} \cos^2\theta \, d\theta = \pi:
+$$
+
+:
 
 $$
 = 48(\pi - 0) = 48\pi
@@ -120,7 +163,13 @@ Since LHS = RHS = $84\pi$, the Gauss Divergence Theorem is fully verified!
 ---
 
 ### Problem 2: Center of Gravity Trick for Cones
-**Question:** Evaluate $\iint_S (x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}) \cdot \hat{\mathbf{n}} \, dS$, where $S$ is the closed surface bounded by the cone $x^2 + y^2 = z^2$ and the plane $z=1$.
+**Question:** Evaluate
+
+$$
+\iint_S (x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}) \cdot \hat{\mathbf{n}} \, dS,
+$$
+
+Where $S$ is the closed surface bounded by the cone $x^2 + y^2 = z^2$ and the plane $z=1$.
 
 **Solution:**
 Using the Divergence Theorem, we convert this to a volume integral.
@@ -137,7 +186,13 @@ $$
 
 We recognize two geometric properties:
 1.  $\iiint_V dV$ is the geometric volume $V$ of the cone.
-2.  By definition, the $z$-coordinate of the centroid (center of gravity) is $\bar{z} = \frac{\iiint_V z \, dV}{V}$. Therefore, $\iiint_V z \, dV = V\bar{z}$.
+2.  By definition, the $z$-coordinate of the centroid (center of gravity) is
+
+$$
+\bar{z} = \frac{\iiint_V z \, dV}{V}.
+$$
+
+. Therefore, $\iiint_V z \, dV = V\bar{z}$.
 
 Substitute these in:
 

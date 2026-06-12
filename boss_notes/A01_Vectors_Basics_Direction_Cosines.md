@@ -15,9 +15,27 @@ This section covers the absolute basics of vectors: definitions, unit vectors, a
 - **Scalar Quantity**: A physical quantity that has only magnitude but no direction (e.g., Mass, Temperature, Time).
 - **Vector Quantity**: A physical quantity that has both magnitude and direction, and obeys vector addition rules (e.g., Velocity, Force, Acceleration).
 
-A vector field $\vec{V}(x, y) = P(x, y)\hat{i} + Q(x, y)\hat{j}$ assigns a vector to every point in space.
-- A **source** field (e.g., $\vec{V} = x\hat{i} + y\hat{j}$) has all vectors pointing radially outward.
-- A **sink** field (e.g., $\vec{V} = -x\hat{i} - y\hat{j}$) has all vectors pointing radially inward.
+A vector field
+
+$$
+\vec{V}(x, y) = P(x, y)\hat{i} + Q(x, y)\hat{j}
+$$
+
+assigns a vector to every point in space.
+- A **source** field (e.g.,
+
+$$
+\vec{V} = x\hat{i} + y\hat{j}
+$$
+
+) has all vectors pointing radially outward.
+- A **sink** field (e.g.,
+
+$$
+\vec{V} = -x\hat{i} - y\hat{j}
+$$
+
+) has all vectors pointing radially inward.
 
 ---
 
@@ -32,17 +50,42 @@ $$
 $$
 
 ### Worked Example (PYQ 2020)
-**Problem**: Find a unit vector parallel to the resultant of $\vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}$ and $\vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}$.
+**Problem**: Find a unit vector parallel to the resultant of
+
+$$
+\vec{r}_1 = 2\hat{i} + 4\hat{j} - 5\hat{k}
+$$
+
+ and
+
+$$
+\vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}.
+$$
+
 **Solution**:
-$\vec{R} = \vec{r}_1 + \vec{r}_2 = 3\hat{i} + 6\hat{j} - 4\hat{k}$
+
+$$
+\vec{R} = \vec{r}_1 + \vec{r}_2 = 3\hat{i} + 6\hat{j} - 4\hat{k}
+$$
+
 $\lvert \vec{R} \rvert = \sqrt{3^2 + 6^2 + (-4)^2} = \sqrt{9 + 36 + 16} = \sqrt{61}$
-Unit vector $\hat{u} = \frac{3\hat{i} + 6\hat{j} - 4\hat{k}}{\sqrt{61}}$
+Unit vector
+
+$$
+\hat{u} = \frac{3\hat{i} + 6\hat{j} - 4\hat{k}}{\sqrt{61}}
+$$
 
 ---
 
 ## Direction Cosines
 
-Let a position vector be $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ with magnitude $r = \sqrt{x^2 + y^2 + z^2}$.
+Let a position vector be
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+with magnitude $r = \sqrt{x^2 + y^2 + z^2}$.
 
 The angles $\alpha, \beta, \gamma$ that the vector makes with the positive $x, y, z$ axes respectively are defined by their **direction cosines**:
 
@@ -59,7 +102,11 @@ $$
 ### Worked Example (PYQ 2019)
 **Problem**: Find the acute angles which the line joining $P(1, -3, 2)$ and $Q(3, -5, 1)$ makes with the coordinate axes.
 **Solution**:
-$\vec{PQ} = (3 - 1)\hat{i} + (-5 - (-3))\hat{j} + (1 - 2)\hat{k} = 2\hat{i} - 2\hat{j} - \hat{k}$
+
+$$
+\vec{PQ} = (3 - 1)\hat{i} + (-5 - (-3))\hat{j} + (1 - 2)\hat{k} = 2\hat{i} - 2\hat{j} - \hat{k}
+$$
+
 Magnitude $\lvert \vec{PQ} \rvert = \sqrt{4 + 4 + 1} = 3$
 
 Direction cosines:

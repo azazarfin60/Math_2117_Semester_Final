@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](15_Linear_Transformation.md) | [Index](README.md) | [Next Lecture >](17_Isomorphism.md)
 
-
 ---
 
 ## Prerequisites

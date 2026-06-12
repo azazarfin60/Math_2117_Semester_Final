@@ -9,7 +9,6 @@
 **Navigation**
 [Index](README.md) | [Next Lecture >](02_Rank_of_Matrix_Concept.md)
 
-
 ## Prerequisites
 - Basic algebra and arithmetic operations.
 - Familiarity with basic mathematical notations.

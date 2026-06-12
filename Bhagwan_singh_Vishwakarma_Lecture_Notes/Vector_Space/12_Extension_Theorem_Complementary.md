@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](11_Existence_Dimension_Theorem.md) | [Index](README.md) | [Next Lecture >](13_Dimension_Sum_Proof.md)
 
-
 ---
 
 ## Prerequisites

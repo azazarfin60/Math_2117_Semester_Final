@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](02_Rank_of_Matrix_Concept.md) | [Index](README.md) | [Next Lecture >](04_Rank_by_Normal_Canonical_Form.md)
 
-
 ## Prerequisites
 - Understanding of matrix rank and minors.
 - Familiarity with elementary row operations.

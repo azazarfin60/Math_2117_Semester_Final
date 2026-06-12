@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](10_Theorems_Independence_Dependence.md) | [Index](README.md) | [Next Lecture >](12_Extension_Theorem_Complementary.md)
 
-
 ---
 
 ## Prerequisites

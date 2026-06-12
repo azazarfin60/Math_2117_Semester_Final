@@ -22,16 +22,39 @@ If asked for a component of velocity or acceleration in a specific direction, ta
 
 ## Worked Example 1: Directional Components (PYQ 2019, 2023)
 
-**Problem**: A particle moves along $x = 2t^2, y = t^2 - 4t, z = 3t - 5$. Find the components of velocity and acceleration at $t=1$ in the direction of $\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}$.
+**Problem**: A particle moves along $x = 2t^2, y = t^2 - 4t, z = 3t - 5$. Find the components of velocity and acceleration at $t=1$ in the direction of
+
+$$
+\vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}.
+$$
+
 
 **Solution**:
 **Step 1: Setup**
-Position: $\vec{r}(t) = 2t^2\hat{i} + (t^2 - 4t)\hat{j} + (3t - 5)\hat{k}$
-Direction Unit Vector: $\hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}$
+Position:
+
+$$
+\vec{r}(t) = 2t^2\hat{i} + (t^2 - 4t)\hat{j} + (3t - 5)\hat{k}
+$$
+
+Direction Unit Vector:
+
+$$
+\hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}
+$$
 
 **Step 2: Velocity**
-$\vec{v}(t) = \frac{d\vec{r}}{dt} = 4t\hat{i} + (2t - 4)\hat{j} + 3\hat{k}$
-At $t=1$: $\vec{v}(1) = 4\hat{i} - 2\hat{j} + 3\hat{k}$
+
+$$
+\vec{v}(t) = \frac{d\vec{r}}{dt} = 4t\hat{i} + (2t - 4)\hat{j} + 3\hat{k}
+$$
+
+At $t=1$:
+
+$$
+\vec{v}(1) = 4\hat{i} - 2\hat{j} + 3\hat{k}
+$$
+
 Component in direction $\hat{u}$:
 
 $$
@@ -39,8 +62,18 @@ v_d = \vec{v}(1) \cdot \hat{u} = (4\hat{i} - 2\hat{j} + 3\hat{k}) \cdot \left( \
 $$
 
 **Step 3: Acceleration**
-$\vec{a}(t) = \frac{d\vec{v}}{dt} = 4\hat{i} + 2\hat{j}$
-At $t=1$: $\vec{a}(1) = 4\hat{i} + 2\hat{j}$ (Acceleration is constant)
+
+$$
+\vec{a}(t) = \frac{d\vec{v}}{dt} = 4\hat{i} + 2\hat{j}
+$$
+
+At $t=1$:
+
+$$
+\vec{a}(1) = 4\hat{i} + 2\hat{j}
+$$
+
+(Acceleration is constant)
 Component in direction $\hat{u}$:
 
 $$
@@ -51,7 +84,13 @@ $$
 
 ## Worked Example 2: Trigonometric Motion (PYQ 2024)
 
-**Problem**: A particle moves so that its position vector is $\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}$ where $\omega$ is constant. Show that velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that $\vec{r} \times \vec{v}$ is a constant vector.
+**Problem**: A particle moves so that its position vector is
+
+$$
+\vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}
+$$
+
+where $\omega$ is constant. Show that velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that $\vec{r} \times \vec{v}$ is a constant vector.
 
 **Solution**:
 **Step 1: Velocity**

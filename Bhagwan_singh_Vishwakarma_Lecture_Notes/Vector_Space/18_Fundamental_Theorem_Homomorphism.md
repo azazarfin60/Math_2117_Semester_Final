@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](17_Isomorphism.md) | [Index](README.md) | [Next Lecture >](19_Matrix_Representation.md)
 
-
 ---
 
 ## Prerequisites

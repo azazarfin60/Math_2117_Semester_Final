@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](02_General_Properties.md) | [Index](README.md) | [Next Lecture >](04_Intersection_Union_Subspaces.md)
 
-
 ---
 
 ## Prerequisites
@@ -165,7 +164,13 @@ $$
 Therefore, $W$ is a subspace of $V_3(F)$.
 
 ### Example 2: A Subspace of Matrices
-**Question:** Show that the set $W = \left\lbrace \begin{pmatrix} x & y \\ -y & x \end{pmatrix} \mid x, y \in F \right\rbrace$ is a subspace of $M_2(F)$.
+**Question:** Show that the set
+
+$$
+W = \left\lbrace \begin{pmatrix} x & y \\ -y & x \end{pmatrix} \mid x, y \in F \right\rbrace
+$$
+
+is a subspace of $M_2(F)$.
 
 **Solution:**
 $M_2(F)$ is the vector space of all $2 \times 2$ matrices. The subset $W$ has a specific rule: the diagonal elements must match each other, and the off-diagonal elements must be negatives of each other.

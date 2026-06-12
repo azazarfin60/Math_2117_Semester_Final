@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](13_Dimension_Sum_Proof.md) | [Index](README.md) | [Next Lecture >](15_Linear_Transformation.md)
 
-
 ---
 
 ## Prerequisites

@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](01_Scalar_Vector_Point_Function.md) | [Index](README.md) | [Next Lecture >](03_Gradient.md)
 
-
 ---
 
 ## Prerequisites
@@ -66,7 +65,13 @@ $$
 ## Solved Problems
 
 ### Problem 1: Velocity and Acceleration
-**Question:** If a position vector is given by $\vec{r} = a \cos t\hat{i} + a \sin t\hat{j} + t\hat{k}$, find the velocity, the acceleration, and the magnitude of the acceleration.
+**Question:** If a position vector is given by
+
+$$
+\vec{r} = a \cos t\hat{i} + a \sin t\hat{j} + t\hat{k},
+$$
+
+Find the velocity, the acceleration, and the magnitude of the acceleration.
 
 **Solution:**
 First, find velocity by differentiating once:
@@ -88,7 +93,19 @@ $$
 $$
 
 ### Problem 2: Dot Product Differentiation
-**Question:** If $\vec{u} = t^2\hat{i} - t\hat{j} + (2t+1)\hat{k}$ and $\vec{v} = (2t-3)\hat{i} + \hat{j} - t\hat{k}$, find $\frac{d}{dt}(\vec{u} \cdot \vec{v})$ at $t=1$.
+**Question:** If
+
+$$
+\vec{u} = t^2\hat{i} - t\hat{j} + (2t+1)\hat{k}
+$$
+
+ and
+
+$$
+\vec{v} = (2t-3)\hat{i} + \hat{j} - t\hat{k},
+$$
+
+Find $\frac{d}{dt}(\vec{u} \cdot \vec{v})$ at $t=1$.
 
 **Solution:**
 First, compute the dot product algebraically:
@@ -146,7 +163,13 @@ $$
 $$
 
 ### Problem 4: Position Vector and Kinematics
-**Question:** A particle moves so that its position vector is given by $\vec{r} = \cos \omega t\hat{i} + \sin \omega t\hat{j}$, where $\omega$ is a constant. Show that the velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that the acceleration $\vec{a}$ is directed towards the origin.
+**Question:** A particle moves so that its position vector is given by
+
+$$
+\vec{r} = \cos \omega t\hat{i} + \sin \omega t\hat{j},
+$$
+
+Where $\omega$ is a constant. Show that the velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that the acceleration $\vec{a}$ is directed towards the origin.
 
 **Solution:**
 First, compute velocity:

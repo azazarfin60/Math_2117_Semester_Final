@@ -9,18 +9,35 @@
 **Navigation**
 [< Previous Lecture](07_Surface_Integral_Part1.md) | [Index](README.md) | [Next Lecture >](09_Volume_Integral.md)
 
-
 ---
 
 ## Prerequisites
-In the previous lecture, we established the formula for Surface Integration ($\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$) and solved a problem by projecting the 3D surface onto the $xy$-plane. In this lecture, we will demonstrate that the choice of projection plane does not alter the final result, and we will introduce **Spherical Coordinates** to drastically simplify integration over spherical surfaces.
+In the previous lecture, we established the formula for Surface Integration
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS
+$$
+
+And solved a problem by projecting the 3D surface onto the $xy$-plane. In this lecture, we will demonstrate that the choice of projection plane does not alter the final result, and we will introduce **Spherical Coordinates** to drastically simplify integration over spherical surfaces.
 
 ---
 
 ## Solved Problems
 
 ### Problem 1 (Revisited): Projection on the-plane
-**Question:** If $\mathbf{F} = 6z\hat{\mathbf{i}} - 4\hat{\mathbf{j}} + y\hat{\mathbf{k}}$, evaluate $\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$, where $S$ is the portion of the plane $2x + 3y + 6z = 12$ in the first octant.
+**Question:** If
+
+$$
+\mathbf{F} = 6z\hat{\mathbf{i}} - 4\hat{\mathbf{j}} + y\hat{\mathbf{k}},
+$$
+
+Evaluate
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS,
+$$
+
+Where $S$ is the portion of the plane $2x + 3y + 6z = 12$ in the first octant.
 
 **Solution:**
 In the previous lecture, we projected $S$ onto the $xy$-plane and obtained the answer $8$. Let us now verify this by projecting onto the **$yz$-plane**.
@@ -69,13 +86,24 @@ Integrating with respect to $z$ first, then $y$, yields **$8$**. The answer is i
 ---
 
 ### Problem 2: Surface Integral Over a Sphere
-**Question:** Evaluate $\iint_S (yz\hat{\mathbf{i}} + zx\hat{\mathbf{j}} + xy\hat{\mathbf{k}}) \cdot d\mathbf{S}$, where $S$ is the surface of the sphere $x^2 + y^2 + z^2 = 1$ in the first octant.
+**Question:** Evaluate
+
+$$
+\iint_S (yz\hat{\mathbf{i}} + zx\hat{\mathbf{j}} + xy\hat{\mathbf{k}}) \cdot d\mathbf{S},
+$$
+
+Where $S$ is the surface of the sphere $x^2 + y^2 + z^2 = 1$ in the first octant.
 
 *(Note: $d\mathbf{S}$ in bold implies $\hat{\mathbf{n}} \, dS$)*
 
 **Solution:**
 Let $\phi = x^2 + y^2 + z^2 - 1$.
-The gradient is $\nabla \phi = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}}$.
+The gradient is
+
+$$
+\nabla \phi = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}}.
+$$
+
 The magnitude is $\lvert \nabla \phi \rvert = \sqrt{4(x^2 + y^2 + z^2)} = \sqrt{4(1)} = 2$.
 Thus, the unit normal vector is:
 

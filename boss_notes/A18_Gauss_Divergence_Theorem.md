@@ -26,7 +26,13 @@ where $\hat{n}$ is the unit outward normal vector to the surface $S$.
 
 ## Worked Example: Verification (PYQ 2018, 2021)
 
-**Problem**: Verify the divergence theorem for $\vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}$ taken over the region bounded by $x^2 + y^2 = 4, z = 0, z = 3$.
+**Problem**: Verify the divergence theorem for
+
+$$
+\vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
+$$
+
+taken over the region bounded by $x^2 + y^2 = 4, z = 0, z = 3$.
 
 **Solution**:
 
@@ -68,7 +74,6 @@ The closed cylinder has 3 surfaces: Top ($S_1$), Bottom ($S_2$), and Curved Wall
 - **Top Surface $S_1$ ($z=3, \hat{n}=\hat{k}$)**:
   $\vec{A} \cdot \hat{k} = z^2 = 3^2 = 9$.
   
-
 $$
 \iint_{S_1} 9 dS = 9 \times (\text{Area of circle}) = 9 \times \pi(2^2) = 36\pi.
 $$
@@ -76,20 +81,39 @@ $$
 - **Bottom Surface $S_2$ ($z=0, \hat{n}=-\hat{k}$)**:
   $\vec{A} \cdot (-\hat{k}) = -z^2 = -0^2 = 0$.
   
-
 $$
 \iint_{S_2} 0 dS = 0.
 $$
 
-- **Curved Wall $S_3$ ($x^2+y^2=4, \hat{n}=\frac{x\hat{i}+y\hat{j}}{2}$)**:
-  $\vec{A} \cdot \hat{n} = (4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{2} \right) = 2x^2 - y^3$.
+- **Curved Wall $S_3$
+
+$$
+x^2+y^2=4, \hat{n}=\frac{x\hat{i}+y\hat{j}}{2}
+$$
+
+**:
+
+$$
+\vec{A} \cdot \hat{n} = (4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{2} \right) = 2x^2 - y^3.
+$$
+
   In cylindrical ($x=2\cos\phi, y=2\sin\phi, dS = 2 d\phi dz$):
 
 $$
 \iint_{S_3} (2x^2 - y^3) dS = \int_0^3 \int_0^{2\pi} \left[ 2(4\cos^2\phi) - 8\sin^3\phi \right] 2 d\phi dz
 $$
 
-  We know $\int_0^{2\pi} \cos^2\phi d\phi = \pi$ and $\int_0^{2\pi} \sin^3\phi d\phi = 0$.
+  We know
+
+$$
+\int_0^{2\pi} \cos^2\phi d\phi = \pi
+$$
+
+ and
+
+$$
+\int_0^{2\pi} \sin^3\phi d\phi = 0.
+$$
 
 $$
 = \int_0^3 2(8\pi - 0) dz = \int_0^3 16\pi dz = 48\pi

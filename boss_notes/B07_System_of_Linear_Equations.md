@@ -35,7 +35,9 @@ x - 2y - 5z &= 2 \\
 \end{aligned}
 
 $$
+
 becomes:
+
 $$
 
 \begin{bmatrix} 1 & -2 & -5 \\ -1 & 1 & 3 \\ 2 & 1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \\ 3 \end{bmatrix}

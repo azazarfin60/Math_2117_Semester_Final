@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](08_Cayley_Hamilton_Theorem_State_and_Prove.md) | [Index](README.md)
 
-
 ## Prerequisites
 - Understanding of the Cayley-Hamilton theorem statement.
 - Proficiency in matrix multiplication and characteristic equation derivation.

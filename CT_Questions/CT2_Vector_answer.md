@@ -69,8 +69,6 @@ $$
 a = 4, \quad b = 2, \quad c = -1
 $$
 
-.
-
 #### 2. Find Scalar Potential
 We substitute $a$, $b$, and $c$ back into $\vec{F}$:
 
@@ -200,7 +198,7 @@ $$
 \vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}
 $$
 
-, evaluate
+Evaluate
 
 $$
 \int_C \vec{F} \cdot d\vec{r}

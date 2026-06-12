@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](12_Extension_Theorem_Complementary.md) | [Index](README.md) | [Next Lecture >](14_Quotient_Space_Dimension.md)
 
-
 ---
 
 ## Prerequisites

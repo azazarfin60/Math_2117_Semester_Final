@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](05_Curl_and_Divergence.md) | [Index](README.md) | [Next Lecture >](07_Surface_Integral_Part1.md)
 
-
 ---
 
 ## Prerequisites
@@ -24,10 +23,20 @@ A solid understanding of these integrals forms the foundation for three major th
 
 ## 1. Integration of Vector Functions
 
-Just like scalar functions, a vector point function $\vec{F}(t) = F_1(t)\hat{i} + F_2(t)\hat{j} + F_3(t)\hat{k}$ depending on a single scalar variable $t$ can be integrated.
+Just like scalar functions, a vector point function
+
+$$
+\vec{F}(t) = F_1(t)\hat{i} + F_2(t)\hat{j} + F_3(t)\hat{k}
+$$
+
+depending on a single scalar variable $t$ can be integrated.
 
 ### Indefinite Integral
-To integrate indefinitely, integrate each component separately and add an arbitrary constant vector $\vec{c} = c_1\hat{i} + c_2\hat{j} + c_3\hat{k}$.
+To integrate indefinitely, integrate each component separately and add an arbitrary constant vector
+
+$$
+\vec{c} = c_1\hat{i} + c_2\hat{j} + c_3\hat{k}.
+$$
 
 $$
 \int \vec{F}(t) dt = \left(\int F_1(t) dt\right)\hat{i} + \left(\int F_2(t) dt\right)\hat{j} + \left(\int F_3(t) dt\right)\hat{k} + \vec{c}
@@ -45,7 +54,17 @@ $$
 ## 2. Line Integration
 
 A line integral computes the integral of a vector field $\vec{F}$ along a specific curve $C$ in space.
-Let $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ be the position vector of any point on curve $C$. The differential displacement vector is $d\vec{r} = dx\hat{i} + dy\hat{j} + dz\hat{k}$.
+Let
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+ be the position vector of any point on curve $C$. The differential displacement vector is
+
+$$
+d\vec{r} = dx\hat{i} + dy\hat{j} + dz\hat{k}.
+$$
 
 The line integral of $\vec{F}$ along curve $C$ is defined by the dot product:
 
@@ -68,7 +87,13 @@ If $C$ is a closed curve (like a circle or rectangle), the line integral is call
 ## Solved Problems
 
 ### Problem 1: Basic Definite Integral
-**Question:** If $\vec{F}(t) = (t - t^2)\hat{i} + 2t^3\hat{j} - 3\hat{k}$, find $\int_1^2 \vec{F}(t) dt$.
+**Question:** If
+
+$$
+\vec{F}(t) = (t - t^2)\hat{i} + 2t^3\hat{j} - 3\hat{k},
+$$
+
+Find $\int_1^2 \vec{F}(t) dt$.
 
 **Solution:**
 Integrate each component with respect to $t$:
@@ -77,8 +102,18 @@ $$
 \int_1^2 \left[ (t - t^2)\hat{i} + 2t^3\hat{j} - 3\hat{k} \right] dt = \left[ \left( \frac{t^2}{2} - \frac{t^3}{3} \right)\hat{i} + \frac{t^4}{2}\hat{j} - 3t\hat{k} \right]_1^2
 $$
 
-Apply the upper limit ($t=2$): $\left( \frac{4}{2} - \frac{8}{3} \right)\hat{i} + \frac{16}{2}\hat{j} - 6\hat{k} = -\frac{2}{3}\hat{i} + 8\hat{j} - 6\hat{k}$
-Apply the lower limit ($t=1$): $\left( \frac{1}{2} - \frac{1}{3} \right)\hat{i} + \frac{1}{2}\hat{j} - 3\hat{k} = \frac{1}{6}\hat{i} + \frac{1}{2}\hat{j} - 3\hat{k}$
+Apply the upper limit ($t=2$):
+
+$$
+\left( \frac{4}{2} - \frac{8}{3} \right)\hat{i} + \frac{16}{2}\hat{j} - 6\hat{k} = -\frac{2}{3}\hat{i} + 8\hat{j} - 6\hat{k}
+$$
+
+Apply the lower limit ($t=1$):
+
+$$
+\left( \frac{1}{2} - \frac{1}{3} \right)\hat{i} + \frac{1}{2}\hat{j} - 3\hat{k} = \frac{1}{6}\hat{i} + \frac{1}{2}\hat{j} - 3\hat{k}
+$$
+
 Subtract the two:
 
 $$
@@ -86,7 +121,13 @@ $$
 $$
 
 ### Problem 2: Finding Velocity and Displacement
-**Question:** The acceleration of a particle is $\vec{a} = 12\cos 2t\hat{i} - 8\sin 2t\hat{j} + 16t\hat{k}$. Find velocity $\vec{v}$ and displacement $\vec{r}$ given that at $t = 0$, $\vec{v} = 0$ and $\vec{r} = 0$.
+**Question:** The acceleration of a particle is
+
+$$
+\vec{a} = 12\cos 2t\hat{i} - 8\sin 2t\hat{j} + 16t\hat{k}.
+$$
+
+. Find velocity $\vec{v}$ and displacement $\vec{r}$ given that at $t = 0$, $\vec{v} = 0$ and $\vec{r} = 0$.
 
 **Solution:**
 Integrate acceleration to find velocity $\vec{v}(t)$:
@@ -122,7 +163,19 @@ $$
 $$
 
 ### Problem 3: Line Integration on a Parametric Curve
-**Question:** Evaluate $\int_C \vec{F} \cdot d\vec{r}$ where $\vec{F} = xy\hat{i} + yz\hat{j} + zx\hat{k}$ and $C$ is $\vec{r} = t\hat{i} + t^2\hat{j} + t^3\hat{k}$ from $t=-1$ to $1$.
+**Question:** Evaluate $\int_C \vec{F} \cdot d\vec{r}$ where
+
+$$
+\vec{F} = xy\hat{i} + yz\hat{j} + zx\hat{k}
+$$
+
+ and $C$ is
+
+$$
+\vec{r} = t\hat{i} + t^2\hat{j} + t^3\hat{k}
+$$
+
+from $t=-1$ to $1$.
 
 **Solution:**
 From the curve equation, $x = t, y = t^2, z = t^3$.
@@ -133,7 +186,12 @@ $$
 \vec{F} = (t)(t^2)\hat{i} + (t^2)(t^3)\hat{j} + (t^3)(t)\hat{k} = t^3\hat{i} + t^5\hat{j} + t^4\hat{k}
 $$
 
-The displacement vector is $d\vec{r} = (\hat{i} + 2t\hat{j} + 3t^2\hat{k}) dt$.
+The displacement vector is
+
+$$
+d\vec{r} = (\hat{i} + 2t\hat{j} + 3t^2\hat{k}) dt.
+$$
+
 Take the dot product $\vec{F} \cdot d\vec{r}$:
 
 $$
@@ -151,7 +209,13 @@ $$
 $$
 
 ### Problem 4: Line Integration on a Parabola
-**Question:** Evaluate $\int_C \vec{F} \cdot d\vec{r}$ where $\vec{F} = x^2 y^2\hat{i} + y\hat{j}$ and $C$ is the parabola $y^2 = 4x$ from $(0,0)$ to $(4,4)$.
+**Question:** Evaluate $\int_C \vec{F} \cdot d\vec{r}$ where
+
+$$
+\vec{F} = x^2 y^2\hat{i} + y\hat{j}
+$$
+
+and $C$ is the parabola $y^2 = 4x$ from $(0,0)$ to $(4,4)$.
 
 **Solution:**
 The integrand is $\vec{F} \cdot d\vec{r} = x^2 y^2 dx + y dy$.
@@ -166,7 +230,13 @@ $$
 $$
 
 ### Problem 5: Line Integration on an Arbitrary Path
-**Question:** Evaluate $\int_C \left[ yz dx + (zx+1) dy + xy dz \right]$ where $C$ is any path from $(1,0,0)$ to $(2,1,4)$.
+**Question:** Evaluate
+
+$$
+\int_C \left[ yz dx + (zx+1) dy + xy dz \right]
+$$
+
+where $C$ is any path from $(1,0,0)$ to $(2,1,4)$.
 
 **Solution:**
 Since the integral is path-independent (it specifies "any path"), we choose the straight line connecting the two points.
@@ -190,7 +260,13 @@ $$
 
 ## Key Takeaways
 *   The curve $C$ provides the critical constraints (relationship between variables) needed to evaluate a line integral.
-*   By substituting the curve's parametric equations into the line integral $\int_C (F_1 dx + F_2 dy + F_3 dz)$, you can convert the entire integral into a single variable $t$.
+*   By substituting the curve's parametric equations into the line integral
+
+$$
+\int_C (F_1 dx + F_2 dy + F_3 dz),
+$$
+
+You can convert the entire integral into a single variable $t$.
 *   For line integrals over segmented paths (like a rectangle or triangle), split the integral into a sum of integrals for each segment, defining the unique bounds and constant variables for each.
 
 ## What Comes Next

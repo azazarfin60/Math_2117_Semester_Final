@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](14_Quotient_Space_Dimension.md) | [Index](README.md) | [Next Lecture >](16_Kernel_Homomorphism.md)
 
-
 ---
 
 ## Prerequisites

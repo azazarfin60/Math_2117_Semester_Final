@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](02_Vector_Differentiation.md) | [Index](README.md) | [Next Lecture >](04_Directional_Derivative.md)
 
-
 ---
 
 ## Prerequisites
@@ -61,7 +60,13 @@ $$
     \nabla\left(\frac{f}{g}\right) = \frac{g\nabla f - f\nabla g}{g^2}
 $$
 
-4.  **Operator on Position Vector**: If $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$, then:
+4.  **Operator on Position Vector**: If
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k},
+$$
+
+Then:
 
 $$
     (\vec{a} \cdot \nabla)\vec{r} = \vec{a}
@@ -148,7 +153,19 @@ $$
 [\vec{r}\ \vec{a}\ \vec{b}] = \vec{r} \cdot (\vec{a} \times \vec{b}) = \vec{r} \cdot \vec{A}
 $$
 
-Let $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$ and $\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}$. Expand the dot product:
+Let
+
+$$
+\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
+$$
+
+ and
+
+$$
+\vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}.
+$$
+
+. Expand the dot product:
 
 $$
 \vec{r} \cdot \vec{A} = A_1 x + A_2 y + A_3 z

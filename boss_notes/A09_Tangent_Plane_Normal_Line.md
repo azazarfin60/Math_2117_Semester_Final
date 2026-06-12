@@ -20,7 +20,12 @@ $$
 \vec{n} = \nabla F|_P = \frac{\partial F}{\partial x}\hat{i} + \frac{\partial F}{\partial y}\hat{j} + \frac{\partial F}{\partial z}\hat{k}
 $$
 
-Let the components of this normal vector be $\vec{n} = A\hat{i} + B\hat{j} + C\hat{k}$.
+Let the components of this normal vector be
+
+$$
+\vec{n} = A\hat{i} + B\hat{j} + C\hat{k}.
+$$
+
 
 ### Equation of the Tangent Plane
 
@@ -86,7 +91,12 @@ $$
 C = \frac{\partial F}{\partial z}(1, -1, 2) = 4(1)(2) = 8
 $$
 
-The normal vector is $\vec{n} = 7\hat{i} - 3\hat{j} + 8\hat{k}$.
+The normal vector is
+
+$$
+\vec{n} = 7\hat{i} - 3\hat{j} + 8\hat{k}.
+$$
+
 
 **Step 4**: Write the equation of the tangent plane.
 

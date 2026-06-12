@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](01_Vector_Space_Definition.md) | [Index](README.md) | [Next Lecture >](03_Vector_Subspace.md)
 
-
 ---
 
 ## Prerequisites

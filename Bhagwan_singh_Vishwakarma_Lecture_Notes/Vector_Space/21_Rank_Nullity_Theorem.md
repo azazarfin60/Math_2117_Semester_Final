@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](20_Inverse_Linear_Transformation.md) | [Index](README.md) | [Next Lecture >](22_Invertible_Singular_Nonsingular.md)
 
-
 ---
 
 ## Prerequisites

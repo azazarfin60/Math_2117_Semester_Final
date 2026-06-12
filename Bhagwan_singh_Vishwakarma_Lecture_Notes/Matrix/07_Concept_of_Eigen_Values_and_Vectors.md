@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](06_Questions_Consistency_of_Linear_Equations.md) | [Index](README.md) | [Next Lecture >](08_Cayley_Hamilton_Theorem_State_and_Prove.md)
 
-
 ## Prerequisites
 - Familiarity with matrix determinants and polynomials.
 - Ability to solve homogeneous systems of linear equations.
@@ -74,7 +73,12 @@ $$
 $$
 
 Row operations yield $x_1 + x_2 = 0$. Choosing $x_1 = 1$, we get $x_2 = -1$.
-Eigenvector $X_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$.
+Eigenvector
+
+$$
+X_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}.
+$$
+
 
 ## What Comes Next
 The next lecture states and proves the Cayley-Hamilton Theorem, a powerful result connecting a matrix with its own characteristic equation.

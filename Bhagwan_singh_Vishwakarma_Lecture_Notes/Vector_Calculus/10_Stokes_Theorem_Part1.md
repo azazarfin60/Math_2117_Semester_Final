@@ -9,11 +9,22 @@
 **Navigation**
 [< Previous Lecture](09_Volume_Integral.md) | [Index](README.md) | [Next Lecture >](11_Stokes_Theorem_Part2.md)
 
-
 ---
 
 ## Prerequisites
-We have extensively studied both Line Integrals ($\oint_C \mathbf{F} \cdot d\mathbf{r}$) and Surface Integrals ($\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$). We are now ready to establish a powerful relationship between these two types of integrals using **Stokes' Theorem**. 
+We have extensively studied both Line Integrals
+
+$$
+\oint_C \mathbf{F} \cdot d\mathbf{r}
+$$
+
+And Surface Integrals (
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS
+$$
+
+). We are now ready to establish a powerful relationship between these two types of integrals using **Stokes' Theorem**.
 
 ---
 
@@ -46,7 +57,13 @@ For example, integrating a vector field along a rectangular boundary requires ca
 ## Solved Problems
 
 ### Problem 1: Verifying Stokes' Theorem on a Rectangle
-**Question:** Verify Stokes' Theorem for $\mathbf{F} = (x^2 + y^2)\hat{\mathbf{i}} - 2xy\hat{\mathbf{j}}$ taken round the rectangle bounded by $x = \pm a, y = 0, y = b$.
+**Question:** Verify Stokes' Theorem for
+
+$$
+\mathbf{F} = (x^2 + y^2)\hat{\mathbf{i}} - 2xy\hat{\mathbf{j}}
+$$
+
+taken round the rectangle bounded by $x = \pm a, y = 0, y = b$.
 
 **Solution:**
 To "verify" the theorem, we must independently calculate both the Left-Hand Side (Line Integral) and the Right-Hand Side (Surface Integral) and prove they yield the exact same result.
@@ -92,7 +109,13 @@ $$
 $$
 
 #### Part 2: Evaluating the Surface Integral (RHS)
-We need to compute $\iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS$ over the rectangular area $S$.
+We need to compute
+
+$$
+\iint_S (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} \, dS
+$$
+
+over the rectangular area $S$.
 
 First, compute the curl ($\nabla \times \mathbf{F}$):
 

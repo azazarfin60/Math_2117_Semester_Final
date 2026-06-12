@@ -15,7 +15,6 @@
   $\rightarrow$ A field under addition.
 * Lets consider a set of vectors
 
-
 $$
 V = \text{set of vectors over a field } A .
 $$
@@ -39,13 +38,11 @@ $$
 
 * closed under associative law
 
-
 $$
 (u+v) + w = u + (v+w)
 $$
 
 * $u$ vector এর সাথে কোন vector add করলে $u$ vector পাওয়া যাবে।
-
 
 $$
 u+0 = 0+u = u \quad \rightarrow \text{ Identity law}
@@ -108,7 +105,6 @@ $$
 **Again:-**
 1. $3 \lbrace (1,1) + (2,4) \rbrace$
 
-
 $$
 = (3,3) + (6,12) = (9,15) \quad \left[ y = \frac{5x}{3} \right]
 $$
@@ -119,13 +115,11 @@ $$
 
 2. $(3+2) (1,1)$
 
-
 $$
 = 3 (1,1) + 2 (1,1) = (3,3) + (2,2) = (5,5)
 $$
 
 3. $2 \times 3 (1,1) = 6 (1,1) = (6,6)$
-
 
 $$
 2 (3) (1,1) = 2 (3,3) = (6,6)

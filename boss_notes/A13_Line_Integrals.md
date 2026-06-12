@@ -18,7 +18,19 @@ $$
 W = \int_C \vec{F} \cdot d\vec{r}
 $$
 
-If $\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}$ and $d\vec{r} = dx\hat{i} + dy\hat{j} + dz\hat{k}$:
+If
+
+$$
+\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}
+$$
+
+ and
+
+$$
+d\vec{r} = dx\hat{i} + dy\hat{j} + dz\hat{k}:
+$$
+
+:
 
 $$
 W = \int_C (F_1 dx + F_2 dy + F_3 dz)
@@ -32,7 +44,13 @@ Convert everything to a single variable (a parameter like $t$, or $x$ if the pat
 
 ## Worked Example 1: Parametric Path (PYQ 2024)
 
-**Problem**: Find the work done in a force field $\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}$ along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$.
+**Problem**: Find the work done in a force field
+
+$$
+\vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}
+$$
+
+along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$.
 
 **Solution**:
 
@@ -102,7 +120,13 @@ $$
 \int_C \vec{A} \cdot d\vec{r}
 $$
 
-where $\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}$ along straight lines from $(0,0,0)$ to $(1,0,0)$ to $(1,1,0)$ to $(1,1,1)$.
+where
+
+$$
+\vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
+$$
+
+along straight lines from $(0,0,0)$ to $(1,0,0)$ to $(1,1,0)$ to $(1,1,1)$.
 
 **Solution**:
 

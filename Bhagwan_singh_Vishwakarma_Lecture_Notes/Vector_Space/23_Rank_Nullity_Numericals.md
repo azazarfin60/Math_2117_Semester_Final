@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](22_Invertible_Singular_Nonsingular.md) | [Index](README.md) | [Next Lecture >](24_Eigenvalue_Eigenvector_Theory.md)
 
-
 ---
 
 ## Prerequisites

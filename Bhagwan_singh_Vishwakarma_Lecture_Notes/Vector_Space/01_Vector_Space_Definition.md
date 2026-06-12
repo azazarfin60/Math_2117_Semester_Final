@@ -9,7 +9,6 @@
 **Navigation**
 [Index](README.md) | [Next Lecture >](02_General_Properties.md)
 
-
 ---
 
 ## Prerequisites

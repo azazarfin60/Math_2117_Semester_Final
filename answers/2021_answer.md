@@ -18,8 +18,6 @@ $$
 \vec{A} = 3\hat{i} - \hat{j} + 4\hat{k}
 $$
 
-, 
-
 $$
 \vec{B} = -2\hat{i} + 4\hat{j} - 3\hat{k}
 $$
@@ -30,7 +28,7 @@ $$
 \vec{C} = \hat{i} + 2\hat{j} - \hat{k}
 $$
 
-, find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$. (04)
+Find the magnitude of $2\vec{A} - 3\vec{B} + 2\vec{C}$. (04)
 
 **Answer:**
 
@@ -102,7 +100,7 @@ $$
 \vec{A} \times \vec{B} = |\vec{A}||\vec{B}|\sin\theta \hat{n}
 $$
 
-, where $\hat{n}$ is a unit vector perpendicular to the plane of the two vectors.
+Where $\hat{n}$ is a unit vector perpendicular to the plane of the two vectors.
 
 #### 2. Find the Perpendicular Unit Vector
 
@@ -313,8 +311,6 @@ $$
 \vec{a} = \bar{\nabla}, \quad \vec{b} = \bar{\nabla}, \quad \vec{c} = \bar{V}
 $$
 
-.
-
 Since $\bar{\nabla}$ acts as an operator, we write the components of the curl of the curl:
 
 $$
@@ -429,7 +425,7 @@ $$
 \vec{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
 $$
 
-, evaluate 
+Evaluate
 
 $$
 \int_C \vec{A} \cdot d\vec{r}
@@ -493,7 +489,7 @@ $$
 \iiint_V \vec{F} dV
 $$
 
-, where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
+Where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
 
 **Answer:**
 
@@ -633,7 +629,7 @@ $$
 \vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
 $$
 
-, taken over the region bounded by $x^2 + y^2 = 4$, $z=0$ and $z=3$. (06)
+Taken over the region bounded by $x^2 + y^2 = 4$, $z=0$ and $z=3$. (06)
 
 **Answer:**
 
@@ -696,7 +692,6 @@ $$
 \vec{A} \cdot \hat{n} = -z^2 = 0
 $$
 
-.
 *   **Top cap $S\_2$:** $z=3$, 
 
 $$

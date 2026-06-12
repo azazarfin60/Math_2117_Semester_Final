@@ -192,8 +192,6 @@ $$
 2\hat{i} - \hat{j} + \hat{k}
 $$
 
-, 
-
 $$
 \hat{i} + 2\hat{j} - 3\hat{k}
 $$
@@ -418,7 +416,7 @@ $$
 \oint_C (xy + y^2)dx + x^2dy
 $$
 
-, where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
+Where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
 
 **Answer:**
 

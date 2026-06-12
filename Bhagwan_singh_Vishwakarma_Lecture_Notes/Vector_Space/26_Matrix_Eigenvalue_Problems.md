@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](25_Eigenvalue_Numericals.md) | [Index](README.md) | [Next Lecture >](27_Diagonalization.md)
 
-
 ---
 
 ## Prerequisites

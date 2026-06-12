@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](05_Consistency_of_Linear_Equations.md) | [Index](README.md) | [Next Lecture >](07_Concept_of_Eigen_Values_and_Vectors.md)
 
-
 ## Prerequisites
 - Understanding of the conditions for consistency (Rouché-Capelli theorem).
 - Proficiency in reducing augmented matrices to Echelon form.

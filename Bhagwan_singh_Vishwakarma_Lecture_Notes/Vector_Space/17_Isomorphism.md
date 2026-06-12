@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](16_Kernel_Homomorphism.md) | [Index](README.md) | [Next Lecture >](18_Fundamental_Theorem_Homomorphism.md)
 
-
 ---
 
 ## Prerequisites

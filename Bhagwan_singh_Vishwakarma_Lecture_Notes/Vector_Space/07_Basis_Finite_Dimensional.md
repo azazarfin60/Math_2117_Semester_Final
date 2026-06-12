@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](06_Linear_Independence_Dependence.md) | [Index](README.md) | [Next Lecture >](08_Dimension_Sum_Subspace.md)
 
-
 ---
 
 ## Prerequisites

@@ -174,8 +174,6 @@ $$
 a = 4, \quad b = 2, \quad c = -1
 $$
 
-.
-
 ---
 
 ### Q1(c) If $\bar{A}$ is a constant vector, then prove that $\nabla(\bar{r} \cdot \bar{A}) = \bar{A}$. (03)
@@ -323,7 +321,7 @@ $$
 \bar{A} = (3x^2 + 6y)\hat{i} - 14yz\hat{j} + 20xz^2\hat{k}
 $$
 
-, then evaluate 
+Then evaluate
 
 $$
 \int_C \bar{A} \cdot d\bar{r}
@@ -512,7 +510,7 @@ $$
 x = r\cos\phi, \quad y = r\sin\phi, \quad z = z
 $$
 
-, and $dV = r dr d\phi dz$. The limits are:
+And $dV = r dr d\phi dz$. The limits are:
 
 $$
 r \in [0, 2], \quad \phi \in [0, 2\pi], \quad z \in [0, 3]
@@ -551,21 +549,17 @@ $$
 \hat{n} = \hat{k}
 $$
 
-.
 2.  Bottom surface $S\_2$ ($z=0$): The normal vector is 
 
 $$
 \hat{n} = -\hat{k}
 $$
 
-.
 3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is 
 
 $$
 \hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
 $$
-
-.
 
 Evaluate the top surface integral:
 
@@ -599,8 +593,6 @@ $$
 x = 2\cos\phi, \quad y = 2\sin\phi, \quad dS = 2 d\phi dz
 $$
 
-.
-
 $$
 \iint_{S_3} \bar{A} \cdot \hat{n} dS = \int_0^3 \int_0^{2\pi} \left[ 2(4\cos^2\phi) - 8\sin^3\phi \right] 2 d\phi dz
 $$
@@ -616,8 +608,6 @@ $$
 $$
 \int_0^{2\pi} \sin^3\phi d\phi = 0
 $$
-
-.
 
 $$
 \iint_{S_3} \bar{A} \cdot \hat{n} dS = \int_0^3 16\pi dz = 48\pi

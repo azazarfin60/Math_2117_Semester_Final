@@ -9,7 +9,6 @@
 **Navigation**
 [Index](README.md) | [Next Lecture >](02_Vector_Differentiation.md)
 
-
 ---
 
 ## Prerequisites
@@ -87,8 +86,17 @@ $$
 The output is a vector. This vector has both a magnitude and a direction. 
 
 Other examples of vector point functions include:
-- $\vec{F}(x, y, z) = x^2\hat{i} + yz\hat{j} + z^2\hat{k}$
-- $\vec{F}(x, y, z) = x\hat{i} + y^2\hat{j} + xyz\hat{k}$
+-
+
+$$
+\vec{F}(x, y, z) = x^2\hat{i} + yz\hat{j} + z^2\hat{k}
+$$
+
+-
+
+$$
+\vec{F}(x, y, z) = x\hat{i} + y^2\hat{j} + xyz\hat{k}
+$$
 
 Physical examples include velocity fields of fluid flow or gravitational force fields. At every point in space, gravity pulls with a specific strength (magnitude) in a specific direction.
 

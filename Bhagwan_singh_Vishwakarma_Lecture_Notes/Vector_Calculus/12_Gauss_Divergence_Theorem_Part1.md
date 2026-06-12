@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](11_Stokes_Theorem_Part2.md) | [Index](README.md) | [Next Lecture >](13_Gauss_Divergence_Theorem_Part2.md)
 
-
 ---
 
 ## Prerequisites
@@ -40,7 +39,19 @@ Evaluating a surface integral over a fully closed shape (like a cube, sphere, or
 ## Solved Problems
 
 ### Problem 1: Integration over a Tetrahedron
-**Question:** Evaluate the surface integral $\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$, where $\mathbf{F} = (x + y^2)\hat{\mathbf{i}} - 2x\hat{\mathbf{j}} + 2yz\hat{\mathbf{k}}$, and $S$ is the closed surface bounded by the coordinate planes ($x=0, y=0, z=0$) and the plane $2x + y + 2z = 6$.
+**Question:** Evaluate the surface integral
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS,
+$$
+
+Where
+
+$$
+\mathbf{F} = (x + y^2)\hat{\mathbf{i}} - 2x\hat{\mathbf{j}} + 2yz\hat{\mathbf{k}},
+$$
+
+And $S$ is the closed surface bounded by the coordinate planes ($x=0, y=0, z=0$) and the plane $2x + y + 2z = 6$.
 
 **Solution:**
 The surface $S$ is a tetrahedron. Evaluating this directly would require $4$ separate double integrals (one for each of the $4$ triangular faces). Instead, we will use the Gauss Divergence Theorem to evaluate a single volume integral over the interior space $V$.
@@ -118,7 +129,19 @@ $$
 ---
 
 ### Problem 2: Integration over a Sphere
-**Question:** Evaluate the surface integral $\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$, where $\mathbf{F} = x\hat{\mathbf{i}} - y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}}$, and $S$ is the boundary of the sphere $x^2 + y^2 + (z - 1)^2 = 1$.
+**Question:** Evaluate the surface integral
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS,
+$$
+
+Where
+
+$$
+\mathbf{F} = x\hat{\mathbf{i}} - y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}},
+$$
+
+And $S$ is the boundary of the sphere $x^2 + y^2 + (z - 1)^2 = 1$.
 
 **Solution:**
 We use Gauss Divergence Theorem to convert this to a volume integral.

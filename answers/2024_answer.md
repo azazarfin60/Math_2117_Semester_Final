@@ -444,8 +444,6 @@ $$
 (\vec{A} \cdot \nabla)\vec{r} = \left( A_1 \frac{\partial}{\partial x} + A_2 \frac{\partial}{\partial y} + A_3 \frac{\partial}{\partial z} \right)(x\hat{i} + y\hat{j} + z\hat{k}) = \vec{A}
 $$
 
-.
-
 This gives:
 
 $$
@@ -507,15 +505,11 @@ $$
 We evaluate at the limits:
 *   At $t = 2$:
 
-    
-
 $$
 2(2^6) + 2(2^5) + 3(2^4) + 10(2^3) = 2(64) + 2(32) + 3(16) + 10(8) = 128 + 64 + 48 + 80 = 320
 $$
 
 *   At $t = 1$:
-
-    
 
 $$
 2(1^6) + 2(1^5) + 3(1^4) + 10(1^3) = 2 + 2 + 3 + 10 = 17
@@ -731,7 +725,7 @@ $$
 x=0, \quad x=2, \quad y=0
 $$
 
-, and $y=2$.
+And $y=2$.
 
 #### 1. Evaluate the Line Integral
 Along the boundary curve $C$ in the plane $z = 0$, we have $z = 0$ and $dz = 0$.
@@ -750,15 +744,11 @@ $$
 We evaluate the integral along the four segments of the square $C$:
 *   **Path 1 ($C\_1$):** From $(0,0,0)$ to $(2,0,0)$. Here, $y = 0$ and $dy = 0$.
 
-    
-
 $$
 \int_{C_1} = \int_0^2 2 dx = 4
 $$
 
 *   **Path 2 ($C\_2$):** From $(2,0,0)$ to $(2,2,0)$. Here, $x = 2$ and $dx = 0$.
-
-    
 
 $$
 \int_{C_2} = \int_0^2 4 dy = 8
@@ -766,15 +756,11 @@ $$
 
 *   **Path 3 ($C\_3$):** From $(2,2,0)$ to $(0,2,0)$. Here, $y = 2$ and $dy = 0$.
 
-    
-
 $$
 \int_{C_3} = \int_2^0 4 dx = -8
 $$
 
 *   **Path 4 ($C\_4$):** From $(0,2,0)$ to $(0,0,0)$. Here, $x = 0$ and $dx = 0$.
-
-    
 
 $$
 \int_{C_4} = \int_2^0 4 dy = -8
@@ -808,9 +794,7 @@ $$
 \hat{n} = \hat{k}
 $$
 
-, $dS = dx dy$.
-
-    
+$dS = dx dy$.
 
 $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -1 \implies \iint_{\text{Top}} -1 dx dy = -1 \times \text{Area} = -4
@@ -822,9 +806,7 @@ $$
 \hat{n} = \hat{i}
 $$
 
-, $dS = dy dz$.
-
-    
+$dS = dy dz$.
 
 $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -y \implies \iint_{\text{Front}} -y dy dz = \int_0^2 dz \int_0^2 -y dy = 2 \left[ -\frac{y^2}{2} \right]_0^2 = -4
@@ -836,9 +818,7 @@ $$
 \hat{n} = -\hat{i}
 $$
 
-, $dS = dy dz$.
-
-    
+$dS = dy dz$.
 
 $$
 (\nabla \times \vec{A}) \cdot \hat{n} = y \implies \iint_{\text{Back}} y dy dz = \int_0^2 dz \int_0^2 y dy = 2 \left[ \frac{y^2}{2} \right]_0^2 = 4
@@ -850,9 +830,7 @@ $$
 \hat{n} = \hat{j}
 $$
 
-, $dS = dx dz$.
-
-    
+$dS = dx dz$.
 
 $$
 (\nabla \times \vec{A}) \cdot \hat{n} = z - 1 \implies \iint_{\text{Right}} (z - 1) dx dz = \int_0^2 dx \int_0^2 (z - 1) dz = 2 \left[ \frac{z^2}{2} - z \right]_0^2 = 2(2 - 2) = 0
@@ -864,9 +842,7 @@ $$
 \hat{n} = -\hat{j}
 $$
 
-, $dS = dx dz$.
-
-    
+$dS = dx dz$.
 
 $$
 (\nabla \times \vec{A}) \cdot \hat{n} = -(z - 1) \implies \iint_{\text{Left}} (1 - z) dx dz = \int_0^2 dx \int_0^2 (1 - z) dz = 2 \left[ z - \frac{z^2}{2} \right]_0^2 = 2(2 - 2) = 0

@@ -43,13 +43,24 @@ $$
 \iint_S \vec{A} \cdot \hat{n} dS
 $$
 
-where $\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}$ and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$.
+where
+
+$$
+\vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}
+$$
+
+and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$.
 
 **Solution**:
 
 **Step 1**: Find the normal vector $\hat{n}$.
 The surface is $g(x,y,z) = x^2 + y^2 - 16 = 0$.
-Gradient: $\nabla g = 2x\hat{i} + 2y\hat{j}$.
+Gradient:
+
+$$
+\nabla g = 2x\hat{i} + 2y\hat{j}.
+$$
+
 Magnitude: $\lvert \nabla g \rvert = \sqrt{4x^2 + 4y^2} = 2\sqrt{16} = 8$.
 
 Unit normal:

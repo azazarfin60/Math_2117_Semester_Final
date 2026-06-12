@@ -129,11 +129,35 @@ These questions appeared **verbatim or near-identically** across multiple papers
 | Question | Appearances | Papers |
 |:---------|:----------:|:-------|
 | Angle between surfaces $x^2+y^2+z^2=9$ and $z=x^2+y^2-3$ at $(2,-1,2)$ | 3 | ECE '17, '19, '21 |
-| Eigenvalues/vectors of $\begin{pmatrix}2&2&1\\1&3&1\\1&2&2\end{pmatrix}$ | 3 | ECE '17, '18, '24 |
-| Line integral of $\vec{A}=(3x^2+6y)\hat{i}-14yz\hat{j}+20xz^2\hat{k}$ from $(0,0,0)$ to $(1,1,1)$ | 2 | ECE '18, '20 |
-| Surface integral $\vec{A}=z\hat{i}+x\hat{j}-3y^2z\hat{k}$ over cylinder $x^2+y^2=16$ | 2 | ECE '17, '20 |
+| Eigenvalues/vectors of
+
+$$
+\begin{pmatrix}2&2&1\\1&3&1\\1&2&2\end{pmatrix}
+$$
+
+| 3 | ECE '17, '18, '24 |
+| Line integral of
+
+$$
+\vec{A}=(3x^2+6y)\hat{i}-14yz\hat{j}+20xz^2\hat{k}
+$$
+
+from $(0,0,0)$ to $(1,1,1)$ | 2 | ECE '18, '20 |
+| Surface integral
+
+$$
+\vec{A}=z\hat{i}+x\hat{j}-3y^2z\hat{k}
+$$
+
+over cylinder $x^2+y^2=16$ | 2 | ECE '17, '20 |
 | Green's theorem verification: $\oint_C(xy+y^2)dx+x^2dy$, $C$: $y=x$, $y=x^2$ | 2 | ECE '20, '23 |
-| Divergence theorem for $\vec{A}=4x\hat{i}-2y^2\hat{j}+z^2\hat{k}$ over $x^2+y^2=4$, $z\in[0,3]$ | 2 | ECE '18, '21 |
+| Divergence theorem for
+
+$$
+\vec{A}=4x\hat{i}-2y^2\hat{j}+z^2\hat{k}
+$$
+
+over $x^2+y^2=4$, $z\in[0,3]$ | 2 | ECE '18, '21 |
 | Express $v=(1,-2,5)$ as linear combination of $e_1=(1,1,1)$, $e_2=(1,2,3)$, $e_3=(2,-1,1)$ | 2 | ECE '20, '21 |
 | Prove $u+v$, $u-v$, $u-2v+w$ linearly independent if $u,v,w$ independent | 2 | ECE '20, '21 |
 | System $dx/dt=6x-3y$, $dy/dt=2x+y$ by matrix method | 2 | ECE '20, '21 |
@@ -148,11 +172,35 @@ These questions appeared in **both** ECE and CSE papers — extremely high-prior
 | Question | ECE Paper(s) | CSE Paper(s) |
 |:---------|:-------------|:-------------|
 | Directional derivative of $P=4e^{2x-y+z}$ at $(1,1,-1)$ toward $(-3,5,6)$ | ECE '17 | CSE '21, '23 |
-| Unit vector ⊥ to $\vec{A}=2\hat{i}-6\hat{j}-3\hat{k}$ and $\vec{B}=4\hat{i}+3\hat{j}-\hat{k}$ | ECE '21 | ECE '23 |
-| Velocity/acceleration at $t=1$: $x=2t^2,y=t^2-4t,z=3t-5$ in direction $\hat{i}-3\hat{j}+2\hat{k}$ | ECE '19 | CSE '21, ECE '23 |
+| Unit vector ⊥ to
+
+$$
+\vec{A}=2\hat{i}-6\hat{j}-3\hat{k}
+$$
+
+ and
+
+$$
+\vec{B}=4\hat{i}+3\hat{j}-\hat{k}
+$$
+
+| ECE '21 | ECE '23 |
+| Velocity/acceleration at $t=1$: $x=2t^2,y=t^2-4t,z=3t-5$ in direction
+
+$$
+\hat{i}-3\hat{j}+2\hat{k}
+$$
+
+| ECE '19 | CSE '21, ECE '23 |
 | Green's theorem: $\oint(xy+y^2)dx+x^2dy$ over $y=x$, $y=x^2$ | ECE '20, '23 | CSE '24 |
 | $\nabla\phi$ ⊥ to surface $\phi=C$ proof | ECE '20 | CSE '21 |
-| Volume integral $\vec{F}=2xz\hat{i}-x\hat{j}+y^2\hat{k}$, region $x=0,y=0,y=6,z=x^2,z=4$ | ECE '21 | CSE '23 |
+| Volume integral
+
+$$
+\vec{F}=2xz\hat{i}-x\hat{j}+y^2\hat{k},
+$$
+
+Region $x=0,y=0,y=6,z=x^2,z=4$ | ECE '21 | CSE '23 |
 | Polynomial basis: $v_1=t^3-2t^2+4t+1$, $v_2,v_3,v_4$ | ECE '20, '23 | CSE '21 |
 | Solution space of $x+2y+2z-s+3t=0$ system | — | CSE '21, '24 |
 | Linear operator $T(x,y,z)=(2y+z,x-4y,3x)$, matrix in basis $\{f_1,f_2,f_3\}$ | — | CSE '21, '24 |
@@ -326,7 +374,13 @@ Multiple original exam papers contain errors. Being aware of these prevents conf
 
 | Paper | Error | Correction |
 |:------|:------|:-----------|
-| ECE 2017 Q8 | Matrix $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ asked to diagonalize | Not diagonalizable (repeated eigenvalue, GM < AM) |
+| ECE 2017 Q8 | Matrix
+
+$$
+\begin{pmatrix}1&1\\0&1\end{pmatrix}
+$$
+
+asked to diagonalize | Not diagonalizable (repeated eigenvalue, GM < AM) |
 | ECE 2018 Q7(b) | "Calley-Hamilton" | Cayley-Hamilton |
 | ECE 2019 Q6(b) | Asks for "trivial solution" | Intended non-trivial solution |
 | ECE 2020 Q3(b) | "work down", "form t=0" | "work done", "from t=0" |

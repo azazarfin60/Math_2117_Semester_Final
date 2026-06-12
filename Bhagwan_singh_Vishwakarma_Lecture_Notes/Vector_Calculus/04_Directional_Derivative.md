@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](03_Gradient.md) | [Index](README.md) | [Next Lecture >](05_Curl_and_Divergence.md)
 
-
 ---
 
 ## Prerequisites
@@ -55,7 +54,12 @@ $$
 ## Solved Problems
 
 ### Problem 1: Basic Directional Derivative
-**Question:** Find the directional derivative of $\phi = (x^2 + y^2 + z^2)^{-1/2}$ at the point $P(3, 1, 2)$ in the direction of the vector $\vec{a} = yz\hat{i} + zx\hat{j} + xy\hat{k}$.
+**Question:** Find the directional derivative of $\phi = (x^2 + y^2 + z^2)^{-1/2}$ at the point $P(3, 1, 2)$ in the direction of the vector
+
+$$
+\vec{a} = yz\hat{i} + zx\hat{j} + xy\hat{k}.
+$$
+
 
 **Solution:**
 First, compute the gradient $\nabla\phi$:
@@ -218,7 +222,12 @@ $$
 
 ### Problem 5: Combined Concepts
 **Question:** For the surface $\phi = x^2 yz + 4xz^2$ at the point $(1, -2, -1)$:
-1. Find the directional derivative in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
+1. Find the directional derivative in the direction
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}.
+$$
+
 2. In what direction is the directional derivative maximum, and what is its magnitude?
 3. Find the unit normal vector to the surface.
 
@@ -234,7 +243,13 @@ $$
 $$
 
 **Part 1: Directional Derivative**
-Find unit vector $\hat{a}$ for $2\hat{i} - \hat{j} - 2\hat{k}$:
+Find unit vector $\hat{a}$ for
+
+$$
+2\hat{i} - \hat{j} - 2\hat{k}:
+$$
+
+:
 
 $$
 \hat{a} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
@@ -245,7 +260,12 @@ $$
 $$
 
 **Part 2: Maximum Directional Derivative**
-The maximum directional derivative is in the direction of the gradient itself: $8\hat{i} - \hat{j} - 10\hat{k}$.
+The maximum directional derivative is in the direction of the gradient itself:
+
+$$
+8\hat{i} - \hat{j} - 10\hat{k}.
+$$
+
 Its magnitude is $\lvert \nabla\phi \rvert$:
 
 $$

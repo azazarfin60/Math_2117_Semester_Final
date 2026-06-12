@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](26_Matrix_Eigenvalue_Problems.md) | [Index](README.md)
 
-
 ---
 
 ## Prerequisites

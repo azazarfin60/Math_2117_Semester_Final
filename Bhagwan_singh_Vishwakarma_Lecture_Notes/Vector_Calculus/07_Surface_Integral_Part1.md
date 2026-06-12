@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](06_Line_Integration.md) | [Index](README.md) | [Next Lecture >](08_Surface_Integral_Part2.md)
 
-
 ---
 
 ## Prerequisites
@@ -71,7 +70,19 @@ To find the bounds for volume integration:
 ## Solved Problems
 
 ### Problem 1: Surface Integral Over a Plane
-**Question:** If $\mathbf{F} = 6z\hat{\mathbf{i}} - 4\hat{\mathbf{j}} + y\hat{\mathbf{k}}$, evaluate $\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS$, where $S$ is the portion of the plane $2x + 3y + 6z = 12$ which lies in the first octant.
+**Question:** If
+
+$$
+\mathbf{F} = 6z\hat{\mathbf{i}} - 4\hat{\mathbf{j}} + y\hat{\mathbf{k}},
+$$
+
+Evaluate
+
+$$
+\iint_S \mathbf{F} \cdot \hat{\mathbf{n}} \, dS,
+$$
+
+Where $S$ is the portion of the plane $2x + 3y + 6z = 12$ which lies in the first octant.
 
 **Solution:**
 **Step 1: Understand the Surface $S$**

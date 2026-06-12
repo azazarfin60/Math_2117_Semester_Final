@@ -9,7 +9,6 @@
 **Navigation**
 [< Previous Lecture](23_Rank_Nullity_Numericals.md) | [Index](README.md) | [Next Lecture >](25_Eigenvalue_Numericals.md)
 
-
 ---
 
 ## Prerequisites
