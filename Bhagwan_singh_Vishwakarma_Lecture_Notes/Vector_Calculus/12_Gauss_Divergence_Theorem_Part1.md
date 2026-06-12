@@ -147,7 +147,11 @@ $$
 \mathbf{F} = x\hat{\mathbf{i}} - y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}},
 $$
 
-And $S$ is the boundary of the sphere $x^2 + y^2 + (z - 1)^2 = 1$.
+And $S$ is the boundary of the sphere
+
+$$
+x^2 + y^2 + (z - 1)^2 = 1.
+$$
 
 **Solution:**
 We use Gauss Divergence Theorem to convert this to a volume integral.
@@ -166,7 +170,13 @@ $$
 $$
 
 Notice that $\iiint_V dV$ is simply the geometric volume of the solid region $V$.
-The region is a sphere with equation $x^2 + y^2 + (z - 1)^2 = 1$, which has a radius $R = 1$ and is centered at $(0,0,1)$.
+The region is a sphere with equation
+
+$$
+x^2 + y^2 + (z - 1)^2 = 1
+$$
+
+, which has a radius $R = 1$ and is centered at $(0,0,1)$.
 
 The geometric volume of a sphere is
 

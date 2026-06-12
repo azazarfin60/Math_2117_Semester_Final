@@ -38,7 +38,13 @@ This table tracks how many years each topic appeared (out of 7 papers). CT appea
 | 10 | **Surface Integral** ($$\iint_S \vec{A} \cdot \hat{n} dS$$) | ✅ | — | — | ✅ | — | — | — | **2** | — |
 | 11 | **Volume Integral** ($$\iiint_V$$) | — | ✅ | ✅ | — | ✅ | — | ✅ | **4** | — |
 | 12 | **Irrotational / Solenoidal** | — | ✅ | — | ✅ | ✅ | — | — | **3** | ✅ |
-| 13 | **Vector Identity** ($\nabla \times (\nabla \times \vec{A})$, etc.) | — | ✅ | — | — | ✅ | — | ✅ | **3** | — |
+| 13 | **Vector Identity** (
+
+$$
+\nabla \times (\nabla \times \vec{A})
+$$
+
+, etc.) | — | ✅ | — | — | ✅ | — | ✅ | **3** | — |
 | 14 | **Gradient ($\nabla \Phi$) / Tangent Plane** | — | ✅ | — | ✅ | — | — | ✅ | **3** | ✅ |
 | 15 | **Dot/Cross Product, Unit Vector** | — | — | — | ✅ | ✅ | ✅ | — | **3** | ✅ |
 | 16 | **Triple Product / Volume of Parallelepiped** | — | — | ✅ | ✅ | — | ✅ | — | **3** | — |
@@ -48,7 +54,13 @@ This table tracks how many years each topic appeared (out of 7 papers). CT appea
 | 20 | **Equation of a Plane** | — | — | ✅ | — | — | — | ✅ | **2** | — |
 | 21 | **Work Done (Force Field)** | — | — | — | ✅ | — | — | ✅ | **2** | — |
 | 22 | **Frenet-Serret Formulas** | — | — | — | — | — | — | — | **0** | ✅ |
-| 23 | **$\nabla^2(1/r) = 0$** | — | — | ✅ | — | — | — | — | **1** | — |
+| 23 | **
+
+$$
+\nabla^2(1/r) = 0
+$$
+
+** | — | — | ✅ | — | — | — | — | **1** | — |
 
 ---
 
@@ -67,7 +79,13 @@ This table tracks how many years each topic appeared (out of 7 papers). CT appea
 | 9 | **Linear Dependence/Independence** | — | ✅ | — | ✅ | ✅ | — | ✅ | **4** | — |
 | 10 | **Symmetric / Skew-Symmetric Matrix** | — | ✅ | — | ✅ | ✅ | — | — | **3** | — |
 | 11 | **Hermitian / Skew-Hermitian** | — | — | — | — | — | ✅ | — | **1** | — |
-| 12 | **$(AB)^{-1} = B^{-1}A^{-1}$ Proof** | — | ✅ | — | — | — | ✅ | — | **2** | — |
+| 12 | **
+
+$$
+(AB)^{-1} = B^{-1}A^{-1}
+$$
+
+Proof** | — | ✅ | — | — | — | ✅ | — | **2** | — |
 | 13 | **$(AB)' = B'A'$ Proof** | — | — | — | ✅ | — | — | — | **1** | — |
 | 14 | **Diagonalization / $e^A$** | ✅ | — | — | — | — | — | — | **1** | — |
 | 15 | **System of Differential Equations (Matrix Method)** | ✅ | — | — | ✅ | ✅ | — | — | **3** | — |
@@ -103,25 +121,73 @@ Several questions appeared word-for-word (or nearly identical) across multiple y
 
 | Question | Years |
 |:---------|:------|
-| Angle between surfaces $x^2+y^2+z^2=9$ and $z=x^2+y^2-3$ at $(2,-1,2)$ | **2017, 2019, 2021** |
+| Angle between surfaces
+
+$$
+x^2+y^2+z^2=9
+$$
+
+and
+
+$$
+z=x^2+y^2-3
+$$
+
+at $(2,-1,2)$ | **2017, 2019, 2021** |
 | Line integral of $$\vec{A}=(3x^2+6y)\hat{i}-14yz\hat{j}+20xz^2\hat{k}$$ along parametric path | **2018, 2020, 2021** |
-| Verify divergence theorem for $$\vec{A}=4x\hat{i}-2y^2\hat{j}+z^2\hat{k}$$ over cylinder $x^2+y^2=4$ | **2018, 2021** |
+| Verify divergence theorem for $$\vec{A}=4x\hat{i}-2y^2\hat{j}+z^2\hat{k}$$ over cylinder
+
+$$
+x^2+y^2=4
+$$
+
+| **2018, 2021** |
 | Eigenvalues/vectors of $$\begin{pmatrix}2&2&1\\1&3&1\\1&2&2\end{pmatrix}$$ | **2017, 2018** |
 | Verify Cayley-Hamilton for same/similar matrix and find $A^{-1}$ | **2019, 2024** |
-| Green's theorem verification: $$\oint_C(xy+y^2)dx+x^2dy$$, region $y=x$, $y=x^2$ | **2020, 2023** |
+| Green's theorem verification: $$\oint_C(xy+y^2)dx+x^2dy$$, region $y=x$,
+
+$$
+y=x^2
+$$
+
+| **2020, 2023** |
 | Express $v = (1, -2, 5)$ as linear combination of $e\_1, e\_2, e\_3$ | **2020, 2021** |
 | Prove $u+v, u-v, u-2v+w$ are linearly independent | **2020, 2021** |
-| Find basis/dimension of polynomial space $v\_1 = t^3 - 2t^2 + 4t + 1$, etc. | **2020, 2023** |
+| Find basis/dimension of polynomial space
+
+$$
+v\_1 = t^3 - 2t^2 + 4t + 1
+$$
+
+, etc. | **2020, 2023** |
 | Unit vector perpendicular to plane of $$\vec{A}=2\hat{i}-6\hat{j}-3\hat{k}$$, $$\vec{B}=4\hat{i}+3\hat{j}-\hat{k}$$ | **2021, 2023** |
 | Area of triangle with vertices $(3,-1,2),(1,-1,-3),(4,-3,1)$ | **2021, 2023** |
 | System: $x+y+z=6$, $x+2y+3z=10$, $x+2y+\lambda z=\mu$ | **2020, 2024** |
 | Whether $(1,1,1,1),(1,2,3,2),(2,5,6,4),(2,6,8,5)$ form basis of $\mathbb{R}^4$ | **2021, 2024** |
-| Velocity/acceleration along $x=2t^2, y=t^2-4t, z=3t-5$ at $t=1$ | **2019, 2023** |
+| Velocity/acceleration along
+
+$$
+x=2t^2, y=t^2-4t, z=3t-5
+$$
+
+at $t=1$ | **2019, 2023** |
 | Solve ODE system $dx/dt=6x-3y$, $dy/dt=2x+y$ by matrix method | **2020, 2021** |
-| Surface integral of $$\vec{A}=z\hat{i}+x\hat{j}-3y^2z\hat{k}$$ on cylinder $x^2+y^2=16$ | **2017, 2020** |
+| Surface integral of $$\vec{A}=z\hat{i}+x\hat{j}-3y^2z\hat{k}$$ on cylinder
+
+$$
+x^2+y^2=16
+$$
+
+| **2017, 2020** |
 | Rank of matrix with row $(0,0,1,-3,-2)$... | **2017, 2023** |
 | Find $a, b, c$ for irrotational $$\vec{V}=(x+2y+az)\hat{i}+...$$ | **2018, CT-2** |
-| Directional derivative of $\phi=x^2yz+4xz^2$ | **2018, 2019** |
+| Directional derivative of
+
+$$
+\phi=x^2yz+4xz^2
+$$
+
+| **2018, 2019** |
 | Equation of plane perpendicular to $$\vec{A}=2\hat{i}+3\hat{j}+6\hat{k}$$ through tip of $\vec{B}$ | **2019, 2024** |
 
 ### 5.2 — What This Tells Us
@@ -144,7 +210,13 @@ The CT questions directly preview final exam topics:
 | CT-1 (Vector): Frenet-Serret, differential equation for $\vec{r}$ | Rare in finals (curvature/torsion only 2020, 2023) |
 | CT-2 (Vector): Irrotational field + scalar potential | Appears in finals 2018, 2019, 2020, 2021 |
 | CT-2 (Vector): Unit outward normal to surface | Related to gradient/tangent plane (2018, 2020, 2024) |
-| CT-2 (Vector): Line integral along curve $y=x^3$ | Line integrals appear 2017, 2018, 2020, 2021, 2024 |
+| CT-2 (Vector): Line integral along curve
+
+$$
+y=x^3
+$$
+
+| Line integrals appear 2017, 2018, 2020, 2021, 2024 |
 | CT-1 (Matrix): Solve system by echelon form | Appears every single year |
 | CT-1 (Matrix): Parametric system ($k$ values) | Appears 2018, 2020, 2021, 2024 |
 | CT-1 (Matrix): Rank (echelon + canonical form) | Appears every single year |

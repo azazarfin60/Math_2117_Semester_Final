@@ -82,8 +82,17 @@ Thus, $T(k\alpha) = \lambda (k\alpha)$. Since $k\alpha$ is non-zero, it is an ei
 **Proof:**
 Let us assume the contrary. Suppose the eigenvector $\alpha$ corresponds to two distinct eigenvalues, $\lambda_1$ and $\lambda_2$ ($\lambda_1 \neq \lambda_2$).
 By definition, we have:
-1.  $T(\alpha) = \lambda_1 \alpha$
-2.  $T(\alpha) = \lambda_2 \alpha$
+1.
+
+$$
+T(\alpha) = \lambda_1 \alpha
+$$
+
+2.
+
+$$
+T(\alpha) = \lambda_2 \alpha
+$$
 
 Because the mapping $T$ is a function, a single input $\alpha$ must have a unique output. Therefore, we can equate the right-hand sides:
 
@@ -111,7 +120,12 @@ This contradicts our assumption that $\lambda_1$ and $\lambda_2$ are distinct. T
 **Statement:** The eigenspace $W_\lambda$ corresponding to an eigenvalue $\lambda$ of a linear transformation $T : V \to V$ is a subspace of the vector space $V$.
 
 **Proof:**
-By definition, $W_\lambda = \lbrace \alpha \in V \mid T(\alpha) = \lambda \alpha \rbrace$.
+By definition,
+
+$$
+W_\lambda = \lbrace \alpha \in V \mid T(\alpha) = \lambda \alpha \rbrace.
+$$
+
 First, note that the zero vector $\bar{0} \in V$ satisfies $T(\bar{0}) = \bar{0} = \lambda\bar{0}$. Thus, $\bar{0} \in W_\lambda$, meaning $W_\lambda$ is non-empty.
 
 To prove it is a subspace, we must show it is closed under linear combinations. Let $\alpha, \beta \in W_\lambda$ and let $a, b \in F$ be any scalars.

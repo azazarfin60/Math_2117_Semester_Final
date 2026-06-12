@@ -23,7 +23,13 @@ a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n &= 0
 \end{aligned}
 $$
 
-The trivial solution $x_1 = x_2 = \dots = x_n = 0$ always exists. It always satisfies every equation.
+The trivial solution
+
+$$
+x_1 = x_2 = \dots = x_n = 0
+$$
+
+always exists. It always satisfies every equation.
 
 ---
 
@@ -38,7 +44,13 @@ Let $\rho(A)$ be the rank of the coefficient matrix and $n$ be the number of unk
 
 For a square system ($m = n$):
 - $\lvert A \rvert \neq 0$ means only the trivial solution.
-- $\lvert A \rvert = 0$ means non-trivial solutions exist.
+-
+
+$$
+\lvert A \rvert = 0
+$$
+
+means non-trivial solutions exist.
 
 ---
 

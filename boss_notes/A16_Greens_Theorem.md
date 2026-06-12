@@ -38,7 +38,19 @@ $$
 $$
 
 **Proof of Part 1**:
-Let region $R$ be bounded by curves $y = y_1(x)$ (lower) and $y = y_2(x)$ (upper) from $x=a$ to $x=b$.
+Let region $R$ be bounded by curves
+
+$$
+y = y_1(x)
+$$
+
+(lower) and
+
+$$
+y = y_2(x)
+$$
+
+(upper) from $x=a$ to $x=b$.
 
 Evaluate the double integral:
 
@@ -72,7 +84,17 @@ $$
 \oint_C (2x + y^2)dx + (3y - 4x)dy
 $$
 
-where $C$ is the boundary of the region between $y = x^2$ and $y^2 = x$.
+where $C$ is the boundary of the region between
+
+$$
+y = x^2
+$$
+
+and
+
+$$
+y^2 = x.
+$$
 
 **Solution**:
 Identify $P$ and $Q$:
@@ -91,7 +113,13 @@ $$
 \iint_R (-4 - 2y) dy dx
 $$
 
-Limits: The curves intersect at $(0,0)$ and $(1,1)$. For a given $x$, $y$ goes from the lower curve $y=x^2$ to the upper curve $y=\sqrt{x}$.
+Limits: The curves intersect at $(0,0)$ and $(1,1)$. For a given $x$, $y$ goes from the lower curve
+
+$$
+y=x^2
+$$
+
+to the upper curve $y=\sqrt{x}$.
 
 $$
 \int_0^1 \int_{x^2}^{\sqrt{x}} (-4 - 2y) dy dx = \int_0^1 \left[ -4y - y^2 \right]_{x^2}^{\sqrt{x}} dx
@@ -109,7 +137,11 @@ $$
 
 ## Worked Example 2: Verification (PYQ 2020, 2023)
 
-**Problem**: Verify Green's theorem for $\oint_C (xy + y^2)dx + x^2 dy$ where $C$ is bounded by $y = x$ and $y = x^2$.
+**Problem**: Verify Green's theorem for $\oint_C (xy + y^2)dx + x^2 dy$ where $C$ is bounded by $y = x$ and
+
+$$
+y = x^2.
+$$
 
 **Solution**:
 
@@ -138,7 +170,13 @@ $$
 $$
 
 **Step 2: Evaluate via Line Integral**
-Path 1 ($y = x^2, dy = 2xdx$ from 0 to 1):
+Path 1 (
+
+$$
+y = x^2, dy = 2xdx
+$$
+
+from 0 to 1):
 
 $$
 \int_0^1 \left[ (x^3 + x^4)dx + x^2(2x dx) \right] = \int_0^1 (3x^3 + x^4) dx = \left[ \frac{3}{4}x^4 + \frac{x^5}{5} \right]_0^1 = \frac{19}{20}
@@ -153,10 +191,8 @@ $$
 Total line integral =
 
 $$
-\frac{19}{20} - 1 = -\frac{1}{20}
+\frac{19}{20} - 1 = -\frac{1}{20}.
 $$
-
-.
 
 Since both equal $-\frac{1}{20}$, the theorem is verified.
 

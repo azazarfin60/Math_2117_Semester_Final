@@ -105,7 +105,11 @@ $$
 11y - k = 3 \implies y = \frac{k+3}{11}
 $$
 
-Substituting back into the first row gives $x = \frac{7-16k}{11}$.
+Substituting back into the first row gives
+
+$$
+x = \frac{7-16k}{11}.
+$$
 
 ## What Comes Next
 The next lecture introduces the concept of Eigenvalues and Eigenvectors, transitioning from systems of linear equations to advanced matrix transformations.

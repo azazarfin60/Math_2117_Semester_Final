@@ -19,7 +19,13 @@ Let $U$ and $W$ be subspaces of a vector space $V$. The sum $U + W$ is the set o
 **Direct Sum ($U \oplus W$)**: 
 The sum $U + W$ is called a **direct sum** (written $U \oplus W$) if every element in the sum can be written *uniquely* as $u + w$.
 - This occurs if and only if the only vector shared by both subspaces is the zero vector: $U \cap W = \lbrace 0\rbrace$.
-- *Example*: In $\mathbb{R}^2$, let $U$ be the $x$-axis (vectors $(x,0)$) and $W$ be the $y$-axis (vectors $(0,y)$). Their intersection is only the origin $(0,0)$. Thus, $\mathbb{R}^2 = U \oplus W$, because any vector $(x,y)$ has exactly one decomposition: $(x,0) + (0,y)$.
+- *Example*: In $\mathbb{R}^2$, let $U$ be the $x$-axis (vectors $(x,0)$) and $W$ be the $y$-axis (vectors $(0,y)$). Their intersection is only the origin $(0,0)$. Thus,
+
+$$
+\mathbb{R}^2 = U \oplus W
+$$
+
+, because any vector $(x,y)$ has exactly one decomposition: $(x,0) + (0,y)$.
 
 ---
 
@@ -55,8 +61,18 @@ u_1 + w_1 = u_2 + w_2 \implies u_1 - u_2 = w_2 - w_1
 $$
 
 Let this new vector be $x$.
-Because $U$ is a subspace, $x = u_1 - u_2 \in U$.
-Because $W$ is a subspace, $x = w_2 - w_1 \in W$.
+Because $U$ is a subspace,
+
+$$
+x = u_1 - u_2 \in U.
+$$
+
+Because $W$ is a subspace,
+
+$$
+x = w_2 - w_1 \in W.
+$$
+
 Therefore, $x \in U \cap W$.
 But we are given $U \cap W = \lbrace 0\rbrace$. Thus, $x = 0$.
 
@@ -73,7 +89,13 @@ Since the components are identical, the representation is unique. Therefore, $V 
 ---
 
 ## Exam Patterns
-- The proof above is a highly standard 6-mark linear algebra theorem. Memorize the trick for the forward direction ($v=v+0$ vs $v=0+v$) and the reverse direction ($u_1-u_2 = w_2-w_1$).
+- The proof above is a highly standard 6-mark linear algebra theorem. Memorize the trick for the forward direction ($v=v+0$ vs $v=0+v$) and the reverse direction (
+
+$$
+u_1-u_2 = w_2-w_1
+$$
+
+).
 - When asked to "define" direct sum for 2 marks, always include the mathematical condition $U \cap W = \lbrace 0\rbrace$ and provide the $x$-axis / $y$-axis example in $\mathbb{R}^2$ for full credit.
 
 ---

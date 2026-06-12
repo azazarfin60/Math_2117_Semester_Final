@@ -139,7 +139,13 @@ $\rightarrow$ Yes, $\mathbb{R}^3$ is a vector space.
 $\rightarrow$ $xy / yz / zx$ plane.
 
 $\star$ **$\mathbb{R}^2$ over $\mathbb{R}$ is a vector space.**
-$\star$ **$\mathbb{R}^2, \mathbb{R}^3, \mathbb{R}^4 \dots \mathbb{R}^n$ all are vector space.**
+$\star$ **
+
+$$
+\mathbb{R}^2, \mathbb{R}^3, \mathbb{R}^4 \dots \mathbb{R}^n
+$$
+
+all are vector space.**
 $\rightarrow$ সবগুলো প্রমাণ করতে হবে।
 
 ---
@@ -148,8 +154,20 @@ $\rightarrow$ সবগুলো প্রমাণ করতে হবে।
 
 $\star$ **Set of all $n \times n$ matrices is a vector space.**
 
-$\star$ **$\mathbb{R}^n = \lbrace (a\_1, a\_2 \dots a\_n) : a\_i \in \mathbb{R} \rbrace$ and $F=\mathbb{R}$**
-- $a\_i \in \mathbb{R} \rightarrow$ Real number
+$\star$ **
+
+$$
+\mathbb{R}^n = \lbrace (a\_1, a\_2 \dots a\_n) : a\_i \in \mathbb{R} \rbrace
+$$
+
+and $F=\mathbb{R}$**
+-
+
+$$
+a\_i \in \mathbb{R} \rightarrow
+$$
+
+Real number
 - $F=\mathbb{R} \rightarrow$ জটিল (complex) ও হতে পারে।
 
 ### Subspaces (pg-18)
@@ -203,10 +221,20 @@ Let $U$ and $V$ be two vector spaces. A mapping $f : U \rightarrow V$ is called 
 **Math-2117**
 **(GCP Sir) (13 Apr, 26)**
 
-$\star$ **A mapping $f : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ is defined as $f(x,y) = (2x, 2y)$ show that it is a linear mapping.**
+$\star$ **A mapping
+
+$$
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+is defined as $f(x,y) = (2x, 2y)$ show that it is a linear mapping.**
 
 **Ans:-**
-Let, $u = (a, b) \in \mathbb{R}^2 \ ; \ v = (a', b') \in \mathbb{R}^2$
+Let,
+
+$$
+u = (a, b) \in \mathbb{R}^2 \ ; \ v = (a', b') \in \mathbb{R}^2
+$$
 
 Now,
 
@@ -247,7 +275,13 @@ $$
 
 Thus, the mapping is a linear mapping.
 
-$\star$ **The projection mapping $f : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ is defined as $f(x,y,z) = (x,y,0)$. Show that it is a linear mapping.**
+$\star$ **The projection mapping
+
+$$
+f : \mathbb{R}^3 \rightarrow \mathbb{R}^3
+$$
+
+is defined as $f(x,y,z) = (x,y,0)$. Show that it is a linear mapping.**
 
 **Ans:-**
 Let, $u = (a,b,c) \ ; \ v = (a',b',c')$
@@ -286,7 +320,13 @@ Thus the mapping is linear.
 
 ## Page 89
 
-$\star$ **A mapping $f : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ defined as $f(x,y) = (xy, x)$ show that it is not a linear mapping.**
+$\star$ **A mapping
+
+$$
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+defined as $f(x,y) = (xy, x)$ show that it is not a linear mapping.**
 
 **Ans:-**
 Let, $u = (a,b) \ ; \ v = (a', b')$
@@ -344,7 +384,11 @@ $$
 \therefore v = 2e\_1 + 3e\_2 = 2(1,0) + 3(0,1) = (2,3)
 $$
 
-$c\_1v\_1 + c\_2v\_2 + \dots + c\_nv\_n$ are called linear combination of vectors where $v\_1, v\_2 \dots v\_n$ are from $V$ and $c\_1, c\_2 \dots c\_n$ are from $\mathbb{R}$.
+$$
+c\_1v\_1 + c\_2v\_2 + \dots + c\_nv\_n
+$$
+
+are called linear combination of vectors where $v\_1, v\_2 \dots v\_n$ are from $V$ and $c\_1, c\_2 \dots c\_n$ are from $\mathbb{R}$.
 
 #### Span of V:-
 Linear combination এর মাধ্যমে vector তৈরি করে যদি ঐ vector গুলো $V$ এর মধ্যে থাকে তাহলে span of $V$.

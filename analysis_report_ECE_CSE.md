@@ -128,7 +128,19 @@ These questions appeared **verbatim or near-identically** across multiple papers
 
 | Question | Appearances | Papers |
 |:---------|:----------:|:-------|
-| Angle between surfaces $x^2+y^2+z^2=9$ and $z=x^2+y^2-3$ at $(2,-1,2)$ | 3 | ECE '17, '19, '21 |
+| Angle between surfaces
+
+$$
+x^2+y^2+z^2=9
+$$
+
+and
+
+$$
+z=x^2+y^2-3
+$$
+
+at $(2,-1,2)$ | 3 | ECE '17, '19, '21 |
 | Eigenvalues/vectors of
 
 $$
@@ -153,20 +165,62 @@ $$
 \vec{A}=z\hat{i}+x\hat{j}-3y^2z\hat{k}
 $$
 
-over cylinder $x^2+y^2=16$ | 2 | ECE '17, '20 |
-| Green's theorem verification: $\oint_C(xy+y^2)dx+x^2dy$, $C$: $y=x$, $y=x^2$ | 2 | ECE '20, '23 |
+over cylinder
+
+$$
+x^2+y^2=16
+$$
+
+| 2 | ECE '17, '20 |
+| Green's theorem verification: $\oint_C(xy+y^2)dx+x^2dy$, $C$: $y=x$,
+
+$$
+y=x^2
+$$
+
+| 2 | ECE '20, '23 |
 | Divergence theorem for
 
 $$
 \vec{A}=4x\hat{i}-2y^2\hat{j}+z^2\hat{k}
 $$
 
-over $x^2+y^2=4$, $z\in[0,3]$ | 2 | ECE '18, '21 |
-| Express $v=(1,-2,5)$ as linear combination of $e_1=(1,1,1)$, $e_2=(1,2,3)$, $e_3=(2,-1,1)$ | 2 | ECE '20, '21 |
+over
+
+$$
+x^2+y^2=4
+$$
+
+, $z\in[0,3]$ | 2 | ECE '18, '21 |
+| Express $v=(1,-2,5)$ as linear combination of
+
+$$
+e_1=(1,1,1),
+$$
+
+$$
+e_2=(1,2,3),
+$$
+
+$$
+e_3=(2,-1,1)
+$$
+
+| 2 | ECE '20, '21 |
 | Prove $u+v$, $u-v$, $u-2v+w$ linearly independent if $u,v,w$ independent | 2 | ECE '20, '21 |
 | System $dx/dt=6x-3y$, $dy/dt=2x+y$ by matrix method | 2 | ECE '20, '21 |
 | $\lambda/\mu$ investigation: $x+y+z=6$, $x+2y+3z=10$, $x+2y+\lambda z=\mu$ | 2 | ECE '20, '24 |
-| Polynomial basis: $v_1=t^3-2t^2+4t+1$, $v_2=2t^3-3t^2+9t-1$, etc. | 2 | ECE '20, '23 |
+| Polynomial basis:
+
+$$
+v_1=t^3-2t^2+4t+1,
+$$
+
+$$
+v_2=2t^3-3t^2+9t-1
+$$
+
+, etc. | 2 | ECE '20, '23 |
 | Basis of $\mathbb{R}^4$: vectors $(1,1,1,1),(1,2,3,2),(2,5,6,4),(2,6,8,5)$ | 2 | ECE '21, '24 |
 
 ### 5.2 Cross-Department Repeats (ECE ↔ CSE)
@@ -175,7 +229,13 @@ These questions appeared in **both** ECE and CSE papers — extremely high-prior
 
 | Question | ECE Paper(s) | CSE Paper(s) |
 |:---------|:-------------|:-------------|
-| Directional derivative of $P=4e^{2x-y+z}$ at $(1,1,-1)$ toward $(-3,5,6)$ | ECE '17 | CSE '21, '23 |
+| Directional derivative of
+
+$$
+P=4e^{2x-y+z}
+$$
+
+at $(1,1,-1)$ toward $(-3,5,6)$ | ECE '17 | CSE '21, '23 |
 | Unit vector ⊥ to
 
 $$
@@ -189,14 +249,26 @@ $$
 $$
 
 | ECE '21 | ECE '23 |
-| Velocity/acceleration at $t=1$: $x=2t^2,y=t^2-4t,z=3t-5$ in direction
+| Velocity/acceleration at $t=1$:
+
+$$
+x=2t^2,y=t^2-4t,z=3t-5
+$$
+
+in direction
 
 $$
 \hat{i}-3\hat{j}+2\hat{k}
 $$
 
 | ECE '19 | CSE '21, ECE '23 |
-| Green's theorem: $\oint(xy+y^2)dx+x^2dy$ over $y=x$, $y=x^2$ | ECE '20, '23 | CSE '24 |
+| Green's theorem: $\oint(xy+y^2)dx+x^2dy$ over $y=x$,
+
+$$
+y=x^2
+$$
+
+| ECE '20, '23 | CSE '24 |
 | $\nabla\phi$ ⊥ to surface $\phi=C$ proof | ECE '20 | CSE '21 |
 | Volume integral
 
@@ -204,12 +276,30 @@ $$
 \vec{F}=2xz\hat{i}-x\hat{j}+y^2\hat{k},
 $$
 
-Region $x=0,y=0,y=6,z=x^2,z=4$ | ECE '21 | CSE '23 |
-| Polynomial basis: $v_1=t^3-2t^2+4t+1$, $v_2,v_3,v_4$ | ECE '20, '23 | CSE '21 |
+Region
+
+$$
+x=0,y=0,y=6,z=x^2,z=4
+$$
+
+| ECE '21 | CSE '23 |
+| Polynomial basis:
+
+$$
+v_1=t^3-2t^2+4t+1
+$$
+
+, $v_2,v_3,v_4$ | ECE '20, '23 | CSE '21 |
 | Solution space of $x+2y+2z-s+3t=0$ system | — | CSE '21, '24 |
 | Linear operator $T(x,y,z)=(2y+z,x-4y,3x)$, matrix in basis $\{f_1,f_2,f_3\}$ | — | CSE '21, '24 |
 | Every square matrix = symmetric + skew-symmetric | ECE '20, '21 | CSE '21 |
-| $(AB)^{-1}=B^{-1}A^{-1}$ proof | ECE '18 | CSE '23, ECE '23 |
+|
+
+$$
+(AB)^{-1}=B^{-1}A^{-1}
+$$
+
+proof | ECE '18 | CSE '23, ECE '23 |
 
 > [!CAUTION]
 > **Critical finding:** The directional derivative of $P=4e^{2x-y+z}$ at $(1,1,-1)$ has appeared in **3 papers** across both departments. The Green's theorem verification over $y=x$, $y=x^2$ has appeared in **3 papers**. These are near-guaranteed to reappear.
@@ -327,12 +417,26 @@ $$
 
 ### 10.2 🟡 Tier 2 — High Probability (appeared 5–7 times)
 
-7. **Directional derivative** — especially $P=4e^{2x-y+z}$ at $(1,1,-1)$
+7. **Directional derivative** — especially
+
+$$
+P=4e^{2x-y+z}
+$$
+
+at $(1,1,-1)$
 8. **Line integrals** — parametric curve evaluation
 9. **Volume integrals** — bounded regions
 10. **Matrix inverse** — via adjoint or row operations
 11. **Symmetric + skew-symmetric decomposition** proof
-12. **∇ identity proofs** — $\nabla\times(\nabla\times\vec{A})$, $\nabla^2(1/r)=0$
+12. **∇ identity proofs** —
+
+$$
+\nabla\times(\nabla\times\vec{A}),
+$$
+
+$$
+\nabla^2(1/r)=0
+$$
 
 ### 10.3 🟢 Tier 3 — Moderate Probability (appeared 3–4 times)
 
@@ -341,7 +445,13 @@ $$
 15. **Cayley-Hamilton theorem** — verify + find $A^{-1}$
 16. **ODE by matrix method** — $dx/dt=ax+by$ systems
 17. **Linear independence** proofs
-18. **$(AB)^{-1}=B^{-1}A^{-1}$** proof
+18. **
+
+$$
+(AB)^{-1}=B^{-1}A^{-1}
+$$
+
+** proof
 19. **Curvature & torsion** computation
 
 ### 10.4 🔵 Tier 4 — CSE-Only / Rare Topics

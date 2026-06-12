@@ -25,8 +25,20 @@ What happens if you have a linearly independent set, but it is too small to span
 
 **Proof:**
 Let $\dim(V) = n$. This means any basis of $V$ must have exactly $n$ elements.
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_m \rbrace$ be a linearly independent subset of $V$. Because it is linearly independent, $m \le n$.
-Let $S' = \lbrace \beta_1, \beta_2, \dots, \beta_n \rbrace$ be a known basis of $V$.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_m \rbrace
+$$
+
+be a linearly independent subset of $V$. Because it is linearly independent, $m \le n$.
+Let
+
+$$
+S' = \lbrace \beta_1, \beta_2, \dots, \beta_n \rbrace
+$$
+
+be a known basis of $V$.
 
 We will merge these two sets by putting our independent alphas at the front:
 
@@ -85,7 +97,13 @@ If you know $\dim(V) = n$, you do not always need to check both conditions (inde
 
 ## Unique Representation Theorem
 
-**Theorem:** Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ be a basis of $V(F)$. Then any vector $\alpha \in V$ can be **uniquely** expressed as a linear combination of the elements of $S$.
+**Theorem:** Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+be a basis of $V(F)$. Then any vector $\alpha \in V$ can be **uniquely** expressed as a linear combination of the elements of $S$.
 
 **Proof:**
 Suppose $\alpha$ can be expressed in two different ways:
@@ -126,9 +144,32 @@ The coefficients are identical. The representation is unique.
 Let $\dim(V) = n$. Because $W$ is inside $V$, any independent set in $W$ is also an independent set in $V$. Since no independent set in $V$ can have more than $n$ vectors, the largest independent set we can find in $W$ can have at most $n$ vectors. Let this maximal independent set have $m$ vectors ($m \le n$). Because it is maximal, adding any other vector from $W$ makes it dependent, meaning it spans $W$. It is a basis for $W$. Thus, $\dim(W) = m \le n$.
 
 ### Existence of a Complementary Subspace
-**Theorem:** If $W_1$ is a subspace of $V(F)$ where $\dim(V) = n$, there exists another subspace $W_2$ such that the whole space is their direct sum: $V = W_1 \oplus W_2$. Also, $\dim(W_2) = n - \dim(W_1)$.
+**Theorem:** If $W_1$ is a subspace of $V(F)$ where $\dim(V) = n$, there exists another subspace $W_2$ such that the whole space is their direct sum:
+
+$$
+V = W_1 \oplus W_2
+$$
+
+. Also,
+
+$$
+\dim(W_2) = n - \dim(W_1).
+$$
+
 **Proof:**
-Let $\dim(W_1) = m$. Let $S_1 = \lbrace \alpha_1, \dots, \alpha_m \rbrace$ be a basis of $W_1$.
+Let
+
+$$
+\dim(W_1) = m
+$$
+
+. Let
+
+$$
+S_1 = \lbrace \alpha_1, \dots, \alpha_m \rbrace
+$$
+
+be a basis of $W_1$.
 Since $S_1$ is linearly independent in $V$, we use the Extension Theorem to expand it to a full basis of $V$:
 
 $$
@@ -142,7 +183,12 @@ W_2 = L(\lbrace \alpha_{m+1}, \dots, \alpha_n \rbrace)
 $$
 
 Because $S$ is a basis for $V$, every vector in $V$ can be built uniquely by taking some combination of the first $m$ vectors (which lives in $W_1$) and adding it to a combination of the last $n-m$ vectors (which lives in $W_2$).
-Since the representation is unique, $V = W_1 \oplus W_2$.
+Since the representation is unique,
+
+$$
+V = W_1 \oplus W_2.
+$$
+
 The dimension of $W_2$ is exactly $n - m$, which is $n - \dim(W_1)$.
 
 ## Key Takeaways

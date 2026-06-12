@@ -61,8 +61,20 @@ $$
 
 ### Part 1: Same Dimension Isomorphic
 Let $\dim(U) = \dim(V) = n$.
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ be a basis for $U$.
-Let $S' = \lbrace \beta_1, \beta_2, \dots, \beta_n \rbrace$ be a basis for $V$.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+be a basis for $U$.
+Let
+
+$$
+S' = \lbrace \beta_1, \beta_2, \dots, \beta_n \rbrace
+$$
+
+be a basis for $V$.
 
 We define a mapping $f : U \to V$ by matching their basis vectors:
 
@@ -72,7 +84,18 @@ $$
 
 **1. Prove $f$ is One-to-One:**
 Assume $f(\alpha) = f(\beta)$.
-Let $\alpha = a_1\alpha_1 + \dots + a_n\alpha_n$ and $\beta = b_1\alpha_1 + \dots + b_n\alpha_n$.
+Let
+
+$$
+\alpha = a_1\alpha_1 + \dots + a_n\alpha_n
+$$
+
+and
+
+$$
+\beta = b_1\alpha_1 + \dots + b_n\alpha_n.
+$$
+
 Substitute into the assumption:
 
 $$
@@ -94,8 +117,19 @@ $$
 Thus, $f$ is one-to-one.
 
 **2. Prove $f$ is Onto:**
-Take any vector $\gamma \in V$. Since $S'$ is a basis, $\gamma = c_1\beta_1 + \dots + c_n\beta_n$.
-Because the coefficients $c_i$ are in the field $F$, we can construct the vector $\alpha = c_1\alpha_1 + \dots + c_n\alpha_n$ in $U$.
+Take any vector $\gamma \in V$. Since $S'$ is a basis,
+
+$$
+\gamma = c_1\beta_1 + \dots + c_n\beta_n.
+$$
+
+Because the coefficients $c_i$ are in the field $F$, we can construct the vector
+
+$$
+\alpha = c_1\alpha_1 + \dots + c_n\alpha_n
+$$
+
+in $U$.
 By our definition, $f(\alpha) = \gamma$. Thus, every vector in $V$ has a pre-image. $f$ is onto.
 
 **3. Prove $f$ is Linear:**
@@ -121,7 +155,13 @@ Thus, $f$ is linear. Since $f$ is one-to-one, onto, and linear, $U \cong V$.
 
 ### Part 2: Isomorphic Same Dimension
 Assume $U \cong V$. This means there exists an isomorphism $f : U \to V$.
-Let $\dim(U) = n$, and let $S = \lbrace \alpha_1, \dots, \alpha_n \rbrace$ be its basis.
+Let $\dim(U) = n$, and let
+
+$$
+S = \lbrace \alpha_1, \dots, \alpha_n \rbrace
+$$
+
+be its basis.
 We map the basis $S$ to $V$ to create a new set:
 
 $$
@@ -151,7 +191,12 @@ Because $S$ is a basis of $U$, it is independent, so all coefficients $a_i$ must
 
 **2. Prove $S'$ Spans $V$:**
 Take any $\gamma \in V$. Because $f$ is onto, there exists $\alpha \in U$ such that $f(\alpha) = \gamma$.
-Since $S$ is a basis of $U$, $\alpha = c_1\alpha_1 + \dots + c_n\alpha_n$.
+Since $S$ is a basis of $U$,
+
+$$
+\alpha = c_1\alpha_1 + \dots + c_n\alpha_n.
+$$
+
 Apply $f$:
 
 $$
@@ -175,8 +220,19 @@ V(F) \cong V_n(F)
 $$
 
 **Proof Sketch:**
-Let $S = \lbrace \alpha_1, \dots, \alpha_n \rbrace$ be a basis for $V$.
-Any vector $\alpha \in V$ can be uniquely written as $\alpha = a_1\alpha_1 + \dots + a_n\alpha_n$.
+Let
+
+$$
+S = \lbrace \alpha_1, \dots, \alpha_n \rbrace
+$$
+
+be a basis for $V$.
+Any vector $\alpha \in V$ can be uniquely written as
+
+$$
+\alpha = a_1\alpha_1 + \dots + a_n\alpha_n.
+$$
+
 Define a mapping $f$ that takes this vector and maps it to a simple $n$-tuple of its coordinates:
 
 $$

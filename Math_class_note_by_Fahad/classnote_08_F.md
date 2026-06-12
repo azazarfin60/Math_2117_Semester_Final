@@ -50,10 +50,8 @@ $$
 be an eigen vector corresponding to the eigen value
 
 $$
-\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i
+\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i.
 $$
-
-.
 
 $\therefore$ we know,
 
@@ -75,7 +73,11 @@ $$
 
 Both equations give the same relation.
 $\therefore$ From (i),
-Let, $v_1 = 1$
+Let,
+
+$$
+v_1 = 1
+$$
 
 $$
 \therefore v_2 = -(2-\lambda) = -\left( 2 - \left(\frac{3}{2} + \frac{\sqrt{3}}{2}i\right) \right) = -\frac{1}{2} + \frac{\sqrt{3}}{2}i
@@ -92,10 +94,8 @@ $$
 is an eigen vector corresponding to the eigen value
 
 $$
-\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i
+\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i.
 $$
-
-.
 
 ---
 
@@ -114,10 +114,8 @@ $$
 be an eigen vector corresponding to the eigen value
 
 $$
-\lambda = \frac{3}{2} - \frac{\sqrt{3}}{2}i
+\lambda = \frac{3}{2} - \frac{\sqrt{3}}{2}i.
 $$
-
-.
 
 $$
 \therefore (2-\lambda)w_1 + w_2 = 0 \quad \dots \text{ (iii)}
@@ -129,7 +127,11 @@ $$
 
 both equations give the same relation.
 $\therefore$ From (iii),
-let, $w_1 = 1$
+let,
+
+$$
+w_1 = 1
+$$
 
 $$
 \therefore w_2 = -(2-\lambda) = -\left( 2 - \left(\frac{3}{2} - \frac{\sqrt{3}}{2}i\right) \right) = -\frac{1}{2} - \frac{\sqrt{3}}{2}i
@@ -146,10 +148,8 @@ $$
 is an eigen vector corresponding to the eigen values
 
 $$
-\lambda = \frac{3 - \sqrt{3}i}{2}
+\lambda = \frac{3 - \sqrt{3}i}{2}.
 $$
-
-.
 
 $\star$ **Prove that $\operatorname{adj}(AB) = \operatorname{adj}(B) \cdot \operatorname{adj}(A)$**
 
@@ -306,10 +306,8 @@ $$
 5. $x \in F$ and $x \neq 0$ then there exists an element $\frac{1}{x} \in F$ such that
 
 $$
-x \cdot \frac{1}{x} = 1
+x \cdot \frac{1}{x} = 1.
 $$
-
-.
 
 $\star$ **Identity element = 1.**
 

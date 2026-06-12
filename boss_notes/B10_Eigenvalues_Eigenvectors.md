@@ -50,9 +50,21 @@ Follow these three steps for any eigenvalue/eigenvector problem:
 
 **Step 1: Form the characteristic equation.** Write down $A - \lambda I$ and compute its determinant. Set it equal to zero.
 
-**Step 2: Solve the polynomial.** Find all roots $\lambda_1, \lambda_2, \dots, \lambda_n$. These are the eigenvalues.
+**Step 2: Solve the polynomial.** Find all roots
 
-**Step 3: Find eigenvectors.** For each $\lambda_i$, substitute it into $(A - \lambda_i I)X = 0$. Solve this homogeneous system by row reduction. The non-zero solutions are the eigenvectors.
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n
+$$
+
+. These are the eigenvalues.
+
+**Step 3: Find eigenvectors.** For each $\lambda_i$, substitute it into
+
+$$
+(A - \lambda_i I)X = 0
+$$
+
+. Solve this homogeneous system by row reduction. The non-zero solutions are the eigenvectors.
 
 ---
 
@@ -98,7 +110,11 @@ $$
 
 **Solution**:
 
-**Step 1**: The characteristic equation is $\lvert A - \lambda I \rvert = 0$:
+**Step 1**: The characteristic equation is
+
+$$
+\lvert A - \lambda I \rvert = 0:
+$$
 
 $$
 \begin{vmatrix}
@@ -111,7 +127,17 @@ $$
 (2 - \lambda)(4 - \lambda) - 3 = 0 \implies \lambda^2 - 6\lambda + 5 = 0
 $$
 
-**Step 2**: Factor: $(\lambda - 1)(\lambda - 5) = 0$. So $\lambda_1 = 1$ and $\lambda_2 = 5$.
+**Step 2**: Factor: $(\lambda - 1)(\lambda - 5) = 0$. So
+
+$$
+\lambda_1 = 1
+$$
+
+and
+
+$$
+\lambda_2 = 5.
+$$
 
 **Check**: Trace = $2 + 4 = 6 = 1 + 5$. Determinant = $8 - 3 = 5 = 1 \times 5$. Correct.
 
@@ -172,7 +198,11 @@ This exact matrix appeared in both 2017 (12 marks) and 2018 (6 marks).
 
 **Solution**:
 
-**Step 1**: Compute $\lvert A - \lambda I \rvert = 0$:
+**Step 1**: Compute
+
+$$
+\lvert A - \lambda I \rvert = 0:
+$$
 
 $$
 \begin{vmatrix}
@@ -200,7 +230,11 @@ $$
 
 **Step 2**: Test $\lambda = 1$: $1 - 7 + 11 - 5 = 0$. Yes, it is a root.
 
-Divide by $(\lambda - 1)$: $(\lambda - 1)(\lambda^2 - 6\lambda + 5) = 0 \implies (\lambda - 1)(\lambda - 1)(\lambda - 5) = 0$.
+Divide by $(\lambda - 1)$:
+
+$$
+(\lambda - 1)(\lambda^2 - 6\lambda + 5) = 0 \implies (\lambda - 1)(\lambda - 1)(\lambda - 5) = 0.
+$$
 
 Eigenvalues: $\lambda = 1, 1, 5$.
 
@@ -448,10 +482,8 @@ When an eigenvalue has multiplicity $m$ (it appears $m$ times as a root), the nu
 If the characteristic equation has complex roots, the eigenvectors will also have complex entries. Complex eigenvalues always come in conjugate pairs for real matrices. See the class notes for the worked example with
 
 $$
-\lambda = \frac{3 \pm i\sqrt{3}}{2}
+\lambda = \frac{3 \pm i\sqrt{3}}{2}.
 $$
-
-.
 
 ---
 
@@ -469,13 +501,35 @@ $$
 
 ## Eigenvalue Quick-Check Table
 
-For a 3x3 matrix with eigenvalues $\lambda_1, \lambda_2, \lambda_3$:
+For a 3x3 matrix with eigenvalues
+
+$$
+\lambda_1, \lambda_2, \lambda_3:
+$$
 
 | Property | Formula |
 |----------|---------|
-| Sum | $\lambda_1 + \lambda_2 + \lambda_3 = a_{11} + a_{22} + a_{33}$ |
-| Product | $\lambda_1 \cdot \lambda_2 \cdot \lambda_3 = \lvert A \rvert$ |
-| Sum of products of pairs | $\lambda_1 \lambda_2 + \lambda_1 \lambda_3 + \lambda_2 \lambda_3 =$ sum of $2 \times 2$ cofactors |
+| Sum |
+
+$$
+\lambda_1 + \lambda_2 + \lambda_3 = a_{11} + a_{22} + a_{33}
+$$
+
+|
+| Product |
+
+$$
+\lambda_1 \cdot \lambda_2 \cdot \lambda_3 = \lvert A \rvert
+$$
+
+|
+| Sum of products of pairs |
+
+$$
+\lambda_1 \lambda_2 + \lambda_1 \lambda_3 + \lambda_2 \lambda_3 =
+$$
+
+sum of $2 \times 2$ cofactors |
 
 ---
 

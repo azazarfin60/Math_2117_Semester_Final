@@ -50,7 +50,13 @@ $$
 
 where $B_0, B_1, \dots, B_{n-1}$ are constant $n \times n$ matrices. This works because each cofactor of $(A - \lambda I)$ is a polynomial in $\lambda$ of degree at most $n - 1$.
 
-By the matrix identity $D \cdot \text{adj}(D) = \lvert D \rvert \cdot I$ applied to $D = A - \lambda I$:
+By the matrix identity
+
+$$
+D \cdot \text{adj}(D) = \lvert D \rvert \cdot I
+$$
+
+applied to $D = A - \lambda I$:
 
 $$
 (A - \lambda I) \cdot \text{adj}(A - \lambda I) = |A - \lambda I| \cdot I
@@ -64,17 +70,37 @@ $$
 
 Expand the left side and equate coefficients of each power of $\lambda$:
 
-For $\lambda^0$: $AB_0 = c_0 I$
+For $\lambda^0$:
 
-For $\lambda^1$: $AB_1 - B_0 = c_1 I$
+$$
+AB_0 = c_0 I
+$$
 
-For $\lambda^2$: $AB_2 - B_1 = c_2 I$
+For $\lambda^1$:
+
+$$
+AB_1 - B_0 = c_1 I
+$$
+
+For $\lambda^2$:
+
+$$
+AB_2 - B_1 = c_2 I
+$$
 
 $\vdots$
 
-For $\lambda^{n-1}$: $AB_{n-1} - B_{n-2} = c_{n-1}I$
+For $\lambda^{n-1}$:
 
-For $\lambda^n$: $-B_{n-1} = (-1)^n I$
+$$
+AB_{n-1} - B_{n-2} = c_{n-1}I
+$$
+
+For $\lambda^n$:
+
+$$
+-B_{n-1} = (-1)^n I
+$$
 
 Now pre-multiply these equations by $I, A, A^2, \dots, A^n$ respectively:
 
@@ -116,7 +142,12 @@ So $p(A) = O$. The matrix satisfies its own characteristic equation.
 
 The verification problem is a standard exam question. Follow these steps:
 
-1. Find the characteristic equation $\lvert A - \lambda I \rvert = 0$.
+1. Find the characteristic equation
+
+$$
+\lvert A - \lambda I \rvert = 0.
+$$
+
 2. Write the matrix version: replace $\lambda^k$ with $A^k$ and constants with $cI$.
 3. Compute $A^2$ by multiplying $A \cdot A$.
 4. Compute $A^3$ by multiplying $A^2 \cdot A$ (for 3x3 matrices).
@@ -146,13 +177,21 @@ $$
 
 This requires $c_0 \neq 0$ (which means $\lvert A \rvert \neq 0$, so $A$ must be invertible).
 
-For a 3x3 matrix with equation $A^3 + aA^2 + bA + cI = O$:
+For a 3x3 matrix with equation
+
+$$
+A^3 + aA^2 + bA + cI = O:
+$$
 
 $$
 A^{-1} = -\frac{1}{c}(A^2 + aA + bI)
 $$
 
-For a 2x2 matrix with equation $A^2 + aA + bI = O$:
+For a 2x2 matrix with equation
+
+$$
+A^2 + aA + bI = O:
+$$
 
 $$
 A^{-1} = -\frac{1}{b}(A + aI)
@@ -180,7 +219,11 @@ $$
 |A - \lambda I| = (1 - \lambda)(3 - \lambda) + 2 = \lambda^2 - 4\lambda + 5 = 0
 $$
 
-**Step 2**: Matrix equation: $A^2 - 4A + 5I = O$.
+**Step 2**: Matrix equation:
+
+$$
+A^2 - 4A + 5I = O.
+$$
 
 **Step 3**: Compute $A^2$:
 
@@ -235,7 +278,11 @@ $$
 |A - \lambda I| = 0 \implies \lambda^3 - 6\lambda^2 + 9\lambda - 4 = 0
 $$
 
-**Step 2**: Matrix equation: $A^3 - 6A^2 + 9A - 4I = O$.
+**Step 2**: Matrix equation:
+
+$$
+A^3 - 6A^2 + 9A - 4I = O.
+$$
 
 **Step 3**: Compute $A^2$:
 
@@ -248,7 +295,11 @@ A^2 =
 \end{pmatrix}
 $$
 
-Compute $A^3 = A^2 \cdot A$:
+Compute
+
+$$
+A^3 = A^2 \cdot A:
+$$
 
 $$
 A^3 =
@@ -302,9 +353,17 @@ $$
 
 **Solution**:
 
-**Step 1**: Characteristic equation: $\lambda^3 - 7\lambda^2 + 11\lambda - 5 = 0$.
+**Step 1**: Characteristic equation:
 
-**Step 2**: Matrix equation: $A^3 - 7A^2 + 11A - 5I = O$.
+$$
+\lambda^3 - 7\lambda^2 + 11\lambda - 5 = 0.
+$$
+
+**Step 2**: Matrix equation:
+
+$$
+A^3 - 7A^2 + 11A - 5I = O.
+$$
 
 **Step 3**: Compute:
 

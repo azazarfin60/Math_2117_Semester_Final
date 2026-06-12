@@ -74,7 +74,13 @@ $\star$ **Rajshahi-র ১০টি District-এর bus fair-এর matrix code 
 * **Accurate**
 * **Per kilo hisab করতে হবে।**
 
-$\star$ **Prove that $(AB)^t = B^t A^t$**
+$\star$ **Prove that
+
+$$
+(AB)^t = B^t A^t
+$$
+
+**
 
 From previous class,
 
@@ -158,7 +164,13 @@ $\star$ **Vector space-এ যে সকল vector-কে operate করলে c
 * **Characteristic matrix, ch. equation, Eigen values.**
 
 #### Characteristic matrix:-
-Let $A = (a_{ij})_{n \times n}$ be an n-square matrix. Then the characteristic matrix of $A$ is
+Let
+
+$$
+A = (a_{ij})_{n \times n}
+$$
+
+be an n-square matrix. Then the characteristic matrix of $A$ is
 
 $$
 A - \lambda I
@@ -342,7 +354,17 @@ $$
 \therefore 2v_1 + v_2 = 0 \quad \text{yielding } 2v_1 + v_2 = 0.
 $$
 
-Let, $v_2 = 2$, then $v_1 = -1$.
+Let,
+
+$$
+v_2 = 2
+$$
+
+, then
+
+$$
+v_1 = -1.
+$$
 
 $$
 \rightarrow \text{there are many solutions, we are just considering one.}

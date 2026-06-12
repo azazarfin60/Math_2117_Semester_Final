@@ -43,7 +43,13 @@ The hardest part is finding the limits. For a region bounded by planes:
 
 ## Worked Example 1: Scalar Volume Integral (PYQ 2018)
 
-**Problem**: Let $\phi = 45x^2y$. Evaluate
+**Problem**: Let
+
+$$
+\phi = 45x^2y
+$$
+
+. Evaluate
 
 $$
 \iiint_V \phi \, dV
@@ -76,7 +82,12 @@ $$
 45 \int_0^2 x^2 \left[ 4y^2 - 2xy^2 - \frac{2}{3}y^3 \right]_0^{4-2x} dx
 $$
 
-Notice $4y^2 - 2xy^2 = y^2(4 - 2x)$.
+Notice
+
+$$
+4y^2 - 2xy^2 = y^2(4 - 2x).
+$$
+
 Substitute upper limit $y = 4-2x$:
 
 $$
@@ -89,7 +100,11 @@ $$
 15 \int_0^2 x^2 (4-2x)^3 dx = 120 \int_0^2 x^2 (2-x)^3 dx
 $$
 
-Expand $(2-x)^3 = 8 - 12x + 6x^2 - x^3$:
+Expand
+
+$$
+(2-x)^3 = 8 - 12x + 6x^2 - x^3:
+$$
 
 $$
 120 \int_0^2 (8x^2 - 12x^3 + 6x^4 - x^5) dx

@@ -27,10 +27,8 @@ $$
  and
 
 $$
-d\vec{r} = dx\hat{i} + dy\hat{j} + dz\hat{k}:
+d\vec{r} = dx\hat{i} + dy\hat{j} + dz\hat{k}::
 $$
-
-:
 
 $$
 W = \int_C (F_1 dx + F_2 dy + F_3 dz)
@@ -50,19 +48,53 @@ $$
 \vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}
 $$
 
-along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$.
+along the curve
+
+$$
+x = t^2 + 1, y = 2t^2, z = t^3
+$$
+
+from $t = 1$ to $t = 2$.
 
 **Solution**:
 
 **Step 1**: Find differentials.
-$x = t^2 + 1 \implies dx = 2t dt$
-$y = 2t^2 \implies dy = 4t dt$
-$z = t^3 \implies dz = 3t^2 dt$
 
-**Step 2**: Substitute into the dot product $\vec{F} \cdot d\vec{r} = 3xy dx - 5z dy + 10x dz$.
-- $3xy dx = 3(t^2 + 1)(2t^2)(2t dt) = (12t^5 + 12t^3) dt$
-- $-5z dy = -5(t^3)(4t dt) = -20t^4 dt$
-- $10x dz = 10(t^2 + 1)(3t^2 dt) = (30t^4 + 30t^2) dt$
+$$
+x = t^2 + 1 \implies dx = 2t dt
+$$
+
+$$
+y = 2t^2 \implies dy = 4t dt
+$$
+
+$$
+z = t^3 \implies dz = 3t^2 dt
+$$
+
+**Step 2**: Substitute into the dot product
+
+$$
+\vec{F} \cdot d\vec{r} = 3xy dx - 5z dy + 10x dz.
+$$
+
+-
+
+$$
+3xy dx = 3(t^2 + 1)(2t^2)(2t dt) = (12t^5 + 12t^3) dt
+$$
+
+-
+
+$$
+-5z dy = -5(t^3)(4t dt) = -20t^4 dt
+$$
+
+-
+
+$$
+10x dz = 10(t^2 + 1)(3t^2 dt) = (30t^4 + 30t^2) dt
+$$
 
 **Step 3**: Sum and integrate.
 
@@ -91,13 +123,28 @@ $$
 \int_C (3xy\hat{i} - y^2\hat{j}) \cdot d\vec{r}
 $$
 
-when $C$ is $y = 2x^2$ from $(0,0)$ to $(1,2)$.
+when $C$ is
+
+$$
+y = 2x^2
+$$
+
+from $(0,0)$ to $(1,2)$.
 
 **Solution**:
 
-We have $\vec{F} \cdot d\vec{r} = 3xy dx - y^2 dy$.
+We have
 
-Path: $y = 2x^2 \implies dy = 4x dx$.
+$$
+\vec{F} \cdot d\vec{r} = 3xy dx - y^2 dy.
+$$
+
+Path:
+
+$$
+y = 2x^2 \implies dy = 4x dx.
+$$
+
 Limits for $x$: 0 to 1.
 
 Substitute $y$ and $dy$:
@@ -131,7 +178,10 @@ along straight lines from $(0,0,0)$ to $(1,0,0)$ to $(1,1,0)$ to $(1,1,1)$.
 **Solution**:
 
 Break into three paths: $C_1, C_2, C_3$.
-$\vec{A} \cdot d\vec{r} = (3x^2 + 6y)dx - 14yz dy + 20xz^2 dz$.
+
+$$
+\vec{A} \cdot d\vec{r} = (3x^2 + 6y)dx - 14yz dy + 20xz^2 dz.
+$$
 
 **Path $C_1$**: $(0,0,0)$ to $(1,0,0)$.
 $y=0, z=0 \implies dy=0, dz=0$. $x$ goes 0 to 1.
@@ -157,10 +207,8 @@ $$
 Total Integral =
 
 $$
-1 + 0 + \frac{20}{3} = \frac{23}{3}
+1 + 0 + \frac{20}{3} = \frac{23}{3}.
 $$
-
-.
 
 ---
 
@@ -168,7 +216,13 @@ $$
 
 - Parametric path questions (like Example 1) are very common. Substitute $x, y, z$ and $dx, dy, dz$ perfectly. Watch your algebra.
 - Segmented straight line paths (Example 3) are simple but test your logic. On each segment, two variables are constant (so their differentials are zero).
-- Always explicitly write the dot product $\vec{F} \cdot d\vec{r} = F_1 dx + F_2 dy + F_3 dz$ first.
+- Always explicitly write the dot product
+
+$$
+\vec{F} \cdot d\vec{r} = F_1 dx + F_2 dy + F_3 dz
+$$
+
+first.
 
 ---
 

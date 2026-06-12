@@ -45,10 +45,24 @@ $$
 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} 2v_1+v_2 \\ 2v_1+v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
-$2v_1+v_2 = 0$ yielding $2v_1+v_2 = 0$
+$$
+2v_1+v_2 = 0
+$$
+
+yielding
+
+$$
+2v_1+v_2 = 0
+$$
+
 অনেকগুলা solution পাওয়া যাবে।
 
-Set, $v_2 = 2 \Rightarrow v_1 = -1$.
+Set,
+
+$$
+v_2 = 2 \Rightarrow v_1 = -1.
+$$
+
 Thus
 
 $$
@@ -96,14 +110,35 @@ $$
 (why is this linear eqn) কোনো eqn এর ভেরিয়েবল এর degree 1 হলে তাকে linear eqn বলে।
 
 Here,
-$-w_1+w_2 = 0$
-$2w_1-2w_2 = 0$
 
-Gives, $-w_1+w_2 = 0 \Rightarrow w_1 = w_2$
+$$
+-w_1+w_2 = 0
+$$
+
+$$
+2w_1-2w_2 = 0
+$$
+
+Gives,
+
+$$
+-w_1+w_2 = 0 \Rightarrow w_1 = w_2
+$$
 
 eqn $= 1$, var $= 2$ $\rightarrow$ system has more than one / more solutions.
 
-Set, $w_1 = 1$ then $w_2 = 1$.
+Set,
+
+$$
+w_1 = 1
+$$
+
+then
+
+$$
+w_2 = 1.
+$$
+
 then
 
 $$
@@ -215,8 +250,14 @@ $$
 $$
 
 $\Rightarrow (3-\lambda)(1-\lambda) + 1 = 0$
-$\Rightarrow \lambda^2 - 4\lambda + 3 + 1 = 0$
-$\Rightarrow (\lambda-2)^2 = 0 \Rightarrow \lambda = 2, 2$
+
+$$
+\Rightarrow \lambda^2 - 4\lambda + 3 + 1 = 0
+$$
+
+$$
+\Rightarrow (\lambda-2)^2 = 0 \Rightarrow \lambda = 2, 2
+$$
 
 Let,
 
@@ -250,7 +291,25 @@ $$
 $$
 
 <!-- Page 044 -->
-Set $v_2 = 1 \Rightarrow v_1 = 1$? *(Note: In notes: $v_1-v_2 = 0 \Rightarrow v_1=v_2$, so $v_2=1 \Rightarrow v_1=1$. The eigenvector is
+Set
+
+$$
+v_2 = 1 \Rightarrow v_1 = 1
+$$
+
+? *(Note: In notes:
+
+$$
+v_1-v_2 = 0 \Rightarrow v_1=v_2
+$$
+
+, so
+
+$$
+v_2=1 \Rightarrow v_1=1
+$$
+
+. The eigenvector is
 
 $$
 V =
@@ -290,12 +349,27 @@ HW eigen values and eigen vectors.**
 **Cayley-Hamilton Theorem:**
 $\rightarrow$ eigenvalues different হলেই inverse matrix থাকবে। ($|A| \neq 0$)
 
-*zero means satisfy a polynomial ($x^2-9x+6$) and roots means satisfy a equation ($x^2-9x+6=0$)*
+*zero means satisfy a polynomial ($x^2-9x+6$) and roots means satisfy a equation (
+
+$$
+x^2-9x+6=0
+$$
+
+)*
 
 **Theorem: Every matrix is a zero of its characteristics polynomial.**
 
-$A_{2\times2} = \lambda^2 + a\lambda + b$
-Then $A^2 + aA + bI = 0$ (zero matrix)
+$$
+A_{2\times2} = \lambda^2 + a\lambda + b
+$$
+
+Then
+
+$$
+A^2 + aA + bI = 0
+$$
+
+(zero matrix)
 
 **# Find inverse by Cayley-Hamilton.**
 **Consider the matrix
@@ -325,16 +399,42 @@ $$
 
 <!-- Page 045 -->
 $= (1-\lambda) \left\lbrace  (2-\lambda)(2-\lambda) - 4 \right\rbrace  - 2 \left\lbrace  -1(2-\lambda) - 4 \right\rbrace  + 3 \left\lbrace  -1 - (2-\lambda) \right\rbrace $
-$= (1-\lambda) \left\lbrace  4 - 4\lambda + \lambda^2 - 4 \right\rbrace  - 2 \left\lbrace  -2 + \lambda - 4 \right\rbrace  + 3 \left\lbrace  -3 + \lambda \right\rbrace $
-$= (1-\lambda) (\lambda^2 - 4\lambda) - 2 (\lambda - 6) + 3 (\lambda - 3)$
-$= \lambda^2 - 4\lambda - \lambda^3 + 4\lambda^2 - 2\lambda + 12 + 3\lambda - 9$
-$|A-\lambda I| = -\lambda^3 + 5\lambda^2 - 3\lambda + 3$
+
+$$
+= (1-\lambda) \left\lbrace  4 - 4\lambda + \lambda^2 - 4 \right\rbrace  - 2 \left\lbrace  -2 + \lambda - 4 \right\rbrace  + 3 \left\lbrace  -3 + \lambda \right\rbrace
+$$
+
+$$
+= (1-\lambda) (\lambda^2 - 4\lambda) - 2 (\lambda - 6) + 3 (\lambda - 3)
+$$
+
+$$
+= \lambda^2 - 4\lambda - \lambda^3 + 4\lambda^2 - 2\lambda + 12 + 3\lambda - 9
+$$
+
+$$
+|A-\lambda I| = -\lambda^3 + 5\lambda^2 - 3\lambda + 3
+$$
 
 By Cayley-Hamilton theorem, we have, replacing $\lambda$ by $A$:
-$-A^3 + 5A^2 - 3A + 3I = 0$
-$\Rightarrow -A^{-1} A^3 + 5 A^{-1} A^2 - 3 A^{-1} A + 3 A^{-1} I = 0$ (multiplying by $A^{-1}$)
-$\Rightarrow -A^2 + 5A - 3I + 3A^{-1} = 0$
-$\Rightarrow 3A^{-1} = A^2 - 5A + 3I$
+
+$$
+-A^3 + 5A^2 - 3A + 3I = 0
+$$
+
+$$
+\Rightarrow -A^{-1} A^3 + 5 A^{-1} A^2 - 3 A^{-1} A + 3 A^{-1} I = 0
+$$
+
+(multiplying by $A^{-1}$)
+
+$$
+\Rightarrow -A^2 + 5A - 3I + 3A^{-1} = 0
+$$
+
+$$
+\Rightarrow 3A^{-1} = A^2 - 5A + 3I
+$$
 
 Therefore,
 
@@ -388,7 +488,13 @@ $$
 (found)
 
 <!-- Page 046 -->
-**# $\nabla \cdot (A \times r)$ if $\nabla \times A = 0$**
+**# $\nabla \cdot (A \times r)$ if
+
+$$
+\nabla \times A = 0
+$$
+
+**
 
 $$
 A = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
@@ -414,7 +520,17 @@ $$
 = (x\hat{i} + y\hat{j} + z\hat{k}) \cdot (\nabla \times A)
 $$
 
-$= r \cdot (\nabla \times A) = 0$ since $\nabla \times A = 0$. (proved)
+$$
+= r \cdot (\nabla \times A) = 0
+$$
+
+since
+
+$$
+\nabla \times A = 0
+$$
+
+. (proved)
 
 ---
 
@@ -473,8 +589,13 @@ P^{-1} A P =
 \end{pmatrix} = M
 $$
 
-$A^5 = P M^5 P^{-1}$
-$A^{100} = P M^{100} P^{-1}$
+$$
+A^5 = P M^5 P^{-1}
+$$
+
+$$
+A^{100} = P M^{100} P^{-1}
+$$
 
 $$
 A^5 = P M^5 P^{-1} = \frac{1}{3}
@@ -493,28 +614,57 @@ A^3 = P M^3 P^{-1} = \frac{1}{3}
 $$
 
 <!-- Page 047 -->
-$\mathbb{R}^n \rightarrow n\text{ dimensional euclidean space}$
 
-$\mathbb{R}^2 \rightarrow 2\text{ dimensional}$
-$\mathbb{R}^2 = \lbrace(a, b) \mid a, b \in \mathbb{R}\rbrace$ such that vector $(1, 2)$ is a member of $\mathbb{R}^2$.
+$$
+\mathbb{R}^n \rightarrow n\text{ dimensional euclidean space}
+$$
+
+$$
+\mathbb{R}^2 \rightarrow 2\text{ dimensional}
+$$
+
+$$
+\mathbb{R}^2 = \lbrace(a, b) \mid a, b \in \mathbb{R}\rbrace
+$$
+
+such that vector $(1, 2)$ is a member of $\mathbb{R}^2$.
 Represented as $i+2j$ on the cartesian plane.
 
-$\mathbb{R}^3 = \lbrace(a, b, c) \mid a, b, c \in \mathbb{R}\rbrace$
+$$
+\mathbb{R}^3 = \lbrace(a, b, c) \mid a, b, c \in \mathbb{R}\rbrace
+$$
+
 $(2, 1, 1)$ is a member of $\mathbb{R}^3$ represented as $i+2j+k$ (or $2i+j+k$).
 
-$\mathbb{R}^4 = \lbrace(a, b, c, d) \mid a, b, c, d \in \mathbb{R}\rbrace$
+$$
+\mathbb{R}^4 = \lbrace(a, b, c, d) \mid a, b, c, d \in \mathbb{R}\rbrace
+$$
+
 আর ভেক্টর আকারে প্রকাশ করা যাবে না।
 
-$\mathbb{R}^n = \lbrace(a_1, a_2, \dots, a_n) \mid a_1, a_2, a_3, \dots, a_n \in \mathbb{R}\rbrace$
+$$
+\mathbb{R}^n = \lbrace(a_1, a_2, \dots, a_n) \mid a_1, a_2, a_3, \dots, a_n \in \mathbb{R}\rbrace
+$$
+
 (Row vector)
 
 **real number:** union of set of rational and non-rational numbers or numbers that can be placed on the $x$-axis.
 $\mathbb{R} = \mathbb{Q} \cup \mathbb{Q}'$
 
 Let in $\mathbb{R}^3$:
-$V_1 = (1, 0, 0)$
-$V_2 = (0, 1, 0)$
-$V_3 = (0, 0, 1)$
+
+$$
+V_1 = (1, 0, 0)
+$$
+
+$$
+V_2 = (0, 1, 0)
+$$
+
+$$
+V_3 = (0, 0, 1)
+$$
+
 (3D Geometry / User Basis)
 
 $$
@@ -628,17 +778,39 @@ A.B =
 $$
 
 $V = (1, 2, 3)$
-Norm $||V|| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}$ *(Note: notes write $9^2$ instead of $3^2$)*
+Norm
+
+$$
+||V|| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}
+$$
+
+*(Note: notes write $9^2$ instead of $3^2$)*
 
 <!-- Page 049 -->
 **distance between two 3D vectors:**
-$V_1 = (a_1, a_2, a_3)$
-$V_2 = (b_1, b_2, b_3)$
-$d(V_1, V_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2 + (a_3-b_3)^2}$
+
+$$
+V_1 = (a_1, a_2, a_3)
+$$
+
+$$
+V_2 = (b_1, b_2, b_3)
+$$
+
+$$
+d(V_1, V_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2 + (a_3-b_3)^2}
+$$
 
 **Generalized inner product:**
-$V_1 = (a_1, a_2, \dots, a_n) \in \mathbb{R}^n$
-$V_2 = (b_1, b_2, \dots, b_n) \in \mathbb{R}^n$
+
+$$
+V_1 = (a_1, a_2, \dots, a_n) \in \mathbb{R}^n
+$$
+
+$$
+V_2 = (b_1, b_2, \dots, b_n) \in \mathbb{R}^n
+$$
+
 $V_1, V_2 \in \mathbb{R}^n$
 
 If the angle between two vectors is $\theta$:
@@ -647,14 +819,34 @@ $$
 \cos\theta = \frac{\langle V_1, V_2 \rangle}{||V_1|| \, ||V_2||} = \frac{V_1 \cdot V_2}{||V_1|| \, ||V_2||} = \frac{a_1b_1 + a_2b_2 + \dots + a_nb_n}{\sqrt{\sum a_i^2}\sqrt{\sum b_i^2}}
 $$
 
-For $V_1 = (1, 0)$, $V_2 = (0, 1)$:
+For
+
+$$
+V_1 = (1, 0),
+$$
+
+$$
+V_2 = (0, 1):
+$$
 
 $$
 \cos\theta = \frac{0+0}{\sqrt{1}\sqrt{1}} = 0 \Rightarrow \theta = 90^\circ
 $$
 
-- $\theta = 0^\circ \Rightarrow$ dependent
-- $\theta \neq 0^\circ \Rightarrow$ independent
+-
+
+$$
+\theta = 0^\circ \Rightarrow
+$$
+
+dependent
+-
+
+$$
+\theta \neq 0^\circ \Rightarrow
+$$
+
+independent
 
 For $V = (1, -1, 1)$, $||V|| = \sqrt{1+1+1} = \sqrt{3}$.
 
@@ -669,7 +861,12 @@ note:
 
 **closure property:** দুইটা element যোগ করলে যোগফল ঐ সেট এ থাকলে।
 - $\lbrace(1, 2), (2, 3)\rbrace$ it is not maintaining closure property.
-- $\mathbb{R}^n = \lbrace(a_1, a_2, a_3 \dots a_n) \mid a_1, a_2 \dots \in \mathbb{N}\rbrace$
+-
+
+$$
+\mathbb{R}^n = \lbrace(a_1, a_2, a_3 \dots a_n) \mid a_1, a_2 \dots \in \mathbb{N}\rbrace
+$$
+
 -
 
 $$

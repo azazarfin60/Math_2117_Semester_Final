@@ -37,7 +37,11 @@ $$
 P = [X_1 \; X_2 \; \dots \; X_n]
 $$
 
-Then $A = PDP^{-1}$.
+Then
+
+$$
+A = PDP^{-1}.
+$$
 
 ---
 
@@ -90,7 +94,11 @@ $$
 
 ### Computation Using Diagonalization
 
-If $A = PDP^{-1}$:
+If
+
+$$
+A = PDP^{-1}:
+$$
 
 $$
 e^A = Pe^D P^{-1}
@@ -131,7 +139,11 @@ B =
 \end{bmatrix}.
 $$
 
-Then $B^2 = O$.
+Then
+
+$$
+B^2 = O.
+$$
 
 $$
 e^A = e^{I+B} = e^I \cdot e^B = e(I + B) = e
@@ -189,7 +201,13 @@ $$
 
 **Solution**:
 
-Write in matrix form $\frac{dX}{dt} = MX$ where:
+Write in matrix form
+
+$$
+\frac{dX}{dt} = MX
+$$
+
+where:
 
 $$
 M =
@@ -199,13 +217,27 @@ M =
 \end{bmatrix}
 $$
 
-**Step 1**: Eigenvalues. $\lvert M - \lambda I \rvert = 0$:
+**Step 1**: Eigenvalues.
+
+$$
+\lvert M - \lambda I \rvert = 0:
+$$
 
 $$
 (6-\lambda)(1-\lambda) + 6 = \lambda^2 - 7\lambda + 12 = (\lambda - 3)(\lambda - 4) = 0
 $$
 
-So $\lambda_1 = 3$ and $\lambda_2 = 4$.
+So
+
+$$
+\lambda_1 = 3
+$$
+
+and
+
+$$
+\lambda_2 = 4.
+$$
 
 **Step 2**: Eigenvectors.
 

@@ -12,13 +12,25 @@
 ---
 
 ## Prerequisites
-We know how to form a linear combination of vectors: $a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n$. Today, we will ask a specific question: what happens if we set this combination equal to the zero vector? The answer tells us whether the vectors are independent or dependent.
+We know how to form a linear combination of vectors:
+
+$$
+a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n
+$$
+
+. Today, we will ask a specific question: what happens if we set this combination equal to the zero vector? The answer tells us whether the vectors are independent or dependent.
 
 ---
 
 ## Definitions
 
-Let $V(F)$ be a vector space. Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ be a finite set of vectors in $V(F)$.
+Let $V(F)$ be a vector space. Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+be a finite set of vectors in $V(F)$.
 We form their linear combination and set it equal to the zero vector:
 
 $$
@@ -34,7 +46,13 @@ $$
 a_1 = 0, a_2 = 0, \ldots, a_n = 0
 $$
 
-then the vectors $\alpha_1, \alpha_2, \dots, \alpha_n$ are said to be **Linearly Independent**.
+then the vectors
+
+$$
+\alpha_1, \alpha_2, \dots, \alpha_n
+$$
+
+are said to be **Linearly Independent**.
 This means none of the vectors can be built using the others. They are completely unique directions in the space.
 
 ### Linearly Dependent (L.D.)
@@ -112,7 +130,11 @@ $$
 $$
 
 **Solution:**
-Set up the linear combination with scalars $a_1, a_2, a_3, a_4 \in \mathbb{R}$:
+Set up the linear combination with scalars
+
+$$
+a_1, a_2, a_3, a_4 \in \mathbb{R}:
+$$
 
 $$
 a_1\alpha_1 + a_2\alpha_2 + a_3\alpha_3 + a_4\alpha_4 = \bar{0}
@@ -144,8 +166,28 @@ $$
 3a_1 + a_4 = 0 \implies a_4 = -3a_1
 $$
 
-Can we find a non-zero solution? Let us assume $a_1 = 1$.
-Then we get $a_2 = -1$, $a_3 = -2$, and $a_4 = -3$.
+Can we find a non-zero solution? Let us assume
+
+$$
+a_1 = 1.
+$$
+
+Then we get
+
+$$
+a_2 = -1,
+$$
+
+$$
+a_3 = -2
+$$
+
+, and
+
+$$
+a_4 = -3.
+$$
+
 Since we found a valid solution where the scalars are not zero, the vectors are **Linearly Dependent**.
 
 ### Method 2: The Determinant and Rank Method
@@ -203,17 +245,44 @@ $$
 |A| = 2(20) + 1(6) + 1(-2) = 40 + 6 - 2 = 44
 $$
 
-Because the determinant is not zero ($\lvert A \rvert = 44 \neq 0$), the rank of the matrix is 3.
-When the rank equals the number of variables, the only solution to the homogeneous system is the trivial solution ($a_1 = 0, a_2 = 0, a_3 = 0$).
+Because the determinant is not zero (
+
+$$
+\lvert A \rvert = 44 \neq 0
+$$
+
+), the rank of the matrix is 3.
+When the rank equals the number of variables, the only solution to the homogeneous system is the trivial solution (
+
+$$
+a_1 = 0, a_2 = 0, a_3 = 0
+$$
+
+).
 Therefore, the vectors are **Linearly Independent**.
 
-*   If $\lvert A \rvert \neq 0 \implies \text{Rank} = 3 \implies \text{Linearly Independent}$
-*   If $\lvert A \rvert = 0 \implies \text{Rank} < 3 \implies \text{Linearly Dependent}$
+*   If
+
+$$
+\lvert A \rvert \neq 0 \implies \text{Rank} = 3 \implies \text{Linearly Independent}
+$$
+
+*   If
+
+$$
+\lvert A \rvert = 0 \implies \text{Rank} < 3 \implies \text{Linearly Dependent}
+$$
 
 ---
 
 ## Key Takeaways
-*   **Linearly Independent (L.I.)**: The combination $a_i\alpha_i = \bar{0}$ is only solved by all zeros.
+*   **Linearly Independent (L.I.)**: The combination
+
+$$
+a_i\alpha_i = \bar{0}
+$$
+
+is only solved by all zeros.
 *   **Linearly Dependent (L.D.)**: The combination can be solved with non-zero scalars.
 *   L.D. means vectors are redundant and can be written as multiples or combinations of each other.
 *   For square systems, check the determinant. Non-zero means independent; zero means dependent.

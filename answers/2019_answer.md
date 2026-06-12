@@ -46,10 +46,8 @@ $$
 Substitute the point $(1, 5, 3)$ and the components of 
 
 $$
-\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}
+\vec{A} = 2\hat{i} + 3\hat{j} + 6\hat{k}:
 $$
-
-:
 
 $$
 2(x - 1) + 3(y - 5) + 6(z - 3) = 0
@@ -250,7 +248,13 @@ $$
 
 **Answer:**
 
-Let the constant magnitude of $\vec{A}$ be $|\vec{A}| = c$ (where $c$ is a constant).
+Let the constant magnitude of $\vec{A}$ be
+
+$$
+|\vec{A}| = c
+$$
+
+(where $c$ is a constant).
 
 Then we can write:
 
@@ -270,7 +274,13 @@ $$
 \vec{A} \cdot \frac{d\vec{A}}{dt} + \frac{d\vec{A}}{dt} \cdot \vec{A} = 0
 $$
 
-Since the dot product is commutative ($\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$):
+Since the dot product is commutative (
+
+$$
+\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}
+$$
+
+):
 
 $$
 2 \left( \vec{A} \cdot \frac{d\vec{A}}{dt} \right) = 0 \implies \vec{A} \cdot \frac{d\vec{A}}{dt} = 0
@@ -360,7 +370,13 @@ The angle between two surfaces at a point is the angle between their normal vect
 
 #### 1. Normal to the First Surface
 
-Let the surface be $F(x, y, z) = x^2 + y^2 + z^2 - 9 = 0$. The gradient is:
+Let the surface be
+
+$$
+F(x, y, z) = x^2 + y^2 + z^2 - 9 = 0
+$$
+
+. The gradient is:
 
 $$
 \vec{\nabla}F = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}
@@ -374,7 +390,13 @@ $$
 
 #### 2. Normal to the Second Surface
 
-Let the surface be $G(x, y, z) = x^2 + y^2 - z - 3 = 0$. The gradient is:
+Let the surface be
+
+$$
+G(x, y, z) = x^2 + y^2 - z - 3 = 0
+$$
+
+. The gradient is:
 
 $$
 \vec{\nabla}G = 2x\hat{i} + 2y\hat{j} - \hat{k}
@@ -428,7 +450,11 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
 $$
 
-Then $r = \sqrt{x^2 + y^2 + z^2}$.
+Then
+
+$$
+r = \sqrt{x^2 + y^2 + z^2}.
+$$
 
 The partial derivatives of $r$ with respect to coordinates are:
 
@@ -612,7 +638,19 @@ $$
 \oint_C (2x - y^2)dx - xydy
 $$
 
- where $C$ is the boundary of the region enclosed by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 9$. (06)
+where $C$ is the boundary of the region enclosed by the circles
+
+$$
+x^2 + y^2 = 1
+$$
+
+and
+
+$$
+x^2 + y^2 = 9
+$$
+
+. (06)
 
 **Answer:**
 
@@ -643,10 +681,8 @@ $$
 The region $R$ is the annulus between the circles $r=1$ and $r=3$. We convert to polar coordinates
 
 $$
-x = r\cos\theta, \quad y = r\sin\theta, \quad dA = r \, dr \, d\theta
+x = r\cos\theta, \quad y = r\sin\theta, \quad dA = r \, dr \, d\theta:
 $$
-
-:
 
 $$
 \iint_R y \, dA = \int_{\theta=0}^{2\pi} \int_{r=1}^3 (r\sin\theta) r \, dr \, d\theta = \left( \int_1^3 r^2 \, dr \right) \left( \int_0^{2\pi} \sin\theta \, d\theta \right)
@@ -1583,7 +1619,13 @@ $$
 *   Since $U$ is a subspace, $u\_1 - u\_2 \in U$.
 *   Since $W$ is a subspace, $w\_2 - w\_1 \in W$.
 
-Since $u\_1 - u\_2 = w\_2 - w\_1$, this vector belongs to both $U$ and $W$:
+Since
+
+$$
+u\_1 - u\_2 = w\_2 - w\_1
+$$
+
+, this vector belongs to both $U$ and $W$:
 
 $$
 u_1 - u_2 \in U \cap W \quad \text{and} \quad w_2 - w_1 \in U \cap W
@@ -1599,7 +1641,19 @@ $$
 w_2 - w_1 = 0 \implies w_1 = w_2
 $$
 
-Since $u\_1 = u\_2$ and $w\_1 = w\_2$, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
+Since
+
+$$
+u\_1 = u\_2
+$$
+
+and
+
+$$
+w\_1 = w\_2
+$$
+
+, the representation is unique. Thus, $V$ is the direct sum of $U$ and $W$ ($V = U \oplus W$).
 
 ---
 
@@ -1631,13 +1685,27 @@ $$
 F(0_V) = 0_U \implies 0_V \in \text{Ker}(F)
 $$
 
-2.  **Closure under Addition:** Let $v\_1, v\_2 \in \text{Ker}(F)$. Then $F(v\_1) = 0\_U$ and $F(v\_2) = 0\_U$.
+2.  **Closure under Addition:** Let $v\_1, v\_2 \in \text{Ker}(F)$. Then
+
+$$
+F(v\_1) = 0\_U
+$$
+
+and
+
+$$
+F(v\_2) = 0\_U.
+$$
 
 $$
 F(v_1 + v_2) = F(v_1) + F(v_2) = 0_U + 0_U = 0_U \implies v_1 + v_2 \in \text{Ker}(F)
 $$
 
-3.  **Closure under Scalar Multiplication:** Let $v \in \text{Ker}(F)$ and let $k$ be a scalar in the field. Then $F(v) = 0\_U$.
+3.  **Closure under Scalar Multiplication:** Let $v \in \text{Ker}(F)$ and let $k$ be a scalar in the field. Then
+
+$$
+F(v) = 0\_U.
+$$
 
 $$
 F(k v) = k F(v) = k (0_U) = 0_U \implies k v \in \text{Ker}(F)
@@ -1649,13 +1717,29 @@ Since all three properties are satisfied, $\text{Ker}(F)$ is a subspace of $V$.
 
 To show that $\text{Im}(F)$ is a subspace of $U$, we verify the three properties:
 
-1.  **Non-emptiness / Zero Vector:** Since $F(0\_V) = 0\_U$, the zero vector $0\_U$ has a pre-image in $V$:
+1.  **Non-emptiness / Zero Vector:** Since
+
+$$
+F(0\_V) = 0\_U
+$$
+
+, the zero vector $0\_U$ has a pre-image in $V$:
 
 $$
 0_U \in \text{Im}(F)
 $$
 
-2.  **Closure under Addition:** Let $u\_1, u\_2 \in \text{Im}(F)$. Then there exist $v\_1, v\_2 \in V$ such that $F(v\_1) = u\_1$ and $F(v\_2) = u\_2$.
+2.  **Closure under Addition:** Let $u\_1, u\_2 \in \text{Im}(F)$. Then there exist $v\_1, v\_2 \in V$ such that
+
+$$
+F(v\_1) = u\_1
+$$
+
+and
+
+$$
+F(v\_2) = u\_2.
+$$
 
 $$
 u_1 + u_2 = F(v_1) + F(v_2) = F(v_1 + v_2)

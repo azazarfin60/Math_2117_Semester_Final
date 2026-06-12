@@ -52,7 +52,13 @@ $$
 
 ## Worked Example 1 (PYQ 2018)
 
-**Problem**: Find an equation for the tangent plane to the surface $2xz^2 - 3xy - 4x = 7$ at the point $(1, -1, 2)$.
+**Problem**: Find an equation for the tangent plane to the surface
+
+$$
+2xz^2 - 3xy - 4x = 7
+$$
+
+at the point $(1, -1, 2)$.
 
 **Solution**:
 
@@ -98,7 +104,11 @@ $$
 
 **Step 4**: Write the equation of the tangent plane.
 
-Using the formula $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$:
+Using the formula
+
+$$
+A(x - x_0) + B(y - y_0) + C(z - z_0) = 0:
+$$
 
 $$
 7(x - 1) - 3(y - (-1)) + 8(z - 2) = 0

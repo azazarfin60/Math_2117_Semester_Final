@@ -76,7 +76,13 @@ $$
 \vec{F} = (x + 2y + 4z)\hat{i} + (2x - 3y - z)\hat{j} + (4x - y + 2z)\hat{k}
 $$
 
-Let $\phi$ be the scalar potential such that $\vec{F} = \vec{\nabla}\phi$. This gives three partial differential equations:
+Let $\phi$ be the scalar potential such that
+
+$$
+\vec{F} = \vec{\nabla}\phi
+$$
+
+. This gives three partial differential equations:
 
 $$
 \frac{\partial\phi}{\partial x} = x + 2y + 4z \quad \dots \text{(1)}
@@ -204,7 +210,13 @@ $$
 \int_C \vec{F} \cdot d\vec{r}
 $$
 
-along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
+along the curve $C$ in the $xy$ plane,
+
+$$
+y = x^3
+$$
+
+from the point $(1, 1)$ to $(2, 8)$. (06)
 
 **Answer:**
 
@@ -226,7 +238,19 @@ $$
 dy = 3x^2 dx
 $$
 
-We substitute $y = x^3$ and $dy = 3x^2 dx$ into the line integral. The variable $x$ goes from 1 to 2:
+We substitute
+
+$$
+y = x^3
+$$
+
+and
+
+$$
+dy = 3x^2 dx
+$$
+
+into the line integral. The variable $x$ goes from 1 to 2:
 
 $$
 \int_C \vec{F} \cdot d\vec{r} = \int_1^2 [(5x(x^3) - 6x^2)dx + (2(x^3) - 4x)(3x^2 dx)]

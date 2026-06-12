@@ -55,7 +55,12 @@ $$
 \boxed{\frac{d}{dt}(A \times B) = \frac{dA}{dt} \times B + A \times \frac{dB}{dt}}
 $$
 
-* $A = 5t^2\vec{i} + t\vec{j} - t^3\vec{k} ; \quad B = \sin t\,\vec{i} - \cos t\,\vec{j}$
+*
+
+$$
+A = 5t^2\vec{i} + t\vec{j} - t^3\vec{k} ; \quad B = \sin t\,\vec{i} - \cos t\,\vec{j}
+$$
+
 then
 
 $$
@@ -87,10 +92,8 @@ $$
  and
 
 $$
-C_2 = A \times \frac{dB}{dt}
+C_2 = A \times \frac{dB}{dt}.
 $$
-
-.
 
 $$
 C_1 =
@@ -142,14 +145,17 @@ $$
 = (3t^2\cos t + t^3\sin t)\vec{i} - (3t^2\sin t + t^3\cos t)\vec{j} - (10t\cos t + \sin t + t\cos t - 5t^2\sin t)\vec{k} \quad (\text{Ans.})
 $$
 
-* $A = (2x^2y - x^4)\vec{i} + (e^{xy} - y\sin x)\vec{j} + (x^2\cos y)\vec{k}$
+*
+
+$$
+A = (2x^2y - x^4)\vec{i} + (e^{xy} - y\sin x)\vec{j} + (x^2\cos y)\vec{k}
+$$
+
 find that
 
 $$
-\frac{\partial^2 A}{\partial x\partial y} = \frac{\partial^2 A}{\partial y\partial x}
+\frac{\partial^2 A}{\partial x\partial y} = \frac{\partial^2 A}{\partial y\partial x}.
 $$
-
-.
 
 Ans:-
 
@@ -180,7 +186,11 @@ $$
 <!-- Page 014 -->
 
 * $x = 3\cos t, \quad y = 3\sin t, \quad z = 4t$
-  then unit tangent vector $\vec{T} = ?$
+then unit tangent vector
+
+$$
+\vec{T} = ?
+$$
 
 Ans:-
 
@@ -271,8 +281,20 @@ a_{n1}x_1 + a_{n2}x_2 + a_{n3}x_3 + \dots + a_{nn}x_n = b_n
 $$
 
 Unknowns are:-
-- $x_1, x_2, x_3, \dots, x_n \rightarrow$ unknowns.
-- $b_1, b_2, b_3, \dots, b_n =$ const.
+-
+
+$$
+x_1, x_2, x_3, \dots, x_n \rightarrow
+$$
+
+unknowns.
+-
+
+$$
+b_1, b_2, b_3, \dots, b_n =
+$$
+
+const.
 
 * The degree of unknowns should be exactly 1.
 
@@ -283,7 +305,13 @@ Unknowns are:-
 
 <!-- Page 016 -->
 
-* $b_1, b_2, b_3, \dots, b_n \rightarrow 0$ হলে Solution সব সময় থাকবে। (Homogeneous system)
+*
+
+$$
+b_1, b_2, b_3, \dots, b_n \rightarrow 0
+$$
+
+হলে Solution সব সময় থাকবে। (Homogeneous system)
 * কোন ১টি non-zero হলে থাকতেও পারে নাও পারে।
 * non-homogeneous system $\rightarrow$ may have solution.
 

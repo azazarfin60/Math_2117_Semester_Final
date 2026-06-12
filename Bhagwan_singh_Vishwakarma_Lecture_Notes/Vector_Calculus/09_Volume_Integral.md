@@ -37,12 +37,32 @@ and $S$ is the closed surface of the cube bounded by the planes $x = 0$, $x = a$
 The closed surface $S$ of a cube consists of $6$ distinct flat faces. To evaluate the surface integral over $S$, we must evaluate the integral over each of the $6$ faces separately and sum the results.
 
 Since the faces lie on or parallel to the coordinate planes, we don't need to compute gradients. We can directly identify the **outward unit normal vector $\hat{\mathbf{n}}$** by observing which direction points away from the interior of the cube.
-The total integral is: $I = I_1 + I_2 + I_3 + I_4 + I_5 + I_6$.
+The total integral is:
+
+$$
+I = I_1 + I_2 + I_3 + I_4 + I_5 + I_6.
+$$
 
 **1. Front Face ($x = a$)**
-*   **Normal:** Outward normal points in the $+x$ direction, so $\hat{\mathbf{n}} = \hat{\mathbf{i}}$.
+*   **Normal:** Outward normal points in the $+x$ direction, so
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{i}}.
+$$
+
 *   **Area Element:** Projection is on the $yz$-plane, so $dS = dy \, dz$.
-*   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = 4xz$. Since $x = a$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 4az$.
+*   **Integrand:**
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = 4xz
+$$
+
+. Since $x = a$,
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = 4az.
+$$
+
 *   **Integral:** 
 
 $$
@@ -50,9 +70,25 @@ I_1 = \int_0^a \int_0^a 4az \, dy \, dz = 4a \int_0^a z \, dz \int_0^a dy = 4a \
 $$
 
 **2. Back Face ($x = 0$)**
-*   **Normal:** Outward normal points in the $-x$ direction, so $\hat{\mathbf{n}} = -\hat{\mathbf{i}}$.
+*   **Normal:** Outward normal points in the $-x$ direction, so
+
+$$
+\hat{\mathbf{n}} = -\hat{\mathbf{i}}.
+$$
+
 *   **Area Element:** $dS = dy \, dz$.
-*   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = -4xz$. Since $x = 0$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 0$.
+*   **Integrand:**
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = -4xz
+$$
+
+. Since $x = 0$,
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = 0.
+$$
+
 *   **Integral:** 
 
 $$
@@ -60,9 +96,25 @@ I_2 = 0
 $$
 
 **3. Right Face ($y = a$)**
-*   **Normal:** Outward normal points in the $+y$ direction, so $\hat{\mathbf{n}} = \hat{\mathbf{j}}$.
+*   **Normal:** Outward normal points in the $+y$ direction, so
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{j}}.
+$$
+
 *   **Area Element:** $dS = dx \, dz$.
-*   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = -y^2$. Since $y = a$, $\mathbf{F} \cdot \hat{\mathbf{n}} = -a^2$.
+*   **Integrand:**
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = -y^2
+$$
+
+. Since $y = a$,
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = -a^2.
+$$
+
 *   **Integral:** 
 
 $$
@@ -70,9 +122,25 @@ I_3 = \int_0^a \int_0^a -a^2 \, dx \, dz = -a^2 (a)(a) = -a^4
 $$
 
 **4. Left Face ($y = 0$)**
-*   **Normal:** Outward normal points in the $-y$ direction, so $\hat{\mathbf{n}} = -\hat{\mathbf{j}}$.
+*   **Normal:** Outward normal points in the $-y$ direction, so
+
+$$
+\hat{\mathbf{n}} = -\hat{\mathbf{j}}.
+$$
+
 *   **Area Element:** $dS = dx \, dz$.
-*   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = y^2$. Since $y = 0$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 0$.
+*   **Integrand:**
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = y^2
+$$
+
+. Since $y = 0$,
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = 0.
+$$
+
 *   **Integral:** 
 
 $$
@@ -80,9 +148,25 @@ I_4 = 0
 $$
 
 **5. Top Face ($z = a$)**
-*   **Normal:** Outward normal points in the $+z$ direction, so $\hat{\mathbf{n}} = \hat{\mathbf{k}}$.
+*   **Normal:** Outward normal points in the $+z$ direction, so
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{k}}.
+$$
+
 *   **Area Element:** $dS = dx \, dy$.
-*   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = yz$. Since $z = a$, $\mathbf{F} \cdot \hat{\mathbf{n}} = ay$.
+*   **Integrand:**
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = yz
+$$
+
+. Since $z = a$,
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = ay.
+$$
+
 *   **Integral:** 
 
 $$
@@ -90,9 +174,25 @@ I_5 = \int_0^a \int_0^a ay \, dx \, dy = a \int_0^a y \, dy \int_0^a dx = a \lef
 $$
 
 **6. Bottom Face ($z = 0$)**
-*   **Normal:** Outward normal points in the $-z$ direction, so $\hat{\mathbf{n}} = -\hat{\mathbf{k}}$.
+*   **Normal:** Outward normal points in the $-z$ direction, so
+
+$$
+\hat{\mathbf{n}} = -\hat{\mathbf{k}}.
+$$
+
 *   **Area Element:** $dS = dx \, dy$.
-*   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = -yz$. Since $z = 0$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 0$.
+*   **Integrand:**
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = -yz
+$$
+
+. Since $z = 0$,
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = 0.
+$$
+
 *   **Integral:** 
 
 $$
@@ -121,7 +221,13 @@ $$
 \mathbf{F} = 4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}},
 $$
 
-And $V$ is the solid region bounded by the cylinder $x^2 + y^2 = 4$ and the planes $z = 0$ and $z = 3$.
+And $V$ is the solid region bounded by the cylinder
+
+$$
+x^2 + y^2 = 4
+$$
+
+and the planes $z = 0$ and $z = 3$.
 
 **Solution:**
 **Step 1: Compute the Integrand ($\nabla \cdot \mathbf{F}$)**
@@ -132,9 +238,21 @@ $$
 $$
 
 **Step 2: Determine Limits of Integration**
-The volume $V$ is a solid cylinder. The height is bounded by the planes $z=0$ and $z=3$. The base of the cylinder on the $xy$-plane is the circle $x^2 + y^2 = 4$ (radius $r=2$).
+The volume $V$ is a solid cylinder. The height is bounded by the planes $z=0$ and $z=3$. The base of the cylinder on the $xy$-plane is the circle
+
+$$
+x^2 + y^2 = 4
+$$
+
+(radius $r=2$).
 -   **Limits for $z$:** Direct boundary conditions give $z = 0$ to $z = 3$.
--   **Limits for $x$ and $y$:** From the base circle $x^2 + y^2 = 4$, $x$ varies from $-2$ to $2$. For a given $x$, $y$ varies from the lower half of the circle to the upper half, so $y$ goes from $-\sqrt{4 - x^2}$ to $\sqrt{4 - x^2}$.
+-   **Limits for $x$ and $y$:** From the base circle
+
+$$
+x^2 + y^2 = 4
+$$
+
+, $x$ varies from $-2$ to $2$. For a given $x$, $y$ varies from the lower half of the circle to the upper half, so $y$ goes from $-\sqrt{4 - x^2}$ to $\sqrt{4 - x^2}$.
 
 **Step 3: Setup and Evaluate the Triple Integral**
 
@@ -180,7 +298,11 @@ $$
 \int \sqrt{a^2 - x^2} \, dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)
 $$
 
-. Here $a = 2$, so $a^2 = 4$.
+. Here $a = 2$, so
+
+$$
+a^2 = 4.
+$$
 
 $$
 I = 42 \left[ \frac{x}{2}\sqrt{4-x^2} + 2\sin^{-1}\left(\frac{x}{2}\right) \right]_{-2}^2
@@ -201,10 +323,8 @@ $$
  and
 
 $$
-\sin^{-1}(-1) = -\frac{\pi}{2}
+\sin^{-1}(-1) = -\frac{\pi}{2}:
 $$
-
-:
 
 $$
 = 42 \left[ 2\left(\frac{\pi}{2}\right) - 2\left(-\frac{\pi}{2}\right) \right] = 42 [\pi - (-\pi)] = 42(2\pi) = 84\pi

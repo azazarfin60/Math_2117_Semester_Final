@@ -1,5 +1,15 @@
 <!-- Page 021 -->
-**# It moves along curve $x = 2t^2$, $y = t^2-4t$, $z = 3t-5$. Find components of its velocity and acceleration at $t = 1$ in direction
+**# It moves along curve
+
+$$
+x = 2t^2,
+$$
+
+$$
+y = t^2-4t
+$$
+
+, $z = 3t-5$. Find components of its velocity and acceleration at $t = 1$ in direction
 
 $$
 \hat{i}-3\hat{j}+2\hat{k}
@@ -53,7 +63,13 @@ $$
 \frac{(4\hat{i}+2\hat{j}) \cdot (\hat{i}-3\hat{j}+2\hat{k})}{\sqrt{14}} = \frac{4-6}{\sqrt{14}} = -\frac{2}{\sqrt{14}}
 $$
 
-**# unit tangent vector $x = t^2+1, y = 4t-3, z = 2t^2-6t$, and at $t = 2$**
+**# unit tangent vector
+
+$$
+x = t^2+1, y = 4t-3, z = 2t^2-6t
+$$
+
+, and at $t = 2$**
 
 $$
 R = (t^2+1)\hat{i} + (4t-3)\hat{j} + (2t^2-6t)\hat{k}
@@ -94,10 +110,8 @@ $$
  and $A$ is perpendicular to $\frac{dA}{dt}$ provided
 
 $$
-\left|\frac{dA}{dt}\right| \neq 0
+\left|\frac{dA}{dt}\right| \neq 0.
 $$
-
-.
 
 <!-- Page 022 -->
 **# show
@@ -112,7 +126,9 @@ $$
 \vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
 $$
 
-$A = \sqrt{A_1^2 + A_2^2 + A_3^2}$
+$$
+A = \sqrt{A_1^2 + A_2^2 + A_3^2}
+$$
 
 $$
 \frac{dA}{dt} = \frac{1}{2}(A_1^2 + A_2^2 + A_3^2)^{-1/2} \left(2A_1\frac{dA_1}{dt} + 2A_2\frac{dA_2}{dt} + 2A_3\frac{dA_3}{dt}\right)
@@ -126,7 +142,11 @@ $$
 \Rightarrow A \frac{dA}{dt} = \vec{A} \cdot \frac{d\vec{A}}{dt}
 $$
 
-**# $\phi(x,y,z) = xy^2z$,
+**#
+
+$$
+\phi(x,y,z) = xy^2z,
+$$
 
 $$
 A = xz\hat{i} - xy^2\hat{j} + yz^2\hat{k},
@@ -171,7 +191,10 @@ $$
 
 , $\frac{dT}{ds}$ perpendicular to $T$
 $N$ unit
-$\frac{dT}{ds} = kN$
+
+$$
+\frac{dT}{ds} = kN
+$$
 
 $$
 \frac{dB}{ds} = -\tau N
@@ -215,7 +238,9 @@ $$
 \frac{dT}{ds} = \frac{dT}{dt} / \frac{ds}{dt} = \frac{dT}{dt} / \left|\frac{dr}{dt}\right| = \frac{dT/dt}{5} = -\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}
 $$
 
-$\frac{dT}{ds} = kN$
+$$
+\frac{dT}{ds} = kN
+$$
 
 $$
 \left|\frac{dT}{ds}\right| = |k||N| = k \quad (k \geq 0)
@@ -265,7 +290,17 @@ $$
 $$
 
 <!-- Page 024 -->
-**# $x = t$, $y = t^2$, $z = \frac{2}{3}t^3$**
+**# $x = t$,
+
+$$
+y = t^2,
+$$
+
+$$
+z = \frac{2}{3}t^3
+$$
+
+**
 (a) curvature
 (b) torsion
 
@@ -445,7 +480,10 @@ A^{-1} =
 $$
 
 **Justification:**
-$A A^{-1} = I$
+
+$$
+A A^{-1} = I
+$$
 
 $$
 =
@@ -580,8 +618,18 @@ $$
 4. Symmetric matrix correspond to linear transformations that preserve angles under suitable bases.
 5. many optimization problems depend on symmetric matrix.
 
-**Symmetric matrix:** a square matrix that satisfies $A^T = A$
-**Skew Symmetric matrix:** a square matrix that satisfies $A^T = -A$
+**Symmetric matrix:** a square matrix that satisfies
+
+$$
+A^T = A
+$$
+
+**Skew Symmetric matrix:** a square matrix that satisfies
+
+$$
+A^T = -A
+$$
+
 - main diagonal must be zero.
 
 <!-- Page 029 -->
@@ -665,7 +713,10 @@ $$
 B^T = \frac{1}{2}(A+A^T)
 $$
 
-$\boxed{B^T = B}$
+$$
+\boxed{B^T = B}
+$$
+
 Hence, $B$ is a symmetric matrix.
 
 $$
@@ -684,7 +735,10 @@ $$
 = -\frac{1}{2}(A-A^T)
 $$
 
-$\boxed{C^T = -C}$
+$$
+\boxed{C^T = -C}
+$$
+
 Hence, $C$ is a skew symmetric matrix.
 
 This representation is unique.

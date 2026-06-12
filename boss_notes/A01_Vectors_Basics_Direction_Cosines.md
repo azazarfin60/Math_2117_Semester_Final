@@ -41,7 +41,11 @@ $$
 
 ## Unit Vectors and Resultants
 
-The **resultant** of two vectors $\vec{r}_1$ and $\vec{r}_2$ is simply their vector sum: $\vec{R} = \vec{r}_1 + \vec{r}_2$.
+The **resultant** of two vectors $\vec{r}_1$ and $\vec{r}_2$ is simply their vector sum:
+
+$$
+\vec{R} = \vec{r}_1 + \vec{r}_2.
+$$
 
 The **unit vector** parallel to any vector $\vec{R}$ is the vector divided by its magnitude:
 
@@ -68,7 +72,10 @@ $$
 \vec{R} = \vec{r}_1 + \vec{r}_2 = 3\hat{i} + 6\hat{j} - 4\hat{k}
 $$
 
-$\lvert \vec{R} \rvert = \sqrt{3^2 + 6^2 + (-4)^2} = \sqrt{9 + 36 + 16} = \sqrt{61}$
+$$
+\lvert \vec{R} \rvert = \sqrt{3^2 + 6^2 + (-4)^2} = \sqrt{9 + 36 + 16} = \sqrt{61}
+$$
+
 Unit vector
 
 $$
@@ -85,7 +92,11 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
 $$
 
-with magnitude $r = \sqrt{x^2 + y^2 + z^2}$.
+with magnitude
+
+$$
+r = \sqrt{x^2 + y^2 + z^2}.
+$$
 
 The angles $\alpha, \beta, \gamma$ that the vector makes with the positive $x, y, z$ axes respectively are defined by their **direction cosines**:
 
@@ -107,7 +118,11 @@ $$
 \vec{PQ} = (3 - 1)\hat{i} + (-5 - (-3))\hat{j} + (1 - 2)\hat{k} = 2\hat{i} - 2\hat{j} - \hat{k}
 $$
 
-Magnitude $\lvert \vec{PQ} \rvert = \sqrt{4 + 4 + 1} = 3$
+Magnitude
+
+$$
+\lvert \vec{PQ} \rvert = \sqrt{4 + 4 + 1} = 3
+$$
 
 Direction cosines:
 

@@ -12,7 +12,11 @@ $$
 Check whether the vectors are linearly independent.
 
 *Ans:*
-$c_1 v_1 + c_2 v_2 + \dots + c_n v_n = [0]$
+
+$$
+c_1 v_1 + c_2 v_2 + \dots + c_n v_n = [0]
+$$
+
 - সবগুলো $0$ হলে $\rightarrow$ independent.
 - $0$ না হলে (at least one non-zero) $\rightarrow$ dependent.
 
@@ -45,13 +49,37 @@ $$
 $$
 
 From the matrix equation:
-- $2c_1 = 0 \Rightarrow c_1 = 0$
-- $2c_1 + 2c_2 = 0 \Rightarrow c_2 = 0$
-- $2c_1 + 2c_3 = 0 \Rightarrow c_3 = 0$
-- $2c_1 + 2c_2 + 2c_3 = 0$ (satisfied)
+-
+
+$$
+2c_1 = 0 \Rightarrow c_1 = 0
+$$
+
+-
+
+$$
+2c_1 + 2c_2 = 0 \Rightarrow c_2 = 0
+$$
+
+-
+
+$$
+2c_1 + 2c_3 = 0 \Rightarrow c_3 = 0
+$$
+
+-
+
+$$
+2c_1 + 2c_2 + 2c_3 = 0
+$$
+
+(satisfied)
 
 Yielding:
-$c_1 = 0, \quad c_2 = 0, \quad c_3 = 0$
+
+$$
+c_1 = 0, \quad c_2 = 0, \quad c_3 = 0
+$$
 
 Thus, the vectors (matrices) are linearly independent.
 
@@ -61,22 +89,54 @@ Thus, the vectors (matrices) are linearly independent.
 ---
 
 **# Check whether the vectors are linearly dependent/independent:**
-$v_1 = (2, 3, 3)$
-$v_2 = (4, 5, -1)$
-$v_3 = (4, 4, 1)$
+
+$$
+v_1 = (2, 3, 3)
+$$
+
+$$
+v_2 = (4, 5, -1)
+$$
+
+$$
+v_3 = (4, 4, 1)
+$$
 
 <!-- Page 072 -->
 *Ans:*
-$c_1 v_1 + c_2 v_2 + c_3 v_3 = 0$
-$c_1(2, 3, 3) + c_2(4, 5, -1) + c_3(4, 4, 1) = (0, 0, 0)$
+
+$$
+c_1 v_1 + c_2 v_2 + c_3 v_3 = 0
+$$
+
+$$
+c_1(2, 3, 3) + c_2(4, 5, -1) + c_3(4, 4, 1) = (0, 0, 0)
+$$
 
 $\Rightarrow$
-- $2c_1 + 4c_2 + 4c_3 = 0$
-- $3c_1 + 5c_2 + 4c_3 = 0$
-- $3c_1 - c_2 + c_3 = 0$
+-
+
+$$
+2c_1 + 4c_2 + 4c_3 = 0
+$$
+
+-
+
+$$
+3c_1 + 5c_2 + 4c_3 = 0
+$$
+
+-
+
+$$
+3c_1 - c_2 + c_3 = 0
+$$
 
 Solving this system yields:
-$c_1 = 0, \quad c_2 = 0, \quad c_3 = 0$
+
+$$
+c_1 = 0, \quad c_2 = 0, \quad c_3 = 0
+$$
 
 > [!NOTE]
 > $v_2 = (1, 6, 6)$ হলে $c_1 = c_2 = c_3 = 0$ হতো না (dependent হতো)।
@@ -85,11 +145,23 @@ $c_1 = 0, \quad c_2 = 0, \quad c_3 = 0$
 
 ### Image and Kernel of a Linear Mapping
 
-Let $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ (or in general $T: V(\mathbb{R}) \rightarrow W(\mathbb{R})$).
+Let
+
+$$
+T: \mathbb{R}^3 \rightarrow \mathbb{R}^3
+$$
+
+(or in general $T: V(\mathbb{R}) \rightarrow W(\mathbb{R})$).
 
 **Image of $T$ ($\text{Im } T$):**
 সেই সকল সেট of image are called $\text{Im } T$.
-The set of $\lbrace w_1, w_2, \dots, w_n\rbrace$ are called the image of the linear mapping.
+The set of
+
+$$
+\lbrace w_1, w_2, \dots, w_n\rbrace
+$$
+
+are called the image of the linear mapping.
 
 ```
        Domain (V)                      Codomain (W)
@@ -102,7 +174,12 @@ The set of $\lbrace w_1, w_2, \dots, w_n\rbrace$ are called the image of the lin
 ```
 
 **Example:**
-$y = x^2$ mapping from $\mathbb{R} \rightarrow \mathbb{R}$
+
+$$
+y = x^2
+$$
+
+mapping from $\mathbb{R} \rightarrow \mathbb{R}$
 - $1 \rightarrow 1$
 - $2 \rightarrow 4$
 - $3 \rightarrow 9$
@@ -131,7 +208,13 @@ $$
 **# What is meant by kernel of a linear mapping and image?**
 **# Linear mapping কে matrix এ represent করব।**
 
-**Problem:** Let $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ be a linear mapping defined by:
+**Problem:** Let
+
+$$
+T: \mathbb{R}^3 \rightarrow \mathbb{R}^3
+$$
+
+be a linear mapping defined by:
 $T(x, y, z) = (x+2y, y-z, x+2z)$
 Find a basis and dimension of:
 (i) $\text{Im } T$
@@ -149,7 +232,13 @@ which generates $\mathbb{R}^3$.
 <!-- Page 074 -->
 Then the basis images $\lbrace T(1, 0, 0), T(0, 1, 0), T(0, 0, 1)\rbrace$ will generate $\text{Im } T$.
 - $V \in \mathbb{R}^3 \rightarrow$ Domain
-- $T(v) \in \mathbb{R}^3 \rightarrow$ Codomain
+-
+
+$$
+T(v) \in \mathbb{R}^3 \rightarrow
+$$
+
+Codomain
 
 Now,
 $T(1, 0, 0) = (1, 0, 1)$
@@ -239,9 +328,27 @@ $$
 ---
 
 <!-- Page 076 -->
-**# Let $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ defined by $T(x, y, z) = (x+2y-z, y+z, x+y-2z)$.**
+**# Let
 
-**# Let $T: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ and $T': \mathbb{R}^2 \rightarrow \mathbb{R}^2$ be defined by:**
+$$
+T: \mathbb{R}^3 \rightarrow \mathbb{R}^3
+$$
+
+defined by $T(x, y, z) = (x+2y-z, y+z, x+y-2z)$.**
+
+**# Let
+
+$$
+T: \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+and
+
+$$
+T': \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+be defined by:**
 $T(x, y) = (x, 0)$
 $T'(x, y) = (y, x)$
 
@@ -284,8 +391,18 @@ $3T(x, y) + 3T'(x, y) = 3(x, 0) + 3(y, x) = (3x + 3y, 3x)$
 
 ### Matrix Representation of a Linear Mapping
 
-Let $T: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ be defined by $T(x, y) = (5x+y, -4x+3y)$.
-Find the matrix representation of $T$ with respect to the basis $\lbrace v_1 = (3, 1), v_2 = (5, 2)\rbrace$.
+Let
+
+$$
+T: \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+be defined by $T(x, y) = (5x+y, -4x+3y)$.
+Find the matrix representation of $T$ with respect to the basis
+
+$$
+\lbrace v_1 = (3, 1), v_2 = (5, 2)\rbrace.
+$$
 
 ```
       Domain A                        Codomain B
@@ -296,11 +413,25 @@ Find the matrix representation of $T$ with respect to the basis $\lbrace v_1 = (
     f: A ----------> B (m-dimensional independent vectors)
 ```
 
-In general, let $T(v_1), T(v_2), \dots, T(v_n)$ be the images of the domain basis vectors. Express them as linear combinations of the codomain basis $\lbrace w_1, w_2, \dots, w_m\rbrace$:
-$T(v_1) = a_{11}w_1 + a_{12}w_2 + \dots + a_{1m}w_m$
-$T(v_2) = a_{21}w_1 + a_{22}w_2 + \dots + a_{2m}w_m$
+In general, let $T(v_1), T(v_2), \dots, T(v_n)$ be the images of the domain basis vectors. Express them as linear combinations of the codomain basis
+
+$$
+\lbrace w_1, w_2, \dots, w_m\rbrace:
+$$
+
+$$
+T(v_1) = a_{11}w_1 + a_{12}w_2 + \dots + a_{1m}w_m
+$$
+
+$$
+T(v_2) = a_{21}w_1 + a_{22}w_2 + \dots + a_{2m}w_m
+$$
+
 $\vdots$
-$T(v_n) = a_{n1}w_1 + a_{n2}w_2 + \dots + a_{nm}w_m$
+
+$$
+T(v_n) = a_{n1}w_1 + a_{n2}w_2 + \dots + a_{nm}w_m
+$$
 
 <!-- Page 078 -->
 Then the matrix representation is the transpose of the coefficient matrix:
@@ -318,12 +449,33 @@ $$
 > constant দিয়ে matrix form এর transpose নিতে হবে।
 
 *Ans:*
-Here $v_1 = (3, 1)$ and $v_2 = (5, 2)$.
-$T(v_1) = T(3, 1) = (5(3)+1, -4(3)+3(1)) = (16, -9)$
-$T(v_2) = T(5, 2) = (5(5)+2, -4(5)+3(2)) = (27, -14)$
+Here
+
+$$
+v_1 = (3, 1)
+$$
+
+and
+
+$$
+v_2 = (5, 2).
+$$
+
+$$
+T(v_1) = T(3, 1) = (5(3)+1, -4(3)+3(1)) = (16, -9)
+$$
+
+$$
+T(v_2) = T(5, 2) = (5(5)+2, -4(5)+3(2)) = (27, -14)
+$$
 
 Expressing $T(v_1)$ and $T(v_2)$ as linear combinations of the basis $\lbrace v_1, v_2\rbrace$:
-Let $T(v_1) = a v_1 + b v_2$
+Let
+
+$$
+T(v_1) = a v_1 + b v_2
+$$
+
 $\Rightarrow (16, -9) = a(3, 1) + b(5, 2) = (3a + 5b, a + 2b)$
 
 Equating components:
@@ -334,7 +486,12 @@ Solving the system:
 $a = 77, \quad b = -43$
 So, $(16, -9) = 77(3, 1) - 43(5, 2)$ ---- (i)
 
-Again, let $T(v_2) = c v_1 + d v_2$
+Again, let
+
+$$
+T(v_2) = c v_1 + d v_2
+$$
+
 $\Rightarrow (27, -14) = c(3, 1) + d(5, 2) = (3c + 5d, c + 2d)$
 
 Equating components:
@@ -391,12 +548,33 @@ $$
 $$
 
 <!-- Page 080 -->
-**# Find the angle between $v_1 = (1, 2, 3)$ and $v_2 = (1, 1, 1)$.**
+**# Find the angle between
+
+$$
+v_1 = (1, 2, 3)
+$$
+
+and
+
+$$
+v_2 = (1, 1, 1)
+$$
+
+.**
 
 *Ans:*
-$\langle v_1, v_2 \rangle = 1(1) + 2(1) + 3(1) = 6$
-$\|v_1\| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}$
-$\|v_2\| = \sqrt{1^2 + 1^2 + 1^2} = \sqrt{3}$
+
+$$
+\langle v_1, v_2 \rangle = 1(1) + 2(1) + 3(1) = 6
+$$
+
+$$
+\|v_1\| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}
+$$
+
+$$
+\|v_2\| = \sqrt{1^2 + 1^2 + 1^2} = \sqrt{3}
+$$
 
 $$
 \cos\theta = \frac{6}{\sqrt{14}\sqrt{3}} = \frac{6}{\sqrt{42}}
@@ -406,11 +584,27 @@ $$
 \theta = \cos^{-1}\left( \frac{6}{\sqrt{42}} \right)
 $$
 
-- If $\theta = 90^\circ$, then the vectors are **orthogonal**.
+- If
+
+$$
+\theta = 90^\circ
+$$
+
+, then the vectors are **orthogonal**.
 - If the norm of each orthogonal vector is 1, they are called **orthonormal** vectors.
 
 **Example of orthogonal but not orthonormal:**
-$(2, 0, 0)$ and $(0, 2, 0)$ since $\langle u, v \rangle = 0$, but $\|u\| = 2$ and $\|v\| = 2$.
+$(2, 0, 0)$ and $(0, 2, 0)$ since $\langle u, v \rangle = 0$, but
+
+$$
+\|u\| = 2
+$$
+
+and
+
+$$
+\|v\| = 2.
+$$
 
 ---
 
@@ -438,8 +632,14 @@ $$
 
 *Ans:*
 $\langle u, v \rangle = \text{sum of products of corresponding elements} = 1(1) + 0(1) + 0(1) + 1(1) = 2$
-$\|u\| = \sqrt{1^2 + 0^2 + 0^2 + 1^2} = \sqrt{2}$
-$\|v\| = \sqrt{1^2 + 1^2 + 1^2 + 1^2} = \sqrt{4} = 2$
+
+$$
+\|u\| = \sqrt{1^2 + 0^2 + 0^2 + 1^2} = \sqrt{2}
+$$
+
+$$
+\|v\| = \sqrt{1^2 + 1^2 + 1^2 + 1^2} = \sqrt{4} = 2
+$$
 
 $$
 \cos\theta = \frac{2}{\sqrt{2}\sqrt{4}} = \frac{2}{2\sqrt{2}} = \frac{1}{\sqrt{2}}

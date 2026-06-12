@@ -22,8 +22,20 @@ Once a transformation is expressed as a matrix, operations like evaluating image
 Let $U(F)$ and $V(F)$ be two vector spaces over the field $F$.
 Let $T : U \to V$ be a linear transformation.
 To represent $T$ as a matrix, we must fix an **ordered basis** for both spaces:
-*   Let $B = \lbrace u_1, u_2, \dots, u_n \rbrace$ be the ordered basis for $U$.
-*   Let $B' = \lbrace v_1, v_2, \dots, v_m \rbrace$ be the ordered basis for $V$.
+*   Let
+
+$$
+B = \lbrace u_1, u_2, \dots, u_n \rbrace
+$$
+
+be the ordered basis for $U$.
+*   Let
+
+$$
+B' = \lbrace v_1, v_2, \dots, v_m \rbrace
+$$
+
+be the ordered basis for $V$.
 
 ### The Process
 1.  **Find the Images of the Domain Basis**: We take each basis vector of $U$ (that is, each $u_j \in B$) and find its image under $T$, which is $T(u_j)$. This image lives in $V$.
@@ -71,7 +83,13 @@ If the problem does not explicitly provide a basis, we assume the **standard bas
 
 ## Numerical Example 1
 
-**Problem:** Find the matrix of the linear transformation $T : V_3(\mathbb{R}) \to V_3(\mathbb{R})$ defined by:
+**Problem:** Find the matrix of the linear transformation
+
+$$
+T : V_3(\mathbb{R}) \to V_3(\mathbb{R})
+$$
+
+defined by:
 
 $$
 T(a, b, c) = (2b + c, a - 4b, 3a)
@@ -80,7 +98,11 @@ $$
 with respect to the standard basis $B$.
 
 **Solution:**
-The standard basis is $B = \lbrace e_1(1, 0, 0), e_2(0, 1, 0), e_3(0, 0, 1) \rbrace$.
+The standard basis is
+
+$$
+B = \lbrace e_1(1, 0, 0), e_2(0, 1, 0), e_3(0, 0, 1) \rbrace.
+$$
 
 **Step 1: Compute Images of Basis Vectors**
 *   $T(1, 0, 0) = (2(0)+0, 1-4(0), 3(1)) = (0, 1, 3)$
@@ -130,23 +152,50 @@ Comparing components:
 Coordinate formula: **$x = c, \quad y = b - c, \quad z = a - b$**
 
 **Step 2: Compute Images and their Coordinates**
-*   **For $v_1 = (1, 1, 1)$:**
+*   **For
+
+$$
+v_1 = (1, 1, 1)
+$$
+
+:**
     $T(1, 1, 1) = (3, -3, 3)$. 
     Using the formula ($a=3, b=-3, c=3$):
     $x = 3$, $y = -3-3 = -6$, $z = 3-(-3) = 6$.
-    $T(v_1) = 3v_1 - 6v_2 + 6v_3$
 
-*   **For $v_2 = (1, 1, 0)$:**
+$$
+T(v_1) = 3v_1 - 6v_2 + 6v_3
+$$
+
+*   **For
+
+$$
+v_2 = (1, 1, 0)
+$$
+
+:**
     $T(1, 1, 0) = (2, -3, 3)$. 
     Using the formula ($a=2, b=-3, c=3$):
     $x = 3$, $y = -3-3 = -6$, $z = 2-(-3) = 5$.
-    $T(v_2) = 3v_1 - 6v_2 + 5v_3$
 
-*   **For $v_3 = (1, 0, 0)$:**
+$$
+T(v_2) = 3v_1 - 6v_2 + 5v_3
+$$
+
+*   **For
+
+$$
+v_3 = (1, 0, 0)
+$$
+
+:**
     $T(1, 0, 0) = (0, 1, 3)$. 
     Using the formula ($a=0, b=1, c=3$):
     $x = 3$, $y = 1-3 = -2$, $z = 0-1 = -1$.
-    $T(v_3) = 3v_1 - 2v_2 - 1v_3$
+
+$$
+T(v_3) = 3v_1 - 2v_2 - 1v_3
+$$
 
 **Step 3: Compile the Matrix**
 Write the computed coordinates as columns:
@@ -173,7 +222,13 @@ Multiplying the transformation matrix by the coordinate vector of the input give
 
 ## Numerical Example 3 (Different Dimensions)
 
-**Problem:** Find the matrix of $T : \mathbb{R}^3 \to \mathbb{R}^2$ defined by:
+**Problem:** Find the matrix of
+
+$$
+T : \mathbb{R}^3 \to \mathbb{R}^2
+$$
+
+defined by:
 
 $$
 T(x, y, z) = (2x - 4y + 9z, 5x + 3y - 2z)
@@ -203,7 +258,11 @@ $$
 ## Key Takeaways
 *   A linear transformation is completely determined by its action on a basis.
 *   To build a transformation matrix, find the images of the domain basis, express them as coordinates relative to the co-domain basis, and stack those coordinates as **columns**.
-*   The matrix perfectly encapsulates the transformation: $A\vec{x} = \vec{y}$.
+*   The matrix perfectly encapsulates the transformation:
+
+$$
+A\vec{x} = \vec{y}.
+$$
 
 ## What Comes Next
 We will explore the relationship between the matrix representation and the **Rank and Nullity** of a linear transformation, leading into the Rank-Nullity Theorem.

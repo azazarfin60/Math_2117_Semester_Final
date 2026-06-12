@@ -40,7 +40,13 @@ Divergence represents the net outward flux (flow) per unit volume from a point.
 
 ### Solenoidal Vector
 
-If $\nabla \cdot \vec{F} = 0$ everywhere, the vector field is called **solenoidal**. It behaves like an incompressible fluid with no sources or sinks.
+If
+
+$$
+\nabla \cdot \vec{F} = 0
+$$
+
+everywhere, the vector field is called **solenoidal**. It behaves like an incompressible fluid with no sources or sinks.
 
 ---
 
@@ -73,7 +79,13 @@ Curl measures the rotational tendency or "spin" of the vector field at a point (
 
 ### Irrotational Vector
 
-If $\nabla \times \vec{F} = \vec{0}$ everywhere, the vector field is called **irrotational**. This means the field has absolutely no rotational flow or twisting motion.
+If
+
+$$
+\nabla \times \vec{F} = \vec{0}
+$$
+
+everywhere, the vector field is called **irrotational**. This means the field has absolutely no rotational flow or twisting motion.
 
 ---
 
@@ -85,7 +97,11 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}.
 $$
 
-Then $r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}$.
+Then
+
+$$
+r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}.
+$$
 
 Two absolute must-know facts:
 
@@ -120,7 +136,11 @@ is solenoidal.
 
 **Solution**:
 
-For $\vec{F}$ to be solenoidal, $\nabla \cdot \vec{F} = 0$.
+For $\vec{F}$ to be solenoidal,
+
+$$
+\nabla \cdot \vec{F} = 0.
+$$
 
 $$
 \frac{\partial}{\partial x}(x + 3y) + \frac{\partial}{\partial y}(y - 2z) + \frac{\partial}{\partial z}(x - az) = 0
@@ -134,7 +154,13 @@ $$
 
 ## Worked Example 2: Evaluating Divergence
 
-**Problem**: Prove that $\text{div}(r^n \vec{r}) = (n + 3)r^n$. For what value of $n$ is it solenoidal?
+**Problem**: Prove that
+
+$$
+\text{div}(r^n \vec{r}) = (n + 3)r^n
+$$
+
+. For what value of $n$ is it solenoidal?
 
 **Solution**:
 
@@ -162,7 +188,11 @@ $$
 \text{div}(r^n \vec{r}) = 3r^n + n r^{n-2}(x^2 + y^2 + z^2)
 $$
 
-Since $x^2 + y^2 + z^2 = r^2$:
+Since
+
+$$
+x^2 + y^2 + z^2 = r^2:
+$$
 
 $$
 \text{div}(r^n \vec{r}) = 3r^n + n r^{n-2}(r^2) = 3r^n + n r^n = (n + 3)r^n

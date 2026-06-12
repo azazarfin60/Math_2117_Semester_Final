@@ -36,7 +36,18 @@ Since $U$ is a subset of the known vector space $\mathbb{R}^3$, we only need to 
 The zero vector of $\mathbb{R}^3$ is $(0, 0, 0)$. Since $0 = 0 = 0$ satisfies the condition $a=b=c$, the zero vector is in $U$.
 
 **Step 2: Closed Under Addition**
-Let $u_1 = (a_1, a_1, a_1) \in U$ and $u_2 = (a_2, a_2, a_2) \in U$.
+Let
+
+$$
+u_1 = (a_1, a_1, a_1) \in U
+$$
+
+and
+
+$$
+u_2 = (a_2, a_2, a_2) \in U.
+$$
+
 We add these vectors:
 
 $$

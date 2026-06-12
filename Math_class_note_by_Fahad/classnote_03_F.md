@@ -15,7 +15,11 @@ $$
 x = 3\cos t, \quad y = 3\sin t, \quad z = 4t
 $$
 
-Unit tangent $\vec{T} = ?$
+Unit tangent
+
+$$
+\vec{T} = ?
+$$
 
 $$
 \vec{r} = 3\cos t\,\hat{i} + 3\sin t\,\hat{j} + 4t\hat{k}
@@ -190,13 +194,29 @@ $$
 $$
 
 **Prove,**
-10. $\nabla \times \nabla(\phi) = 0$
-11. $\nabla \cdot (\nabla \times \vec{A}) = 0$
+10.
+
+$$
+\nabla \times \nabla(\phi) = 0
+$$
+
+11.
+
+$$
+\nabla \cdot (\nabla \times \vec{A}) = 0
+$$
+
 *(general form দিয়ে করতে হবে।)*
 
 ---
 
-$\star$ $\phi = 3x^2y - y^3z^2$, find $\nabla \phi$ (grad of $\phi$) at point $(1,-2,1)$
+$\star$
+
+$$
+\phi = 3x^2y - y^3z^2
+$$
+
+, find $\nabla \phi$ (grad of $\phi$) at point $(1,-2,1)$
 
 $$
 \nabla \phi = \frac{\partial \phi}{\partial x}\hat{i} + \frac{\partial \phi}{\partial y}\hat{j} + \frac{\partial \phi}{\partial z}\hat{k}
@@ -234,7 +254,13 @@ $$
 
 ---
 
-$\star$ $\phi = 2x^3y^2z^4$, find $\nabla \cdot \nabla \phi$ :
+$\star$
+
+$$
+\phi = 2x^3y^2z^4
+$$
+
+, find $\nabla \cdot \nabla \phi$ :
 
 **Ans:-**
 
@@ -271,7 +297,9 @@ $$
 \vec{A} = xz^3\,\hat{i} - 2x^2yz\,\hat{j} + 2xz^4\hat{k},
 $$
 
-$\nabla \times \vec{A} = ?$
+$$
+\nabla \times \vec{A} = ?
+$$
 
 $$
 \nabla \times \vec{A} =

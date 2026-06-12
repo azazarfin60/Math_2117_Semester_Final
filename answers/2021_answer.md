@@ -93,7 +93,13 @@ $$
 
 #### 1. Definitions
 
-*   **Dot Product:** The scalar product of two vectors $\vec{A}$ and $\vec{B}$ is defined as $\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos\theta$, where $\theta$ is the angle between them.
+*   **Dot Product:** The scalar product of two vectors $\vec{A}$ and $\vec{B}$ is defined as
+
+$$
+\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos\theta
+$$
+
+, where $\theta$ is the angle between them.
 *   **Cross Product:** The vector product of two vectors $\vec{A}$ and $\vec{B}$ is defined as 
 
 $$
@@ -184,7 +190,11 @@ $$
 \hat{u} = \frac{2\hat{i} + 3\hat{j} + 2\hat{k}}{\sqrt{2^2 + 3^2 + 2^2}} = \frac{2\hat{i} + 3\hat{j} + 2\hat{k}}{\sqrt{17}}
 $$
 
-Calculate the gradient of the function $f = x^2 + xy + z^2$:
+Calculate the gradient of the function
+
+$$
+f = x^2 + xy + z^2:
+$$
 
 $$
 \vec{\nabla}f = (2x + y)\hat{i} + x\hat{j} + 2z\hat{k}
@@ -251,7 +261,11 @@ The curl is the zero vector, so the field is irrotational.
 
 #### 2. Find Potential Function
 
-We solve the relation $\vec{\nabla}\Phi = \vec{F}$:
+We solve the relation
+
+$$
+\vec{\nabla}\Phi = \vec{F}:
+$$
 
 $$
 \frac{\partial\Phi}{\partial x} = y^2 + 2xz^2 \implies \Phi = xy^2 + x^2z^2 + g(y, z) \quad \dots \text{(1)}
@@ -317,7 +331,11 @@ $$
 \bar{\nabla} \times \bar{V} = \left(\frac{\partial V_z}{\partial y} - \frac{\partial V_y}{\partial z}\right)\hat{i} + \left(\frac{\partial V_x}{\partial z} - \frac{\partial V_z}{\partial x}\right)\hat{j} + \left(\frac{\partial V_y}{\partial x} - \frac{\partial V_x}{\partial y}\right)\hat{k}
 $$
 
-Now calculate the $\hat{i}$-component of $\bar{\nabla} \times (\bar{\nabla} \times \bar{V})$:
+Now calculate the $\hat{i}$-component of
+
+$$
+\bar{\nabla} \times (\bar{\nabla} \times \bar{V}):
+$$
 
 $$
 [\bar{\nabla} \times (\bar{\nabla} \times \bar{V})]_x = \frac{\partial}{\partial y}\left(\frac{\partial V_y}{\partial x} - \frac{\partial V_x}{\partial y}\right) - \frac{\partial}{\partial z}\left(\frac{\partial V_x}{\partial z} - \frac{\partial V_z}{\partial x}\right)
@@ -330,10 +348,8 @@ $$
 Add and subtract the term
 
 $$
-\frac{\partial^2 V\_x}{\partial x^2}
+\frac{\partial^2 V\_x}{\partial x^2}:
 $$
-
-:
 
 $$
 [\bar{\nabla} \times (\bar{\nabla} \times \bar{V})]_x = \left(\frac{\partial^2 V_x}{\partial x^2} + \frac{\partial^2 V_y}{\partial y \partial x} + \frac{\partial^2 V_z}{\partial z \partial x}\right) - \left(\frac{\partial^2 V_x}{\partial x^2} + \frac{\partial^2 V_x}{\partial y^2} + \frac{\partial^2 V_x}{\partial z^2}\right)
@@ -365,7 +381,13 @@ The angle between two surfaces at a point is the angle between their normal vect
 
 #### 1. Normal to the First Surface
 
-Let the surface be $F(x, y, z) = x^2 + y^2 + z^2 - 9 = 0$. The gradient is:
+Let the surface be
+
+$$
+F(x, y, z) = x^2 + y^2 + z^2 - 9 = 0
+$$
+
+. The gradient is:
 
 $$
 \vec{\nabla}F = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}
@@ -379,7 +401,13 @@ $$
 
 #### 2. Normal to the Second Surface
 
-Let the surface be $G(x, y, z) = x^2 + y^2 - z - 3 = 0$. The gradient is:
+Let the surface be
+
+$$
+G(x, y, z) = x^2 + y^2 - z - 3 = 0
+$$
+
+. The gradient is:
 
 $$
 \vec{\nabla}G = 2x\hat{i} + 2y\hat{j} - \hat{k}
@@ -424,10 +452,8 @@ $$
 So the angle between the surfaces is
 
 $$
-\cos^{-1}\left( \frac{8}{3\sqrt{21}} \right)
+\cos^{-1}\left( \frac{8}{3\sqrt{21}} \right).
 $$
-
-.
 
 ---
 
@@ -501,7 +527,13 @@ $$
 \iiint_V \vec{F} dV
 $$
 
-Where $V$ is the region bounded by the surfaces $x=0, y=0, y=6, z=x^2, z=4$. (04)
+Where $V$ is the region bounded by the surfaces
+
+$$
+x=0, y=0, y=6, z=x^2, z=4
+$$
+
+. (04)
 
 **Answer:**
 
@@ -581,7 +613,19 @@ $$
 
 ##### Proof of Part 1
 
-Let the region $R$ be bounded by the curves $y = y\_1(x)$ (lower boundary) and $y = y\_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
+Let the region $R$ be bounded by the curves
+
+$$
+y = y\_1(x)
+$$
+
+(lower boundary) and
+
+$$
+y = y\_2(x)
+$$
+
+(upper boundary) for $x$ from $a$ to $b$.
 
 Evaluate the double integral on the right-hand side:
 
@@ -596,8 +640,20 @@ $$
 $$
 
 The closed boundary curve $C$ consists of two parts:
-*   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
-*   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
+*   Path $C\_1$: Along the curve
+
+$$
+y = y\_1(x)
+$$
+
+from $x=a$ to $x=b$.
+*   Path $C\_2$: Along the curve
+
+$$
+y = y\_2(x)
+$$
+
+from $x=b$ to $x=a$.
 
 We calculate the line integral over each path:
 
@@ -619,7 +675,19 @@ $$
 
 ##### Proof of Part 2
 
-Let the region $R$ be bounded by the curves $x = x\_1(y)$ (left boundary) and $x = x\_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
+Let the region $R$ be bounded by the curves
+
+$$
+x = x\_1(y)
+$$
+
+(left boundary) and
+
+$$
+x = x\_2(y)
+$$
+
+(right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
 
 $$
 \oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy
@@ -641,7 +709,13 @@ $$
 \vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
 $$
 
-Taken over the region bounded by $x^2 + y^2 = 4$, $z=0$ and $z=3$. (06)
+Taken over the region bounded by
+
+$$
+x^2 + y^2 = 4
+$$
+
+, $z=0$ and $z=3$. (06)
 
 **Answer:**
 
@@ -713,16 +787,18 @@ $$
 Here
 
 $$
-\vec{A} \cdot \hat{n} = z^2 = 9
+\vec{A} \cdot \hat{n} = z^2 = 9:
 $$
-
-:
 
 $$
 \iint_{S_2} \vec{A} \cdot \hat{n} dS = 9 \times \text{Area}(S_2) = 9 \times \pi(2^2) = 36\pi
 $$
 
-*   **Curved side $S\_3$:** $x^2 + y^2 = 4$, 
+*   **Curved side $S\_3$:**
+
+$$
+x^2 + y^2 = 4,
+$$
 
 $$
 \hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
@@ -749,10 +825,8 @@ $$
  and 
 
 $$
-\int_0^{2\pi} \sin^3\theta d\theta = 0
+\int_0^{2\pi} \sin^3\theta d\theta = 0:
 $$
-
-:
 
 $$
 \iint_{S_3} \vec{A} \cdot \hat{n} dS = 6 [ 8\pi - 0 ] = 48\pi
@@ -776,8 +850,17 @@ Both sides equal $84\pi$. The divergence theorem is verified.
 
 #### 1. Definitions
 
-*   **Symmetric Matrix:** A square matrix $A$ is symmetric if it equals its transpose: $A^T = A$.
-*   **Skew-Symmetric Matrix:** A square matrix $A$ is skew-symmetric if its transpose equals its negative: $A^T = -A$.
+*   **Symmetric Matrix:** A square matrix $A$ is symmetric if it equals its transpose:
+
+$$
+A^T = A.
+$$
+
+*   **Skew-Symmetric Matrix:** A square matrix $A$ is skew-symmetric if its transpose equals its negative:
+
+$$
+A^T = -A.
+$$
 
 #### 2. Decomposition and Uniqueness Proof
 
@@ -796,10 +879,8 @@ $$
  and
 
 $$
-Q = \frac{1}{2}(A - A^T)
+Q = \frac{1}{2}(A - A^T).
 $$
-
-.
 
 ##### Show $P$ is symmetric
 
@@ -825,7 +906,11 @@ $$
 
 We solve the system:
 1.  $P' + Q' = A$
-2.  $P' - Q' = A^T$
+2.
+
+$$
+P' - Q' = A^T
+$$
 
 Adding the two equations yields:
 
@@ -912,10 +997,8 @@ $$
 Simplify row 3 and row 4 (
 
 $$
-R\_3 \to \frac{1}{11}R\_3
+R\_3 \to \frac{1}{11}R\_3,
 $$
-
-,
 
 $$
 R\_4 \to \frac{1}{11}R\_4
@@ -1133,10 +1216,8 @@ $$
 Perform the operation
 
 $$
-R\_2 \to R\_2 - \frac{3}{2}R\_3
+R\_2 \to R\_2 - \frac{3}{2}R\_3:
 $$
-
-:
 
 $$
 \begin{bmatrix}
@@ -1529,9 +1610,23 @@ $$
 $$
 
 By back substitution, we solve the coefficients:
-*   From the third row: $5c\_3 = 10 \implies c\_3 = 2$.
-*   From the second row: $c\_2 - 3(2) = -3 \implies c\_2 = 3$.
-*   From the first row: $c\_1 + 3 + 2(2) = 1 \implies c\_1 = -6$.
+*   From the third row:
+
+$$
+5c\_3 = 10 \implies c\_3 = 2.
+$$
+
+*   From the second row:
+
+$$
+c\_2 - 3(2) = -3 \implies c\_2 = 3.
+$$
+
+*   From the first row:
+
+$$
+c\_1 + 3 + 2(2) = 1 \implies c\_1 = -6.
+$$
 
 So the linear combination is:
 
@@ -1638,7 +1733,13 @@ $$
 c_3 = 0 \quad \dots \text{(3)}
 $$
 
-Substitute $c\_3 = 0$ from equation (3) into equations (1) and (2):
+Substitute
+
+$$
+c\_3 = 0
+$$
+
+from equation (3) into equations (1) and (2):
 
 $$
 c_1 + c_2 = 0
@@ -1648,9 +1749,25 @@ $$
 c_1 - c_2 = 0
 $$
 
-Adding these equations gives $2c\_1 = 0 \implies c\_1 = 0$. This then gives $c\_2 = 0$.
+Adding these equations gives
 
-Since the only solution is $c\_1 = c\_2 = c\_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
+$$
+2c\_1 = 0 \implies c\_1 = 0
+$$
+
+. This then gives
+
+$$
+c\_2 = 0.
+$$
+
+Since the only solution is
+
+$$
+c\_1 = c\_2 = c\_3 = 0
+$$
+
+, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
 
 ---
 

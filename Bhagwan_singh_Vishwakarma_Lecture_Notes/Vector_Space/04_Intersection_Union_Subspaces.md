@@ -87,8 +87,20 @@ Because of the "if and only if" condition, we must prove this in both directions
 We start by assuming that one subspace is contained in the other.
 Let $W_1 \subseteq W_2$ or $W_2 \subseteq W_1$.
 
-*   If $W_1 \subseteq W_2$, then all elements of $W_1$ are already in $W_2$. Thus, their union is simply the larger set: $W_1 \cup W_2 = W_2$. Since $W_2$ is given as a subspace, the union is a subspace.
-*   If $W_2 \subseteq W_1$, then $W_1 \cup W_2 = W_1$. Since $W_1$ is given as a subspace, the union is a subspace.
+*   If $W_1 \subseteq W_2$, then all elements of $W_1$ are already in $W_2$. Thus, their union is simply the larger set:
+
+$$
+W_1 \cup W_2 = W_2
+$$
+
+. Since $W_2$ is given as a subspace, the union is a subspace.
+*   If $W_2 \subseteq W_1$, then
+
+$$
+W_1 \cup W_2 = W_1
+$$
+
+. Since $W_1$ is given as a subspace, the union is a subspace.
 
 In both cases, the union is just one of the original subspaces. So $W_1 \cup W_2$ is a subspace.
 

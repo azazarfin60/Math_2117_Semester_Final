@@ -145,10 +145,8 @@ $$
 So the torsion is
 
 $$
-\tau = \frac{2}{(2t^2 + 1)^2}
+\tau = \frac{2}{(2t^2 + 1)^2}.
 $$
-
-.
 
 ---
 
@@ -158,7 +156,13 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}
 $$
 
- makes with the positive directions of the coordinate axes and show that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$. (03)
+makes with the positive directions of the coordinate axes and show that
+
+$$
+\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1
+$$
+
+. (03)
 
 **Answer:**
 
@@ -368,7 +372,11 @@ $$
 \oint_C A_1 dx = \iint_R \left( -\frac{\partial A_1}{\partial y} - \frac{\partial A_1}{\partial z}\frac{\partial z}{\partial y} \right) dx dy \quad \dots \text{(2)}
 $$
 
-Now calculate the term $\vec{\nabla} \times (A\_1\hat{i})$:
+Now calculate the term
+
+$$
+\vec{\nabla} \times (A\_1\hat{i}):
+$$
 
 $$
 \vec{\nabla} \times (A_1\hat{i}) = \begin{vmatrix}
@@ -422,7 +430,13 @@ $$
 \oint_C (xy + y^2)dx + x^2dy
 $$
 
-Where $C$ is the closed curve of the region bounded by $y = x$ and $y = x^2$. (05)
+Where $C$ is the closed curve of the region bounded by $y = x$ and
+
+$$
+y = x^2
+$$
+
+. (05)
 
 **Answer:**
 
@@ -471,7 +485,13 @@ $$
 #### 2. Evaluate Line Integral
 
 The closed path $C$ has two parts:
-1.  Path $C\_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
+1.  Path $C\_1$ (
+
+$$
+y = x^2
+$$
+
+, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
 2.  Path $C\_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
 
 Evaluate along Path $C\_1$:
@@ -505,8 +525,17 @@ Both integrals give $-\frac{1}{20}$. So Green's theorem is verified.
 **Answer:**
 
 *   **Commutative Matrices:** Two square matrices $A$ and $B$ are commutative if $AB = BA$.
-*   **Idempotent Matrix:** A square matrix $A$ is idempotent if its square equals itself: $A^2 = A$.
-*   **Involutory Matrix:** A square matrix $A$ is involutory if its square equals the identity matrix: $A^2 = I$.
+*   **Idempotent Matrix:** A square matrix $A$ is idempotent if its square equals itself:
+
+$$
+A^2 = A.
+$$
+
+*   **Involutory Matrix:** A square matrix $A$ is involutory if its square equals the identity matrix:
+
+$$
+A^2 = I.
+$$
 
 ---
 
@@ -532,7 +561,13 @@ $$
 (B^{-1}A^{-1})(AB) = B^{-1}(A^{-1}A)B = B^{-1} I B = B^{-1} B = I
 $$
 
-Since $(AB)(B^{-1}A^{-1}) = (B^{-1}A^{-1})(AB) = I$, the matrix $B^{-1}A^{-1}$ is the inverse of $AB$. So we write:
+Since
+
+$$
+(AB)(B^{-1}A^{-1}) = (B^{-1}A^{-1})(AB) = I
+$$
+
+, the matrix $B^{-1}A^{-1}$ is the inverse of $AB$. So we write:
 
 $$
 (AB)^{-1} = B^{-1}A^{-1}
@@ -735,7 +770,13 @@ $$
 A = \frac{1}{2}(A + A^\dagger) + \frac{1}{2}(A - A^\dagger)
 $$
 
-where $A^\dagger = (\bar{A})^T$ is the conjugate transpose of $A$. Let:
+where
+
+$$
+A^\dagger = (\bar{A})^T
+$$
+
+is the conjugate transpose of $A$. Let:
 
 $$
 P = \frac{1}{2}(A + A^\dagger) \quad \text{and} \quad Q = \frac{1}{2}(A - A^\dagger)
@@ -826,10 +867,8 @@ $$
 Perform the operation
 
 $$
-R\_2 \to R\_2 - \frac{5}{2}R\_3
+R\_2 \to R\_2 - \frac{5}{2}R\_3:
 $$
-
-:
 
 $$
 \begin{bmatrix}
@@ -1162,9 +1201,23 @@ $$
 $$
 
 Now solve for the coefficients by back substitution:
-*   From row 3: $-2c\_3 = -2 \implies c\_3 = 1$.
-*   From row 2: $3c\_2 - 1 = -13 \implies 3c\_2 = -12 \implies c\_2 = -4$.
-*   From row 1: $c\_1 - (-4) + 2(1) = 9 \implies c\_1 + 6 = 9 \implies c\_1 = 3$.
+*   From row 3:
+
+$$
+-2c\_3 = -2 \implies c\_3 = 1.
+$$
+
+*   From row 2:
+
+$$
+3c\_2 - 1 = -13 \implies 3c\_2 = -12 \implies c\_2 = -4.
+$$
+
+*   From row 1:
+
+$$
+c\_1 - (-4) + 2(1) = 9 \implies c\_1 + 6 = 9 \implies c\_1 = 3.
+$$
 
 So we can write $v$ as:
 
@@ -1229,9 +1282,18 @@ $$
 **Answer:**
 
 *   **Sum of Subspaces:** Let $U$ and $W$ be subspaces of a vector space $V$. The sum $U + W$ is the set of all vectors $u + w$ where $u \in U$ and $w \in W$.
-    *Example:* In $\mathbb{R}^2$, let $U$ be the $x$-axis and $W$ be the $y$-axis. Then $U + W = \mathbb{R}^2$.
+*Example:* In $\mathbb{R}^2$, let $U$ be the $x$-axis and $W$ be the $y$-axis. Then
+
+$$
+U + W = \mathbb{R}^2.
+$$
+
 *   **Direct Sum of Subspaces:** Let $U$ and $W$ be subspaces of $V$. The sum $U + W$ is a direct sum (written $U \oplus W$) if every element in the sum can be written uniquely as $u + w$. This occurs if and only if $U \cap W = \{0\}$.
-    *Example:* In $\mathbb{R}^2$, let $U$ be the $x$-axis and $W$ be the $y$-axis. Their intersection is only the origin $\{(0, 0)\}$. So $U \oplus W = \mathbb{R}^2$.
+*Example:* In $\mathbb{R}^2$, let $U$ be the $x$-axis and $W$ be the $y$-axis. Their intersection is only the origin $\{(0, 0)\}$. So
+
+$$
+U \oplus W = \mathbb{R}^2.
+$$
 
 ---
 
@@ -1320,14 +1382,38 @@ $$
 ---
 
 ### Q8(c) Identify that the following mappings $F$ are linear or not linear: (04)
-*   **(i)** $F : \mathbb{R}^3 \rightarrow \mathbb{R}$ defined by $F(x, y, z) = 2x - 3y + 4z$
-*   **(ii)** $F : \mathbb{R}^2 \rightarrow \mathbb{R}^3$ defined by $F(x, y) = (x+1, 2y, x+y)$
+*   **(i)**
+
+$$
+F : \mathbb{R}^3 \rightarrow \mathbb{R}
+$$
+
+defined by $F(x, y, z) = 2x - 3y + 4z$
+*   **(ii)**
+
+$$
+F : \mathbb{R}^2 \rightarrow \mathbb{R}^3
+$$
+
+defined by $F(x, y) = (x+1, 2y, x+y)$
 
 **Answer:**
 
 #### (i) Mapping $F(x, y, z) = 2x - 3y + 4z$
 
-Let $u = (x\_1, y\_1, z\_1)$ and $v = (x\_2, y\_2, z\_2)$ be vectors in $\mathbb{R}^3$.
+Let
+
+$$
+u = (x\_1, y\_1, z\_1)
+$$
+
+and
+
+$$
+v = (x\_2, y\_2, z\_2)
+$$
+
+be vectors in $\mathbb{R}^3$.
 *   **Check Addition:**
 
 $$

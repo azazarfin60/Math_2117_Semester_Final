@@ -292,11 +292,23 @@ $$
 **(12 Jan, 26) (GCP Sir)**
 
 #### Nilpotent:-
-If $A^n = 0$, then it is called nilpotent matrix of index $n$.
+If
+
+$$
+A^n = 0
+$$
+
+, then it is called nilpotent matrix of index $n$.
 * $A = \text{square matrix.}$
 
 #### Involuntary:-
-If $A^n = I$ (Identity matrix), then $A$ is an involuntary matrix of index $n$.
+If
+
+$$
+A^n = I
+$$
+
+(Identity matrix), then $A$ is an involuntary matrix of index $n$.
 
 $$
 A^n = I
@@ -331,13 +343,21 @@ $$
 
 $\star$ **An n-square matrix A is involuntary iff $(I+A)(I-A) = \text{a zero-matrix}$.**
 
-We know, an n-square matrix A is involuntary if $A^2 = I$.
+We know, an n-square matrix A is involuntary if
+
+$$
+A^2 = I.
+$$
 
 $$
 \text{index} = 2
 $$
 
-First, we assume that $A$ is involuntary, we need to prove that $(I-A)(I+A) = 0_{n \times n}$.
+First, we assume that $A$ is involuntary, we need to prove that
+
+$$
+(I-A)(I+A) = 0_{n \times n}.
+$$
 
 Now,
 
@@ -413,7 +433,13 @@ $$
 (AB)^{-1} = B^{-1} A^{-1}
 $$
 
-If $(AB)^{-1} \cdot AB = I$ then $(AB)^{-1}$ is inverse of $AB$.
+If
+
+$$
+(AB)^{-1} \cdot AB = I
+$$
+
+then $(AB)^{-1}$ is inverse of $AB$.
 
 Here,
 
@@ -468,7 +494,13 @@ Therefore, $B^{-1} A^{-1}$ is the inverse of $AB$.
 
 $\star$ **$\text{Adj}(AB) = \text{Adj}(B) \cdot \text{Adj}(A) \quad \text{prove} \rightarrow \text{H.W.}$**
 
-$\star$ **Prove that, $(AB)^t = B^t A^t$**
+$\star$ **Prove that,
+
+$$
+(AB)^t = B^t A^t
+$$
+
+**
 
 **Ans:-**
 Let,

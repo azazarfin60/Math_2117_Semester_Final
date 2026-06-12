@@ -34,7 +34,13 @@ $$
 where $C$ is the unit circle in the $xy$-plane.
 
 **Solution:**
-A unit circle in the $xy$-plane has the equation $x^2 + y^2 = 1$ and lies at $z = 0$.
+A unit circle in the $xy$-plane has the equation
+
+$$
+x^2 + y^2 = 1
+$$
+
+and lies at $z = 0$.
 
 #### Part 1: Evaluating the Line Integral (LHS)
 Since $z = 0$, $dz = 0$. The line integral becomes:
@@ -63,7 +69,11 @@ $$
 = \int_0^{2\pi} (3\cos^2\phi - 2\sin^2\phi) \, d\phi
 $$
 
-Using the identity $\sin^2\phi = 1 - \cos^2\phi$:
+Using the identity
+
+$$
+\sin^2\phi = 1 - \cos^2\phi:
+$$
 
 $$
 = \int_0^{2\pi} \left( 3\cos^2\phi - 2(1 - \cos^2\phi) \right) d\phi = \int_0^{2\pi} (5\cos^2\phi - 2) \, d\phi
@@ -72,10 +82,8 @@ $$
 Convert using the double angle formula
 
 $$
-\cos^2\phi = \frac{1 + \cos 2\phi}{2}
+\cos^2\phi = \frac{1 + \cos 2\phi}{2}:
 $$
-
-:
 
 $$
 = \int_0^{2\pi} \left( \frac{5}{2}(1 + \cos 2\phi) - 2 \right) d\phi = \int_0^{2\pi} \left( \frac{1}{2} + \frac{5}{2}\cos 2\phi \right) d\phi
@@ -108,7 +116,11 @@ x + 2y & y + 3x & 0
 \end{vmatrix} = \hat{\mathbf{k}}\left( \frac{\partial}{\partial x}(y + 3x) - \frac{\partial}{\partial y}(x + 2y) \right) = \hat{\mathbf{k}}(3 - 2) = \hat{\mathbf{k}}
 $$
 
-Since the surface is flat in the $xy$-plane, the outward unit normal is $\hat{\mathbf{n}} = \hat{\mathbf{k}}$.
+Since the surface is flat in the $xy$-plane, the outward unit normal is
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{k}}.
+$$
 
 $$
 (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} = \hat{\mathbf{k}} \cdot \hat{\mathbf{k}} = 1
@@ -120,7 +132,12 @@ $$
 \iint_S 1 \, dS = \text{Area}(S)
 $$
 
-Since $S$ is a unit circle ($r=1$), its area is $\pi r^2 = \pi$.
+Since $S$ is a unit circle ($r=1$), its area is
+
+$$
+\pi r^2 = \pi.
+$$
+
 So, RHS $= \pi$.
 **LHS = RHS**, hence verified.
 
@@ -133,10 +150,22 @@ $$
 \mathbf{F} = y\hat{\mathbf{i}} + z\hat{\mathbf{j}} + x\hat{\mathbf{k}},
 $$
 
-Where $S$ is the upper hemisphere $x^2 + y^2 + z^2 = 1 \text{ for } z \ge 0$, and $C$ is its boundary.
+Where $S$ is the upper hemisphere
+
+$$
+x^2 + y^2 + z^2 = 1 \text{ for } z \ge 0
+$$
+
+, and $C$ is its boundary.
 
 **Solution:**
-The surface $S$ is a 3D curved hemisphere dome. The boundary $C$ is the base ring of this dome lying in the $xy$-plane, which is exactly the unit circle $x^2 + y^2 = 1$ at $z=0$.
+The surface $S$ is a 3D curved hemisphere dome. The boundary $C$ is the base ring of this dome lying in the $xy$-plane, which is exactly the unit circle
+
+$$
+x^2 + y^2 = 1
+$$
+
+at $z=0$.
 
 #### Part 1: Evaluating the Line Integral (LHS)
 Since the boundary $C$ lies entirely in the $xy$-plane, $z = 0$ and $dz = 0$.
@@ -183,7 +212,11 @@ y & z & x
 \end{vmatrix} = \hat{\mathbf{i}}(0 - 1) - \hat{\mathbf{j}}(1 - 0) + \hat{\mathbf{k}}(0 - 1) = -\hat{\mathbf{i}} - \hat{\mathbf{j}} - \hat{\mathbf{k}}
 $$
 
-Find the unit normal vector $\hat{\mathbf{n}}$ for the sphere $g(x,y,z) = x^2 + y^2 + z^2 - 1 = 0$:
+Find the unit normal vector $\hat{\mathbf{n}}$ for the sphere
+
+$$
+g(x,y,z) = x^2 + y^2 + z^2 - 1 = 0:
+$$
 
 $$
 \nabla g = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}} \implies \hat{\mathbf{n}} = \frac{\nabla g}{|\nabla g|} = x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z\hat{\mathbf{k}}
@@ -246,8 +279,19 @@ $$
 \mathbf{F} = xy\hat{\mathbf{i}} + xy^2\hat{\mathbf{j}}.
 $$
 
-2.  $\nabla \times \mathbf{F} = (y^2 - x)\hat{\mathbf{k}}$.
-3.  $\hat{\mathbf{n}} = \hat{\mathbf{k}}$ (square lies in $xy$-plane).
+2.
+
+$$
+\nabla \times \mathbf{F} = (y^2 - x)\hat{\mathbf{k}}.
+$$
+
+3.
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{k}}
+$$
+
+(square lies in $xy$-plane).
 4.  Integral: $\iint_S (y^2 - x) \, dx \, dy$.
 By symmetry, the $\iint_S x \, dx \, dy$ component over the centered square is $0$. 
 The remaining integral

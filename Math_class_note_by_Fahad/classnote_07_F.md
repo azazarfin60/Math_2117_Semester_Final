@@ -2,7 +2,19 @@
 
 ## Page 61
 
-Set $w_1 = 1$, then $w_2 = 1$, then
+Set
+
+$$
+w_1 = 1
+$$
+
+, then
+
+$$
+w_2 = 1
+$$
+
+, then
 
 then
 
@@ -182,7 +194,11 @@ v_1 - v_2 = 0
 \end{matrix} \right\rbrace  \sim v_1 - v_2 = 0
 $$
 
-Set, $v_2 = 1$.
+Set,
+
+$$
+v_2 = 1.
+$$
 
 $$
 v_1 = 1
@@ -419,7 +435,13 @@ $$
 \mathbb{R}^n = \lbrace (a_1, a_2, a_3 \dots a_n) \mid a_1, a_2, a_3 \dots a_n \in \mathbb{R} \rbrace
 $$
 
-$\star$ **$\mathbb{R}^3 \rightarrow v_1 = (1, 0, 0), v_2 = (0, 1, 0), v_3 = (0, 0, 1)$**
+$\star$ **
+
+$$
+\mathbb{R}^3 \rightarrow v_1 = (1, 0, 0), v_2 = (0, 1, 0), v_3 = (0, 0, 1)
+$$
+
+**
 
 $$
 \text{row vector / column vector. We can also use vectors,}

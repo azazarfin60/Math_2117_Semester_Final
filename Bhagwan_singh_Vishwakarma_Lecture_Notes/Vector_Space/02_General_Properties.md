@@ -262,7 +262,11 @@ $$
 (a^{-1}a)\alpha = \bar{0}
 $$
 
-Since $a^{-1}a = 1$:
+Since
+
+$$
+a^{-1}a = 1:
+$$
 
 $$
 1 \cdot \alpha = \bar{0}

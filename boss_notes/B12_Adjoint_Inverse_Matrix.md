@@ -57,7 +57,11 @@ M_{11} =
 \end{vmatrix} = 2 - 3 = -1
 $$
 
-The cofactor $C_{11} = (-1)^{1+1}(-1) = -1$.
+The cofactor
+
+$$
+C_{11} = (-1)^{1+1}(-1) = -1.
+$$
 
 ---
 
@@ -71,7 +75,11 @@ The adjoint of a square matrix $A$ (written $\text{adj}(A)$) is the transpose of
 
 **Step 2**: Form the cofactor matrix $C$.
 
-**Step 3**: Transpose it: $\text{adj}(A) = C^T$.
+**Step 3**: Transpose it:
+
+$$
+\text{adj}(A) = C^T.
+$$
 
 ### Key Property
 
@@ -173,7 +181,11 @@ $$
 
 **Solution**:
 
-Determinant: $\lvert A \rvert = \cos^2\theta + \sin^2\theta = 1$.
+Determinant:
+
+$$
+\lvert A \rvert = \cos^2\theta + \sin^2\theta = 1.
+$$
 
 Cofactors:
 
@@ -200,7 +212,11 @@ $$
 \end{bmatrix}
 $$
 
-Since $\lvert A \rvert = 1$:
+Since
+
+$$
+\lvert A \rvert = 1:
+$$
 
 $$
 A^{-1} =
@@ -211,7 +227,13 @@ A^{-1} =
 \end{bmatrix}
 $$
 
-Notice: $A^{-1} = A^T$. This is because $A$ is an orthogonal matrix (rotation matrix).
+Notice:
+
+$$
+A^{-1} = A^T
+$$
+
+. This is because $A$ is an orthogonal matrix (rotation matrix).
 
 ---
 
@@ -330,10 +352,8 @@ $$
 Scale
 
 $$
-R_2 \to -\frac{1}{2}R_2
+R_2 \to -\frac{1}{2}R_2:
 $$
-
-:
 
 $$
 \begin{bmatrix}
@@ -450,7 +470,13 @@ If the problem says "verify Cayley-Hamilton and find inverse," use Cayley-Hamilt
 
 ### Proof: Inverse of a Product
 
-**Statement**: $(AB)^{-1} = B^{-1}A^{-1}$ (the order reverses).
+**Statement**:
+
+$$
+(AB)^{-1} = B^{-1}A^{-1}
+$$
+
+(the order reverses).
 
 **Proof**: We need to show that $B^{-1}A^{-1}$ satisfies the definition of the inverse of $AB$.
 
@@ -462,7 +488,23 @@ $$
 (B^{-1}A^{-1})(AB) = B^{-1}(A^{-1}A)B = B^{-1}IB = B^{-1}B = I
 $$
 
-Since $(AB)(B^{-1}A^{-1}) = I$ and $(B^{-1}A^{-1})(AB) = I$, we have $(AB)^{-1} = B^{-1}A^{-1}$.
+Since
+
+$$
+(AB)(B^{-1}A^{-1}) = I
+$$
+
+and
+
+$$
+(B^{-1}A^{-1})(AB) = I
+$$
+
+, we have
+
+$$
+(AB)^{-1} = B^{-1}A^{-1}.
+$$
 
 This proof has appeared in 2018 and 2023.
 
@@ -473,7 +515,13 @@ This proof has appeared in 2018 and 2023.
 - **Inverse appears in 5 out of 7 papers.** Usually "Find the inverse by row operations" or "Find the adjoint and inverse."
 - Row operations method is more common in recent papers (2019, 2021, 2023).
 - The adjoint method was popular in older papers (2017, 2020).
-- The proof $(AB)^{-1} = B^{-1}A^{-1}$ has appeared twice. Memorize it.
+- The proof
+
+$$
+(AB)^{-1} = B^{-1}A^{-1}
+$$
+
+has appeared twice. Memorize it.
 - Always check: $\lvert A \rvert \neq 0$ before attempting inverse. State this explicitly.
 - Verify your answer by multiplying $AA^{-1}$ (at least check one row) if time permits.
 

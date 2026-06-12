@@ -60,8 +60,17 @@ $$
 The output is $1$, which is a pure scalar number. 
 
 Other examples of scalar point functions include:
-- $f(x, y, z) = x y z^2$
-- $f(x, y, z) = x y z + x^2 y^2$
+-
+
+$$
+f(x, y, z) = x y z^2
+$$
+
+-
+
+$$
+f(x, y, z) = x y z + x^2 y^2
+$$
 
 Physical examples include temperature fields or density fields. At every point in a room, there is a specific temperature number, but no direction.
 

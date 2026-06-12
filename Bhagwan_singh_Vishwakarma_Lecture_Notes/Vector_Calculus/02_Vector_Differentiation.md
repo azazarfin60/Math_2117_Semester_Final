@@ -137,13 +137,17 @@ $$
 $$
 
 ### Problem 3: Exponential Derivative Identity
-**Question:** If $\vec{r} = \vec{a} e^{nt} + \vec{b} e^{-nt}$, where $\vec{a}$ and $\vec{b}$ are constant vectors, prove that
+**Question:** If
 
 $$
-\frac{d^2\vec{r}}{dt^2} - n^2\vec{r} = 0
+\vec{r} = \vec{a} e^{nt} + \vec{b} e^{-nt}
 $$
 
-.
+, where $\vec{a}$ and $\vec{b}$ are constant vectors, prove that
+
+$$
+\frac{d^2\vec{r}}{dt^2} - n^2\vec{r} = 0.
+$$
 
 **Solution:**
 Compute the first derivative. Since $\vec{a}$ and $\vec{b}$ are constant, only the exponential terms change:

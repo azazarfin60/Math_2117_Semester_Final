@@ -11,7 +11,11 @@
 
 ## Prerequisites
 - Knowledge of characteristic polynomials and characteristic equations.
-- Familiarity with matrix cofactors and the adjoint matrix identity $A \cdot \text{adj}(A) = \lvert A \rvertI$.
+- Familiarity with matrix cofactors and the adjoint matrix identity
+
+$$
+A \cdot \text{adj}(A) = \lvert A \rvertI.
+$$
 
 ## Core Content
 
@@ -47,7 +51,13 @@ $$
 
 Where $B_0, B_1, \dots, B_{n-1}$ are $n \times n$ matrices with scalar entries independent of $\lambda$.
 
-Using the fundamental matrix property for any square matrix $D$, $D \cdot \text{adj}(D) = \left\lvert  D \right\rvert I$. Applying this to $D = A - \lambda I$:
+Using the fundamental matrix property for any square matrix $D$,
+
+$$
+D \cdot \text{adj}(D) = \left\lvert  D \right\rvert I
+$$
+
+. Applying this to $D = A - \lambda I$:
 
 $$
 (A - \lambda I) \cdot \text{adj}(A - \lambda I) = \left| A - \lambda I \right|I

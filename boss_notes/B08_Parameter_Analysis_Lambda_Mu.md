@@ -24,7 +24,12 @@ You are given a system of equations where one or more coefficients are replaced 
 
 1. Write the augmented matrix $[A:B]$.
 2. Row-reduce to echelon form. The parameter will survive in the last row.
-3. The last row will look like $[0 \; 0 \; f(\lambda) \; \lvert  \; g(\lambda, \mu)]$.
+3. The last row will look like
+
+$$
+[0 \; 0 \; f(\lambda) \; \lvert  \; g(\lambda, \mu)].
+$$
+
 4. Analyze three cases based on $f(\lambda)$ and $g(\lambda, \mu)$.
 
 ### The Decision Table
@@ -97,7 +102,13 @@ $$
 \lambda = 3 \quad \text{and} \quad \mu \neq 10
 $$
 
-The last row becomes $[0 \; 0 \; 0 \; \lvert  \; \mu - 10]$, which says $0 = \mu - 10$. This is a contradiction since $\mu \neq 10$.
+The last row becomes
+
+$$
+[0 \; 0 \; 0 \; \lvert  \; \mu - 10]
+$$
+
+, which says $0 = \mu - 10$. This is a contradiction since $\mu \neq 10$.
 
 **(ii) Unique solution**: Need $\lambda - 3 \neq 0$:
 
@@ -236,7 +247,11 @@ $$
 \end{bmatrix}
 $$
 
-Factor the last entry: $k^2 - 4k + 3 = (k - 1)(k - 3)$.
+Factor the last entry:
+
+$$
+k^2 - 4k + 3 = (k - 1)(k - 3).
+$$
 
 **(i) Unique solution**: The coefficient part has rank 2 (not 3) because the last row of coefficients is all zeros. So this system can NEVER have a unique solution.
 
@@ -286,7 +301,13 @@ If $\lambda$ appears only in the coefficient matrix, the analysis is simpler. Yo
 ### The Determinant Shortcut
 
 For a 3x3 system with parameter $\lambda$:
-- Compute $D = \lvert A \rvert$ as a function of $\lambda$.
+- Compute
+
+$$
+D = \lvert A \rvert
+$$
+
+as a function of $\lambda$.
 - $D \neq 0$ means unique solution.
 - $D = 0$ means either no solution or infinite solutions. You must check further.
 

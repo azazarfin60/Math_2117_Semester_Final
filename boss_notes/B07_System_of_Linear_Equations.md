@@ -211,10 +211,8 @@ $$
  and
 
 $$
-R_3 \to -\frac{1}{4}R_3
+R_3 \to -\frac{1}{4}R_3:
 $$
-
-:
 
 $$
 \begin{bmatrix}
@@ -503,7 +501,13 @@ $$
 
 **Solution**:
 
-For a homogeneous system $AX = 0$, the trivial solution $x_1 = x_2 = x_3 = 0$ always exists.
+For a homogeneous system $AX = 0$, the trivial solution
+
+$$
+x_1 = x_2 = x_3 = 0
+$$
+
+always exists.
 
 Write the coefficient matrix and reduce:
 

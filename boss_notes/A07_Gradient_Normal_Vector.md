@@ -44,8 +44,18 @@ The direction of $\nabla\phi$ points toward the direction of greatest increase.
 
 ### Properties
 
-1. $\nabla(f \pm g) = \nabla f \pm \nabla g$
-2. $\nabla(fg) = f\nabla g + g\nabla f$
+1.
+
+$$
+\nabla(f \pm g) = \nabla f \pm \nabla g
+$$
+
+2.
+
+$$
+\nabla(fg) = f\nabla g + g\nabla f
+$$
+
 3.
 
 $$
@@ -106,11 +116,21 @@ $$
 
 ### Worked Example: Unit Normal (CT)
 
-**Problem**: Find the unit outward normal to $(x-1)^2 + y^2 + (z+2)^2 = 9$ at $(3, 1, -4)$.
+**Problem**: Find the unit outward normal to
+
+$$
+(x-1)^2 + y^2 + (z+2)^2 = 9
+$$
+
+at $(3, 1, -4)$.
 
 **Solution**:
 
-Let $f = (x-1)^2 + y^2 + (z+2)^2 - 9$.
+Let
+
+$$
+f = (x-1)^2 + y^2 + (z+2)^2 - 9.
+$$
 
 $$
 \nabla f = 2(x-1)\hat{i} + 2y\hat{j} + 2(z+2)\hat{k}
@@ -122,7 +142,11 @@ $$
 \nabla f = 4\hat{i} + 2\hat{j} - 4\hat{k}.
 $$
 
-Magnitude: $\lvert \nabla f \rvert = \sqrt{16 + 4 + 16} = 6$.
+Magnitude:
+
+$$
+\lvert \nabla f \rvert = \sqrt{16 + 4 + 16} = 6.
+$$
 
 $$
 \hat{n} = \frac{4\hat{i} + 2\hat{j} - 4\hat{k}}{6} = \frac{2}{3}\hat{i} + \frac{1}{3}\hat{j} - \frac{2}{3}\hat{k}
@@ -134,7 +158,19 @@ $$
 
 ### The Method
 
-The angle between two surfaces $\phi_1 = c_1$ and $\phi_2 = c_2$ at a point is the angle between their normal vectors:
+The angle between two surfaces
+
+$$
+\phi_1 = c_1
+$$
+
+and
+
+$$
+\phi_2 = c_2
+$$
+
+at a point is the angle between their normal vectors:
 
 $$
 \cos\theta = \frac{\nabla\phi_1 \cdot \nabla\phi_2}{|\nabla\phi_1||\nabla\phi_2|}
@@ -142,11 +178,29 @@ $$
 
 ### Must-Know Problem (Appeared 3 Times)
 
-**Problem**: Find the angle between $x^2 + y^2 + z^2 = 9$ and $z = x^2 + y^2 - 3$ at $(2, -1, 2)$.
+**Problem**: Find the angle between
+
+$$
+x^2 + y^2 + z^2 = 9
+$$
+
+and
+
+$$
+z = x^2 + y^2 - 3
+$$
+
+at $(2, -1, 2)$.
 
 **Solution**:
 
-Surface 1: $f_1 = x^2 + y^2 + z^2 - 9$. Gradient:
+Surface 1:
+
+$$
+f_1 = x^2 + y^2 + z^2 - 9
+$$
+
+. Gradient:
 
 $$
 \nabla f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}.
@@ -158,7 +212,13 @@ $$
 \vec{n}_1 = 4\hat{i} - 2\hat{j} + 4\hat{k}.
 $$
 
-Surface 2: $f_2 = x^2 + y^2 - z - 3$. Gradient:
+Surface 2:
+
+$$
+f_2 = x^2 + y^2 - z - 3
+$$
+
+. Gradient:
 
 $$
 \nabla f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}.
@@ -170,9 +230,21 @@ $$
 \vec{n}_2 = 4\hat{i} - 2\hat{j} - \hat{k}.
 $$
 
-Dot product: $\vec{n}_1 \cdot \vec{n}_2 = 16 + 4 - 4 = 16$.
+Dot product:
 
-Magnitudes: $\lvert \vec{n}_1 \rvert = 6$, $\lvert \vec{n}_2 \rvert = \sqrt{21}$.
+$$
+\vec{n}_1 \cdot \vec{n}_2 = 16 + 4 - 4 = 16.
+$$
+
+Magnitudes:
+
+$$
+\lvert \vec{n}_1 \rvert = 6,
+$$
+
+$$
+\lvert \vec{n}_2 \rvert = \sqrt{21}.
+$$
 
 $$
 \cos\theta = \frac{16}{6\sqrt{21}} = \frac{8}{3\sqrt{21}}
@@ -186,7 +258,13 @@ $$
 
 ## Finding the Gradient at a Point (PYQ 2024)
 
-**Problem**: If $Q = 3x^2y - y^3z^2$, find $\nabla Q$ at $(1, -2, -1)$.
+**Problem**: If
+
+$$
+Q = 3x^2y - y^3z^2
+$$
+
+, find $\nabla Q$ at $(1, -2, -1)$.
 
 **Solution**:
 

@@ -21,7 +21,13 @@ Eigenvalues and eigenvectors are crucial concepts for analyzing linear transform
 Let $A$ be a square matrix of order $n$, let $\lambda$ be an unknown scalar variable, and let $I$ be the identity matrix of the same order as $A$.
 
 The matrix $A - \lambda I$ is called the **characteristic matrix** of $A$.
-The polynomial obtained by expanding the determinant $\left\lvert  A - \lambda I \right\rvert $ is called the **characteristic polynomial**.
+The polynomial obtained by expanding the determinant
+
+$$
+\left\lvert  A - \lambda I \right\rvert
+$$
+
+is called the **characteristic polynomial**.
 Equating the characteristic polynomial to zero gives the **characteristic equation**:
 
 $$
@@ -29,7 +35,13 @@ $$
 $$
 
 ### Eigenvalues
-The roots of the characteristic equation $\left\lvert  A - \lambda I \right\rvert  = 0$ are called the eigenvalues (or characteristic roots, latent values) of matrix $A$.
+The roots of the characteristic equation
+
+$$
+\left\lvert  A - \lambda I \right\rvert  = 0
+$$
+
+are called the eigenvalues (or characteristic roots, latent values) of matrix $A$.
 An $n \times n$ square matrix has exactly $n$ eigenvalues (which may be real or complex, distinct or repeated). Eigenvalues are unique to a given matrix.
 
 ### Eigenvectors
@@ -42,9 +54,25 @@ $$
 This vector $X$ is called the eigenvector of $A$ corresponding to the eigenvalue $\lambda$. Eigenvectors are not unique; if $X$ is an eigenvector, then any scalar multiple $kX$ (where $k \neq 0$) is also an eigenvector.
 
 ### Working Rule for Eigenvalues and Eigenvectors
-1. **Find Characteristic Equation**: Form $\left\lvert  A - \lambda I \right\rvert  = 0$.
-2. **Find Eigenvalues**: Solve the polynomial equation for the roots $\lambda_1, \lambda_2, \dots, \lambda_n$.
-3. **Find Eigenvectors**: For each root $\lambda_i$, substitute it back into the equation $(A - \lambda_i I)X = 0$. Solve this homogeneous system using row reductions to Echelon form to find the non-zero vector $X$.
+1. **Find Characteristic Equation**: Form
+
+$$
+\left\lvert  A - \lambda I \right\rvert  = 0.
+$$
+
+2. **Find Eigenvalues**: Solve the polynomial equation for the roots
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n.
+$$
+
+3. **Find Eigenvectors**: For each root $\lambda_i$, substitute it back into the equation
+
+$$
+(A - \lambda_i I)X = 0
+$$
+
+. Solve this homogeneous system using row reductions to Echelon form to find the non-zero vector $X$.
 
 ### Solved Example
 Find the eigenvalues and eigenvectors for:
@@ -84,7 +112,24 @@ $$
 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
-Row operations yield $x_1 + x_2 = 0$. Choosing $x_1 = 1$, we get $x_2 = -1$.
+Row operations yield
+
+$$
+x_1 + x_2 = 0
+$$
+
+. Choosing
+
+$$
+x_1 = 1
+$$
+
+, we get
+
+$$
+x_2 = -1.
+$$
+
 Eigenvector
 
 $$

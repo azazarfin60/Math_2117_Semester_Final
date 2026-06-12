@@ -43,7 +43,11 @@ $$
 $$
 
 Find magnitude and area:
-$\lvert \vec{PQ} \times \vec{PR} \rvert = \sqrt{(-10)^2 + (-7)^2 + 4^2} = \sqrt{100 + 49 + 16} = \sqrt{165}$
+
+$$
+\lvert \vec{PQ} \times \vec{PR} \rvert = \sqrt{(-10)^2 + (-7)^2 + 4^2} = \sqrt{100 + 49 + 16} = \sqrt{165}
+$$
+
 Area
 
 $$
@@ -54,7 +58,13 @@ $$
 
 ## Scalar Triple Product and Volume
 
-The scalar triple product $\vec{A} \cdot (\vec{B} \times \vec{C})$ calculates the volume of a parallelepiped (a 3D box with sheared sides) whose adjacent edges are $\vec{A}, \vec{B}, \vec{C}$.
+The scalar triple product
+
+$$
+\vec{A} \cdot (\vec{B} \times \vec{C})
+$$
+
+calculates the volume of a parallelepiped (a 3D box with sheared sides) whose adjacent edges are $\vec{A}, \vec{B}, \vec{C}$.
 
 It is evaluated as a $3 \times 3$ determinant:
 
@@ -69,7 +79,13 @@ $$
 
 **Geometric Proof**:
 The cross product $\vec{B} \times \vec{C}$ gives a normal vector whose magnitude is the area of the base.
-The dot product $\vec{A} \cdot (\vec{B} \times \vec{C})$ projects the third edge $\vec{A}$ onto this normal vector, effectively multiplying the base area by the perpendicular height.
+The dot product
+
+$$
+\vec{A} \cdot (\vec{B} \times \vec{C})
+$$
+
+projects the third edge $\vec{A}$ onto this normal vector, effectively multiplying the base area by the perpendicular height.
 Thus:
 
 $$
@@ -106,7 +122,13 @@ $$
 = 2(4 - 1) - (-3)(2 - (-3)) + 4(-1 - 6) = 2(3) + 3(5) + 4(-7) = 6 + 15 - 28 = -7
 $$
 
-Volume is the absolute value: $\lvert -7 \rvert = 7$ cubic units.
+Volume is the absolute value:
+
+$$
+\lvert -7 \rvert = 7
+$$
+
+cubic units.
 
 ---
 

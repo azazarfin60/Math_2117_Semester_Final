@@ -14,7 +14,19 @@
 ## Prerequisites
 Before tackling numerical problems, we recall two quick but powerful theorems regarding linear transformations $T : U \to V$:
 1.  **Invertibility**: $T$ is invertible if and only if $T$ is non-singular. (A direct consequence of our previous theorems).
-2.  **Generators of Range**: If a set of vectors $S = \lbrace u_1, u_2, \dots, u_n \rbrace$ spans the domain $U$, then their images under $T$, which are $\lbrace T(u_1), T(u_2), \dots, T(u_n) \rbrace$, will span the range space $R(T)$.
+2.  **Generators of Range**: If a set of vectors
+
+$$
+S = \lbrace u_1, u_2, \dots, u_n \rbrace
+$$
+
+spans the domain $U$, then their images under $T$, which are
+
+$$
+\lbrace T(u_1), T(u_2), \dots, T(u_n) \rbrace
+$$
+
+, will span the range space $R(T)$.
 
 We will use the second theorem extensively: to find the range space of a transformation, we simply find the images of the standard basis vectors of the domain.
 
@@ -23,7 +35,13 @@ We will use the second theorem extensively: to find the range space of a transfo
 ## Numerical Example 1
 
 **Problem Statement:**
-Show that the transformation $T : \mathbb{R}^2 \to \mathbb{R}^3$ defined by:
+Show that the transformation
+
+$$
+T : \mathbb{R}^2 \to \mathbb{R}^3
+$$
+
+defined by:
 
 $$
 T(a, b) = (a + b, a - b, b)
@@ -32,7 +50,19 @@ $$
 is a linear transformation. Then find its range space, rank, null space, and nullity, and verify the Rank-Nullity Theorem.
 
 ### 1. Prove Linearity
-Let $\alpha = (a_1, b_1)$ and $\beta = (a_2, b_2)$ be vectors in $\mathbb{R}^2$, and let $x, y \in \mathbb{R}$ be scalars.
+Let
+
+$$
+\alpha = (a_1, b_1)
+$$
+
+and
+
+$$
+\beta = (a_2, b_2)
+$$
+
+be vectors in $\mathbb{R}^2$, and let $x, y \in \mathbb{R}$ be scalars.
 Evaluate $T(x\alpha + y\beta)$:
 
 $$
@@ -64,7 +94,13 @@ $$
 Thus, $T$ is a linear transformation.
 
 ### 2. Range Space and Rank
-The domain is $\mathbb{R}^2$. Its standard basis is $S = \lbrace e_1(1, 0), e_2(0, 1) \rbrace$. Let's find their images:
+The domain is $\mathbb{R}^2$. Its standard basis is
+
+$$
+S = \lbrace e_1(1, 0), e_2(0, 1) \rbrace
+$$
+
+. Let's find their images:
 *   $T(1, 0) = (1+0, 1-0, 0) = (1, 1, 0)$
 *   $T(0, 1) = (0+1, 0-1, 1) = (1, -1, 1)$
 
@@ -111,7 +147,13 @@ The dimension of the domain $\mathbb{R}^2$ is 2. The theorem holds perfectly.
 ## Numerical Example 2
 
 **Problem Statement:**
-Verify the Rank-Nullity Theorem for the linear transformation $T : \mathbb{R}^3 \to \mathbb{R}^3$ defined by its action on the standard basis $\lbrace e_1, e_2, e_3 \rbrace$:
+Verify the Rank-Nullity Theorem for the linear transformation
+
+$$
+T : \mathbb{R}^3 \to \mathbb{R}^3
+$$
+
+defined by its action on the standard basis $\lbrace e_1, e_2, e_3 \rbrace$:
 
 $$
 T(e_1) = e_1 - e_2, \quad T(e_2) = 2e_2 + e_3, \quad T(e_3) = e_1 + e_2 + e_3
@@ -119,9 +161,23 @@ $$
 
 ### 1. Range Space and Rank
 Write the given images as coordinate vectors:
-*   $T(e_1) = (1, -1, 0)$
-*   $T(e_2) = (0, 2, 1)$
-*   $T(e_3) = (1, 1, 1)$
+*
+
+$$
+T(e_1) = (1, -1, 0)
+$$
+
+*
+
+$$
+T(e_2) = (0, 2, 1)
+$$
+
+*
+
+$$
+T(e_3) = (1, 1, 1)
+$$
 
 These vectors span $R(T)$. However, observe that:
 
@@ -134,7 +190,11 @@ The remaining set $\lbrace (1, -1, 0), (0, 2, 1) \rbrace$ is linearly independen
 *   **Rank $\rho(T)$** = **2**
 
 ### 2. Null Space and Nullity
-Let $\alpha = (x, y, z) = xe_1 + ye_2 + ze_3 \in N(T)$.
+Let
+
+$$
+\alpha = (x, y, z) = xe_1 + ye_2 + ze_3 \in N(T).
+$$
 
 $$
 T(\alpha) = (0, 0, 0) \implies xT(e_1) + yT(e_2) + zT(e_3) = (0, 0, 0)
@@ -179,7 +239,13 @@ $$
 Show that $T$ is non-singular and invertible, and find a formula for $T^{-1}$.
 
 ### 1. Prove Non-Singularity
-Set $T(x_1, x_2, x_3) = (0, 0, 0)$ to find the null space. This creates a homogeneous system $AX = 0$:
+Set
+
+$$
+T(x_1, x_2, x_3) = (0, 0, 0)
+$$
+
+to find the null space. This creates a homogeneous system $AX = 0$:
 
 $$
 A =
@@ -196,15 +262,39 @@ $$
 \det(A) = 3(4 - 0) - 0 + 1(-4 - (-1)) = 12 - 3 = 9
 $$
 
-Since $\det(A) = 9 \neq 0$, the matrix is non-singular, meaning the homogeneous system has only the trivial solution $x_1 = 0, x_2 = 0, x_3 = 0$.
+Since $\det(A) = 9 \neq 0$, the matrix is non-singular, meaning the homogeneous system has only the trivial solution
+
+$$
+x_1 = 0, x_2 = 0, x_3 = 0.
+$$
+
 Thus, $N(T) = \lbrace (0, 0, 0) \rbrace$, proving that $T$ is non-singular. By our theorem, since it is an operator on a finite-dimensional space and is non-singular, it is invertible.
 
 ### 2. Find Inverse Formula
-Set up the inverse relation: $T^{-1}(x_1, x_2, x_3) = (y_1, y_2, y_3) \iff T(y_1, y_2, y_3) = (x_1, x_2, x_3)$.
+Set up the inverse relation:
+
+$$
+T^{-1}(x_1, x_2, x_3) = (y_1, y_2, y_3) \iff T(y_1, y_2, y_3) = (x_1, x_2, x_3).
+$$
+
 Substitute $(y_1, y_2, y_3)$ into the definition of $T$:
-1.  $3y_1 + y_3 = x_1 \implies y_3 = x_1 - 3y_1$
-2.  $-2y_1 + y_2 = x_2 \implies y_2 = x_2 + 2y_1$
-3.  $-y_1 + 2y_2 + 4y_3 = x_3$
+1.
+
+$$
+3y_1 + y_3 = x_1 \implies y_3 = x_1 - 3y_1
+$$
+
+2.
+
+$$
+-2y_1 + y_2 = x_2 \implies y_2 = x_2 + 2y_1
+$$
+
+3.
+
+$$
+-y_1 + 2y_2 + 4y_3 = x_3
+$$
 
 Substitute (1) and (2) into (3):
 

@@ -75,7 +75,19 @@ $$
 (\lambda - 6)(\lambda - 1) = 0
 $$
 
-The eigenvalues are **$\lambda_1 = 1$** and **$\lambda_2 = 6$**.
+The eigenvalues are **
+
+$$
+\lambda_1 = 1
+$$
+
+** and **
+
+$$
+\lambda_2 = 6
+$$
+
+**.
 
 **Step 2: Find Eigenvector for $\lambda = 1$**
 
@@ -96,7 +108,12 @@ $$
 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies 3x_1 + 2x_2 = 0
 $$
 
-We have 1 free variable. Choose $x_1 = 2 \implies x_2 = -3$.
+We have 1 free variable. Choose
+
+$$
+x_1 = 2 \implies x_2 = -3.
+$$
+
 The eigenvector and its eigenspace:
 
 $$
@@ -126,7 +143,12 @@ $$
 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies -2x_1 + 2x_2 = 0 \implies x_1 = x_2
 $$
 
-Choose $x_2 = 1 \implies x_1 = 1$.
+Choose
+
+$$
+x_2 = 1 \implies x_1 = 1.
+$$
+
 The eigenvector and its eigenspace:
 
 $$
@@ -205,10 +227,23 @@ $$
 $$
 
 This gives equations:
-1.  $-x_1 - x_2 + x_3 = 0$
-2.  $-3x_2 - 3x_3 = 0 \implies x_2 = -x_3$
+1.
 
-Choose $x_3 = 1 \implies x_2 = -1 \implies x_1 = 2$.
+$$
+-x_1 - x_2 + x_3 = 0
+$$
+
+2.
+
+$$
+-3x_2 - 3x_3 = 0 \implies x_2 = -x_3
+$$
+
+Choose
+
+$$
+x_3 = 1 \implies x_2 = -1 \implies x_1 = 2.
+$$
 
 $$
 X^{(1)} =
@@ -243,7 +278,17 @@ $$
 
 We have 3 variables and only 1 equation, meaning we have $3 - 1 = 2$ free parameters. We make two separate sets of choices to find two linearly independent eigenvectors:
 
-*   **Choice A:** Let $x_3 = 1$ and $x_2 = -1$.
+*   **Choice A:** Let
+
+$$
+x_3 = 1
+$$
+
+and
+
+$$
+x_2 = -1.
+$$
 
 $$
 2x_1 - (-1) + 1 = 0 \implies 2x_1 = -2 \implies x_1 = -1
@@ -258,7 +303,17 @@ X^{(2)} =
 \end{bmatrix}
 $$
 
-*   **Choice B:** Let $x_3 = 0$ and $x_2 = 2$.
+*   **Choice B:** Let
+
+$$
+x_3 = 0
+$$
+
+and
+
+$$
+x_2 = 2.
+$$
 
 $$
 2x_1 - (2) + 0 = 0 \implies 2x_1 = 2 \implies x_1 = 1

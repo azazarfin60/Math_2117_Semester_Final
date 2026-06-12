@@ -109,7 +109,11 @@ $n = \text{must be equal}$.
   * $\vdots$
   * $A^n$
 
-* Symmetry Matrix :- $A^t = A$
+* Symmetry Matrix :-
+
+$$
+A^t = A
+$$
 
 $$
 A =
@@ -134,7 +138,12 @@ $$
 **HW**
 * why do we need to study symmetric matrixes
 
-* skew-symmetric / Anti-symmetric :- $A^t = -A$
+* skew-symmetric / Anti-symmetric :-
+
+$$
+A^t = -A
+$$
+
   $* \text{main-diag} = 0$.
 
 $$
@@ -173,9 +182,23 @@ a_{31} & a_{32} & a_{33}
 \end{bmatrix}
 $$
 
-- $a_{11}, a_{22}, a_{33} \rightarrow \text{Main-diagonal}$
-- $a_{12}, a_{23} \rightarrow \text{Super-diagonal}$
-- $a_{21}, a_{32} \rightarrow \text{Sub-diagonal}$
+-
+
+$$
+a_{11}, a_{22}, a_{33} \rightarrow \text{Main-diagonal}
+$$
+
+-
+
+$$
+a_{12}, a_{23} \rightarrow \text{Super-diagonal}
+$$
+
+-
+
+$$
+a_{21}, a_{32} \rightarrow \text{Sub-diagonal}
+$$
 
 - $\text{row} > \text{column} \rightarrow \text{Sub-diagonal}$
 - $\text{row} < \text{column} \rightarrow \text{Super-diagonal}$

@@ -42,7 +42,13 @@ $$
 (B^T A^T)_{ij} = \sum_{k=1}^{n} (B^T)_{ik}(A^T)_{kj} = \sum_{k=1}^{n} b_{ki} \cdot a_{jk} = \sum_{k=1}^{n} a_{jk} b_{ki}
 $$
 
-Since $(C^T)_{ij} = (B^T A^T)_{ij}$ for all $i,j$:
+Since
+
+$$
+(C^T)_{ij} = (B^T A^T)_{ij}
+$$
+
+for all $i,j$:
 
 $$
 (AB)^T = B^T A^T \qquad \blacksquare
@@ -76,7 +82,17 @@ $$
 (B^{-1}A^{-1})(AB) = B^{-1}(A^{-1}A)B = B^{-1}IB = B^{-1}B = I
 $$
 
-Since $(AB)(B^{-1}A^{-1}) = I$ and $(B^{-1}A^{-1})(AB) = I$:
+Since
+
+$$
+(AB)(B^{-1}A^{-1}) = I
+$$
+
+and
+
+$$
+(B^{-1}A^{-1})(AB) = I:
+$$
 
 $$
 (AB)^{-1} = B^{-1}A^{-1} \qquad \blacksquare
@@ -96,9 +112,21 @@ $$
 
 ### Proof (by induction)
 
-**Base case** ($n = 1$): $(A^{-1})^1 = (A^1)^{-1}$. True.
+**Base case** ($n = 1$):
 
-**Inductive step**: Assume $(A^{-1})^k = (A^k)^{-1}$ holds for some $k$.
+$$
+(A^{-1})^1 = (A^1)^{-1}
+$$
+
+. True.
+
+**Inductive step**: Assume
+
+$$
+(A^{-1})^k = (A^k)^{-1}
+$$
+
+holds for some $k$.
 
 For $n = k + 1$:
 
@@ -106,7 +134,11 @@ $$
 (A^{k+1})^{-1} = (A^k \cdot A)^{-1} = A^{-1} \cdot (A^k)^{-1}
 $$
 
-using Proof 2. By the inductive hypothesis, $(A^k)^{-1} = (A^{-1})^k$:
+using Proof 2. By the inductive hypothesis,
+
+$$
+(A^k)^{-1} = (A^{-1})^k:
+$$
 
 $$
 A^{-1} \cdot (A^{-1})^k = (A^{-1})^{k+1}
@@ -134,7 +166,11 @@ A_\alpha =
 \end{pmatrix}
 $$
 
-then $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$.
+then
+
+$$
+A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha.
+$$
 
 ### Proof
 
@@ -180,15 +216,19 @@ $$
 
 ### Statement
 
-A square matrix $A$ is singular if $\lvert A \rvert = 0$. It is non-singular if $\lvert A \rvert \neq 0$.
+A square matrix $A$ is singular if
+
+$$
+\lvert A \rvert = 0
+$$
+
+. It is non-singular if $\lvert A \rvert \neq 0$.
 
 A singular matrix has no inverse. A non-singular matrix is invertible and
 
 $$
-A^{-1} = \frac{1}{\lvert A \rvert}\text{adj}(A)
+A^{-1} = \frac{1}{\lvert A \rvert}\text{adj}(A).
 $$
-
-.
 
 This definition is often asked as a 1-2 mark opener before a proof question.
 
@@ -196,8 +236,20 @@ This definition is often asked as a 1-2 mark opener before a proof question.
 
 ## Exam Patterns
 
-- The $(AB)^{-1} = B^{-1}A^{-1}$ proof has appeared in 2018 and 2023. This is the most important proof.
-- The $(AB)^T = B^T A^T$ proof appeared in 2020.
+- The
+
+$$
+(AB)^{-1} = B^{-1}A^{-1}
+$$
+
+proof has appeared in 2018 and 2023. This is the most important proof.
+- The
+
+$$
+(AB)^T = B^T A^T
+$$
+
+proof appeared in 2020.
 - The rotation matrix property appeared in 2017.
 - These proofs are short (5-8 lines each). Write them neatly with clear steps.
 - Always state what you need to prove before starting.

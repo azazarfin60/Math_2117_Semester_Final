@@ -32,18 +32,64 @@ $$
 
 **Part 1: Prove $\text{Ker}(F)$ is a subspace of $V$**
 We must verify the three subspace properties for $\text{Ker}(F)$:
-1. **Zero Vector**: Since $F$ is linear, $F(0_V) = 0_U$. Therefore, $0_V \in \text{Ker}(F)$.
-2. **Closure under Addition**: Let $v_1, v_2 \in \text{Ker}(F)$. By definition, $F(v_1) = 0_U$ and $F(v_2) = 0_U$.
-   $F(v_1 + v_2) = F(v_1) + F(v_2) = 0_U + 0_U = 0_U$. Thus, $v_1 + v_2 \in \text{Ker}(F)$.
+1. **Zero Vector**: Since $F$ is linear,
+
+$$
+F(0_V) = 0_U
+$$
+
+. Therefore, $0_V \in \text{Ker}(F)$.
+2. **Closure under Addition**: Let $v_1, v_2 \in \text{Ker}(F)$. By definition,
+
+$$
+F(v_1) = 0_U
+$$
+
+and
+
+$$
+F(v_2) = 0_U.
+$$
+
+$$
+F(v_1 + v_2) = F(v_1) + F(v_2) = 0_U + 0_U = 0_U
+$$
+
+. Thus, $v_1 + v_2 \in \text{Ker}(F)$.
 3. **Closure under Scalar Multiplication**: Let $v \in \text{Ker}(F)$ and let $k$ be a scalar.
-   $F(kv) = kF(v) = k(0_U) = 0_U$. Thus, $kv \in \text{Ker}(F)$.
+
+$$
+F(kv) = kF(v) = k(0_U) = 0_U
+$$
+
+. Thus, $kv \in \text{Ker}(F)$.
 Since all three hold, $\text{Ker}(F)$ is a subspace. $\blacksquare$
 
 **Part 2: Prove $\text{Im}(F)$ is a subspace of $U$**
 We must verify the three subspace properties for $\text{Im}(F)$:
-1. **Zero Vector**: Since $F(0_V) = 0_U$, the zero vector $0_U$ has a pre-image. Thus, $0_U \in \text{Im}(F)$.
-2. **Closure under Addition**: Let $u_1, u_2 \in \text{Im}(F)$. Then there exist $v_1, v_2 \in V$ such that $F(v_1) = u_1$ and $F(v_2) = u_2$.
-   $u_1 + u_2 = F(v_1) + F(v_2) = F(v_1 + v_2)$. 
+1. **Zero Vector**: Since
+
+$$
+F(0_V) = 0_U
+$$
+
+, the zero vector $0_U$ has a pre-image. Thus, $0_U \in \text{Im}(F)$.
+2. **Closure under Addition**: Let $u_1, u_2 \in \text{Im}(F)$. Then there exist $v_1, v_2 \in V$ such that
+
+$$
+F(v_1) = u_1
+$$
+
+and
+
+$$
+F(v_2) = u_2.
+$$
+
+$$
+u_1 + u_2 = F(v_1) + F(v_2) = F(v_1 + v_2).
+$$
+
    Since $v_1 + v_2 \in V$, the sum $u_1 + u_2$ is the image of a vector in $V$. Thus, $u_1 + u_2 \in \text{Im}(F)$.
 3. **Closure under Scalar Multiplication**: Let $u \in \text{Im}(F)$ and let $k$ be a scalar. There exists $v \in V$ such that $F(v) = u$.
    $ku = kF(v) = F(kv)$.

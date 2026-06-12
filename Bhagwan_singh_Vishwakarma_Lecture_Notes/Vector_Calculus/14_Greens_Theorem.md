@@ -47,10 +47,8 @@ $$
 Where $C$ is the rectangle with vertices
 
 $$
-(0,0), (\pi, 0), (\pi, \frac{\pi}{2}), (0, \frac{\pi}{2})
+(0,0), (\pi, 0), (\pi, \frac{\pi}{2}), (0, \frac{\pi}{2}).
 $$
-
-.
 
 **Solution:**
 We identify the components $P$ and $Q$ from the integral form $\oint_C (P \, dx + Q \, dy)$:
@@ -113,13 +111,23 @@ $$
 \oint_C (x + 2y) \, dx + (y + 3x) \, dy
 $$
 
-where $C$ is the unit circle $x^2 + y^2 = 1$.
+where $C$ is the unit circle
+
+$$
+x^2 + y^2 = 1.
+$$
 
 **Solution:**
 To verify, we must independently compute both the LHS (Line Integral) and the RHS (Double Integral).
 
 **Part 1: Line Integral (LHS)**
-Convert the circle $x^2+y^2=1$ to parametric coordinates: $x = \cos\theta, dx = -\sin\theta d\theta$ and $y = \sin\theta, dy = \cos\theta d\theta$, for $\theta \in [0, 2\pi]$.
+Convert the circle
+
+$$
+x^2+y^2=1
+$$
+
+to parametric coordinates: $x = \cos\theta, dx = -\sin\theta d\theta$ and $y = \sin\theta, dy = \cos\theta d\theta$, for $\theta \in [0, 2\pi]$.
 
 $$
 \oint_C = \int_0^{2\pi} \left[ (\cos\theta + 2\sin\theta)(-\sin\theta) + (\sin\theta + 3\cos\theta)(\cos\theta) \right] d\theta
@@ -172,7 +180,12 @@ $$
 \iint_S 1 \, dx \, dy = \text{Area of region } S
 $$
 
-Since $S$ is a circle of radius $R=1$, its area is $\pi R^2 = \pi$.
+Since $S$ is a circle of radius $R=1$, its area is
+
+$$
+\pi R^2 = \pi.
+$$
+
 **RHS = $\pi$**
 Since **LHS = RHS = $\pi$**, Green's Theorem is verified.
 
@@ -185,14 +198,32 @@ $$
 \oint_C (xy + y^2) \, dx + x^2 \, dy
 $$
 
-where $C$ is the closed curve bounded by $y = x^2$ and $y = x$.
+where $C$ is the closed curve bounded by
+
+$$
+y = x^2
+$$
+
+and $y = x$.
 
 **Solution:**
-The intersection points of $y = x^2$ and $y = x$ are $(0,0)$ and $(1,1)$. 
+The intersection points of
+
+$$
+y = x^2
+$$
+
+and $y = x$ are $(0,0)$ and $(1,1)$.
 
 **Part 1: Line Integral (LHS)**
 The boundary $C$ has two paths traversed in an anticlockwise loop:
-1.  **$C_1$ (Lower Curve):** Along $y = x^2$ from $x=0$ to $x=1$. ($dy = 2x \, dx$)
+1.  **$C_1$ (Lower Curve):** Along
+
+$$
+y = x^2
+$$
+
+from $x=0$ to $x=1$. ($dy = 2x \, dx$)
 
 $$
 I_1 = \int_0^1 \left[ (x(x^2) + (x^2)^2) + x^2(2x) \right] dx = \int_0^1 (3x^3 + x^4) \, dx = \left[ \frac{3}{4}x^4 + \frac{1}{5}x^5 \right]_0^1 = \frac{19}{20}
@@ -207,30 +238,30 @@ $$
 Summing the paths:
 
 $$
-\text{LHS} = \frac{19}{20} - 1 = -\frac{1}{20}
+\text{LHS} = \frac{19}{20} - 1 = -\frac{1}{20}.
 $$
-
-.
 
 **Part 2: Double Integral (RHS)**
 
 $$
-P = xy + y^2 \implies \frac{\partial P}{\partial y} = x + 2y
+P = xy + y^2 \implies \frac{\partial P}{\partial y} = x + 2y.
 $$
 
-.
-
 $$
-Q = x^2 \implies \frac{\partial Q}{\partial x} = 2x
+Q = x^2 \implies \frac{\partial Q}{\partial x} = 2x.
 $$
-
-.
 
 $$
 \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 2x - (x + 2y) = x - 2y
 $$
 
-Set up the bounds: For a given $x \in [0, 1]$, $y$ ranges from the lower curve ($y=x^2$) to the upper curve ($y=x$).
+Set up the bounds: For a given $x \in [0, 1]$, $y$ ranges from the lower curve (
+
+$$
+y=x^2
+$$
+
+) to the upper curve ($y=x$).
 
 $$
 \text{RHS} = \int_0^1 \int_{x^2}^x (x - 2y) \, dy \, dx = \int_0^1 [xy - y^2]_{x^2}^x \, dx

@@ -31,7 +31,13 @@ If asked for a component of velocity or acceleration in a specific direction, ta
 
 ## Worked Example 1: Directional Components (PYQ 2019, 2023)
 
-**Problem**: A particle moves along $x = 2t^2, y = t^2 - 4t, z = 3t - 5$. Find the components of velocity and acceleration at $t=1$ in the direction of
+**Problem**: A particle moves along
+
+$$
+x = 2t^2, y = t^2 - 4t, z = 3t - 5
+$$
+
+. Find the components of velocity and acceleration at $t=1$ in the direction of
 
 $$
 \vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}.

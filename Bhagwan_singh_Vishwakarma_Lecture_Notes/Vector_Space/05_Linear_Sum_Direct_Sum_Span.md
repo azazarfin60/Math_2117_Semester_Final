@@ -17,7 +17,13 @@ Before we dive into creating sums from different subspaces, we need to know how 
 ## Linear Combination of Vectors
 If we are given a set of vectors, we can mix them together using scalars to create a new vector. This process is called forming a linear combination.
 
-Let $\alpha_1, \alpha_2, \ldots, \alpha_n$ be vectors in a vector space $V(F)$.
+Let
+
+$$
+\alpha_1, \alpha_2, \ldots, \alpha_n
+$$
+
+be vectors in a vector space $V(F)$.
 Let $a_1, a_2, \ldots, a_n \in F$ be scalars from our field.
 
 The **linear combination** of these vectors is defined as:
@@ -33,7 +39,13 @@ Because vector spaces are closed under scalar multiplication and vector addition
 ## Linear Span of a Set
 What happens if we take a set of vectors and form *every possible* linear combination using every possible scalar from the field? We generate a massive set of new vectors. This new set is called the linear span.
 
-Let $S = \lbrace \alpha_1, \alpha_2, \ldots, \alpha_n \rbrace \subseteq V(F)$ be a set of vectors.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \ldots, \alpha_n \rbrace \subseteq V(F)
+$$
+
+be a set of vectors.
 
 The **linear span** of $S$, denoted by $L(S)$ or $L[S]$, is the set of all possible linear combinations of the vectors in $S$.
 
@@ -63,8 +75,18 @@ We can easily prove that $W_1 + W_2$ is a vector subspace of $V(F)$ using the on
 
 Let us pick two vectors $\alpha$ and $\beta$ from $W_1 + W_2$.
 By definition, they must be formed by sums:
-*   $\alpha = \alpha_1 + \alpha_2$
-*   $\beta = \beta_1 + \beta_2$
+*
+
+$$
+\alpha = \alpha_1 + \alpha_2
+$$
+
+*
+
+$$
+\beta = \beta_1 + \beta_2
+$$
+
 where $\alpha_1, \beta_1 \in W_1$ and $\alpha_2, \beta_2 \in W_2$.
 
 Now, let $a, b \in F$ be any two scalars. We check their linear combination:
@@ -105,18 +127,53 @@ Let $W_1$ and $W_2$ be two subspaces of $V(F)$.
 The **direct sum** of $W_1$ and $W_2$ is denoted by $W_1 \oplus W_2$.
 
 It is defined identically to the linear sum, but with one critical rule: **every element is uniquely represented**.
-This means if you write a vector $\alpha \in W_1 \oplus W_2$ as $\alpha = \alpha_1 + \beta_1$, there is absolutely no other pair of vectors from $W_1$ and $W_2$ that can sum to $\alpha$.
+This means if you write a vector $\alpha \in W_1 \oplus W_2$ as
+
+$$
+\alpha = \alpha_1 + \beta_1
+$$
+
+, there is absolutely no other pair of vectors from $W_1$ and $W_2$ that can sum to $\alpha$.
 
 ### The Direct Sum Characterization Theorem
 This theorem gives us an easy way to check if a regular sum is actually a direct sum.
 
-**Theorem:** A vector space $V$ is the direct sum of $W_1$ and $W_2$ ($V = W_1 \oplus W_2$) if and only if two conditions hold:
-1. $V = W_1 + W_2$ (It is a linear sum)
-2. $W_1 \cap W_2 = \lbrace \bar{0} \rbrace$ (Their intersection contains only the zero vector)
+**Theorem:** A vector space $V$ is the direct sum of $W_1$ and $W_2$ (
+
+$$
+V = W_1 \oplus W_2
+$$
+
+) if and only if two conditions hold:
+1.
+
+$$
+V = W_1 + W_2
+$$
+
+(It is a linear sum)
+2.
+
+$$
+W_1 \cap W_2 = \lbrace \bar{0} \rbrace
+$$
+
+(Their intersection contains only the zero vector)
 
 **Proof Part 1: Condition is necessary**
-Assume $V = W_1 \oplus W_2$.
-By definition, every element is a sum, so condition 1 ($V = W_1 + W_2$) holds automatically.
+Assume
+
+$$
+V = W_1 \oplus W_2.
+$$
+
+By definition, every element is a sum, so condition 1 (
+
+$$
+V = W_1 + W_2
+$$
+
+) holds automatically.
 To prove condition 2, suppose for a contradiction that the intersection contains a non-zero vector $\alpha \neq \bar{0}$.
 Since $\alpha$ is in both $W_1$ and $W_2$, we can write $\alpha$ in two ways:
 *   First way: $\alpha = \alpha + \bar{0}$ (where $\alpha \in W_1$ and $\bar{0} \in W_2$)
@@ -125,7 +182,19 @@ Since $\alpha$ is in both $W_1$ and $W_2$, we can write $\alpha$ in two ways:
 This gives us two different representations for the same vector $\alpha$. But we assumed $V$ is a direct sum, which requires uniqueness. This is a contradiction. Thus, our assumption was wrong, and $W_1 \cap W_2$ can only contain the zero vector.
 
 **Proof Part 2: Condition is sufficient**
-Assume $V = W_1 + W_2$ and $W_1 \cap W_2 = \lbrace \bar{0} \rbrace$. We must prove the representation is unique.
+Assume
+
+$$
+V = W_1 + W_2
+$$
+
+and
+
+$$
+W_1 \cap W_2 = \lbrace \bar{0} \rbrace
+$$
+
+. We must prove the representation is unique.
 Let us suppose a vector $\alpha$ has two representations:
 
 $$
@@ -168,7 +237,11 @@ $$
 \beta_2 - \beta_1 = \bar{0} \implies \beta_1 = \beta_2
 $$
 
-Since the elements are exactly the same, the representation is unique. Therefore, $V = W_1 \oplus W_2$.
+Since the elements are exactly the same, the representation is unique. Therefore,
+
+$$
+V = W_1 \oplus W_2.
+$$
 
 ---
 
@@ -177,7 +250,13 @@ Since the elements are exactly the same, the representation is unique. Therefore
 *   The **linear span** is the set of all possible linear combinations of a set.
 *   The **linear sum** $W_1 + W_2$ is always a subspace.
 *   A **direct sum** $W_1 \oplus W_2$ is a sum where every element is uniquely formed.
-*   A sum is a direct sum if and only if the subspaces share nothing but the zero vector ($W_1 \cap W_2 = \lbrace \bar{0} \rbrace$).
+*   A sum is a direct sum if and only if the subspaces share nothing but the zero vector (
+
+$$
+W_1 \cap W_2 = \lbrace \bar{0} \rbrace
+$$
+
+).
 
 ## What Comes Next
 Next, we will discuss linear independence and dependence, which helps us understand when vectors are truly unique or if they are just linear combinations of each other.

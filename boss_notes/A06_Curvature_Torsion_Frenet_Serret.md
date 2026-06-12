@@ -90,7 +90,9 @@ $$
 \vec{r}'' = 2\hat{j} + 4t\hat{k}
 $$
 
-$\vec{r}''' = 4\hat{k}$
+$$
+\vec{r}''' = 4\hat{k}
+$$
 
 **Step 2: Cross Product and Magnitudes**
 
@@ -109,7 +111,11 @@ $$
 \lvert \vec{r}' \rvert = \sqrt{1^2 + (2t)^2 + (2t^2)^2} = \sqrt{1 + 4t^2 + 4t^4} = \sqrt{(2t^2 + 1)^2} = 2t^2 + 1
 $$
 
-Magnitude $\lvert \vec{r}' \times \vec{r}'' \rvert$:
+Magnitude
+
+$$
+\lvert \vec{r}' \times \vec{r}'' \rvert:
+$$
 
 $$
 \lvert \vec{r}' \times \vec{r}'' \rvert = \sqrt{(4t^2)^2 + (-4t)^2 + 2^2} = \sqrt{16t^4 + 16t^2 + 4} = \sqrt{4(4t^4 + 4t^2 + 1)} = 2(2t^2 + 1)
@@ -122,7 +128,11 @@ K = \frac{\lvert \vec{r}' \times \vec{r}'' \rvert}{\lvert \vec{r}' \rvert^3} = \
 $$
 
 **Step 4: Calculate Torsion ($T$)**
-Calculate the scalar triple product $(\vec{r}' \times \vec{r}'') \cdot \vec{r}'''$:
+Calculate the scalar triple product
+
+$$
+(\vec{r}' \times \vec{r}'') \cdot \vec{r}''':
+$$
 
 $$
 (4t^2\hat{i} - 4t\hat{j} + 2\hat{k}) \cdot (4\hat{k}) = 8

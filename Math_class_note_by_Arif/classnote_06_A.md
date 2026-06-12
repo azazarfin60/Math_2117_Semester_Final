@@ -17,7 +17,11 @@ Field under addition হতে যদি 5 টাই satisfy করত।
 4. **Identity law:**
    $1 \cdot x = x$
 5. **Multiplicative inverse:**
-   $x \in K, x^{-1} \in K \Rightarrow x \cdot x^{-1} = 1$
+
+$$
+x \in K, x^{-1} \in K \Rightarrow x \cdot x^{-1} = 1
+$$
+
    $2$ এর inverse $\frac{1}{2}$
 
 $\mathbb{Z} = \lbrace\dots, -3, -2, -1, 0, 1, 2, 3\rbrace$ not satisfy.
@@ -52,7 +56,12 @@ $$
 \end{pmatrix}, \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} \right\rbrace
 $$
 
-- $= \lbrace x^2, x^2+1 \rbrace$
+-
+
+$$
+= \lbrace x^2, x^2+1 \rbrace
+$$
+
 -
 
 $$
@@ -67,7 +76,11 @@ $$
 None of them are vector spaces.
 
 1. **Closure:**
-   $v_1, v_2 \in V \Rightarrow v_1 + v_2 \in V$
+
+$$
+v_1, v_2 \in V \Rightarrow v_1 + v_2 \in V
+$$
+
    -
 
 $$
@@ -135,8 +148,15 @@ $$
 $$
 
 $\Rightarrow (4-\lambda)(3-\lambda) - 2 = 0$
-$\Rightarrow 12 - 7\lambda + \lambda^2 - 2 = 0$
-$\Rightarrow \lambda^2 - 7\lambda + 10 = 0$
+
+$$
+\Rightarrow 12 - 7\lambda + \lambda^2 - 2 = 0
+$$
+
+$$
+\Rightarrow \lambda^2 - 7\lambda + 10 = 0
+$$
+
 $\Rightarrow \lambda = 2, 5$
 Thus eigenvalues are 2, 5.
 
@@ -174,9 +194,20 @@ $$
 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} 2v_1+v_2 \\ 2v_1+v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
-yielding $2v_1+v_2 = 0$. (many solutions)
+yielding
 
-set $v_2 = 2 \Rightarrow v_1 = -1$.
+$$
+2v_1+v_2 = 0
+$$
+
+. (many solutions)
+
+set
+
+$$
+v_2 = 2 \Rightarrow v_1 = -1.
+$$
+
 Thus
 
 $$
@@ -328,7 +359,10 @@ $$
 \end{vmatrix} = 0
 $$
 
-$\Rightarrow (2-\lambda)(1-\lambda) + 1 = 0 \Rightarrow \lambda^2 - 3\lambda + 3 = 0$
+$$
+\Rightarrow (2-\lambda)(1-\lambda) + 1 = 0 \Rightarrow \lambda^2 - 3\lambda + 3 = 0
+$$
+
 $\lambda = 1.5 \pm 0.866i$
 
 <!-- Page 056 -->
@@ -451,12 +485,24 @@ $$
 $$
 
 $= (1-\lambda)\lbrace(2-\lambda)(2-\lambda) - 4\rbrace - 2\lbrace-(2-\lambda) - 4\rbrace + 3\lbrace-1 - (2-\lambda)\rbrace$
-$|A-\lambda I| = -\lambda^3 + 5\lambda^2 - 3\lambda + 3$
+
+$$
+|A-\lambda I| = -\lambda^3 + 5\lambda^2 - 3\lambda + 3
+$$
 
 By Cayley-Hamilton theorem, we replace $\lambda$ by $A$:
-$-A^3 + 5A^2 - 3A + 3I = 0$
-$\Rightarrow -A^{-1}A^3 + 5A^{-1}A^2 - 3A^{-1}A + 3A^{-1}I = 0$
-$\Rightarrow -A^2 + 5A - 3I + 3A^{-1} = 0$
+
+$$
+-A^3 + 5A^2 - 3A + 3I = 0
+$$
+
+$$
+\Rightarrow -A^{-1}A^3 + 5A^{-1}A^2 - 3A^{-1}A + 3A^{-1}I = 0
+$$
+
+$$
+\Rightarrow -A^2 + 5A - 3I + 3A^{-1} = 0
+$$
 
 $$
 \Rightarrow A^{-1} = \frac{1}{3}[A^2 - 5A + 3I]
@@ -527,13 +573,29 @@ $$
 M_1 \rightarrow 3\lbrace(1, 1) + (2, 4)\rbrace = (3, 3) + (6, 12) = (9, 15) \Rightarrow y = \frac{15}{9}x = \frac{5}{3}x
 $$
 
-$M_2 \rightarrow (3+2)(1, 1) = 3(1, 1) + 2(1, 1) = (5, 5)$
-$M_3 \rightarrow (ab)v = a(bv) \Rightarrow 2 \times 3(1, 1) = 6(1, 1) = (6, 6)$
+$$
+M_2 \rightarrow (3+2)(1, 1) = 3(1, 1) + 2(1, 1) = (5, 5)
+$$
+
+$$
+M_3 \rightarrow (ab)v = a(bv) \Rightarrow 2 \times 3(1, 1) = 6(1, 1) = (6, 6)
+$$
 
 **# $\mathbb{R}^3$ কি ভেক্টর space? $\mathbb{R}^2, \mathbb{R}^4$**
-$\mathbb{R}^3 = \lbrace(a, b, c) \mid a, b, c \in \mathbb{R}\rbrace$ - Yes.
 
-**# $V = \mathbb{R}^n = \lbrace(a_1, \dots, a_n) \mid a_i \in \mathbb{R}\rbrace$**
+$$
+\mathbb{R}^3 = \lbrace(a, b, c) \mid a, b, c \in \mathbb{R}\rbrace
+$$
+
+- Yes.
+
+**#
+
+$$
+V = \mathbb{R}^n = \lbrace(a_1, \dots, a_n) \mid a_i \in \mathbb{R}\rbrace
+$$
+
+**
 $\mathbb{R}^n$ is a vector space (proof).
 
 **Subspaces:**
@@ -559,8 +621,20 @@ b) for every $u, v \in W$, $k \in K$
 - set of all straight lines is a vector space (if passing through origin).
 - $3 \times 3$ matrices subspace of $n \times n$.
 
-- $y = a_0 + a_1x + \dots + a_nx^n$ (vector space) (Polynomial $\rightarrow$ variable এর power finite & non-negative হতে হবে)
-- $y = a_2x^2 + a_4x^4 + \dots$ (subspace)
+-
+
+$$
+y = a_0 + a_1x + \dots + a_nx^n
+$$
+
+(vector space) (Polynomial $\rightarrow$ variable এর power finite & non-negative হতে হবে)
+-
+
+$$
+y = a_2x^2 + a_4x^4 + \dots
+$$
+
+(subspace)
 
 **Vector space:**
 $\rightarrow$ must be closed under vector addition & scalar multiplication.
@@ -568,5 +642,13 @@ Under polynomial function: circle, triangle, straight line, matrices.
 
 **Linear combination of vectors:**
 $v_1, v_2, \dots, v_n \in V$ defined on $\mathbb{R}$
-$u = c_1v_1 + c_2v_2 + \dots + c_nv_n$ (new vector is linear combination)
-$c_1, c_2, \dots, c_n \in \mathbb{R}$
+
+$$
+u = c_1v_1 + c_2v_2 + \dots + c_nv_n
+$$
+
+(new vector is linear combination)
+
+$$
+c_1, c_2, \dots, c_n \in \mathbb{R}
+$$

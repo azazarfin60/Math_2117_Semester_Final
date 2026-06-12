@@ -12,7 +12,25 @@ A set of vectors is **linearly independent** if no vector in the set can be writ
 
 ## Definitions and The Determinant Test
 
-**Linearly Independent**: A set of vectors $\lbrace v_1, v_2, \dots, v_n\rbrace$ is linearly independent if the equation $c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0$ has *only the trivial solution* ($c_1 = c_2 = \dots = c_n = 0$).
+**Linearly Independent**: A set of vectors
+
+$$
+\lbrace v_1, v_2, \dots, v_n\rbrace
+$$
+
+is linearly independent if the equation
+
+$$
+c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0
+$$
+
+has *only the trivial solution* (
+
+$$
+c_1 = c_2 = \dots = c_n = 0
+$$
+
+).
 **Linearly Dependent**: The set is dependent if the equation has a solution where at least one coefficient is not zero.
 
 ### The Determinant Test
@@ -20,7 +38,13 @@ If you have exactly $n$ vectors in $\mathbb{R}^n$, you can form an $n \times n$ 
 - If Determinant $\neq 0 \implies$ Linearly **Independent**.
 - If Determinant $= 0 \implies$ Linearly **Dependent**.
 
-*(Note: If you are given a theoretical proof question (PYQ 2024) asking you to show why this determinant rule is true, set $a\vec{A} + b\vec{B} + c\vec{C} = 0$, convert it to a homogeneous system, and state that a homogeneous system only has the trivial solution if the determinant of the coefficient matrix is non-zero).*
+*(Note: If you are given a theoretical proof question (PYQ 2024) asking you to show why this determinant rule is true, set
+
+$$
+a\vec{A} + b\vec{B} + c\vec{C} = 0
+$$
+
+, convert it to a homogeneous system, and state that a homogeneous system only has the trivial solution if the determinant of the coefficient matrix is non-zero).*
 
 ---
 
@@ -57,7 +81,11 @@ $$
 Since $D = 0$, the vectors are linearly dependent.
 
 **Step 2: Find the Relation**
-Set $x\vec{A} + y\vec{B} + z\vec{C} = 0$:
+Set
+
+$$
+x\vec{A} + y\vec{B} + z\vec{C} = 0:
+$$
 
 $$
 x(2, 1, -3) + y(1, 0, -4) + z(4, 3, -1) = (0,0,0)
@@ -101,11 +129,31 @@ $$
 $$
 
 Since we are *given* that $u, v, w$ are linearly independent, the only way their linear combination equals 0 is if their coefficients are exactly 0. Thus:
-1. $c_1 + c_2 + c_3 = 0$
-2. $c_1 - c_2 - 2c_3 = 0$
-3. $c_3 = 0$
+1.
 
-Substitute $c_3 = 0$ into the first two equations:
+$$
+c_1 + c_2 + c_3 = 0
+$$
+
+2.
+
+$$
+c_1 - c_2 - 2c_3 = 0
+$$
+
+3.
+
+$$
+c_3 = 0
+$$
+
+Substitute
+
+$$
+c_3 = 0
+$$
+
+into the first two equations:
 
 $$
 c_1 + c_2 = 0
@@ -115,8 +163,25 @@ $$
 c_1 - c_2 = 0
 $$
 
-Adding them gives $2c_1 = 0 \implies c_1 = 0$. This means $c_2 = 0$.
-Since the only solution is $c_1 = c_2 = c_3 = 0$, the new vectors are linearly independent. $\blacksquare$
+Adding them gives
+
+$$
+2c_1 = 0 \implies c_1 = 0
+$$
+
+. This means
+
+$$
+c_2 = 0.
+$$
+
+Since the only solution is
+
+$$
+c_1 = c_2 = c_3 = 0
+$$
+
+, the new vectors are linearly independent. $\blacksquare$
 
 ---
 

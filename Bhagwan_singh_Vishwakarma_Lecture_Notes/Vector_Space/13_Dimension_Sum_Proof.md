@@ -52,7 +52,11 @@ $$
 S_1 = \lbrace \gamma_1, \dots, \gamma_k, \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
 $$
 
-Thus, $\dim(W_1) = k + n$.
+Thus,
+
+$$
+\dim(W_1) = k + n.
+$$
 
 Similarly, the intersection $W_1 \cap W_2$ is fully contained within $W_2$. We can extend $S$ by adding $m$ vectors to form a complete basis for $W_2$:
 
@@ -60,7 +64,11 @@ $$
 S_2 = \lbrace \gamma_1, \dots, \gamma_k, \beta_1, \beta_2, \dots, \beta_m \rbrace
 $$
 
-Thus, $\dim(W_2) = k + m$.
+Thus,
+
+$$
+\dim(W_2) = k + m.
+$$
 
 Let's look at what we are trying to prove. The right side of our theorem formula is:
 
@@ -114,7 +122,13 @@ $$
 b_1\beta_1 + \dots + b_m\beta_m \in W_1 \cap W_2
 $$
 
-We already defined the basis of the intersection as $S = \lbrace \gamma_1, \dots, \gamma_k \rbrace$. Thus, this vector can be written as a combination of gammas:
+We already defined the basis of the intersection as
+
+$$
+S = \lbrace \gamma_1, \dots, \gamma_k \rbrace
+$$
+
+. Thus, this vector can be written as a combination of gammas:
 
 $$
 b_1\beta_1 + \dots + b_m\beta_m = d_1\gamma_1 + \dots + d_k\gamma_k \quad \text{(for some scalars } d_i)
@@ -132,7 +146,13 @@ $$
 b_1 = 0, \dots, b_m = 0 \quad \text{and} \quad d_1 = 0, \dots, d_k = 0
 $$
 
-Now substitute $b_1 = \dots = b_m = 0$ back into our very first equation (1). It shrinks to:
+Now substitute
+
+$$
+b_1 = \dots = b_m = 0
+$$
+
+back into our very first equation (1). It shrinks to:
 
 $$
 c_1\gamma_1 + \dots + c_k\gamma_k + a_1\alpha_1 + \dots + a_n\alpha_n = \bar{0}
@@ -200,7 +220,13 @@ $$
 \dim(W_1 + W_2) = 1 + 2 - 0 = 3
 $$
 
-Since $\dim(W_1 + W_2) = 3 = \dim(V_3(\mathbb{R}))$, their sum spans the entire 3D space.
+Since
+
+$$
+\dim(W_1 + W_2) = 3 = \dim(V_3(\mathbb{R}))
+$$
+
+, their sum spans the entire 3D space.
 
 ### Example 2: Sum in 4D Space
 Let $V_4(\mathbb{R})$ be a 4D space with subspaces:

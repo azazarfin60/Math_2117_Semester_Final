@@ -35,12 +35,30 @@ The element $a_{ij}$ sits in row $i$ and column $j$.
 | **Square** | $m = n$ | 3x3 matrix |
 | **Row** | $m = 1$ | $[1 \; 2 \; 3]$ |
 | **Column** | $n = 1$ | $[1, 2]^T$ |
-| **Diagonal** | $a_{ij} = 0$ for $i \neq j$ | Only diagonal entries non-zero |
+| **Diagonal** |
+
+$$
+a_{ij} = 0
+$$
+
+for $i \neq j$ | Only diagonal entries non-zero |
 | **Scalar** | Diagonal with all diagonal entries equal | $kI$ |
 | **Identity** | Diagonal with all 1s | $I_n$ |
 | **Null/Zero** | All entries are 0 | $O$ |
-| **Upper triangular** | $a_{ij} = 0$ for $i > j$ | Zeros below diagonal |
-| **Lower triangular** | $a_{ij} = 0$ for $i < j$ | Zeros above diagonal |
+| **Upper triangular** |
+
+$$
+a_{ij} = 0
+$$
+
+for $i > j$ | Zeros below diagonal |
+| **Lower triangular** |
+
+$$
+a_{ij} = 0
+$$
+
+for $i < j$ | Zeros above diagonal |
 
 ---
 
@@ -103,10 +121,26 @@ $$
 $$
 
 Properties:
-- If a row or column is all zeros, $\lvert A \rvert = 0$.
+- If a row or column is all zeros,
+
+$$
+\lvert A \rvert = 0.
+$$
+
 - Swapping two rows changes the sign of the determinant.
-- $\lvert AB \rvert = \lvert A \rvert \cdot \lvert B \rvert$.
-- $\lvert kA \rvert = k^n \lvert A \rvert$ for an $n \times n$ matrix.
+-
+
+$$
+\lvert AB \rvert = \lvert A \rvert \cdot \lvert B \rvert.
+$$
+
+-
+
+$$
+\lvert kA \rvert = k^n \lvert A \rvert
+$$
+
+for an $n \times n$ matrix.
 
 ---
 

@@ -59,32 +59,32 @@ $$
 Compute the dot product:
 
 $$
-\hat{\mathbf{n}} \cdot \hat{\mathbf{i}} = \frac{2}{7}
+\hat{\mathbf{n}} \cdot \hat{\mathbf{i}} = \frac{2}{7}.
 $$
 
-.
 So,
 
 $$
-dS = \frac{dy \, dz}{2/7} = \frac{7}{2} dy \, dz
+dS = \frac{dy \, dz}{2/7} = \frac{7}{2} dy \, dz.
 $$
-
-.
 
 **Step 3: Establish Limits on the $yz$-plane**
 Set $x = 0$ in the plane equation: $3y + 6z = 12 \implies y + 2z = 4$.
 This line forms a triangle with the $y$ and $z$ axes.
 - $y$ varies from $0$ to $4$
-- $z$ varies from $0$ to the line $z = 2 - \frac{y}{2}$
+- $z$ varies from $0$ to the line
+
+$$
+z = 2 - \frac{y}{2}
+$$
 
 **Step 4: Compute the Integrand**
 We already know
 
 $$
-\mathbf{F} \cdot \hat{\mathbf{n}} = \frac{1}{7}(12z - 12 + 6y)
+\mathbf{F} \cdot \hat{\mathbf{n}} = \frac{1}{7}(12z - 12 + 6y).
 $$
 
-.
 Because we are integrating with respect to $y$ and $z$, there is no $x$ variable to eliminate. We can use this directly!
 
 **Step 5: Evaluate the Integral**
@@ -110,54 +110,87 @@ $$
 \iint_S (yz\hat{\mathbf{i}} + zx\hat{\mathbf{j}} + xy\hat{\mathbf{k}}) \cdot d\mathbf{S},
 $$
 
-Where $S$ is the surface of the sphere $x^2 + y^2 + z^2 = 1$ in the first octant.
+Where $S$ is the surface of the sphere
+
+$$
+x^2 + y^2 + z^2 = 1
+$$
+
+in the first octant.
 
 *(Note: $d\mathbf{S}$ in bold implies $\hat{\mathbf{n}} \, dS$)*
 
 **Solution:**
-Let $\phi = x^2 + y^2 + z^2 - 1$.
+Let
+
+$$
+\phi = x^2 + y^2 + z^2 - 1.
+$$
+
 The gradient is
 
 $$
 \nabla \phi = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}}.
 $$
 
-The magnitude is $\lvert \nabla \phi \rvert = \sqrt{4(x^2 + y^2 + z^2)} = \sqrt{4(1)} = 2$.
+The magnitude is
+
+$$
+\lvert \nabla \phi \rvert = \sqrt{4(x^2 + y^2 + z^2)} = \sqrt{4(1)} = 2.
+$$
+
 Thus, the unit normal vector is:
 
 $$
 \hat{\mathbf{n}} = \frac{2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}} + 2z\hat{\mathbf{k}}}{2} = x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z\hat{\mathbf{k}}
 $$
 
-Compute $\mathbf{F} \cdot \hat{\mathbf{n}}$:
+Compute
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}:
+$$
 
 $$
 (yz\hat{\mathbf{i}} + zx\hat{\mathbf{j}} + xy\hat{\mathbf{k}}) \cdot (x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z\hat{\mathbf{k}}) = xyz + xyz + xyz = 3xyz
 $$
 
-We need to evaluate: $I = \iint_S 3xyz \, dS$.
+We need to evaluate:
+
+$$
+I = \iint_S 3xyz \, dS.
+$$
 
 We will solve this using two different methods to demonstrate the power of coordinate systems.
 
 #### Method 1: Cartesian Projection (on-plane)
-Project the sphere onto the $xy$-plane. The projection is a quarter circle (since we are in the first octant) bounded by $x^2 + y^2 = 1$.
+Project the sphere onto the $xy$-plane. The projection is a quarter circle (since we are in the first octant) bounded by
+
+$$
+x^2 + y^2 = 1.
+$$
+
 - $x$ varies from $0$ to $1$.
 - $y$ varies from $0$ to $\sqrt{1 - x^2}$.
 
 The area element is
 
 $$
-dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}
+dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}.
 $$
 
-.
-Since $\hat{\mathbf{n}} \cdot \hat{\mathbf{k}} = z$, we have
+Since
 
 $$
-dS = \frac{dx \, dy}{z}
+\hat{\mathbf{n}} \cdot \hat{\mathbf{k}} = z
 $$
 
-.
+, we have
+
+$$
+dS = \frac{dx \, dy}{z}.
+$$
+
 Substitute into the integral:
 
 $$
@@ -187,7 +220,11 @@ For a unit sphere ($r=1$):
 - The area element $dS = \sin\theta \, d\theta \, d\phi$
 
 For the first octant, the angles $\theta$ and $\phi$ both range from $0$ to $\pi/2$.
-Substitute these into $I = \iint_S 3xyz \, dS$:
+Substitute these into
+
+$$
+I = \iint_S 3xyz \, dS:
+$$
 
 $$
 I = 3 \int_0^{\pi/2} \int_0^{\pi/2} (\sin\theta \cos\phi)(\sin\theta \sin\phi)(\cos\theta) (\sin\theta \, d\theta \, d\phi)
@@ -215,7 +252,13 @@ $$
 
 ## Key Takeaways
 *   **Projection invariance:** Projecting a 3D surface onto the $xy$, $yz$, or $zx$ planes will always yield the same final integral value, provided the limits and $dS$ conversions are done correctly.
-*   **Spherical coordinates:** When the surface $S$ is part of a sphere, substituting $x, y, z$ with spherical coordinates and using $dS = r^2\sin\theta \, d\theta \, d\phi$ eliminates the need to project the surface. The entire integral simply becomes a double integral over the angles $\theta$ and $\phi$.
+*   **Spherical coordinates:** When the surface $S$ is part of a sphere, substituting $x, y, z$ with spherical coordinates and using
+
+$$
+dS = r^2\sin\theta \, d\theta \, d\phi
+$$
+
+eliminates the need to project the surface. The entire integral simply becomes a double integral over the angles $\theta$ and $\phi$.
 
 ## What Comes Next
 We will continue this block with Volume Integration, exploring how to compute triple integrals over 3D volumes.

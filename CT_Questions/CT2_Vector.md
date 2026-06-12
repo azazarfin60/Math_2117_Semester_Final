@@ -16,7 +16,13 @@ $$
 
 is a conservative force field. Also obtain the scalar potential. **(03+06)**
 
-**2.** Find the unit outward drawn normal to the surface $(x - 1)^2 + y^2 + (z + 2)^2 = 9$ at the point $(3, 1, -4)$. **(05)**
+**2.** Find the unit outward drawn normal to the surface
+
+$$
+(x - 1)^2 + y^2 + (z + 2)^2 = 9
+$$
+
+at the point $(3, 1, -4)$. **(05)**
 
 **3.** If
 
@@ -30,7 +36,13 @@ $$
 \int_C \vec{F} \cdot d\vec{r}
 $$
 
-along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. **(06)**
+along the curve $C$ in the $xy$ plane,
+
+$$
+y = x^3
+$$
+
+from the point $(1, 1)$ to $(2, 8)$. **(06)**
 
 ---
 

@@ -24,11 +24,36 @@ $$
 
 ### Properties of Transpose
 
-1. $(A^T)^T = A$
-2. $(A + B)^T = A^T + B^T$
-3. $(kA)^T = kA^T$
-4. $(AB)^T = B^T A^T$ (order reverses)
-5. $(A^{-1})^T = (A^T)^{-1}$
+1.
+
+$$
+(A^T)^T = A
+$$
+
+2.
+
+$$
+(A + B)^T = A^T + B^T
+$$
+
+3.
+
+$$
+(kA)^T = kA^T
+$$
+
+4.
+
+$$
+(AB)^T = B^T A^T
+$$
+
+(order reverses)
+5.
+
+$$
+(A^{-1})^T = (A^T)^{-1}
+$$
 
 ---
 
@@ -42,7 +67,13 @@ $$
 A^T = A
 $$
 
-This means $a_{ij} = a_{ji}$ for all $i, j$. The matrix is a mirror image across its main diagonal.
+This means
+
+$$
+a_{ij} = a_{ji}
+$$
+
+for all $i, j$. The matrix is a mirror image across its main diagonal.
 
 ### Example
 
@@ -75,7 +106,25 @@ $$
 A^T = -A
 $$
 
-This means $a_{ij} = -a_{ji}$ for all $i, j$. The diagonal entries must be zero (since $a_{ii} = -a_{ii}$ forces $a_{ii} = 0$).
+This means
+
+$$
+a_{ij} = -a_{ji}
+$$
+
+for all $i, j$. The diagonal entries must be zero (since
+
+$$
+a_{ii} = -a_{ii}
+$$
+
+forces
+
+$$
+a_{ii} = 0
+$$
+
+).
 
 ### Example
 
@@ -126,23 +175,35 @@ $$
 
 **Step 4**: Prove uniqueness. Suppose $A = P' + Q'$ where $P'$ is symmetric and $Q'$ is skew-symmetric.
 
-Taking transpose: $A^T = P' - Q'$.
-
-Adding the two equations: $A + A^T = 2P'$, so
+Taking transpose:
 
 $$
-P' = \frac{1}{2}(A + A^T) = P
+A^T = P' - Q'.
 $$
 
-.
-
-Subtracting: $A - A^T = 2Q'$, so
+Adding the two equations:
 
 $$
-Q' = \frac{1}{2}(A - A^T) = Q
+A + A^T = 2P'
 $$
 
-.
+, so
+
+$$
+P' = \frac{1}{2}(A + A^T) = P.
+$$
+
+Subtracting:
+
+$$
+A - A^T = 2Q'
+$$
+
+, so
+
+$$
+Q' = \frac{1}{2}(A - A^T) = Q.
+$$
 
 The decomposition is unique.
 
@@ -206,10 +267,9 @@ $$
  and
 
 $$
-Q = \frac{1}{2}(A - A^T)
+Q = \frac{1}{2}(A - A^T).
 $$
 
-.
 - The uniqueness part adds 1-2 extra marks if you include it.
 
 ---

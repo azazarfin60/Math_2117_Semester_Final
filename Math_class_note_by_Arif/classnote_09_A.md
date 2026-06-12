@@ -13,10 +13,8 @@ where $f$ and $g$ are defined over $[a, b]$.
 Let $f(x) = \sin x$ and $g(x) = \cos x$ defined on
 
 $$
-[-\frac{\pi}{2}, \frac{\pi}{2}]
+[-\frac{\pi}{2}, \frac{\pi}{2}].
 $$
-
-.
 
 $$
 \langle \sin x, \cos x \rangle = \int_{-\pi/2}^{\pi/2} \sin x \cos x \, dx = 0
@@ -44,14 +42,42 @@ $$
 
 *Proof:*
 Let,
-- $e_1 = (1, 0, 0)$
-- $e_2 = (0, 1, 0)$
-- $e_3 = (0, 0, 1)$
+-
+
+$$
+e_1 = (1, 0, 0)
+$$
+
+-
+
+$$
+e_2 = (0, 1, 0)
+$$
+
+-
+
+$$
+e_3 = (0, 0, 1)
+$$
 
 **Norms of vectors:**
-- $\|e_1\| = \sqrt{1^2 + 0^2 + 0^2} = 1$
-- $\|e_2\| = \sqrt{0^2 + 1^2 + 0^2} = 1$
-- $\|e_3\| = \sqrt{0^2 + 0^2 + 1^2} = 1$
+-
+
+$$
+\|e_1\| = \sqrt{1^2 + 0^2 + 0^2} = 1
+$$
+
+-
+
+$$
+\|e_2\| = \sqrt{0^2 + 1^2 + 0^2} = 1
+$$
+
+-
+
+$$
+\|e_3\| = \sqrt{0^2 + 0^2 + 1^2} = 1
+$$
 
 <!-- Page 082 -->
 **Angles between vectors:**

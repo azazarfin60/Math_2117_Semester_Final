@@ -6,9 +6,27 @@
 
 1. Prove that $\mathbb{R}^n$ with usual operations is a vector space over $\mathbb{R}$.
 2. Construct a non-trivial subspace of $\mathbb{R}^5$ that is not spanned by standard basis vectors.
-3. Test whether the set $V = \lbrace(x, y) \in \mathbb{R}^2 : xy = 0\rbrace$ is a vector space.
-4. Let $V = \mathbb{R}^4$. Prove that the set $W = \lbrace(x, y, z, w) : x + y + z + w = 0\rbrace$ is a subspace and find its dimension.
-5. Let $W = \lbrace(x, y, z) \in \mathbb{R}^3 : x + 2y + 3z = 0\rbrace$. Show that $W$ is a subspace and find its dimension.
+3. Test whether the set
+
+$$
+V = \lbrace(x, y) \in \mathbb{R}^2 : xy = 0\rbrace
+$$
+
+is a vector space.
+4. Let
+
+$$
+V = \mathbb{R}^4
+$$
+
+. Prove that the set $W = \lbrace(x, y, z, w) : x + y + z + w = 0\rbrace$ is a subspace and find its dimension.
+5. Let
+
+$$
+W = \lbrace(x, y, z) \in \mathbb{R}^3 : x + 2y + 3z = 0\rbrace
+$$
+
+. Show that $W$ is a subspace and find its dimension.
 6. Give an example of a subset of a vector space that is closed under addition but not scalar multiplication.
 7. Prove that the intersection of any collection of subspaces is a subspace.
 8. Let $U, W \subseteq V$. Prove that $U + W$ is a subspace and
@@ -27,23 +45,70 @@ $$
 11. Define the sum of two subspaces and give an example.
 12. Prove that the sum of two subspaces is a subspace.
 13. Show that $V = U \oplus W$ if and only if $V = U + W$ and $U \cap W = \lbrace 0\rbrace$.
-14. Let $U = \text{span}\lbrace(1, 0, 0), (0, 1, 0)\rbrace$, $W = \text{span}\lbrace(0, 0, 1)\rbrace$. Show that $\mathbb{R}^3 = U \oplus W$.
+14. Let $U = \text{span}\lbrace(1, 0, 0), (0, 1, 0)\rbrace$, $W = \text{span}\lbrace(0, 0, 1)\rbrace$. Show that
+
+$$
+\mathbb{R}^3 = U \oplus W.
+$$
+
 15. Give an example where $U + W \neq U \oplus W$.
 
 ---
 
 ### Section C: Linear Transformations
 
-16. Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x^2, y)$. Check whether $T$ is a linear transformation. Justify your answer.
+16. Let
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+be defined by
+
+$$
+T(x, y) = (x^2, y)
+$$
+
+. Check whether $T$ is a linear transformation. Justify your answer.
 17. Define kernel, range, rank, and nullity of a linear transformation.
-18. Let $T: \mathbb{R}^3 \to \mathbb{R}^2$ be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation?
+18. Let
+
+$$
+T: \mathbb{R}^3 \to \mathbb{R}^2
+$$
+
+be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation?
     Find: (i) Kernel of $T$, (ii) Range of $T$, (iii) Rank and Nullity.
-19. Let $T: \mathbb{R}^3 \to \mathbb{R}^3$ be defined by $T(x, y, z) = (x + y, y + z, z + x)$.
+19. Let
+
+$$
+T: \mathbb{R}^3 \to \mathbb{R}^3
+$$
+
+be defined by $T(x, y, z) = (x + y, y + z, z + x)$.
     Find the matrix of $T$, its rank, nullity, and verify the rank-nullity theorem.
-20. Find the matrix of the linear transformation $T: \mathbb{R}^2 \to \mathbb{R}^2$, defined by $T(x, y) = (2x + y, x - y)$, with respect to the standard basis.
+20. Find the matrix of the linear transformation
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+, defined by $T(x, y) = (2x + y, x - y)$, with respect to the standard basis.
 21. Prove that a linear transformation $T: V \to W$ is injective if and only if $\text{ker}(T) = \lbrace 0\rbrace$.
-22. Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be given by $T(x, y) = (3x + 2y, x + y)$. Determine whether $T$ is invertible. If yes, find $T^{-1}$.
-23. Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x + y, x - y)$. Let $B = \lbrace(1, 1), (1, -1)\rbrace$. Find the matrix of $T$ with respect to the basis $B$.
+22. Let
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+be given by $T(x, y) = (3x + 2y, x + y)$. Determine whether $T$ is invertible. If yes, find $T^{-1}$.
+23. Let
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+be defined by $T(x, y) = (x + y, x - y)$. Let $B = \lbrace(1, 1), (1, -1)\rbrace$. Find the matrix of $T$ with respect to the basis $B$.
 24. Show that a linear transformation is injective if and only if its nullity is zero.
 25. Prove that a linear transformation is invertible if and only if it is both one-to-one and onto.
 
@@ -82,7 +147,13 @@ $$
 ### Section E: Normed Linear Space & Hilbert Space
 
 28. Define a normed linear space and give two examples.
-29. Verify whether $\|x\| = |x_1| + |x_2|$ defines a norm on $\mathbb{R}^2$.
+29. Verify whether
+
+$$
+\|x\| = |x_1| + |x_2|
+$$
+
+defines a norm on $\mathbb{R}^2$.
 30. Prove that every inner product space is a normed space.
 31. Show that the space $\ell^2$ is a Hilbert space.
 32. Prove the parallelogram law in an inner product space.

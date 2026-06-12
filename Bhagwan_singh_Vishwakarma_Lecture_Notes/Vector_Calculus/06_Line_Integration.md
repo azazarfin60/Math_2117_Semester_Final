@@ -127,7 +127,17 @@ $$
 \vec{a} = 12\cos 2t\hat{i} - 8\sin 2t\hat{j} + 16t\hat{k}.
 $$
 
-Find velocity $\vec{v}$ and displacement $\vec{r}$ given that at $t = 0$, $\vec{v} = 0$ and $\vec{r} = 0$.
+Find velocity $\vec{v}$ and displacement $\vec{r}$ given that at $t = 0$,
+
+$$
+\vec{v} = 0
+$$
+
+and
+
+$$
+\vec{r} = 0.
+$$
 
 **Solution:**
 Integrate acceleration to find velocity $\vec{v}(t)$:
@@ -136,7 +146,11 @@ $$
 \vec{v}(t) = \int \vec{a}(t) dt = 6\sin 2t\hat{i} + 4\cos 2t\hat{j} + 8t^2\hat{k} + \vec{c}_1
 $$
 
-Apply boundary condition $\vec{v}(0) = 0$:
+Apply boundary condition
+
+$$
+\vec{v}(0) = 0:
+$$
 
 $$
 0 = 0\hat{i} + 4\hat{j} + 0\hat{k} + \vec{c}_1 \implies \vec{c}_1 = -4\hat{j}
@@ -152,7 +166,11 @@ $$
 \vec{r}(t) = \int \vec{v}(t) dt = -3\cos 2t\hat{i} + (2\sin 2t - 4t)\hat{j} + \frac{8}{3}t^3\hat{k} + \vec{c}_2
 $$
 
-Apply boundary condition $\vec{r}(0) = 0$:
+Apply boundary condition
+
+$$
+\vec{r}(0) = 0:
+$$
 
 $$
 0 = -3\hat{i} + 0\hat{j} + 0\hat{k} + \vec{c}_2 \implies \vec{c}_2 = 3\hat{i}
@@ -178,8 +196,18 @@ $$
 from $t=-1$ to $1$.
 
 **Solution:**
-From the curve equation, $x = t, y = t^2, z = t^3$.
-Differentiating gives $dx = dt, dy = 2t dt, dz = 3t^2 dt$.
+From the curve equation,
+
+$$
+x = t, y = t^2, z = t^3.
+$$
+
+Differentiating gives
+
+$$
+dx = dt, dy = 2t dt, dz = 3t^2 dt.
+$$
+
 Substitute $x, y, z$ into $\vec{F}$:
 
 $$
@@ -215,11 +243,28 @@ $$
 \vec{F} = x^2 y^2\hat{i} + y\hat{j}
 $$
 
-and $C$ is the parabola $y^2 = 4x$ from $(0,0)$ to $(4,4)$.
+and $C$ is the parabola
+
+$$
+y^2 = 4x
+$$
+
+from $(0,0)$ to $(4,4)$.
 
 **Solution:**
-The integrand is $\vec{F} \cdot d\vec{r} = x^2 y^2 dx + y dy$.
-Using the curve equation $y^2 = 4x$, we substitute it into the $dx$ term. From the coordinates, both $x$ and $y$ vary from $0$ to $4$.
+The integrand is
+
+$$
+\vec{F} \cdot d\vec{r} = x^2 y^2 dx + y dy.
+$$
+
+Using the curve equation
+
+$$
+y^2 = 4x
+$$
+
+, we substitute it into the $dx$ term. From the coordinates, both $x$ and $y$ vary from $0$ to $4$.
 
 $$
 \int_C \vec{F} \cdot d\vec{r} = \int_0^4 x^2(4x) dx + \int_0^4 y dy = \int_0^4 4x^3 dx + \int_0^4 y dy
@@ -243,10 +288,9 @@ Since the integral is path-independent (it specifies "any path"), we choose the 
 The equation of the line is
 
 $$
-\frac{x - 1}{2 - 1} = \frac{y - 0}{1 - 0} = \frac{z - 0}{4 - 0} = t
+\frac{x - 1}{2 - 1} = \frac{y - 0}{1 - 0} = \frac{z - 0}{4 - 0} = t.
 $$
 
-.
 This gives parametric equations: $x = t + 1, y = t, z = 4t$.
 Differentiating gives: $dx = dt, dy = dt, dz = 4dt$.
 At $(1,0,0)$, $t = 0$. At $(2,1,4)$, $t = 1$.

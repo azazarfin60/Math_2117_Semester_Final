@@ -31,7 +31,13 @@ $$
 \mathbf{F} = 4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}
 $$
 
-taken over the region bounded by $x^2 + y^2 = 4$, $z=0$, and $z=3$.
+taken over the region bounded by
+
+$$
+x^2 + y^2 = 4
+$$
+
+, $z=0$, and $z=3$.
 
 **Solution:**
 The region is a solid cylinder of radius $R=2$ and height $h=3$. To verify the theorem, we must evaluate both the volume integral (RHS) and the surface integral (LHS) and ensure they are equal.
@@ -81,10 +87,8 @@ $$
 Using the standard integration formula
 
 $$
-\int \sqrt{a^2-x^2} \, dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)
+\int \sqrt{a^2-x^2} \, dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right):
 $$
-
-:
 
 $$
 I_V = 42 \left[ \frac{x}{2}\sqrt{4-x^2} + \frac{4}{2}\sin^{-1}\left(\frac{x}{2}\right) \right]_{-2}^2
@@ -102,18 +106,59 @@ $$
 The closed surface $S$ consists of $3$ parts: the bottom base ($S_1$), the top base ($S_2$), and the curved lateral surface ($S_3$).
 
 **1. Bottom Base ($S_1$ at $z=0$):**
-*   Outward normal: $\hat{\mathbf{n}}_1 = -\hat{\mathbf{k}}$
-*   $\mathbf{F} \cdot \hat{\mathbf{n}}_1 = -z^2$.
+*   Outward normal:
+
+$$
+\hat{\mathbf{n}}_1 = -\hat{\mathbf{k}}
+$$
+
+*
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}_1 = -z^2.
+$$
+
 *   Since $z=0$ on this surface, the integral is exactly $0$.
 
 **2. Top Base ($S_2$ at $z=3$):**
-*   Outward normal: $\hat{\mathbf{n}}_2 = \hat{\mathbf{k}}$
-*   $\mathbf{F} \cdot \hat{\mathbf{n}}_2 = z^2$.
-*   Since $z=3$, the integrand is $3^2 = 9$.
-*   The integral is $9 \times \text{Area}(S_2) = 9 \times (\pi \cdot 2^2) = 36\pi$.
+*   Outward normal:
 
-**3. Curved Lateral Surface ($S_3$ where $x^2 + y^2 = 4$):**
-*   Gradient of the surface $g = x^2 + y^2 - 4 = 0$ is
+$$
+\hat{\mathbf{n}}_2 = \hat{\mathbf{k}}
+$$
+
+*
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}_2 = z^2.
+$$
+
+*   Since $z=3$, the integrand is
+
+$$
+3^2 = 9.
+$$
+
+*   The integral is
+
+$$
+9 \times \text{Area}(S_2) = 9 \times (\pi \cdot 2^2) = 36\pi.
+$$
+
+**3. Curved Lateral Surface ($S_3$ where
+
+$$
+x^2 + y^2 = 4
+$$
+
+):**
+*   Gradient of the surface
+
+$$
+g = x^2 + y^2 - 4 = 0
+$$
+
+is
 
 $$
 \nabla g = 2x\hat{\mathbf{i}} + 2y\hat{\mathbf{j}}.
@@ -131,7 +176,12 @@ $$
 \mathbf{F} \cdot \hat{\mathbf{n}}_3 = (4x\hat{\mathbf{i}} - 2y^2\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}) \cdot \frac{x\hat{\mathbf{i}} + y\hat{\mathbf{j}}}{2} = 2x^2 - y^3.
 $$
 
-*   Convert to cylindrical coordinates: $x = 2\cos\theta, y = 2\sin\theta, dS_3 = R \, d\theta \, dz = 2 \, d\theta \, dz$.
+*   Convert to cylindrical coordinates:
+
+$$
+x = 2\cos\theta, y = 2\sin\theta, dS_3 = R \, d\theta \, dz = 2 \, d\theta \, dz.
+$$
+
 *   Limits: $\theta \in [0, 2\pi]$ and $z \in [0, 3]$.
 
 $$
@@ -151,10 +201,8 @@ $$
  over a full period, and
 
 $$
-\int_0^{2\pi} \cos^2\theta \, d\theta = \pi:
+\int_0^{2\pi} \cos^2\theta \, d\theta = \pi::
 $$
-
-:
 
 $$
 = 48(\pi - 0) = 48\pi
@@ -175,7 +223,13 @@ $$
 \iint_S (x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z^2\hat{\mathbf{k}}) \cdot \hat{\mathbf{n}} \, dS,
 $$
 
-Where $S$ is the closed surface bounded by the cone $x^2 + y^2 = z^2$ and the plane $z=1$.
+Where $S$ is the closed surface bounded by the cone
+
+$$
+x^2 + y^2 = z^2
+$$
+
+and the plane $z=1$.
 
 **Solution:**
 Using the Divergence Theorem, we convert this to a volume integral.
@@ -198,7 +252,11 @@ $$
 \bar{z} = \frac{\iiint_V z \, dV}{V}.
 $$
 
-Therefore, $\iiint_V z \, dV = V\bar{z}$.
+Therefore,
+
+$$
+\iiint_V z \, dV = V\bar{z}.
+$$
 
 Substitute these in:
 
@@ -207,14 +265,19 @@ $$
 $$
 
 Now, we simply use the known geometric formulas for a solid cone:
-*   The cone has a height $h = 1$ and a base radius $R = 1$ (since $x^2+y^2=z^2$ at $z=1$).
+*   The cone has a height $h = 1$ and a base radius $R = 1$ (since
+
+$$
+x^2+y^2=z^2
+$$
+
+at $z=1$).
 *   The volume of a cone is
 
 $$
-V = \frac{1}{3}\pi R^2 h = \frac{1}{3}\pi (1)^2 (1) = \frac{1}{3}\pi
+V = \frac{1}{3}\pi R^2 h = \frac{1}{3}\pi (1)^2 (1) = \frac{1}{3}\pi.
 $$
 
-.
 *   The center of gravity of a solid right circular cone lies on its axis at
 
 $$
@@ -224,10 +287,8 @@ $$
 . Since $h=1$,
 
 $$
-\bar{z} = \frac{3}{4}
+\bar{z} = \frac{3}{4}.
 $$
-
-.
 
 Substitute these known values:
 

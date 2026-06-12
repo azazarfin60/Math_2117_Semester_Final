@@ -28,7 +28,13 @@ $$
 \text{dim}(W_1 + W_2) = \text{dim}(W_1) + \text{dim}(W_2) - \text{dim}(W_1 \cap W_2)
 $$
 
-This formula works exactly like the principle of inclusion-exclusion in set theory ($\lvert A \cup B \rvert = \lvert A \rvert + \lvert B \rvert - \lvert A \cap B \rvert$). We add the dimensions of the two individual subspaces, but since the intersection $W_1 \cap W_2$ was counted twice (once in $W_1$ and once in $W_2$), we subtract its dimension to get the correct total.
+This formula works exactly like the principle of inclusion-exclusion in set theory (
+
+$$
+\lvert A \cup B \rvert = \lvert A \rvert + \lvert B \rvert - \lvert A \cap B \rvert
+$$
+
+). We add the dimensions of the two individual subspaces, but since the intersection $W_1 \cap W_2$ was counted twice (once in $W_1$ and once in $W_2$), we subtract its dimension to get the correct total.
 
 ---
 
@@ -36,7 +42,13 @@ This formula works exactly like the principle of inclusion-exclusion in set theo
 
 What happens if the sum is a direct sum?
 
-We know that if $V$ is the direct sum of two subspaces, $V = W_1 \oplus W_2$, it means that every element has a unique representation.
+We know that if $V$ is the direct sum of two subspaces,
+
+$$
+V = W_1 \oplus W_2
+$$
+
+, it means that every element has a unique representation.
 By the direct sum characterization theorem, this uniqueness requires that their intersection contains only the zero vector:
 
 $$
@@ -79,8 +91,17 @@ W_2 = \lbrace (0, a, b) \mid a, b \in \mathbb{R} \rbrace
 $$
 
 **Step 1: Find individual dimensions**
-*   $W_1$ has only one free variable ($a$), so it is a one-dimensional subspace: $\text{dim}(W_1) = 1$.
-*   $W_2$ has two free variables ($a, b$), so it is a two-dimensional subspace: $\text{dim}(W_2) = 2$.
+*   $W_1$ has only one free variable ($a$), so it is a one-dimensional subspace:
+
+$$
+\text{dim}(W_1) = 1.
+$$
+
+*   $W_2$ has two free variables ($a, b$), so it is a two-dimensional subspace:
+
+$$
+\text{dim}(W_2) = 2.
+$$
 
 **Step 2: Find the intersection**
 What points do $W_1$ and $W_2$ have in common?
@@ -122,8 +143,17 @@ W_2 = \lbrace (0, a, b, c) \mid a, b, c \in \mathbb{R} \rbrace
 $$
 
 **Step 1: Find individual dimensions**
-*   $W_1$ has two free variables, so $\text{dim}(W_1) = 2$.
-*   $W_2$ has three free variables, so $\text{dim}(W_2) = 3$.
+*   $W_1$ has two free variables, so
+
+$$
+\text{dim}(W_1) = 2.
+$$
+
+*   $W_2$ has three free variables, so
+
+$$
+\text{dim}(W_2) = 3.
+$$
 
 **Step 2: Find the intersection**
 What points do they share?
@@ -157,7 +187,12 @@ The linear sum results in a 4-dimensional subspace, which is the entire space $V
 ---
 
 ## Key Takeaways
-*   The dimension of the linear sum of two subspaces is: $\text{dim}(W_1 + W_2) = \text{dim}(W_1) + \text{dim}(W_2) - \text{dim}(W_1 \cap W_2)$.
+*   The dimension of the linear sum of two subspaces is:
+
+$$
+\text{dim}(W_1 + W_2) = \text{dim}(W_1) + \text{dim}(W_2) - \text{dim}(W_1 \cap W_2).
+$$
+
 *   If the sum is a **direct sum**, the intersection is zero, so the dimension is just the sum of the individual dimensions.
 *   Always find the exact structure of the intersection to determine its dimension before calculating the sum.
 

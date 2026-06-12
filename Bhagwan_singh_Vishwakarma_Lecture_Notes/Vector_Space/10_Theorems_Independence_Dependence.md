@@ -40,7 +40,17 @@ Because we found a non-zero scalar that satisfies the equation, the zero vector 
 If a larger set of vectors contains the zero vector, the entire set becomes infected and is classified as linearly dependent.
 
 **Proof:**
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ be a set of vectors. Without loss of generality, let the first vector be the zero vector: $\alpha_1 = \bar{0}$.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+be a set of vectors. Without loss of generality, let the first vector be the zero vector:
+
+$$
+\alpha_1 = \bar{0}.
+$$
 
 We form the linear combination:
 
@@ -48,13 +58,31 @@ $$
 a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n = \bar{0}
 $$
 
-Because $\alpha_1 = \bar{0}$, we can choose its scalar $a_1$ to be any non-zero number, say $a_1 = 1$. For all the other vectors, we can just choose their scalars to be $0$.
+Because
+
+$$
+\alpha_1 = \bar{0}
+$$
+
+, we can choose its scalar $a_1$ to be any non-zero number, say
+
+$$
+a_1 = 1
+$$
+
+. For all the other vectors, we can just choose their scalars to be $0$.
 
 $$
 1 \cdot \bar{0} + 0 \cdot \alpha_2 + \dots + 0 \cdot \alpha_n = \bar{0}
 $$
 
-Since not all scalars are zero (specifically, $a_1 = 1 \neq 0$), the set $S$ is linearly dependent.
+Since not all scalars are zero (specifically,
+
+$$
+a_1 = 1 \neq 0
+$$
+
+), the set $S$ is linearly dependent.
 
 ---
 
@@ -64,13 +92,25 @@ Since not all scalars are zero (specifically, $a_1 = 1 \neq 0$), the set $S$ is 
 If a large group of vectors are all completely independent of each other, taking a smaller group from them will not suddenly make them dependent.
 
 **Proof:**
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ be a linearly independent set. By definition, if:
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+be a linearly independent set. By definition, if:
 
 $$
 a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n = \bar{0} \implies a_1 = a_2 = \dots = a_n = 0
 $$
 
-Let $S_1$ be a subset of $S$ containing the first $k$ vectors: $S_1 = \lbrace \alpha_1, \alpha_2, \dots, \alpha_k \rbrace$ where $1 < k \le n$.
+Let $S_1$ be a subset of $S$ containing the first $k$ vectors:
+
+$$
+S_1 = \lbrace \alpha_1, \alpha_2, \dots, \alpha_k \rbrace
+$$
+
+where $1 < k \le n$.
 We want to prove $S_1$ is linearly independent. We set up its linear combination:
 
 $$
@@ -96,13 +136,24 @@ Since the only solution for the subset's combination is all zeros, the subset $S
 If a set is already linearly dependent (meaning it has redundant vectors), adding more vectors to it will not magically fix the redundancy.
 
 **Proof:**
-Let $S = \lbrace \alpha_1, \dots, \alpha_n \rbrace$ be linearly dependent. This means there exist scalars $a_1, \dots, a_n$, not all zero, such that:
+Let
+
+$$
+S = \lbrace \alpha_1, \dots, \alpha_n \rbrace
+$$
+
+be linearly dependent. This means there exist scalars $a_1, \dots, a_n$, not all zero, such that:
 
 $$
 a_1\alpha_1 + \dots + a_n\alpha_n = \bar{0}
 $$
 
-Let us add a new vector $\alpha$ to create a superset $S_1 = \lbrace \alpha_1, \dots, \alpha_n, \alpha \rbrace$.
+Let us add a new vector $\alpha$ to create a superset
+
+$$
+S_1 = \lbrace \alpha_1, \dots, \alpha_n, \alpha \rbrace.
+$$
+
 We can write a combination for $S_1$:
 
 $$
@@ -117,7 +168,19 @@ Because the original scalars $a_1, \dots, a_n$ were not all zero, the scalars in
 
 This is the most important theorem regarding linear dependence. It states exactly *why* a set is dependent.
 
-**Theorem:** A set of non-zero vectors $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ is linearly dependent **if and only if** some vector $\alpha_k$ ($2 \le k \le n$) can be expressed as a linear combination of its preceding vectors ($\alpha_1, \alpha_2, \dots, \alpha_{k-1}$).
+**Theorem:** A set of non-zero vectors
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+is linearly dependent **if and only if** some vector $\alpha_k$ ($2 \le k \le n$) can be expressed as a linear combination of its preceding vectors (
+
+$$
+\alpha_1, \alpha_2, \dots, \alpha_{k-1}
+$$
+
+).
 
 Because this is an "if and only if" theorem, we prove both directions.
 
@@ -130,8 +193,20 @@ a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n = \bar{0}
 $$
 
 Since the vectors are non-zero, $\alpha_1 \neq \bar{0}$.
-Let $k$ be the largest index such that its scalar $a_k \neq 0$. (This means for all vectors after $k$, their scalars are zero: $a_{k+1} = 0, \dots, a_n = 0$).
-We also know $k > 1$. (If $k=1$, then $a_1\alpha_1 = \bar{0}$. Since $\alpha_1 \neq \bar{0}$, $a_1$ must be $0$, which contradicts our assumption that not all scalars are zero).
+Let $k$ be the largest index such that its scalar $a_k \neq 0$. (This means for all vectors after $k$, their scalars are zero:
+
+$$
+a_{k+1} = 0, \dots, a_n = 0
+$$
+
+).
+We also know $k > 1$. (If $k=1$, then
+
+$$
+a_1\alpha_1 = \bar{0}
+$$
+
+. Since $\alpha_1 \neq \bar{0}$, $a_1$ must be $0$, which contradicts our assumption that not all scalars are zero).
 
 So our equation simplifies to:
 
@@ -168,9 +243,21 @@ c_1\alpha_1 + c_2\alpha_2 + \dots + c_{k-1}\alpha_{k-1} - 1\cdot\alpha_k = \bar{
 $$
 
 Look closely at this linear combination. The scalar coefficient for $\alpha_k$ is exactly $-1$. Since $-1 \neq 0$, the scalars in this combination are **not all zero**.
-Therefore, the subset $\lbrace \alpha_1, \dots, \alpha_k \rbrace$ is linearly dependent.
+Therefore, the subset
 
-Since any superset of a linearly dependent set is also linearly dependent (as proven in our lemma), the full set $S = \lbrace \alpha_1, \dots, \alpha_n \rbrace$ is linearly dependent.
+$$
+\lbrace \alpha_1, \dots, \alpha_k \rbrace
+$$
+
+is linearly dependent.
+
+Since any superset of a linearly dependent set is also linearly dependent (as proven in our lemma), the full set
+
+$$
+S = \lbrace \alpha_1, \dots, \alpha_n \rbrace
+$$
+
+is linearly dependent.
 
 ---
 

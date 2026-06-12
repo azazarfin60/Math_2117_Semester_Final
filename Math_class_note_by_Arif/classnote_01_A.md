@@ -84,7 +84,9 @@ $$
 
 (vertical concat)
 
-$A^T = A$
+$$
+A^T = A
+$$
 
 <!-- Page 002 -->
 <div align="right"><b>[Upside Down Text Transcribed]</b></div>
@@ -96,11 +98,23 @@ $A - B \neq B - A$
 
 $A \times B \quad m \times n \quad n \times p$
 
-**n-square matrix:** $A^2 = A \times A$, $A^3 \neq A^n$
+**n-square matrix:**
+
+$$
+A^2 = A \times A
+$$
+
+, $A^3 \neq A^n$
 
 **Why do we need to study symmetric matrix?**
 
-**skew symmetric:** $A^T = -A$, main diagonal must zero
+**skew symmetric:**
+
+$$
+A^T = -A
+$$
+
+, main diagonal must zero
 **antisymmetric:** $A^T \neq A$
 
 $$
@@ -138,7 +152,9 @@ $\rightarrow$ sub diagonal
 
 use of trisis matrix : importance?
 
-$a_{22} = \text{main}$
+$$
+a_{22} = \text{main}
+$$
 
 $$
 A =
@@ -158,7 +174,9 @@ g & f & 0
 \end{bmatrix} = -A
 $$
 
-$A^T = -A$
+$$
+A^T = -A
+$$
 
 <!-- Page 003 -->
 <div align="right"><b>10-11-23</b></div>
@@ -185,19 +203,37 @@ Murray R. Spiegel
 <b>Class 3 | Rupali mam</b>
 
 **Dot:**
-$\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos\theta$
-$\vec{A} \cdot \vec{B} = 0 \text{ (perpendicular each other, } \theta = 90^\circ \text{)}$
-$\vec{A} \cdot \vec{B} = AB \text{ (} \theta = 0^\circ \text{)}$
+
+$$
+\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|\cos\theta
+$$
+
+$$
+\vec{A} \cdot \vec{B} = 0 \text{ (perpendicular each other, } \theta = 90^\circ \text{)}
+$$
+
+$$
+\vec{A} \cdot \vec{B} = AB \text{ (} \theta = 0^\circ \text{)}
+$$
 
 $\rightarrow$ mean: একটা ভেক্টর আরেকটার সাথে কেমন, প্যারালাল না লম্ব।
 $\rightarrow$ একটার সাপেক্ষে অন্যটা কতটুকু similar।
 
 **Cross:**
-$\vec{A} \times \vec{B} = AB\sin\theta\hat{n}$
+
+$$
+\vec{A} \times \vec{B} = AB\sin\theta\hat{n}
+$$
 
 **Triple product**
-$\vec{A} \cdot (\vec{B} \times \vec{C})$
-$\vec{A} \times \vec{B} \cdot (\vec{C} - \vec{D})$
+
+$$
+\vec{A} \cdot (\vec{B} \times \vec{C})
+$$
+
+$$
+\vec{A} \times \vec{B} \cdot (\vec{C} - \vec{D})
+$$
 
 <!-- Page 004 -->
 <div align="right"><b>15-11-23</b></div>
@@ -292,8 +328,14 @@ $$
 \end{pmatrix}
 $$
 
-$n_o = 1$
-$n_o = 2$
+$$
+n_o = 1
+$$
+
+$$
+n_o = 2
+$$
+
 $\text{rank} = 3 \rightarrow \text{so echelon}$
 
 **Row cannonical form**
@@ -422,7 +464,11 @@ $$
 (average $\rightarrow$ limit $\rightarrow$ তাৎক্ষনিক)
 
 **parametric equation**
-$x^2 + y^2 = r^2 \rightarrow \text{Cartesian}$
+
+$$
+x^2 + y^2 = r^2 \rightarrow \text{Cartesian}
+$$
+
 $x = r\cos\theta$
 $y = r\sin\theta$
 
@@ -466,14 +512,27 @@ Determinant
 **A system of linear equations:**
 what is system?
 
-$a_{11}x_1 + a_{12}x_2 + a_{13}x_3 + \dots + a_{1n}x_n = b_1$
-$a_{21}x_1 + a_{22}x_2 + a_{23}x_3 + \dots + a_{2n}x_n = b_2$
+$$
+a_{11}x_1 + a_{12}x_2 + a_{13}x_3 + \dots + a_{1n}x_n = b_1
+$$
+
+$$
+a_{21}x_1 + a_{22}x_2 + a_{23}x_3 + \dots + a_{2n}x_n = b_2
+$$
+
 $\dots$
-$a_{n1}x_1 + a_{n2}x_2 + a_{n3}x_3 + \dots + a_{nn}x_n = b_n$
+
+$$
+a_{n1}x_1 + a_{n2}x_2 + a_{n3}x_3 + \dots + a_{nn}x_n = b_n
+$$
 
 - Unknown are $x_1, x_2 \dots x_n$
 - degree of unkown are 1
-- $b_1, b_2 \dots b_n = \text{constant}$
+-
+
+$$
+b_1, b_2 \dots b_n = \text{constant}
+$$
 
 **non-homogeneous**
 $b_1, b_2 \dots b_n$ if one of them are not zero.
@@ -489,7 +548,11 @@ $b_1, b_2 \dots b_n$ all are zero
 homogenous এর unique এর সল্যুশন নাই।
 
 $AX = B$
-$A = egin{pmatrix} a_{11} & a_{12} & \dots & a_{1n} \ a_{21} & a_{22} & \dots & a_{2n} \ a_{n1} & a_{n2} & \dots & a_{nn} \end{pmatrix} \leftarrow 	ext{coefficient of the unknowns}$
+
+$$
+A = egin{pmatrix} a_{11} & a_{12} & \dots & a_{1n} \ a_{21} & a_{22} & \dots & a_{2n} \ a_{n1} & a_{n2} & \dots & a_{nn} \end{pmatrix} \leftarrow 	ext{coefficient of the unknowns}
+$$
+
 $X = egin{pmatrix} x_1 \ x_2 \
 dots \ x_n \end{pmatrix}$
 $B = egin{pmatrix} b_1 \ b_2 \

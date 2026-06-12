@@ -78,7 +78,13 @@ $$
 ## Solved Problems
 
 ### Problem 1: Basic Gradient Calculation
-**Question:** If $f = x^3 + y^3 + 3xy$, find $\text{grad } f$.
+**Question:** If
+
+$$
+f = x^3 + y^3 + 3xy
+$$
+
+, find $\text{grad } f$.
 
 **Solution:**
 Apply the del operator to the function:
@@ -100,7 +106,13 @@ $$
 $$
 
 ### Problem 2: Gradient Evaluation at a Point
-**Question:** If $\phi(x,y,z) = 2x^2y^3 - 3y^2z^3$, find $\nabla\phi$ at the point $(1, -1, 1)$.
+**Question:** If
+
+$$
+\phi(x,y,z) = 2x^2y^3 - 3y^2z^3
+$$
+
+, find $\nabla\phi$ at the point $(1, -1, 1)$.
 
 **Solution:**
 First, calculate the partial derivatives:
@@ -144,10 +156,19 @@ $$
 $$
 
 ### Problem 3: Gradient of a Scalar Triple Product
-**Question:** If $\vec{a}$ and $\vec{b}$ are constant vectors, prove that $\nabla[\vec{r}\ \vec{a}\ \vec{b}] = \vec{a} \times \vec{b}$.
+**Question:** If $\vec{a}$ and $\vec{b}$ are constant vectors, prove that
+
+$$
+\nabla[\vec{r}\ \vec{a}\ \vec{b}] = \vec{a} \times \vec{b}.
+$$
 
 **Solution:**
-Let the cross product $\vec{A} = \vec{a} \times \vec{b}$.
+Let the cross product
+
+$$
+\vec{A} = \vec{a} \times \vec{b}.
+$$
+
 Since $\vec{a}$ and $\vec{b}$ are constant, $\vec{A}$ is also a constant vector.
 The scalar triple product becomes a simple dot product:
 
@@ -190,10 +211,22 @@ $$
 $$
 
 ### Problem 4: Gradient of
-**Question:** If $r^2 = x^2 + y^2 + z^2$, find $\text{grad } r^n$.
+**Question:** If
+
+$$
+r^2 = x^2 + y^2 + z^2
+$$
+
+, find $\text{grad } r^n$.
 
 **Solution:**
-First, note that differentiating $r^2 = x^2 + y^2 + z^2$ with respect to $x$ gives:
+First, note that differentiating
+
+$$
+r^2 = x^2 + y^2 + z^2
+$$
+
+with respect to $x$ gives:
 
 $$
 2r\frac{\partial r}{\partial x} = 2x \implies \frac{\partial r}{\partial x} = \frac{x}{r}

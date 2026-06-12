@@ -308,7 +308,13 @@ $$
 \bar{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}
 $$
 
- is irrotational. Find $\Phi$ such that $\bar{A} = \nabla\Phi$. (06)
+is irrotational. Find $\Phi$ such that
+
+$$
+\bar{A} = \nabla\Phi
+$$
+
+. (06)
 
 **Answer:**
 
@@ -347,7 +353,11 @@ The curl is the zero vector, so the field is irrotational.
 
 #### 2. Find Potential Function
 
-We solve the relation $\bar{A} = \bar{\nabla}\Phi$:
+We solve the relation
+
+$$
+\bar{A} = \bar{\nabla}\Phi:
+$$
 
 $$
 \frac{\partial\Phi}{\partial x} = 6xy + z^3 \implies \Phi = 3x^2y + xz^3 + g(y, z) \quad \dots \text{(1)}
@@ -392,7 +402,13 @@ $$
 $$
 
  along: (06)
-*   **(i)** The curve defined by $x = t, y = t^2, z = t^3$ from $t=0$ to $t=1$.
+*   **(i)** The curve defined by
+
+$$
+x = t, y = t^2, z = t^3
+$$
+
+from $t=0$ to $t=1$.
 *   **(ii)** The straight line joining $(0, 0, 0)$ and $(1, 1, 1)$.
 
 **Answer:**
@@ -463,7 +479,13 @@ $$
 \bar{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}
 $$
 
- and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+and $S$ is the surface of the cylinder
+
+$$
+x^2 + y^2 = 16
+$$
+
+included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 
@@ -537,7 +559,13 @@ $$
 \oint_C (xy + y^2)dx + x^2dy
 $$
 
- where $C$ is a closed region bounded by $y = x$ and $y = x^2$. (06)
+where $C$ is a closed region bounded by $y = x$ and
+
+$$
+y = x^2
+$$
+
+. (06)
 
 **Answer:**
 
@@ -586,7 +614,13 @@ $$
 #### 2. Evaluate Line Integral
 
 The closed path $C$ has two parts:
-1.  Path $C\_1$ ($y = x^2$, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
+1.  Path $C\_1$ (
+
+$$
+y = x^2
+$$
+
+, $dy = 2x dx$) from $(0,0)$ to $(1,1)$.
 2.  Path $C\_2$ ($y = x$, $dy = dx$) from $(1,1)$ to $(0,0)$.
 
 Evaluate along Path $C\_1$:
@@ -641,13 +675,31 @@ $$
 (B'A')_{ij} = \sum_{k=1}^n (B')_{ik} (A')_{kj}
 $$
 
-Using the transpose definitions $(B')\_{ik} = b\_{ki}$ and $(A')\_{kj} = a\_{jk}$, we substitute:
+Using the transpose definitions
+
+$$
+(B')\_{ik} = b\_{ki}
+$$
+
+and
+
+$$
+(A')\_{kj} = a\_{jk}
+$$
+
+, we substitute:
 
 $$
 (B'A')_{ij} = \sum_{k=1}^n b_{ki} a_{jk} = \sum_{k=1}^n a_{jk} b_{ki}
 $$
 
-Since $(AB)'\_{ij} = (B'A')\_{ij}$ for all indices, we get:
+Since
+
+$$
+(AB)'\_{ij} = (B'A')\_{ij}
+$$
+
+for all indices, we get:
 
 $$
 (AB)' = B'A'
@@ -676,10 +728,8 @@ $$
  and
 
 $$
-Q = \frac{1}{2}(A - A^T)
+Q = \frac{1}{2}(A - A^T).
 $$
-
-.
 
 #### 1. Show $P$ is symmetric
 
@@ -717,7 +767,11 @@ $$
 
 We solve the equations:
 1.  $P' + Q' = A$
-2.  $P' - Q' = A^T$
+2.
+
+$$
+P' - Q' = A^T
+$$
 
 Adding them gives:
 
@@ -1284,9 +1338,23 @@ $$
 $$
 
 By back substitution, we solve the coefficients:
-*   From the third row: $5c\_3 = 10 \implies c\_3 = 2$.
-*   From the second row: $c\_2 - 3(2) = -3 \implies c\_2 = 3$.
-*   From the first row: $c\_1 + 3 + 2(2) = 1 \implies c\_1 = -6$.
+*   From the third row:
+
+$$
+5c\_3 = 10 \implies c\_3 = 2.
+$$
+
+*   From the second row:
+
+$$
+c\_2 - 3(2) = -3 \implies c\_2 = 3.
+$$
+
+*   From the first row:
+
+$$
+c\_1 + 3 + 2(2) = 1 \implies c\_1 = -6.
+$$
 
 So the linear combination is:
 
@@ -1326,7 +1394,13 @@ $$
 c_3 = 0 \quad \dots \text{(3)}
 $$
 
-Substitute $c\_3 = 0$ from equation (3) into equations (1) and (2):
+Substitute
+
+$$
+c\_3 = 0
+$$
+
+from equation (3) into equations (1) and (2):
 
 $$
 c_1 + c_2 = 0
@@ -1336,9 +1410,25 @@ $$
 c_1 - c_2 = 0
 $$
 
-Adding these equations gives $2c\_1 = 0 \implies c\_1 = 0$. This then gives $c\_2 = 0$.
+Adding these equations gives
 
-Since the only solution is $c\_1 = c\_2 = c\_3 = 0$, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
+$$
+2c\_1 = 0 \implies c\_1 = 0
+$$
+
+. This then gives
+
+$$
+c\_2 = 0.
+$$
+
+Since the only solution is
+
+$$
+c\_1 = c\_2 = c\_3 = 0
+$$
+
+, the vectors $u + v$, $u - v$, and $u - 2v + w$ are linearly independent.
 
 ---
 

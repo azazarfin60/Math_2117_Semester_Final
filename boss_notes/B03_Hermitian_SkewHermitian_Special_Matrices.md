@@ -24,8 +24,19 @@ Here $\bar{A}$ is the complex conjugate (replace $i$ with $-i$ in every entry). 
 
 ### Properties
 
-- Diagonal entries must be real (since $a_{ii} = \overline{a_{ii}}$ implies $a_{ii} \in \mathbb{R}$).
-- Off-diagonal entries satisfy $a_{ij} = \overline{a_{ji}}$.
+- Diagonal entries must be real (since
+
+$$
+a_{ii} = \overline{a_{ii}}
+$$
+
+implies $a_{ii} \in \mathbb{R}$).
+- Off-diagonal entries satisfy
+
+$$
+a_{ij} = \overline{a_{ji}}.
+$$
+
 - All eigenvalues of a Hermitian matrix are real.
 
 ### Example
@@ -64,8 +75,18 @@ $$
 
 ### Properties
 
-- Diagonal entries must be pure imaginary or zero (since $\overline{a_{ii}} = -a_{ii}$).
-- Off-diagonal entries satisfy $a_{ij} = -\overline{a_{ji}}$.
+- Diagonal entries must be pure imaginary or zero (since
+
+$$
+\overline{a_{ii}} = -a_{ii}
+$$
+
+).
+- Off-diagonal entries satisfy
+
+$$
+a_{ij} = -\overline{a_{ji}}.
+$$
 
 ### Example
 
@@ -145,7 +166,11 @@ $$
 A^2 = I
 $$
 
-This means $A$ is its own inverse: $A^{-1} = A$.
+This means $A$ is its own inverse:
+
+$$
+A^{-1} = A.
+$$
 
 **Example**:
 
@@ -197,7 +222,13 @@ $$
 A^T A = AA^T = I
 $$
 
-This means $A^{-1} = A^T$. The columns form an orthonormal set. The determinant is $\pm 1$.
+This means
+
+$$
+A^{-1} = A^T
+$$
+
+. The columns form an orthonormal set. The determinant is $\pm 1$.
 
 **Example**: Rotation matrices are orthogonal.
 
@@ -209,7 +240,11 @@ $$
 A^\dagger A = AA^\dagger = I
 $$
 
-This is the complex version of orthogonal. $A^{-1} = A^\dagger$.
+This is the complex version of orthogonal.
+
+$$
+A^{-1} = A^\dagger.
+$$
 
 ---
 

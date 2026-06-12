@@ -13,12 +13,29 @@
 **Question:** **Prove that every finite-dimensional vector space has a basis.**
 
 **Answer:**
-Let $V$ be a finite-dimensional vector space. By definition, there exists a finite spanning set $S = \lbrace v_1, v_2, \dots, v_n\rbrace$ such that $\text{span}(S) = V$.
+Let $V$ be a finite-dimensional vector space. By definition, there exists a finite spanning set
+
+$$
+S = \lbrace v_1, v_2, \dots, v_n\rbrace
+$$
+
+such that $\text{span}(S) = V$.
 We construct a basis by an iterative process of removing redundant vectors:
 
 1. If $S$ is linearly independent, then $S$ is a basis, and we are done.
 2. If $S$ is linearly dependent, there exists some vector $v_k \in S$ that can be written as a linear combination of the other vectors in $S$.
-3. Remove $v_k$ from $S$ to form a new set $S_1 = S \setminus \lbrace v_k\rbrace$. Since $v_k$ was already a linear combination of the remaining vectors, its removal does not change the span. Thus, $\text{span}(S_1) = \text{span}(S) = V$.
+3. Remove $v_k$ from $S$ to form a new set
+
+$$
+S_1 = S \setminus \lbrace v_k\rbrace
+$$
+
+. Since $v_k$ was already a linear combination of the remaining vectors, its removal does not change the span. Thus,
+
+$$
+\text{span}(S_1) = \text{span}(S) = V.
+$$
+
 4. Check if $S_1$ is linearly independent. If it is, $S_1$ is a basis. If not, repeat the process.
 
 Since $S$ is finite (contains $n$ elements), this removal process must terminate after at most $n$ steps. It cannot result in the empty set (unless $V = \lbrace 0\rbrace$, which trivially has an empty basis). When the process terminates, the resulting subset $S_k \subseteq S$ will be linearly independent and will still span $V$. Therefore, $S_k$ is a basis for $V$. Thus, every finite-dimensional vector space has a basis.
@@ -27,7 +44,19 @@ Since $S$ is finite (contains $n$ elements), this removal process must terminate
 **Question:** **Show that any two bases of a finite-dimensional vector space have the same number of elements.**
 
 **Answer:**
-Let $V$ be a finite-dimensional vector space. Let $B_1 = \lbrace u_1, u_2, \dots, u_m\rbrace$ and $B_2 = \lbrace v_1, v_2, \dots, v_n\rbrace$ be two bases for $V$. We want to show that $m = n$.
+Let $V$ be a finite-dimensional vector space. Let
+
+$$
+B_1 = \lbrace u_1, u_2, \dots, u_m\rbrace
+$$
+
+and
+
+$$
+B_2 = \lbrace v_1, v_2, \dots, v_n\rbrace
+$$
+
+be two bases for $V$. We want to show that $m = n$.
 
 We will use the Steinitz Exchange Lemma. Since $B_1$ spans $V$ and $B_2$ is a linearly independent set in $V$, the lemma states that the number of vectors in the linearly independent set cannot exceed the number of vectors in the spanning set. Applying this:
 *   Because $B_1$ is a spanning set and $B_2$ is linearly independent, we have $n \leq m$.
@@ -39,10 +68,33 @@ Combining these two inequalities gives $m \leq n$ and $n \leq m$, which implies 
 **Question:** **Extend a linearly independent set to a basis.**
 
 **Answer:**
-Let $V$ be an $n$-dimensional vector space. Let $S = \lbrace v_1, v_2, \dots, v_k\rbrace$ be a linearly independent set in $V$ with $k < n$. We want to extend $S$ to form a basis for $V$.
+Let $V$ be an $n$-dimensional vector space. Let
 
-Let $B = \lbrace e_1, e_2, \dots, e_n\rbrace$ be any known basis for $V$ (such as the standard basis if $V = \mathbb{R}^n$).
-Consider the union of sets: $S \cup B = \lbrace v_1, \dots, v_k, e_1, \dots, e_n\rbrace$.
+$$
+S = \lbrace v_1, v_2, \dots, v_k\rbrace
+$$
+
+be a linearly independent set in $V$ with $k < n$. We want to extend $S$ to form a basis for $V$.
+
+Let
+
+$$
+B = \lbrace e_1, e_2, \dots, e_n\rbrace
+$$
+
+be any known basis for $V$ (such as the standard basis if
+
+$$
+V = \mathbb{R}^n
+$$
+
+).
+Consider the union of sets:
+
+$$
+S \cup B = \lbrace v_1, \dots, v_k, e_1, \dots, e_n\rbrace.
+$$
+
 This combined set clearly spans $V$ because it contains $B$, which already spans $V$.
 To reduce this spanning set to a basis while keeping all elements of $S$:
 

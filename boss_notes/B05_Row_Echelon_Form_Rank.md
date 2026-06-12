@@ -352,10 +352,20 @@ This means the system $AX = 0$ has one free variable and its solution space is o
 
 1. $\rho(A) = 0$ if and only if $A$ is the zero matrix.
 2. For an $m \times n$ matrix, $\rho(A) \leq \min(m, n)$.
-3. $\rho(A) = \rho(A^T)$. Row rank equals column rank.
+3.
+
+$$
+\rho(A) = \rho(A^T)
+$$
+
+. Row rank equals column rank.
 4. Row operations do not change the rank.
 5. If $A$ is an $n \times n$ matrix, then $\rho(A) = n$ if and only if $A$ is invertible (non-singular).
-6. If $\rho(A) < n$ for a square matrix of order $n$, then $\lvert A \rvert = 0$.
+6. If $\rho(A) < n$ for a square matrix of order $n$, then
+
+$$
+\lvert A \rvert = 0.
+$$
 
 ---
 
@@ -513,10 +523,8 @@ $$
 Scale
 
 $$
-R_2 \to \frac{1}{9}R_2
+R_2 \to \frac{1}{9}R_2:
 $$
-
-:
 
 $$
 \begin{bmatrix}

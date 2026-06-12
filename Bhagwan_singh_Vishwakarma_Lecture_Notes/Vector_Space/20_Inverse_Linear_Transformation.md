@@ -21,14 +21,26 @@ We know how to represent a linear transformation $T : V \to W$ as a matrix $[T]$
 Let $T : V \to W$ be a linear transformation.
 For $T$ to have an inverse $T^{-1} : W \to V$, the transformation must be a perfect one-to-one correspondence (an isomorphism). Practically, when working with matrix representations, this means:
 
-1.  **Square Matrix Requirement**: The dimension of the domain must equal the dimension of the co-domain. For a transformation $T : V \to V$, its matrix $A = [T]_B$ will be a square matrix.
+1.  **Square Matrix Requirement**: The dimension of the domain must equal the dimension of the co-domain. For a transformation $T : V \to V$, its matrix
+
+$$
+A = [T]_B
+$$
+
+will be a square matrix.
 2.  **Non-Singularity**: The determinant of the transformation matrix must be non-zero.
 
 $$
 |A| \neq 0
 $$
 
-    If $\lvert A \rvert \neq 0$, the linear transformation is called **non-singular** and is guaranteed to be invertible. If $\lvert A \rvert = 0$, it is singular and cannot be inverted (information was lost, meaning the kernel is not just the zero vector).
+If $\lvert A \rvert \neq 0$, the linear transformation is called **non-singular** and is guaranteed to be invertible. If
+
+$$
+\lvert A \rvert = 0
+$$
+
+, it is singular and cannot be inverted (information was lost, meaning the kernel is not just the zero vector).
 
 ---
 
@@ -37,7 +49,13 @@ $$
 If the transformation is invertible, its inverse is perfectly represented by the inverse of its matrix.
 
 ### The Steps
-1.  **Construct the Matrix**: Find the matrix $A = [T]_B$ of the transformation with respect to a given basis (usually the standard basis).
+1.  **Construct the Matrix**: Find the matrix
+
+$$
+A = [T]_B
+$$
+
+of the transformation with respect to a given basis (usually the standard basis).
 2.  **Verify Non-Singularity**: Compute the determinant $\lvert A \rvert$. Ensure $\lvert A \rvert \neq 0$.
 3.  **Compute the Inverse Matrix**: Use the standard formula for matrix inversion:
 
@@ -66,7 +84,13 @@ $$
 
 ## Numerical Example 1
 
-**Problem:** Find the inverse linear transformation $T^{-1}$ for the transformation $T : \mathbb{R}^3 \to \mathbb{R}^3$ defined by:
+**Problem:** Find the inverse linear transformation $T^{-1}$ for the transformation
+
+$$
+T : \mathbb{R}^3 \to \mathbb{R}^3
+$$
+
+defined by:
 
 $$
 T(x, y, z) = (2x + y + z, x + y + 2z, x - 2z)
@@ -107,7 +131,13 @@ $$
 |A| = 2(-2) - 1(-4) + 1(-1) = -4 + 4 - 1 = -1
 $$
 
-Since $\lvert A \rvert = -1 \neq 0$, the transformation is non-singular and invertible.
+Since
+
+$$
+\lvert A \rvert = -1 \neq 0
+$$
+
+, the transformation is non-singular and invertible.
 
 **Step 3: Compute the Inverse Matrix $A^{-1}$**
 Find the adjoint matrix by computing all 9 cofactors (omitting the tedious arithmetic here):
@@ -167,7 +197,13 @@ The formula perfectly reverses the transformation!
 
 ## Numerical Example 2 (Homework)
 
-**Problem:** Let $T : \mathbb{R}^3 \to \mathbb{R}^3$ be a linear transformation defined by:
+**Problem:** Let
+
+$$
+T : \mathbb{R}^3 \to \mathbb{R}^3
+$$
+
+be a linear transformation defined by:
 
 $$
 T(x, y, z) = (3x + z, -2x + y, -x + 2y + 4z)
@@ -225,7 +261,13 @@ $$
 
 ## Key Takeaways
 *   A linear transformation is invertible (non-singular) if and only if the determinant of its matrix representation is non-zero ($\lvert A \rvert \neq 0$).
-*   The matrix of the inverse transformation is exactly the inverse of the original transformation's matrix ($[T^{-1}]_B = [T]_B^{-1}$).
+*   The matrix of the inverse transformation is exactly the inverse of the original transformation's matrix (
+
+$$
+[T^{-1}]_B = [T]_B^{-1}
+$$
+
+).
 *   Matrix representation turns the complex algebraic problem of reversing a function into the standardized mechanical process of finding a matrix inverse.
 
 ---

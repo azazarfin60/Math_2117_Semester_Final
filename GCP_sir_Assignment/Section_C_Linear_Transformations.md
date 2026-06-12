@@ -1,7 +1,19 @@
 # Section C: Linear Transformations
 
 ## Q16 (04)
-**Question:** **Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x^2, y)$. Check whether $T$ is a linear transformation. Justify your answer.**
+**Question:** **Let
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+be defined by
+
+$$
+T(x, y) = (x^2, y)
+$$
+
+. Check whether $T$ is a linear transformation. Justify your answer.**
 
 **Answer:**
 For $T$ to be a linear transformation, it must satisfy the additivity and scalar multiplication properties:
@@ -10,12 +22,19 @@ For $T$ to be a linear transformation, it must satisfy the additivity and scalar
 
 Let's test the scalar multiplication property.
 Let $u = (1, 1)$ and scalar $c = 2$.
-$T(u) = T(1, 1) = (1^2, 1) = (1, 1)$.
+
+$$
+T(u) = T(1, 1) = (1^2, 1) = (1, 1).
+$$
+
 Then $cT(u) = 2(1, 1) = (2, 2)$.
 
 Now, compute $T(cu)$:
 $cu = 2(1, 1) = (2, 2)$.
-$T(cu) = T(2, 2) = (2^2, 2) = (4, 2)$.
+
+$$
+T(cu) = T(2, 2) = (2^2, 2) = (4, 2).
+$$
 
 Since $T(cu) = (4, 2) \neq (2, 2) = cT(u)$, the scalar multiplication property fails. Therefore, $T$ is not a linear transformation.
 
@@ -50,15 +69,42 @@ $$
 $$
 
 ## Q18 (05)
-**Question:** **Let $T: \mathbb{R}^3 \to \mathbb{R}^2$ be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation? Find: (i) Kernel of $T$, (ii) Range of $T$, (iii) Rank and Nullity.**
+**Question:** **Let
+
+$$
+T: \mathbb{R}^3 \to \mathbb{R}^2
+$$
+
+be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation? Find: (i) Kernel of $T$, (ii) Range of $T$, (iii) Rank and Nullity.**
 
 **Answer:**
 **Part 1: Is it a linear transformation?**
-Let $u = (x_1, y_1, z_1)$ and $v = (x_2, y_2, z_2)$.
-$T(u + v) = T(x_1+x_2, y_1+y_2, z_1+z_2) = (x_1+x_2 + y_1+y_2, y_1+y_2 + z_1+z_2)$.
-$= (x_1+y_1, y_1+z_1) + (x_2+y_2, y_2+z_2) = T(u) + T(v)$.
+Let
+
+$$
+u = (x_1, y_1, z_1)
+$$
+
+and
+
+$$
+v = (x_2, y_2, z_2).
+$$
+
+$$
+T(u + v) = T(x_1+x_2, y_1+y_2, z_1+z_2) = (x_1+x_2 + y_1+y_2, y_1+y_2 + z_1+z_2).
+$$
+
+$$
+= (x_1+y_1, y_1+z_1) + (x_2+y_2, y_2+z_2) = T(u) + T(v).
+$$
+
 Let $c$ be a scalar.
-$T(cu) = T(cx_1, cy_1, cz_1) = (cx_1+cy_1, cy_1+cz_1) = c(x_1+y_1, y_1+z_1) = cT(u)$.
+
+$$
+T(cu) = T(cx_1, cy_1, cz_1) = (cx_1+cy_1, cy_1+cz_1) = c(x_1+y_1, y_1+z_1) = cT(u).
+$$
+
 Yes, it is a linear transformation.
 
 **(i) Kernel of $T$**:
@@ -74,22 +120,52 @@ $$
 **(ii) Range of $T$**:
 $T(x, y, z) = x(1, 0) + y(1, 1) + z(0, 1)$.
 The range is spanned by $\lbrace(1, 0), (1, 1), (0, 1)\rbrace$. The vectors $(1, 0)$ and $(0, 1)$ are linearly independent and span $\mathbb{R}^2$.
-Thus, $\text{range}(T) = \mathbb{R}^2$.
+Thus,
+
+$$
+\text{range}(T) = \mathbb{R}^2.
+$$
 
 **(iii) Rank and Nullity**:
 From the basis of the kernel, $\text{nullity}(T) = 1$.
 From the basis of the range, $\text{rank}(T) = 2$.
-Note: $\text{rank}(T) + \text{nullity}(T) = 2 + 1 = 3 = \dim(\mathbb{R}^3)$, which verifies the Rank-Nullity Theorem.
+Note:
+
+$$
+\text{rank}(T) + \text{nullity}(T) = 2 + 1 = 3 = \dim(\mathbb{R}^3)
+$$
+
+, which verifies the Rank-Nullity Theorem.
 
 ## Q19 (05)
-**Question:** **Let $T: \mathbb{R}^3 \to \mathbb{R}^3$ be defined by $T(x, y, z) = (x + y, y + z, z + x)$. Find the matrix of $T$, its rank, nullity, and verify the rank-nullity theorem.**
+**Question:** **Let
+
+$$
+T: \mathbb{R}^3 \to \mathbb{R}^3
+$$
+
+be defined by $T(x, y, z) = (x + y, y + z, z + x)$. Find the matrix of $T$, its rank, nullity, and verify the rank-nullity theorem.**
 
 **Answer:**
 **1. Matrix of $T$**:
-Using the standard basis $e_1 = (1,0,0), e_2 = (0,1,0), e_3 = (0,0,1)$:
-$T(e_1) = (1+0, 0+0, 0+1) = (1, 0, 1)$
-$T(e_2) = (0+1, 1+0, 0+0) = (1, 1, 0)$
-$T(e_3) = (0+0, 0+1, 1+0) = (0, 1, 1)$
+Using the standard basis
+
+$$
+e_1 = (1,0,0), e_2 = (0,1,0), e_3 = (0,0,1):
+$$
+
+$$
+T(e_1) = (1+0, 0+0, 0+1) = (1, 0, 1)
+$$
+
+$$
+T(e_2) = (0+1, 1+0, 0+0) = (1, 1, 0)
+$$
+
+$$
+T(e_3) = (0+0, 0+1, 1+0) = (0, 1, 1)
+$$
+
 The matrix $A$ relative to the standard basis is formed by taking these vectors as columns:
 
 $$
@@ -131,13 +207,37 @@ The theorem states: $\text{rank}(T) + \text{nullity}(T) = \dim(V)$
 $3 + 0 = 3$. The dimension of the domain $\mathbb{R}^3$ is 3. The theorem is verified.
 
 ## Q20 (04)
-**Question:** **Find the matrix of the linear transformation $T: \mathbb{R}^2 \to \mathbb{R}^2$, defined by $T(x, y) = (2x + y, x - y)$, with respect to the standard basis.**
+**Question:** **Find the matrix of the linear transformation
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+, defined by $T(x, y) = (2x + y, x - y)$, with respect to the standard basis.**
 
 **Answer:**
-Standard basis vectors for $\mathbb{R}^2$ are $e_1 = (1, 0)$ and $e_2 = (0, 1)$.
+Standard basis vectors for $\mathbb{R}^2$ are
+
+$$
+e_1 = (1, 0)
+$$
+
+and
+
+$$
+e_2 = (0, 1).
+$$
+
 Find their images under $T$:
-$T(e_1) = T(1, 0) = (2(1) + 0, 1 - 0) = (2, 1)$
-$T(e_2) = T(0, 1) = (2(0) + 1, 0 - 1) = (1, -1)$
+
+$$
+T(e_1) = T(1, 0) = (2(1) + 0, 1 - 0) = (2, 1)
+$$
+
+$$
+T(e_2) = T(0, 1) = (2(0) + 1, 0 - 1) = (1, -1)
+$$
+
 The standard matrix of $T$ is constructed by using these image vectors as columns.
 
 $$
@@ -164,7 +264,13 @@ This means the vector $(u - v)$ is in the kernel of $T$. Since $\text{ker}(T) = 
 Therefore, $T$ maps distinct elements to distinct elements, meaning $T$ is injective.
 
 ## Q22 (05)
-**Question:** **Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be given by $T(x, y) = (3x + 2y, x + y)$. Determine whether $T$ is invertible. If yes, find $T^{-1}$.**
+**Question:** **Let
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+be given by $T(x, y) = (3x + 2y, x + y)$. Determine whether $T$ is invertible. If yes, find $T^{-1}$.**
 
 **Answer:**
 To determine invertibility, we can find the standard matrix $[T]$ and check its determinant.
@@ -206,23 +312,73 @@ $$
 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x - 2y \\ -x + 3y \end{pmatrix}
 $$
 
-So, $T^{-1}(x, y) = (x - 2y, -x + 3y)$.
+So,
+
+$$
+T^{-1}(x, y) = (x - 2y, -x + 3y).
+$$
 
 ## Q23 (05)
-**Question:** **Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x + y, x - y)$. Let $B = \lbrace(1, 1), (1, -1)\rbrace$. Find the matrix of $T$ with respect to the basis $B$.**
+**Question:** **Let
+
+$$
+T: \mathbb{R}^2 \to \mathbb{R}^2
+$$
+
+be defined by $T(x, y) = (x + y, x - y)$. Let $B = \lbrace(1, 1), (1, -1)\rbrace$. Find the matrix of $T$ with respect to the basis $B$.**
 
 **Answer:**
-Let the basis vectors be $b_1 = (1, 1)$ and $b_2 = (1, -1)$.
+Let the basis vectors be
+
+$$
+b_1 = (1, 1)
+$$
+
+and
+
+$$
+b_2 = (1, -1).
+$$
+
 First, apply $T$ to the basis vectors:
-$T(b_1) = T(1, 1) = (1+1, 1-1) = (2, 0)$
-$T(b_2) = T(1, -1) = (1-1, 1-(-1)) = (0, 2)$
+
+$$
+T(b_1) = T(1, 1) = (1+1, 1-1) = (2, 0)
+$$
+
+$$
+T(b_2) = T(1, -1) = (1-1, 1-(-1)) = (0, 2)
+$$
 
 Next, express these image vectors as linear combinations of the basis $B$:
-Let $(2, 0) = c_1b_1 + c_2b_2 = c_1(1, 1) + c_2(1, -1) = (c_1+c_2, c_1-c_2)$.
+Let
+
+$$
+(2, 0) = c_1b_1 + c_2b_2 = c_1(1, 1) + c_2(1, -1) = (c_1+c_2, c_1-c_2).
+$$
+
 This gives a system:
-$c_1 + c_2 = 2$
-$c_1 - c_2 = 0 \implies c_1 = c_2$
-So $2c_1 = 2 \implies c_1 = 1$, and $c_2 = 1$.
+
+$$
+c_1 + c_2 = 2
+$$
+
+$$
+c_1 - c_2 = 0 \implies c_1 = c_2
+$$
+
+So
+
+$$
+2c_1 = 2 \implies c_1 = 1
+$$
+
+, and
+
+$$
+c_2 = 1.
+$$
+
 Therefore,
 
 $$
@@ -233,11 +389,28 @@ $$
 \end{pmatrix}.
 $$
 
-Let $(0, 2) = d_1b_1 + d_2b_2 = (d_1+d_2, d_1-d_2)$.
+Let
+
+$$
+(0, 2) = d_1b_1 + d_2b_2 = (d_1+d_2, d_1-d_2).
+$$
+
 This gives:
-$d_1 + d_2 = 0 \implies d_1 = -d_2$
-$d_1 - d_2 = 2 \implies -d_2 - d_2 = 2 \implies -2d_2 = 2 \implies d_2 = -1$.
-So $d_1 = 1$.
+
+$$
+d_1 + d_2 = 0 \implies d_1 = -d_2
+$$
+
+$$
+d_1 - d_2 = 2 \implies -d_2 - d_2 = 2 \implies -2d_2 = 2 \implies d_2 = -1.
+$$
+
+So
+
+$$
+d_1 = 1.
+$$
+
 Therefore,
 
 $$
@@ -275,10 +448,58 @@ By transitivity, $T$ is injective if and only if $\text{nullity}(T) = 0$.
 
 **Answer:**
 **$(\Rightarrow)$ Assume $T: V \to W$ is invertible:**
-By definition, there exists a function $T^{-1}: W \to V$ such that $T^{-1}(T(v)) = v$ for all $v \in V$, and $T(T^{-1}(w)) = w$ for all $w \in W$.
-- **To show $T$ is one-to-one (injective):** Suppose $T(u) = T(v)$. Applying $T^{-1}$ to both sides gives $T^{-1}(T(u)) = T^{-1}(T(v))$, which simplifies to $u = v$. Thus $T$ is injective.
-- **To show $T$ is onto (surjective):** Let $w$ be any element in $W$. Choose $v = T^{-1}(w)$. Then $v \in V$, and by definition of the inverse, $T(v) = T(T^{-1}(w)) = w$. Since every $w \in W$ is the image of some $v \in V$, $T$ is onto.
+By definition, there exists a function $T^{-1}: W \to V$ such that
+
+$$
+T^{-1}(T(v)) = v
+$$
+
+for all $v \in V$, and
+
+$$
+T(T^{-1}(w)) = w
+$$
+
+for all $w \in W$.
+- **To show $T$ is one-to-one (injective):** Suppose $T(u) = T(v)$. Applying $T^{-1}$ to both sides gives
+
+$$
+T^{-1}(T(u)) = T^{-1}(T(v))
+$$
+
+, which simplifies to $u = v$. Thus $T$ is injective.
+- **To show $T$ is onto (surjective):** Let $w$ be any element in $W$. Choose
+
+$$
+v = T^{-1}(w)
+$$
+
+. Then $v \in V$, and by definition of the inverse,
+
+$$
+T(v) = T(T^{-1}(w)) = w
+$$
+
+. Since every $w \in W$ is the image of some $v \in V$, $T$ is onto.
 
 **$(\Leftarrow)$ Assume $T$ is both one-to-one and onto:**
-Since $T$ is onto, for every $w \in W$, there exists at least one $v \in V$ such that $T(v) = w$. Since $T$ is one-to-one, this $v$ is unique (if $T(v_1) = w$ and $T(v_2) = w$, then $T(v_1) = T(v_2) \implies v_1 = v_2$).
+Since $T$ is onto, for every $w \in W$, there exists at least one $v \in V$ such that $T(v) = w$. Since $T$ is one-to-one, this $v$ is unique (if
+
+$$
+T(v_1) = w
+$$
+
+and
+
+$$
+T(v_2) = w
+$$
+
+, then
+
+$$
+T(v_1) = T(v_2) \implies v_1 = v_2
+$$
+
+).
 Because each $w \in W$ corresponds to a unique $v \in V$, we can define a well-defined function $S: W \to V$ by mapping $w$ to that unique $v$. By this definition, $S(T(v)) = S(w) = v$ for all $v \in V$, and $T(S(w)) = T(v) = w$ for all $w \in W$. Since $T$ has a two-sided inverse function $S$, the transformation $T$ is invertible.

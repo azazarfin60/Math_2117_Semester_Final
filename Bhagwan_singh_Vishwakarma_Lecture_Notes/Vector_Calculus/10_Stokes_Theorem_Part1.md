@@ -46,7 +46,13 @@ Where:
 ### Orientation (The Right-Hand Screw Rule)
 The theorem requires a strict convention between the direction you traverse the boundary curve $C$ and the direction of the outward unit normal $\hat{\mathbf{n}}$. 
 
-If you traverse the boundary curve $C$ in the **anticlockwise (positive) direction**, and you curl the fingers of your right hand in that direction, your thumb points in the direction of the outward unit normal $\hat{\mathbf{n}}$. For example, if a surface lies flat in the $xy$-plane and you traverse its boundary anticlockwise, the outward normal points "upward" along the positive $z$-axis ($\hat{\mathbf{n}} = \hat{\mathbf{k}}$).
+If you traverse the boundary curve $C$ in the **anticlockwise (positive) direction**, and you curl the fingers of your right hand in that direction, your thumb points in the direction of the outward unit normal $\hat{\mathbf{n}}$. For example, if a surface lies flat in the $xy$-plane and you traverse its boundary anticlockwise, the outward normal points "upward" along the positive $z$-axis (
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{k}}
+$$
+
+).
 
 ### Why is this Theorem Useful?
 Stokes' Theorem allows you to swap a difficult line integral for an easier surface integral, or vice versa. 
@@ -76,7 +82,13 @@ We will traverse this boundary in the **anticlockwise direction**. This divides 
 3.  **$C_1$ (Top):** From $A(a, b)$ to $D(-a, b)$. Here, $y = b \implies dy = 0$. $x$ goes from $a$ to $-a$.
 4.  **$C_2$ (Left):** From $D(-a, b)$ to $C(-a, 0)$. Here, $x = -a \implies dx = 0$. $y$ goes from $b$ to $0$.
 
-The general line integrand is $\mathbf{F} \cdot d\mathbf{r} = (x^2 + y^2)dx - 2xy \, dy$. Let's evaluate this for each segment:
+The general line integrand is
+
+$$
+\mathbf{F} \cdot d\mathbf{r} = (x^2 + y^2)dx - 2xy \, dy
+$$
+
+. Let's evaluate this for each segment:
 
 **On $C_3$ (Bottom):**
 
@@ -136,7 +148,11 @@ $$
 = \hat{\mathbf{k}}(-2y - 2y) = -4y\hat{\mathbf{k}}
 $$
 
-Because the surface lies flat in the $xy$-plane and we traversed the boundary anticlockwise, the outward unit normal points along the positive $z$-axis: $\hat{\mathbf{n}} = \hat{\mathbf{k}}$.
+Because the surface lies flat in the $xy$-plane and we traversed the boundary anticlockwise, the outward unit normal points along the positive $z$-axis:
+
+$$
+\hat{\mathbf{n}} = \hat{\mathbf{k}}.
+$$
 
 $$
 (\nabla \times \mathbf{F}) \cdot \hat{\mathbf{n}} = (-4y\hat{\mathbf{k}}) \cdot \hat{\mathbf{k}} = -4y

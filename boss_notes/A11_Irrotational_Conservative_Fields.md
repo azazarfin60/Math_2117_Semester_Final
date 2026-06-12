@@ -32,19 +32,29 @@ $$
 
 This function $\phi(x, y, z)$ is called the **scalar potential** of $\vec{F}$.
 
-*(Note: $\nabla \times (\nabla\phi) = \vec{0}$ is a fundamental vector identity. The curl of a gradient is always zero).*
+*(Note:
+
+$$
+\nabla \times (\nabla\phi) = \vec{0}
+$$
+
+is a fundamental vector identity. The curl of a gradient is always zero).*
 
 ---
 
 ## The Method: Finding Scalar Potential
 
-To find $\phi$ such that $\vec{F} = \nabla\phi$, where
+To find $\phi$ such that
 
 $$
-\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}:
+\vec{F} = \nabla\phi
 $$
 
-:
+, where
+
+$$
+\vec{F} = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}::
+$$
 
 1. Set up three equations:
 
@@ -64,10 +74,9 @@ $$
 3. Differentiate your result with respect to $y$, and equate it to (2) to find
 
 $$
-\frac{\partial g}{\partial y}
+\frac{\partial g}{\partial y}.
 $$
 
-.
 4. Integrate to find $g(y, z)$, adding a function $h(z)$.
 5. Substitute $g(y, z)$ back into your $\phi$ equation.
 6. Differentiate with respect to $z$, equate to (3) to find $h'(z)$.
@@ -83,7 +92,11 @@ $$
 \vec{A} = (6xy + z^3)\hat{i} + (3x^2 - z)\hat{j} + (3xz^2 - y)\hat{k}
 $$
 
-is irrotational. Find $\phi$ such that $\vec{A} = \nabla\phi$.
+is irrotational. Find $\phi$ such that
+
+$$
+\vec{A} = \nabla\phi.
+$$
 
 **Solution**:
 
@@ -142,7 +155,11 @@ $$
 \frac{\partial\phi}{\partial z} = 3xz^2 - y + h'(z) = 3xz^2 - y \implies h'(z) = 0 \implies h(z) = C
 $$
 
-Final Potential: $\phi = 3x^2y + xz^3 - yz + C$
+Final Potential:
+
+$$
+\phi = 3x^2y + xz^3 - yz + C
+$$
 
 ---
 
@@ -191,7 +208,11 @@ $$
 \frac{\partial\phi}{\partial z} = 2x^2z - y + h'(z) = 2x^2z - y + 2z \implies h'(z) = 2z \implies h(z) = z^2 + C
 $$
 
-Final Potential: $\phi = xy^2 + x^2z^2 - yz + z^2 + C$
+Final Potential:
+
+$$
+\phi = xy^2 + x^2z^2 - yz + z^2 + C
+$$
 
 ---
 
@@ -207,7 +228,11 @@ is irrotational.
 
 **Solution**:
 
-Set $\nabla \times \vec{V} = 0$:
+Set
+
+$$
+\nabla \times \vec{V} = 0:
+$$
 
 $$
 \begin{vmatrix}

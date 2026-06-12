@@ -257,7 +257,11 @@ Since the curl is the zero vector, the force field is conservative.
 
 #### 2. Find Scalar Potential
 
-We solve the relation $\bar{F} = \bar{\nabla}\phi$:
+We solve the relation
+
+$$
+\bar{F} = \bar{\nabla}\phi:
+$$
 
 $$
 \frac{\partial\phi}{\partial x} = y^2 \cos x + z^3 \quad \dots \text{(1)}
@@ -328,7 +332,12 @@ $$
 $$
 
  from $(0,0,0)$ to $(1,1,1)$ along the following paths $C$: (06)
-*   **(i)** $x = t, y = t^2, z = t^3$
+*   **(i)**
+
+$$
+x = t, y = t^2, z = t^3
+$$
+
 *   **(ii)** the straight line joining $(0,0,0)$ to $(1,1,1)$.
 
 **Answer:**
@@ -444,13 +453,23 @@ $$
 \iiint_V \Phi dV = 45 \int_0^2 x^2 \left[ (4-2x)^3 - \frac{2}{3}(4-2x)^3 \right] dx = 45 \int_0^2 x^2 \left[ \frac{1}{3}(4-2x)^3 \right] dx
 $$
 
-Factor out $2^3 = 8$ from $(4-2x)^3$:
+Factor out
+
+$$
+2^3 = 8
+$$
+
+from $(4-2x)^3$:
 
 $$
 \iiint_V \Phi dV = 15 \int_0^2 x^2 \left[ 8(2-x)^3 \right] dx = 120 \int_0^2 x^2 (2-x)^3 dx
 $$
 
-Expand $(2-x)^3 = 8 - 12x + 6x^2 - x^3$:
+Expand
+
+$$
+(2-x)^3 = 8 - 12x + 6x^2 - x^3:
+$$
 
 $$
 \iiint_V \Phi dV = 120 \int_0^2 (8x^2 - 12x^3 + 6x^4 - x^5) dx
@@ -555,7 +574,13 @@ $$
 \hat{n} = -\hat{k}
 $$
 
-3.  Curved wall $S\_3$ ($x^2 + y^2 = 4$): The normal vector is 
+3.  Curved wall $S\_3$ (
+
+$$
+x^2 + y^2 = 4
+$$
+
+): The normal vector is
 
 $$
 \hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
@@ -639,7 +664,13 @@ $$
 \nabla \times \bar{A} = \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z} \right)\hat{i} + \left( \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x} \right)\hat{j} + \left( \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y} \right)\hat{k}
 $$
 
-Let this vector be $\bar{V} = \nabla \times \bar{A}$. Now we find the curl of $\bar{V}$:
+Let this vector be
+
+$$
+\bar{V} = \nabla \times \bar{A}
+$$
+
+. Now we find the curl of $\bar{V}$:
 
 $$
 \nabla \times (\nabla \times \bar{A}) = \nabla \times \bar{V} = \left( \frac{\partial V_z}{\partial y} - \frac{\partial V_y}{\partial z} \right)\hat{i} + \left( \frac{\partial V_x}{\partial z} - \frac{\partial V_z}{\partial x} \right)\hat{j} + \left( \frac{\partial V_y}{\partial x} - \frac{\partial V_x}{\partial y} \right)\hat{k}
@@ -719,7 +750,13 @@ $$
 \vec{\nabla}F = (2(4) - 3(-1) - 4)\hat{i} - 3(1)\hat{j} + 4(1)(2)\hat{k} = 7\hat{i} - 3\hat{j} + 8\hat{k}
 $$
 
-The equation of the tangent plane at $(x\_0, y\_0, z\_0) = (1, -1, 2)$ is:
+The equation of the tangent plane at
+
+$$
+(x\_0, y\_0, z\_0) = (1, -1, 2)
+$$
+
+is:
 
 $$
 7(x - 1) - 3(y - (-1)) + 8(z - 2) = 0
@@ -761,7 +798,11 @@ $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{9}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
 $$
 
-Next we find the gradient of $\phi = x^2yz + 4xz^2$:
+Next we find the gradient of
+
+$$
+\phi = x^2yz + 4xz^2:
+$$
 
 $$
 \vec{\nabla}\phi = (2xyz + 4z^2)\hat{i} + x^2z\hat{j} + (x^2y + 8xz)\hat{k}
@@ -882,7 +923,13 @@ $$
 
 We use mathematical induction on $n$:
 
-*   **Base Case ($n=1$):** $(A^{-1})^1 = (A^1)^{-1}$, which is true.
+*   **Base Case ($n=1$):**
+
+$$
+(A^{-1})^1 = (A^1)^{-1}
+$$
+
+, which is true.
 *   **Inductive Step:** Assume the statement is true for $n=k$:
 
 $$
@@ -1161,9 +1208,23 @@ $$
 $$
 
 By back substitution, we solve the system:
-*   From the third row: $-29x\_3 = 0 \implies x\_3 = 0$.
-*   From the second row: $11x\_2 - 14(0) = 0 \implies x\_2 = 0$.
-*   From the first row: $x\_1 - 3(0) + 5(0) = 0 \implies x\_1 = 0$.
+*   From the third row:
+
+$$
+-29x\_3 = 0 \implies x\_3 = 0.
+$$
+
+*   From the second row:
+
+$$
+11x\_2 - 14(0) = 0 \implies x\_2 = 0.
+$$
+
+*   From the first row:
+
+$$
+x\_1 - 3(0) + 5(0) = 0 \implies x\_1 = 0.
+$$
 
 So the system only has the trivial solution:
 
@@ -1345,7 +1406,13 @@ $$
 (A - \lambda I) \text{adj}(A - \lambda I) = |A - \lambda I| I
 $$
 
-Let the characteristic polynomial be $|A - \lambda I| = c\_0 + c\_1 \lambda + \dots + (-1)^n \lambda^n$. Substitute this and the adjoint expression:
+Let the characteristic polynomial be
+
+$$
+|A - \lambda I| = c\_0 + c\_1 \lambda + \dots + (-1)^n \lambda^n
+$$
+
+. Substitute this and the adjoint expression:
 
 $$
 (A - \lambda I)(B_{n-1} \lambda^{n-1} + B_{n-2} \lambda^{n-2} + \dots + B_0) = (c_0 + c_1 \lambda + \dots + (-1)^n \lambda^n) I

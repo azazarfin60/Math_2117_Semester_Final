@@ -39,14 +39,25 @@ $$
 (a_{11} - \lambda)(a_{22} - \lambda) \dots (a_{nn} - \lambda) = 0
 $$
 
-The roots of this equation are $\lambda_1 = a_{11}, \lambda_2 = a_{22}, \dots, \lambda_n = a_{nn}$.
+The roots of this equation are
+
+$$
+\lambda_1 = a_{11}, \lambda_2 = a_{22}, \dots, \lambda_n = a_{nn}.
+$$
+
 Thus, the eigenvalues of a triangular matrix are exactly its diagonal entries.
 
 ## Q22 (05)
 **Question:** **Show that eigenvectors corresponding to distinct eigenvalues are linearly independent.**
 
 **Answer:**
-Let $v_1, v_2, \dots, v_k$ be eigenvectors of a matrix $A$ corresponding to distinct eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_k$. We proceed by mathematical induction on $k$.
+Let $v_1, v_2, \dots, v_k$ be eigenvectors of a matrix $A$ corresponding to distinct eigenvalues
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_k
+$$
+
+. We proceed by mathematical induction on $k$.
 
 For $k = 1$, a single eigenvector $v_1$ is non-zero by definition, so $\lbrace v_1\rbrace$ is linearly independent.
 Assume that any set of $k-1$ eigenvectors corresponding to distinct eigenvalues is linearly independent.
@@ -62,7 +73,13 @@ $$
 A(c_1v_1 + c_2v_2 + \dots + c_kv_k) = A(0) = 0
 $$
 
-Since $Av_i = \lambda_i v_i$, this becomes:
+Since
+
+$$
+Av_i = \lambda_i v_i
+$$
+
+, this becomes:
 
 $$
 c_1\lambda_1v_1 + c_2\lambda_2v_2 + \dots + c_k\lambda_kv_k = 0 \quad \text{--- (2)}
@@ -80,15 +97,44 @@ $$
 c_1(\lambda_1 - \lambda_k)v_1 + \dots + c_{k-1}(\lambda_{k-1} - \lambda_k)v_{k-1} = 0
 $$
 
-By the inductive hypothesis, $\lbrace v_1, \dots, v_{k-1}\rbrace$ is a linearly independent set. Therefore, all coefficients in the linear combination must be zero:
+By the inductive hypothesis,
+
+$$
+\lbrace v_1, \dots, v_{k-1}\rbrace
+$$
+
+is a linearly independent set. Therefore, all coefficients in the linear combination must be zero:
 
 $$
 c_i(\lambda_i - \lambda_k) = 0 \quad \text{for } i = 1, \dots, k-1
 $$
 
-Since the eigenvalues are distinct, $\lambda_i - \lambda_k \neq 0$. Thus, $c_i = 0$ for all $i = 1, \dots, k-1$.
-Substituting these zeros back into equation (1) gives $c_kv_k = 0$. Since $v_k \neq 0$, we must have $c_k = 0$.
-Since all $c_i = 0$, the set of vectors $\lbrace v_1, \dots, v_k\rbrace$ is linearly independent.
+Since the eigenvalues are distinct, $\lambda_i - \lambda_k \neq 0$. Thus,
+
+$$
+c_i = 0
+$$
+
+for all $i = 1, \dots, k-1$.
+Substituting these zeros back into equation (1) gives
+
+$$
+c_kv_k = 0
+$$
+
+. Since $v_k \neq 0$, we must have
+
+$$
+c_k = 0.
+$$
+
+Since all
+
+$$
+c_i = 0
+$$
+
+, the set of vectors $\lbrace v_1, \dots, v_k\rbrace$ is linearly independent.
 
 ## Q23 (05)
 **Question:** **Find eigenvalues and eigenvectors of
@@ -121,10 +167,26 @@ $$
 (\lambda - 3)(\lambda - 1) = 0
 $$
 
-The eigenvalues are $\lambda_1 = 3$ and $\lambda_2 = 1$.
+The eigenvalues are
+
+$$
+\lambda_1 = 3
+$$
+
+and
+
+$$
+\lambda_2 = 1.
+$$
 
 **2. Find Eigenvectors:**
-**For $\lambda_1 = 3$:**
+**For
+
+$$
+\lambda_1 = 3
+$$
+
+:**
 Solve $(A - 3I)v = 0$.
 
 $$
@@ -135,7 +197,13 @@ $$
 $$
 
 This gives the equation $-x + y = 0 \implies x = y$.
-The eigenvector for $\lambda_1 = 3$ is
+The eigenvector for
+
+$$
+\lambda_1 = 3
+$$
+
+is
 
 $$
 v_1 =
@@ -145,7 +213,13 @@ v_1 =
 \end{pmatrix}.
 $$
 
-**For $\lambda_2 = 1$:**
+**For
+
+$$
+\lambda_2 = 1
+$$
+
+:**
 Solve $(A - 1I)v = 0$.
 
 $$
@@ -156,7 +230,13 @@ $$
 $$
 
 This gives the equation $x + y = 0 \implies x = -y$.
-The eigenvector for $\lambda_2 = 1$ is
+The eigenvector for
+
+$$
+\lambda_2 = 1
+$$
+
+is
 
 $$
 v_2 =
@@ -171,7 +251,12 @@ $$
 
 **Answer:**
 Let $A$ be an $n \times n$ matrix. The characteristic polynomial is defined as $P(\lambda) = \det(A - \lambda I)$.
-The roots of this polynomial are the eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$.
+The roots of this polynomial are the eigenvalues
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n.
+$$
+
 We can express the polynomial in its factored form based on its roots:
 
 $$
@@ -256,17 +341,38 @@ An $n \times n$ matrix $A$ is diagonalizable if and only if it possesses $n$ lin
 
 **Proof:**
 $(\Rightarrow)$ **Necessary condition:** Suppose $A$ is diagonalizable.
-Then there exists an invertible matrix $P$ and a diagonal matrix $D$ such that $A = PDP^{-1}$.
+Then there exists an invertible matrix $P$ and a diagonal matrix $D$ such that
+
+$$
+A = PDP^{-1}.
+$$
+
 Multiplying by $P$ on the right, we get $AP = PD$.
-Let $P$ consist of column vectors $v_1, v_2, \dots, v_n$, and let $D$ have diagonal entries $\lambda_1, \lambda_2, \dots, \lambda_n$.
+Let $P$ consist of column vectors $v_1, v_2, \dots, v_n$, and let $D$ have diagonal entries
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n.
+$$
+
 The $i$-th column of the product $AP$ is $Av_i$.
 The $i$-th column of the product $PD$ is $\lambda_i v_i$.
-Since $AP = PD$, it follows that $Av_i = \lambda_i v_i$ for all $i = 1, \dots, n$.
+Since $AP = PD$, it follows that
+
+$$
+Av_i = \lambda_i v_i
+$$
+
+for all $i = 1, \dots, n$.
 This means that the column vectors $v_1, \dots, v_n$ of $P$ are eigenvectors of $A$.
 Since $P$ is invertible, its columns must be linearly independent.
 Thus, $A$ has $n$ linearly independent eigenvectors.
 
-$(\Leftarrow)$ **Sufficient condition:** Suppose $A$ has $n$ linearly independent eigenvectors $v_1, v_2, \dots, v_n$ corresponding to eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$.
+$(\Leftarrow)$ **Sufficient condition:** Suppose $A$ has $n$ linearly independent eigenvectors $v_1, v_2, \dots, v_n$ corresponding to eigenvalues
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n.
+$$
+
 Construct a matrix $P$ using these eigenvectors as its columns:
 
 $$
@@ -274,7 +380,12 @@ P = \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix}.
 $$
 
 Since the columns are linearly independent, $P$ is invertible.
-Construct a diagonal matrix $D$ with the corresponding eigenvalues on the diagonal: $D = \text{diag}(\lambda_1, \lambda_2, \dots, \lambda_n)$.
+Construct a diagonal matrix $D$ with the corresponding eigenvalues on the diagonal:
+
+$$
+D = \text{diag}(\lambda_1, \lambda_2, \dots, \lambda_n).
+$$
+
 Then
 
 $$
@@ -287,7 +398,12 @@ $$
 PD = \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix} \text{diag}(\lambda_1, \dots, \lambda_n) = \begin{pmatrix} \lambda_1 v_1 & \lambda_2 v_2 & \dots & \lambda_n v_n \end{pmatrix}.
 $$
 
-Since $AP = PD$ and $P$ is invertible, we can multiply on the right by $P^{-1}$ to obtain $A = PDP^{-1}$.
+Since $AP = PD$ and $P$ is invertible, we can multiply on the right by $P^{-1}$ to obtain
+
+$$
+A = PDP^{-1}.
+$$
+
 Thus, $A$ is diagonalizable.
 
 ## Q27 (05)

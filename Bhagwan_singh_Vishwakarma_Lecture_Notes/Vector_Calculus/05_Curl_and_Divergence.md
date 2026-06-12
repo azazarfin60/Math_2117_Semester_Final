@@ -38,7 +38,13 @@ $$
 Because it is a dot product, the divergence is a **scalar quantity**. Physically, it represents the net flux per unit volume emitting from a point (e.g., heat radiating from a source, or fluid expanding outward).
 
 ### Solenoidal Vectors
-If the divergence of a vector field is zero everywhere ($\nabla \cdot \vec{F} = 0$), the vector is called **solenoidal**. This means there is no net expansion or compression. It behaves like an incompressible fluid with no sources or sinks.
+If the divergence of a vector field is zero everywhere (
+
+$$
+\nabla \cdot \vec{F} = 0
+$$
+
+), the vector is called **solenoidal**. This means there is no net expansion or compression. It behaves like an incompressible fluid with no sources or sinks.
 
 ---
 
@@ -105,7 +111,11 @@ $$
 is solenoidal.
 
 **Solution:**
-Since the vector is solenoidal, $\nabla \cdot \vec{F} = 0$.
+Since the vector is solenoidal,
+
+$$
+\nabla \cdot \vec{F} = 0.
+$$
 
 $$
 \frac{\partial}{\partial x}(x + 3y) + \frac{\partial}{\partial y}(y - 2z) + \frac{\partial}{\partial z}(x - az) = 0
@@ -152,7 +162,17 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k},
 $$
 
-Prove that $\text{div }\vec{r} = 3$ and $\text{curl }\vec{r} = \vec{0}$.
+Prove that
+
+$$
+\text{div }\vec{r} = 3
+$$
+
+and
+
+$$
+\text{curl }\vec{r} = \vec{0}.
+$$
 
 **Solution:**
 For divergence:
@@ -228,7 +248,11 @@ $$
 The vector is irrotational.
 
 ### Problem 5: Curl of a Cross Product Identity
-**Question:** If $\vec{a}$ is a constant vector and $\vec{r}$ is the position vector, prove that $\text{curl }(\vec{r} \times \vec{a}) = -2\vec{a}$.
+**Question:** If $\vec{a}$ is a constant vector and $\vec{r}$ is the position vector, prove that
+
+$$
+\text{curl }(\vec{r} \times \vec{a}) = -2\vec{a}.
+$$
 
 **Solution:**
 Use the vector identity:
@@ -239,9 +263,30 @@ $$
 
 Let $A = r$ and $B = a$.
 
-- Since $a$ is constant: $\nabla \cdot a = 0$ and $(r \cdot \nabla)a = 0$
-- From earlier: $\nabla \cdot r = 3$
-- $(a \cdot \nabla)r = a$
+- Since $a$ is constant:
+
+$$
+\nabla \cdot a = 0
+$$
+
+and
+
+$$
+(r \cdot \nabla)a = 0
+$$
+
+- From earlier:
+
+$$
+\nabla \cdot r = 3
+$$
+
+-
+
+$$
+(a \cdot \nabla)r = a
+$$
+
 Substitute these into the identity:
 
 $$
@@ -283,7 +328,11 @@ $$
 \text{div}(r^n \vec{r}) = 3r^n + n r^{n-2}(x^2 + y^2 + z^2)
 $$
 
-Since $x^2 + y^2 + z^2 = r^2$:
+Since
+
+$$
+x^2 + y^2 + z^2 = r^2:
+$$
 
 $$
 \text{div}(r^n \vec{r}) = 3r^n + n r^{n-2}(r^2) = 3r^n + n r^n = (n + 3)r^n

@@ -4,7 +4,19 @@
 **Question:** **Find the matrix representation of a linear transformation with respect to a given basis.**
 
 **Answer:**
-Let $T: V \to W$ be a linear transformation. Let $B = \lbrace v_1, v_2, \dots, v_n\rbrace$ be a basis for $V$ and $C = \lbrace w_1, w_2, \dots, w_m\rbrace$ be a basis for $W$. To find the matrix representation $[T]_B^C$, we perform the following steps:
+Let $T: V \to W$ be a linear transformation. Let
+
+$$
+B = \lbrace v_1, v_2, \dots, v_n\rbrace
+$$
+
+be a basis for $V$ and
+
+$$
+C = \lbrace w_1, w_2, \dots, w_m\rbrace
+$$
+
+be a basis for $W$. To find the matrix representation $[T]_B^C$, we perform the following steps:
 
 1.  **Apply Transformation:** Apply the linear transformation $T$ to each basis vector in the domain basis $B$. This yields the image vectors $T(v_1), T(v_2), \dots, T(v_n)$ in $W$.
 2.  **Express as Linear Combinations:** Express each of these image vectors as a linear combination of the basis vectors in the codomain basis $C$. For the $j$-th vector $T(v_j)$:
@@ -13,7 +25,13 @@ $$
 T(v_j) = a_{1j}w_1 + a_{2j}w_2 + \dots + a_{mj}w_m
 $$
 
-3.  **Extract Coordinate Vectors:** Extract the coefficients $(a_{1j}, a_{2j}, \dots, a_{mj})$ to form the coordinate vector $[T(v_j)]_C$.
+3.  **Extract Coordinate Vectors:** Extract the coefficients
+
+$$
+(a_{1j}, a_{2j}, \dots, a_{mj})
+$$
+
+to form the coordinate vector $[T(v_j)]_C$.
 4.  **Construct Matrix:** Construct the $m \times n$ matrix $[T]_B^C$ by using these coordinate vectors as its columns:
 
 $$
@@ -28,7 +46,13 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{pmatrix}
 $$
 
-This matrix satisfies the fundamental property $[T(x)]_C = [T]_B^C [x]_B$ for any vector $x \in V$.
+This matrix satisfies the fundamental property
+
+$$
+[T(x)]_C = [T]_B^C [x]_B
+$$
+
+for any vector $x \in V$.
 
 ## Q44 (05)
 **Question:** **Define singular and non-singular transformations and relate them to matrices.**

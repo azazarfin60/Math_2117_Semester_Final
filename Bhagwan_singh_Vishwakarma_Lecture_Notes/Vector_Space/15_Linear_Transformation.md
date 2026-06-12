@@ -56,15 +56,37 @@ This means that a linear transformation perfectly preserves linear combinations.
 How do we prove if a given mapping is a linear transformation or not? We test the two conditions.
 
 ### Example 1: A Valid Linear Transformation
-Let $T : V_3(\mathbb{R}) \to V_2(\mathbb{R})$ be defined by:
+Let
+
+$$
+T : V_3(\mathbb{R}) \to V_2(\mathbb{R})
+$$
+
+be defined by:
 
 $$
 T(x_1, x_2, x_3) = (x_1 - x_2, x_1 - x_3)
 $$
 
 **Check Condition 1 (Addition):**
-Let $x = (x_1, x_2, x_3)$ and $y = (y_1, y_2, y_3)$.
-Their sum is $x + y = (x_1 + y_1, x_2 + y_2, x_3 + y_3)$.
+Let
+
+$$
+x = (x_1, x_2, x_3)
+$$
+
+and
+
+$$
+y = (y_1, y_2, y_3).
+$$
+
+Their sum is
+
+$$
+x + y = (x_1 + y_1, x_2 + y_2, x_3 + y_3).
+$$
+
 Apply $T$ to the sum:
 
 $$
@@ -93,7 +115,12 @@ Condition 1 holds.
 
 **Check Condition 2 (Scalar Multiplication):**
 Let $a \in \mathbb{R}$.
-The scaled vector is $ax = (ax_1, ax_2, ax_3)$.
+The scaled vector is
+
+$$
+ax = (ax_1, ax_2, ax_3).
+$$
+
 Apply $T$:
 
 $$
@@ -115,7 +142,13 @@ $$
 Condition 2 holds. Since both conditions are satisfied, $T$ is a linear transformation.
 
 ### Example 2: An Invalid Mapping
-Consider $T : V_3(\mathbb{R}) \to \mathbb{R}$ defined by:
+Consider
+
+$$
+T : V_3(\mathbb{R}) \to \mathbb{R}
+$$
+
+defined by:
 
 $$
 T(x_1, x_2, x_3) = x_1^2 + x_2^2 + x_3^2

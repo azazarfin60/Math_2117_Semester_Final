@@ -14,16 +14,39 @@ Vector identity proofs test your ability to apply the Del operator systematicall
 
 You should memorize these results, as they often simplify complex problems:
 
-1. **Curl of Gradient is Zero**: $\nabla \times (\nabla\phi) = \vec{0}$
-2. **Divergence of Curl is Zero**: $\nabla \cdot (\nabla \times \vec{A}) = 0$
-3. **Curl of Curl**: $\nabla \times (\nabla \times \vec{A}) = \nabla(\nabla \cdot \vec{A}) - \nabla^2\vec{A}$
-4. **Divergence of Gradient is Laplacian**: $\nabla \cdot (\nabla\phi) = \nabla^2\phi$
+1. **Curl of Gradient is Zero**:
+
+$$
+\nabla \times (\nabla\phi) = \vec{0}
+$$
+
+2. **Divergence of Curl is Zero**:
+
+$$
+\nabla \cdot (\nabla \times \vec{A}) = 0
+$$
+
+3. **Curl of Curl**:
+
+$$
+\nabla \times (\nabla \times \vec{A}) = \nabla(\nabla \cdot \vec{A}) - \nabla^2\vec{A}
+$$
+
+4. **Divergence of Gradient is Laplacian**:
+
+$$
+\nabla \cdot (\nabla\phi) = \nabla^2\phi
+$$
 
 ---
 
 ## Proof 1: (PYQ 2018)
 
-**Statement**: If $\vec{A}$ is a constant vector, then $\nabla(\vec{r} \cdot \vec{A}) = \vec{A}$.
+**Statement**: If $\vec{A}$ is a constant vector, then
+
+$$
+\nabla(\vec{r} \cdot \vec{A}) = \vec{A}.
+$$
 
 **Proof**:
 
@@ -63,7 +86,11 @@ $$
 
 ## Proof 2: Curl of Curl Identity (PYQ 2018, 2021)
 
-**Statement**: $\nabla \times (\nabla \times \vec{A}) = \nabla(\nabla \cdot \vec{A}) - \nabla^2\vec{A}$.
+**Statement**:
+
+$$
+\nabla \times (\nabla \times \vec{A}) = \nabla(\nabla \cdot \vec{A}) - \nabla^2\vec{A}.
+$$
 
 **Proof**:
 
@@ -73,7 +100,13 @@ $$
 \vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}.
 $$
 
-Let $\vec{V} = \nabla \times \vec{A}$. The components of $\vec{V}$ are:
+Let
+
+$$
+\vec{V} = \nabla \times \vec{A}
+$$
+
+. The components of $\vec{V}$ are:
 
 $$
 V_x = \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \quad V_y = \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x}, \quad V_z = \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y}
@@ -104,10 +137,8 @@ $$
 Add and subtract
 
 $$
-\frac{\partial^2 A_x}{\partial x^2}
+\frac{\partial^2 A_x}{\partial x^2}:
 $$
-
-:
 
 $$
 (\nabla \times \vec{V})_x = \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_y}{\partial y \partial x} + \frac{\partial^2 A_z}{\partial z \partial x} \right) - \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right)
@@ -137,7 +168,13 @@ $$
 
 **Proof**:
 
-Let $r = \sqrt{x^2 + y^2 + z^2}$. We know
+Let
+
+$$
+r = \sqrt{x^2 + y^2 + z^2}
+$$
+
+. We know
 
 $$
 \frac{\partial r}{\partial x} = \frac{x}{r}
@@ -179,7 +216,11 @@ $$
 \nabla^2(r^{-1}) = -\left[ \frac{3}{r^3} - \frac{3(x^2 + y^2 + z^2)}{r^5} \right]
 $$
 
-Since $x^2 + y^2 + z^2 = r^2$:
+Since
+
+$$
+x^2 + y^2 + z^2 = r^2:
+$$
 
 $$
 \nabla^2(r^{-1}) = -\left[ \frac{3}{r^3} - \frac{3r^2}{r^5} \right] = -\left[ \frac{3}{r^3} - \frac{3}{r^3} \right] = 0 \qquad \blacksquare
@@ -196,7 +237,13 @@ $$
 $$
 
 is tedious but important (appeared in 2018 and 2021). Write out the x-component clearly, then use symmetry.
-- $\nabla^2(1/r) = 0$ is a classic vector calculus result. The trick is using
+-
+
+$$
+\nabla^2(1/r) = 0
+$$
+
+is a classic vector calculus result. The trick is using
 
 $$
 \frac{\partial r}{\partial x} = \frac{x}{r}

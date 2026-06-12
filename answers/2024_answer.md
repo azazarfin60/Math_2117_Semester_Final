@@ -44,7 +44,11 @@ $$
 \vec{V}(x, y) = x\hat{i} + y\hat{j}
 $$
 
-For any point $(x, y)$, the vector points directly away from the origin $(0, 0)$. The length of the vector equals the distance of the point from the origin, $r = \sqrt{x^2 + y^2}$.
+For any point $(x, y)$, the vector points directly away from the origin $(0, 0)$. The length of the vector equals the distance of the point from the origin,
+
+$$
+r = \sqrt{x^2 + y^2}.
+$$
 
 We choose a few points to show the field:
 *   At $(1, 0)$, the vector is $\hat{i}$. It points right with a length of 1.
@@ -145,10 +149,8 @@ $$
 We group the components for 
 
 $$
-\hat{i}, \quad \hat{j}, \quad \hat{k}
+\hat{i}, \quad \hat{j}, \quad \hat{k}:
 $$
-
-:
 
 $$
 (a A_1 + b B_1 + c C_1)\hat{i} + (a A_2 + b B_2 + c C_2)\hat{j} + (a A_3 + b B_3 + c C_3)\hat{k} = \vec{0}
@@ -279,7 +281,13 @@ $$
 $$
 
 where $\omega$ is constant.
-Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector. (04)
+Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that
+
+$$
+\vec{r} \times \vec{v} = \vec{a}
+$$
+
+constant vector. (04)
 
 **Answer:**
 
@@ -360,10 +368,8 @@ $$
 We substitute 
 
 $$
-x = 1, \quad y = -2, \quad z = -1
+x = 1, \quad y = -2, \quad z = -1:
 $$
-
-:
 
 $$
 \frac{\partial Q}{\partial x} = 6(1)(-2) = -12
@@ -409,7 +415,13 @@ $$
 \nabla \cdot (\vec{A} \times \vec{r}) = \vec{r} \cdot (\nabla \times \vec{A}) - \vec{A} \cdot (\nabla \times \vec{r})
 $$
 
-We are given that $\nabla \times \vec{A} = 0$. So, the first term is zero.
+We are given that
+
+$$
+\nabla \times \vec{A} = 0
+$$
+
+. So, the first term is zero.
 
 Next, we calculate the curl of the position vector $\vec{r}$:
 
@@ -433,14 +445,31 @@ $$
 \nabla \cdot (\vec{A} \times \vec{r}) = 0
 $$
 
-If the question meant the curl $\nabla \times (\vec{A} \times \vec{r})$, we use another identity:
+If the question meant the curl
+
+$$
+\nabla \times (\vec{A} \times \vec{r})
+$$
+
+, we use another identity:
 
 $$
 \nabla \times (\vec{A} \times \vec{r}) = (\vec{r} \cdot \nabla)\vec{A} - (\vec{A} \cdot \nabla)\vec{r} + \vec{A}(\nabla \cdot \vec{r}) - \vec{r}(\nabla \cdot \vec{A})
 $$
 
 We calculate the terms:
-*   $\nabla \cdot \vec{r} = 1 + 1 + 1 = 3$. So, $\vec{A}(\nabla \cdot \vec{r}) = 3\vec{A}$.
+*
+
+$$
+\nabla \cdot \vec{r} = 1 + 1 + 1 = 3
+$$
+
+. So,
+
+$$
+\vec{A}(\nabla \cdot \vec{r}) = 3\vec{A}.
+$$
+
 *   
 
 $$
@@ -467,7 +496,13 @@ $$
 \vec{F} = 3xy\hat{i} - 5z\hat{j} + 10x\hat{k}
 $$
 
- along the curve $x = t^2 + 1, y = 2t^2, z = t^3$ from $t = 1$ to $t = 2$. (03)
+along the curve
+
+$$
+x = t^2 + 1, y = 2t^2, z = t^3
+$$
+
+from $t = 1$ to $t = 2$. (03)
 
 **Answer:**
 
@@ -478,14 +513,42 @@ W = \int_C \vec{F} \cdot d\vec{r} = \int_C (3xy dx - 5z dy + 10x dz)
 $$
 
 We express all terms using the parameter $t$:
-*   $x = t^2 + 1 \implies dx = 2t dt$
-*   $y = 2t^2 \implies dy = 4t dt$
-*   $z = t^3 \implies dz = 3t^2 dt$
+*
+
+$$
+x = t^2 + 1 \implies dx = 2t dt
+$$
+
+*
+
+$$
+y = 2t^2 \implies dy = 4t dt
+$$
+
+*
+
+$$
+z = t^3 \implies dz = 3t^2 dt
+$$
 
 We substitute these into the integrand:
-1.  $3xy dx = 3(t^2 + 1)(2t^2)(2t dt) = 12t^3(t^2 + 1) dt = (12t^5 + 12t^3) dt$
-2.  $-5z dy = -5(t^3)(4t dt) = -20t^4 dt$
-3.  $10x dz = 10(t^2 + 1)(3t^2 dt) = 30t^2(t^2 + 1) dt = (30t^4 + 30t^2) dt$
+1.
+
+$$
+3xy dx = 3(t^2 + 1)(2t^2)(2t dt) = 12t^3(t^2 + 1) dt = (12t^5 + 12t^3) dt
+$$
+
+2.
+
+$$
+-5z dy = -5(t^3)(4t dt) = -20t^4 dt
+$$
+
+3.
+
+$$
+10x dz = 10(t^2 + 1)(3t^2 dt) = 30t^2(t^2 + 1) dt = (30t^4 + 30t^2) dt
+$$
 
 We sum these three parts:
 
@@ -534,7 +597,11 @@ $$
 \iint_R \sqrt{x^2 + y^2} dxdy
 $$
 
-over the region $R$ in the $xy$ plane bounded by $x^2 + y^2 = 36$.
+over the region $R$ in the $xy$ plane bounded by
+
+$$
+x^2 + y^2 = 36.
+$$
 
 **Answer:**
 
@@ -544,7 +611,11 @@ $$
 x = r\cos\theta, \quad y = r\sin\theta, \quad dxdy = r dr d\theta
 $$
 
-The region $R$ is a disk of radius 6 centered at the origin, because $x^2 + y^2 = 36 = 6^2$.
+The region $R$ is a disk of radius 6 centered at the origin, because
+
+$$
+x^2 + y^2 = 36 = 6^2.
+$$
 
 The integration limits are:
 *   $r$ goes from 0 to 6
@@ -637,8 +708,20 @@ $$
 $$
 
  along the boundary $C$. The boundary has two parts:
-*   $C\_1$ is the lower curve $y = y\_1(x)$ going from $x = a$ to $x = b$.
-*   $C\_2$ is the upper curve $y = y\_2(x)$ going from $x = b$ to $x = a$.
+*   $C\_1$ is the lower curve
+
+$$
+y = y\_1(x)
+$$
+
+going from $x = a$ to $x = b$.
+*   $C\_2$ is the upper curve
+
+$$
+y = y\_2(x)
+$$
+
+going from $x = b$ to $x = a$.
 
 So:
 
@@ -676,8 +759,20 @@ $$
 $$
 
 The boundary curve $C$ consists of:
-*   $C\_1$ is the left curve $x = x\_1(y)$ going from $y = d$ to $y = c$.
-*   $C\_2$ is the right curve $x = x\_2(y)$ going from $y = c$ to $y = d$.
+*   $C\_1$ is the left curve
+
+$$
+x = x\_1(y)
+$$
+
+going from $y = d$ to $y = c$.
+*   $C\_2$ is the right curve
+
+$$
+x = x\_2(y)
+$$
+
+going from $y = c$ to $y = d$.
 
 So:
 
@@ -1489,9 +1584,23 @@ $$
 $$
 
 We match the coefficients of $t^2$, $t$, and the constant terms:
-1.  $c\_1 + 2c\_2 + c\_3 = 3$
-2.  $2c\_1 + 5c\_2 + 3c\_3 = 5$
-3.  $c\_1 + 4c\_2 + 6c\_3 = -5$
+1.
+
+$$
+c\_1 + 2c\_2 + c\_3 = 3
+$$
+
+2.
+
+$$
+2c\_1 + 5c\_2 + 3c\_3 = 5
+$$
+
+3.
+
+$$
+c\_1 + 4c\_2 + 6c\_3 = -5
+$$
 
 We solve this system. From equation (1):
 
@@ -1535,13 +1644,31 @@ $$
 3c_3 = -6 \implies c_3 = -2
 $$
 
-We use $c\_3 = -2$ in equation (4):
+We use
+
+$$
+c\_3 = -2
+$$
+
+in equation (4):
 
 $$
 c_2 = -1 - (-2) = 1
 $$
 
-We use $c\_2 = 1$ and $c\_3 = -2$ to find $c\_1$:
+We use
+
+$$
+c\_2 = 1
+$$
+
+and
+
+$$
+c\_3 = -2
+$$
+
+to find $c\_1$:
 
 $$
 c_1 = 3 - 2(1) - (-2) = 3
@@ -1567,7 +1694,13 @@ Let $V$ be a vector space. Let $U$ and $W$ be subspaces of $V$. We say $V$ is th
 Equivalently, every vector $v \in V$ can be written uniquely as $v = u + w$, where $u \in U$ and $w \in W$.
 
 #### 2. Example
-Let $V = \mathbb{R}^2$ be the two-dimensional real plane.
+Let
+
+$$
+V = \mathbb{R}^2
+$$
+
+be the two-dimensional real plane.
 Let $U$ be the x-axis, which is the subspace of all vectors of the form $(x, 0)$:
 
 $$
@@ -1580,8 +1713,19 @@ $$
 W = \{ (0, y) \mid y \in \mathbb{R} \}
 $$
 
-We show that $\mathbb{R}^2 = U \oplus W$:
-*   Any vector $v = (a, b) \in \mathbb{R}^2$ can be written as $(a, b) = (a, 0) + (0, b)$, where $(a, 0) \in U$ and $(0, b) \in W$.
+We show that
+
+$$
+\mathbb{R}^2 = U \oplus W:
+$$
+
+*   Any vector
+
+$$
+v = (a, b) \in \mathbb{R}^2
+$$
+
+can be written as $(a, b) = (a, 0) + (0, b)$, where $(a, 0) \in U$ and $(0, b) \in W$.
 *   The only vector that lies on both the x-axis and the y-axis is the origin $(0, 0)$. So, $U \cap W = \{(0, 0)\}$.
 
 Thus, $V$ is the direct sum of $U$ and $W$.
@@ -1601,7 +1745,13 @@ $$
 c_1 v_1 + c_2 v_2 + \dots + c_n v_n = 0
 $$
 
-has only the trivial solution $c\_1 = c\_2 = \dots = c\_n = 0$. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
+has only the trivial solution
+
+$$
+c\_1 = c\_2 = \dots = c\_n = 0
+$$
+
+. If there is a solution with some non-zero coefficients, the vectors are linearly dependent.
 
 #### 2. Determine Linear Independence
 
@@ -1666,7 +1816,13 @@ A vector space $V$ over a field $F$ is a set of elements (called vectors) togeth
 *   **Distributivity of scalar multiplication over field addition:** $(a + b)u = au + bu$
 
 #### 2. Basis of a Vector Space
-A subset $B = \{v\_1, v\_2, \dots, v\_n\}$ of a vector space $V$ is a basis of $V$ if:
+A subset
+
+$$
+B = \{v\_1, v\_2, \dots, v\_n\}
+$$
+
+of a vector space $V$ is a basis of $V$ if:
 *   The set $B$ is linearly independent.
 *   The set $B$ spans $V$. This means any vector in $V$ can be written as a linear combination of vectors in $B$.
 
@@ -1689,7 +1845,19 @@ $$
 $$
 
 #### 2. Closed Under Vector Addition
-Let $u\_1 = (a\_1, a\_1, a\_1) \in U$ and $u\_2 = (a\_2, a\_2, a\_2) \in U$, where $a\_1, a\_2 \in \mathbb{R}$.
+Let
+
+$$
+u\_1 = (a\_1, a\_1, a\_1) \in U
+$$
+
+and
+
+$$
+u\_2 = (a\_2, a\_2, a\_2) \in U
+$$
+
+, where $a\_1, a\_2 \in \mathbb{R}$.
 We add these vectors:
 
 $$

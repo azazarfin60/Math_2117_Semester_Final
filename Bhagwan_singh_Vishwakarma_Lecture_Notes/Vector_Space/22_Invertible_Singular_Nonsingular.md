@@ -36,7 +36,12 @@ $$
 **Statement:** If $T : V_1 \to V_2$ is an invertible linear transformation, then its inverse $T^{-1} : V_2 \to V_1$ is also a linear transformation.
 
 **Proof:**
-We must prove that $T^{-1}$ preserves linear combinations: $T^{-1}(a \alpha' + b \beta') = a T^{-1}(\alpha') + b T^{-1}(\beta')$.
+We must prove that $T^{-1}$ preserves linear combinations:
+
+$$
+T^{-1}(a \alpha' + b \beta') = a T^{-1}(\alpha') + b T^{-1}(\beta').
+$$
+
 Let $\alpha', \beta' \in V_2$. Because $T$ is onto, they have unique pre-images $\alpha, \beta \in V_1$:
 
 $$

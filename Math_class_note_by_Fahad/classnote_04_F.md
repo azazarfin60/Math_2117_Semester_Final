@@ -442,7 +442,13 @@ $$
 \nabla \times \vec{F} = 0 \quad \rightarrow \text{curl '0' মানে Force field টি conservative.}
 $$
 
-$\star$ **কোনো Force field conservative হলে $\vec{F} = \nabla \phi$ লিখতে পারি।**
+$\star$ **কোনো Force field conservative হলে
+
+$$
+\vec{F} = \nabla \phi
+$$
+
+লিখতে পারি।**
 
 $$
 \rightarrow \text{scalar potential}
@@ -502,7 +508,17 @@ $$
 
 ## Page 40
 
-These agree if $f(y,z) = 0, \ g(x,z) = xz^3$ and $h(x,y) = x^2y$.
+These agree if
+
+$$
+f(y,z) = 0, \ g(x,z) = xz^3
+$$
+
+and
+
+$$
+h(x,y) = x^2y.
+$$
 
 then,
 

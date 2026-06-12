@@ -25,7 +25,13 @@ Today, we prove two fundamental theorems:
 
 **Proof:**
 Let $V(F)$ be a finite-dimensional vector space.
-By the definition of "finite-dimensional," there must exist a finite subset $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ that generates the entire space. This means:
+By the definition of "finite-dimensional," there must exist a finite subset
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+that generates the entire space. This means:
 
 $$
 L(S) = V
@@ -71,7 +77,11 @@ $$
 $$
 
 Look at this new combination! The vector $\alpha$ is now written entirely using elements of $S_1$.
-Therefore, $S_1$ generates $V$. So, $L(S_1) = V$.
+Therefore, $S_1$ generates $V$. So,
+
+$$
+L(S_1) = V.
+$$
 
 If $S_1$ is linearly independent, it is our basis.
 If $S_1$ is still linearly dependent, we repeat the process. We find another redundant vector, remove it to make $S_2$, and $S_2$ will still generate $V$.
@@ -146,7 +156,13 @@ So the redundant vector MUST be another alpha, say $\alpha_j$. We throw $\alpha_
 **Step 5: The Logical Conclusion**
 We continue this replacement process: Add a $\beta$ vector, throw away a redundant $\alpha$ vector.
 What if the alphas run out before the betas?
-This would mean $n < m$. After all alphas are gone, we would be left with a set of betas: $\lbrace \beta_n, \beta_{n-1}, \dots, \beta_1 \rbrace$ that generates the entire space $V$.
+This would mean $n < m$. After all alphas are gone, we would be left with a set of betas:
+
+$$
+\lbrace \beta_n, \beta_{n-1}, \dots, \beta_1 \rbrace
+$$
+
+that generates the entire space $V$.
 But if $n < m$, this set is just a *part* of the full basis $S'$. A proper subset of a basis can never generate the entire space (because the remaining betas like $\beta_m$ would have to be combinations of this subset, which breaks their independence).
 This creates a massive contradiction. Therefore, the alphas CANNOT run out before the betas.
 This strictly implies:

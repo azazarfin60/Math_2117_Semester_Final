@@ -38,7 +38,12 @@ We will prove each of these step by step. The key to proving these is to rely on
 
 We are given that every element of $S$ is already in the linear span of $T$. We want to show that any linear combination built from $S$ will also belong to the linear span of $T$.
 
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace.
+$$
+
 Since $S \subseteq L(T)$, we know that all these vectors belong to $L(T)$:
 
 $$
@@ -75,7 +80,12 @@ $$
 
 This proof is almost identical to the first one.
 
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace.
+$$
+
 Since $S \subseteq T$, we know:
 
 $$
@@ -166,10 +176,24 @@ $$
 x = y + z
 $$
 
-Since $y \in L(S)$, $y$ is a linear combination of elements of $S$: $y = \sum a_i\alpha_i$.
-Since $z \in L(T)$, $z$ is a linear combination of elements of $T$: $z = \sum b_j\beta_j$.
+Since $y \in L(S)$, $y$ is a linear combination of elements of $S$:
 
-Therefore, $x = \sum a_i\alpha_i + \sum b_j\beta_j$.
+$$
+y = \sum a_i\alpha_i.
+$$
+
+Since $z \in L(T)$, $z$ is a linear combination of elements of $T$:
+
+$$
+z = \sum b_j\beta_j.
+$$
+
+Therefore,
+
+$$
+x = \sum a_i\alpha_i + \sum b_j\beta_j.
+$$
+
 Since both $S$ and $T$ are subsets of $S \cup T$, all $\alpha_i$ and $\beta_j$ vectors belong to $S \cup T$. Thus, $x$ is a linear combination of elements in $S \cup T$.
 
 $$

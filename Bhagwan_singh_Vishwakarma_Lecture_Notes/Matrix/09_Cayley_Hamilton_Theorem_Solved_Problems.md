@@ -24,7 +24,13 @@ $$
 a_0 A^n + a_1 A^{n-1} + \dots + a_{n-1} A + a_n I = O
 $$
 
-Assuming the matrix is non-singular ($\lvert A \rvert = a_n \neq 0$), we can multiply the entire equation by $A^{-1}$:
+Assuming the matrix is non-singular (
+
+$$
+\lvert A \rvert = a_n \neq 0
+$$
+
+), we can multiply the entire equation by $A^{-1}$:
 
 $$
 (a_0 A^n + a_1 A^{n-1} + \dots + a_n I) A^{-1} = O
@@ -72,7 +78,11 @@ $$
 $$
 
 **2. Verification:**
-We must show $A^2 - 4A + 5I = O$.
+We must show
+
+$$
+A^2 - 4A + 5I = O.
+$$
 
 $$
 A^2 =
@@ -91,7 +101,13 @@ A^2 - 4A + 5I =
 $$
 
 **3. Finding $A^{-1}$:**
-Multiply the identity $A^2 - 4A + 5I = O$ by $A^{-1}$:
+Multiply the identity
+
+$$
+A^2 - 4A + 5I = O
+$$
+
+by $A^{-1}$:
 
 $$
 A - 4I + 5A^{-1} = O \implies A^{-1} = \frac{1}{5}(4I - A)
@@ -132,7 +148,12 @@ $$
 $$
 
 **2. Cayley-Hamilton Application:**
-The matrix satisfies $A^3 - 6A^2 + 7A + 2I = O$.
+The matrix satisfies
+
+$$
+A^3 - 6A^2 + 7A + 2I = O.
+$$
+
 Multiply by $A^{-1}$:
 
 $$

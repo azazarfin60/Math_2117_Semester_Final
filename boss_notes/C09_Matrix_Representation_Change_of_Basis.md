@@ -13,7 +13,13 @@ Every linear transformation between finite-dimensional vector spaces can be enti
 ## Matrix Representation of a Linear Operator
 
 Let $T: V \to V$ be a linear operator on a vector space $V$ with dimension $n$.
-Let $B = \lbrace v_1, v_2, \dots, v_n\rbrace$ be a basis for $V$.
+Let
+
+$$
+B = \lbrace v_1, v_2, \dots, v_n\rbrace
+$$
+
+be a basis for $V$.
 
 When you apply the transformation $T$ to the first basis vector $v_1$, the result $T(v_1)$ is still a vector in $V$. Therefore, it can be written as a linear combination of the basis vectors:
 
@@ -21,7 +27,13 @@ $$
 T(v_1) = a_{11}v_1 + a_{21}v_2 + \dots + a_{n1}v_n
 $$
 
-The coefficients $(a_{11}, a_{21}, \dots, a_{n1})$ form the **first column** of the matrix representation $[T]_B$. 
+The coefficients
+
+$$
+(a_{11}, a_{21}, \dots, a_{n1})
+$$
+
+form the **first column** of the matrix representation $[T]_B$.
 You repeat this for every basis vector. The resulting $n \times n$ matrix is the **Matrix Representation** of the linear operator.
 
 ---
@@ -32,8 +44,17 @@ Suppose you have two different bases for the same vector space $V$: an old basis
 You can write each vector of the *new* basis $B'$ as a linear combination of the *old* basis $B$. 
 
 Taking the column coefficients of these combinations creates the **Change of Basis Matrix** (or Transition Matrix), denoted as $P$. 
-- The matrix $P$ converts coordinates from the new basis to the old basis: $[x]_B = P[x]_{B'}$.
-- The inverse matrix $P^{-1}$ converts coordinates from the old basis to the new basis: $[x]_{B'} = P^{-1}[x]_B$.
+- The matrix $P$ converts coordinates from the new basis to the old basis:
+
+$$
+[x]_B = P[x]_{B'}.
+$$
+
+- The inverse matrix $P^{-1}$ converts coordinates from the old basis to the new basis:
+
+$$
+[x]_{B'} = P^{-1}[x]_B.
+$$
 
 ---
 
@@ -41,7 +62,19 @@ Taking the column coefficients of these combinations creates the **Change of Bas
 
 When you change the basis of the vector space from $B$ to $B'$, the matrix representation of the linear operator $T$ also changes.
 
-If $[T]_B = A$ (the matrix in the old basis) and $[T]_{B'} = C$ (the matrix in the new basis), they are related by the formula:
+If
+
+$$
+[T]_B = A
+$$
+
+(the matrix in the old basis) and
+
+$$
+[T]_{B'} = C
+$$
+
+(the matrix in the new basis), they are related by the formula:
 
 $$
 C = P^{-1} A P
@@ -56,7 +89,13 @@ Similar matrices represent the *exact same linear transformation*, just viewed f
 ---
 
 ## Exam Patterns
-- While deep calculations involving Change of Basis rarely appear in short exams, understanding the formula $C = P^{-1} A P$ is critical for diagonalization questions (which appear in the Matrix Theory sections).
+- While deep calculations involving Change of Basis rarely appear in short exams, understanding the formula
+
+$$
+C = P^{-1} A P
+$$
+
+is critical for diagonalization questions (which appear in the Matrix Theory sections).
 
 ---
 

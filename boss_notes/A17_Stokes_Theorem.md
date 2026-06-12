@@ -144,31 +144,91 @@ y-z+2 & yz+4 & -xz
 $$
 
 Evaluate over the 5 faces of the cube above $z=0$:
-1. **Top ($z=2, \hat{n}=\hat{k}$)**: $(\nabla \times \vec{A}) \cdot \hat{n} = -1$. Integral:
+1. **Top (
+
+$$
+z=2, \hat{n}=\hat{k}
+$$
+
+)**:
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = -1
+$$
+
+. Integral:
 
 $$
 \iint (-1) dxdy = -4.
 $$
 
-2. **Front ($x=2, \hat{n}=\hat{i}$)**: $(\nabla \times \vec{A}) \cdot \hat{n} = -y$. Integral:
+2. **Front (
+
+$$
+x=2, \hat{n}=\hat{i}
+$$
+
+)**:
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = -y
+$$
+
+. Integral:
 
 $$
 \int_0^2\int_0^2 -y dydz = 2\left[-\frac{y^2}{2}\right]_0^2 = -4.
 $$
 
-3. **Back ($x=0, \hat{n}=-\hat{i}$)**: $(\nabla \times \vec{A}) \cdot \hat{n} = y$. Integral:
+3. **Back (
+
+$$
+x=0, \hat{n}=-\hat{i}
+$$
+
+)**:
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = y
+$$
+
+. Integral:
 
 $$
 \int_0^2\int_0^2 y dydz = 2\left[\frac{y^2}{2}\right]_0^2 = 4.
 $$
 
-4. **Right ($y=2, \hat{n}=\hat{j}$)**: $(\nabla \times \vec{A}) \cdot \hat{n} = z-1$. Integral:
+4. **Right (
+
+$$
+y=2, \hat{n}=\hat{j}
+$$
+
+)**:
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = z-1
+$$
+
+. Integral:
 
 $$
 \int_0^2\int_0^2 (z-1) dxdz = 2\left[\frac{z^2}{2}-z\right]_0^2 = 0.
 $$
 
-5. **Left ($y=0, \hat{n}=-\hat{j}$)**: $(\nabla \times \vec{A}) \cdot \hat{n} = -(z-1)$. Integral:
+5. **Left (
+
+$$
+y=0, \hat{n}=-\hat{j}
+$$
+
+)**:
+
+$$
+(\nabla \times \vec{A}) \cdot \hat{n} = -(z-1)
+$$
+
+. Integral:
 
 $$
 \int_0^2\int_0^2 (1-z) dxdz = 2\left[z-\frac{z^2}{2}\right]_0^2 = 0.

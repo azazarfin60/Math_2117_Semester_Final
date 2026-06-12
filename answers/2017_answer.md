@@ -100,7 +100,13 @@ $$
 \int_C \vec{F} \cdot d\vec{r}
 $$
 
-When $C$ is the curve in the $xy$ plane, $y = 2x^2$ from $(0,0)$ to $(1,2)$. (04)
+When $C$ is the curve in the $xy$ plane,
+
+$$
+y = 2x^2
+$$
+
+from $(0,0)$ to $(1,2)$. (04)
 
 **Answer:**
 
@@ -122,7 +128,13 @@ $$
 \int_C \vec{F} \cdot d\vec{r} = \int_C (3xy\hat{i} - y^2\hat{j}) \cdot (dx\hat{i} + dy\hat{j}) = \int_C \left( 3xy dx - y^2 dy \right)
 $$
 
-The path $C$ is defined by $y = 2x^2$. This gives:
+The path $C$ is defined by
+
+$$
+y = 2x^2
+$$
+
+. This gives:
 
 $$
 dy = 4x dx
@@ -180,7 +192,13 @@ $$
 \vec{\nabla}\phi = \frac{\partial\phi}{\partial x}\hat{i} + \frac{\partial\phi}{\partial y}\hat{j} + \frac{\partial\phi}{\partial z}\hat{k}
 $$
 
-For $\phi = 4e^{2x - y + z}$, we calculate the partial derivatives:
+For
+
+$$
+\phi = 4e^{2x - y + z}
+$$
+
+, we calculate the partial derivatives:
 
 $$
 \frac{\partial\phi}{\partial x} = 8e^{2x - y + z}
@@ -265,7 +283,13 @@ $$
 \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = -4 - 2y
 $$
 
-The region $R$ lies between $y = x^2$ and $y = \sqrt{x}$ for $x$ from $0$ to $1$. We set up the double integral:
+The region $R$ lies between
+
+$$
+y = x^2
+$$
+
+and $y = \sqrt{x}$ for $x$ from $0$ to $1$. We set up the double integral:
 
 $$
 \oint_C \vec{F} \cdot d\vec{r} = \int_{x=0}^1 \int_{y=x^2}^{\sqrt{x}} (-4 - 2y) dy dx
@@ -300,8 +324,26 @@ $$
 #### Method 2: Direct Line Integration
 
 The boundary curve $C$ consists of two paths:
-1.  Path $C\_1$: Along the parabola $y = x^2$ from $(0,0)$ to $(1,1)$. Here $dy = 2x dx$.
-2.  Path $C\_2$: Along the parabola $y^2 = x$ from $(1,1)$ to $(0,0)$. We can write this as $x = y^2$ from $y = 1$ to $y = 0$. Here $dx = 2y dy$.
+1.  Path $C\_1$: Along the parabola
+
+$$
+y = x^2
+$$
+
+from $(0,0)$ to $(1,1)$. Here $dy = 2x dx$.
+2.  Path $C\_2$: Along the parabola
+
+$$
+y^2 = x
+$$
+
+from $(1,1)$ to $(0,0)$. We can write this as
+
+$$
+x = y^2
+$$
+
+from $y = 1$ to $y = 0$. Here $dx = 2y dy$.
 
 Evaluate the integral along Path $C\_1$:
 
@@ -349,7 +391,13 @@ $$
 \vec{A} = z\hat{i} + x\hat{j} - 3y^2z\hat{k}
 $$
 
- and $S$ is the surface of the cylinder $x^2 + y^2 = 16$ included in the first octant between $z=0$ and $z=5$. (06)
+and $S$ is the surface of the cylinder
+
+$$
+x^2 + y^2 = 16
+$$
+
+included in the first octant between $z=0$ and $z=5$. (06)
 
 **Answer:**
 
@@ -451,7 +499,19 @@ $$
 
 ##### Proof of Part 1
 
-Let the region $R$ be bounded by the curves $y = y\_1(x)$ (lower boundary) and $y = y\_2(x)$ (upper boundary) for $x$ from $a$ to $b$.
+Let the region $R$ be bounded by the curves
+
+$$
+y = y\_1(x)
+$$
+
+(lower boundary) and
+
+$$
+y = y\_2(x)
+$$
+
+(upper boundary) for $x$ from $a$ to $b$.
 
 Evaluate the double integral on the right-hand side:
 
@@ -466,8 +526,20 @@ $$
 $$
 
 The closed boundary curve $C$ consists of two parts:
-*   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
-*   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
+*   Path $C\_1$: Along the curve
+
+$$
+y = y\_1(x)
+$$
+
+from $x=a$ to $x=b$.
+*   Path $C\_2$: Along the curve
+
+$$
+y = y\_2(x)
+$$
+
+from $x=b$ to $x=a$.
 
 We calculate the line integral over each path:
 
@@ -489,7 +561,19 @@ $$
 
 ##### Proof of Part 2
 
-Let the region $R$ be bounded by the curves $x = x\_1(y)$ (left boundary) and $x = x\_2(y)$ (right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
+Let the region $R$ be bounded by the curves
+
+$$
+x = x\_1(y)
+$$
+
+(left boundary) and
+
+$$
+x = x\_2(y)
+$$
+
+(right boundary) for $y$ from $c$ to $d$. By using the same steps, we get:
 
 $$
 \oint_C Q dy = \iint_R \frac{\partial Q}{\partial x} dx dy
@@ -562,7 +646,23 @@ The boundary curve $C$ consists of three straight paths:
 1.  Path $C\_1$: Along the x-axis ($y = 0$, $dy = 0$) from $(0,0)$ to $(\pi/2, 0)$.
 2.  Path $C\_2$: Along the vertical line $x = \pi/2$ ($dx = 0$) from $(\pi/2, 0)$ to $(\pi/2, 1)$.
 3.
-Path $C\_3$: Along the line $y = \frac{2}{\pi}x$ (or $x = \frac{\pi}{2}y$, $dx = \frac{\pi}{2}dy$) from $(\pi/2, 1)$ to $(0,0)$.
+Path $C\_3$: Along the line
+
+$$
+y = \frac{2}{\pi}x
+$$
+
+(or
+
+$$
+x = \frac{\pi}{2}y,
+$$
+
+$$
+dx = \frac{\pi}{2}dy
+$$
+
+) from $(\pi/2, 1)$ to $(0,0)$.
 
 Evaluate the integral along Path $C\_1$:
 
@@ -725,7 +825,13 @@ $$
 k^{-1}(ku) = k^{-1}0
 $$
 
-Use the associative property of scalar multiplication and the fact that $k^{-1}0 = 0$ (from property i):
+Use the associative property of scalar multiplication and the fact that
+
+$$
+k^{-1}0 = 0
+$$
+
+(from property i):
 
 $$
 (k^{-1}k)u = 0
@@ -786,7 +892,13 @@ A_\alpha = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Then show that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$. (03)
+Then show that
+
+$$
+A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha
+$$
+
+. (03)
 
 **Answer:**
 
@@ -836,7 +948,11 @@ $$
 A_{\alpha+\beta} = A_{\beta+\alpha} = A_\beta \cdot A_\alpha
 $$
 
-So we have shown that $A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha$.
+So we have shown that
+
+$$
+A\_\alpha \cdot A\_\beta = A\_{\alpha+\beta} = A\_\beta \cdot A\_\alpha.
+$$
 
 ---
 
@@ -1394,10 +1510,8 @@ $$
 Hence evaluate $e^A$, and then solve
 
 $$
-\frac{dx\_1}{dt} = x\_2
+\frac{dx\_1}{dt} = x\_2,
 $$
-
-,
 
 $$
 \frac{dx\_2}{dt} = x\_1
@@ -1491,7 +1605,13 @@ B^2 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-So $B^n = 0$ for all $n \geq 2$.
+So
+
+$$
+B^n = 0
+$$
+
+for all $n \geq 2$.
 
 Using the series definition for $e^B$:
 
@@ -1532,7 +1652,13 @@ $$
 \frac{d^2x_1}{dt^2} = \frac{dx_2}{dt} = x_1 \implies \frac{d^2x_1}{dt^2} - x_1 = 0
 $$
 
-The characteristic equation is $r^2 - 1 = 0$, which gives $r = \pm 1$. So the general solution for $x\_1(t)$ is:
+The characteristic equation is
+
+$$
+r^2 - 1 = 0
+$$
+
+, which gives $r = \pm 1$. So the general solution for $x\_1(t)$ is:
 
 $$
 x_1(t) = C_1 e^t + C_2 e^{-t}
@@ -1552,7 +1678,13 @@ $$
 \frac{dx_1}{dt} = x_1 + x_2, \quad \frac{dx_2}{dt} = x_2
 $$
 
-The solution to a system of the form $\frac{dX}{dt} = AX$ is:
+The solution to a system of the form
+
+$$
+\frac{dX}{dt} = AX
+$$
+
+is:
 
 $$
 X(t) = e^{At} X(0)
@@ -1595,7 +1727,17 @@ $$
 x_2(t) = C_2 e^t
 $$
 
-where $C\_1 = x\_1(0)$ and $C\_2 = x\_2(0)$.
+where
+
+$$
+C\_1 = x\_1(0)
+$$
+
+and
+
+$$
+C\_2 = x\_2(0).
+$$
 
 ---
 

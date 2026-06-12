@@ -20,7 +20,12 @@ Diagonalization is the final culmination of our study of eigenvalues and eigenve
 
 Suppose we want to determine if an $n \times n$ square matrix $A$ is diagonalizable, and if so, perform the diagonalization.
 
-1.  **Characteristic Equation**: Solve $\det(A - \lambda I) = 0$ to find the $n$ eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$.
+1.  **Characteristic Equation**: Solve $\det(A - \lambda I) = 0$ to find the $n$ eigenvalues
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n.
+$$
+
 2.  **Eigenvectors**: For each eigenvalue, solve $(A - \lambda I)X = \bar{0}$ to find the corresponding eigenvectors. We must be able to generate a complete set of $n$ **linearly independent** eigenvectors. If we cannot find $n$ linearly independent eigenvectors, the matrix is *not* diagonalizable.
 3.  **Transition (Modal) Matrix ($P$)**: Construct the transition matrix $P$ by placing the $n$ linearly independent eigenvectors as its columns:
 
@@ -61,7 +66,16 @@ A =
 $$
 
 From our previous lecture, we already computed:
-*   Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 6$.
+*   Eigenvalues:
+
+$$
+\lambda_1 = 1,
+$$
+
+$$
+\lambda_2 = 6.
+$$
+
 *   Eigenvectors:
 
 $$
@@ -93,8 +107,17 @@ Since $\det(P) \neq 0$, the columns are linearly independent.
 
 **Step 2: Find $P^{-1}$**
 Find the cofactors to build the adjoint matrix:
-*   $P_{11} = 1, \quad P_{12} = 3$
-*   $P_{21} = -1, \quad P_{22} = 2$
+*
+
+$$
+P_{11} = 1, \quad P_{12} = 3
+$$
+
+*
+
+$$
+P_{21} = -1, \quad P_{22} = 2
+$$
 
 $$
 \text{adj}(P) =
@@ -171,7 +194,25 @@ X_1 =
 \end{bmatrix}
 $$
 
-*   **Eigenvectors for $\lambda = -1$**: Solving $(A + 1I)X = \bar{0}$ yields the single equation $2x_1 + x_2 + 2x_3 = 0$. By setting $(x_1=1, x_3=0)$ and then $(x_1=0, x_3=1)$, we extract two linearly independent eigenvectors:
+*   **Eigenvectors for $\lambda = -1$**: Solving $(A + 1I)X = \bar{0}$ yields the single equation
+
+$$
+2x_1 + x_2 + 2x_3 = 0
+$$
+
+. By setting
+
+$$
+(x_1=1, x_3=0)
+$$
+
+and then
+
+$$
+(x_1=0, x_3=1)
+$$
+
+, we extract two linearly independent eigenvectors:
 
 $$
 X_2 =

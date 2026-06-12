@@ -100,17 +100,34 @@ If a set $V$ combined with a field $F$ meets all these rules, we proudly call $V
 
 Let us verify that the 2D Cartesian plane is a vector space over the field of real numbers.
 
-*   **Vectors**: $V = \mathbb{R}^2 = \lbrace (x, y) \mid x, y \in \mathbb{R} \rbrace$
+*   **Vectors**:
+
+$$
+V = \mathbb{R}^2 = \lbrace (x, y) \mid x, y \in \mathbb{R} \rbrace
+$$
+
 *   **Scalars**: $F = \mathbb{R}$
 
 Let us check the conditions.
 
 ### Check 1: Is an Abelian Group?
 Take two vectors $(x_1, y_1)$ and $(x_2, y_2)$ from $V$.
-*   **Closure**: $(x_1, y_1) + (x_2, y_2) = (x_1 + x_2, y_1 + y_2)$. Since the sum of two real numbers is a real number, this new tuple is in $V$.
+*   **Closure**:
+
+$$
+(x_1, y_1) + (x_2, y_2) = (x_1 + x_2, y_1 + y_2)
+$$
+
+. Since the sum of two real numbers is a real number, this new tuple is in $V$.
 *   **Identity**: The element $(0, 0)$ works as the identity because $(x, y) + (0, 0) = (x, y)$.
 *   **Inverse**: The inverse of $(x, y)$ is $(-x, -y)$ because $(x, y) + (-x, -y) = (0, 0)$.
-*   **Commutativity**: $(x_1, y_1) + (x_2, y_2) = (x_2, y_2) + (x_1, y_1)$ is naturally true for real numbers.
+*   **Commutativity**:
+
+$$
+(x_1, y_1) + (x_2, y_2) = (x_2, y_2) + (x_1, y_1)
+$$
+
+is naturally true for real numbers.
 
 ### Check 2: Closure under Scalar Multiplication
 Take a scalar $a$ from $\mathbb{R}$ and a vector $(x, y)$ from $V$.
@@ -123,7 +140,17 @@ Since $ax$ and $ay$ are real numbers, the result $(ax, ay)$ is in $V$.
 
 ### Check 3: Distributive Laws
 Let us prove the first distributive law. We want to show $a(\alpha + \beta) = a\alpha + a\beta$.
-Let $\alpha = (x_1, y_1)$ and $\beta = (x_2, y_2)$.
+Let
+
+$$
+\alpha = (x_1, y_1)
+$$
+
+and
+
+$$
+\beta = (x_2, y_2).
+$$
 
 $$
 a(\alpha + \beta) = a( (x_1, y_1) + (x_2, y_2) )

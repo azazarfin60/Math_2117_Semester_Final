@@ -26,13 +26,36 @@ Let $V$ and $U$ be vector spaces over the same field $K$. A function $F: V \to U
 ## Worked Example: Verifying Linearity (PYQ 2023)
 
 **Problem**: Identify if the following mappings $F$ are linear or not linear:
-(i) $F : \mathbb{R}^3 \to \mathbb{R}$ defined by $F(x, y, z) = 2x - 3y + 4z$
-(ii) $F : \mathbb{R}^2 \to \mathbb{R}^3$ defined by $F(x, y) = (x+1, 2y, x+y)$
+(i)
+
+$$
+F : \mathbb{R}^3 \to \mathbb{R}
+$$
+
+defined by $F(x, y, z) = 2x - 3y + 4z$
+(ii)
+
+$$
+F : \mathbb{R}^2 \to \mathbb{R}^3
+$$
+
+defined by $F(x, y) = (x+1, 2y, x+y)$
 
 **Solution**:
 
 **(i) Mapping $F(x, y, z) = 2x - 3y + 4z$**
-Let $u = (x_1, y_1, z_1)$ and $v = (x_2, y_2, z_2)$.
+Let
+
+$$
+u = (x_1, y_1, z_1)
+$$
+
+and
+
+$$
+v = (x_2, y_2, z_2).
+$$
+
 *Check Addition*:
 
 $$

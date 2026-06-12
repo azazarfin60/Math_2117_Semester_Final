@@ -2,10 +2,21 @@
 
 ## Page 101
 
-So, $c\_1 = c\_2 = c\_3 = 0$
+So,
+
+$$
+c\_1 = c\_2 = c\_3 = 0
+$$
+
 So, the vectors are linearly independent.
 
-$\star$ **check whether $v\_1 = (2, 3, 3) \ ; \ v\_2 = (4, 5, -1) \ ; \ v\_3 = (4, 4, 1)$ are linearly dependent/independent.**
+$\star$ **check whether
+
+$$
+v\_1 = (2, 3, 3) \ ; \ v\_2 = (4, 5, -1) \ ; \ v\_3 = (4, 4, 1)
+$$
+
+are linearly dependent/independent.**
 
 ### Image and kernel of a linear mapping
 
@@ -22,7 +33,11 @@ $$
      |       v_4       | -----------> |       w_4       |
      +-----------------+              +-----------------+
 ```
-- $\lbrace w\_1, w\_2, w\_3, w\_4 \rbrace \rightarrow \text{Im}(T) \rightarrow \text{image of the mapping.}$
+-
+
+$$
+\lbrace w\_1, w\_2, w\_3, w\_4 \rbrace \rightarrow \text{Im}(T) \rightarrow \text{image of the mapping.}
+$$
 
 **যেগুলোর map '0' vector হবে তাদের kernel বলা হবে।**
 
@@ -48,7 +63,13 @@ $$
 **Math-2117**
 **(GCP Sir) (20 Apr, 26)**
 
-$\star$ **Let: $T : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ be a linear mapping defined by $T(x,y,z) = (x+2y, y-z, x+2z)$. Find a basis and dimension of (i) Image of T and (ii) Kernel of T.**
+$\star$ **Let:
+
+$$
+T : \mathbb{R}^3 \rightarrow \mathbb{R}^3
+$$
+
+be a linear mapping defined by $T(x,y,z) = (x+2y, y-z, x+2z)$. Find a basis and dimension of (i) Image of T and (ii) Kernel of T.**
 
 **Ans:-**
 The usual basis or standard basis of $\mathbb{R}^3$ is:
@@ -143,7 +164,11 @@ x+2z &= 0
 \end{aligned}
 $$
 
-Using $L\_3 = L\_1 - L\_3$:
+Using
+
+$$
+L\_3 = L\_1 - L\_3:
+$$
 
 $$
 \begin{aligned}
@@ -179,7 +204,19 @@ $$
 
 ---
 
-$\star$ **Let, $T : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ defined by $T(x,y) = (x+2y, y)$ and $T' : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ defined by $T'(x,y) = (y,x)$**
+$\star$ **Let,
+
+$$
+T : \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+defined by $T(x,y) = (x+2y, y)$ and
+
+$$
+T' : \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+defined by $T'(x,y) = (y,x)$**
 1. Find $(3T - 2T')(0,1)$
 2. $(TT')(2,3)$
 3. $(T^2 T')(4,5)$
@@ -200,7 +237,13 @@ $$
 
 ### Linearity check of $T'$
 
-Let, $u \in \mathbb{R}^2, v \in \mathbb{R}^2$ and $u = (a,b), v = (a',b')$.
+Let,
+
+$$
+u \in \mathbb{R}^2, v \in \mathbb{R}^2
+$$
+
+and $u = (a,b), v = (a',b')$.
 
 $$
 u+v = [ (a+a') , (b+b') ]
@@ -224,13 +267,23 @@ $$
 
 ### Matrix Representation for a linear mapping:-
 
-Let, $T : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ is defined by:
+Let,
+
+$$
+T : \mathbb{R}^2 \rightarrow \mathbb{R}^2
+$$
+
+is defined by:
 
 $$
 T(x,y) = (5x+y , -4x+3y).
 $$
 
-Find the matrix representation of $T$ with respect to the basis $\lbrace u\_1 = (3,1) \ ; \ v\_2 = (5,2) \rbrace$.
+Find the matrix representation of $T$ with respect to the basis
+
+$$
+\lbrace u\_1 = (3,1) \ ; \ v\_2 = (5,2) \rbrace.
+$$
 
 ```
                  T : A -> B  (Codomain)
@@ -397,14 +450,35 @@ $$
 \cos \theta = \frac{\langle u,v \rangle}{\|u\| \cdot \|v\|}
 $$
 
-$\star$ **Find the angle between the vector $u\_1 = (1,2,3) \ ; \ u\_2 = (1,1,1)$**
+$\star$ **Find the angle between the vector
+
+$$
+u\_1 = (1,2,3) \ ; \ u\_2 = (1,1,1)
+$$
+
+**
 
 $$
 \cos \theta = \frac{1+2+3}{\sqrt{14}\sqrt{3}} = \frac{6}{\sqrt{42}}
 $$
 
-- **Orthogonal vector** $\rightarrow$ if $\theta = 90^\circ$
-- **Orthonormal vector** $\rightarrow$ if $\theta = 90^\circ$ && $\|u\| = 1, \|v\| = 1$
+- **Orthogonal vector** $\rightarrow$ if
+
+$$
+\theta = 90^\circ
+$$
+
+- **Orthonormal vector** $\rightarrow$ if
+
+$$
+\theta = 90^\circ
+$$
+
+&&
+
+$$
+\|u\| = 1, \|v\| = 1
+$$
 
 $\star$ **Find the angle between the matrices.**
 
@@ -454,7 +528,11 @@ $\star$ **Show that $\lbrace (1,0,0), (0,1,0), (0,0,1) \rbrace$ forms an orthogo
 
 **Ans:-**
 Here,
-Let, $e\_1 = (1,0,0) \ ; \ e\_2 = (0,1,0) \ ; \ e\_3 = (0,0,1)$
+Let,
+
+$$
+e\_1 = (1,0,0) \ ; \ e\_2 = (0,1,0) \ ; \ e\_3 = (0,0,1)
+$$
 
 Here,
 

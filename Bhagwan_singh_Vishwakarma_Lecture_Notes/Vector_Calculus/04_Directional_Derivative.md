@@ -39,7 +39,13 @@ is the unit vector in the direction of vector $\vec{a}$.
 Because the dot product yields a scalar, the directional derivative is a scalar magnitude.
 
 ### Maximum Directional Derivative
-The dot product $\hat{a} \cdot \nabla\phi$ equals $\lvert \nabla\phi \rvert \cos\theta$. This value is maximized when $\cos\theta = 1$, which occurs when $\theta = 0$. 
+The dot product $\hat{a} \cdot \nabla\phi$ equals
+
+$$
+\lvert \nabla\phi \rvert \cos\theta
+$$
+
+. This value is maximized when $\cos\theta = 1$, which occurs when $\theta = 0$.
 
 This means the directional derivative is **maximum in the exact direction of the normal vector** ($\nabla\phi$). 
 The maximum possible magnitude of the directional derivative is simply the magnitude of the gradient:
@@ -60,7 +66,13 @@ $$
 ## Solved Problems
 
 ### Problem 1: Basic Directional Derivative
-**Question:** Find the directional derivative of $\phi = (x^2 + y^2 + z^2)^{-1/2}$ at the point $P(3, 1, 2)$ in the direction of the vector
+**Question:** Find the directional derivative of
+
+$$
+\phi = (x^2 + y^2 + z^2)^{-1/2}
+$$
+
+at the point $P(3, 1, 2)$ in the direction of the vector
 
 $$
 \vec{a} = yz\hat{i} + zx\hat{j} + xy\hat{k}.
@@ -110,7 +122,13 @@ $$
 $$
 
 ### Problem 2: Direction Defined by Points
-**Question:** Find the directional derivative of $\phi = x^2 - y^2 + 2z^2$ at the point $P(1, 2, 3)$ in the direction of the line $PQ$, where $Q$ is the point $(5, 0, 4)$.
+**Question:** Find the directional derivative of
+
+$$
+\phi = x^2 - y^2 + 2z^2
+$$
+
+at the point $P(1, 2, 3)$ in the direction of the line $PQ$, where $Q$ is the point $(5, 0, 4)$.
 
 **Solution:**
 First, compute the gradient and evaluate it at $P(1, 2, 3)$:
@@ -142,7 +160,13 @@ $$
 $$
 
 ### Problem 3: Finding Unknown Constants
-**Question:** Find the constants $a, b, c$ so that the directional derivative of $\phi = axy^2 + byz + cz^2x^3$ at the point $(1, 2, -1)$ has a maximum magnitude of $64$ in the direction parallel to the $Z$-axis.
+**Question:** Find the constants $a, b, c$ so that the directional derivative of
+
+$$
+\phi = axy^2 + byz + cz^2x^3
+$$
+
+at the point $(1, 2, -1)$ has a maximum magnitude of $64$ in the direction parallel to the $Z$-axis.
 
 **Solution:**
 First, compute the gradient and evaluate at $(1, 2, -1)$:
@@ -190,7 +214,19 @@ $$
 Final Answer: $a = 6, b = 24, c = -8$.
 
 ### Problem 4: Angle Between Surfaces
-**Question:** Find the angle between the surfaces $x^2 + y^2 + z^2 = 9$ and $z = x^2 + y^2 - 3$ at the point $(2, -1, 2)$.
+**Question:** Find the angle between the surfaces
+
+$$
+x^2 + y^2 + z^2 = 9
+$$
+
+and
+
+$$
+z = x^2 + y^2 - 3
+$$
+
+at the point $(2, -1, 2)$.
 
 **Solution:**
 The angle between two surfaces is the angle between their normal vectors. Let's find the gradient of both surfaces.
@@ -238,7 +274,13 @@ $$
 $$
 
 ### Problem 5: Combined Concepts
-**Question:** For the surface $\phi = x^2 yz + 4xz^2$ at the point $(1, -2, -1)$:
+**Question:** For the surface
+
+$$
+\phi = x^2 yz + 4xz^2
+$$
+
+at the point $(1, -2, -1)$:
 1. Find the directional derivative in the direction
 
 $$
@@ -263,10 +305,8 @@ $$
 Find unit vector $\hat{a}$ for
 
 $$
-2\hat{i} - \hat{j} - 2\hat{k}:
+2\hat{i} - \hat{j} - 2\hat{k}::
 $$
-
-:
 
 $$
 \hat{a} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}

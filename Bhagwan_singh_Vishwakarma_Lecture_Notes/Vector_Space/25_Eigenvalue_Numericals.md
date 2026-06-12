@@ -21,19 +21,59 @@ Before moving to numerical problems and diagonalization, we must finish the theo
 **Statement:** Distinct non-zero eigenvectors of a linear operator $T$ corresponding to distinct eigenvalues of $T$ are linearly independent.
 
 **Proof (by Mathematical Induction):**
-Let $T : V \to V$ be a linear operator. Let $\alpha_1, \alpha_2, \dots, \alpha_n$ be eigenvectors corresponding to distinct eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$.
-This means: $T(\alpha_i) = \lambda_i \alpha_i$ for all $i = 1, \dots, n$.
-We want to prove that the set $S_n = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace$ is linearly independent. We proceed by induction on $n$.
+Let $T : V \to V$ be a linear operator. Let
+
+$$
+\alpha_1, \alpha_2, \dots, \alpha_n
+$$
+
+be eigenvectors corresponding to distinct eigenvalues
+
+$$
+\lambda_1, \lambda_2, \dots, \lambda_n.
+$$
+
+This means:
+
+$$
+T(\alpha_i) = \lambda_i \alpha_i
+$$
+
+for all $i = 1, \dots, n$.
+We want to prove that the set
+
+$$
+S_n = \lbrace \alpha_1, \alpha_2, \dots, \alpha_n \rbrace
+$$
+
+is linearly independent. We proceed by induction on $n$.
 
 **Base Case ($n = 1$):**
-For $n = 1$, the set is $S_1 = \lbrace \alpha_1 \rbrace$.
+For $n = 1$, the set is
+
+$$
+S_1 = \lbrace \alpha_1 \rbrace.
+$$
+
 Because $\alpha_1$ is an eigenvector, it is a non-zero vector ($\alpha_1 \neq \bar{0}$). Any set containing a single non-zero vector is linearly independent. The base case holds.
 
 **Induction Hypothesis ($n = k$):**
-Assume the theorem holds for $k$ eigenvectors. Thus, the set $S_k = \lbrace \alpha_1, \alpha_2, \dots, \alpha_k \rbrace$ is linearly independent.
+Assume the theorem holds for $k$ eigenvectors. Thus, the set
+
+$$
+S_k = \lbrace \alpha_1, \alpha_2, \dots, \alpha_k \rbrace
+$$
+
+is linearly independent.
 
 **Inductive Step ($n = k + 1$):**
-We must prove that $S_{k+1} = \lbrace \alpha_1, \dots, \alpha_k, \alpha_{k+1} \rbrace$ is linearly independent. Let's set up a linear combination equal to the zero vector:
+We must prove that
+
+$$
+S_{k+1} = \lbrace \alpha_1, \dots, \alpha_k, \alpha_{k+1} \rbrace
+$$
+
+is linearly independent. Let's set up a linear combination equal to the zero vector:
 
 $$
 a_1 \alpha_1 + a_2 \alpha_2 + \dots + a_k \alpha_k + a_{k+1} \alpha_{k+1} = \bar{0} \quad \text{--- (1)}
@@ -45,7 +85,11 @@ $$
 a_1 T(\alpha_1) + a_2 T(\alpha_2) + \dots + a_k T(\alpha_k) + a_{k+1} T(\alpha_{k+1}) = \bar{0}
 $$
 
-Substitute $T(\alpha_i) = \lambda_i \alpha_i$:
+Substitute
+
+$$
+T(\alpha_i) = \lambda_i \alpha_i:
+$$
 
 $$
 a_1 \lambda_1 \alpha_1 + a_2 \lambda_2 \alpha_2 + \dots + a_k \lambda_k \alpha_k + a_{k+1} \lambda_{k+1} \alpha_{k+1} = \bar{0} \quad \text{--- (2)}
@@ -69,7 +113,13 @@ $$
 a_i (\lambda_i - \lambda_{k+1}) = 0 \quad \text{for all } i = 1, \dots, k
 $$
 
-Because the eigenvalues are distinct, $\lambda_i \neq \lambda_{k+1}$, meaning $(\lambda_i - \lambda_{k+1}) \neq 0$. The only way the product can be zero is if:
+Because the eigenvalues are distinct, $\lambda_i \neq \lambda_{k+1}$, meaning
+
+$$
+(\lambda_i - \lambda_{k+1}) \neq 0
+$$
+
+. The only way the product can be zero is if:
 
 $$
 a_1 = 0, \quad a_2 = 0, \quad \dots, \quad a_k = 0
@@ -81,8 +131,19 @@ $$
 0 \cdot \alpha_1 + \dots + 0 \cdot \alpha_k + a_{k+1} \alpha_{k+1} = \bar{0} \implies a_{k+1} \alpha_{k+1} = \bar{0}
 $$
 
-Because $\alpha_{k+1}$ is an eigenvector, it is not zero ($\alpha_{k+1} \neq \bar{0}$). Thus, $a_{k+1} = 0$.
-Since $a_1 = a_2 = \dots = a_{k+1} = 0$, the set $S_{k+1}$ is linearly independent. By mathematical induction, the theorem holds for any number $n$.
+Because $\alpha_{k+1}$ is an eigenvector, it is not zero ($\alpha_{k+1} \neq \bar{0}$). Thus,
+
+$$
+a_{k+1} = 0.
+$$
+
+Since
+
+$$
+a_1 = a_2 = \dots = a_{k+1} = 0
+$$
+
+, the set $S_{k+1}$ is linearly independent. By mathematical induction, the theorem holds for any number $n$.
 
 ---
 

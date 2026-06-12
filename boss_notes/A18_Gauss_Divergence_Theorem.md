@@ -32,7 +32,11 @@ $$
 \vec{A} = 4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}
 $$
 
-taken over the region bounded by $x^2 + y^2 = 4, z = 0, z = 3$.
+taken over the region bounded by
+
+$$
+x^2 + y^2 = 4, z = 0, z = 3.
+$$
 
 **Solution**:
 
@@ -71,15 +75,35 @@ $$
 **Step 2: Evaluate the Surface Integral**
 The closed cylinder has 3 surfaces: Top ($S_1$), Bottom ($S_2$), and Curved Wall ($S_3$).
 
-- **Top Surface $S_1$ ($z=3, \hat{n}=\hat{k}$)**:
-  $\vec{A} \cdot \hat{k} = z^2 = 3^2 = 9$.
+- **Top Surface $S_1$ (
+
+$$
+z=3, \hat{n}=\hat{k}
+$$
+
+)**:
+
+$$
+\vec{A} \cdot \hat{k} = z^2 = 3^2 = 9.
+$$
+
   
 $$
 \iint_{S_1} 9 dS = 9 \times (\text{Area of circle}) = 9 \times \pi(2^2) = 36\pi.
 $$
 
-- **Bottom Surface $S_2$ ($z=0, \hat{n}=-\hat{k}$)**:
-  $\vec{A} \cdot (-\hat{k}) = -z^2 = -0^2 = 0$.
+- **Bottom Surface $S_2$ (
+
+$$
+z=0, \hat{n}=-\hat{k}
+$$
+
+)**:
+
+$$
+\vec{A} \cdot (-\hat{k}) = -z^2 = -0^2 = 0.
+$$
+
   
 $$
 \iint_{S_2} 0 dS = 0.

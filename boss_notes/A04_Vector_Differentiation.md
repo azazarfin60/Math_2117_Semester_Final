@@ -46,13 +46,17 @@ $$
 **Problem**: If $\vec{A}$ has a constant magnitude, show that $\vec{A}$ and $\frac{d\vec{A}}{dt}$ are perpendicular, provided
 
 $$
-\left\lvert \frac{d\vec{A}}{dt}\right\rvert  \neq 0
+\left\lvert \frac{d\vec{A}}{dt}\right\rvert  \neq 0.
 $$
 
-.
-
 **Proof**:
-Let the constant magnitude of $\vec{A}$ be $\lvert \vec{A} \rvert = c$ (where $c$ is a constant).
+Let the constant magnitude of $\vec{A}$ be
+
+$$
+\lvert \vec{A} \rvert = c
+$$
+
+(where $c$ is a constant).
 We know that the dot product of a vector with itself is its magnitude squared:
 
 $$
@@ -71,7 +75,13 @@ $$
 \vec{A} \cdot \frac{d\vec{A}}{dt} + \frac{d\vec{A}}{dt} \cdot \vec{A} = 0
 $$
 
-Since the dot product is commutative ($\vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}$):
+Since the dot product is commutative (
+
+$$
+\vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}
+$$
+
+):
 
 $$
 2 \left( \vec{A} \cdot \frac{d\vec{A}}{dt} \right) = 0 \implies \vec{A} \cdot \frac{d\vec{A}}{dt} = 0

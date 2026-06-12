@@ -98,10 +98,23 @@ i & -2+i & 3i+2 \\
 $$
 
 **hermitian:**
-$A^\theta$ or $A^H$ or $A^\oplus = (\bar{A})^T = (\overline{A^T})$
+$A^\theta$ or $A^H$ or
 
-$A^\theta = A \Rightarrow$ hermitian
-$A^\theta = -A \Rightarrow$ skew hermitian
+$$
+A^\oplus = (\bar{A})^T = (\overline{A^T})
+$$
+
+$$
+A^\theta = A \Rightarrow
+$$
+
+hermitian
+
+$$
+A^\theta = -A \Rightarrow
+$$
+
+skew hermitian
 
 $$
 B = \frac{1}{2}(A^\theta + A)
@@ -189,16 +202,38 @@ $$
 <div align="right"><b>12-01-26</b></div>
 
 **# What is a nilpotent / zeropotent / nullpotent matrix?**
-$A^n = [0]$ or $A^n = 0$ ($A$ is square matrix), a zero matrix.
+
+$$
+A^n = [0]
+$$
+
+or
+
+$$
+A^n = 0
+$$
+
+($A$ is square matrix), a zero matrix.
 
 **# involutary matrix:**
-$A^2 = I$
+
+$$
+A^2 = I
+$$
 
 **# periodic matrix:**
-$A^{n+1} = A$; period $= n$
+
+$$
+A^{n+1} = A
+$$
+
+; period $= n$
 
 **# idempotent matrix:**
-$A^2 = A$
+
+$$
+A^2 = A
+$$
 
 এই related theory.
 
@@ -208,20 +243,53 @@ if
 **# An n-square matrix $A$ is involutory iff $(I+A)(I-A) = 0$, a zero matrix.**
 এটা থাকলে conversely proof করতে হবে।
 
-We know an n-square matrix $A$ is involutory if $A^2 = I$.
-First, we assume that $A$ is involutory. We need to proof that $(I-A)(I+A) = O_{n \times n}$ where $I = n \times n$ identity matrix.
+We know an n-square matrix $A$ is involutory if
+
+$$
+A^2 = I.
+$$
+
+First, we assume that $A$ is involutory. We need to proof that
+
+$$
+(I-A)(I+A) = O_{n \times n}
+$$
+
+where $I = n \times n$ identity matrix.
 
 <!-- Page 034 -->
 Now,
-$(I-A)(I+A) = I^2 - AI + IA - A^2 = I - A + A - I = 0$ (proved) (Since $A^2 = I$)
+
+$$
+(I-A)(I+A) = I^2 - AI + IA - A^2 = I - A + A - I = 0
+$$
+
+(proved) (Since
+
+$$
+A^2 = I
+$$
+
+)
 
 Conversely, assume that $(I-A)(I+A) = 0$, $0 = \text{zero matrix}$.
 we need to show proof that $A$ is involutory.
 Here,
 $(I-A)(I+A) = 0$
-$\Rightarrow I^2 + I \cdot A - A \cdot I - A^2 = 0$
-$\Rightarrow I + A - A - A^2 = 0$
-$\Rightarrow I - A^2 = 0 \Rightarrow A^2 = I$ yielding $A$ is involuntary. This completes the proof.
+
+$$
+\Rightarrow I^2 + I \cdot A - A \cdot I - A^2 = 0
+$$
+
+$$
+\Rightarrow I + A - A - A^2 = 0
+$$
+
+$$
+\Rightarrow I - A^2 = 0 \Rightarrow A^2 = I
+$$
+
+yielding $A$ is involuntary. This completes the proof.
 
 **Associative law for sum:**
 $(A+B)+C = A + (B+C)$
@@ -234,26 +302,64 @@ $AB = BA = I$
 $A, B$ should be square matrix of same size.
 $B$ is called the inverse matrix of $A$.
 
-**# $(AB)^{-1} = B^{-1} A^{-1}$ proof that.**
-$(AB)^{-1}(AB) = I$
-$(AB)(AB)^{-1} = I$
+**#
+
+$$
+(AB)^{-1} = B^{-1} A^{-1}
+$$
+
+proof that.**
+
+$$
+(AB)^{-1}(AB) = I
+$$
+
+$$
+(AB)(AB)^{-1} = I
+$$
 
 Here,
-$AB(B^{-1} A^{-1}) = A(B B^{-1})A^{-1}$ (associative law)
-$= A I A^{-1} = A A^{-1} = I$
+
+$$
+AB(B^{-1} A^{-1}) = A(B B^{-1})A^{-1}
+$$
+
+(associative law)
+
+$$
+= A I A^{-1} = A A^{-1} = I
+$$
 
 <!-- Page 035 -->
 Again,
-$(B^{-1} A^{-1}) AB = B^{-1}(A^{-1} A)B = B^{-1}(I B) = B^{-1} B = I$
+
+$$
+(B^{-1} A^{-1}) AB = B^{-1}(A^{-1} A)B = B^{-1}(I B) = B^{-1} B = I
+$$
 
 that's how we can say $(B^{-1} A^{-1})$ is the inverse of $(AB)$.
-Therefore, $B^{-1} A^{-1} = (AB)^{-1}$
-$\Rightarrow (AB)^{-1} = B^{-1} A^{-1}$ (proved)
+Therefore,
+
+$$
+B^{-1} A^{-1} = (AB)^{-1}
+$$
+
+$$
+\Rightarrow (AB)^{-1} = B^{-1} A^{-1}
+$$
+
+(proved)
 
 *Frank Ayers এর বই*
 
 **# $\text{adj}(AB) = \text{Adj}(B) \cdot \text{adj}(A)$**
-**# $(AB)^t = B^t A^t$**
+**#
+
+$$
+(AB)^t = B^t A^t
+$$
+
+**
 
 $$
 A =
@@ -293,7 +399,9 @@ b_{31} & b_{32} & b_{33}
 \end{pmatrix}
 $$
 
-$a_{32} = \text{element/entry standing at the 3rd row, 2nd column}$
+$$
+a_{32} = \text{element/entry standing at the 3rd row, 2nd column}
+$$
 
 $$
 A^t =
@@ -323,7 +431,10 @@ a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31} & a_{31}b_{12} + a_{32}b_{22} + a_{33
 $$
 
 <!-- Page 036 -->
-$(AB)^t = B^t A^t$
+
+$$
+(AB)^t = B^t A^t
+$$
 
 $i\text{th row } j\text{th column's element}$
 $j\text{th row } i\text{th column's element}$
@@ -371,7 +482,9 @@ $x = 6 \quad (x=0)$
 <b>Class 19 | sir</b>
 <div align="right"><b>19-01-26</b></div>
 
-$(AB)^t = B^t A^t$
+$$
+(AB)^t = B^t A^t
+$$
 
 $$
 (AB)^t =
@@ -382,31 +495,62 @@ a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33} & a_{21}b_{13} + a_{22}b_{23} + a_{23
 \end{pmatrix}
 $$
 
-**# Prove: $(AB)^t = B^t A^t$**
+**# Prove:
+
+$$
+(AB)^t = B^t A^t
+$$
+
+**
 
 The element standing at the $i\text{th}$ row and $j\text{th}$ column of $AB$ is $\sum_{k} a_{ik} b_{kj}$ which is the element standing at the $j\text{th}$ row and $i\text{th}$ column of $(AB)^t$.
 
 The elements standing at $j$-th row of $B^t$:
-$b_{1j}, b_{2j}, b_{3j} \dots b_{nj}$
+
+$$
+b_{1j}, b_{2j}, b_{3j} \dots b_{nj}
+$$
 
 The elements standing at $i$-th column of $A^t$:
-$a_{i1}, a_{i2}, a_{i3} \dots a_{in}$
+
+$$
+a_{i1}, a_{i2}, a_{i3} \dots a_{in}
+$$
 
 <!-- Page 038 -->
 Thus the element standing at the $j$-th row and $i$-th column of $B^t A^t$ is:
-$\sum_k b_{kj} a_{ik} = \sum_k a_{ik} b_{kj}$
+
+$$
+\sum_k b_{kj} a_{ik} = \sum_k a_{ik} b_{kj}
+$$
 
 Thus,
-$(AB)^t = B^t A^t$ (proved)
+
+$$
+(AB)^t = B^t A^t
+$$
+
+(proved)
 
 **Linear Algebra:**
 **Eigen value:**
-$A \vec{V} = \lambda \vec{V}$
+
+$$
+A \vec{V} = \lambda \vec{V}
+$$
+
 ভেক্টরের উপর এমন operator ব্যবহার করলে তার direction change হয় না।
 যাদের eigenvalue high তাদের বলে Representative.
 
-$R^3 = (a, b, c)$ $\rightarrow$ 3D
-$R^2 = (a, b)$
+$$
+R^3 = (a, b, c)
+$$
+
+$\rightarrow$ 3D
+
+$$
+R^2 = (a, b)
+$$
 
 $$
 \begin{pmatrix}
@@ -432,11 +576,21 @@ $$
 **Characteristics equation**
 **Eigen value**
 
-Let $A = (a_{ij})_{n \times n}$ be an $n$-square matrix. Then the characteristic matrix of $A$ is $A - \lambda I$.
+Let
+
+$$
+A = (a_{ij})_{n \times n}
+$$
+
+be an $n$-square matrix. Then the characteristic matrix of $A$ is $A - \lambda I$.
 
 **Characteristics polynomial:** The polynomial $|A - \lambda I|$ is called characteristics polynomial.
 
-$I + \lambda A + \lambda^2 A^2 \dots$ (not finite, not polynomial)
+$$
+I + \lambda A + \lambda^2 A^2 \dots
+$$
+
+(not finite, not polynomial)
 $A^n + A^{n-1} + I$ (highest finite power $\Rightarrow$ polynomial)
 
 <!-- Page 039 -->
@@ -512,8 +666,15 @@ $$
 $$
 
 $\Rightarrow (4-\lambda)(3-\lambda) - 2 = 0$
-$\Rightarrow 12 - 7\lambda + \lambda^2 - 2 = 0$
-$\Rightarrow \lambda^2 - 7\lambda + 10 = 0$
+
+$$
+\Rightarrow 12 - 7\lambda + \lambda^2 - 2 = 0
+$$
+
+$$
+\Rightarrow \lambda^2 - 7\lambda + 10 = 0
+$$
+
 $\Rightarrow \lambda = 2, 5$
 
 thus the eigen values are 2, 5.

@@ -113,7 +113,11 @@ $$
 \nabla \phi = 2\hat{\mathbf{i}} + 3\hat{\mathbf{j}} + 6\hat{\mathbf{k}}
 $$
 
-The magnitude is $\sqrt{2^2 + 3^2 + 6^2} = \sqrt{49} = 7$.
+The magnitude is
+
+$$
+\sqrt{2^2 + 3^2 + 6^2} = \sqrt{49} = 7.
+$$
 
 $$
 \hat{\mathbf{n}} = \frac{2\hat{\mathbf{i}} + 3\hat{\mathbf{j}} + 6\hat{\mathbf{k}}}{7} = \frac{1}{7}(2\hat{\mathbf{i}} + 3\hat{\mathbf{j}} + 6\hat{\mathbf{k}})
@@ -124,10 +128,8 @@ We project the surface $S$ onto the **$xy$-plane**. Let's call this 2D projected
 The projection formula for $dS$ on the $xy$-plane is
 
 $$
-dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}
+dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}.
 $$
-
-.
 
 $$
 \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} = \frac{1}{7}(2\hat{\mathbf{i}} + 3\hat{\mathbf{j}} + 6\hat{\mathbf{k}}) \cdot \hat{\mathbf{k}} = \frac{6}{7}
@@ -136,10 +138,8 @@ $$
 Thus,
 
 $$
-dS = \frac{dx \, dy}{6/7} = \frac{7}{6} dx \, dy
+dS = \frac{dx \, dy}{6/7} = \frac{7}{6} dx \, dy.
 $$
-
-.
 
 **Step 4: Establish Limits of Integration for $S_1$**
 On the $xy$-plane ($z=0$), the plane equation becomes $2x + 3y = 12$. This line bounds the triangular region $S_1$.
@@ -147,12 +147,16 @@ On the $xy$-plane ($z=0$), the plane equation becomes $2x + 3y = 12$. This line 
 -   For a given $x$, $y$ varies from $0$ to the line
 
 $$
-y = \frac{12 - 2x}{3}
+y = \frac{12 - 2x}{3}.
 $$
 
-.
+**Step 5: Compute
 
-**Step 5: Compute $\mathbf{F} \cdot \hat{\mathbf{n}}$**
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}
+$$
+
+**
 
 $$
 \mathbf{F} \cdot \hat{\mathbf{n}} = (6z\hat{\mathbf{i}} - 4\hat{\mathbf{j}} + y\hat{\mathbf{k}}) \cdot \frac{1}{7}(2\hat{\mathbf{i}} + 3\hat{\mathbf{j}} + 6\hat{\mathbf{k}}) = \frac{1}{7}(12z - 12 + 6y)
@@ -200,9 +204,26 @@ Final Answer: **8**
 ---
 
 ## Key Takeaways
-*   Surface integrals require calculating a unit normal vector ($\hat{\mathbf{n}} = \nabla\phi / \lvert \nabla\phi \rvert$) and computing the dot product $\mathbf{F} \cdot \hat{\mathbf{n}}$.
+*   Surface integrals require calculating a unit normal vector (
+
+$$
+\hat{\mathbf{n}} = \nabla\phi / \lvert \nabla\phi \rvert
+$$
+
+) and computing the dot product
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}.
+$$
+
 *   To evaluate the integral, you **must project the 3D surface onto a 2D plane**. This transforms the $dS$ element and defines the integration limits.
-*   Once projected, ensure the entire integrand ($\mathbf{F} \cdot \hat{\mathbf{n}}$) is expressed strictly in terms of the two projected variables.
+*   Once projected, ensure the entire integrand (
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}}
+$$
+
+) is expressed strictly in terms of the two projected variables.
 
 ## What Comes Next
 We will continue practicing surface integrals in the next lecture by solving more problems and proving that calculating the surface integral via different projection planes yields the exact same result.

@@ -55,7 +55,13 @@ $$
 \dim(N(T)) = k \quad (k \le n)
 $$
 
-Let $S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_k \rbrace$ be a basis for the null space $N(T)$.
+Let
+
+$$
+S = \lbrace \alpha_1, \alpha_2, \dots, \alpha_k \rbrace
+$$
+
+be a basis for the null space $N(T)$.
 Because $S$ is a basis, it is a linearly independent set within $U$. By the **Basis Extension Theorem**, any linearly independent set can be extended to form a basis of the entire vector space.
 Let's extend $S$ to form a basis $S'$ for the entire domain $U$:
 
@@ -116,7 +122,13 @@ $$
 T(b_{k+1}\alpha_{k+1} + \dots + b_n\alpha_n) = \bar{0}'
 $$
 
-This equation states that the image of the vector $(b_{k+1}\alpha_{k+1} + \dots + b_n\alpha_n)$ is the zero vector. By definition, this vector *must* belong to the null space $N(T)$:
+This equation states that the image of the vector
+
+$$
+(b_{k+1}\alpha_{k+1} + \dots + b_n\alpha_n)
+$$
+
+is the zero vector. By definition, this vector *must* belong to the null space $N(T)$:
 
 $$
 b_{k+1}\alpha_{k+1} + \dots + b_n\alpha_n \in N(T)
@@ -140,7 +152,13 @@ $$
 -c_1 = \dots = -c_k = 0 \quad \text{and} \quad b_{k+1} = \dots = b_n = 0
 $$
 
-Because $b_{k+1} = \dots = b_n = 0$, the set $B'$ is linearly independent.
+Because
+
+$$
+b_{k+1} = \dots = b_n = 0
+$$
+
+, the set $B'$ is linearly independent.
 
 #### Step 3: Conclusion
 Since $B'$ spans $R(T)$ and is linearly independent, it is a basis for $R(T)$.

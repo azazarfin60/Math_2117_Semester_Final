@@ -60,8 +60,17 @@ $0u + 0 = 0 \implies 0u = 0$. $\blacksquare$
 Assume $ku = 0$. If $k = 0$, the statement holds.
 If $k \neq 0$, then its multiplicative inverse $k^{-1}$ exists in the field $K$.
 Multiply both sides by $k^{-1}$:
-$k^{-1}(ku) = k^{-1}(0)$
-By associativity and Proof 1: $(k^{-1}k)u = 0$
+
+$$
+k^{-1}(ku) = k^{-1}(0)
+$$
+
+By associativity and Proof 1:
+
+$$
+(k^{-1}k)u = 0
+$$
+
 $1u = 0$
 By the unitary axiom: $u = 0$.
 Thus, either $k=0$ or $u=0$. $\blacksquare$

@@ -24,7 +24,21 @@ This generates a system of linear equations where the unknowns are the scalars $
 
 ## Worked Example 1: Coordinate Vectors (PYQ 2020, 2021)
 
-**Problem**: Write the vector $v = (1, -2, 5)$ as a linear combination of the vectors $e_1 = (1, 1, 1)$, $e_2 = (1, 2, 3)$, and $e_3 = (2, -1, 1)$.
+**Problem**: Write the vector $v = (1, -2, 5)$ as a linear combination of the vectors
+
+$$
+e_1 = (1, 1, 1),
+$$
+
+$$
+e_2 = (1, 2, 3)
+$$
+
+, and
+
+$$
+e_3 = (2, -1, 1).
+$$
 
 **Solution**:
 Set up the relation:
@@ -78,9 +92,23 @@ $$
 $$
 
 Solve by back substitution:
-- From $R_3$: $5c_3 = 10 \implies c_3 = 2$
-- From $R_2$: $c_2 - 3(2) = -3 \implies c_2 = 3$
-- From $R_1$: $c_1 + 3 + 2(2) = 1 \implies c_1 = -6$
+- From $R_3$:
+
+$$
+5c_3 = 10 \implies c_3 = 2
+$$
+
+- From $R_2$:
+
+$$
+c_2 - 3(2) = -3 \implies c_2 = 3
+$$
+
+- From $R_1$:
+
+$$
+c_1 + 3 + 2(2) = 1 \implies c_1 = -6
+$$
 
 The linear combination is:
 
@@ -92,7 +120,27 @@ $$
 
 ## Worked Example 2: Polynomial Vectors (PYQ 2024)
 
-**Problem**: Express the polynomial $v = 3t^2 + 5t - 5$ as a linear combination of the polynomials $P_1 = t^2 + 2t + 1$, $P_2 = 2t^2 + 5t + 4$, and $P_3 = t^2 + 3t + 6$.
+**Problem**: Express the polynomial
+
+$$
+v = 3t^2 + 5t - 5
+$$
+
+as a linear combination of the polynomials
+
+$$
+P_1 = t^2 + 2t + 1,
+$$
+
+$$
+P_2 = 2t^2 + 5t + 4
+$$
+
+, and
+
+$$
+P_3 = t^2 + 3t + 6.
+$$
 
 **Solution**:
 Set up the relation:
@@ -112,11 +160,31 @@ $$
 $$
 
 Match the coefficients to form a system of equations:
-1. $c_1 + 2c_2 + c_3 = 3$
-2. $2c_1 + 5c_2 + 3c_3 = 5$
-3. $c_1 + 4c_2 + 6c_3 = -5$
+1.
 
-You can solve this using substitution or matrix row reduction. Let's use substitution from Eq 1 ($c_1 = 3 - 2c_2 - c_3$):
+$$
+c_1 + 2c_2 + c_3 = 3
+$$
+
+2.
+
+$$
+2c_1 + 5c_2 + 3c_3 = 5
+$$
+
+3.
+
+$$
+c_1 + 4c_2 + 6c_3 = -5
+$$
+
+You can solve this using substitution or matrix row reduction. Let's use substitution from Eq 1 (
+
+$$
+c_1 = 3 - 2c_2 - c_3
+$$
+
+):
 Substitute into Eq 2:
 
 $$
@@ -129,14 +197,27 @@ $$
 (3 - 2c_2 - c_3) + 4c_2 + 6c_3 = -5 \implies 3 + 2c_2 + 5c_3 = -5 \implies 2c_2 + 5c_3 = -8
 $$
 
-Now solve the $2 \times 2$ system: $c_2 = -1 - c_3$.
+Now solve the $2 \times 2$ system:
+
+$$
+c_2 = -1 - c_3.
+$$
 
 $$
 2(-1 - c_3) + 5c_3 = -8 \implies -2 - 2c_3 + 5c_3 = -8 \implies 3c_3 = -6 \implies c_3 = -2
 $$
 
-Find $c_2$: $c_2 = -1 - (-2) = 1$.
-Find $c_1$: $c_1 = 3 - 2(1) - (-2) = 3$.
+Find $c_2$:
+
+$$
+c_2 = -1 - (-2) = 1.
+$$
+
+Find $c_1$:
+
+$$
+c_1 = 3 - 2(1) - (-2) = 3.
+$$
 
 The linear combination is:
 
