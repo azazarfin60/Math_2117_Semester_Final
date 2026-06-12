@@ -135,7 +135,12 @@ Total Line Integral = $4 + 8 - 8 - 8 = -4$.
 Calculate Curl:
 
 $$
-\nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y-z+2 & yz+4 & -xz \end{vmatrix} = -y\hat{i} + (z - 1)\hat{j} - \hat{k}
+\nabla \times \vec{A} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y-z+2 & yz+4 & -xz
+\end{vmatrix} = -y\hat{i} + (z - 1)\hat{j} - \hat{k}
 $$
 
 Evaluate over the 5 faces of the cube above $z=0$:

@@ -40,7 +40,11 @@ becomes:
 
 $$
 
-\begin{bmatrix} 1 & -2 & -5 \\ -1 & 1 & 3 \\ 2 & 1 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \\ 3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & -5 \\
+-1 & 1 & 3 \\
+2 & 1 & 1
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \\ 3 \end{bmatrix}
 $$
 
 ### The Augmented Matrix
@@ -48,7 +52,12 @@ $$
 We combine $A$ and $B$ into one matrix called the augmented matrix. We write it as $[A : B]$ or $[A \lvert  B]$:
 
 $$
-[A : B] = \begin{bmatrix} 1 & -2 & -5 & | & 2 \\ -1 & 1 & 3 & | & -2 \\ 2 & 1 & 1 & | & 3 \end{bmatrix}
+[A : B] =
+\begin{bmatrix}
+1 & -2 & -5 & | & 2 \\
+-1 & 1 & 3 & | & -2 \\
+2 & 1 & 1 & | & 3
+\end{bmatrix}
 $$
 
 The vertical line separates the coefficients from the constants. We apply row operations to this augmented matrix to solve the system.
@@ -103,19 +112,31 @@ $$
 Write the augmented matrix:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 3 & 1 & -2 & | & 1 \\ 4 & -3 & -1 & | & 3 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+3 & 1 & -2 & | & 1 \\
+4 & -3 & -1 & | & 3
+\end{bmatrix}
 $$
 
 Apply $R_2 \to 2R_2 - 3R_1$ and $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & -4 & -7 & | & -4 \\ 0 & -7 & -3 & | & -1 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & -4 & -7 & | & -4 \\
+0 & -7 & -3 & | & -1
+\end{bmatrix}
 $$
 
 Apply $R_3 \to 4R_3 - 7R_2$:
 
 $$
-\begin{bmatrix} 2 & 2 & 1 & | & 2 \\ 0 & 4 & 7 & | & 4 \\ 0 & 0 & 37 & | & 24 \end{bmatrix}
+\begin{bmatrix}
+2 & 2 & 1 & | & 2 \\
+0 & 4 & 7 & | & 4 \\
+0 & 0 & 37 & | & 24
+\end{bmatrix}
 $$
 
 Back-substitute. From row 3:
@@ -162,25 +183,45 @@ $$
 Write the augmented matrix:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 1 \\ 2 & 1 & 1 & | & 2 \\ 3 & 2 & 2 & | & 3 \\ 0 & 1 & 1 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 1 \\
+2 & 1 & 1 & | & 2 \\
+3 & 2 & 2 & | & 3 \\
+0 & 1 & 1 & | & 0
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - 3R_1$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 1 \\ 0 & -3 & -3 & | & 0 \\ 0 & -4 & -4 & | & 0 \\ 0 & 1 & 1 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 1 \\
+0 & -3 & -3 & | & 0 \\
+0 & -4 & -4 & | & 0 \\
+0 & 1 & 1 & | & 0
+\end{bmatrix}
 $$
 
 Scale: $R_2 \to -\frac{1}{3}R_2$ and $R_3 \to -\frac{1}{4}R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 1 \\ 0 & 1 & 1 & | & 0 \\ 0 & 1 & 1 & | & 0 \\ 0 & 1 & 1 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 1 \\
+0 & 1 & 1 & | & 0 \\
+0 & 1 & 1 & | & 0 \\
+0 & 1 & 1 & | & 0
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - R_2$ and $R_4 \to R_4 - R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 1 \\ 0 & 1 & 1 & | & 0 \\ 0 & 0 & 0 & | & 0 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 1 \\
+0 & 1 & 1 & | & 0 \\
+0 & 0 & 0 & | & 0 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 **Check consistency**: $\rho(A) = 2$ and $\rho[A:B] = 2$. So the system is consistent.
@@ -216,19 +257,31 @@ $$
 Write the augmented matrix:
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 2 & 1 & 1 & | & 1 \\ 1 & 5 & -4 & | & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+2 & 1 & 1 & | & 1 \\
+1 & 5 & -4 & | & 5
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 0 & -3 & 3 & | & -3 \\ 0 & 3 & -3 & | & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+0 & -3 & 3 & | & -3 \\
+0 & 3 & -3 & | & 3
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 + R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & -1 & | & 2 \\ 0 & -3 & 3 & | & -3 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -1 & | & 2 \\
+0 & -3 & 3 & | & -3 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 Rank is 2 with 3 variables. So there is 1 free variable.
@@ -266,19 +319,31 @@ $$
 Write the augmented matrix:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 1 & 2 & 4 & | & \lambda \\ 1 & 4 & 10 & | & \lambda^2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+1 & 2 & 4 & | & \lambda \\
+1 & 4 & 10 & | & \lambda^2
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & \lambda - 1 \\ 0 & 3 & 9 & | & \lambda^2 - 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & \lambda - 1 \\
+0 & 3 & 9 & | & \lambda^2 - 1
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - 3R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & \lambda - 1 \\ 0 & 0 & 0 & | & \lambda^2 - 3\lambda + 2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & \lambda - 1 \\
+0 & 0 & 0 & | & \lambda^2 - 3\lambda + 2
+\end{bmatrix}
 $$
 
 For consistency, the last row must not be a contradiction. So we need:
@@ -294,7 +359,11 @@ So $\lambda = 1$ or $\lambda = 2$.
 The augmented matrix becomes:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & 0 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & 0 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 Let $z = t$. From row 2: $y = -3t$. From row 1: $x = 1 - y - z = 1 + 3t - t = 1 + 2t$.
@@ -308,7 +377,11 @@ $$
 The augmented matrix becomes:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 3 & | & 1 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 3 & | & 1 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}
 $$
 
 Let $z = t$. From row 2: $y = 1 - 3t$. From row 1: $x = 1 - y - z = 1 - (1 - 3t) - t = 2t$.
@@ -365,19 +438,31 @@ $$
 Augmented matrix:
 
 $$
-\begin{bmatrix} 1 & -2 & -5 & | & 2 \\ -1 & 1 & 3 & | & -2 \\ 2 & 1 & 1 & | & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & -5 & | & 2 \\
+-1 & 1 & 3 & | & -2 \\
+2 & 1 & 1 & | & 3
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_1 + R_2$ and $R_3 \to 2R_1 - R_3$:
 
 $$
-\begin{bmatrix} 1 & -2 & -5 & | & 2 \\ 0 & -1 & -2 & | & 0 \\ 0 & -5 & -11 & | & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & -5 & | & 2 \\
+0 & -1 & -2 & | & 0 \\
+0 & -5 & -11 & | & 1
+\end{bmatrix}
 $$
 
 Apply $R_3 \to 5R_2 - R_3$:
 
 $$
-\begin{bmatrix} 1 & -2 & -5 & | & 2 \\ 0 & -1 & -2 & | & 0 \\ 0 & 0 & 1 & | & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & -5 & | & 2 \\
+0 & -1 & -2 & | & 0 \\
+0 & 0 & 1 & | & -1
+\end{bmatrix}
 $$
 
 Back-substitute. From row 3: $z = -1$.
@@ -411,7 +496,11 @@ For a homogeneous system $AX = 0$, the trivial solution $x_1 = x_2 = x_3 = 0$ al
 Write the coefficient matrix and reduce:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 \\ 3 & 2 & 1 \\ 2 & -1 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 \\
+3 & 2 & 1 \\
+2 & -1 & 1
+\end{bmatrix}
 $$
 
 (We swapped $R_1 \leftrightarrow R_3$ to get a leading 1.)
@@ -419,13 +508,21 @@ $$
 Apply $R_2 \to R_2 - 3R_1$ and $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 \\ 0 & 11 & -14 \\ 0 & 5 & -9 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 \\
+0 & 11 & -14 \\
+0 & 5 & -9
+\end{bmatrix}
 $$
 
 Apply $R_3 \to 11R_3 - 5R_2$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 \\ 0 & 11 & -14 \\ 0 & 0 & -29 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 \\
+0 & 11 & -14 \\
+0 & 0 & -29
+\end{bmatrix}
 $$
 
 Rank = 3 = number of variables. So the system has only the trivial solution:
@@ -453,19 +550,31 @@ $$
 Coefficient matrix:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 1 & 3 & -2 & 4 \\ 2 & 1 & -1 & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & 3 & -2 & 4 \\
+2 & 1 & -1 & -1
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 2 & -3 & 3 \\ 0 & -1 & -3 & -3 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 3 \\
+0 & -1 & -3 & -3
+\end{bmatrix}
 $$
 
 Apply $R_3 \to 2R_3 + R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 2 & -3 & 3 \\ 0 & 0 & -9 & -3 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 3 \\
+0 & 0 & -9 & -3
+\end{bmatrix}
 $$
 
 Rank = 3. Number of variables = 4. So there is $4 - 3 = 1$ free variable.

@@ -54,7 +54,12 @@ $$
 4.  **Derive the Formula**: Multiply the inverse matrix by a general column vector to find the explicit formula for $T^{-1}$:
 
 $$
-T^{-1}(x, y, z) = A^{-1} \begin{bmatrix} x \\ y \\ z \end{bmatrix}
+T^{-1}(x, y, z) = A^{-1}
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix}
 $$
 
 ---
@@ -79,14 +84,23 @@ Compute the images:
 Write these coordinate vectors as columns to form the matrix $A$:
 
 $$
-A = \begin{bmatrix} 2 & 1 & 1 \\ 1 & 1 & 2 \\ 1 & 0 & -2 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & 1 & 1 \\
+1 & 1 & 2 \\
+1 & 0 & -2
+\end{bmatrix}
 $$
 
 **Step 2: Verify Non-Singularity**
 Compute the determinant of $A$:
 
 $$
-|A| = 2 \begin{vmatrix} 1 & 2 \\ 0 & -2 \end{vmatrix} - 1 \begin{vmatrix} 1 & 2 \\ 1 & -2 \end{vmatrix} + 1 \begin{vmatrix} 1 & 1 \\ 1 & 0 \end{vmatrix}
+|A| = 2
+\begin{vmatrix}
+1 & 2 \\
+0 & -2
+\end{vmatrix} - 1 \begin{vmatrix} 1 & 2 \\ 1 & -2 \end{vmatrix} + 1 \begin{vmatrix} 1 & 1 \\ 1 & 0 \end{vmatrix}
 $$
 
 $$
@@ -99,20 +113,35 @@ Since $\lvert A \rvert = -1 \neq 0$, the transformation is non-singular and inve
 Find the adjoint matrix by computing all 9 cofactors (omitting the tedious arithmetic here):
 
 $$
-\text{adj}(A) = \begin{bmatrix} -2 & 2 & 1 \\ 4 & -5 & -3 \\ -1 & 1 & 1 \end{bmatrix}
+\text{adj}(A) =
+\begin{bmatrix}
+-2 & 2 & 1 \\
+4 & -5 & -3 \\
+-1 & 1 & 1
+\end{bmatrix}
 $$
 
 Calculate the inverse:
 
 $$
-A^{-1} = \frac{1}{|A|} \text{adj}(A) = \frac{1}{-1} \begin{bmatrix} -2 & 2 & 1 \\ 4 & -5 & -3 \\ -1 & 1 & 1 \end{bmatrix} = \begin{bmatrix} 2 & -2 & -1 \\ -4 & 5 & 3 \\ 1 & -1 & -1 \end{bmatrix}
+A^{-1} = \frac{1}{|A|} \text{adj}(A) = \frac{1}{-1}
+\begin{bmatrix}
+-2 & 2 & 1 \\
+4 & -5 & -3 \\
+-1 & 1 & 1
+\end{bmatrix} = \begin{bmatrix} 2 & -2 & -1 \\ -4 & 5 & 3 \\ 1 & -1 & -1 \end{bmatrix}
 $$
 
 **Step 4: Derive the Formula**
 Multiply the inverse matrix by $(x, y, z)^T$:
 
 $$
-T^{-1}(x, y, z) = \begin{bmatrix} 2 & -2 & -1 \\ -4 & 5 & 3 \\ 1 & -1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix}
+T^{-1}(x, y, z) =
+\begin{bmatrix}
+2 & -2 & -1 \\
+-4 & 5 & 3 \\
+1 & -1 & -1
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix}
 $$
 
 Extracting the rows gives the final formula:
@@ -151,7 +180,12 @@ Prove that $T$ is invertible, and find the formula for $T^{-1}$.
 Compute $T(1,0,0) = (3, -2, -1)$, $T(0,1,0) = (0, 1, 2)$, $T(0,0,1) = (1, 0, 4)$.
 
 $$
-A = \begin{bmatrix} 3 & 0 & 1 \\ -2 & 1 & 0 \\ -1 & 2 & 4 \end{bmatrix}
+A =
+\begin{bmatrix}
+3 & 0 & 1 \\
+-2 & 1 & 0 \\
+-1 & 2 & 4
+\end{bmatrix}
 $$
 
 **2. Determinant:**
@@ -166,11 +200,21 @@ Because the determinant is 9 (non-zero), $T$ is invertible.
 Calculating the cofactors gives the adjoint:
 
 $$
-\text{adj}(A) = \begin{bmatrix} 4 & 2 & -1 \\ 8 & 13 & -2 \\ -3 & -6 & 3 \end{bmatrix}
+\text{adj}(A) =
+\begin{bmatrix}
+4 & 2 & -1 \\
+8 & 13 & -2 \\
+-3 & -6 & 3
+\end{bmatrix}
 $$
 
 $$
-A^{-1} = \frac{1}{9} \begin{bmatrix} 4 & 2 & -1 \\ 8 & 13 & -2 \\ -3 & -6 & 3 \end{bmatrix}
+A^{-1} = \frac{1}{9}
+\begin{bmatrix}
+4 & 2 & -1 \\
+8 & 13 & -2 \\
+-3 & -6 & 3
+\end{bmatrix}
 $$
 
 **4. Final Formula:**

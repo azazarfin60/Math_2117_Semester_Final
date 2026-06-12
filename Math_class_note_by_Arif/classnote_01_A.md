@@ -33,29 +33,53 @@ $n = \text{column}$
 $A+B, A-B$ if both are same.
 
 $$
-A = \begin{bmatrix} 2 & 3 \\ 4 & 5 \end{bmatrix}_{2 \times 2}
+A =
+\begin{bmatrix}
+2 & 3 \\
+4 & 5
+\end{bmatrix}_{2 \times 2}
 $$
 
 $$
-B = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}_{2 \times 3}
+B =
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{bmatrix}_{2 \times 3}
 $$
 
 $$
-[A : B] = \begin{bmatrix} 2 & 3 & 1 & 2 & 3 \\ 4 & 5 & 4 & 5 & 6 \end{bmatrix}
+[A : B] =
+\begin{bmatrix}
+2 & 3 & 1 & 2 & 3 \\
+4 & 5 & 4 & 5 & 6
+\end{bmatrix}
 $$
 
 (horizontal concatenation)
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ 4 & 5 \end{bmatrix}_{2 \times 2}
+A =
+\begin{bmatrix}
+1 & 2 \\
+4 & 5
+\end{bmatrix}_{2 \times 2}
 $$
 
 $$
-B = \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}_{3 \times 2}
+B =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4 \\
+5 & 6
+\end{bmatrix}_{3 \times 2}
 $$
 
 $$
-\begin{bmatrix} A \\ B \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 4 & 5 \\ 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}
+\begin{bmatrix}
+A \\
+B
+\end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 4 & 5 \\ 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}
 $$
 
 (vertical concat)
@@ -80,17 +104,32 @@ $A \times B \quad m \times n \quad n \times p$
 **antisymmetric:** $A^T \neq A$
 
 $$
-A = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}
+A =
+\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
 $$
 
 $$
-A^T = \begin{bmatrix} a & d & g \\ b & e & h \\ c & f & i \end{bmatrix}
+A^T =
+\begin{bmatrix}
+a & d & g \\
+b & e & h \\
+c & f & i
+\end{bmatrix}
 $$
 
 **Trisis matrix / Tridiagonal matrix**
 
 $$
-A = \begin{bmatrix} a & b & 0 \\ c & d & e \\ 0 & f & g \end{bmatrix}
+A =
+\begin{bmatrix}
+a & b & 0 \\
+c & d & e \\
+0 & f & g
+\end{bmatrix}
 $$
 
 $\rightarrow$ super diagonal
@@ -102,11 +141,21 @@ use of trisis matrix : importance?
 $a_{22} = \text{main}$
 
 $$
-A = \begin{bmatrix} 0 & h & g \\ -h & 0 & f \\ -g & -f & 0 \end{bmatrix}
+A =
+\begin{bmatrix}
+0 & h & g \\
+-h & 0 & f \\
+-g & -f & 0
+\end{bmatrix}
 $$
 
 $$
-A^T = \begin{bmatrix} 0 & -h & -g \\ h & 0 & -f \\ g & f & 0 \end{bmatrix} = -A
+A^T =
+\begin{bmatrix}
+0 & -h & -g \\
+h & 0 & -f \\
+g & f & 0
+\end{bmatrix} = -A
 $$
 
 $A^T = -A$
@@ -164,19 +213,32 @@ What, Why,
 first nonzero $\rightarrow$ pivot
 
 $$
-\begin{pmatrix} \textcircled{1} & 2 & 3 & 4 \\ 0 & \textcircled{1} & 2 & 3 \\ 0 & 0 & \textcircled{1} & 2 \\ 0 & 0 & 0 & \textcircled{1} \end{pmatrix}
+\begin{pmatrix}
+\textcircled{1} & 2 & 3 & 4 \\
+0 & \textcircled{1} & 2 & 3 \\
+0 & 0 & \textcircled{1} & 2 \\
+0 & 0 & 0 & \textcircled{1}
+\end{pmatrix}
 $$
 
 number of zeros $\rightarrow$ increases
 
 $$
-\begin{pmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 more rank = 2
 
 $$
-\begin{pmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 2 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 \\
+0 & 2 & 0 & 0
+\end{pmatrix}
 $$
 
 not in echelon form
@@ -189,7 +251,11 @@ pivot না থাকলে কলাম এর সাপেক্ষে ডা
 **# Reduce the matrix**
 
 $$
-\begin{pmatrix} 1 & 2 & 4 & 5 \\ 6 & 7 & 1 & 1 \\ 4 & 3 & 4 & 5 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 4 & 5 \\
+6 & 7 & 1 & 1 \\
+4 & 3 & 4 & 5
+\end{pmatrix}
 $$
 
 **to its echelon form**
@@ -199,7 +265,11 @@ $R_2 \rightarrow 6R_1 - R_2$
 $R_3 \rightarrow R_1 + R_3$
 
 $$
-\begin{pmatrix} 1 & 2 & 4 & 5 \\ 0 & 5 & 23 & 29 \\ 0 & 5 & 8 & 10 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 4 & 5 \\
+0 & 5 & 23 & 29 \\
+0 & 5 & 8 & 10
+\end{pmatrix}
 $$
 
 $\rightarrow$ number of zero = 1
@@ -215,7 +285,11 @@ Elementary transformation
 $R_3 \rightarrow R_2 - R_3$
 
 $$
-\begin{pmatrix} 1 & 2 & 4 & 5 \\ 0 & 5 & 23 & 29 \\ 0 & 0 & 15 & 19 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 4 & 5 \\
+0 & 5 & 23 & 29 \\
+0 & 0 & 15 & 19
+\end{pmatrix}
 $$
 
 $n_o = 1$
@@ -229,7 +303,11 @@ $\text{rank} = 3 \rightarrow \text{so echelon}$
 3. only non zero entry of that corresponding column
 
 $$
-\begin{pmatrix} 1 & 2^0 & 4^0 & 5^0 \\ 0 & \textcircled{1} & 4^0 & 5 \\ 0 & 0 & \textcircled{1} & 6 \end{pmatrix}
+\begin{pmatrix}
+1 & 2^0 & 4^0 & 5^0 \\
+0 & \textcircled{1} & 4^0 & 5 \\
+0 & 0 & \textcircled{1} & 6
+\end{pmatrix}
 $$
 
 important in image processing also.
@@ -242,20 +320,32 @@ $f: R \rightarrow R$
 4- dimention eucledion axis
 
 $$
-\begin{pmatrix} 1 & 2 & 3 & 5 \\ -1 & 1 & 2 & 1 \\ 1 & 1 & 2 & 3 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 3 & 5 \\
+-1 & 1 & 2 & 1 \\
+1 & 1 & 2 & 3
+\end{pmatrix}
 $$
 
 $R_2 \rightarrow R_1 + R_2$
 $R_3 \rightarrow R_1 - R_3$
 
 $$
-\begin{pmatrix} 1 & 2 & 3 & 5 \\ 0 & 3 & 5 & 6 \\ 0 & 1 & 1 & 2 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 3 & 5 \\
+0 & 3 & 5 & 6 \\
+0 & 1 & 1 & 2
+\end{pmatrix}
 $$
 
 $R_3 \rightarrow R_2 - 3R_3$
 
 $$
-\begin{pmatrix} 1 & 2 & 3 & 5 \\ 0 & 3 & 5 & 6 \\ 0 & 0 & 2 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 3 & 5 \\
+0 & 3 & 5 & 6 \\
+0 & 0 & 2 & 0
+\end{pmatrix}
 $$
 
 which is an echelon matrix
@@ -263,20 +353,32 @@ which is an echelon matrix
 $R_1 \rightarrow 3R_1 - 2R_2$
 
 $$
-\begin{pmatrix} 3 & 0 & -1 & 3 \\ 0 & 3 & 5 & 6 \\ 0 & 0 & 2 & 0 \end{pmatrix}
+\begin{pmatrix}
+3 & 0 & -1 & 3 \\
+0 & 3 & 5 & 6 \\
+0 & 0 & 2 & 0
+\end{pmatrix}
 $$
 
 $R_1 \rightarrow 2R_1 + R_3$
 
 $$
-\begin{pmatrix} 6 & 0 & 0 & 6 \\ 0 & 3 & 5 & 6 \\ 0 & 0 & 2 & 0 \end{pmatrix}
+\begin{pmatrix}
+6 & 0 & 0 & 6 \\
+0 & 3 & 5 & 6 \\
+0 & 0 & 2 & 0
+\end{pmatrix}
 $$
 
 <!-- Page 006 -->
 $R_2 \rightarrow 2R_2 - 5R_3$
 
 $$
-\begin{pmatrix} 6 & 0 & 0 & 6 \\ 0 & 6 & 0 & 12 \\ 0 & 0 & 2 & 0 \end{pmatrix}
+\begin{pmatrix}
+6 & 0 & 0 & 6 \\
+0 & 6 & 0 & 12 \\
+0 & 0 & 2 & 0
+\end{pmatrix}
 $$
 
 $R_1 \rightarrow \frac{1}{6} R_1$
@@ -284,7 +386,11 @@ $R_2 \rightarrow \frac{1}{6} R_2$
 $R_3 \rightarrow \frac{1}{2} R_3$
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 2 \\
+0 & 0 & 1 & 0
+\end{pmatrix}
 $$
 
 which is row reduced echelon matrix

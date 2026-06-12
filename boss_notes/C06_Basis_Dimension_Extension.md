@@ -41,19 +41,31 @@ A very common exam question gives you a set of vectors and asks you to find a ba
 Write vectors as rows:
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 2 & 3 & 1 & -4 \\ 3 & 8 & -3 & -5 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+2 & 3 & 1 & -4 \\
+3 & 8 & -3 & -5
+\end{bmatrix}
 $$
 
 Apply row operations to eliminate the first column below row 1 ($R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - 3R_1$):
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 14 & -18 & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 14 & -18 & 4
+\end{bmatrix}
 $$
 
 Eliminate the second column below row 2 ($R_3 \to R_3 - 2R_2$):
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 The non-zero rows form the basis:
@@ -82,19 +94,34 @@ $v_4 = 2t^3 - 5t^2 + 7t + 5$
 Represent each polynomial as a coordinate vector in the standard basis $\lbrace t^3, t^2, t, 1\rbrace$ and form a matrix:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 2 & -3 & 9 & -1 \\ 1 & 0 & 6 & -5 \\ 2 & -5 & 7 & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+2 & -3 & 9 & -1 \\
+1 & 0 & 6 & -5 \\
+2 & -5 & 7 & 5
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - R_1$, $R_4 \to R_4 - 2R_1$:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 0 & 1 & 1 & -3 \\ 0 & 2 & 2 & -6 \\ 0 & -1 & -1 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+0 & 1 & 1 & -3 \\
+0 & 2 & 2 & -6 \\
+0 & -1 & -1 & 3
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - 2R_2$ and $R_4 \to R_4 + R_2$:
 
 $$
-\begin{bmatrix} 1 & -2 & 4 & 1 \\ 0 & 1 & 1 & -3 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 4 & 1 \\
+0 & 1 & 1 & -3 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Convert the non-zero rows back into polynomials to form the basis:

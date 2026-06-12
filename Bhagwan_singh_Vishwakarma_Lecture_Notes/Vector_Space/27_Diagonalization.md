@@ -37,7 +37,13 @@ $$
 5.  **Compute $P^{-1} A P$**: Multiply the matrices. If the matrix is diagonalizable, the result will exactly equal a diagonal matrix $D$, whose diagonal entries are the eigenvalues of $A$ in the exact same order as their corresponding eigenvectors appear in $P$.
 
 $$
-P^{-1} A P = D = \begin{bmatrix} \lambda_1 & 0 & \dots & 0 \\ 0 & \lambda_2 & \dots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dots & \lambda_n \end{bmatrix}
+P^{-1} A P = D =
+\begin{bmatrix}
+\lambda_1 & 0 & \dots & 0 \\
+0 & \lambda_2 & \dots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \dots & \lambda_n
+\end{bmatrix}
 $$
 
 ---
@@ -47,7 +53,11 @@ $$
 **Given:**
 
 $$
-A = \begin{bmatrix} 4 & 2 \\ 3 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+4 & 2 \\
+3 & 3
+\end{bmatrix}
 $$
 
 From our previous lecture, we already computed:
@@ -55,14 +65,22 @@ From our previous lecture, we already computed:
 *   Eigenvectors:
 
 $$
-X_1 = \begin{bmatrix} 2 \\ -3 \end{bmatrix}, \quad X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+X_1 =
+\begin{bmatrix}
+2 \\
+-3
+\end{bmatrix}, \quad X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
 $$
 
 **Step 1: Construct the Modal Matrix $P$**
 Place $X_1$ and $X_2$ as columns:
 
 $$
-P = \begin{bmatrix} 2 & 1 \\ -3 & 1 \end{bmatrix}
+P =
+\begin{bmatrix}
+2 & 1 \\
+-3 & 1
+\end{bmatrix}
 $$
 
 Check linear independence by finding the determinant:
@@ -79,28 +97,48 @@ Find the cofactors to build the adjoint matrix:
 *   $P_{21} = -1, \quad P_{22} = 2$
 
 $$
-\text{adj}(P) = \begin{bmatrix} 1 & -1 \\ 3 & 2 \end{bmatrix} \implies P^{-1} = \frac{1}{5} \begin{bmatrix} 1 & -1 \\ 3 & 2 \end{bmatrix}
+\text{adj}(P) =
+\begin{bmatrix}
+1 & -1 \\
+3 & 2
+\end{bmatrix} \implies P^{-1} = \frac{1}{5} \begin{bmatrix} 1 & -1 \\ 3 & 2 \end{bmatrix}
 $$
 
 **Step 3: Evaluate $P^{-1} A P$**
 First, multiply $A$ and $P$:
 
 $$
-A P = \begin{bmatrix} 4 & 2 \\ 3 & 3 \end{bmatrix} \begin{bmatrix} 2 & 1 \\ -3 & 1 \end{bmatrix} = \begin{bmatrix} (8 - 6) & (4 + 2) \\ (6 - 9) & (3 + 3) \end{bmatrix} = \begin{bmatrix} 2 & 6 \\ -3 & 6 \end{bmatrix}
+A P =
+\begin{bmatrix}
+4 & 2 \\
+3 & 3
+\end{bmatrix} \begin{bmatrix} 2 & 1 \\ -3 & 1 \end{bmatrix} = \begin{bmatrix} (8 - 6) & (4 + 2) \\ (6 - 9) & (3 + 3) \end{bmatrix} = \begin{bmatrix} 2 & 6 \\ -3 & 6 \end{bmatrix}
 $$
 
 Next, multiply $P^{-1}$ by the result:
 
 $$
-P^{-1} (A P) = \frac{1}{5} \begin{bmatrix} 1 & -1 \\ 3 & 2 \end{bmatrix} \begin{bmatrix} 2 & 6 \\ -3 & 6 \end{bmatrix}
+P^{-1} (A P) = \frac{1}{5}
+\begin{bmatrix}
+1 & -1 \\
+3 & 2
+\end{bmatrix} \begin{bmatrix} 2 & 6 \\ -3 & 6 \end{bmatrix}
 $$
 
 $$
-= \frac{1}{5} \begin{bmatrix} (2 + 3) & (6 - 6) \\ (6 - 6) & (18 + 12) \end{bmatrix} = \frac{1}{5} \begin{bmatrix} 5 & 0 \\ 0 & 30 \end{bmatrix}
+= \frac{1}{5}
+\begin{bmatrix}
+(2 + 3) & (6 - 6) \\
+(6 - 6) & (18 + 12)
+\end{bmatrix} = \frac{1}{5} \begin{bmatrix} 5 & 0 \\ 0 & 30 \end{bmatrix}
 $$
 
 $$
-= \begin{bmatrix} 1 & 0 \\ 0 & 6 \end{bmatrix} = D
+=
+\begin{bmatrix}
+1 & 0 \\
+0 & 6
+\end{bmatrix} = D
 $$
 
 Because $P^{-1}AP$ yields a diagonal matrix containing the eigenvalues $1$ and $6$ on the diagonal, we have successfully proven that matrix $A$ is diagonalizable.
@@ -112,7 +150,12 @@ Because $P^{-1}AP$ yields a diagonal matrix containing the eigenvalues $1$ and $
 **Given:**
 
 $$
-A = \begin{bmatrix} 3 & 2 & 4 \\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+3 & 2 & 4 \\
+2 & 0 & 2 \\
+4 & 2 & 3
+\end{bmatrix}
 $$
 
 **Step 1: Eigenvalues and Eigenvectors**
@@ -120,27 +163,47 @@ $$
 *   **Eigenvector for $\lambda = 8$**: Solving $(A - 8I)X = \bar{0}$ yields:
 
 $$
-X_1 = \begin{bmatrix} 2 \\ 1 \\ 2 \end{bmatrix}
+X_1 =
+\begin{bmatrix}
+2 \\
+1 \\
+2
+\end{bmatrix}
 $$
 
 *   **Eigenvectors for $\lambda = -1$**: Solving $(A + 1I)X = \bar{0}$ yields the single equation $2x_1 + x_2 + 2x_3 = 0$. By setting $(x_1=1, x_3=0)$ and then $(x_1=0, x_3=1)$, we extract two linearly independent eigenvectors:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ -2 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} 0 \\ -2 \\ 1 \end{bmatrix}
+X_2 =
+\begin{bmatrix}
+1 \\
+-2 \\
+0
+\end{bmatrix}, \quad X_3 = \begin{bmatrix} 0 \\ -2 \\ 1 \end{bmatrix}
 $$
 
 **Step 2: Modal Matrix $P$**
 Place $X_1$, $X_2$, and $X_3$ into the modal matrix:
 
 $$
-P = \begin{bmatrix} 2 & 1 & 0 \\ 1 & -2 & -2 \\ 2 & 0 & 1 \end{bmatrix}
+P =
+\begin{bmatrix}
+2 & 1 & 0 \\
+1 & -2 & -2 \\
+2 & 0 & 1
+\end{bmatrix}
 $$
 
 **Step 3: Diagonalization**
 By computing $P^{-1}$ using the adjoint method and evaluating the product $P^{-1} A P$, we get:
 
 $$
-P^{-1} A P = \begin{bmatrix} 8 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & -1 \end{bmatrix} = D
+P^{-1} A P =
+\begin{bmatrix}
+8 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & -1
+\end{bmatrix} = D
 $$
 
 The eigenvalues $8, -1, -1$ perfectly match the order of the eigenvectors in $P$. The matrix $A$ is diagonalizable.

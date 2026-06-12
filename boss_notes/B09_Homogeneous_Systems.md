@@ -67,19 +67,31 @@ $$
 Swap $R_1 \leftrightarrow R_3$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 \\ 3 & 2 & 1 \\ 2 & -1 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 \\
+3 & 2 & 1 \\
+2 & -1 & 1
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - 3R_1$ and $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 \\ 0 & 11 & -14 \\ 0 & 5 & -9 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 \\
+0 & 11 & -14 \\
+0 & 5 & -9
+\end{bmatrix}
 $$
 
 Apply $R_3 \to 11R_3 - 5R_2$:
 
 $$
-\begin{bmatrix} 1 & -3 & 5 \\ 0 & 11 & -14 \\ 0 & 0 & -29 \end{bmatrix}
+\begin{bmatrix}
+1 & -3 & 5 \\
+0 & 11 & -14 \\
+0 & 0 & -29
+\end{bmatrix}
 $$
 
 Rank = 3 = number of unknowns. Only the trivial solution:
@@ -107,7 +119,11 @@ $$
 After row reduction:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 3 & 3 \\ 0 & 0 & 3 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 1 & 3 & 3 \\
+0 & 0 & 3 & 1
+\end{bmatrix}
 $$
 
 Rank = 3. Variables = 4. So $4 - 3 = 1$ free variable.
@@ -127,7 +143,12 @@ $$
 In vector form:
 
 $$
-\begin{bmatrix} x \\ y \\ z \\ w \end{bmatrix} = k \begin{bmatrix} -4 \\ 6 \\ 1 \\ -3 \end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+w
+\end{bmatrix} = k \begin{bmatrix} -4 \\ 6 \\ 1 \\ -3 \end{bmatrix}
 $$
 
 The null space is one-dimensional, spanned by $(-4, 6, 1, -3)^T$.

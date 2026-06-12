@@ -21,7 +21,10 @@ The Normal form, also known as the Canonical form, is a standard form used to de
 Every non-zero matrix $A$ of rank $r$ can be reduced, by a sequence of elementary row and column operations, to one of the following forms:
 
 $$
-\begin{bmatrix} I_r & O \\ O & O \end{bmatrix}, \quad \begin{bmatrix} I_r \\ O \end{bmatrix}, \quad \begin{bmatrix} I_r & O \end{bmatrix}, \quad \text{or} \quad I_r
+\begin{bmatrix}
+I_r & O \\
+O & O
+\end{bmatrix}, \quad \begin{bmatrix} I_r \\ O \end{bmatrix}, \quad \begin{bmatrix} I_r & O \end{bmatrix}, \quad \text{or} \quad I_r
 $$
 
 Here, $I_r$ represents an identity matrix of order $r$, and $O$ represents a zero matrix. The value $r$ gives the rank of the original matrix $A$.
@@ -42,7 +45,12 @@ Here, $I_r$ represents an identity matrix of order $r$, and $O$ represents a zer
 Let us reduce matrix $A$ to Normal form to find its rank:
 
 $$
-A = \begin{bmatrix} 1 & 2 & -1 \\ 2 & 5 & 0 \\ 3 & 7 & -1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & -1 \\
+2 & 5 & 0 \\
+3 & 7 & -1
+\end{bmatrix}
 $$
 
 Use row operations to clear the first column below the $(1,1)$ pivot:
@@ -56,7 +64,12 @@ R_3 \to R_3 - 3R_1
 $$
 
 $$
-A \sim \begin{bmatrix} 1 & 2 & -1 \\ 0 & 1 & 2 \\ 0 & 1 & 2 \end{bmatrix}
+A \sim
+\begin{bmatrix}
+1 & 2 & -1 \\
+0 & 1 & 2 \\
+0 & 1 & 2
+\end{bmatrix}
 $$
 
 Use column operations to clear the first row to the right of the $(1,1)$ pivot:
@@ -70,7 +83,12 @@ C_3 \to C_3 + C_1
 $$
 
 $$
-A \sim \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 1 & 2 \end{bmatrix}
+A \sim
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 2 \\
+0 & 1 & 2
+\end{bmatrix}
 $$
 
 Use row operation to clear below the $(2,2)$ pivot:
@@ -80,7 +98,12 @@ R_3 \to R_3 - R_2
 $$
 
 $$
-A \sim \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}
+A \sim
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 Use column operation to clear to the right of the $(2,2)$ pivot:
@@ -90,13 +113,21 @@ C_3 \to C_3 - 2C_2
 $$
 
 $$
-A \sim \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+A \sim
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 This is the Normal form block:
 
 $$
-\begin{bmatrix} I_2 & O \\ O & O \end{bmatrix}
+\begin{bmatrix}
+I_2 & O \\
+O & O
+\end{bmatrix}
 $$
 
 The identity block is of order $2$. Therefore, the rank is $\rho(A) = 2$.

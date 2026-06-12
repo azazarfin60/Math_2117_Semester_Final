@@ -1,13 +1,20 @@
 <!-- Page 041 -->
 
 $$
-\begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}
+\begin{pmatrix}
+4 & 1 \\
+2 & 3
+\end{pmatrix}
 $$
 
 Let,
 
 $$
-V = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}
+V =
+\begin{pmatrix}
+v_1 \\
+v_2
+\end{pmatrix}
 $$
 
 be an eigenvector corresponding to the eigenvalue $\lambda = 2$.
@@ -16,15 +23,26 @@ Then,
 $AV = \lambda V \Rightarrow AV - \lambda V = [0]$ (zero matrix, বেয়াকে 0)
 
 $$
-\begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = 2 \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}
+\begin{pmatrix}
+4 & 1 \\
+2 & 3
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = 2 \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}
 $$
 
 $$
-\Rightarrow (A-\lambda I)V = 0 \Rightarrow \begin{pmatrix} 4-2 & 1 \\ 2 & 3-2 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow (A-\lambda I)V = 0 \Rightarrow
+\begin{pmatrix}
+4-2 & 1 \\
+2 & 3-2
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $$
-\Rightarrow \begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} 2v_1+v_2 \\ 2v_1+v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+2 & 1 \\
+2 & 1
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} 2v_1+v_2 \\ 2v_1+v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $2v_1+v_2 = 0$ yielding $2v_1+v_2 = 0$
@@ -34,7 +52,11 @@ Set, $v_2 = 2 \Rightarrow v_1 = -1$.
 Thus
 
 $$
-V = \begin{pmatrix} -1 \\ 2 \end{pmatrix}
+V =
+\begin{pmatrix}
+-1 \\
+2
+\end{pmatrix}
 $$
 
 is an eigenvector corresponding to the eigenvalue $\lambda = 2$.
@@ -42,7 +64,11 @@ is an eigenvector corresponding to the eigenvalue $\lambda = 2$.
 Again, let
 
 $$
-W = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix}
+W =
+\begin{pmatrix}
+w_1 \\
+w_2
+\end{pmatrix}
 $$
 
 be an eigenvector corresponding to the eigenvalue $\lambda = 5$.
@@ -51,11 +77,19 @@ Then, eigenvalue equation will be:
 $AW = \lambda W \Rightarrow (A-\lambda I)W = 0$
 
 $$
-\Rightarrow \begin{pmatrix} 4-5 & 1 \\ 2 & 3-5 \end{pmatrix} \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+4-5 & 1 \\
+2 & 3-5
+\end{pmatrix} \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $$
-\Rightarrow \begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix} \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} -w_1+w_2 \\ 2w_1-2w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+-1 & 1 \\
+2 & -2
+\end{pmatrix} \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} -w_1+w_2 \\ 2w_1-2w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 <!-- Page 042 -->
@@ -73,7 +107,10 @@ Set, $w_1 = 1$ then $w_2 = 1$.
 then
 
 $$
-\begin{pmatrix} 1 \\ 1 \end{pmatrix}
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
 $$
 
 is an eigenvector corresponding to the eigenvalue $\lambda = 5$.
@@ -81,7 +118,11 @@ is an eigenvector corresponding to the eigenvalue $\lambda = 5$.
 Then modal matrix is:
 
 $$
-P = \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P =
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix}
 $$
 
 (Then the matrix obtained with the eigenvectors is $P$)
@@ -90,27 +131,46 @@ eigenvalue independent here.
 why $\rightarrow$ echelon form এ row zero হলে dependent, না হলে independent.
 
 $$
-\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix} \xrightarrow{R_2 \rightarrow R_2 + 2R_1} \begin{pmatrix} -1 & 1 \\ 0 & 3 \end{pmatrix}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix} \xrightarrow{R_2 \rightarrow R_2 + 2R_1} \begin{pmatrix} -1 & 1 \\ 0 & 3 \end{pmatrix}
 $$
 
 hence the eigenvectors are independent.
 
 $$
-P^{-1} = \frac{1}{-3}\begin{pmatrix} 1 & -1 \\ -2 & -1 \end{pmatrix} = \frac{1}{3}\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P^{-1} = \frac{1}{-3}
+\begin{pmatrix}
+1 & -1 \\
+-2 & -1
+\end{pmatrix} = \frac{1}{3}\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 Now,
 
 $$
-P^{-1} A P = \frac{1}{3} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P^{-1} A P = \frac{1}{3}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix} \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 $$
-= \frac{1}{3} \begin{pmatrix} -2 & 2 \\ 10 & 5 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+= \frac{1}{3}
+\begin{pmatrix}
+-2 & 2 \\
+10 & 5
+\end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 $$
-= \frac{1}{3}\begin{pmatrix} 6 & 0 \\ 0 & 15 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
+= \frac{1}{3}
+\begin{pmatrix}
+6 & 0 \\
+0 & 15
+\end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
 which is diagonalized matrix.
@@ -125,7 +185,11 @@ which is diagonalized matrix.
 **Consider the matrix
 
 $$
-A = \begin{pmatrix} 3 & 1 \\ -1 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+3 & 1 \\
+-1 & 1
+\end{pmatrix}
 $$
 
 **
@@ -133,13 +197,21 @@ $$
 Characteristics matrix of $A$ is $A-\lambda I$
 
 $$
-= \begin{pmatrix} 3 & 1 \\ -1 & 1 \end{pmatrix} - \lambda \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 3-\lambda & 1 \\ -1 & 1-\lambda \end{pmatrix}
+=
+\begin{pmatrix}
+3 & 1 \\
+-1 & 1
+\end{pmatrix} - \lambda \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 3-\lambda & 1 \\ -1 & 1-\lambda \end{pmatrix}
 $$
 
 Characteristics polynomial of $A$ is $|A-\lambda I|$ and hence the ch polynomial is $|A-\lambda I| = 0$
 
 $$
-\Rightarrow \begin{vmatrix} 3-\lambda & 1 \\ -1 & 1-\lambda \end{vmatrix} = 0
+\Rightarrow
+\begin{vmatrix}
+3-\lambda & 1 \\
+-1 & 1-\lambda
+\end{vmatrix} = 0
 $$
 
 $\Rightarrow (3-\lambda)(1-\lambda) + 1 = 0$
@@ -149,7 +221,11 @@ $\Rightarrow (\lambda-2)^2 = 0 \Rightarrow \lambda = 2, 2$
 Let,
 
 $$
-V = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}
+V =
+\begin{pmatrix}
+v_1 \\
+v_2
+\end{pmatrix}
 $$
 
 be the eigenvector corresponding to the eigenvalue $\lambda = 2$.
@@ -158,24 +234,40 @@ we can't decide which one is effective.
 $AV = \lambda V \Rightarrow (A-\lambda I)V = 0 \quad (\text{zero matrix})$
 
 $$
-\Rightarrow \begin{pmatrix} 3-2 & 1 \\ -1 & 1-2 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+3-2 & 1 \\
+-1 & 1-2
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $$
-\Rightarrow \begin{pmatrix} 1 & 1 \\ -1 & -1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{matrix} v_1-v_2=0 \\ v_1-v_2=0 \end{matrix} \Rightarrow v_1-v_2=0
+\Rightarrow
+\begin{pmatrix}
+1 & 1 \\
+-1 & -1
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{matrix} v_1-v_2=0 \\ v_1-v_2=0 \end{matrix} \Rightarrow v_1-v_2=0
 $$
 
 <!-- Page 044 -->
 Set $v_2 = 1 \Rightarrow v_1 = 1$? *(Note: In notes: $v_1-v_2 = 0 \Rightarrow v_1=v_2$, so $v_2=1 \Rightarrow v_1=1$. The eigenvector is
 
 $$
-V = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+V =
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
 $$
 
 )*
 
 $$
-V = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+V =
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
 $$
 
 is an eigenvector corresponding to the eigenvalue $\lambda = 2$.
@@ -185,7 +277,10 @@ we can't find independent eigenvectors. So we can't generate/find inverse matrix
 **#
 
 $$
-\begin{pmatrix} 2 & 1 \\ -1 & 1 \end{pmatrix}
+\begin{pmatrix}
+2 & 1 \\
+-1 & 1
+\end{pmatrix}
 $$
 
 HW eigen values and eigen vectors.**
@@ -206,7 +301,12 @@ Then $A^2 + aA + bI = 0$ (zero matrix)
 **Consider the matrix
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{pmatrix}
 $$
 
 **
@@ -215,7 +315,12 @@ ch polynomial should be 3rd degree.
 Ch polynomial of $A$ is $|A-\lambda I|$
 
 $$
-= \begin{vmatrix} 1-\lambda & 2 & 3 \\ -1 & 2-\lambda & 4 \\ 1 & 1 & 2-\lambda \end{vmatrix}
+=
+\begin{vmatrix}
+1-\lambda & 2 & 3 \\
+-1 & 2-\lambda & 4 \\
+1 & 1 & 2-\lambda
+\end{vmatrix}
 $$
 
 <!-- Page 045 -->
@@ -234,25 +339,50 @@ $\Rightarrow 3A^{-1} = A^2 - 5A + 3I$
 Therefore,
 
 $$
-A^2 = \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} = \begin{pmatrix} 2 & 9 & 17 \\ 1 & 6 & 13 \\ 2 & 6 & 11 \end{pmatrix}
+A^2 =
+\begin{pmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{pmatrix} \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} = \begin{pmatrix} 2 & 9 & 17 \\ 1 & 6 & 13 \\ 2 & 6 & 11 \end{pmatrix}
 $$
 
 $$
-\Rightarrow 3A^{-1} = \begin{pmatrix} 2 & 9 & 17 \\ 1 & 6 & 13 \\ 2 & 6 & 11 \end{pmatrix} - 5 \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} + 3 \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+\Rightarrow 3A^{-1} =
+\begin{pmatrix}
+2 & 9 & 17 \\
+1 & 6 & 13 \\
+2 & 6 & 11
+\end{pmatrix} - 5 \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} + 3 \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
 $$
 
 $$
-= \begin{pmatrix} 2 & 9 & 17 \\ 1 & 6 & 13 \\ 2 & 6 & 11 \end{pmatrix} + \begin{pmatrix} -5 & -10 & -15 \\ 5 & -10 & -20 \\ -5 & -5 & -10 \end{pmatrix} + \begin{pmatrix} 3 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 3 \end{pmatrix}
+=
+\begin{pmatrix}
+2 & 9 & 17 \\
+1 & 6 & 13 \\
+2 & 6 & 11
+\end{pmatrix} + \begin{pmatrix} -5 & -10 & -15 \\ 5 & -10 & -20 \\ -5 & -5 & -10 \end{pmatrix} + \begin{pmatrix} 3 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 3 \end{pmatrix}
 $$
 
 $$
-= \begin{pmatrix} 0 & -1 & 2 \\ 6 & -1 & -7 \\ -3 & 1 & 4 \end{pmatrix}
+=
+\begin{pmatrix}
+0 & -1 & 2 \\
+6 & -1 & -7 \\
+-3 & 1 & 4
+\end{pmatrix}
 $$
 
 So,
 
 $$
-A^{-1} = \frac{1}{3}\begin{pmatrix} 0 & -1 & 2 \\ 6 & -1 & -7 \\ -3 & 1 & 4 \end{pmatrix}
+A^{-1} = \frac{1}{3}
+\begin{pmatrix}
+0 & -1 & 2 \\
+6 & -1 & -7 \\
+-3 & 1 & 4
+\end{pmatrix}
 $$
 
 (found)
@@ -289,40 +419,72 @@ $= r \cdot (\nabla \times A) = 0$ since $\nabla \times A = 0$. (proved)
 **diagonalization (important)**
 
 $$
-A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}
+A =
+\begin{pmatrix}
+4 & 1 \\
+2 & 3
+\end{pmatrix}
 $$
 
 $\lambda = 2, 5$
 
 $$
-V = \begin{pmatrix} -1 \\ 2 \end{pmatrix},
+V =
+\begin{pmatrix}
+-1 \\
+2
+\end{pmatrix},
 $$
 
 $$
-W = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+W =
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
 $$
 
 $$
-P = \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix},
+P =
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix},
 $$
 
 $$
-P^{-1} = \frac{1}{3}\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P^{-1} = \frac{1}{3}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix}
 $$
 
 $$
-P^{-1} A P = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix} = M
+P^{-1} A P =
+\begin{pmatrix}
+2 & 0 \\
+0 & 5
+\end{pmatrix} = M
 $$
 
 $A^5 = P M^5 P^{-1}$
 $A^{100} = P M^{100} P^{-1}$
 
 $$
-A^5 = P M^5 P^{-1} = \frac{1}{3}\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} 32 & 0 \\ 0 & 3125 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+A^5 = P M^5 P^{-1} = \frac{1}{3}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix} \begin{pmatrix} 32 & 0 \\ 0 & 3125 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 $$
-A^3 = P M^3 P^{-1} = \frac{1}{3} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} 8 & 0 \\ 0 & 125 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+A^3 = P M^3 P^{-1} = \frac{1}{3}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix} \begin{pmatrix} 8 & 0 \\ 0 & 125 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 <!-- Page 047 -->
@@ -351,7 +513,12 @@ $V_3 = (0, 0, 1)$
 (3D Geometry / User Basis)
 
 $$
-W = \begin{vmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{vmatrix}
+W =
+\begin{vmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{vmatrix}
 $$
 
 determinant বের করলে যদি not equal to zero হয় independent.
@@ -362,7 +529,11 @@ $(2, 5, -6) = 2(1, 0, 0) + 5(0, 1, 0) - 6(0, 0, 1)$
 <!-- Page 048 -->
 
 $$
-\mathbb{R}^2 \rightarrow \left. \begin{matrix} (1, 0) \\ (0, 1) \end{matrix} \right\rbrace  \text{independent vector (user basis)}
+\mathbb{R}^2 \rightarrow \left.
+\begin{matrix}
+(1, 0) \\
+(0, 1)
+\end{matrix} \right\rbrace  \text{independent vector (user basis)}
 $$
 
 এক ভেক্টর থেকে আরেকটা জেনারেট করা না গেলেই independent.
@@ -373,7 +544,10 @@ $(5, 4) = 5(1, 0) + 4(0, 1)$
 **#
 
 $$
-\begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 \\
+2 & 1
+\end{pmatrix}
 $$
 
 **
@@ -387,15 +561,30 @@ $(4, 5) = 2(1, 2) + 1(2, 1)$
 Now Column vector: row $n$ এ যাবে or column এ or vice versa.
 
 $$
-v_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix},
+v_1 =
+\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix},
 $$
 
 $$
-v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix},
+v_2 =
+\begin{pmatrix}
+0 \\
+1 \\
+0
+\end{pmatrix},
 $$
 
 $$
-v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+v_3 =
+\begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix}
 $$
 
 두 ভেক্টরের মধ্যবর্তী কোনো vector space.
@@ -403,11 +592,21 @@ $$
 **Array Multiplication:**
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix},
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix},
 $$
 
 $$
-B = \begin{pmatrix} 2 & 3 & 1 \\ 0 & 1 & 2 \\ 1 & 1 & -1 \end{pmatrix}
+B =
+\begin{pmatrix}
+2 & 3 & 1 \\
+0 & 1 & 2 \\
+1 & 1 & -1
+\end{pmatrix}
 $$
 
 In MATLAB:
@@ -415,7 +614,12 @@ In MATLAB:
 - `A * B` (matrix multiplication)
 
 $$
-A.B = \begin{pmatrix} 2 & 6 & 3 \\ 0 & 5 & 12 \\ 7 & 8 & -9 \end{pmatrix}
+A.B =
+\begin{pmatrix}
+2 & 6 & 3 \\
+0 & 5 & 12 \\
+7 & 8 & -9
+\end{pmatrix}
 $$
 
 $V = (1, 2, 3)$

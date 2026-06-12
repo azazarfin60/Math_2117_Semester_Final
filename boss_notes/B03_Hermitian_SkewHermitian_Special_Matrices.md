@@ -31,13 +31,21 @@ Here $\bar{A}$ is the complex conjugate (replace $i$ with $-i$ in every entry). 
 ### Example
 
 $$
-A = \begin{pmatrix} 2 & 1+i \\ 1-i & 3 \end{pmatrix}
+A =
+\begin{pmatrix}
+2 & 1+i \\
+1-i & 3
+\end{pmatrix}
 $$
 
 Check:
 
 $$
-\bar{A} = \begin{pmatrix} 2 & 1-i \\ 1+i & 3 \end{pmatrix}, \quad (\bar{A})^T = \begin{pmatrix} 2 & 1+i \\ 1-i & 3 \end{pmatrix} = A
+\bar{A} =
+\begin{pmatrix}
+2 & 1-i \\
+1+i & 3
+\end{pmatrix}, \quad (\bar{A})^T = \begin{pmatrix} 2 & 1+i \\ 1-i & 3 \end{pmatrix} = A
 $$
 
 Hermitian.
@@ -62,7 +70,11 @@ $$
 ### Example
 
 $$
-A = \begin{pmatrix} 2i & 1+i \\ -1+i & 0 \end{pmatrix}
+A =
+\begin{pmatrix}
+2i & 1+i \\
+-1+i & 0
+\end{pmatrix}
 $$
 
 ---
@@ -114,7 +126,11 @@ where $O$ is the zero matrix. The smallest such $k$ is the index of nilpotency.
 **Example**:
 
 $$
-A = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}. \quad A^2 = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O.
+A =
+\begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix}. \quad A^2 = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O.
 $$
 
 Nilpotent with index 2.
@@ -134,7 +150,11 @@ This means $A$ is its own inverse: $A^{-1} = A$.
 **Example**:
 
 $$
-A = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}. \quad A^2 = I.
+A =
+\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}. \quad A^2 = I.
 $$
 
 ### Idempotent Matrix
@@ -150,7 +170,11 @@ Applying the transformation twice gives the same result as applying it once. Pro
 **Example**:
 
 $$
-A = \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}. \quad A^2 = A.
+A =
+\begin{bmatrix}
+1 & 0 \\
+0 & 0
+\end{bmatrix}. \quad A^2 = A.
 $$
 
 The eigenvalues of an idempotent matrix are only 0 or 1.

@@ -21,7 +21,13 @@ A matrix is a rectangular array of numbers arranged in rows and columns. Matrice
 An $m \times n$ matrix contains $m$ rows and $n$ columns. The elements are denoted by $a_{ij}$, representing the entry in the $i$-th row and $j$-th column.
 
 $$
-A = \begin{bmatrix} a_{11} & a_{12} & \dots & a_{1n} \\ a_{21} & a_{22} & \dots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \dots & a_{mn} \end{bmatrix}
+A =
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix}
 $$
 
 ### Types of Matrices
@@ -36,7 +42,11 @@ The determinant is a scalar value calculated from a square matrix. It provides i
 For a $2 \times 2$ matrix:
 
 $$
-A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
+A =
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
 $$
 
 The determinant is:
@@ -48,7 +58,12 @@ $$
 For a $3 \times 3$ matrix, expansion by minors along the first row gives:
 
 $$
-A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix}
+A =
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
 $$
 
 The determinant calculation follows:

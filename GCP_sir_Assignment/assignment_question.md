@@ -56,7 +56,11 @@ $$
 23. Find eigenvalues and eigenvectors of
 
 $$
-A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}.
+A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 2
+\end{pmatrix}.
 $$
 
 24. Prove that the sum of eigenvalues equals the trace of the matrix.
@@ -65,7 +69,10 @@ $$
 27. Diagonalize the matrix:
 
 $$
-\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}
+\begin{pmatrix}
+4 & 1 \\
+0 & 4
+\end{pmatrix}
 $$
 
 (if possible).

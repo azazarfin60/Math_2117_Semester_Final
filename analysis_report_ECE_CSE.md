@@ -132,7 +132,11 @@ These questions appeared **verbatim or near-identically** across multiple papers
 | Eigenvalues/vectors of
 
 $$
-\begin{pmatrix}2&2&1\\1&3&1\\1&2&2\end{pmatrix}
+\begin{pmatrix}
+2&2&1 \\
+1&3&1 \\
+1&2&2
+\end{pmatrix}
 $$
 
 | 3 | ECE '17, '18, '24 |
@@ -377,7 +381,10 @@ Multiple original exam papers contain errors. Being aware of these prevents conf
 | ECE 2017 Q8 | Matrix
 
 $$
-\begin{pmatrix}1&1\\0&1\end{pmatrix}
+\begin{pmatrix}
+1&1 \\
+0&1
+\end{pmatrix}
 $$
 
 asked to diagonalize | Not diagonalizable (repeated eigenvalue, GM < AM) |

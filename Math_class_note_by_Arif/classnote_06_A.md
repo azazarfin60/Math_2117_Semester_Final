@@ -38,14 +38,22 @@ $V = \lbrace\text{set of vectors defined on a field } K\rbrace$
 -
 
 $$
-= \left\lbrace  \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} \right\rbrace
+= \left\lbrace
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}, \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} \right\rbrace
 $$
 
 - $= \lbrace x^2, x^2+1 \rbrace$
 -
 
 $$
-= \left\lbrace  \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 2 \\ 1 \end{pmatrix}, \begin{pmatrix} 3 \\ 1 \end{pmatrix}, \dots \right\rbrace
+= \left\lbrace
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}, \begin{pmatrix} 2 \\ 1 \end{pmatrix}, \begin{pmatrix} 3 \\ 1 \end{pmatrix}, \dots \right\rbrace
 $$
 
 - $= \lbrace (0, 1), (0, 2), (0, 3), \dots \rbrace$
@@ -56,7 +64,10 @@ None of them are vector spaces.
    -
 
 $$
-\begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}
+\begin{pmatrix}
+2 & 2 \\
+2 & 2
+\end{pmatrix}
 $$
 
 not satisfied.
@@ -87,14 +98,22 @@ e.g. $\lbrace(0, 1), (0, 2)\rbrace$, $v = (0, 1)$, $k = 2 \Rightarrow kv = (0, 2
 **Problem: Consider
 
 $$
-A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix},
+A =
+\begin{pmatrix}
+4 & 1 \\
+2 & 3
+\end{pmatrix},
 $$
 
 Find eigenvalues & eigen vectors.**
 ch. matrix of $A$ is
 
 $$
-A - \lambda I = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
+A - \lambda I =
+\begin{pmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{pmatrix}
 $$
 
 Ch. eqn is $|A-\lambda I| = 0$
@@ -102,7 +121,10 @@ Ch. eqn is $|A-\lambda I| = 0$
 <!-- Page 054 -->
 
 $$
-\begin{vmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{vmatrix} = 0
 $$
 
 $\Rightarrow (4-\lambda)(3-\lambda) - 2 = 0$
@@ -119,18 +141,30 @@ Thus eigenvalues are 2, 5.
 Let
 
 $$
-v = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}
+v =
+\begin{pmatrix}
+v_1 \\
+v_2
+\end{pmatrix}
 $$
 
 be an eigenvector corresponding to the eigenvalue $\lambda = 2$.
 Then $AV = \lambda V \Rightarrow (A-\lambda I)V = 0$
 
 $$
-\Rightarrow \begin{pmatrix} 4-2 & 1 \\ 2 & 3-2 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+4-2 & 1 \\
+2 & 3-2
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $$
-\Rightarrow \begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} 2v_1+v_2 \\ 2v_1+v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+2 & 1 \\
+2 & 1
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow \begin{pmatrix} 2v_1+v_2 \\ 2v_1+v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 yielding $2v_1+v_2 = 0$. (many solutions)
@@ -139,7 +173,11 @@ set $v_2 = 2 \Rightarrow v_1 = -1$.
 Thus
 
 $$
-V = \begin{pmatrix} -1 \\ 2 \end{pmatrix}
+V =
+\begin{pmatrix}
+-1 \\
+2
+\end{pmatrix}
 $$
 
 is an eigenvector corresponding to eigenvalue $\lambda=2$.
@@ -148,25 +186,41 @@ is an eigenvector corresponding to eigenvalue $\lambda=2$.
 Let
 
 $$
-w = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix}
+w =
+\begin{pmatrix}
+w_1 \\
+w_2
+\end{pmatrix}
 $$
 
 be an eigenvector corresponding to the eigenvalue $\lambda = 5$.
 Then
 
 $$
-(A-\lambda I)W = 0 \Rightarrow \begin{pmatrix} 4-5 & 1 \\ 2 & 3-5 \end{pmatrix} \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+(A-\lambda I)W = 0 \Rightarrow
+\begin{pmatrix}
+4-5 & 1 \\
+2 & 3-5
+\end{pmatrix} \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $$
-\Rightarrow \begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} -w_1+w_2 \\ 2w_1-2w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+-1 & 1 \\
+2 & -2
+\end{pmatrix}\begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} -w_1+w_2 \\ 2w_1-2w_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 (more solutions)
 set
 
 $$
-w_1 = 1 \Rightarrow w_2 = 1 \Rightarrow \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+w_1 = 1 \Rightarrow w_2 = 1 \Rightarrow
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
 $$
 
 is eigenvector $\lambda=5$.
@@ -175,32 +229,55 @@ is eigenvector $\lambda=5$.
 Then the matrix obtained with the eigenvector is modal matrix,
 
 $$
-P = \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P =
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix}
 $$
 
 echelon form:
 $R_2 \rightarrow 2R_1 + R_2$
 
 $$
-\begin{pmatrix} -1 & 1 \\ 0 & 3 \end{pmatrix}
+\begin{pmatrix}
+-1 & 1 \\
+0 & 3
+\end{pmatrix}
 $$
 
 hence eigenvectors are independent. (echelon form এ row zero হলে dependent, না হলে independent).
 
 $$
-P^{-1} = \frac{1}{3}\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P^{-1} = \frac{1}{3}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix}
 $$
 
 $$
-P^{-1} A P = \frac{1}{3}\begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+P^{-1} A P = \frac{1}{3}
+\begin{pmatrix}
+-1 & 1 \\
+2 & 1
+\end{pmatrix} \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 $$
-= \frac{1}{3}\begin{pmatrix} -2 & 2 \\ 10 & 5 \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
+= \frac{1}{3}
+\begin{pmatrix}
+-2 & 2 \\
+10 & 5
+\end{pmatrix} \begin{pmatrix} -1 & 1 \\ 2 & 1 \end{pmatrix}
 $$
 
 $$
-= \frac{1}{3}\begin{pmatrix} 6 & 0 \\ 0 & 15 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
+= \frac{1}{3}
+\begin{pmatrix}
+6 & 0 \\
+0 & 15
+\end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 5 \end{pmatrix}
 $$
 
 which is diagonalized matrix.
@@ -208,25 +285,40 @@ which is diagonalized matrix.
 **#
 
 $$
-\begin{pmatrix} 2 & 1 \\ -1 & 1 \end{pmatrix}
+\begin{pmatrix}
+2 & 1 \\
+-1 & 1
+\end{pmatrix}
 $$
 
 eigenvalue & vector.**
 
 $$
-A = \begin{pmatrix} 2 & 1 \\ -1 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+2 & 1 \\
+-1 & 1
+\end{pmatrix}
 $$
 
 ch matrix of $A$ is
 
 $$
-A-\lambda I = \begin{pmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{pmatrix}
+A-\lambda I =
+\begin{pmatrix}
+2-\lambda & 1 \\
+-1 & 1-\lambda
+\end{pmatrix}
 $$
 
 ch eqn of $A$ is
 
 $$
-|A-\lambda I| = 0 \Rightarrow \begin{vmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{vmatrix} = 0
+|A-\lambda I| = 0 \Rightarrow
+\begin{vmatrix}
+2-\lambda & 1 \\
+-1 & 1-\lambda
+\end{vmatrix} = 0
 $$
 
 $\Rightarrow (2-\lambda)(1-\lambda) + 1 = 0 \Rightarrow \lambda^2 - 3\lambda + 3 = 0$
@@ -236,13 +328,21 @@ $\lambda = 1.5 \pm 0.866i$
 Let,
 
 $$
-V = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}
+V =
+\begin{pmatrix}
+v_1 \\
+v_2
+\end{pmatrix}
 $$
 
 for $\lambda = \frac{3+i\sqrt{3}}{2}$
 
 $$
-(A-\lambda I)V = 0 \Rightarrow \begin{pmatrix} \frac{1-i\sqrt{3}}{2} & 1 \\ -1 & \frac{-1-i\sqrt{3}}{2} \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+(A-\lambda I)V = 0 \Rightarrow
+\begin{pmatrix}
+\frac{1-i\sqrt{3}}{2} & 1 \\
+-1 & \frac{-1-i\sqrt{3}}{2}
+\end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 $\left(\frac{1-i\sqrt{3}}{2}\right)x + y = 0 \Rightarrow y = -\left(\frac{1-i\sqrt{3}}{2}\right)x$
@@ -251,33 +351,57 @@ $-x - \left(\frac{1+i\sqrt{3}}{2}\right)y = 0 \Rightarrow -x = \left(\frac{1+i\s
 Let $x = 2 \Rightarrow y = -1+i\sqrt{3}$.
 
 $$
-V = \begin{pmatrix} 2 \\ -1+i\sqrt{3} \end{pmatrix}
+V =
+\begin{pmatrix}
+2 \\
+-1+i\sqrt{3}
+\end{pmatrix}
 $$
 
 Now,
 
 $$
-W = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix}
+W =
+\begin{pmatrix}
+w_1 \\
+w_2
+\end{pmatrix}
 $$
 
 for $\lambda = \frac{3-i\sqrt{3}}{2}$
 
 $$
-W_2 = \begin{pmatrix} 2 \\ -1-i\sqrt{3} \end{pmatrix}
+W_2 =
+\begin{pmatrix}
+2 \\
+-1-i\sqrt{3}
+\end{pmatrix}
 $$
 
 modal matrix
 
 $$
-P = \begin{pmatrix} 2 & 2 \\ -1+i\sqrt{3} & -1-i\sqrt{3} \end{pmatrix}
+P =
+\begin{pmatrix}
+2 & 2 \\
+-1+i\sqrt{3} & -1-i\sqrt{3}
+\end{pmatrix}
 $$
 
 $$
-R_1 \rightarrow \frac{1}{2} R_1 \Rightarrow \begin{pmatrix} 1 & 1 \\ -1+i\sqrt{3} & -1-i\sqrt{3} \end{pmatrix}
+R_1 \rightarrow \frac{1}{2} R_1 \Rightarrow
+\begin{pmatrix}
+1 & 1 \\
+-1+i\sqrt{3} & -1-i\sqrt{3}
+\end{pmatrix}
 $$
 
 $$
-R_2 \rightarrow R_2 - (-1+i\sqrt{3})R_1 \Rightarrow \begin{pmatrix} 1 & 1 \\ 0 & -2i\sqrt{3} \end{pmatrix}
+R_2 \rightarrow R_2 - (-1+i\sqrt{3})R_1 \Rightarrow
+\begin{pmatrix}
+1 & 1 \\
+0 & -2i\sqrt{3}
+\end{pmatrix}
 $$
 
 (row echelon form)
@@ -287,13 +411,23 @@ eigenvalues are independent.
 **# Find inverse by Cayley-Hamilton**
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{pmatrix}
 $$
 
 ch. polynomial of $A$ is $|A-\lambda I|$
 
 $$
-= \left| \begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} - \begin{pmatrix} \lambda & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda \end{pmatrix} \right| = \begin{vmatrix} 1-\lambda & 2 & 3 \\ -1 & 2-\lambda & 4 \\ 1 & 1 & 2-\lambda \end{vmatrix}
+= \left|
+\begin{pmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{pmatrix} - \begin{pmatrix} \lambda & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda \end{pmatrix} \right| = \begin{vmatrix} 1-\lambda & 2 & 3 \\ -1 & 2-\lambda & 4 \\ 1 & 1 & 2-\lambda \end{vmatrix}
 $$
 
 $= (1-\lambda)\lbrace(2-\lambda)(2-\lambda) - 4\rbrace - 2\lbrace-(2-\lambda) - 4\rbrace + 3\lbrace-1 - (2-\lambda)\rbrace$
@@ -306,13 +440,23 @@ $\Rightarrow -A^2 + 5A - 3I + 3A^{-1} = 0$
 $\Rightarrow A^{-1} = \frac{1}{3}[A^2 - 5A + 3I]$
 
 $$
-= \frac{1}{3}\left[\begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix}^2 - 5\begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} + 3\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}\right]
+= \frac{1}{3}\left[
+\begin{pmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{pmatrix}^2 - 5\begin{pmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} + 3\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}\right]
 $$
 
 *(Note: The calculation below in the original notes contains arithmetic errors, refer to Page 045 for the correct version)*
 
 $$
-A^{-1} = \frac{1}{3}\begin{pmatrix} -2 & 1 & 2 \\ 6 & -3 & -7 \\ -3 & 1 & 2 \end{pmatrix}
+A^{-1} = \frac{1}{3}
+\begin{pmatrix}
+-2 & 1 & 2 \\
+6 & -3 & -7 \\
+-3 & 1 & 2
+\end{pmatrix}
 $$
 
 <!-- Page 058 -->

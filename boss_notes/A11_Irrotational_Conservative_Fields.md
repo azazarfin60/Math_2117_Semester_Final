@@ -84,7 +84,12 @@ is irrotational. Find $\phi$ such that $\vec{A} = \nabla\phi$.
 **Step 1**: Show Irrotational.
 
 $$
-\nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ 6xy + z^3 & 3x^2 - z & 3xz^2 - y \end{vmatrix}
+\nabla \times \vec{A} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+6xy + z^3 & 3x^2 - z & 3xz^2 - y
+\end{vmatrix}
 $$
 
 - $\hat{i}$-component: $\frac{\partial}{\partial y}(3xz^2 - y) - \frac{\partial}{\partial z}(3x^2 - z) = -1 - (-1) = 0$
@@ -136,7 +141,12 @@ is irrotational and find scalar potential.
 **Step 1**: Show Irrotational.
 
 $$
-\nabla \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y^2 + 2xz^2 & 2xy - z & 2x^2z - y + 2z \end{vmatrix}
+\nabla \times \vec{F} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y^2 + 2xz^2 & 2xy - z & 2x^2z - y + 2z
+\end{vmatrix}
 $$
 
 - $\hat{i}$: $(-1) - (-1) = 0$
@@ -180,7 +190,11 @@ is irrotational.
 Set $\nabla \times \vec{V} = 0$:
 
 $$
-\begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x + 2y + az & bx - 3y - z & 4x + cy + 2z \end{vmatrix} = 0
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x + 2y + az & bx - 3y - z & 4x + cy + 2z
+\end{vmatrix} = 0
 $$
 
 - $\hat{i}$-component: $\frac{\partial}{\partial y}(4x + cy + 2z) - \frac{\partial}{\partial z}(bx - 3y - z) = c - (-1) = c + 1 = 0 \implies c = -1$

@@ -97,7 +97,12 @@ Because we are using the standard basis, the coordinates are simply the componen
 Write these coordinates as columns:
 
 $$
-[T]_B = \begin{bmatrix} 0 & 2 & 1 \\ 1 & -4 & 0 \\ 3 & 0 & 0 \end{bmatrix}
+[T]_B =
+\begin{bmatrix}
+0 & 2 & 1 \\
+1 & -4 & 0 \\
+3 & 0 & 0
+\end{bmatrix}
 $$
 
 ---
@@ -147,7 +152,12 @@ Coordinate formula: **$x = c, \quad y = b - c, \quad z = a - b$**
 Write the computed coordinates as columns:
 
 $$
-[T]_{B'} = \begin{bmatrix} 3 & 3 & 3 \\ -6 & -6 & -2 \\ 6 & 5 & -1 \end{bmatrix}
+[T]_{B'} =
+\begin{bmatrix}
+3 & 3 & 3 \\
+-6 & -6 & -2 \\
+6 & 5 & -1
+\end{bmatrix}
 $$
 
 ### The Power of Matrix Representation
@@ -181,7 +191,11 @@ Compute images:
 Since $B'$ is standard, these components *are* the coordinates. Write them as columns:
 
 $$
-[T]_{B}^{B'} = \begin{bmatrix} 2 & -4 & 9 \\ 5 & 3 & -2 \end{bmatrix}
+[T]_{B}^{B'} =
+\begin{bmatrix}
+2 & -4 & 9 \\
+5 & 3 & -2
+\end{bmatrix}
 $$
 
 *(Notice that a transformation from $\mathbb{R}^3 \to \mathbb{R}^2$ yields a $2 \times 3$ matrix.)*

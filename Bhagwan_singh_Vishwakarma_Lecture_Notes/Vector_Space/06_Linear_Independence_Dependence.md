@@ -181,7 +181,12 @@ $$
 We build the coefficient matrix $A$:
 
 $$
-A = \begin{bmatrix} 2 & -1 & 1 \\ 3 & 4 & 18 \\ -1 & -2 & -4 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & -1 & 1 \\
+3 & 4 & 18 \\
+-1 & -2 & -4
+\end{bmatrix}
 $$
 
 Calculate the determinant $\lvert A \rvert$:

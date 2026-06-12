@@ -58,13 +58,23 @@ $$
 (i) At first we form the following matrix with the row vectors as:
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 1 & 1
+\end{bmatrix}
 $$
 
 (ii) then reduce the matrix to its echelon form:
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{bmatrix} \xrightarrow[R\_3 \rightarrow R\_1 - R\_3]{R\_2 \rightarrow 4R\_1 - R\_2} \begin{bmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 1 & 2 \end{bmatrix} \xrightarrow{R\_3 \rightarrow R\_2 - 3R\_3} \begin{bmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 1 & 1
+\end{bmatrix} \xrightarrow[R\_3 \rightarrow R\_1 - R\_3]{R\_2 \rightarrow 4R\_1 - R\_2} \begin{bmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 1 & 2 \end{bmatrix} \xrightarrow{R\_3 \rightarrow R\_2 - 3R\_3} \begin{bmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{bmatrix}
 $$
 
 which is the echelon form of the matrix $A$.
@@ -348,7 +358,11 @@ $\star$ **very very much important.**
 **$(2 \times 2)$ matrices:**
 
 $$
-\sigma\_1 = \begin{bmatrix} 2 & 2 \\ 2 & 2 \end{bmatrix} \ ; \ \sigma\_2 = \begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix} \ ; \ \sigma\_3 = \begin{bmatrix} 2 & 2 \\ 0 & 0 \end{bmatrix}
+\sigma\_1 =
+\begin{bmatrix}
+2 & 2 \\
+2 & 2
+\end{bmatrix} \ ; \ \sigma\_2 = \begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix} \ ; \ \sigma\_3 = \begin{bmatrix} 2 & 2 \\ 0 & 0 \end{bmatrix}
 $$
 
 **check whether the vectors are linearly independent.**
@@ -365,15 +379,27 @@ if, $c\_1 = 0 \ \& \ c\_2 = 0 \ \& \ c\_3 = 0$ then they are linearly independen
 Now, let
 
 $$
-c\_1 \sigma\_1 + c\_2 \sigma\_2 + c\_3 \sigma\_3 = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
+c\_1 \sigma\_1 + c\_2 \sigma\_2 + c\_3 \sigma\_3 =
+\begin{bmatrix}
+0 & 0 \\
+0 & 0
+\end{bmatrix}
 $$
 
 $$
-\Rightarrow c\_1 \begin{bmatrix} 2 & 2 \\ 2 & 2 \end{bmatrix} + c\_2 \begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix} + c\_3 \begin{bmatrix} 2 & 2 \\ 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
+\Rightarrow c\_1
+\begin{bmatrix}
+2 & 2 \\
+2 & 2
+\end{bmatrix} + c\_2 \begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix} + c\_3 \begin{bmatrix} 2 & 2 \\ 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
 $$
 
 $$
-\Rightarrow \begin{bmatrix} 2c\_1 + 2c\_2 + 2c\_3 & 2c\_1 + 2c\_3 \\ 2c\_1 & 2c\_1 + 2c\_2 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+2c\_1 + 2c\_2 + 2c\_3 & 2c\_1 + 2c\_3 \\
+2c\_1 & 2c\_1 + 2c\_2
+\end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
 $$
 
 $$

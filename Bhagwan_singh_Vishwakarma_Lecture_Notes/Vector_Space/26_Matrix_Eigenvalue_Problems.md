@@ -41,14 +41,22 @@ $$
 **Given:**
 
 $$
-A = \begin{bmatrix} 4 & 2 \\ 3 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+4 & 2 \\
+3 & 3
+\end{bmatrix}
 $$
 
 **Step 1: Find Eigenvalues**
 Set up the characteristic equation:
 
 $$
-\det \begin{bmatrix} 4 - \lambda & 2 \\ 3 & 3 - \lambda \end{bmatrix} = 0
+\det
+\begin{bmatrix}
+4 - \lambda & 2 \\
+3 & 3 - \lambda
+\end{bmatrix} = 0
 $$
 
 Expand the determinant:
@@ -72,39 +80,61 @@ The eigenvalues are **$\lambda_1 = 1$** and **$\lambda_2 = 6$**.
 **Step 2: Find Eigenvector for $\lambda = 1$**
 
 $$
-(A - 1I)X = \bar{0} \implies \begin{bmatrix} 3 & 2 \\ 3 & 2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+(A - 1I)X = \bar{0} \implies
+\begin{bmatrix}
+3 & 2 \\
+3 & 2
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 Apply row operation $R_2 \to R_2 - R_1$:
 
 $$
-\begin{bmatrix} 3 & 2 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies 3x_1 + 2x_2 = 0
+\begin{bmatrix}
+3 & 2 \\
+0 & 0
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies 3x_1 + 2x_2 = 0
 $$
 
 We have 1 free variable. Choose $x_1 = 2 \implies x_2 = -3$.
 The eigenvector and its eigenspace:
 
 $$
-X^{(1)} = \begin{bmatrix} 2 \\ -3 \end{bmatrix}, \quad W_1 = \text{span}\left\lbrace \begin{bmatrix} 2 \\ -3 \end{bmatrix} \right\rbrace
+X^{(1)} =
+\begin{bmatrix}
+2 \\
+-3
+\end{bmatrix}, \quad W_1 = \text{span}\left\lbrace \begin{bmatrix} 2 \\ -3 \end{bmatrix} \right\rbrace
 $$
 
 **Step 3: Find Eigenvector for $\lambda = 6$**
 
 $$
-(A - 6I)X = \bar{0} \implies \begin{bmatrix} -2 & 2 \\ 3 & -3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+(A - 6I)X = \bar{0} \implies
+\begin{bmatrix}
+-2 & 2 \\
+3 & -3
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 Apply row operation $R_2 \to 2R_2 + 3R_1$:
 
 $$
-\begin{bmatrix} -2 & 2 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies -2x_1 + 2x_2 = 0 \implies x_1 = x_2
+\begin{bmatrix}
+-2 & 2 \\
+0 & 0
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies -2x_1 + 2x_2 = 0 \implies x_1 = x_2
 $$
 
 Choose $x_2 = 1 \implies x_1 = 1$.
 The eigenvector and its eigenspace:
 
 $$
-X^{(2)} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad W_6 = \text{span}\left\lbrace \begin{bmatrix} 1 \\ 1 \end{bmatrix} \right\rbrace
+X^{(2)} =
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}, \quad W_6 = \text{span}\left\lbrace \begin{bmatrix} 1 \\ 1 \end{bmatrix} \right\rbrace
 $$
 
 ---
@@ -114,13 +144,23 @@ $$
 **Given:**
 
 $$
-A = \begin{bmatrix} 6 & -2 & 2 \\ -2 & 3 & -1 \\ 2 & -1 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+6 & -2 & 2 \\
+-2 & 3 & -1 \\
+2 & -1 & 3
+\end{bmatrix}
 $$
 
 **Step 1: Find Eigenvalues**
 
 $$
-\det \begin{bmatrix} 6 - \lambda & -2 & 2 \\ -2 & 3 - \lambda & -1 \\ 2 & -1 & 3 - \lambda \end{bmatrix} = 0
+\det
+\begin{bmatrix}
+6 - \lambda & -2 & 2 \\
+-2 & 3 - \lambda & -1 \\
+2 & -1 & 3 - \lambda
+\end{bmatrix} = 0
 $$
 
 Expanding along the first row and simplifying yields the characteristic polynomial:
@@ -146,13 +186,22 @@ The eigenvalues are **$\lambda = 2, 2, 8$**. Notice that $2$ is a repeated eigen
 **Step 2: Find Eigenvector for $\lambda = 8$**
 
 $$
-(A - 8I)X = \bar{0} \implies \begin{bmatrix} -2 & -2 & 2 \\ -2 & -5 & -1 \\ 2 & -1 & -5 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+(A - 8I)X = \bar{0} \implies
+\begin{bmatrix}
+-2 & -2 & 2 \\
+-2 & -5 & -1 \\
+2 & -1 & -5
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
 $$
 
 Reduce to row echelon form:
 
 $$
-\begin{bmatrix} -2 & -2 & 2 \\ 0 & -3 & -3 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-2 & -2 & 2 \\
+0 & -3 & -3 \\
+0 & 0 & 0
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
 $$
 
 This gives equations:
@@ -162,20 +211,34 @@ This gives equations:
 Choose $x_3 = 1 \implies x_2 = -1 \implies x_1 = 2$.
 
 $$
-X^{(1)} = \begin{bmatrix} 2 \\ -1 \\ 1 \end{bmatrix}
+X^{(1)} =
+\begin{bmatrix}
+2 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 **Step 3: Find Eigenvectors for the Repeated Eigenvalue $\lambda = 2$**
 Because $\lambda = 2$ appears twice (algebraic multiplicity of 2), we anticipate finding 2 free variables (geometric multiplicity of 2).
 
 $$
-(A - 2I)X = \bar{0} \implies \begin{bmatrix} 4 & -2 & 2 \\ -2 & 1 & -1 \\ 2 & -1 & 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+(A - 2I)X = \bar{0} \implies
+\begin{bmatrix}
+4 & -2 & 2 \\
+-2 & 1 & -1 \\
+2 & -1 & 1
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
 $$
 
 Notice that row 2 and row 3 are scalar multiples of row 1. Reducing the matrix zeros out the bottom two rows entirely:
 
 $$
-\begin{bmatrix} 2 & -1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies 2x_1 - x_2 + x_3 = 0
+\begin{bmatrix}
+2 & -1 & 1 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies 2x_1 - x_2 + x_3 = 0
 $$
 
 We have 3 variables and only 1 equation, meaning we have $3 - 1 = 2$ free parameters. We make two separate sets of choices to find two linearly independent eigenvectors:
@@ -187,7 +250,12 @@ $$
 $$
 
 $$
-X^{(2)} = \begin{bmatrix} -1 \\ -1 \\ 1 \end{bmatrix}
+X^{(2)} =
+\begin{bmatrix}
+-1 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 *   **Choice B:** Let $x_3 = 0$ and $x_2 = 2$.
@@ -197,13 +265,23 @@ $$
 $$
 
 $$
-X^{(3)} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}
+X^{(3)} =
+\begin{bmatrix}
+1 \\
+2 \\
+0
+\end{bmatrix}
 $$
 
 The eigenspace for $\lambda = 2$ is the span of these two vectors:
 
 $$
-W_2 = \text{span}\left\lbrace \begin{bmatrix} -1 \\ -1 \\ 1 \end{bmatrix}, \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix} \right\rbrace
+W_2 = \text{span}\left\lbrace
+\begin{bmatrix}
+-1 \\
+-1 \\
+1
+\end{bmatrix}, \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix} \right\rbrace
 $$
 
 ## Key Takeaways

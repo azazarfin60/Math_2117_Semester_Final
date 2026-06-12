@@ -50,19 +50,31 @@ $$
 Write the augmented matrix and apply row operations to reach row echelon form:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & \lvert  & 1 \\ 1 & 2 & -1 &  \rvert & -2 \\ 1 & 3 & 1 & \lvert  & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & \lvert  & 1 \\
+1 & 2 & -1 &  \rvert & -2 \\
+1 & 3 & 1 & \lvert  & 5
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & \lvert  & 1 \\ 0 & 1 & -3 &  \rvert & -3 \\ 0 & 2 & -1 & \lvert  & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & \lvert  & 1 \\
+0 & 1 & -3 &  \rvert & -3 \\
+0 & 2 & -1 & \lvert  & 4
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - 2R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 2 & \lvert  & 1 \\ 0 & 1 & -3 &  \rvert & -3 \\ 0 & 0 & 5 & \lvert  & 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 2 & \lvert  & 1 \\
+0 & 1 & -3 &  \rvert & -3 \\
+0 & 0 & 5 & \lvert  & 10
+\end{bmatrix}
 $$
 
 Solve by back substitution:

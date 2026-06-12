@@ -68,7 +68,12 @@ $$
 The cross product yields a perpendicular vector:
 
 $$
-\vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & 1 & -3 \\ 1 & -2 & 1 \end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
+\vec{A} \times \vec{B} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+2 & 1 & -3 \\
+1 & -2 & 1
+\end{vmatrix} = \hat{i}(1 - 6) - \hat{j}(2 - (-3)) + \hat{k}(-4 - 1) = -5\hat{i} - 5\hat{j} - 5\hat{k}
 $$
 
 Simplify to a base direction vector

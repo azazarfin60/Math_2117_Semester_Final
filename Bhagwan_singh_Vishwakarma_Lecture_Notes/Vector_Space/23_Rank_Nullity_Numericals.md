@@ -182,7 +182,12 @@ Show that $T$ is non-singular and invertible, and find a formula for $T^{-1}$.
 Set $T(x_1, x_2, x_3) = (0, 0, 0)$ to find the null space. This creates a homogeneous system $AX = 0$:
 
 $$
-A = \begin{pmatrix} 3 & 0 & 1 \\ -2 & 1 & 0 \\ -1 & 2 & 4 \end{pmatrix}
+A =
+\begin{pmatrix}
+3 & 0 & 1 \\
+-2 & 1 & 0 \\
+-1 & 2 & 4
+\end{pmatrix}
 $$
 
 Find the determinant of the coefficient matrix $A$:

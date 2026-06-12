@@ -109,7 +109,12 @@ Since the dot product is zero, $\vec{v}$ is perpendicular to $\vec{r}$.
 **Step 3: Show Constant Cross Product**
 
 $$
-\vec{r} \times \vec{v} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \cos \omega t & \sin \omega t & 0 \\ -\omega \sin \omega t & \omega \cos \omega t & 0 \end{vmatrix}
+\vec{r} \times \vec{v} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\cos \omega t & \sin \omega t & 0 \\
+-\omega \sin \omega t & \omega \cos \omega t & 0
+\end{vmatrix}
 $$
 
 $$

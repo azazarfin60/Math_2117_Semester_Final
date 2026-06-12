@@ -7,7 +7,11 @@
 $\star$ **
 
 $$
-A = \begin{bmatrix} 2 & 1 \\ -1 & 1 \end{bmatrix}.
+A =
+\begin{bmatrix}
+2 & 1 \\
+-1 & 1
+\end{bmatrix}.
 $$
 
 Find eigen values and eigen vectors.**
@@ -16,7 +20,11 @@ Find eigen values and eigen vectors.**
 Ch. matrix:
 
 $$
-A - \lambda I = \begin{bmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{bmatrix}
+A - \lambda I =
+\begin{bmatrix}
+2-\lambda & 1 \\
+-1 & 1-\lambda
+\end{bmatrix}
 $$
 
 $\therefore$ Ch. eq.
@@ -32,7 +40,11 @@ $$
 Let,
 
 $$
-V = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}
+V =
+\begin{bmatrix}
+v_1 \\
+v_2
+\end{bmatrix}
 $$
 
 be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i$.
@@ -40,7 +52,11 @@ be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \fr
 $\therefore$ we know,
 
 $$
-(A - \lambda I)v = 0 \quad \rightarrow \quad \begin{bmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+(A - \lambda I)v = 0 \quad \rightarrow \quad
+\begin{bmatrix}
+2-\lambda & 1 \\
+-1 & 1-\lambda
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
@@ -60,7 +76,11 @@ $$
 $$
 
 $$
-\therefore V = \begin{bmatrix} 1 \\ -\frac{1}{2} + \frac{\sqrt{3}}{2}i \end{bmatrix}
+\therefore V =
+\begin{bmatrix}
+1 \\
+-\frac{1}{2} + \frac{\sqrt{3}}{2}i
+\end{bmatrix}
 $$
 
 is an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i$.
@@ -72,7 +92,11 @@ is an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \fr
 Again, Let,
 
 $$
-W = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}
+W =
+\begin{bmatrix}
+w_1 \\
+w_2
+\end{bmatrix}
 $$
 
 be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} - \frac{\sqrt{3}}{2}i$.
@@ -94,7 +118,11 @@ $$
 $$
 
 $$
-\therefore W = \begin{bmatrix} 1 \\ -\frac{1}{2} - \frac{\sqrt{3}}{2}i \end{bmatrix}
+\therefore W =
+\begin{bmatrix}
+1 \\
+-\frac{1}{2} - \frac{\sqrt{3}}{2}i
+\end{bmatrix}
 $$
 
 is an eigen vector corresponding to the eigen values $\lambda = \frac{3 - \sqrt{3}i}{2}$.
@@ -288,7 +316,11 @@ V = \lbrace \text{set of vectors defined on a field } k \rbrace
 $$
 
 $$
-= \left\lbrace  \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix} \right\rbrace  \rightarrow \mathbb{R} \quad \text{(not closed under addition)}
+= \left\lbrace
+\begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}, \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix} \right\rbrace  \rightarrow \mathbb{R} \quad \text{(not closed under addition)}
 $$
 
 $$
@@ -296,7 +328,11 @@ $$
 $$
 
 $$
-= \left\lbrace  \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \end{bmatrix} \dots \right\rbrace  \rightarrow \text{column vectors}
+= \left\lbrace
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}, \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \end{bmatrix} \dots \right\rbrace  \rightarrow \text{column vectors}
 $$
 
 $$
@@ -367,11 +403,21 @@ $$
 First we form the following matrix with the row vectors, as
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 1 & 1
+\end{bmatrix}
 $$
 
 $$
-\text{eachalon } \rightarrow \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{pmatrix}
+\text{eachalon } \rightarrow
+\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 3 & 6 \\
+0 & 0 & 0
+\end{pmatrix}
 $$
 
 Which is the echelon form of the matrix $A$.

@@ -167,7 +167,11 @@ Therefore, $W$ is a subspace of $V_3(F)$.
 **Question:** Show that the set
 
 $$
-W = \left\lbrace \begin{pmatrix} x & y \\ -y & x \end{pmatrix} \mid x, y \in F \right\rbrace
+W = \left\lbrace
+\begin{pmatrix}
+x & y \\
+-y & x
+\end{pmatrix} \mid x, y \in F \right\rbrace
 $$
 
 is a subspace of $M_2(F)$.
@@ -178,7 +182,11 @@ $M_2(F)$ is the vector space of all $2 \times 2$ matrices. The subset $W$ has a 
 Pick two matrices from $W$:
 
 $$
-\alpha = \begin{pmatrix} x_1 & y_1 \\ -y_1 & x_1 \end{pmatrix} \quad \text{and} \quad \beta = \begin{pmatrix} x_2 & y_2 \\ -y_2 & x_2 \end{pmatrix}
+\alpha =
+\begin{pmatrix}
+x_1 & y_1 \\
+-y_1 & x_1
+\end{pmatrix} \quad \text{and} \quad \beta = \begin{pmatrix} x_2 & y_2 \\ -y_2 & x_2 \end{pmatrix}
 $$
 
 And pick scalars $a, b \in F$.
@@ -186,25 +194,41 @@ And pick scalars $a, b \in F$.
 Form the combination:
 
 $$
-a\alpha + b\beta = a\begin{pmatrix} x_1 & y_1 \\ -y_1 & x_1 \end{pmatrix} + b\begin{pmatrix} x_2 & y_2 \\ -y_2 & x_2 \end{pmatrix}
+a\alpha + b\beta = a
+\begin{pmatrix}
+x_1 & y_1 \\
+-y_1 & x_1
+\end{pmatrix} + b\begin{pmatrix} x_2 & y_2 \\ -y_2 & x_2 \end{pmatrix}
 $$
 
 Multiply the scalars inside:
 
 $$
-= \begin{pmatrix} ax_1 & ay_1 \\ -ay_1 & ax_1 \end{pmatrix} + \begin{pmatrix} bx_2 & by_2 \\ -by_2 & bx_2 \end{pmatrix}
+=
+\begin{pmatrix}
+ax_1 & ay_1 \\
+-ay_1 & ax_1
+\end{pmatrix} + \begin{pmatrix} bx_2 & by_2 \\ -by_2 & bx_2 \end{pmatrix}
 $$
 
 Add the matrices element by element:
 
 $$
-= \begin{pmatrix} ax_1 + bx_2 & ay_1 + by_2 \\ -ay_1 - by_2 & ax_1 + bx_2 \end{pmatrix}
+=
+\begin{pmatrix}
+ax_1 + bx_2 & ay_1 + by_2 \\
+-ay_1 - by_2 & ax_1 + bx_2
+\end{pmatrix}
 $$
 
 Factor out the negative sign in the bottom-left corner to check the structure:
 
 $$
-= \begin{pmatrix} ax_1 + bx_2 & ay_1 + by_2 \\ -(ay_1 + by_2) & ax_1 + bx_2 \end{pmatrix}
+=
+\begin{pmatrix}
+ax_1 + bx_2 & ay_1 + by_2 \\
+-(ay_1 + by_2) & ax_1 + bx_2
+\end{pmatrix}
 $$
 
 Look at the structure. The diagonal elements $(ax_1 + bx_2)$ are equal. The top-right element is $(ay_1 + by_2)$, and the bottom-left element is its negative. This perfectly matches the rule for $W$.

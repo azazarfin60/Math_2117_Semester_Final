@@ -7,7 +7,12 @@ $$
 $\nabla \times A \quad (1, -1, 1)$
 
 $$
-\nabla \times A = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ xz^3 & -2x^2 yz & 2yz^4 \end{vmatrix} = \hat{i}(2z^4 + 2x^2y) - \hat{j}(0 - 3xz^2) + \hat{k}(-4xyz - 0)
+\nabla \times A =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+xz^3 & -2x^2 yz & 2yz^4
+\end{vmatrix} = \hat{i}(2z^4 + 2x^2y) - \hat{j}(0 - 3xz^2) + \hat{k}(-4xyz - 0)
 $$
 
 $$
@@ -47,7 +52,11 @@ $-x + y + 3z = -2$
 $2x + y + z = 3$
 
 $$
-\begin{bmatrix} 1 & -2 & -5 & 2 \\ 0 & 1 & -2 & 0 \\ 0 & 0 & 1 & -1 \end{bmatrix} = [A:B]
+\begin{bmatrix}
+1 & -2 & -5 & 2 \\
+0 & 1 & -2 & 0 \\
+0 & 0 & 1 & -1
+\end{bmatrix} = [A:B]
 $$
 
 from eq 3 we get
@@ -74,15 +83,30 @@ has (i) unique solution (consistent)
 **Matrix representations**
 
 $$
-A = \begin{bmatrix} 1 & 1 & 3 \\ 2 & 1 & -1 \\ 1 & 2 & \lambda \end{bmatrix},
+A =
+\begin{bmatrix}
+1 & 1 & 3 \\
+2 & 1 & -1 \\
+1 & 2 & \lambda
+\end{bmatrix},
 $$
 
 $$
-X = \begin{bmatrix} x \\ y \\ z \end{bmatrix},
+X =
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix},
 $$
 
 $$
-B = \begin{bmatrix} 5 \\ 7 \\ \mu \end{bmatrix}
+B =
+\begin{bmatrix}
+5 \\
+7 \\
+\mu
+\end{bmatrix}
 $$
 
 $AX = B$
@@ -91,20 +115,33 @@ $AX = B$
 **augmented matrix / concatenated matrix**
 
 $$
-[A:B] = \begin{bmatrix} 1 & 1 & 3 & 5 \\ 2 & 1 & -1 & 7 \\ 1 & 2 & \lambda & \mu \end{bmatrix}
+[A:B] =
+\begin{bmatrix}
+1 & 1 & 3 & 5 \\
+2 & 1 & -1 & 7 \\
+1 & 2 & \lambda & \mu
+\end{bmatrix}
 $$
 
 $R_2 \rightarrow 2R_1 - R_2$
 $R_3 \rightarrow R_1 - R_3$
 
 $$
-\begin{bmatrix} 1 & 1 & 3 & 5 \\ 0 & 1 & 7 & 3 \\ 0 & -1 & 3-\lambda & 5-\mu \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 3 & 5 \\
+0 & 1 & 7 & 3 \\
+0 & -1 & 3-\lambda & 5-\mu
+\end{bmatrix}
 $$
 
 $R_3 \rightarrow R_2 + R_3$
 
 $$
-\begin{bmatrix} 1 & 1 & 3 & 5 \\ 0 & 1 & 7 & 3 \\ 0 & 0 & 10-\lambda & 8-\mu \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 3 & 5 \\
+0 & 1 & 7 & 3 \\
+0 & 0 & 10-\lambda & 8-\mu
+\end{bmatrix}
 $$
 
 which is echelon matrix of $[A:B]$
@@ -241,7 +278,12 @@ $$
 5.
 
 $$
-\vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ A_1 & A_2 & A_3 \\ B_1 & B_2 & B_3 \end{vmatrix}
+\vec{A} \times \vec{B} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+A_1 & A_2 & A_3 \\
+B_1 & B_2 & B_3
+\end{vmatrix}
 $$
 
 6. $\vec{A} \times \vec{B} = 0$, $A$ and $B$ are not NULL, then $A$ and $B$ are parallel.
@@ -253,7 +295,12 @@ $$
 2. $\vec{A} \cdot (\vec{B} \times \vec{C}) = \vec{B} \cdot (\vec{C} \times \vec{A}) = \vec{C} \cdot (\vec{A} \times \vec{B})$
 
 $$
-\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} A_1 & A_2 & A_3 \\ B_1 & B_2 & B_3 \\ C_1 & C_2 & C_3 \end{vmatrix}
+\vec{A} \cdot (\vec{B} \times \vec{C}) =
+\begin{vmatrix}
+A_1 & A_2 & A_3 \\
+B_1 & B_2 & B_3 \\
+C_1 & C_2 & C_3
+\end{vmatrix}
 $$
 
 3. $\vec{A} \times (\vec{B} \times \vec{C}) \neq (\vec{A} \times \vec{B}) \times \vec{C}$

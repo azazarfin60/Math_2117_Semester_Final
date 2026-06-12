@@ -127,7 +127,12 @@ $$
 $\star$ **Test if
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix}
 $$
 
 is singular or not.**
@@ -159,7 +164,12 @@ $$
 Here,
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \quad \text{and} \quad I = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix} \quad \text{and} \quad I = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
 $$
 
 **Steps $\rightarrow$ convert $A$ to its identity form then the changes in $I$ will be the inverse of $A$.**
@@ -169,7 +179,11 @@ A = AI
 $$
 
 $$
-\begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
 $$
 
 ---
@@ -177,11 +191,18 @@ $$
 ## Page 35
 
 $$
-\begin{matrix} R_2 \rightarrow R_1 + R_2 \\ R_3 \rightarrow R_1 - R_3 \end{matrix}
+\begin{matrix}
+R_2 \rightarrow R_1 + R_2 \\
+R_3 \rightarrow R_1 - R_3
+\end{matrix}
 $$
 
 $$
-\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 1 & 1 \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & 4 & 7 \\
+0 & 1 & 1
+\end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1 \end{bmatrix}
 $$
 
 $$
@@ -189,7 +210,11 @@ $$
 $$
 
 $$
-\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & 4 & 7 \\
+0 & 0 & 3
+\end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
 $$
 
 $$
@@ -197,27 +222,51 @@ $$
 $$
 
 $$
-\begin{bmatrix} 2 & 0 & -1 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} = \begin{bmatrix} 1 & -1 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
+\begin{bmatrix}
+2 & 0 & -1 \\
+0 & 4 & 7 \\
+0 & 0 & 3
+\end{bmatrix} = \begin{bmatrix} 1 & -1 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
 $$
 
 $$
-\begin{matrix} R_1 \rightarrow 3R_1 + R_3 \\ R_2 \rightarrow 3R_2 - 7R_3 \end{matrix}
+\begin{matrix}
+R_1 \rightarrow 3R_1 + R_3 \\
+R_2 \rightarrow 3R_2 - 7R_3
+\end{matrix}
 $$
 
 $$
-\begin{bmatrix} 6 & 0 & 0 \\ 0 & 12 & 0 \\ 0 & 0 & 3 \end{bmatrix} = \begin{bmatrix} 0 & -2 & 4 \\ 24 & -4 & -28 \\ -3 & 1 & 4 \end{bmatrix}
+\begin{bmatrix}
+6 & 0 & 0 \\
+0 & 12 & 0 \\
+0 & 0 & 3
+\end{bmatrix} = \begin{bmatrix} 0 & -2 & 4 \\ 24 & -4 & -28 \\ -3 & 1 & 4 \end{bmatrix}
 $$
 
 $$
-\begin{matrix} R_1 \rightarrow \frac{R_1}{6} \\ R_2 \rightarrow \frac{R_2}{12} \\ R_3 \rightarrow \frac{R_3}{3} \end{matrix}
+\begin{matrix}
+R_1 \rightarrow \frac{R_1}{6} \\
+R_2 \rightarrow \frac{R_2}{12} \\
+R_3 \rightarrow \frac{R_3}{3}
+\end{matrix}
 $$
 
 $$
-\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} = \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix} = \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
 $$
 
 $$
-\text{Thus } A^{-1} = \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} \quad \text{(Ans)}
+\text{Thus } A^{-1} =
+\begin{bmatrix}
+0 & -\frac{1}{3} & \frac{2}{3} \\
+2 & -\frac{1}{3} & -\frac{7}{3} \\
+-1 & \frac{1}{3} & \frac{4}{3}
+\end{bmatrix} \quad \text{(Ans)}
 $$
 
 ---
@@ -241,7 +290,12 @@ $$
 $$
 
 $$
-= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \cdot \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+=
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix} \cdot \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
 $$
 
 ---
@@ -264,11 +318,19 @@ We use:
 Now, we construct the matrix with the message as,
 
 $$
-B = \begin{bmatrix} K & I & L & L \\ H & I & M & \text{space} \end{bmatrix}
+B =
+\begin{bmatrix}
+K & I & L & L \\
+H & I & M & \text{space}
+\end{bmatrix}
 $$
 
 $$
-B = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
+B =
+\begin{bmatrix}
+11 & 9 & 12 & 12 \\
+8 & 9 & 13 & 0
+\end{bmatrix}
 $$
 
 *as we can also organize them in columns.*
@@ -278,11 +340,19 @@ We now take,
 The $2 \times 2$ matrix as,
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \quad \rightarrow \text{randomly take a matrix which has an inverse.}
+A =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 1
+\end{bmatrix} \quad \rightarrow \text{randomly take a matrix which has an inverse.}
 $$
 
 $$
-\therefore A^{-1} = \frac{1}{3} \begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix}
+\therefore A^{-1} = \frac{1}{3}
+\begin{bmatrix}
+1 & -2 \\
+1 & 1
+\end{bmatrix}
 $$
 
 *(2x2) নিলাম যার দ্বারা আমরা B এর সাথে গুণ করব।*
@@ -296,7 +366,11 @@ $\star$ **The sender will have $A$ and the receiver will have $A^{-1}$.**
 #### Encoding Matrix:-
 
 $$
-IC = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix} = \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix}
+IC =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 1
+\end{bmatrix} \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix} = \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix}
 $$
 
 $$
@@ -306,11 +380,19 @@ $$
 #### Decoded Matrix:-
 
 $$
-A^{-1} \cdot IC = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix} = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
+A^{-1} \cdot IC = \frac{1}{3}
+\begin{bmatrix}
+1 & -2 \\
+1 & 1
+\end{bmatrix} \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix} = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
 $$
 
 $$
-\text{converting, } = \begin{bmatrix} K & I & L & L \\ H & I & M & \cdot \end{bmatrix}
+\text{converting, } =
+\begin{bmatrix}
+K & I & L & L \\
+H & I & M & \cdot
+\end{bmatrix}
 $$
 
 ---

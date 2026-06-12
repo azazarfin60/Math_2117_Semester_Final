@@ -65,7 +65,12 @@ $$
 Let $C_1 = \frac{dA}{dt} \times B$ and $C_2 = A \times \frac{dB}{dt}$.
 
 $$
-C_1 = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ 10t & 1 & -3t^2 \\ \sin t & -\cos t & 0 \end{vmatrix}
+C_1 =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+10t & 1 & -3t^2 \\
+\sin t & -\cos t & 0
+\end{vmatrix}
 $$
 
 $$
@@ -77,7 +82,12 @@ $$
 $$
 
 $$
-C_2 = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ 5t^2 & t & -t^3 \\ \cos t & \sin t & 0 \end{vmatrix}
+C_2 =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+5t^2 & t & -t^3 \\
+\cos t & \sin t & 0
+\end{vmatrix}
 $$
 
 $$
@@ -187,7 +197,12 @@ $$
 $$
 
 $$
-B = T \times N = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ -\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\ -\cos t & -\sin t & 0 \end{vmatrix}
+B = T \times N =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+-\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\
+-\cos t & -\sin t & 0
+\end{vmatrix}
 $$
 
 ---
@@ -256,7 +271,14 @@ a_{n1} & a_{n2} & a_{n3} & \dots & a_{nn}
 $$
 
 $$
-X = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ \vdots \\ x_n \end{bmatrix}, \quad B = \begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
+X =
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_n
+\end{bmatrix}, \quad B = \begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
 $$
 
 ---
@@ -280,7 +302,12 @@ $$
 In $AX = B$ form:
 
 $$
-A = \begin{bmatrix} 2 & 3 & -5 \\ 1 & 1 & -1 \\ 2 & -2 & 1 \end{bmatrix}, \quad X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad B = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & 3 & -5 \\
+1 & 1 & -1 \\
+2 & -2 & 1
+\end{bmatrix}, \quad X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad B = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
 $$
 
 $$
@@ -288,11 +315,20 @@ $$
 $$
 
 $$
-\begin{bmatrix} 2 & 3 & -5 \\ 1 & 1 & -1 \\ 2 & -2 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
+\begin{bmatrix}
+2 & 3 & -5 \\
+1 & 1 & -1 \\
+2 & -2 & 1
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
 $$
 
 $$
-\therefore \begin{bmatrix} 2x + 3y - 5z \\ x + y - z \\ 2x - 2y + z \end{bmatrix} = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
+\therefore
+\begin{bmatrix}
+2x + 3y - 5z \\
+x + y - z \\
+2x - 2y + z
+\end{bmatrix} = \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}
 $$
 
 ---
@@ -356,13 +392,23 @@ The system can be set as $AX = B$
 where,
 
 $$
-A = \begin{bmatrix} 1 & -2 & -5 \\ -1 & 1 & 3 \\ 2 & 1 & 1 \end{bmatrix}, \quad X = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \quad \text{and} \quad B = \begin{bmatrix} 2 \\ -2 \\ 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & -2 & -5 \\
+-1 & 1 & 3 \\
+2 & 1 & 1
+\end{bmatrix}, \quad X = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \quad \text{and} \quad B = \begin{bmatrix} 2 \\ -2 \\ 3 \end{bmatrix}
 $$
 
 Now, the augmented matrix
 
 $$
-[A:B] = \begin{bmatrix} 1 & -2 & -5 & \bigm| & 2 \\ -1 & 1 & 3 & \bigm| & -2 \\ 2 & 1 & 1 & \bigm| & 3 \end{bmatrix}
+[A:B] =
+\begin{bmatrix}
+1 & -2 & -5 & \bigm| & 2 \\
+-1 & 1 & 3 & \bigm| & -2 \\
+2 & 1 & 1 & \bigm| & 3
+\end{bmatrix}
 $$
 
 $$
@@ -374,7 +420,12 @@ R_3 \rightarrow R_3 - 2R_1
 $$
 
 $$
-\sim \begin{bmatrix} 1 & -2 & -5 & \bigm| & 2 \\ 0 & -1 & -2 & \bigm| & 0 \\ 0 & 5 & 11 & \bigm| & -1 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & -2 & -5 & \bigm| & 2 \\
+0 & -1 & -2 & \bigm| & 0 \\
+0 & 5 & 11 & \bigm| & -1
+\end{bmatrix}
 $$
 
 ---
@@ -390,7 +441,12 @@ R_3 \rightarrow 5R_2 + R_3
 $$
 
 $$
-\sim \begin{bmatrix} 1 & -2 & -5 & \bigm| & 2 \\ 0 & -1 & -2 & \bigm| & 0 \\ 0 & 0 & 1 & \bigm| & -1 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & -2 & -5 & \bigm| & 2 \\
+0 & -1 & -2 & \bigm| & 0 \\
+0 & 0 & 1 & \bigm| & -1
+\end{bmatrix}
 $$
 
 which is the echelon form of $[A:B]$

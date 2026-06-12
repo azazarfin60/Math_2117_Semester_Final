@@ -47,7 +47,12 @@ This means $a_{ij} = a_{ji}$ for all $i, j$. The matrix is a mirror image across
 ### Example
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 5 & 6 \\ 3 & 6 & 9 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+2 & 5 & 6 \\
+3 & 6 & 9
+\end{bmatrix}
 $$
 
 Notice: position $(1,2)$ and $(2,1)$ both have 2. Position $(1,3)$ and $(3,1)$ both have 3.
@@ -75,7 +80,12 @@ This means $a_{ij} = -a_{ji}$ for all $i, j$. The diagonal entries must be zero 
 ### Example
 
 $$
-A = \begin{bmatrix} 0 & -3 & 5 \\ 3 & 0 & -7 \\ -5 & 7 & 0 \end{bmatrix}
+A =
+\begin{bmatrix}
+0 & -3 & 5 \\
+3 & 0 & -7 \\
+-5 & 7 & 0
+\end{bmatrix}
 $$
 
 All diagonal entries are 0. Each pair of symmetric positions has opposite signs.
@@ -129,7 +139,11 @@ The decomposition is unique.
 Express
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
 $$
 
 as symmetric + skew-symmetric.
@@ -137,19 +151,31 @@ as symmetric + skew-symmetric.
 Symmetric part:
 
 $$
-P = \frac{1}{2}(A + A^T) = \frac{1}{2}\left(\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} + \begin{bmatrix} 1 & 3 \\ 2 & 4 \end{bmatrix}\right) = \frac{1}{2}\begin{bmatrix} 2 & 5 \\ 5 & 8 \end{bmatrix} = \begin{bmatrix} 1 & 5/2 \\ 5/2 & 4 \end{bmatrix}
+P = \frac{1}{2}(A + A^T) = \frac{1}{2}\left(
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix} + \begin{bmatrix} 1 & 3 \\ 2 & 4 \end{bmatrix}\right) = \frac{1}{2}\begin{bmatrix} 2 & 5 \\ 5 & 8 \end{bmatrix} = \begin{bmatrix} 1 & 5/2 \\ 5/2 & 4 \end{bmatrix}
 $$
 
 Skew-symmetric part:
 
 $$
-Q = \frac{1}{2}(A - A^T) = \frac{1}{2}\left(\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} - \begin{bmatrix} 1 & 3 \\ 2 & 4 \end{bmatrix}\right) = \frac{1}{2}\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} = \begin{bmatrix} 0 & -1/2 \\ 1/2 & 0 \end{bmatrix}
+Q = \frac{1}{2}(A - A^T) = \frac{1}{2}\left(
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix} - \begin{bmatrix} 1 & 3 \\ 2 & 4 \end{bmatrix}\right) = \frac{1}{2}\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} = \begin{bmatrix} 0 & -1/2 \\ 1/2 & 0 \end{bmatrix}
 $$
 
 Verify:
 
 $$
-P + Q = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} = A.
+P + Q =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix} = A.
 $$
 
 Correct.

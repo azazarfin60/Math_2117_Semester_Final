@@ -107,7 +107,12 @@ $$
 #### Represent the matrix
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 2 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 2 & 1
+\end{bmatrix}
 $$
 
 as the sum of a symmetric and a skew symmetric matrix.
@@ -127,17 +132,32 @@ A = B + C
 $$
 
 $$
-B = \frac{1}{2}(A + A^t) = \begin{bmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{bmatrix}
+B = \frac{1}{2}(A + A^t) =
+\begin{bmatrix}
+1 & 3 & 2 \\
+3 & 5 & 4 \\
+2 & 4 & 1
+\end{bmatrix}
 $$
 
 $$
-C = \frac{1}{2}(A - A^t) = \begin{bmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{bmatrix} \quad \text{(Ans:)}
+C = \frac{1}{2}(A - A^t) =
+\begin{bmatrix}
+0 & -1 & 1 \\
+1 & 0 & 2 \\
+-1 & -2 & 0
+\end{bmatrix} \quad \text{(Ans:)}
 $$
 
 Then,
 
 $$
-A = \begin{bmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{bmatrix} + \begin{bmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 3 & 2 \\
+3 & 5 & 4 \\
+2 & 4 & 1
+\end{bmatrix} + \begin{bmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{bmatrix}
 $$
 
 ---
@@ -163,7 +183,12 @@ $$
 $\star$ **Let,**
 
 $$
-A = \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} = \frac{1}{2}(A^\theta + A) + \frac{1}{2}(A^\theta - A)
+A =
+\begin{bmatrix}
+i & -2+i & 4-5i \\
+0 & -i & 2i \\
+0 & 3 & 4+5i
+\end{bmatrix} = \frac{1}{2}(A^\theta + A) + \frac{1}{2}(A^\theta - A)
 $$
 
 $$
@@ -180,15 +205,30 @@ B = \frac{1}{2}(A^\theta + A)
 $$
 
 $$
-= \frac{1}{2} \left( \begin{bmatrix} -i & -2-i & 4+5i \\ 0 & i & -2i \\ 0 & 3 & 4-5i \end{bmatrix}^t + \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right)
+= \frac{1}{2} \left(
+\begin{bmatrix}
+-i & -2-i & 4+5i \\
+0 & i & -2i \\
+0 & 3 & 4-5i
+\end{bmatrix}^t + \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right)
 $$
 
 $$
-= \frac{1}{2} \left( \begin{bmatrix} -i & 0 & 0 \\ -2-i & i & 3 \\ 4+5i & -2i & 4-5i \end{bmatrix} + \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right)
+= \frac{1}{2} \left(
+\begin{bmatrix}
+-i & 0 & 0 \\
+-2-i & i & 3 \\
+4+5i & -2i & 4-5i
+\end{bmatrix} + \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right)
 $$
 
 $$
-B = \frac{1}{2} \begin{bmatrix} 0 & -2+i & 4-5i \\ -2-i & 0 & 3-2i \\ 4+5i & 3+2i & 8 \end{bmatrix} \rightarrow \text{Hermitian. [Diagonally Real numberগুলো থাকবে]}
+B = \frac{1}{2}
+\begin{bmatrix}
+0 & -2+i & 4-5i \\
+-2-i & 0 & 3-2i \\
+4+5i & 3+2i & 8
+\end{bmatrix} \rightarrow \text{Hermitian. [Diagonally Real numberগুলো থাকবে]}
 $$
 
 ---
@@ -202,11 +242,21 @@ C = \frac{1}{2}(A^H - A)
 $$
 
 $$
-= \frac{1}{2} \left( \begin{bmatrix} -i & 0 & 0 \\ -2-i & i & 3 \\ 4+5i & -2i & 4-5i \end{bmatrix} - \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right)
+= \frac{1}{2} \left(
+\begin{bmatrix}
+-i & 0 & 0 \\
+-2-i & i & 3 \\
+4+5i & -2i & 4-5i
+\end{bmatrix} - \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right)
 $$
 
 $$
-= \frac{1}{2} \begin{bmatrix} -2i & 2-i & -4+5i \\ -2-i & 2i & 3-2i \\ 4+5i & -2i-3 & -10i \end{bmatrix}
+= \frac{1}{2}
+\begin{bmatrix}
+-2i & 2-i & -4+5i \\
+-2-i & 2i & 3-2i \\
+4+5i & -2i-3 & -10i
+\end{bmatrix}
 $$
 
 * **Real part গুলো negative হবে।**
@@ -214,7 +264,12 @@ $$
 * **Main diagonal $\rightarrow$ purely imaginary**
 
 $$
-\therefore A = B - C = \begin{bmatrix} i & -2+i & 4-5i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix}
+\therefore A = B - C =
+\begin{bmatrix}
+i & -2+i & 4-5i \\
+0 & -i & 2i \\
+0 & 3 & 4+5i
+\end{bmatrix}
 $$
 
 ---
@@ -407,13 +462,23 @@ $\star$ **Prove that, $(AB)^t = B^t A^t$**
 Let,
 
 $$
-A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix}
+A =
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
 $$
 
 and,
 
 $$
-B = \begin{bmatrix} b_{11} & b_{12} & b_{13} \\ b_{21} & b_{22} & b_{23} \\ b_{31} & b_{32} & b_{33} \end{bmatrix}
+B =
+\begin{bmatrix}
+b_{11} & b_{12} & b_{13} \\
+b_{21} & b_{22} & b_{23} \\
+b_{31} & b_{32} & b_{33}
+\end{bmatrix}
 $$
 
 > [!NOTE]

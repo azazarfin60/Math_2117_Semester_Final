@@ -34,7 +34,12 @@ $$
 Calculate the cross product:
 
 $$
-\vec{PQ} \times \vec{PR} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -2 & 0 & -5 \\ 1 & -2 & -1 \end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
+\vec{PQ} \times \vec{PR} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+-2 & 0 & -5 \\
+1 & -2 & -1
+\end{vmatrix} = \hat{i}(0 - 10) - \hat{j}(2 - (-5)) + \hat{k}(4 - 0) = -10\hat{i} - 7\hat{j} + 4\hat{k}
 $$
 
 Find magnitude and area:
@@ -50,7 +55,12 @@ The scalar triple product $\vec{A} \cdot (\vec{B} \times \vec{C})$ calculates th
 It is evaluated as a $3 \times 3$ determinant:
 
 $$
-\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} A_x & A_y & A_z \\ B_x & B_y & B_z \\ C_x & C_y & C_z \end{vmatrix}
+\vec{A} \cdot (\vec{B} \times \vec{C}) =
+\begin{vmatrix}
+A_x & A_y & A_z \\
+B_x & B_y & B_z \\
+C_x & C_y & C_z
+\end{vmatrix}
 $$
 
 **Geometric Proof**:
@@ -78,7 +88,12 @@ $$
 **Solution**:
 
 $$
-\vec{A} \cdot (\vec{B} \times \vec{C}) = \begin{vmatrix} 2 & -3 & 4 \\ 1 & 2 & -1 \\ 3 & -1 & 2 \end{vmatrix}
+\vec{A} \cdot (\vec{B} \times \vec{C}) =
+\begin{vmatrix}
+2 & -3 & 4 \\
+1 & 2 & -1 \\
+3 & -1 & 2
+\end{vmatrix}
 $$
 
 $$
@@ -115,7 +130,11 @@ are coplanar.
 Set the scalar triple product determinant to 0:
 
 $$
-\begin{vmatrix} 2 & -1 & 1 \\ 1 & 2 & -3 \\ 3 & a & 5 \end{vmatrix} = 0
+\begin{vmatrix}
+2 & -1 & 1 \\
+1 & 2 & -3 \\
+3 & a & 5
+\end{vmatrix} = 0
 $$
 
 $$

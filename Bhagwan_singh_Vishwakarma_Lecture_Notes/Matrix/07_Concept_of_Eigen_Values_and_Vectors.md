@@ -50,13 +50,21 @@ This vector $X$ is called the eigenvector of $A$ corresponding to the eigenvalue
 Find the eigenvalues and eigenvectors for:
 
 $$
-A = \begin{bmatrix} 5 & 4 \\ 1 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+5 & 4 \\
+1 & 2
+\end{bmatrix}
 $$
 
 **Step 1: Characteristic Equation**
 
 $$
-\left| A - \lambda I \right| = \begin{vmatrix} 5 - \lambda & 4 \\ 1 & 2 - \lambda \end{vmatrix} = 0
+\left| A - \lambda I \right| =
+\begin{vmatrix}
+5 - \lambda & 4 \\
+1 & 2 - \lambda
+\end{vmatrix} = 0
 $$
 
 $$
@@ -69,14 +77,22 @@ Factoring the equation $(\lambda - 1)(\lambda - 6) = 0$ yields eigenvalues $\lam
 **Step 3: Eigenvector for $\lambda = 1$**
 
 $$
-(A - 1I)X = \begin{bmatrix} 4 & 4 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+(A - 1I)X =
+\begin{bmatrix}
+4 & 4 \\
+1 & 1
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 Row operations yield $x_1 + x_2 = 0$. Choosing $x_1 = 1$, we get $x_2 = -1$.
 Eigenvector
 
 $$
-X_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}.
+X_1 =
+\begin{bmatrix}
+1 \\
+-1
+\end{bmatrix}.
 $$
 
 ## What Comes Next

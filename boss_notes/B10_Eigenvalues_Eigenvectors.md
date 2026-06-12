@@ -89,7 +89,11 @@ $$
 **Problem**: Find the eigenvalues and eigenvectors of:
 
 $$
-A = \begin{bmatrix} 2 & 3 \\ 1 & 4 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & 3 \\
+1 & 4
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -97,7 +101,10 @@ $$
 **Step 1**: The characteristic equation is $\lvert A - \lambda I \rvert = 0$:
 
 $$
-\begin{vmatrix} 2 - \lambda & 3 \\ 1 & 4 - \lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2 - \lambda & 3 \\
+1 & 4 - \lambda
+\end{vmatrix} = 0
 $$
 
 $$
@@ -111,25 +118,39 @@ $$
 **Step 3a**: For $\lambda = 1$, solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 3 \\ 1 & 3 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 \\
+1 & 3
+\end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 This gives $x + 3y = 0 \implies x = -3y$. Let $y = 1$:
 
 $$
-X_1 = \begin{bmatrix} -3 \\ 1 \end{bmatrix}
+X_1 =
+\begin{bmatrix}
+-3 \\
+1
+\end{bmatrix}
 $$
 
 **Step 3b**: For $\lambda = 5$, solve $(A - 5I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 3 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\begin{bmatrix}
+-3 & 3 \\
+1 & -1
+\end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 This gives $x - y = 0 \implies x = y$. Let $y = 1$:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+X_2 =
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -139,7 +160,12 @@ $$
 **Problem**: Find the eigenvalues and eigenvectors of:
 
 $$
-A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}
 $$
 
 This exact matrix appeared in both 2017 (12 marks) and 2018 (6 marks).
@@ -149,7 +175,11 @@ This exact matrix appeared in both 2017 (12 marks) and 2018 (6 marks).
 **Step 1**: Compute $\lvert A - \lambda I \rvert = 0$:
 
 $$
-\begin{vmatrix} 2-\lambda & 2 & 1 \\ 1 & 3-\lambda & 1 \\ 1 & 2 & 2-\lambda \end{vmatrix} = 0
+\begin{vmatrix}
+2-\lambda & 2 & 1 \\
+1 & 3-\lambda & 1 \\
+1 & 2 & 2-\lambda
+\end{vmatrix} = 0
 $$
 
 Expand the determinant:
@@ -179,13 +209,21 @@ Eigenvalues: $\lambda = 1, 1, 5$.
 **Step 3a**: For $\lambda = 5$, solve $(A - 5I)X = 0$:
 
 $$
-\begin{bmatrix} -3 & 2 & 1 \\ 1 & -2 & 1 \\ 1 & 2 & -3 \end{bmatrix}
+\begin{bmatrix}
+-3 & 2 & 1 \\
+1 & -2 & 1 \\
+1 & 2 & -3
+\end{bmatrix}
 $$
 
 Swap $R_1 \leftrightarrow R_2$, then $R_2 \to R_2 + 3R_1$, $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & -2 & 1 \\ 0 & -4 & 4 \\ 0 & 4 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 1 \\
+0 & -4 & 4 \\
+0 & 4 & -4
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 + R_2$: row 3 becomes all zeros. From row 2: $y = z$. From row 1: $x = 2y - z = z$.
@@ -193,13 +231,22 @@ Apply $R_3 \to R_3 + R_2$: row 3 becomes all zeros. From row 2: $y = z$. From ro
 So $x = y = z$. Let $z = 1$:
 
 $$
-X_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
+X_1 =
+\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
 $$
 
 **Step 3b**: For $\lambda = 1$ (repeated), solve $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 1 \\
+1 & 2 & 1 \\
+1 & 2 & 1
+\end{bmatrix}
 $$
 
 All three rows are identical. This gives one equation: $x + 2y + z = 0 \implies x = -2y - z$.
@@ -207,13 +254,23 @@ All three rows are identical. This gives one equation: $x + 2y + z = 0 \implies 
 Two free variables ($y$ and $z$). Let $y = s$, $z = t$:
 
 $$
-X = s \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix} + t \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X = s
+\begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix} + t \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
 $$
 
 Two independent eigenvectors:
 
 $$
-X_2 = \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_2 =
+\begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix}, \quad X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
 $$
 
 ---
@@ -223,7 +280,12 @@ $$
 **Problem**: Find eigenvalues and eigenvectors of:
 
 $$
-A = \begin{bmatrix} 1 & 1 & -2 \\ -1 & 2 & 1 \\ 0 & 1 & -1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 1 & -2 \\
+-1 & 2 & 1 \\
+0 & 1 & -1
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -239,37 +301,64 @@ Eigenvalues: $\lambda = 1, -1, 2$.
 **Step 3a**: For $\lambda = 1$:
 
 $$
-\begin{bmatrix} 0 & 1 & -2 \\ -1 & 1 & 1 \\ 0 & 1 & -2 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & -2 \\
+-1 & 1 & 1 \\
+0 & 1 & -2
+\end{bmatrix}
 $$
 
 From row 1: $y = 2z$. From row 2: $x = y + z = 3z$. Let $z = 1$:
 
 $$
-X_1 = \begin{bmatrix} 3 \\ 2 \\ 1 \end{bmatrix}
+X_1 =
+\begin{bmatrix}
+3 \\
+2 \\
+1
+\end{bmatrix}
 $$
 
 **Step 3b**: For $\lambda = -1$:
 
 $$
-\begin{bmatrix} 2 & 1 & -2 \\ -1 & 3 & 1 \\ 0 & 1 & 0 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & -2 \\
+-1 & 3 & 1 \\
+0 & 1 & 0
+\end{bmatrix}
 $$
 
 From row 3: $y = 0$. From row 1: $2x - 2z = 0 \implies x = z$. Let $z = 1$:
 
 $$
-X_2 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}
+X_2 =
+\begin{bmatrix}
+1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 **Step 3c**: For $\lambda = 2$:
 
 $$
-\begin{bmatrix} -1 & 1 & -2 \\ -1 & 0 & 1 \\ 0 & 1 & -3 \end{bmatrix}
+\begin{bmatrix}
+-1 & 1 & -2 \\
+-1 & 0 & 1 \\
+0 & 1 & -3
+\end{bmatrix}
 $$
 
 From row 2: $x = z$. From row 3: $y = 3z$. Let $z = 1$:
 
 $$
-X_3 = \begin{bmatrix} 1 \\ 3 \\ 1 \end{bmatrix}
+X_3 =
+\begin{bmatrix}
+1 \\
+3 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -279,7 +368,12 @@ $$
 **Problem**: Find eigenvalues and eigenvectors of:
 
 $$
-A = \begin{bmatrix} 2 & 1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & 1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -295,19 +389,34 @@ Eigenvalues: $\lambda = 1, 2, 3$.
 For $\lambda = 1$: Solving $(A - I)X = 0$ gives $y = 0$, $x = -z$. Eigenvector:
 
 $$
-X_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}
+X_1 =
+\begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
 $$
 
 For $\lambda = 2$: Solving $(A - 2I)X = 0$ gives $x = -z$, $y = -z$. Eigenvector:
 
 $$
-X_2 = \begin{bmatrix} -1 \\ -1 \\ 1 \end{bmatrix}
+X_2 =
+\begin{bmatrix}
+-1 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 For $\lambda = 3$: Solving $(A - 3I)X = 0$ gives $x = 0$, $y = -z$. Eigenvector:
 
 $$
-X_3 = \begin{bmatrix} 0 \\ -1 \\ 1 \end{bmatrix}
+X_3 =
+\begin{bmatrix}
+0 \\
+-1 \\
+1
+\end{bmatrix}
 $$
 
 ---
@@ -321,7 +430,11 @@ For any upper or lower triangular matrix, the eigenvalues are the diagonal entri
 **Example** (PYQ 2017): The eigenvalues of:
 
 $$
-\begin{pmatrix} 1 & 2 & 3 \\ 0 & -4 & 2 \\ 0 & 0 & 7 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 3 \\
+0 & -4 & 2 \\
+0 & 0 & 7
+\end{pmatrix}
 $$
 
 are simply $\lambda = 1, -4, 7$.

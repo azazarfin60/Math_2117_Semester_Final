@@ -93,7 +93,12 @@ $T(e_3) = (0+0, 0+1, 1+0) = (0, 1, 1)$
 The matrix $A$ relative to the standard basis is formed by taking these vectors as columns:
 
 $$
-A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1
+\end{pmatrix}
 $$
 
 **2. Rank and Nullity**:
@@ -101,13 +106,21 @@ We find the reduced row echelon form (RREF) of $A$:
 $R_3 \to R_3 - R_1$:
 
 $$
-\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & -1 & 1 \end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+0 & -1 & 1
+\end{pmatrix}
 $$
 
 $R_3 \to R_3 + R_2$:
 
 $$
-\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+0 & 0 & 2
+\end{pmatrix}
 $$
 
 The matrix has 3 non-zero rows (pivots in every column). Thus, $\text{rank}(T) = 3$.
@@ -128,7 +141,11 @@ $T(e_2) = T(0, 1) = (2(0) + 1, 0 - 1) = (1, -1)$
 The standard matrix of $T$ is constructed by using these image vectors as columns.
 
 $$
-[T] = \begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}
+[T] =
+\begin{pmatrix}
+2 & 1 \\
+1 & -1
+\end{pmatrix}
 $$
 
 ## Q21 (04)
@@ -155,7 +172,11 @@ $T(1, 0) = (3, 1)$ and $T(0, 1) = (2, 1)$.
 The matrix representation is:
 
 $$
-A = \begin{pmatrix} 3 & 2 \\ 1 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+3 & 2 \\
+1 & 1
+\end{pmatrix}
 $$
 
 The determinant of $A$ is:
@@ -169,13 +190,20 @@ Since $|A| \neq 0$, the matrix $A$ is invertible, which means the transformation
 To find $T^{-1}$, we find the inverse of the matrix $A$:
 
 $$
-A^{-1} = \frac{1}{|A|} \begin{pmatrix} 1 & -2 \\ -1 & 3 \end{pmatrix} = \begin{pmatrix} 1 & -2 \\ -1 & 3 \end{pmatrix}
+A^{-1} = \frac{1}{|A|}
+\begin{pmatrix}
+1 & -2 \\
+-1 & 3
+\end{pmatrix} = \begin{pmatrix} 1 & -2 \\ -1 & 3 \end{pmatrix}
 $$
 
 Therefore, the inverse transformation $T^{-1}(x, y)$ is given by the matrix multiplication:
 
 $$
-\begin{pmatrix} 1 & -2 \\ -1 & 3 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x - 2y \\ -x + 3y \end{pmatrix}
+\begin{pmatrix}
+1 & -2 \\
+-1 & 3
+\end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x - 2y \\ -x + 3y \end{pmatrix}
 $$
 
 So, $T^{-1}(x, y) = (x - 2y, -x + 3y)$.
@@ -198,7 +226,11 @@ So $2c_1 = 2 \implies c_1 = 1$, and $c_2 = 1$.
 Therefore,
 
 $$
-[T(b_1)]_B = \begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+[T(b_1)]_B =
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}.
 $$
 
 Let $(0, 2) = d_1b_1 + d_2b_2 = (d_1+d_2, d_1-d_2)$.
@@ -209,13 +241,21 @@ So $d_1 = 1$.
 Therefore,
 
 $$
-[T(b_2)]_B = \begin{pmatrix} 1 \\ -1 \end{pmatrix}.
+[T(b_2)]_B =
+\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}.
 $$
 
 The matrix of $T$ with respect to $B$ is formed by these coordinate vectors as columns:
 
 $$
-[T]_B = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
+[T]_B =
+\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}
 $$
 
 ## Q24 (04)

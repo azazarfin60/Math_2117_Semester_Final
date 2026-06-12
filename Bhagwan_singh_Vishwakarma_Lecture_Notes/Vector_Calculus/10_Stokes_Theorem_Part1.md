@@ -120,7 +120,12 @@ over the rectangular area $S$.
 First, compute the curl ($\nabla \times \mathbf{F}$):
 
 $$
-\nabla \times \mathbf{F} = \det \begin{vmatrix} \hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x^2 + y^2 & -2xy & 0 \end{vmatrix}
+\nabla \times \mathbf{F} = \det
+\begin{vmatrix}
+\hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x^2 + y^2 & -2xy & 0
+\end{vmatrix}
 $$
 
 $$

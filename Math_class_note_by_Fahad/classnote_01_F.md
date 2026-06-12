@@ -45,23 +45,42 @@ $$
 <!-- Page 002 -->
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}_{2 \times 2} ; \quad B = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}_{2 \times 3}
+A =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}_{2 \times 2} ; \quad B = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}_{2 \times 3}
 $$
 
 $\therefore$ Horizontal concatenation :-
 
 $$
-[A:B] = \begin{bmatrix} 1 & 2 & 1 & 2 & 3 \\ 3 & 4 & 4 & 5 & 6 \end{bmatrix}_{2 \times 5}
+[A:B] =
+\begin{bmatrix}
+1 & 2 & 1 & 2 & 3 \\
+3 & 4 & 4 & 5 & 6
+\end{bmatrix}_{2 \times 5}
 $$
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}_{2 \times 2} ; \quad B = \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}_{3 \times 2}
+A =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}_{2 \times 2} ; \quad B = \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}_{3 \times 2}
 $$
 
 $\therefore$ Vertical concat :-
 
 $$
-[A:B] = \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}_{5 \times 2}
+[A:B] =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4 \\
+1 & 2 \\
+3 & 4 \\
+5 & 6
+\end{bmatrix}_{5 \times 2}
 $$
 
 * Concatenation $\rightarrow$ Vertical (Column same)
@@ -93,13 +112,23 @@ $n = \text{must be equal}$.
 * Symmetry Matrix :- $A^t = A$
 
 $$
-A = \begin{bmatrix} a & h & g \\ h & b & f \\ g & f & c \end{bmatrix}
+A =
+\begin{bmatrix}
+a & h & g \\
+h & b & f \\
+g & f & c
+\end{bmatrix}
 $$
 
 Here, $A$ is a symmetric matrix.
 
 $$
-A^t = \begin{bmatrix} a & h & g \\ h & b & f \\ g & f & c \end{bmatrix}
+A^t =
+\begin{bmatrix}
+a & h & g \\
+h & b & f \\
+g & f & c
+\end{bmatrix}
 $$
 
 **HW**
@@ -109,11 +138,21 @@ $$
   $* \text{main-diag} = 0$.
 
 $$
-A = \begin{bmatrix} 0 & h & g \\ -h & 0 & f \\ -g & -f & 0 \end{bmatrix}
+A =
+\begin{bmatrix}
+0 & h & g \\
+-h & 0 & f \\
+-g & -f & 0
+\end{bmatrix}
 $$
 
 $$
-A^t = \begin{bmatrix} 0 & -h & -g \\ h & 0 & -f \\ g & f & 0 \end{bmatrix}
+A^t =
+\begin{bmatrix}
+0 & -h & -g \\
+h & 0 & -f \\
+g & f & 0
+\end{bmatrix}
 $$
 
 ---
@@ -126,7 +165,12 @@ $$
 * Sub-diagonal
 
 $$
-A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix}
+A =
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
 $$
 
 - $a_{11}, a_{22}, a_{33} \rightarrow \text{Main-diagonal}$
@@ -139,7 +183,13 @@ $$
 * Tris-sis (Tri-diagonal matrix) :-
 
 $$
-A = \begin{bmatrix} 1 & 5 & 0 & 0 \\ 8 & 2 & 6 & 0 \\ 0 & 9 & 3 & 7 \\ 0 & 0 & 10 & 4 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 5 & 0 & 0 \\
+8 & 2 & 6 & 0 \\
+0 & 9 & 3 & 7 \\
+0 & 0 & 10 & 4
+\end{bmatrix}
 $$
 
 - Only one Super diagonal, one sub diagonal, and one main diagonal, and all others are zero.
@@ -212,7 +262,12 @@ If in a matrix, the number of 0's preceding the (first non-zero / pivot) entry i
 - Example 1:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 & 4 \\
+0 & 1 & 2 & 3 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
 $$
 
 is an echelon matrix.
@@ -222,7 +277,12 @@ is an echelon matrix.
 - Example 2:
 
 $$
-\begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 2 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 2
+\end{bmatrix}
 $$
 
 is NOT an echelon matrix. (Notes state: "if 2 then not echelon matrix" pointing to the 2 in the last row, as the zero row is not at the bottom).
@@ -237,13 +297,23 @@ is NOT an echelon matrix. (Notes state: "if 2 then not echelon matrix" pointing 
   - Example:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 \end{bmatrix} \rightarrow \text{rank} = 4
+\begin{bmatrix}
+1 & 2 & 3 & 4 \\
+0 & 1 & 2 & 3 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 1
+\end{bmatrix} \rightarrow \text{rank} = 4
 $$
 
 - Example:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix} \rightarrow \text{rank} = 3
+\begin{bmatrix}
+1 & 2 & 3 & 4 \\
+0 & 1 & 2 & 3 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0
+\end{bmatrix} \rightarrow \text{rank} = 3
 $$
 
 ---
@@ -270,7 +340,11 @@ $$
 * Reduce the matrix
 
 $$
-\begin{bmatrix} 1 & 2 & 4 & 5 \\ 6 & 7 & 1 & 1 \\ -1 & 3 & 4 & 5 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 4 & 5 \\
+6 & 7 & 1 & 1 \\
+-1 & 3 & 4 & 5
+\end{bmatrix}
 $$
 
 to its echelon form. ($\star \rightarrow R^4$ থেকে নেওয়া)
@@ -283,13 +357,23 @@ Perform elementary row operations (transformations).
 (equivalent sign: $\sim$)
 
 $$
-\sim \begin{bmatrix} 1 & 2 & 4 & 5 \\ 0 & 5 & 23 & 29 \\ 0 & 5 & 8 & 10 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & 2 & 4 & 5 \\
+0 & 5 & 23 & 29 \\
+0 & 5 & 8 & 10
+\end{bmatrix}
 $$
 
 * $R_3 \rightarrow R_2 - R_3$
 
 $$
-\sim \begin{bmatrix} 1 & 2 & 4 & 5 \\ 0 & 5 & 23 & 29 \\ 0 & 0 & 15 & 19 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & 2 & 4 & 5 \\
+0 & 5 & 23 & 29 \\
+0 & 0 & 15 & 19
+\end{bmatrix}
 $$
 
 which is an echelon matrix.
@@ -306,7 +390,11 @@ Rank = 3.
   Example:
 
 $$
-\begin{bmatrix} 1 & 0 & 0 & 5 \\ 0 & 1 & 0 & 5 \\ 0 & 0 & 1 & 6 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & 5 \\
+0 & 1 & 0 & 5 \\
+0 & 0 & 1 & 6
+\end{bmatrix}
 $$
 
 $\star$ important in image processing.
@@ -315,7 +403,11 @@ $\star$ important in image processing.
 * Convert the matrix to its row canonical form.
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 5 \\ -1 & 1 & 2 & 1 \\ 1 & 1 & 2 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 & 5 \\
+-1 & 1 & 2 & 1 \\
+1 & 1 & 2 & 3
+\end{bmatrix}
 $$
 
 - Step 1: Convert to echelon form:
@@ -329,7 +421,12 @@ R_3 \rightarrow R_1 - R_3
 $$
 
 $$
-\sim \begin{bmatrix} 1 & 2 & 3 & 5 \\ 0 & 3 & 5 & 6 \\ 0 & 1 & 1 & 2 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & 2 & 3 & 5 \\
+0 & 3 & 5 & 6 \\
+0 & 1 & 1 & 2
+\end{bmatrix}
 $$
 
 $$
@@ -337,7 +434,12 @@ R_3 \rightarrow R_2 - 3R_3
 $$
 
 $$
-\sim \begin{bmatrix} 1 & 2 & 3 & 5 \\ 0 & 3 & 5 & 6 \\ 0 & 0 & 2 & 0 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & 2 & 3 & 5 \\
+0 & 3 & 5 & 6 \\
+0 & 0 & 2 & 0
+\end{bmatrix}
 $$
 
 which is an echelon matrix.
@@ -353,7 +455,12 @@ R_1 \rightarrow 3R_1 - 2R_2
 $$
 
 $$
-\sim \begin{bmatrix} 3 & 0 & -1 & 3 \\ 0 & 3 & 5 & 6 \\ 0 & 0 & 2 & 0 \end{bmatrix}
+\sim
+\begin{bmatrix}
+3 & 0 & -1 & 3 \\
+0 & 3 & 5 & 6 \\
+0 & 0 & 2 & 0
+\end{bmatrix}
 $$
 
 $$
@@ -361,7 +468,12 @@ R_1 \rightarrow 2R_1 + R_3
 $$
 
 $$
-\sim \begin{bmatrix} 6 & 0 & 0 & 6 \\ 0 & 3 & 5 & 6 \\ 0 & 0 & 2 & 0 \end{bmatrix}
+\sim
+\begin{bmatrix}
+6 & 0 & 0 & 6 \\
+0 & 3 & 5 & 6 \\
+0 & 0 & 2 & 0
+\end{bmatrix}
 $$
 
 $$
@@ -369,7 +481,12 @@ R_2 \rightarrow 2R_2 - 5R_3
 $$
 
 $$
-\sim \begin{bmatrix} 6 & 0 & 0 & 6 \\ 0 & 6 & 0 & 12 \\ 0 & 0 & 2 & 0 \end{bmatrix}
+\sim
+\begin{bmatrix}
+6 & 0 & 0 & 6 \\
+0 & 6 & 0 & 12 \\
+0 & 0 & 2 & 0
+\end{bmatrix}
 $$
 
 - Dividing each row to get pivots of 1:
@@ -387,7 +504,12 @@ R_3 \rightarrow \frac{1}{2} \times R_3
 $$
 
 $$
-\sim \begin{bmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 0 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 2 \\
+0 & 0 & 1 & 0
+\end{bmatrix}
 $$
 
 which is row canonical matrix / row-reduced echelon matrix.

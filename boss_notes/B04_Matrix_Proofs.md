@@ -127,7 +127,11 @@ $$
 If
 
 $$
-A_\alpha = \begin{pmatrix} \cos\alpha & \sin\alpha \\ -\sin\alpha & \cos\alpha \end{pmatrix}
+A_\alpha =
+\begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha
+\end{pmatrix}
 $$
 
 then $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$.
@@ -137,7 +141,11 @@ then $A_\alpha \cdot A_\beta = A_{\alpha+\beta} = A_\beta \cdot A_\alpha$.
 Multiply $A_\alpha \cdot A_\beta$:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos\alpha\cos\beta - \sin\alpha\sin\beta & \cos\alpha\sin\beta + \sin\alpha\cos\beta \\ -\sin\alpha\cos\beta - \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta \end{pmatrix}
+A_\alpha \cdot A_\beta =
+\begin{pmatrix}
+\cos\alpha\cos\beta - \sin\alpha\sin\beta & \cos\alpha\sin\beta + \sin\alpha\cos\beta \\
+-\sin\alpha\cos\beta - \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta
+\end{pmatrix}
 $$
 
 Apply the angle addition formulas:
@@ -153,7 +161,11 @@ $$
 Substitute:
 
 $$
-A_\alpha \cdot A_\beta = \begin{pmatrix} \cos(\alpha+\beta) & \sin(\alpha+\beta) \\ -\sin(\alpha+\beta) & \cos(\alpha+\beta) \end{pmatrix} = A_{\alpha+\beta}
+A_\alpha \cdot A_\beta =
+\begin{pmatrix}
+\cos(\alpha+\beta) & \sin(\alpha+\beta) \\
+-\sin(\alpha+\beta) & \cos(\alpha+\beta)
+\end{pmatrix} = A_{\alpha+\beta}
 $$
 
 Since $\alpha + \beta = \beta + \alpha$:

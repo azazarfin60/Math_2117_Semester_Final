@@ -94,7 +94,11 @@ Since all $c_i = 0$, the set of vectors $\lbrace v_1, \dots, v_k\rbrace$ is line
 **Question:** **Find eigenvalues and eigenvectors of
 
 $$
-A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}.
+A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 2
+\end{pmatrix}.
 $$
 
 **
@@ -104,7 +108,11 @@ $$
 The characteristic equation is $\det(A - \lambda I) = 0$.
 
 $$
-\det\begin{pmatrix} 2 - \lambda & 1 \\ 1 & 2 - \lambda \end{pmatrix} = (2 - \lambda)(2 - \lambda) - 1 = \lambda^2 - 4\lambda + 4 - 1 = \lambda^2 - 4\lambda + 3 = 0
+\det
+\begin{pmatrix}
+2 - \lambda & 1 \\
+1 & 2 - \lambda
+\end{pmatrix} = (2 - \lambda)(2 - \lambda) - 1 = \lambda^2 - 4\lambda + 4 - 1 = \lambda^2 - 4\lambda + 3 = 0
 $$
 
 Factoring the characteristic polynomial:
@@ -120,28 +128,42 @@ The eigenvalues are $\lambda_1 = 3$ and $\lambda_2 = 1$.
 Solve $(A - 3I)v = 0$.
 
 $$
-\begin{pmatrix} 2 - 3 & 1 \\ 1 & 2 - 3 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\begin{pmatrix}
+2 - 3 & 1 \\
+1 & 2 - 3
+\end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 This gives the equation $-x + y = 0 \implies x = y$.
 The eigenvector for $\lambda_1 = 3$ is
 
 $$
-v_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+v_1 =
+\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}.
 $$
 
 **For $\lambda_2 = 1$:**
 Solve $(A - 1I)v = 0$.
 
 $$
-\begin{pmatrix} 2 - 1 & 1 \\ 1 & 2 - 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\begin{pmatrix}
+2 - 1 & 1 \\
+1 & 2 - 1
+\end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 This gives the equation $x + y = 0 \implies x = -y$.
 The eigenvector for $\lambda_2 = 1$ is
 
 $$
-v_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}.
+v_2 =
+\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}.
 $$
 
 ## Q24 (04)
@@ -272,7 +294,10 @@ Thus, $A$ is diagonalizable.
 **Question:** **Diagonalize the matrix:
 
 $$
-\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}
+\begin{pmatrix}
+4 & 1 \\
+0 & 4
+\end{pmatrix}
 $$
 
 (if possible).**
@@ -282,14 +307,22 @@ To determine if the matrix is diagonalizable, we must check if it has 2 linearly
 Let
 
 $$
-A = \begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}.
+A =
+\begin{pmatrix}
+4 & 1 \\
+0 & 4
+\end{pmatrix}.
 $$
 
 **1. Find Eigenvalues:**
 The characteristic equation is $\det(A - \lambda I) = 0$.
 
 $$
-\det\begin{pmatrix} 4 - \lambda & 1 \\ 0 & 4 - \lambda \end{pmatrix} = (4 - \lambda)^2 = 0
+\det
+\begin{pmatrix}
+4 - \lambda & 1 \\
+0 & 4 - \lambda
+\end{pmatrix} = (4 - \lambda)^2 = 0
 $$
 
 The only eigenvalue is $\lambda = 4$ (with algebraic multiplicity 2).
@@ -298,27 +331,40 @@ The only eigenvalue is $\lambda = 4$ (with algebraic multiplicity 2).
 Solve $(A - 4I)v = 0$.
 
 $$
-\begin{pmatrix} 4 - 4 & 1 \\ 0 & 4 - 4 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\begin{pmatrix}
+4 - 4 & 1 \\
+0 & 4 - 4
+\end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
 This gives the equation $y = 0$. The variable $x$ is a free variable.
 So the eigenvectors are of the form
 
 $$
-\begin{pmatrix} x \\ 0 \end{pmatrix} = x \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+\begin{pmatrix}
+x \\
+0
+\end{pmatrix} = x \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
 $$
 
 There is only one linearly independent eigenvector:
 
 $$
-v_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+v_1 =
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}.
 $$
 
 Since the $2 \times 2$ matrix $A$ has only 1 linearly independent eigenvector (its geometric multiplicity is 1), it does not have enough eigenvectors to form an invertible matrix $P$.
 Therefore, the matrix
 
 $$
-\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}
+\begin{pmatrix}
+4 & 1 \\
+0 & 4
+\end{pmatrix}
 $$
 
 is **not diagonalizable**.

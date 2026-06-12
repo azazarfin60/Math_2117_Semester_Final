@@ -48,7 +48,12 @@ The **curl** of a vector field $\vec{F}$ is defined as the cross product of the 
 We compute this using the standard cross product determinant:
 
 $$
-\text{curl }\vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ F_1 & F_2 & F_3 \end{vmatrix}
+\text{curl }\vec{F} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+F_1 & F_2 & F_3
+\end{vmatrix}
 $$
 
 Expanding this gives:
@@ -151,7 +156,12 @@ $$
 For curl:
 
 $$
-\nabla \times \vec{r} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x & y & z \end{vmatrix}
+\nabla \times \vec{r} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x & y & z
+\end{vmatrix}
 $$
 
 Evaluating the determinant gives
@@ -175,7 +185,12 @@ is irrotational.
 Compute the curl:
 
 $$
-\nabla \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ \sin y + z & x\cos y - z & x - y \end{vmatrix}
+\nabla \times \vec{F} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+\sin y + z & x\cos y - z & x - y
+\end{vmatrix}
 $$
 
 Evaluate the $\hat{i}$ component:

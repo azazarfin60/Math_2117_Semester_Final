@@ -63,7 +63,12 @@ A matrix is in row echelon form if it satisfies these three rules:
 This matrix is in echelon form:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 4 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 & 4 \\
+0 & 1 & 2 & 3 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Notice how the pivots (the leading 1s) staircase to the right. The zero row sits at the bottom.
@@ -71,7 +76,12 @@ Notice how the pivots (the leading 1s) staircase to the right. The zero row sits
 This matrix is NOT in echelon form:
 
 $$
-\begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 2 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 2
+\end{bmatrix}
 $$
 
 The zero row is not at the bottom. The last row's pivot is not to the right of the row above it.
@@ -93,7 +103,12 @@ This is the fastest and most exam-friendly method for finding rank. Every exam q
 **Problem**: Find the rank of the matrix (PYQ 2020):
 
 $$
-A = \begin{bmatrix} 6 & 1 & 8 & 3 \\ 2 & 1 & 0 & 2 \\ 4 & -1 & -8 & -3 \end{bmatrix}
+A =
+\begin{bmatrix}
+6 & 1 & 8 & 3 \\
+2 & 1 & 0 & 2 \\
+4 & -1 & -8 & -3
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -101,19 +116,31 @@ $$
 Swap $R_1$ and $R_2$ to get a small leading entry:
 
 $$
-\begin{bmatrix} 2 & 1 & 0 & 2 \\ 6 & 1 & 8 & 3 \\ 4 & -1 & -8 & -3 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 0 & 2 \\
+6 & 1 & 8 & 3 \\
+4 & -1 & -8 & -3
+\end{bmatrix}
 $$
 
 Clear the first column. Apply $R_2 \to R_2 - 3R_1$ and $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 2 & 1 & 0 & 2 \\ 0 & -2 & 8 & -3 \\ 0 & -3 & -8 & -7 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 0 & 2 \\
+0 & -2 & 8 & -3 \\
+0 & -3 & -8 & -7
+\end{bmatrix}
 $$
 
 Clear the second column in row 3. Apply $R_3 \to 2R_3 - 3R_2$:
 
 $$
-\begin{bmatrix} 2 & 1 & 0 & 2 \\ 0 & -2 & 8 & -3 \\ 0 & 0 & -40 & -5 \end{bmatrix}
+\begin{bmatrix}
+2 & 1 & 0 & 2 \\
+0 & -2 & 8 & -3 \\
+0 & 0 & -40 & -5
+\end{bmatrix}
 $$
 
 All three rows are non-zero. So:
@@ -129,7 +156,13 @@ $$
 **Problem**: Find the rank of the matrix (PYQ 2018):
 
 $$
-A = \begin{pmatrix} 1 & -2 & 1 & -1 \\ 1 & 1 & -2 & 3 \\ 4 & 1 & -5 & 8 \\ 5 & -7 & 2 & -1 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & -2 & 1 & -1 \\
+1 & 1 & -2 & 3 \\
+4 & 1 & -5 & 8 \\
+5 & -7 & 2 & -1
+\end{pmatrix}
 $$
 
 **Solution**:
@@ -137,13 +170,23 @@ $$
 Clear the first column. Apply $R_2 \to R_2 - R_1$, $R_3 \to R_3 - 4R_1$, $R_4 \to R_4 - 5R_1$:
 
 $$
-\begin{pmatrix} 1 & -2 & 1 & -1 \\ 0 & 3 & -3 & 4 \\ 0 & 9 & -9 & 12 \\ 0 & 3 & -3 & 4 \end{pmatrix}
+\begin{pmatrix}
+1 & -2 & 1 & -1 \\
+0 & 3 & -3 & 4 \\
+0 & 9 & -9 & 12 \\
+0 & 3 & -3 & 4
+\end{pmatrix}
 $$
 
 Clear the second column. Apply $R_3 \to R_3 - 3R_2$ and $R_4 \to R_4 - R_2$:
 
 $$
-\begin{pmatrix} 1 & -2 & 1 & -1 \\ 0 & 3 & -3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & -2 & 1 & -1 \\
+0 & 3 & -3 & 4 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
 $$
 
 Two non-zero rows remain. So:
@@ -161,7 +204,13 @@ Notice that rows 3 and 4 were multiples of row 2 after the first set of operatio
 **Problem**: Find the rank of the matrix (PYQ 2017):
 
 $$
-A = \begin{bmatrix} 0 & 0 & 1 & -3 & -2 \\ 0 & 1 & 2 & 6 & 0 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+0 & 0 & 1 & -3 & -2 \\
+0 & 1 & 2 & 6 & 0 \\
+0 & 2 & 3 & 9 & 2 \\
+0 & 1 & 1 & 3 & 2
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -169,25 +218,45 @@ $$
 The first column is all zeros. Swap $R_1 \leftrightarrow R_2$ to put a non-zero entry first:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 2 & 3 & 9 & 2 \\ 0 & 1 & 1 & 3 & 2 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 2 & 3 & 9 & 2 \\
+0 & 1 & 1 & 3 & 2
+\end{bmatrix}
 $$
 
 Clear below the first pivot. Apply $R_3 \to R_3 - 2R_1$ and $R_4 \to R_4 - R_1$:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & -1 & -3 & 2 \\ 0 & 0 & -1 & -3 & 2 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & -1 & -3 & 2 \\
+0 & 0 & -1 & -3 & 2
+\end{bmatrix}
 $$
 
 Clear below the second pivot. Apply $R_3 \to R_3 + R_2$ and $R_4 \to R_4 + R_2$:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & -6 & 0 \\ 0 & 0 & 0 & -6 & 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & 0 & -6 & 0 \\
+0 & 0 & 0 & -6 & 0
+\end{bmatrix}
 $$
 
 Apply $R_4 \to R_4 - R_3$:
 
 $$
-\begin{bmatrix} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -3 & -2 \\ 0 & 0 & 0 & -6 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 2 & 6 & 0 \\
+0 & 0 & 1 & -3 & -2 \\
+0 & 0 & 0 & -6 & 0 \\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Three non-zero rows remain. So:
@@ -220,7 +289,12 @@ The minor method is slower than echelon form for large matrices. But it is usefu
 **Problem**: Find the rank of:
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 3 & 4 \\ 3 & 4 & 5 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+2 & 3 & 4 \\
+3 & 4 & 5
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -236,7 +310,10 @@ The $3 \times 3$ minor is zero. So rank is not 3.
 Check a $2 \times 2$ minor. Take the top-left $2 \times 2$ submatrix:
 
 $$
-\begin{vmatrix} 1 & 2 \\ 2 & 3 \end{vmatrix} = 3 - 4 = -1 \neq 0
+\begin{vmatrix}
+1 & 2 \\
+2 & 3
+\end{vmatrix} = 3 - 4 = -1 \neq 0
 $$
 
 A non-zero $2 \times 2$ minor exists. So:
@@ -299,7 +376,13 @@ This means the system $AX = 0$ has one free variable and its solution space is o
 **Question**: Define rank. Find the rank of:
 
 $$
-A = \begin{bmatrix} 1 & 1 & 1 & 1 \\ 1 & 3 & -2 & 1 \\ 2 & 0 & -3 & 2 \\ 3 & 3 & -3 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+1 & 3 & -2 & 1 \\
+2 & 0 & -3 & 2 \\
+3 & 3 & -3 & 3
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -307,19 +390,34 @@ $$
 Apply $R_2 \to R_2 - R_1$, $R_3 \to R_3 - 2R_1$, $R_4 \to R_4 - 3R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 2 & -3 & 0 \\ 0 & -2 & -5 & 0 \\ 0 & 0 & -6 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & -2 & -5 & 0 \\
+0 & 0 & -6 & 0
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 + R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 2 & -3 & 0 \\ 0 & 0 & -8 & 0 \\ 0 & 0 & -6 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & 0 & -8 & 0 \\
+0 & 0 & -6 & 0
+\end{bmatrix}
 $$
 
 Apply $R_4 \to 4R_4 - 3R_3$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 2 & -3 & 0 \\ 0 & 0 & -8 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+0 & 2 & -3 & 0 \\
+0 & 0 & -8 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Three non-zero rows. So $\rho(A) = 3$.
@@ -331,7 +429,12 @@ Three non-zero rows. So $\rho(A) = 3$.
 **Question**: Find the rank of:
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 & 2 \\ 2 & 3 & 5 & 1 \\ 1 & 3 & 4 & 5 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 & 2 \\
+2 & 3 & 5 & 1 \\
+1 & 3 & 4 & 5
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -339,13 +442,21 @@ $$
 Apply $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 1 & 1 & 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 & 2 \\
+0 & -1 & -1 & -3 \\
+0 & 1 & 1 & 3
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 + R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 & 2 \\
+0 & -1 & -1 & -3 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 Two non-zero rows. So $\rho(A) = 2$.
@@ -357,7 +468,12 @@ Two non-zero rows. So $\rho(A) = 2$.
 **Question**: Find the echelon form, row canonical form, and rank of:
 
 $$
-A = \begin{bmatrix} 6 & 3 & -4 \\ -4 & 1 & -6 \\ 1 & 2 & -5 \end{bmatrix}
+A =
+\begin{bmatrix}
+6 & 3 & -4 \\
+-4 & 1 & -6 \\
+1 & 2 & -5
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -367,25 +483,41 @@ $$
 Swap $R_1 \leftrightarrow R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ -4 & 1 & -6 \\ 6 & 3 & -4 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+-4 & 1 & -6 \\
+6 & 3 & -4
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 + 4R_1$ and $R_3 \to R_3 - 6R_1$:
 
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 9 & -26 \\ 0 & -9 & 26 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 9 & -26 \\
+0 & -9 & 26
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 + R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 9 & -26 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 9 & -26 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 Scale $R_2 \to \frac{1}{9}R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & -5 \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & -5 \\
+0 & 1 & -\frac{26}{9} \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 This is the echelon form.
@@ -401,7 +533,11 @@ $$
 The row canonical form is:
 
 $$
-\begin{bmatrix} 1 & 0 & \frac{7}{9} \\ 0 & 1 & -\frac{26}{9} \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & \frac{7}{9} \\
+0 & 1 & -\frac{26}{9} \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 **Step 3: Rank.**

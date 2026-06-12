@@ -76,7 +76,12 @@ Since $\text{dim}(\mathbb{R}^3) = 3$, any basis must have exactly 3 vectors. Our
 We form the coefficient matrix $A$ using the vectors as rows:
 
 $$
-A = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 1 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 0 & 0 \\
+1 & 1 & 0 \\
+1 & 1 & 1
+\end{bmatrix}
 $$
 
 Calculate the determinant $\lvert A \rvert$:
@@ -100,7 +105,12 @@ These three vectors generate $W$. But to find the basis, we must remove any redu
 Construct matrix $A$ with the vectors as rows:
 
 $$
-A = \begin{bmatrix} 1 & -2 & 5 & -3 \\ 2 & 3 & 1 & -4 \\ 3 & 8 & -3 & 5 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+2 & 3 & 1 & -4 \\
+3 & 8 & -3 & 5
+\end{bmatrix}
 $$
 
 Apply elementary row operations to create zeros below the leading diagonal (Echelon form).
@@ -110,14 +120,22 @@ Apply elementary row operations to create zeros below the leading diagonal (Eche
 This simplifies to:
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 14 & -18 & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 14 & -18 & 4
+\end{bmatrix}
 $$
 
 Now, clear the 14 in the third row:
 3. $R_3 \to R_3 - 2R_2$
 
 $$
-\begin{bmatrix} 1 & -2 & 5 & -3 \\ 0 & 7 & -9 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & 5 & -3 \\
+0 & 7 & -9 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
 $$
 
 The third row became completely zero, meaning vector $\alpha_3$ was redundant (it was a combination of $\alpha_1$ and $\alpha_2$).

@@ -51,7 +51,12 @@ If $\nabla \cdot \vec{F} = 0$ everywhere, the vector field is called **solenoida
 The curl of a vector field $\vec{F}$ is the cross product of the Del operator and $\vec{F}$:
 
 $$
-\text{curl }\vec{F} = \nabla \times \vec{F} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ F_1 & F_2 & F_3 \end{vmatrix}
+\text{curl }\vec{F} = \nabla \times \vec{F} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+F_1 & F_2 & F_3
+\end{vmatrix}
 $$
 
 Expanding this gives:
@@ -93,7 +98,12 @@ $$
 2. **Curl of $\vec{r}$ is zero**:
 
 $$
-\nabla \times \vec{r} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x & y & z \end{vmatrix} = \hat{i}(0) - \hat{j}(0) + \hat{k}(0) = \vec{0}
+\nabla \times \vec{r} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x & y & z
+\end{vmatrix} = \hat{i}(0) - \hat{j}(0) + \hat{k}(0) = \vec{0}
 $$
 
 ---

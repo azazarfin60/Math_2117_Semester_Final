@@ -62,19 +62,31 @@ This exact problem appeared in 2020 (7 marks) and 2024 (5 marks).
 Write the augmented matrix:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 1 & 2 & 3 & | & 10 \\ 1 & 2 & \lambda & | & \mu \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+1 & 2 & 3 & | & 10 \\
+1 & 2 & \lambda & | & \mu
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 0 & 1 & 2 & | & 4 \\ 0 & 1 & \lambda - 1 & | & \mu - 6 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+0 & 1 & 2 & | & 4 \\
+0 & 1 & \lambda - 1 & | & \mu - 6
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 6 \\ 0 & 1 & 2 & | & 4 \\ 0 & 0 & \lambda - 3 & | & \mu - 10 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+0 & 1 & 2 & | & 4 \\
+0 & 0 & \lambda - 3 & | & \mu - 10
+\end{bmatrix}
 $$
 
 Now analyze the last row:
@@ -124,7 +136,12 @@ This system has $\lambda$ in the coefficient matrix AND the constant vector. We 
 The coefficient matrix determinant is:
 
 $$
-D = \begin{vmatrix} \lambda & 1 & 1 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix}
+D =
+\begin{vmatrix}
+\lambda & 1 & 1 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix}
 $$
 
 Add all three rows to $R_1$:
@@ -136,13 +153,23 @@ $$
 Factor out $(\lambda + 2)$:
 
 $$
-D = (\lambda + 2) \begin{vmatrix} 1 & 1 & 1 \\ 1 & \lambda & 1 \\ 1 & 1 & \lambda \end{vmatrix}
+D = (\lambda + 2)
+\begin{vmatrix}
+1 & 1 & 1 \\
+1 & \lambda & 1 \\
+1 & 1 & \lambda
+\end{vmatrix}
 $$
 
 Apply $C_2 \to C_2 - C_1$ and $C_3 \to C_3 - C_1$:
 
 $$
-D = (\lambda + 2) \begin{vmatrix} 1 & 0 & 0 \\ 1 & \lambda - 1 & 0 \\ 1 & 0 & \lambda - 1 \end{vmatrix} = (\lambda + 2)(\lambda - 1)^2
+D = (\lambda + 2)
+\begin{vmatrix}
+1 & 0 & 0 \\
+1 & \lambda - 1 & 0 \\
+1 & 0 & \lambda - 1
+\end{vmatrix} = (\lambda + 2)(\lambda - 1)^2
 $$
 
 **Analysis**:
@@ -182,19 +209,31 @@ $$
 Augmented matrix:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 1 & 2 & 3 & | & k \\ 1 & 5 & 9 & | & k^2 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+1 & 2 & 3 & | & k \\
+1 & 5 & 9 & | & k^2
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 2 & | & k - 1 \\ 0 & 4 & 8 & | & k^2 - 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 2 & | & k - 1 \\
+0 & 4 & 8 & | & k^2 - 1
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - 4R_2$:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 2 & | & k - 1 \\ 0 & 0 & 0 & | & k^2 - 4k + 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 & | & 1 \\
+0 & 1 & 2 & | & k - 1 \\
+0 & 0 & 0 & | & k^2 - 4k + 3
+\end{bmatrix}
 $$
 
 Factor the last entry: $k^2 - 4k + 3 = (k - 1)(k - 3)$.
@@ -204,7 +243,11 @@ Factor the last entry: $k^2 - 4k + 3 = (k - 1)(k - 3)$.
 Wait. Let me re-examine. The coefficient matrix after reduction is:
 
 $$
-\begin{bmatrix} 1 & 1 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 Rank of coefficient matrix = 2. Since rank < 3 (number of unknowns), a unique solution is impossible regardless of $k$.

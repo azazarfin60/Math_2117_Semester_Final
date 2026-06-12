@@ -46,7 +46,11 @@ Then $A = PDP^{-1}$.
 The matrix
 
 $$
-A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}
 $$
 
  has eigenvalue $\lambda = 1$ with algebraic multiplicity 2.
@@ -54,13 +58,20 @@ $$
 Solving $(A - I)X = 0$:
 
 $$
-\begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}X = 0
+\begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix}X = 0
 $$
 
 This gives only one eigenvector:
 
 $$
-X = \begin{bmatrix} 1 \\ 0 \end{bmatrix}.
+X =
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}.
 $$
 
 Geometric multiplicity = 1 < algebraic multiplicity = 2. So $A$ is NOT diagonalizable.
@@ -88,7 +99,12 @@ $$
 where $e^D$ is simply:
 
 $$
-e^D = \begin{bmatrix} e^{\lambda_1} & 0 & \dots \\ 0 & e^{\lambda_2} & \dots \\ \vdots & \vdots & \ddots \end{bmatrix}
+e^D =
+\begin{bmatrix}
+e^{\lambda_1} & 0 & \dots \\
+0 & e^{\lambda_2} & \dots \\
+\vdots & \vdots & \ddots
+\end{bmatrix}
 $$
 
 ### Computation Using Decomposition (PYQ 2017)
@@ -98,25 +114,41 @@ When diagonalization fails, decompose $A = I + B$ where $B$ is nilpotent.
 For
 
 $$
-A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}:
+A =
+\begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix}:
 $$
 
 Set
 
 $$
-B = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}.
+B =
+\begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix}.
 $$
 
 Then $B^2 = O$.
 
 $$
-e^A = e^{I+B} = e^I \cdot e^B = e(I + B) = e\begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} e & e \\ 0 & e \end{bmatrix}
+e^A = e^{I+B} = e^I \cdot e^B = e(I + B) = e
+\begin{bmatrix}
+1 & 1 \\
+0 & 1
+\end{bmatrix} = \begin{bmatrix} e & e \\ 0 & e \end{bmatrix}
 $$
 
 For time-dependent version:
 
 $$
-e^{At} = e^t(I + Bt) = e^t\begin{bmatrix} 1 & t \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} e^t & te^t \\ 0 & e^t \end{bmatrix}
+e^{At} = e^t(I + Bt) = e^t
+\begin{bmatrix}
+1 & t \\
+0 & 1
+\end{bmatrix} = \begin{bmatrix} e^t & te^t \\ 0 & e^t \end{bmatrix}
 $$
 
 ---
@@ -160,7 +192,11 @@ $$
 Write in matrix form $\frac{dX}{dt} = MX$ where:
 
 $$
-M = \begin{bmatrix} 6 & -3 \\ 2 & 1 \end{bmatrix}
+M =
+\begin{bmatrix}
+6 & -3 \\
+2 & 1
+\end{bmatrix}
 $$
 
 **Step 1**: Eigenvalues. $\lvert M - \lambda I \rvert = 0$:
@@ -176,19 +212,30 @@ So $\lambda_1 = 3$ and $\lambda_2 = 4$.
 For $\lambda = 3$: $3x - 3y = 0 \implies x = y$. Eigenvector:
 
 $$
-v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}.
+v_1 =
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}.
 $$
 
 For $\lambda = 4$: $2x - 3y = 0 \implies x = \frac{3}{2}y$. Eigenvector:
 
 $$
-v_2 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}.
+v_2 =
+\begin{bmatrix}
+3 \\
+2
+\end{bmatrix}.
 $$
 
 **Step 3**: General solution:
 
 $$
-\begin{bmatrix} x(t) \\ y(t) \end{bmatrix} = C_1 e^{3t}\begin{bmatrix} 1 \\ 1 \end{bmatrix} + C_2 e^{4t}\begin{bmatrix} 3 \\ 2 \end{bmatrix}
+\begin{bmatrix}
+x(t) \\
+y(t)
+\end{bmatrix} = C_1 e^{3t}\begin{bmatrix} 1 \\ 1 \end{bmatrix} + C_2 e^{4t}\begin{bmatrix} 3 \\ 2 \end{bmatrix}
 $$
 
 Component form:

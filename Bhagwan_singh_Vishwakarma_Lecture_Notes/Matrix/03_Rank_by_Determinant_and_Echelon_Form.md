@@ -44,7 +44,12 @@ This method is highly systematic and preferred over the minor method.
 Let us find the rank of matrix $A$:
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 3 & 4 \\ 3 & 4 & 5 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+2 & 3 & 4 \\
+3 & 4 & 5
+\end{bmatrix}
 $$
 
 Apply row operations to make entries below the first pivot zero:
@@ -60,7 +65,12 @@ $$
 This gives the equivalent matrix:
 
 $$
-A \sim \begin{bmatrix} 1 & 2 & 3 \\ 0 & -1 & -2 \\ 0 & -2 & -4 \end{bmatrix}
+A \sim
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & -1 & -2 \\
+0 & -2 & -4
+\end{bmatrix}
 $$
 
 Apply row operation to make entry below the second pivot zero:
@@ -72,7 +82,12 @@ $$
 This gives the matrix in Echelon form:
 
 $$
-A \sim \begin{bmatrix} 1 & 2 & 3 \\ 0 & -1 & -2 \\ 0 & 0 & 0 \end{bmatrix}
+A \sim
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & -1 & -2 \\
+0 & 0 & 0
+\end{bmatrix}
 $$
 
 There are two non-zero rows in the Echelon form matrix.

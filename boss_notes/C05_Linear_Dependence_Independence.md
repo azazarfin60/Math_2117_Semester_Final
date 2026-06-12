@@ -46,7 +46,12 @@ are linearly dependent, and determine a relation between them.
 **Step 1: Check Determinant**
 
 $$
-D = \begin{vmatrix} 2 & 1 & -3 \\ 1 & 0 & -4 \\ 4 & 3 & -1 \end{vmatrix} = 2(0 - (-12)) - 1(-1 - (-16)) - 3(3 - 0) = 24 - 15 - 9 = 0
+D =
+\begin{vmatrix}
+2 & 1 & -3 \\
+1 & 0 & -4 \\
+4 & 3 & -1
+\end{vmatrix} = 2(0 - (-12)) - 1(-1 - (-16)) - 3(3 - 0) = 24 - 15 - 9 = 0
 $$
 
 Since $D = 0$, the vectors are linearly dependent.

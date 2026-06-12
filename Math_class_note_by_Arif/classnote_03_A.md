@@ -177,7 +177,12 @@ $$
 (c)
 
 $$
-B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\ -\cos t & -\sin t & 0 \end{vmatrix} = \frac{4}{5}\sin t \hat{i} - \frac{4}{5}\cos t \hat{j} + \frac{3}{5}\hat{k}
+B = T \times N =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+-\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\
+-\cos t & -\sin t & 0
+\end{vmatrix} = \frac{4}{5}\sin t \hat{i} - \frac{4}{5}\cos t \hat{j} + \frac{3}{5}\hat{k}
 $$
 
 $$
@@ -233,7 +238,12 @@ N = \frac{1}{k}\frac{dT}{ds} = \frac{-2t\hat{i} + (1-2t^2)\hat{j} + 2t\hat{k}}{1
 $$
 
 $$
-B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{1}{1+2t^2} & \frac{2t}{1+2t^2} & \frac{2t^2}{1+2t^2} \\ \frac{-2t}{1+2t^2} & \frac{1-2t^2}{1+2t^2} & \frac{2t}{1+2t^2} \end{vmatrix} = \frac{2t^2\hat{i} - 2t\hat{j} + \hat{k}}{1+2t^2}
+B = T \times N =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{1}{1+2t^2} & \frac{2t}{1+2t^2} & \frac{2t^2}{1+2t^2} \\
+\frac{-2t}{1+2t^2} & \frac{1-2t^2}{1+2t^2} & \frac{2t}{1+2t^2}
+\end{vmatrix} = \frac{2t^2\hat{i} - 2t\hat{j} + \hat{k}}{1+2t^2}
 $$
 
 $$
@@ -259,7 +269,12 @@ $I = \text{identity matrix}$
 $A, B$ একে অপরের inverse
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix}
 $$
 
 $|A| = 3 \neq 0 \text{ [non-singular]}$
@@ -269,7 +284,12 @@ Using only elementary row operation:
 $A = AI$
 
 $$
-= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+=
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
 $$
 
 এটিকে identity matrix বানালে এটা inverse হবে
@@ -279,26 +299,42 @@ $R_2 \rightarrow R_1 + R_2$
 $R_3 \rightarrow R_1 - R_3$
 
 $$
-\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 1 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & 4 & 7 \\
+0 & 1 & 1
+\end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1 \end{bmatrix}
 $$
 
 $R_3 \rightarrow R_2 - 4R_3$
 
 $$
-\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 3 \\
+0 & 4 & 7 \\
+0 & 0 & 3
+\end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
 $$
 
 $R_1 \rightarrow 2R_1 - R_2$
 
 $$
-\begin{bmatrix} 2 & 0 & -1 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 1 & -1 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
+\begin{bmatrix}
+2 & 0 & -1 \\
+0 & 4 & 7 \\
+0 & 0 & 3
+\end{bmatrix} \begin{bmatrix} 1 & -1 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
 $$
 
 $R_1 \rightarrow 3R_1 + R_3$
 $R_2 \rightarrow 3R_2 - 7R_3$
 
 $$
-\begin{bmatrix} 6 & 0 & 0 \\ 0 & 12 & 0 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 0 & -2 & 4 \\ 24 & -4 & -28 \\ -3 & 1 & 4 \end{bmatrix}
+\begin{bmatrix}
+6 & 0 & 0 \\
+0 & 12 & 0 \\
+0 & 0 & 3
+\end{bmatrix} \begin{bmatrix} 0 & -2 & 4 \\ 24 & -4 & -28 \\ -3 & 1 & 4 \end{bmatrix}
 $$
 
 <!-- Page 026 -->
@@ -307,20 +343,34 @@ $R_2 \rightarrow \frac{1}{12}R_2$
 $R_3 \rightarrow \frac{1}{3}R_3$
 
 $$
-\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
 $$
 
 Thus the inverse of matrix $A$,
 
 $$
-A^{-1} = \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
+A^{-1} =
+\begin{bmatrix}
+0 & -\frac{1}{3} & \frac{2}{3} \\
+2 & -\frac{1}{3} & -\frac{7}{3} \\
+-1 & \frac{1}{3} & \frac{4}{3}
+\end{bmatrix}
 $$
 
 **Justification:**
 $A A^{-1} = I$
 
 $$
-= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+=
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
 $$
 
 * আসতে পারে
@@ -338,7 +388,11 @@ M for 13
 Now we construct the matrix with the message as,
 
 $$
-B = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
+B =
+\begin{bmatrix}
+11 & 9 & 12 & 12 \\
+8 & 9 & 13 & 0
+\end{bmatrix}
 $$
 
 or,
@@ -350,14 +404,22 @@ $$
 we now take the preferable $2 \times 2$ matrix as
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 1
+\end{bmatrix}
 $$
 
 (always square)
 with inverse
 
 $$
-A^{-1} = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix}
+A^{-1} = \frac{1}{3}
+\begin{bmatrix}
+1 & -2 \\
+1 & 1
+\end{bmatrix}
 $$
 
 (inverse exist না করলে নেওয়া যাবে না)
@@ -365,14 +427,22 @@ $$
 **Encoded matrix:**
 
 $$
-I_C = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix} = \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix}
+I_C =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 1
+\end{bmatrix} \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix} = \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix}
 $$
 
 <!-- Page 027 -->
 **Decoded matrix:**
 
 $$
-A^{-1} (I_C) = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix} = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
+A^{-1} (I_C) = \frac{1}{3}
+\begin{bmatrix}
+1 & -2 \\
+1 & 1
+\end{bmatrix} \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix} = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
 $$
 
 **# Dependent নাকি independent**
@@ -391,11 +461,19 @@ $$
 $$
 
 $$
-\begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 1 & 1 & 1 \end{pmatrix} - \text{rank-3 = independent}
+\begin{pmatrix}
+1 & 2 & 3 \\
+1 & 2 & 1 \\
+1 & 1 & 1
+\end{pmatrix} - \text{rank-3 = independent}
 $$
 
 $$
-\begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 0 & 0 & 0 \end{pmatrix} - \text{dependent}
+\begin{pmatrix}
+1 & 2 & 3 \\
+1 & 2 & 1 \\
+0 & 0 & 0
+\end{pmatrix} - \text{dependent}
 $$
 
 <!-- Page 028 -->

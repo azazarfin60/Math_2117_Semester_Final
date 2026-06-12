@@ -50,13 +50,21 @@ This allows us to compute $A^{-1}$ using only basic matrix multiplications.
 Verify Cayley-Hamilton theorem and find $A^{-1}$ for:
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 3
+\end{bmatrix}
 $$
 
 **1. Characteristic Equation:**
 
 $$
-\left| A - \lambda I \right| = \begin{vmatrix} 1 - \lambda & 2 \\ -1 & 3 - \lambda \end{vmatrix} = 0
+\left| A - \lambda I \right| =
+\begin{vmatrix}
+1 - \lambda & 2 \\
+-1 & 3 - \lambda
+\end{vmatrix} = 0
 $$
 
 $$
@@ -67,11 +75,19 @@ $$
 We must show $A^2 - 4A + 5I = O$.
 
 $$
-A^2 = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} = \begin{bmatrix} -1 & 8 \\ -4 & 7 \end{bmatrix}
+A^2 =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 3
+\end{bmatrix} \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} = \begin{bmatrix} -1 & 8 \\ -4 & 7 \end{bmatrix}
 $$
 
 $$
-A^2 - 4A + 5I = \begin{bmatrix} -1 & 8 \\ -4 & 7 \end{bmatrix} - \begin{bmatrix} 4 & 8 \\ -4 & 12 \end{bmatrix} + \begin{bmatrix} 5 & 0 \\ 0 & 5 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O
+A^2 - 4A + 5I =
+\begin{bmatrix}
+-1 & 8 \\
+-4 & 7
+\end{bmatrix} - \begin{bmatrix} 4 & 8 \\ -4 & 12 \end{bmatrix} + \begin{bmatrix} 5 & 0 \\ 0 & 5 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O
 $$
 
 **3. Finding $A^{-1}$:**
@@ -82,18 +98,31 @@ A - 4I + 5A^{-1} = O \implies A^{-1} = \frac{1}{5}(4I - A)
 $$
 
 $$
-4I - A = \begin{bmatrix} 4 & 0 \\ 0 & 4 \end{bmatrix} - \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} = \begin{bmatrix} 3 & -2 \\ 1 & 1 \end{bmatrix}
+4I - A =
+\begin{bmatrix}
+4 & 0 \\
+0 & 4
+\end{bmatrix} - \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} = \begin{bmatrix} 3 & -2 \\ 1 & 1 \end{bmatrix}
 $$
 
 $$
-A^{-1} = \frac{1}{5} \begin{bmatrix} 3 & -2 \\ 1 & 1 \end{bmatrix}
+A^{-1} = \frac{1}{5}
+\begin{bmatrix}
+3 & -2 \\
+1 & 1
+\end{bmatrix}
 $$
 
 ### Solved Problem: Order 3 Matrix
 Find $A^{-1}$ using Cayley-Hamilton for:
 
 $$
-A = \begin{bmatrix} 1 & 0 & 2 \\ 0 & 2 & 1 \\ 2 & 0 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 0 & 2 \\
+0 & 2 & 1 \\
+2 & 0 & 3
+\end{bmatrix}
 $$
 
 **1. Characteristic Equation:**
@@ -113,15 +142,30 @@ $$
 Compute the required matrix components:
 
 $$
-A^2 = \begin{bmatrix} 5 & 0 & 8 \\ 2 & 4 & 5 \\ 8 & 0 & 13 \end{bmatrix}
+A^2 =
+\begin{bmatrix}
+5 & 0 & 8 \\
+2 & 4 & 5 \\
+8 & 0 & 13
+\end{bmatrix}
 $$
 
 $$
--A^2 + 6A - 7I = -\begin{bmatrix} 5 & 0 & 8 \\ 2 & 4 & 5 \\ 8 & 0 & 13 \end{bmatrix} + \begin{bmatrix} 6 & 0 & 12 \\ 0 & 12 & 6 \\ 12 & 0 & 18 \end{bmatrix} - \begin{bmatrix} 7 & 0 & 0 \\ 0 & 7 & 0 \\ 0 & 0 & 7 \end{bmatrix} = \begin{bmatrix} -6 & 0 & 4 \\ -2 & 1 & 1 \\ 4 & 0 & -2 \end{bmatrix}
+-A^2 + 6A - 7I = -
+\begin{bmatrix}
+5 & 0 & 8 \\
+2 & 4 & 5 \\
+8 & 0 & 13
+\end{bmatrix} + \begin{bmatrix} 6 & 0 & 12 \\ 0 & 12 & 6 \\ 12 & 0 & 18 \end{bmatrix} - \begin{bmatrix} 7 & 0 & 0 \\ 0 & 7 & 0 \\ 0 & 0 & 7 \end{bmatrix} = \begin{bmatrix} -6 & 0 & 4 \\ -2 & 1 & 1 \\ 4 & 0 & -2 \end{bmatrix}
 $$
 
 $$
-A^{-1} = \frac{1}{2} \begin{bmatrix} -6 & 0 & 4 \\ -2 & 1 & 1 \\ 4 & 0 & -2 \end{bmatrix}
+A^{-1} = \frac{1}{2}
+\begin{bmatrix}
+-6 & 0 & 4 \\
+-2 & 1 & 1 \\
+4 & 0 & -2
+\end{bmatrix}
 $$
 
 ## What Comes Next

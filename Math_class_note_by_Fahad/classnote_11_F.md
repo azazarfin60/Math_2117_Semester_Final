@@ -82,7 +82,11 @@ Now, we will check how many of them are independent.
 Now, we will generate the following matrix and will reduce it to its echelon form. Matrix as follows:-
 
 $$
-\begin{pmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 0 & -1 & 2 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 1 \\
+2 & 1 & 0 \\
+0 & -1 & 2
+\end{pmatrix}
 $$
 
 $$
@@ -90,7 +94,12 @@ R\_2 \rightarrow 2R\_1 - R\_2
 $$
 
 $$
-\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & -1 & 2 \end{pmatrix}
+\sim
+\begin{pmatrix}
+1 & 0 & 1 \\
+0 & -1 & 2 \\
+0 & -1 & 2
+\end{pmatrix}
 $$
 
 $$
@@ -98,7 +107,12 @@ R\_3 \rightarrow R\_2 - R\_3
 $$
 
 $$
-\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & 0 & 0 \end{pmatrix}
+\sim
+\begin{pmatrix}
+1 & 0 & 1 \\
+0 & -1 & 2 \\
+0 & 0 & 0
+\end{pmatrix}
 $$
 
 We see there are 2 independent vectors $(1,0,1)$ and $(0,-1,2)$ and hence $\lbrace (1,0,1) , (0,-1,2) \rbrace$ is a basis of Im $T$.
@@ -321,7 +335,11 @@ $$
 $\therefore$ The required matrix representation is:-
 
 $$
-T = \begin{bmatrix} 77 & -43 \\ 124 & -69 \end{bmatrix}^t = \begin{bmatrix} 77 & 124 \\ -43 & -69 \end{bmatrix}
+T =
+\begin{bmatrix}
+77 & -43 \\
+124 & -69
+\end{bmatrix}^t = \begin{bmatrix} 77 & 124 \\ -43 & -69 \end{bmatrix}
 $$
 
 ---
@@ -391,7 +409,11 @@ $$
 $\star$ **Find the angle between the matrices.**
 
 $$
-u = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \quad \text{and} \quad v = \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
+u =
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix} \quad \text{and} \quad v = \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
 $$
 
 $$

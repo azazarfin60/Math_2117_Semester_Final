@@ -94,7 +94,12 @@ over the flat unit disk bounded by the circle.
 First, compute the curl:
 
 $$
-\nabla \times \mathbf{F} = \det \begin{vmatrix} \hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x + 2y & y + 3x & 0 \end{vmatrix} = \hat{\mathbf{k}}\left( \frac{\partial}{\partial x}(y + 3x) - \frac{\partial}{\partial y}(x + 2y) \right) = \hat{\mathbf{k}}(3 - 2) = \hat{\mathbf{k}}
+\nabla \times \mathbf{F} = \det
+\begin{vmatrix}
+\hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+x + 2y & y + 3x & 0
+\end{vmatrix} = \hat{\mathbf{k}}\left( \frac{\partial}{\partial x}(y + 3x) - \frac{\partial}{\partial y}(x + 2y) \right) = \hat{\mathbf{k}}(3 - 2) = \hat{\mathbf{k}}
 $$
 
 Since the surface is flat in the $xy$-plane, the outward unit normal is $\hat{\mathbf{n}} = \hat{\mathbf{k}}$.
@@ -164,7 +169,12 @@ over the **curved hemispherical surface**.
 Compute the curl:
 
 $$
-\nabla \times \mathbf{F} = \det \begin{vmatrix} \hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y & z & x \end{vmatrix} = \hat{\mathbf{i}}(0 - 1) - \hat{\mathbf{j}}(1 - 0) + \hat{\mathbf{k}}(0 - 1) = -\hat{\mathbf{i}} - \hat{\mathbf{j}} - \hat{\mathbf{k}}
+\nabla \times \mathbf{F} = \det
+\begin{vmatrix}
+\hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+y & z & x
+\end{vmatrix} = \hat{\mathbf{i}}(0 - 1) - \hat{\mathbf{j}}(1 - 0) + \hat{\mathbf{k}}(0 - 1) = -\hat{\mathbf{i}} - \hat{\mathbf{j}} - \hat{\mathbf{k}}
 $$
 
 Find the unit normal vector $\hat{\mathbf{n}}$ for the sphere $g(x,y,z) = x^2 + y^2 + z^2 - 1 = 0$:

@@ -165,7 +165,11 @@ $$
 **Problem**: Verify Cayley-Hamilton and find $A^{-1}$ for:
 
 $$
-A = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 3
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -181,19 +185,31 @@ $$
 **Step 3**: Compute $A^2$:
 
 $$
-A^2 = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix}\begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} = \begin{bmatrix} -1 & 8 \\ -4 & 7 \end{bmatrix}
+A^2 =
+\begin{bmatrix}
+1 & 2 \\
+-1 & 3
+\end{bmatrix}\begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} = \begin{bmatrix} -1 & 8 \\ -4 & 7 \end{bmatrix}
 $$
 
 **Step 4**: Verify:
 
 $$
-A^2 - 4A + 5I = \begin{bmatrix} -1 & 8 \\ -4 & 7 \end{bmatrix} - \begin{bmatrix} 4 & 8 \\ -4 & 12 \end{bmatrix} + \begin{bmatrix} 5 & 0 \\ 0 & 5 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O \quad \checkmark
+A^2 - 4A + 5I =
+\begin{bmatrix}
+-1 & 8 \\
+-4 & 7
+\end{bmatrix} - \begin{bmatrix} 4 & 8 \\ -4 & 12 \end{bmatrix} + \begin{bmatrix} 5 & 0 \\ 0 & 5 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O \quad \checkmark
 $$
 
 **Step 5**: Find $A^{-1}$. Multiply by $A^{-1}$:
 
 $$
-A - 4I + 5A^{-1} = O \implies A^{-1} = \frac{1}{5}(4I - A) = \frac{1}{5}\begin{bmatrix} 3 & -2 \\ 1 & 1 \end{bmatrix}
+A - 4I + 5A^{-1} = O \implies A^{-1} = \frac{1}{5}(4I - A) = \frac{1}{5}
+\begin{bmatrix}
+3 & -2 \\
+1 & 1
+\end{bmatrix}
 $$
 
 ---
@@ -203,7 +219,12 @@ $$
 **Problem**: Verify Cayley-Hamilton for the following matrix and find $A^{-1}$:
 
 $$
-A = \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{pmatrix}
+A =
+\begin{pmatrix}
+2 & -1 & 1 \\
+-1 & 2 & -1 \\
+1 & -1 & 2
+\end{pmatrix}
 $$
 
 **Solution**:
@@ -219,13 +240,23 @@ $$
 **Step 3**: Compute $A^2$:
 
 $$
-A^2 = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix}
+A^2 =
+\begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix}
 $$
 
 Compute $A^3 = A^2 \cdot A$:
 
 $$
-A^3 = \begin{pmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{pmatrix}
+A^3 =
+\begin{pmatrix}
+22 & -21 & 21 \\
+-21 & 22 & -21 \\
+21 & -21 & 22
+\end{pmatrix}
 $$
 
 **Step 4**: Verify. Check diagonal entry $(1,1)$: $22 - 6(6) + 9(2) - 4 = 22 - 36 + 18 - 4 = 0$. Check off-diagonal entry $(1,2)$: $-21 - 6(-5) + 9(-1) - 0 = -21 + 30 - 9 = 0$. All entries verify to zero.
@@ -237,11 +268,21 @@ A^2 - 6A + 9I = 4A^{-1}
 $$
 
 $$
-4A^{-1} = \begin{pmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{pmatrix} - \begin{pmatrix} 12 & -6 & 6 \\ -6 & 12 & -6 \\ 6 & -6 & 12 \end{pmatrix} + \begin{pmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{pmatrix} = \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix}
+4A^{-1} =
+\begin{pmatrix}
+6 & -5 & 5 \\
+-5 & 6 & -5 \\
+5 & -5 & 6
+\end{pmatrix} - \begin{pmatrix} 12 & -6 & 6 \\ -6 & 12 & -6 \\ 6 & -6 & 12 \end{pmatrix} + \begin{pmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{pmatrix} = \begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix}
 $$
 
 $$
-A^{-1} = \frac{1}{4}\begin{pmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{pmatrix}
+A^{-1} = \frac{1}{4}
+\begin{pmatrix}
+3 & 1 & -1 \\
+1 & 3 & 1 \\
+-1 & 1 & 3
+\end{pmatrix}
 $$
 
 ---
@@ -251,7 +292,12 @@ $$
 **Problem**: Verify Cayley-Hamilton for $A$ and compute $A^{-1}$:
 
 $$
-A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}
+A =
+\begin{bmatrix}
+2 & 2 & 1 \\
+1 & 3 & 1 \\
+1 & 2 & 2
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -263,7 +309,12 @@ $$
 **Step 3**: Compute:
 
 $$
-A^2 = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix}, \quad A^3 = \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix}
+A^2 =
+\begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix}, \quad A^3 = \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix}
 $$
 
 **Step 4**: Verify. Entry $(1,1)$: $32 - 49 + 22 - 5 = 0$. Entry $(1,2)$: $62 - 84 + 22 + 0 = 0$. All entries zero.
@@ -271,11 +322,21 @@ $$
 **Step 5**: Find $A^{-1}$:
 
 $$
-5A^{-1} = A^2 - 7A + 11I = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} - \begin{bmatrix} 14 & 14 & 7 \\ 7 & 21 & 7 \\ 7 & 14 & 14 \end{bmatrix} + \begin{bmatrix} 11 & 0 & 0 \\ 0 & 11 & 0 \\ 0 & 0 & 11 \end{bmatrix} = \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+5A^{-1} = A^2 - 7A + 11I =
+\begin{bmatrix}
+7 & 12 & 6 \\
+6 & 13 & 6 \\
+6 & 12 & 7
+\end{bmatrix} - \begin{bmatrix} 14 & 14 & 7 \\ 7 & 21 & 7 \\ 7 & 14 & 14 \end{bmatrix} + \begin{bmatrix} 11 & 0 & 0 \\ 0 & 11 & 0 \\ 0 & 0 & 11 \end{bmatrix} = \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
 $$
 
 $$
-A^{-1} = \frac{1}{5}\begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}
+A^{-1} = \frac{1}{5}
+\begin{bmatrix}
+4 & -2 & -1 \\
+-1 & 3 & -1 \\
+-1 & -2 & 4
+\end{bmatrix}
 $$
 
 ---

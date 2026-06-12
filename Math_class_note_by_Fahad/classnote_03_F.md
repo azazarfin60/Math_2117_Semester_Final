@@ -85,7 +85,12 @@ $$
 Again,
 
 $$
-\vec{B} = \vec{T} \times \vec{N} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\ -\cos t & -\sin t & 0 \end{vmatrix}
+\vec{B} = \vec{T} \times \vec{N} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+-\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\
+-\cos t & -\sin t & 0
+\end{vmatrix}
 $$
 
 $$
@@ -236,7 +241,12 @@ $$
 #### Curl of gradient
 
 $$
-\nabla \times (\nabla \phi) = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ 6x^2y^2z^4 & 4x^3yz^4 & 8x^3y^2z^3 \end{vmatrix}
+\nabla \times (\nabla \phi) =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+6x^2y^2z^4 & 4x^3yz^4 & 8x^3y^2z^3
+\end{vmatrix}
 $$
 
 $$
@@ -260,7 +270,12 @@ $$
 $\nabla \times \vec{A} = ?$
 
 $$
-\nabla \times \vec{A} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ xz^3 & -2x^2yz & 2xz^4 \end{vmatrix}
+\nabla \times \vec{A} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+xz^3 & -2x^2yz & 2xz^4
+\end{vmatrix}
 $$
 
 $$
@@ -293,7 +308,10 @@ $$
 $\star$
 
 $$
-\begin{matrix} x+y=2 \\ x+2y=3 \end{matrix} \quad ; \quad x=1, y=1 \rightarrow \text{unique solutions.}
+\begin{matrix}
+x+y=2 \\
+x+2y=3
+\end{matrix} \quad ; \quad x=1, y=1 \rightarrow \text{unique solutions.}
 $$
 
 ---
@@ -301,7 +319,10 @@ $$
 $\star$
 
 $$
-\begin{matrix} x+y=2 & \text{--- (I)} \\ 2x+2y=3 & \text{--- (II)} \end{matrix}
+\begin{matrix}
+x+y=2 & \text{--- (I)} \\
+2x+2y=3 & \text{--- (II)}
+\end{matrix}
 $$
 
 ```
@@ -322,13 +343,21 @@ $$
 **previous solution.**
 
 $$
-\begin{bmatrix} 1 & -2 & -5 & \bigm| & 2 \\ 0 & -1 & -2 & \bigm| & 0 \\ 0 & 0 & 1 & \bigm| & -1 \end{bmatrix}
+\begin{bmatrix}
+1 & -2 & -5 & \bigm| & 2 \\
+0 & -1 & -2 & \bigm| & 0 \\
+0 & 0 & 1 & \bigm| & -1
+\end{bmatrix}
 $$
 
 Then the equivalent system will be:-
 
 $$
-\begin{matrix} x - 2y - 5z = 2 & \text{--- (I)} \\ -y - 2z = 0 & \text{--- (II)} \\ z = -1 & \text{--- (III)} \end{matrix}
+\begin{matrix}
+x - 2y - 5z = 2 & \text{--- (I)} \\
+-y - 2z = 0 & \text{--- (II)} \\
+z = -1 & \text{--- (III)}
+\end{matrix}
 $$
 
 $$
@@ -372,7 +401,12 @@ X = A^{-1}B
 $$
 
 $$
-\therefore \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}
+\therefore
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}
 $$
 
 > [!NOTE]
@@ -412,7 +446,11 @@ AX = B
 $$
 
 $$
-\begin{bmatrix} 1 & 1 & 3 \\ 2 & 1 & -2 \\ 1 & 2 & \lambda \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 5 \\ 7 \\ 3 \end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 3 \\
+2 & 1 & -2 \\
+1 & 2 & \lambda
+\end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 5 \\ 7 \\ 3 \end{bmatrix}
 $$
 
 ---
@@ -422,15 +460,29 @@ $$
 Now, augmented matrix
 
 $$
-[A : B] = \begin{bmatrix} 1 & 1 & 3 & \bigm| & 5 \\ 2 & 1 & -2 & \bigm| & 7 \\ 1 & 2 & \lambda & \bigm| & 3 \end{bmatrix}
+[A : B] =
+\begin{bmatrix}
+1 & 1 & 3 & \bigm| & 5 \\
+2 & 1 & -2 & \bigm| & 7 \\
+1 & 2 & \lambda & \bigm| & 3
+\end{bmatrix}
 $$
 
 $$
-[A : B] \quad \begin{matrix} R_2 \rightarrow 2R_1 - R_2 \\ R_3 \rightarrow R_1 - R_3 \end{matrix}
+[A : B] \quad
+\begin{matrix}
+R_2 \rightarrow 2R_1 - R_2 \\
+R_3 \rightarrow R_1 - R_3
+\end{matrix}
 $$
 
 $$
-\sim \begin{bmatrix} 1 & 1 & 3 & \bigm| & 5 \\ 0 & 1 & 7 & \bigm| & 3 \\ 0 & -1 & 3-\lambda & \bigm| & 2 \end{bmatrix}
+\sim
+\begin{bmatrix}
+1 & 1 & 3 & \bigm| & 5 \\
+0 & 1 & 7 & \bigm| & 3 \\
+0 & -1 & 3-\lambda & \bigm| & 2
+\end{bmatrix}
 $$
 
 $$
@@ -438,7 +490,12 @@ $$
 $$
 
 $$
-\sim \begin{bmatrix} 1 & 1 & 3 & \bigm| & 5 \\ 0 & 1 & 7 & \bigm| & 3 \\ 0 & 0 & 10-\lambda & \bigm| & 5 \end{bmatrix} \quad \text{which is the echelon matrix of } [A:B]
+\sim
+\begin{bmatrix}
+1 & 1 & 3 & \bigm| & 5 \\
+0 & 1 & 7 & \bigm| & 3 \\
+0 & 0 & 10-\lambda & \bigm| & 5
+\end{bmatrix} \quad \text{which is the echelon matrix of } [A:B]
 $$
 
 ### (I) Case 1:-

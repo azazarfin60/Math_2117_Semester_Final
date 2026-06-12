@@ -15,7 +15,13 @@ These fundamentals rarely appear as standalone problems. But they are the founda
 A matrix is a rectangular array of numbers arranged in rows and columns. A matrix with $m$ rows and $n$ columns has order $m \times n$.
 
 $$
-A = \begin{bmatrix} a_{11} & a_{12} & \dots & a_{1n} \\ a_{21} & a_{22} & \dots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \dots & a_{mn} \end{bmatrix}
+A =
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix}
 $$
 
 The element $a_{ij}$ sits in row $i$ and column $j$.
@@ -83,7 +89,11 @@ You can only multiply $A_{m \times n}$ by $B_{n \times p}$. The inner dimensions
 For a 2x2 matrix:
 
 $$
-|A| = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
+|A| =
+\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix} = ad - bc
 $$
 
 For a 3x3 matrix, expand along row 1:

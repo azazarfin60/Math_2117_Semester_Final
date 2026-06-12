@@ -3,11 +3,21 @@
 ## Page 51
 
 $$
-A^t = \begin{bmatrix} a_{11} & a_{21} & a_{31} \\ a_{12} & a_{22} & a_{32} \\ a_{13} & a_{23} & a_{33} \end{bmatrix} \quad \text{and} \quad B^t = \begin{bmatrix} b_{11} & b_{21} & b_{31} \\ b_{12} & b_{22} & b_{32} \\ b_{13} & b_{23} & b_{33} \end{bmatrix}
+A^t =
+\begin{bmatrix}
+a_{11} & a_{21} & a_{31} \\
+a_{12} & a_{22} & a_{32} \\
+a_{13} & a_{23} & a_{33}
+\end{bmatrix} \quad \text{and} \quad B^t = \begin{bmatrix} b_{11} & b_{21} & b_{31} \\ b_{12} & b_{22} & b_{32} \\ b_{13} & b_{23} & b_{33} \end{bmatrix}
 $$
 
 $$
-AB = \begin{bmatrix} a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & a_{11}b_{13}+a_{12}b_{23}+a_{13}b_{33} \\ a_{21}b_{11}+a_{22}b_{21}+a_{23}b_{31} & a_{21}b_{12}+a_{22}b_{22}+a_{23}b_{32} & a_{21}b_{13}+a_{22}b_{23}+a_{23}b_{33} \\ a_{31}b_{11}+a_{32}b_{21}+a_{33}b_{31} & a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32} & a_{31}b_{13}+a_{32}b_{23}+a_{33}b_{33} \end{bmatrix}
+AB =
+\begin{bmatrix}
+a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & a_{11}b_{13}+a_{12}b_{23}+a_{13}b_{33} \\
+a_{21}b_{11}+a_{22}b_{21}+a_{23}b_{31} & a_{21}b_{12}+a_{22}b_{22}+a_{23}b_{32} & a_{21}b_{13}+a_{22}b_{23}+a_{23}b_{33} \\
+a_{31}b_{11}+a_{32}b_{21}+a_{33}b_{31} & a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32} & a_{31}b_{13}+a_{32}b_{23}+a_{33}b_{33}
+\end{bmatrix}
 $$
 
 > [!NOTE]
@@ -41,7 +51,12 @@ $$
 ---
 
 $$
-(AB)^t = \begin{bmatrix} a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & a_{21}b_{11}+a_{22}b_{21}+a_{23}b_{31} & a_{31}b_{11}+a_{32}b_{21}+a_{33}b_{31} \\ a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & a_{21}b_{12}+a_{22}b_{22}+a_{23}b_{32} & a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32} \\ a_{11}b_{13}+a_{12}b_{23}+a_{13}b_{33} & a_{21}b_{13}+a_{22}b_{23}+a_{23}b_{33} & a_{31}b_{13}+a_{32}b_{23}+a_{33}b_{33} \end{bmatrix}
+(AB)^t =
+\begin{bmatrix}
+a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & a_{21}b_{11}+a_{22}b_{21}+a_{23}b_{31} & a_{31}b_{11}+a_{32}b_{21}+a_{33}b_{31} \\
+a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & a_{21}b_{12}+a_{22}b_{22}+a_{23}b_{32} & a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32} \\
+a_{11}b_{13}+a_{12}b_{23}+a_{13}b_{33} & a_{21}b_{13}+a_{22}b_{23}+a_{23}b_{33} & a_{31}b_{13}+a_{32}b_{23}+a_{33}b_{33}
+\end{bmatrix}
 $$
 
 $$
@@ -64,7 +79,12 @@ $\star$ **Prove that $(AB)^t = B^t A^t$**
 From previous class,
 
 $$
-(AB)^t = \begin{bmatrix} a_{11}b_{11}+a_{21}b_{12}+a_{31}b_{13} & a_{12}b_{11}+a_{22}b_{12}+a_{32}b_{13} & a_{13}b_{11}+a_{23}b_{12}+a_{33}b_{13} \\ a_{11}b_{21}+a_{21}b_{22}+a_{31}b_{23} & a_{12}b_{21}+a_{22}b_{22}+a_{32}b_{23} & a_{13}b_{21}+a_{23}b_{22}+a_{33}b_{23} \\ a_{11}b_{31}+a_{21}b_{32}+a_{31}b_{33} & a_{12}b_{31}+a_{22}b_{32} & a_{13}b_{31}+a_{23}b_{32}+a_{33}b_{33} \end{bmatrix}
+(AB)^t =
+\begin{bmatrix}
+a_{11}b_{11}+a_{21}b_{12}+a_{31}b_{13} & a_{12}b_{11}+a_{22}b_{12}+a_{32}b_{13} & a_{13}b_{11}+a_{23}b_{12}+a_{33}b_{13} \\
+a_{11}b_{21}+a_{21}b_{22}+a_{31}b_{23} & a_{12}b_{21}+a_{22}b_{22}+a_{32}b_{23} & a_{13}b_{21}+a_{23}b_{22}+a_{33}b_{23} \\
+a_{11}b_{31}+a_{21}b_{32}+a_{31}b_{33} & a_{12}b_{31}+a_{22}b_{32} & a_{13}b_{31}+a_{23}b_{32}+a_{33}b_{33}
+\end{bmatrix}
 $$
 
 > [!NOTE]
@@ -207,7 +227,11 @@ $\star$ **$A_{n \times n}$**
 $\star$ **Consider the matrix
 
 $$
-A = \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix}.
+A =
+\begin{bmatrix}
+4 & 1 \\
+2 & 3
+\end{bmatrix}.
 $$
 
 Find its eigen values and eigen vectors.**
@@ -217,17 +241,29 @@ Find its eigen values and eigen vectors.**
 Characteristic (ch) matrix of $A$ is
 
 $$
-A - \lambda I = \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
+A - \lambda I =
+\begin{bmatrix}
+4 & 1 \\
+2 & 3
+\end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
 $$
 
 $$
-= \begin{bmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{bmatrix} \rightarrow \text{ch. matrix (Ans:)}
+=
+\begin{bmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{bmatrix} \rightarrow \text{ch. matrix (Ans:)}
 $$
 
 Now, the characteristic equation is $|A - \lambda I| = 0$
 
 $$
-\Rightarrow \begin{vmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{vmatrix} = 0
+\Rightarrow
+\begin{vmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{vmatrix} = 0
 $$
 
 $$
@@ -255,7 +291,11 @@ $\star$ **we are operating in $2 \times 2$ Euclidean space $R^2 \rightarrow$ প
 Let,
 
 $$
-V = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}
+V =
+\begin{bmatrix}
+v_1 \\
+v_2
+\end{bmatrix}
 $$
 
 be an eigen vector corresponding to the eigen value $\lambda = 2$.
@@ -275,15 +315,27 @@ $$
 $$
 
 $$
-\text{or, } \begin{bmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \quad \text{; } \lambda = 2
+\text{or, }
+\begin{bmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \quad \text{; } \lambda = 2
 $$
 
 $$
-\text{or, } \begin{bmatrix} 2 & 1 \\ 2 & 1 \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\text{or, }
+\begin{bmatrix}
+2 & 1 \\
+2 & 1
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
-\text{or, } \begin{bmatrix} 2v_1 + v_2 \\ 2v_1 + v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\text{or, }
+\begin{bmatrix}
+2v_1 + v_2 \\
+2v_1 + v_2
+\end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
@@ -299,7 +351,11 @@ $$
 Thus,
 
 $$
-V = \begin{bmatrix} -1 \\ 2 \end{bmatrix}
+V =
+\begin{bmatrix}
+-1 \\
+2
+\end{bmatrix}
 $$
 
 is an eigen vector corresponding to the eigen value $\lambda = 2$.
@@ -314,7 +370,11 @@ is an eigen vector corresponding to the eigen value $\lambda = 2$.
 Let,
 
 $$
-W = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}
+W =
+\begin{bmatrix}
+w_1 \\
+w_2
+\end{bmatrix}
 $$
 
 be an eigen vector corresponding to the eigen value $\lambda = 5$.
@@ -330,15 +390,27 @@ $$
 $$
 
 $$
-\Rightarrow \begin{bmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{bmatrix} \begin{bmatrix} w_1 \\ w_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{bmatrix} \begin{bmatrix} w_1 \\ w_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
-\Rightarrow \begin{bmatrix} -1 & 1 \\ 2 & -2 \end{bmatrix} \begin{bmatrix} w_1 \\ w_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+-1 & 1 \\
+2 & -2
+\end{bmatrix} \begin{bmatrix} w_1 \\ w_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
-\Rightarrow \begin{bmatrix} -w_1 + w_2 \\ 2w_1 - 2w_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+-w_1 + w_2 \\
+2w_1 - 2w_2
+\end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 This gives,

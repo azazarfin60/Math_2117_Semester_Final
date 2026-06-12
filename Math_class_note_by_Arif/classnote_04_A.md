@@ -2,7 +2,12 @@
 **# Write the matrix
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 2 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 2 & 1
+\end{pmatrix}
 $$
 
 as the sum of a symmetric matrix and a skew symmetric matrix.**
@@ -10,43 +15,82 @@ as the sum of a symmetric matrix and a skew symmetric matrix.**
 Ans:
 
 $$
-B = \begin{pmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{pmatrix}
+B =
+\begin{pmatrix}
+1 & 3 & 2 \\
+3 & 5 & 4 \\
+2 & 4 & 1
+\end{pmatrix}
 $$
 
 $$
-C = \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{pmatrix}
+C =
+\begin{pmatrix}
+0 & -1 & 1 \\
+1 & 0 & 2 \\
+-1 & -2 & 0
+\end{pmatrix}
 $$
 
 $B = \frac{1}{2}(A + A^T)$
 
 $$
-= \frac{1}{2}\left[\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 2 & 1 \end{pmatrix} + \begin{pmatrix} 1 & 4 & 1 \\ 2 & 5 & 2 \\ 3 & 6 & 1 \end{pmatrix}\right]
+= \frac{1}{2}\left[
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 2 & 1
+\end{pmatrix} + \begin{pmatrix} 1 & 4 & 1 \\ 2 & 5 & 2 \\ 3 & 6 & 1 \end{pmatrix}\right]
 $$
 
 $$
-= \frac{1}{2}\begin{pmatrix} 2 & 6 & 4 \\ 6 & 10 & 8 \\ 4 & 8 & 2 \end{pmatrix} = \begin{pmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{pmatrix}
+= \frac{1}{2}
+\begin{pmatrix}
+2 & 6 & 4 \\
+6 & 10 & 8 \\
+4 & 8 & 2
+\end{pmatrix} = \begin{pmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{pmatrix}
 $$
 
 $C = \frac{1}{2}(A - A^T)$
 
 $$
-= \frac{1}{2}\left[\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 2 & 1 \end{pmatrix} - \begin{pmatrix} 1 & 4 & 1 \\ 2 & 5 & 2 \\ 3 & 6 & 1 \end{pmatrix}\right]
+= \frac{1}{2}\left[
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 2 & 1
+\end{pmatrix} - \begin{pmatrix} 1 & 4 & 1 \\ 2 & 5 & 2 \\ 3 & 6 & 1 \end{pmatrix}\right]
 $$
 
 $$
-= \frac{1}{2}\begin{pmatrix} 0 & -2 & 2 \\ 2 & 0 & 4 \\ -2 & -4 & 0 \end{pmatrix} = \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{pmatrix}
+= \frac{1}{2}
+\begin{pmatrix}
+0 & -2 & 2 \\
+2 & 0 & 4 \\
+-2 & -4 & 0
+\end{pmatrix} = \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{pmatrix}
 $$
 
 Thus,
 
 $$
-\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 2 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{pmatrix} + \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+1 & 2 & 1
+\end{pmatrix} = \begin{pmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{pmatrix} + \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & 2 \\ -1 & -2 & 0 \end{pmatrix}
 $$
 
 <!-- Page 032 -->
 
 $$
-A = \begin{bmatrix} i & -2+i & 3i+2 \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix}
+A =
+\begin{bmatrix}
+i & -2+i & 3i+2 \\
+0 & -i & 2i \\
+0 & 3 & 4+5i
+\end{bmatrix}
 $$
 
 **hermitian:**
@@ -64,15 +108,30 @@ Now,
 $B = \frac{1}{2}(A^\theta + A) = \frac{1}{2}((\bar{A})^T + A)$
 
 $$
-= \frac{1}{2} \left[ \begin{pmatrix} -i & -2-i & 3i+2 \\ 0 & i & -2i \\ 0 & 3 & 4-5i \end{pmatrix}^T + \begin{pmatrix} i & -2+i & 3i+2 \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{pmatrix} \right]
+= \frac{1}{2} \left[
+\begin{pmatrix}
+-i & -2-i & 3i+2 \\
+0 & i & -2i \\
+0 & 3 & 4-5i
+\end{pmatrix}^T + \begin{pmatrix} i & -2+i & 3i+2 \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{pmatrix} \right]
 $$
 
 $$
-= \frac{1}{2} \left[ \begin{bmatrix} -i & 0 & 0 \\ -2-i & i & 3 \\ -3i+2 & -2i & 4-5i \end{bmatrix} + \begin{bmatrix} i & -2+i & 3i+2 \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right]
+= \frac{1}{2} \left[
+\begin{bmatrix}
+-i & 0 & 0 \\
+-2-i & i & 3 \\
+-3i+2 & -2i & 4-5i
+\end{bmatrix} + \begin{bmatrix} i & -2+i & 3i+2 \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} \right]
 $$
 
 $$
-= \frac{1}{2}\begin{bmatrix} 0 & -2+i & 3i+2 \\ -2-i & 0 & 3+2i \\ 2-3i & 3-2i & 8 \end{bmatrix}
+= \frac{1}{2}
+\begin{bmatrix}
+0 & -2+i & 3i+2 \\
+-2-i & 0 & 3+2i \\
+2-3i & 3-2i & 8
+\end{bmatrix}
 $$
 
 (hermitian)
@@ -83,11 +142,21 @@ $$
 $C = \frac{1}{2}[A - A^\theta]$
 
 $$
-= \frac{1}{2} \left[ \begin{bmatrix} i & -2+i & 2+3i \\ 0 & -i & 2i \\ 0 & 3 & 4+5i \end{bmatrix} - \begin{bmatrix} -i & 0 & 0 \\ -2-i & i & 3 \\ 2-3i & -2i & 4-5i \end{bmatrix} \right]
+= \frac{1}{2} \left[
+\begin{bmatrix}
+i & -2+i & 2+3i \\
+0 & -i & 2i \\
+0 & 3 & 4+5i
+\end{bmatrix} - \begin{bmatrix} -i & 0 & 0 \\ -2-i & i & 3 \\ 2-3i & -2i & 4-5i \end{bmatrix} \right]
 $$
 
 $$
-= \frac{1}{2} \begin{bmatrix} 2i & -2+i & 2+3i \\ 2+i & -2i & 2i-3 \\ -2+3i & 3+2i & 10i \end{bmatrix}
+= \frac{1}{2}
+\begin{bmatrix}
+2i & -2+i & 2+3i \\
+2+i & -2i & 2i-3 \\
+-2+3i & 3+2i & 10i
+\end{bmatrix}
 $$
 
 (skew hermitian)
@@ -170,35 +239,70 @@ $\Rightarrow (AB)^{-1} = B^{-1} A^{-1}$ (proved)
 **# $(AB)^t = B^t A^t$**
 
 $$
-A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix},
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix},
 $$
 
 $$
-B = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix}
+B =
+\begin{pmatrix}
+1 & 2 & 3 \\
+1 & 1 & 1 \\
+1 & 1 & 1
+\end{pmatrix}
 $$
 
 $\rightarrow$ *This is verification not proof. be careful.*
 
 $$
-A = \begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix},
+A =
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix},
 $$
 
 $$
-B = \begin{pmatrix} b_{11} & b_{12} & b_{13} \\ b_{21} & b_{22} & b_{23} \\ b_{31} & b_{32} & b_{33} \end{pmatrix}
+B =
+\begin{pmatrix}
+b_{11} & b_{12} & b_{13} \\
+b_{21} & b_{22} & b_{23} \\
+b_{31} & b_{32} & b_{33}
+\end{pmatrix}
 $$
 
 $a_{32} = \text{element/entry standing at the 3rd row, 2nd column}$
 
 $$
-A^t = \begin{pmatrix} a_{11} & a_{21} & a_{31} \\ a_{12} & a_{22} & a_{32} \\ a_{13} & a_{23} & a_{33} \end{pmatrix},
+A^t =
+\begin{pmatrix}
+a_{11} & a_{21} & a_{31} \\
+a_{12} & a_{22} & a_{32} \\
+a_{13} & a_{23} & a_{33}
+\end{pmatrix},
 $$
 
 $$
-B^t = \begin{pmatrix} b_{11} & b_{21} & b_{31} \\ b_{12} & b_{22} & b_{32} \\ b_{13} & b_{23} & b_{33} \end{pmatrix}
+B^t =
+\begin{pmatrix}
+b_{11} & b_{21} & b_{31} \\
+b_{12} & b_{22} & b_{32} \\
+b_{13} & b_{23} & b_{33}
+\end{pmatrix}
 $$
 
 $$
-AB = \begin{pmatrix} a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} & a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33} \\ a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} & a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33} \\ a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31} & a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32} & a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33} \end{pmatrix}
+AB =
+\begin{pmatrix}
+a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} & a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33} \\
+a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} & a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33} \\
+a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31} & a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32} & a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33}
+\end{pmatrix}
 $$
 
 <!-- Page 036 -->
@@ -240,7 +344,12 @@ $x = 6 \quad (x=0)$
 $(AB)^t = B^t A^t$
 
 $$
-(AB)^t = \begin{pmatrix} a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31} \\ a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} & a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} & a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32} \\ a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33} & a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33} & a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33} \end{pmatrix}
+(AB)^t =
+\begin{pmatrix}
+a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31} \\
+a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} & a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} & a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32} \\
+a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33} & a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33} & a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33}
+\end{pmatrix}
 $$
 
 **# Prove: $(AB)^t = B^t A^t$**
@@ -270,13 +379,21 @@ $R^3 = (a, b, c)$ $\rightarrow$ 3D
 $R^2 = (a, b)$
 
 $$
-\begin{pmatrix} 1 & 1 & 2 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 2 \\
+1 & 1 & 1 \\
+1 & 1 & 1
+\end{pmatrix}
 $$
 
 (3D)
 
 $$
-\begin{pmatrix} 1 & 2 & 4 & 5 \\ 2 & 4 & 5 & 6 \\ 8 & 9 & 10 & 11 \end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 4 & 5 \\
+2 & 4 & 5 & 6 \\
+8 & 9 & 10 & 11
+\end{pmatrix}
 $$
 
 (5D $\rightarrow$)
@@ -335,7 +452,11 @@ characteristics vector:
 **# Consider a matrix
 
 $$
-A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}.
+A =
+\begin{pmatrix}
+4 & 1 \\
+2 & 3
+\end{pmatrix}.
 $$
 
 Find its eigenvalues and eigenvectors.**
@@ -344,13 +465,20 @@ Find its eigenvalues and eigenvectors.**
 Characteristic matrix of $A$ is $A - \lambda I$.
 
 $$
-\begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} - \lambda \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
+\begin{pmatrix}
+4 & 1 \\
+2 & 3
+\end{pmatrix} - \lambda \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix}
 $$
 
 Now, the ch. equation is $|A - \lambda I| = 0$
 
 $$
-\Rightarrow \begin{vmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{vmatrix} = 0
+\Rightarrow
+\begin{vmatrix}
+4-\lambda & 1 \\
+2 & 3-\lambda
+\end{vmatrix} = 0
 $$
 
 $\Rightarrow (4-\lambda)(3-\lambda) - 2 = 0$
@@ -367,23 +495,37 @@ thus the eigen values are 2, 5.
 For $\lambda = 2$:
 
 $$
-(A - 2I)X = 0 \Rightarrow \begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow 2x_1 + x_2 = 0 \Rightarrow x_2 = -2x_1
+(A - 2I)X = 0 \Rightarrow
+\begin{pmatrix}
+2 & 1 \\
+2 & 1
+\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow 2x_1 + x_2 = 0 \Rightarrow x_2 = -2x_1
 $$
 
 eigenvector is
 
 $$
-\begin{pmatrix} 1 \\ -2 \end{pmatrix}.
+\begin{pmatrix}
+1 \\
+-2
+\end{pmatrix}.
 $$
 
 Verification:
 
 $$
-A\begin{pmatrix} 1 \\ -2 \end{pmatrix} = \begin{pmatrix} 2 \\ -4 \end{pmatrix} = 2\begin{pmatrix} 1 \\ -2 \end{pmatrix}
+A
+\begin{pmatrix}
+1 \\
+-2
+\end{pmatrix} = \begin{pmatrix} 2 \\ -4 \end{pmatrix} = 2\begin{pmatrix} 1 \\ -2 \end{pmatrix}
 $$
 
 pointing to eigenvalue (2) and eigenvector
 
 $$
-\begin{pmatrix} 1 \\ -2 \end{pmatrix}.
+\begin{pmatrix}
+1 \\
+-2
+\end{pmatrix}.
 $$

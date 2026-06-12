@@ -2,7 +2,11 @@
 **# $2 \times 2$ matrices:**
 
 $$
-\sigma_1 = \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix}
+\sigma_1 =
+\begin{pmatrix}
+2 & 2 \\
+2 & 2
+\end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix}
 $$
 
 Check whether the vectors are linearly independent.
@@ -15,17 +19,29 @@ $c_1 v_1 + c_2 v_2 + \dots + c_n v_n = [0]$
 Set,
 
 $$
-c_1 \sigma_1 + c_2 \sigma_2 + c_3 \sigma_3 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
+c_1 \sigma_1 + c_2 \sigma_2 + c_3 \sigma_3 =
+\begin{pmatrix}
+0 & 0 \\
+0 & 0
+\end{pmatrix}
 $$
 
 (zero matrix of $2 \times 2$)
 
 $$
-\Rightarrow c_1 \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix} + c_2 \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} + c_3 \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
+\Rightarrow c_1
+\begin{pmatrix}
+2 & 2 \\
+2 & 2
+\end{pmatrix} + c_2 \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} + c_3 \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
 $$
 
 $$
-\Rightarrow \begin{pmatrix} 2c_1 + 2c_2 + 2c_3 & 2c_1 + 2c_3 \\ 2c_1 & 2c_1 + 2c_2 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
+\Rightarrow
+\begin{pmatrix}
+2c_1 + 2c_2 + 2c_3 & 2c_1 + 2c_3 \\
+2c_1 & 2c_1 + 2c_2
+\end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
 $$
 
 From the matrix equation:
@@ -145,19 +161,34 @@ So the image set generators are $\lbrace(1, 0, 1), (2, 1, 0), (0, -1, 2)\rbrace$
 Now, we will generate a matrix and reduce it to its echelon form to find the linearly independent vectors:
 
 $$
-A = \begin{pmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 0 & -1 & 2 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & 0 & 1 \\
+2 & 1 & 0 \\
+0 & -1 & 2
+\end{pmatrix}
 $$
 
 Applying row operation $R_2 \rightarrow 2R_1 - R_2$:
 
 $$
-\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & -1 & 2 \end{pmatrix}
+\sim
+\begin{pmatrix}
+1 & 0 & 1 \\
+0 & -1 & 2 \\
+0 & -1 & 2
+\end{pmatrix}
 $$
 
 Applying row operation $R_3 \rightarrow R_2 - R_3$:
 
 $$
-\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & 0 & 0 \end{pmatrix}
+\sim
+\begin{pmatrix}
+1 & 0 & 1 \\
+0 & -1 & 2 \\
+0 & 0 & 0
+\end{pmatrix}
 $$
 
 We see there are two independent vectors: $(1, 0, 1)$ and $(0, -1, 2)$.
@@ -318,7 +349,11 @@ So, $(27, -14) = 124(3, 1) - 69(5, 2)$ ---- (ii)
 The required matrix representation is:
 
 $$
-T = \begin{pmatrix} 77 & -43 \\ 124 & -69 \end{pmatrix}^t = \begin{pmatrix} 77 & 124 \\ -43 & -69 \end{pmatrix}
+T =
+\begin{pmatrix}
+77 & -43 \\
+124 & -69
+\end{pmatrix}^t = \begin{pmatrix} 77 & 124 \\ -43 & -69 \end{pmatrix}
 $$
 
 > [!NOTE]
@@ -382,13 +417,21 @@ $(2, 0, 0)$ and $(0, 2, 0)$ since $\langle u, v \rangle = 0$, but $\|u\| = 2$ an
 **# Find the angle between the matrices
 
 $$
-u = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+u =
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
 $$
 
 and
 
 $$
-v = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}.
+v =
+\begin{pmatrix}
+1 & 1 \\
+1 & 1
+\end{pmatrix}.
 $$
 
 **

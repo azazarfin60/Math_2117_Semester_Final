@@ -27,7 +27,11 @@ $$
 The sign follows a checkerboard pattern:
 
 $$
-\begin{bmatrix} + & - & + \\ - & + & - \\ + & - & + \end{bmatrix}
+\begin{bmatrix}
++ & - & + \\
+- & + & - \\
++ & - & +
+\end{bmatrix}
 $$
 
 ### Example
@@ -35,13 +39,22 @@ $$
 For matrix:
 
 $$
-A = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3 \\
+3 & 1 & 1
+\end{pmatrix}
 $$
 
 The minor $M_{11}$ is obtained by deleting row 1 and column 1:
 
 $$
-M_{11} = \begin{vmatrix} 2 & 3 \\ 1 & 1 \end{vmatrix} = 2 - 3 = -1
+M_{11} =
+\begin{vmatrix}
+2 & 3 \\
+1 & 1
+\end{vmatrix} = 2 - 3 = -1
 $$
 
 The cofactor $C_{11} = (-1)^{1+1}(-1) = -1$.
@@ -89,7 +102,12 @@ $$
 **Problem**: Find the adjoint and inverse of:
 
 $$
-A = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & 3 \\ 3 & 1 & 1 \end{pmatrix}
+A =
+\begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3 \\
+3 & 1 & 1
+\end{pmatrix}
 $$
 
 **Solution**:
@@ -119,13 +137,23 @@ $$
 **Step 3**: Adjoint = transpose of cofactor matrix:
 
 $$
-\text{adj}(A) = \begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix}
+\text{adj}(A) =
+\begin{pmatrix}
+-1 & 1 & -1 \\
+8 & -6 & 2 \\
+-5 & 3 & -1
+\end{pmatrix}
 $$
 
 **Step 4**: Inverse:
 
 $$
-A^{-1} = \frac{1}{-2}\begin{pmatrix} -1 & 1 & -1 \\ 8 & -6 & 2 \\ -5 & 3 & -1 \end{pmatrix} = \begin{pmatrix} 1/2 & -1/2 & 1/2 \\ -4 & 3 & -1 \\ 5/2 & -3/2 & 1/2 \end{pmatrix}
+A^{-1} = \frac{1}{-2}
+\begin{pmatrix}
+-1 & 1 & -1 \\
+8 & -6 & 2 \\
+-5 & 3 & -1
+\end{pmatrix} = \begin{pmatrix} 1/2 & -1/2 & 1/2 \\ -4 & 3 & -1 \\ 5/2 & -3/2 & 1/2 \end{pmatrix}
 $$
 
 ---
@@ -135,7 +163,12 @@ $$
 **Problem**: Find the adjoint and inverse of:
 
 $$
-A = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -159,13 +192,23 @@ $$
 Adjoint (transpose of cofactor matrix):
 
 $$
-\text{adj}(A) = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\text{adj}(A) =
+\begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 Since $\lvert A \rvert = 1$:
 
 $$
-A^{-1} = \begin{bmatrix} \cos\theta & \sin\theta & 0 \\ -\sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+A^{-1} =
+\begin{bmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
 $$
 
 Notice: $A^{-1} = A^T$. This is because $A$ is an orthogonal matrix (rotation matrix).
@@ -186,7 +229,12 @@ Notice: $A^{-1} = A^T$. This is because $A$ is an orthogonal matrix (rotation ma
 **Problem**: Find the inverse of:
 
 $$
-A = \begin{pmatrix} 1 & 3 & 3 \\ 1 & 4 & 3 \\ 1 & 3 & 4 \end{pmatrix}
+A =
+\begin{pmatrix}
+1 & 3 & 3 \\
+1 & 4 & 3 \\
+1 & 3 & 4
+\end{pmatrix}
 $$
 
 **Solution**:
@@ -194,31 +242,52 @@ $$
 Set up $[A \lvert  I]$:
 
 $$
-\begin{bmatrix} 1 & 3 & 3 & | & 1 & 0 & 0 \\ 1 & 4 & 3 & | & 0 & 1 & 0 \\ 1 & 3 & 4 & | & 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 3 & | & 1 & 0 & 0 \\
+1 & 4 & 3 & | & 0 & 1 & 0 \\
+1 & 3 & 4 & | & 0 & 0 & 1
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - R_1$:
 
 $$
-\begin{bmatrix} 1 & 3 & 3 & | & 1 & 0 & 0 \\ 0 & 1 & 0 & | & -1 & 1 & 0 \\ 0 & 0 & 1 & | & -1 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 3 & | & 1 & 0 & 0 \\
+0 & 1 & 0 & | & -1 & 1 & 0 \\
+0 & 0 & 1 & | & -1 & 0 & 1
+\end{bmatrix}
 $$
 
 Apply $R_1 \to R_1 - 3R_2$:
 
 $$
-\begin{bmatrix} 1 & 0 & 3 & | & 4 & -3 & 0 \\ 0 & 1 & 0 & | & -1 & 1 & 0 \\ 0 & 0 & 1 & | & -1 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 3 & | & 4 & -3 & 0 \\
+0 & 1 & 0 & | & -1 & 1 & 0 \\
+0 & 0 & 1 & | & -1 & 0 & 1
+\end{bmatrix}
 $$
 
 Apply $R_1 \to R_1 - 3R_3$:
 
 $$
-\begin{bmatrix} 1 & 0 & 0 & | & 7 & -3 & -3 \\ 0 & 1 & 0 & | & -1 & 1 & 0 \\ 0 & 0 & 1 & | & -1 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & | & 7 & -3 & -3 \\
+0 & 1 & 0 & | & -1 & 1 & 0 \\
+0 & 0 & 1 & | & -1 & 0 & 1
+\end{bmatrix}
 $$
 
 The inverse is:
 
 $$
-A^{-1} = \begin{pmatrix} 7 & -3 & -3 \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{pmatrix}
+A^{-1} =
+\begin{pmatrix}
+7 & -3 & -3 \\
+-1 & 1 & 0 \\
+-1 & 0 & 1
+\end{pmatrix}
 $$
 
 ---
@@ -228,7 +297,12 @@ $$
 **Problem**: Find the inverse by row operations:
 
 $$
-A = \begin{pmatrix} 2 & 1 & 2 \\ 2 & 2 & 1 \\ 1 & 2 & 2 \end{pmatrix}
+A =
+\begin{pmatrix}
+2 & 1 & 2 \\
+2 & 2 & 1 \\
+1 & 2 & 2
+\end{pmatrix}
 $$
 
 **Solution**:
@@ -236,31 +310,52 @@ $$
 Set up $[A \lvert  I]$ and swap $R_1 \leftrightarrow R_3$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 2 & 2 & 1 & | & 0 & 1 & 0 \\ 2 & 1 & 2 & | & 1 & 0 & 0 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+2 & 2 & 1 & | & 0 & 1 & 0 \\
+2 & 1 & 2 & | & 1 & 0 & 0
+\end{bmatrix}
 $$
 
 Apply $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - 2R_1$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & -2 & -3 & | & 0 & 1 & -2 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & -2 & -3 & | & 0 & 1 & -2 \\
+0 & -3 & -2 & | & 1 & 0 & -2
+\end{bmatrix}
 $$
 
 Scale $R_2 \to -\frac{1}{2}R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & -3 & -2 & | & 1 & 0 & -2 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & -3 & -2 & | & 1 & 0 & -2
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 + 3R_2$:
 
 $$
-\begin{bmatrix} 1 & 2 & 2 & | & 0 & 0 & 1 \\ 0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\ 0 & 0 & 5/2 & | & 1 & -3/2 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 & 2 & | & 0 & 0 & 1 \\
+0 & 1 & 3/2 & | & 0 & -1/2 & 1 \\
+0 & 0 & 5/2 & | & 1 & -3/2 & 1
+\end{bmatrix}
 $$
 
 Scale $R_3 \to \frac{2}{5}R_3$, then back-substitute upward. After all operations:
 
 $$
-A^{-1} = \frac{1}{5}\begin{pmatrix} 2 & 2 & -3 \\ -3 & 2 & 2 \\ 2 & -3 & 2 \end{pmatrix}
+A^{-1} = \frac{1}{5}
+\begin{pmatrix}
+2 & 2 & -3 \\
+-3 & 2 & 2 \\
+2 & -3 & 2
+\end{pmatrix}
 $$
 
 ---
@@ -270,7 +365,12 @@ $$
 **Problem**: Find the inverse by row transformation:
 
 $$
-A = \begin{bmatrix} 1 & 3 & 5 \\ 2 & 4 & 5 \\ 3 & 7 & 6 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 3 & 5 \\
+2 & 4 & 5 \\
+3 & 7 & 6
+\end{bmatrix}
 $$
 
 **Solution**:
@@ -278,19 +378,32 @@ $$
 Set up $[A \lvert  I]$. Apply $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - 3R_1$:
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & -2 & -5 & | & -2 & 1 & 0 \\ 0 & -2 & -9 & | & -3 & 0 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+0 & -2 & -5 & | & -2 & 1 & 0 \\
+0 & -2 & -9 & | & -3 & 0 & 1
+\end{bmatrix}
 $$
 
 Apply $R_3 \to R_3 - R_2$:
 
 $$
-\begin{bmatrix} 1 & 3 & 5 & | & 1 & 0 & 0 \\ 0 & -2 & -5 & | & -2 & 1 & 0 \\ 0 & 0 & -4 & | & -1 & -1 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 3 & 5 & | & 1 & 0 & 0 \\
+0 & -2 & -5 & | & -2 & 1 & 0 \\
+0 & 0 & -4 & | & -1 & -1 & 1
+\end{bmatrix}
 $$
 
 Scale $R_2 \to -\frac{1}{2}R_2$ and $R_3 \to -\frac{1}{4}R_3$. Then back-substitute:
 
 $$
-A^{-1} = \frac{1}{8}\begin{bmatrix} -11 & 17 & -5 \\ 3 & -9 & 5 \\ 2 & 2 & -2 \end{bmatrix}
+A^{-1} = \frac{1}{8}
+\begin{bmatrix}
+-11 & 17 & -5 \\
+3 & -9 & 5 \\
+2 & 2 & -2
+\end{bmatrix}
 $$
 
 ---

@@ -7,7 +7,10 @@ Set $w_1 = 1$, then $w_2 = 1$, then
 then
 
 $$
-\begin{bmatrix} 1 \\ 1 \end{bmatrix}
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 is an eigen vector associated with the eigen value $\lambda = 5$.
@@ -18,7 +21,11 @@ is an eigen vector associated with the eigen value $\lambda = 5$.
 > $\therefore$ Then model matrix is $\rightarrow$ extended.
 
 $$
-P = \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix} \quad \rightarrow \text{Linearly dependent না!}
+P =
+\begin{bmatrix}
+-1 & 1 \\
+2 & 1
+\end{bmatrix} \quad \rightarrow \text{Linearly dependent না!}
 $$
 
 $$
@@ -26,25 +33,45 @@ $$
 $$
 
 $$
-P \xrightarrow{R_2 \rightarrow 2R_1 + R_2} \begin{bmatrix} -1 & 1 \\ 0 & 3 \end{bmatrix} \quad \text{Not 0} \quad \therefore \text{the eigen vectors are independent.}
+P \xrightarrow{R_2 \rightarrow 2R_1 + R_2}
+\begin{bmatrix}
+-1 & 1 \\
+0 & 3
+\end{bmatrix} \quad \text{Not 0} \quad \therefore \text{the eigen vectors are independent.}
 $$
 
 $$
-P^{-1} = -\frac{1}{3} \begin{bmatrix} 1 & -1 \\ -2 & -1 \end{bmatrix} = \frac{1}{3} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
+P^{-1} = -\frac{1}{3}
+\begin{bmatrix}
+1 & -1 \\
+-2 & -1
+\end{bmatrix} = \frac{1}{3} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
 $$
 
 Now,
 
 $$
-P^{-1}AP = \frac{1}{3} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix} \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
+P^{-1}AP = \frac{1}{3}
+\begin{bmatrix}
+-1 & 1 \\
+2 & 1
+\end{bmatrix} \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
 $$
 
 $$
-= \frac{1}{3} \begin{bmatrix} -2 & 2 \\ 10 & 5 \end{bmatrix} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
+= \frac{1}{3}
+\begin{bmatrix}
+-2 & 2 \\
+10 & 5
+\end{bmatrix} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
 $$
 
 $$
-= \frac{1}{3} \begin{bmatrix} 6 & 0 \\ 0 & 15 \end{bmatrix} = \begin{bmatrix} 2 & 0 \\ 0 & 5 \end{bmatrix} \quad \rightarrow \text{diagonalized matrix.}
+= \frac{1}{3}
+\begin{bmatrix}
+6 & 0 \\
+0 & 15
+\end{bmatrix} = \begin{bmatrix} 2 & 0 \\ 0 & 5 \end{bmatrix} \quad \rightarrow \text{diagonalized matrix.}
 $$
 
 ---
@@ -60,19 +87,31 @@ $\rightarrow$ We need to find out equal effective eigen values.
 $\star$ **Consider the matrix**
 
 $$
-A = \begin{bmatrix} 3 & -1 \\ 1 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+3 & -1 \\
+1 & 1
+\end{bmatrix}
 $$
 
 characteristic matrix of $A$ is
 
 $$
-A - \lambda I = \begin{bmatrix} 3 & -1 \\ 1 & 1 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 3-\lambda & -1 \\ 1 & 1-\lambda \end{bmatrix}
+A - \lambda I =
+\begin{bmatrix}
+3 & -1 \\
+1 & 1
+\end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 3-\lambda & -1 \\ 1 & 1-\lambda \end{bmatrix}
 $$
 
 $\therefore$ ch. polynomial of $A$ is $|A - \lambda I|$ and hence the ch. polynomial equation is $|A - \lambda I| = 0$.
 
 $$
-\Rightarrow \begin{vmatrix} 3-\lambda & -1 \\ 1 & 1-\lambda \end{vmatrix} = 0
+\Rightarrow
+\begin{vmatrix}
+3-\lambda & -1 \\
+1 & 1-\lambda
+\end{vmatrix} = 0
 $$
 
 $$
@@ -98,7 +137,11 @@ $$
 Let,
 
 $$
-V = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}
+V =
+\begin{bmatrix}
+v_1 \\
+v_2
+\end{bmatrix}
 $$
 
 be the eigen vector corresponding to the eigen value $\lambda = 2$.
@@ -108,19 +151,35 @@ AV - \lambda V = (A - \lambda I)V = 0 \text{ , a zero vector}
 $$
 
 $$
-\Rightarrow \begin{bmatrix} 3-\lambda & -1 \\ 1 & 1-\lambda \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+3-\lambda & -1 \\
+1 & 1-\lambda
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
-\Rightarrow \begin{bmatrix} 3-2 & -1 \\ 1 & 1-2 \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+3-2 & -1 \\
+1 & 1-2
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
-\Rightarrow \begin{bmatrix} 1 & -1 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+1 & -1 \\
+1 & -1
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
 $$
 
 $$
-\text{or, } \left. \begin{matrix} v_1 - v_2 = 0 \\ v_1 - v_2 = 0 \end{matrix} \right\rbrace  \sim v_1 - v_2 = 0
+\text{or, } \left.
+\begin{matrix}
+v_1 - v_2 = 0 \\
+v_1 - v_2 = 0
+\end{matrix} \right\rbrace  \sim v_1 - v_2 = 0
 $$
 
 Set, $v_2 = 1$.
@@ -130,13 +189,21 @@ v_1 = 1
 $$
 
 $$
-\therefore V = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+\therefore V =
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
 $$
 
 is an eigen vector corresponding to the eigen value $\lambda = 2$.
 
 $$
-\star \text{ H.W. } \begin{bmatrix} 2 & 1 \\ -1 & 1 \end{bmatrix} \text{ find eigen values and eigen vectors.}
+\star \text{ H.W. }
+\begin{bmatrix}
+2 & 1 \\
+-1 & 1
+\end{bmatrix} \text{ find eigen values and eigen vectors.}
 $$
 
 ---
@@ -166,18 +233,33 @@ $$
 $\star$ **Consider the matrix**
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix}_{3 \times 3}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix}_{3 \times 3}
 $$
 
 **Ans:-**
 ch. polynomial of $A$ is
 
 $$
-|A - \lambda I| = \begin{vmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{vmatrix} - \lambda \begin{vmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{vmatrix}
+|A - \lambda I| =
+\begin{vmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{vmatrix} - \lambda \begin{vmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{vmatrix}
 $$
 
 $$
-\Rightarrow |A - \lambda I| = \begin{vmatrix} 1-\lambda & 2 & 3 \\ -1 & 2-\lambda & 4 \\ 1 & 1 & 2-\lambda \end{vmatrix}
+\Rightarrow |A - \lambda I| =
+\begin{vmatrix}
+1-\lambda & 2 & 3 \\
+-1 & 2-\lambda & 4 \\
+1 & 1 & 2-\lambda
+\end{vmatrix}
 $$
 
 $$
@@ -227,11 +309,21 @@ $$
 $$
 
 $$
-\Rightarrow 3A^{-1} = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} - 5 \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} + 3 \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+\Rightarrow 3A^{-1} =
+\begin{bmatrix}
+1 & 2 & 3 \\
+-1 & 2 & 4 \\
+1 & 1 & 2
+\end{bmatrix} \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} - 5 \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} + 3 \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
 $$
 
 $$
-\Rightarrow 3A^{-1} = \begin{bmatrix} 0 & -1 & 2 \\ 6 & -1 & -7 \\ -3 & 1 & 4 \end{bmatrix}
+\Rightarrow 3A^{-1} =
+\begin{bmatrix}
+0 & -1 & 2 \\
+6 & -1 & -7 \\
+-3 & 1 & 4
+\end{bmatrix}
 $$
 
 $$
@@ -250,11 +342,19 @@ $$
 **(03 Feb, 26) (GCP Sir)**
 
 $$
-A = \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix}, \ \lambda = 2, 5, \ V = \begin{bmatrix} -1 \\ 2 \end{bmatrix}, \ W = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \ P = \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
+A =
+\begin{bmatrix}
+4 & 1 \\
+2 & 3
+\end{bmatrix}, \ \lambda = 2, 5, \ V = \begin{bmatrix} -1 \\ 2 \end{bmatrix}, \ W = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \ P = \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
 $$
 
 $$
-P^{-1} = \frac{1}{3} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix} \quad \therefore P^{-1}AP = \begin{bmatrix} 2 & 0 \\ 0 & 5 \end{bmatrix}
+P^{-1} = \frac{1}{3}
+\begin{bmatrix}
+-1 & 1 \\
+2 & 1
+\end{bmatrix} \quad \therefore P^{-1}AP = \begin{bmatrix} 2 & 0 \\ 0 & 5 \end{bmatrix}
 $$
 
 $$
@@ -262,7 +362,11 @@ P^{-1}AP = M
 $$
 
 $$
-M^5 = \begin{bmatrix} 32 & 0 \\ 0 & 3125 \end{bmatrix} \quad P^{-1}AP = \begin{bmatrix} 2 & 0 \\ 0 & 5 \end{bmatrix}
+M^5 =
+\begin{bmatrix}
+32 & 0 \\
+0 & 3125
+\end{bmatrix} \quad P^{-1}AP = \begin{bmatrix} 2 & 0 \\ 0 & 5 \end{bmatrix}
 $$
 
 $\star$ **Find $A^5$.**
@@ -270,7 +374,11 @@ $\star$ **Find $A^5$.**
 **Ans:-**
 
 $$
-A^5 = P M^5 P^{-1} = \frac{1}{3} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix} \begin{bmatrix} 32 & 0 \\ 0 & 3125 \end{bmatrix} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
+A^5 = P M^5 P^{-1} = \frac{1}{3}
+\begin{bmatrix}
+-1 & 1 \\
+2 & 1
+\end{bmatrix} \begin{bmatrix} 32 & 0 \\ 0 & 3125 \end{bmatrix} \begin{bmatrix} -1 & 1 \\ 2 & 1 \end{bmatrix}
 $$
 
 $$
@@ -318,7 +426,11 @@ $$
 $$
 
 $$
-\begin{vmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{vmatrix} \neq 0 \rightarrow \text{হলে independent}
+\begin{vmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{vmatrix} \neq 0 \rightarrow \text{হলে independent}
 $$
 
 $$
@@ -332,7 +444,10 @@ $$
 $\star$ **
 
 $$
-\begin{bmatrix} 1 & 2 \\ 2 & 1 \end{bmatrix}
+\begin{bmatrix}
+1 & 2 \\
+2 & 1
+\end{bmatrix}
 $$
 
 vectors থেকে $(4, 5)$ নির্ণয়।**
@@ -409,11 +524,21 @@ $\star$ **Finding the angle between 2 vectors.**
 ### Array Multiplication:-
 
 $$
-A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix} \quad B = \begin{bmatrix} 2 & 3 & 1 \\ 0 & 1 & 2 \\ 1 & 1 & -1 \end{bmatrix}
+A =
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix} \quad B = \begin{bmatrix} 2 & 3 & 1 \\ 0 & 1 & 2 \\ 1 & 1 & -1 \end{bmatrix}
 $$
 
 $$
-A \cdot B = \begin{bmatrix} 2 & 6 & 3 \\ 0 & 5 & 12 \\ 7 & 8 & -9 \end{bmatrix}
+A \cdot B =
+\begin{bmatrix}
+2 & 6 & 3 \\
+0 & 5 & 12 \\
+7 & 8 & -9
+\end{bmatrix}
 $$
 
 $$
