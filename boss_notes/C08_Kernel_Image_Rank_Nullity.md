@@ -72,7 +72,13 @@ $$
 
 ## Exam Patterns
 - The proof that the Kernel and Image are subspaces is a classic 6-mark theoretical question. Memorize the 3-step subspace check for both.
-- If asked to find the Kernel of a matrix mapping, set the matrix times a vector $\vec{x}$ to $0$ ($A\vec{x} = 0$) and solve for $\vec{x}$ using row reduction.
+- If asked to find the Kernel of a matrix mapping, set the matrix times a vector $\vec{x}$ to the zero vector:
+
+$$
+A\vec{x} = 0
+$$
+
+Then solve for $\vec{x}$ using row reduction.
 
 ---
 

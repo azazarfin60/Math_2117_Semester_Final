@@ -79,7 +79,13 @@ $$
 V_x = \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z}, \quad V_y = \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x}, \quad V_z = \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y}
 $$
 
-We want $\nabla \times \vec{V}$. Evaluate its x-component:
+We want to find:
+
+$$
+\nabla \times \vec{V}
+$$
+
+Evaluate its x-component:
 
 $$
 (\nabla \times \vec{V})_x = \frac{\partial V_z}{\partial y} - \frac{\partial V_y}{\partial z}
@@ -183,7 +189,13 @@ $$
 
 ## Exam Patterns
 
-- The $\nabla \times (\nabla \times \vec{A})$ identity proof is tedious but important (appeared in 2018 and 2021). Write out the x-component clearly, then use symmetry.
+- The identity proof for
+
+$$
+\nabla \times (\nabla \times \vec{A})
+$$
+
+is tedious but important (appeared in 2018 and 2021). Write out the x-component clearly, then use symmetry.
 - $\nabla^2(1/r) = 0$ is a classic vector calculus result. The trick is using
 
 $$

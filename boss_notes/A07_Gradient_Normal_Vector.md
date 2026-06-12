@@ -52,7 +52,11 @@ $$
 \nabla\left(\frac{f}{g}\right) = \frac{g\nabla f - f\nabla g}{g^2}
 $$
 
-4. $\nabla r^n = nr^{n-2}\vec{r}$ where $r = \lvert \vec{r} \rvert$
+4. $\nabla r^n$:
+
+$$
+\nabla r^n = nr^{n-2}\vec{r} \quad (\text{where } r = \lvert \vec{r} \rvert)
+$$
 
 ---
 

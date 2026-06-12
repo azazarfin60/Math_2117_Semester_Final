@@ -31,7 +31,13 @@ A **Banach space** is defined as a **complete** normed linear space.
 "Complete" means that every Cauchy sequence of vectors in the space successfully converges to a limit that is *also contained within the space*. There are no "missing holes" in the space.
 
 ### Example of a Banach Space
-The space $\ell^\infty$, which consists of all bounded infinite sequences of complex numbers $x = (x_1, x_2, \dots)$, equipped with the supremum norm $\|x\|_\infty = \sup_{i} \lvert x_i \rvert$. Because $\mathbb{C}$ is complete, Cauchy sequences of coordinates converge to bounded limits within $\ell^\infty$.
+The space $\ell^\infty$, which consists of all bounded infinite sequences of complex numbers $x = (x_1, x_2, \dots)$, is equipped with the supremum norm:
+
+$$
+\|x\|_\infty = \sup_{i} \lvert x_i \rvert
+$$
+
+Because $\mathbb{C}$ is complete, Cauchy sequences of coordinates converge to bounded limits within $\ell^\infty$.
 
 ### Example of an INCOMPLETE Normed Space
 The space $P[a, b]$ of all polynomial functions on $[a, b]$, equipped with the supremum norm. It is not complete because a Cauchy sequence of polynomials (like the Taylor series expansion for $e^t$) will converge to a limit function ($e^t$) that is continuous but *not* a polynomial. Since the limit escapes the space of polynomials, the space is not complete.
