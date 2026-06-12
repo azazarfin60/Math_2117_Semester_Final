@@ -69,8 +69,9 @@
 
 
 \usepackage{xcolor}
-\definecolor{calloutbg}{HTML}{F7F7F7}
-\definecolor{calloutframe}{HTML}{D0D0D0}
+\definecolor{calloutbg}{HTML}{F0F8FF}
+\definecolor{calloutframe}{HTML}{1D4ED8}
+\definecolor{headercolor}{HTML}{1E3A8A}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,
@@ -81,7 +82,7 @@
 
 \usepackage[most]{tcolorbox}
 \renewenvironment{quote}
-  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=2pt,boxrule=0.5pt,left=3pt,right=3pt,top=3pt,bottom=3pt]}
+  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=3pt,boxrule=0.5pt,leftrule=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt]}
   {\end{tcolorbox}}
 
 \usepackage{enumitem}
@@ -90,6 +91,11 @@
 \setlist[enumerate]{leftmargin=15pt}
 
 \setlength{\parskip}{3pt plus 1pt minus 1pt}
+
+\usepackage{sectsty}
+\sectionfont{\color{headercolor}}
+\subsectionfont{\color{headercolor}}
+\subsubsectionfont{\color{headercolor}}
 
 \begin{document}
 \maketitle

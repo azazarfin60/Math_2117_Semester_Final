@@ -72,8 +72,9 @@
 \usepackage{eso-pic}
 \definecolor{darkbg}{HTML}{1E1E1E}
 \definecolor{lighttext}{HTML}{E0E0E0}
-\definecolor{calloutbg}{HTML}{2D2D2D}
-\definecolor{calloutframe}{HTML}{444444}
+\definecolor{calloutbg}{HTML}{2D3748}
+\definecolor{calloutframe}{HTML}{3182CE}
+\definecolor{headercolor}{HTML}{63B3ED}
 \AddToShipoutPictureBG{\color{darkbg}\AtPageLowerLeft{\rule{\paperwidth}{\paperheight}}}
 \color{lighttext}
 \hypersetup{
@@ -86,7 +87,7 @@
 
 \usepackage[most]{tcolorbox}
 \renewenvironment{quote}
-  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=2pt,boxrule=0.5pt,left=3pt,right=3pt,top=3pt,bottom=3pt]}
+  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=3pt,boxrule=0.5pt,leftrule=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt]}
   {\end{tcolorbox}}
 
 \usepackage{enumitem}
@@ -95,6 +96,11 @@
 \setlist[enumerate]{leftmargin=15pt}
 
 \setlength{\parskip}{3pt plus 1pt minus 1pt}
+
+\usepackage{sectsty}
+\sectionfont{\color{headercolor}}
+\subsectionfont{\color{headercolor}}
+\subsubsectionfont{\color{headercolor}}
 
 \begin{document}
 \maketitle

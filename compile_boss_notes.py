@@ -68,7 +68,7 @@ def post_process_tex(tex_content, theme="light"):
     tcolorbox_setup = r"""
 \usepackage[most]{tcolorbox}
 \renewenvironment{quote}
-  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=2pt,boxrule=0.5pt,left=3pt,right=3pt,top=3pt,bottom=3pt]}
+  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=3pt,boxrule=0.5pt,leftrule=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt]}
   {\end{tcolorbox}}
 """
     
@@ -84,6 +84,14 @@ def post_process_tex(tex_content, theme="light"):
     parskip_setup = r"""
 \setlength{\parskip}{3pt plus 1pt minus 1pt}
 """
+
+    # 9. Headings color styling
+    headings_setup = r"""
+\usepackage{sectsty}
+\sectionfont{\color{headercolor}}
+\subsectionfont{\color{headercolor}}
+\subsubsectionfont{\color{headercolor}}
+"""
     
     if theme == "dark":
         color_setup = r"""
@@ -91,8 +99,9 @@ def post_process_tex(tex_content, theme="light"):
 \usepackage{eso-pic}
 \definecolor{darkbg}{HTML}{1E1E1E}
 \definecolor{lighttext}{HTML}{E0E0E0}
-\definecolor{calloutbg}{HTML}{2D2D2D}
-\definecolor{calloutframe}{HTML}{444444}
+\definecolor{calloutbg}{HTML}{2D3748}
+\definecolor{calloutframe}{HTML}{3182CE}
+\definecolor{headercolor}{HTML}{63B3ED}
 \AddToShipoutPictureBG{\color{darkbg}\AtPageLowerLeft{\rule{\paperwidth}{\paperheight}}}
 \color{lighttext}
 \hypersetup{
@@ -106,8 +115,9 @@ def post_process_tex(tex_content, theme="light"):
     else:
         color_setup = r"""
 \usepackage{xcolor}
-\definecolor{calloutbg}{HTML}{F7F7F7}
-\definecolor{calloutframe}{HTML}{D0D0D0}
+\definecolor{calloutbg}{HTML}{F0F8FF}
+\definecolor{calloutframe}{HTML}{1D4ED8}
+\definecolor{headercolor}{HTML}{1E3A8A}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,
@@ -118,7 +128,7 @@ def post_process_tex(tex_content, theme="light"):
 """
     
     # Inject all setups before \begin{document}
-    insertion = color_setup + tcolorbox_setup + list_setup + parskip_setup
+    insertion = color_setup + tcolorbox_setup + list_setup + parskip_setup + headings_setup
     tex_content = tex_content.replace(r'\begin{document}', insertion + '\n\\begin{document}')
     
     return tex_content
