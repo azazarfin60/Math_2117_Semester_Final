@@ -1,0 +1,10 @@
+# Ignore context directories
+context_*/
+
+# Ignore guideline files
+*guideline.md
+
+CLAUDE.md
+GEMINI.md
+
+.obsidian/
