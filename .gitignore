@@ -8,3 +8,5 @@ CLAUDE.md
 GEMINI.md
 
 .obsidian/
+
+*.py
