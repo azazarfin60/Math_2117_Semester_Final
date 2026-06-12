@@ -95,7 +95,10 @@ $\rho = \frac{1}{k} = \frac{25}{3}$
 $\frac{dT}{ds} = kN \Rightarrow N = \frac{1}{k}\frac{dT}{ds} = \frac{25}{3}\left(-\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}\right) = -\cos t \hat{i} - \sin t \hat{j}$
 
 (c)
-$B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\ -\cos t & -\sin t & 0 \end{vmatrix} = \frac{4}{5}\sin t \hat{i} - \frac{4}{5}\cos t \hat{j} + \frac{3}{5}\hat{k}$
+
+$$
+B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -\frac{3}{5}\sin t & \frac{3}{5}\cos t & \frac{4}{5} \\ -\cos t & -\sin t & 0 \end{vmatrix} = \frac{4}{5}\sin t \hat{i} - \frac{4}{5}\cos t \hat{j} + \frac{3}{5}\hat{k}
+$$
 
 $\frac{dB}{dt} = \frac{4}{5}\cos t \hat{i} + \frac{4}{5}\sin t \hat{j}$
 $\frac{dB}{ds} = \frac{dB/dt}{|dr/dt|} = \frac{4}{25}\cos t \hat{i} + \frac{4}{25}\sin t \hat{j}$
@@ -127,7 +130,9 @@ $\rho = \frac{1}{k} = \frac{(1+2t^2)^2}{2}$
 (b)
 $N = \frac{1}{k}\frac{dT}{ds} = \frac{-2t\hat{i} + (1-2t^2)\hat{j} + 2t\hat{k}}{1+2t^2}$
 
-$B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{1}{1+2t^2} & \frac{2t}{1+2t^2} & \frac{2t^2}{1+2t^2} \\ \frac{-2t}{1+2t^2} & \frac{1-2t^2}{1+2t^2} & \frac{2t}{1+2t^2} \end{vmatrix} = \frac{2t^2\hat{i} - 2t\hat{j} + \hat{k}}{1+2t^2}$
+$$
+B = T \times N = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \frac{1}{1+2t^2} & \frac{2t}{1+2t^2} & \frac{2t^2}{1+2t^2} \\ \frac{-2t}{1+2t^2} & \frac{1-2t^2}{1+2t^2} & \frac{2t}{1+2t^2} \end{vmatrix} = \frac{2t^2\hat{i} - 2t\hat{j} + \hat{k}}{1+2t^2}
+$$
 
 $\frac{dB}{ds} = \frac{dB/dt}{ds/dt} = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}$
 $-\tau N = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}$
@@ -145,42 +150,70 @@ $A, B$ must be Non-Singular ($|A| \neq 0$) or Invertible matrix.
 $I = \text{identity matrix}$
 $A, B$ একে অপরের inverse
 
-$A = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix}$
+$$
+A = \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix}
+$$
 
 $|A| = 3 \neq 0 \text{ [non-singular]}$
 thus the matrix is non-singular, hence inverse exist.
 
 Using only elementary row operation:
 $A = AI$
-$= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+$$
+= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
 এটিকে identity matrix বানালে এটা inverse হবে
 convert to echelon form
 
 $R_2 \rightarrow R_1 + R_2$
 $R_3 \rightarrow R_1 - R_3$
-$\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 1 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1 \end{bmatrix}$
+
+$$
+\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 1 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1 \end{bmatrix}
+$$
 
 $R_3 \rightarrow R_2 - 4R_3$
-$\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}$
+
+$$
+\begin{bmatrix} 1 & 2 & 3 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
+$$
 
 $R_1 \rightarrow 2R_1 - R_2$
-$\begin{bmatrix} 2 & 0 & -1 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 1 & -1 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}$
+
+$$
+\begin{bmatrix} 2 & 0 & -1 \\ 0 & 4 & 7 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 1 & -1 & 0 \\ 1 & 1 & 0 \\ -3 & 1 & 4 \end{bmatrix}
+$$
 
 $R_1 \rightarrow 3R_1 + R_3$
 $R_2 \rightarrow 3R_2 - 7R_3$
-$\begin{bmatrix} 6 & 0 & 0 \\ 0 & 12 & 0 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 0 & -2 & 4 \\ 24 & -4 & -28 \\ -3 & 1 & 4 \end{bmatrix}$
+
+$$
+\begin{bmatrix} 6 & 0 & 0 \\ 0 & 12 & 0 \\ 0 & 0 & 3 \end{bmatrix} \begin{bmatrix} 0 & -2 & 4 \\ 24 & -4 & -28 \\ -3 & 1 & 4 \end{bmatrix}
+$$
 
 <!-- Page 026 -->
 $R_1 \rightarrow \frac{1}{6}R_1$
 $R_2 \rightarrow \frac{1}{12}R_2$
 $R_3 \rightarrow \frac{1}{3}R_3$
-$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}$
 
-Thus the inverse of matrix $A$, $A^{-1} = \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}$
+$$
+\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
+$$
+
+Thus the inverse of matrix $A$,
+
+$$
+A^{-1} = \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix}
+$$
 
 **Justification:**
 $A A^{-1} = I$
-$= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+$$
+= \begin{bmatrix} 1 & 2 & 3 \\ -1 & 2 & 4 \\ 1 & 1 & 2 \end{bmatrix} \begin{bmatrix} 0 & -\frac{1}{3} & \frac{2}{3} \\ 2 & -\frac{1}{3} & -\frac{7}{3} \\ -1 & \frac{1}{3} & \frac{4}{3} \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
 
 * আসতে পারে
 - কোড থাকলে সেইভাবে করা লাগবে
@@ -195,18 +228,44 @@ H for 8
 M for 13
 
 Now we construct the matrix with the message as,
-$B = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}$
-or, $B = \begin{bmatrix} 11 & 9 & 12 & 12 & 0 & 8 & 9 & 13 \end{bmatrix}$
 
-we now take the preferable $2 \times 2$ matrix as $A = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix}$ (always square)
-with inverse $A^{-1} = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix}$ (inverse exist না করলে নেওয়া যাবে না)
+$$
+B = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
+$$
+
+or,
+
+$$
+B = \begin{bmatrix} 11 & 9 & 12 & 12 & 0 & 8 & 9 & 13 \end{bmatrix}
+$$
+
+we now take the preferable $2 \times 2$ matrix as
+
+$$
+A = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix}
+$$
+
+(always square)
+with inverse
+
+$$
+A^{-1} = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix}
+$$
+
+(inverse exist না করলে নেওয়া যাবে না)
 
 **Encoded matrix:**
-$I_C = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix} = \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix}$
+
+$$
+I_C = \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix} = \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix}
+$$
 
 <!-- Page 027 -->
 **Decoded matrix:**
-$A^{-1} (I_C) = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix} = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}$
+
+$$
+A^{-1} (I_C) = \frac{1}{3}\begin{bmatrix} 1 & -2 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 27 & 27 & 38 & 12 \\ -3 & 0 & 1 & -12 \end{bmatrix} = \begin{bmatrix} 11 & 9 & 12 & 12 \\ 8 & 9 & 13 & 0 \end{bmatrix}
+$$
 
 **# Dependent নাকি independent**
 rank-3 হলে independent কম হলে dependent
@@ -215,8 +274,13 @@ $\hat{i} + 2\hat{j} + 3\hat{k}$
 $\hat{i} + 2\hat{j} + \hat{k}$
 $\hat{i} + \hat{j} + \hat{k}$
 
-$\begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 1 & 1 & 1 \end{pmatrix} - \text{rank-3 = independent}$
-$\begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 0 & 0 & 0 \end{pmatrix} - \text{dependent}$
+$$
+\begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 1 & 1 & 1 \end{pmatrix} - \text{rank-3 = independent}
+$$
+
+$$
+\begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 1 \\ 0 & 0 & 0 \end{pmatrix} - \text{dependent}
+$$
 
 <!-- Page 028 -->
 **Practice**

@@ -48,7 +48,7 @@ Thus, the eigenvalues of a triangular matrix are exactly its diagonal entries.
 **Answer:**
 Let $v_1, v_2, \dots, v_k$ be eigenvectors of a matrix $A$ corresponding to distinct eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_k$. We proceed by mathematical induction on $k$.
 
-For $k = 1$, a single eigenvector $v_1$ is non-zero by definition, so $\{v_1\}$ is linearly independent.
+For $k = 1$, a single eigenvector $v_1$ is non-zero by definition, so $\lbrace v_1\rbrace$ is linearly independent.
 Assume that any set of $k-1$ eigenvectors corresponding to distinct eigenvalues is linearly independent.
 Consider a linear combination of the $k$ eigenvectors set to zero:
 
@@ -80,7 +80,7 @@ $$
 c_1(\lambda_1 - \lambda_k)v_1 + \dots + c_{k-1}(\lambda_{k-1} - \lambda_k)v_{k-1} = 0
 $$
 
-By the inductive hypothesis, $\{v_1, \dots, v_{k-1}\}$ is a linearly independent set. Therefore, all coefficients in the linear combination must be zero:
+By the inductive hypothesis, $\lbrace v_1, \dots, v_{k-1}\rbrace$ is a linearly independent set. Therefore, all coefficients in the linear combination must be zero:
 
 $$
 c_i(\lambda_i - \lambda_k) = 0 \quad \text{for } i = 1, \dots, k-1
@@ -88,10 +88,16 @@ $$
 
 Since the eigenvalues are distinct, $\lambda_i - \lambda_k \neq 0$. Thus, $c_i = 0$ for all $i = 1, \dots, k-1$.
 Substituting these zeros back into equation (1) gives $c_kv_k = 0$. Since $v_k \neq 0$, we must have $c_k = 0$.
-Since all $c_i = 0$, the set of vectors $\{v_1, \dots, v_k\}$ is linearly independent.
+Since all $c_i = 0$, the set of vectors $\lbrace v_1, \dots, v_k\rbrace$ is linearly independent.
 
 ## Q23 (05)
-**Question:** **Find eigenvalues and eigenvectors of $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$.**
+**Question:** **Find eigenvalues and eigenvectors of
+
+$$
+A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}.
+$$
+
+**
 
 **Answer:**
 **1. Find Eigenvalues:**
@@ -118,7 +124,11 @@ $$
 $$
 
 This gives the equation $-x + y = 0 \implies x = y$.
-The eigenvector for $\lambda_1 = 3$ is $v_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+The eigenvector for $\lambda_1 = 3$ is
+
+$$
+v_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+$$
 
 **For $\lambda_2 = 1$:**
 Solve $(A - 1I)v = 0$.
@@ -128,7 +138,11 @@ $$
 $$
 
 This gives the equation $x + y = 0 \implies x = -y$.
-The eigenvector for $\lambda_2 = 1$ is $v_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+The eigenvector for $\lambda_2 = 1$ is
+
+$$
+v_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}.
+$$
 
 ## Q24 (04)
 **Question:** **Prove that the sum of eigenvalues equals the trace of the matrix.**
@@ -231,20 +245,45 @@ Since $P$ is invertible, its columns must be linearly independent.
 Thus, $A$ has $n$ linearly independent eigenvectors.
 
 $(\Leftarrow)$ **Sufficient condition:** Suppose $A$ has $n$ linearly independent eigenvectors $v_1, v_2, \dots, v_n$ corresponding to eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$.
-Construct a matrix $P$ using these eigenvectors as its columns: $P = \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix}$.
+Construct a matrix $P$ using these eigenvectors as its columns:
+
+$$
+P = \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix}.
+$$
+
 Since the columns are linearly independent, $P$ is invertible.
 Construct a diagonal matrix $D$ with the corresponding eigenvalues on the diagonal: $D = \text{diag}(\lambda_1, \lambda_2, \dots, \lambda_n)$.
-Then $AP = A \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix} = \begin{pmatrix} Av_1 & Av_2 & \dots & Av_n \end{pmatrix} = \begin{pmatrix} \lambda_1 v_1 & \lambda_2 v_2 & \dots & \lambda_n v_n \end{pmatrix}$.
-Similarly, $PD = \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix} \text{diag}(\lambda_1, \dots, \lambda_n) = \begin{pmatrix} \lambda_1 v_1 & \lambda_2 v_2 & \dots & \lambda_n v_n \end{pmatrix}$.
+Then
+
+$$
+AP = A \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix} = \begin{pmatrix} Av_1 & Av_2 & \dots & Av_n \end{pmatrix} = \begin{pmatrix} \lambda_1 v_1 & \lambda_2 v_2 & \dots & \lambda_n v_n \end{pmatrix}.
+$$
+
+Similarly,
+
+$$
+PD = \begin{pmatrix} v_1 & v_2 & \dots & v_n \end{pmatrix} \text{diag}(\lambda_1, \dots, \lambda_n) = \begin{pmatrix} \lambda_1 v_1 & \lambda_2 v_2 & \dots & \lambda_n v_n \end{pmatrix}.
+$$
+
 Since $AP = PD$ and $P$ is invertible, we can multiply on the right by $P^{-1}$ to obtain $A = PDP^{-1}$.
 Thus, $A$ is diagonalizable.
 
 ## Q27 (05)
-**Question:** **Diagonalize the matrix: $\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}$ (if possible).**
+**Question:** **Diagonalize the matrix:
+
+$$
+\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}
+$$
+
+(if possible).**
 
 **Answer:**
 To determine if the matrix is diagonalizable, we must check if it has 2 linearly independent eigenvectors.
-Let $A = \begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}$.
+Let
+
+$$
+A = \begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}.
+$$
 
 **1. Find Eigenvalues:**
 The characteristic equation is $\det(A - \lambda I) = 0$.
@@ -263,8 +302,23 @@ $$
 $$
 
 This gives the equation $y = 0$. The variable $x$ is a free variable.
-So the eigenvectors are of the form $\begin{pmatrix} x \\ 0 \end{pmatrix} = x \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
-There is only one linearly independent eigenvector: $v_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+So the eigenvectors are of the form
+
+$$
+\begin{pmatrix} x \\ 0 \end{pmatrix} = x \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+$$
+
+There is only one linearly independent eigenvector:
+
+$$
+v_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+$$
 
 Since the $2 \times 2$ matrix $A$ has only 1 linearly independent eigenvector (its geometric multiplicity is 1), it does not have enough eigenvectors to form an invertible matrix $P$.
-Therefore, the matrix $\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}$ is **not diagonalizable**.
+Therefore, the matrix
+
+$$
+\begin{pmatrix} 4 & 1 \\ 0 & 4 \end{pmatrix}
+$$
+
+is **not diagonalizable**.

@@ -112,8 +112,8 @@ Since both coefficients are 0, the vectors are linearly independent.
 **# Basis and dimension:**
 - (৩টি independent) ($\mathbb{R}^3$) $\rightarrow$ যতগুলো independent vector দিয়ে generate করা যায়, তাই dimension.
 
-**# Let $\mathbb{R}^3$ জেনারেট করছি $\{v_1, v_2, v_3, v_4\}$ spanning set দিয়ে:**
-- $\{v_1 = (1,0,0), v_2 = (0,1,0), v_3 = (0,0,1)\}$ $\rightarrow$ usual / standard basis (৩টি).
+**# Let $\mathbb{R}^3$ জেনারেট করছি $\lbrace v_1, v_2, v_3, v_4\rbrace$ spanning set দিয়ে:**
+- $\lbrace v_1 = (1,0,0), v_2 = (0,1,0), v_3 = (0,0,1)\rbrace$ $\rightarrow$ usual / standard basis (৩টি).
 - Minimum spanning set & independent হলেই basis.
 - ৩টার কম হবে না।
 
@@ -123,13 +123,13 @@ Since both coefficients are 0, the vectors are linearly independent.
 
 <!-- Page 065 -->
 **# Basis রূপান্তর:**
-- $\mathbb{R}^2$ এর usual basis $\rightarrow \{(1, 0), (0, 1)\}$.
+- $\mathbb{R}^2$ এর usual basis $\rightarrow \lbrace(1, 0), (0, 1)\rbrace$.
 - Dependent vector basis হতে পারে না এবং dimension concept vector number এর basis এ valid না।
 
 **Sum & Direct Sum:**
 Let $W, U$ be vector spaces.
 - **Sum:**
-  $W + U = \{ v = u + w \mid u \in U, w \in W \}$
+  $W + U = \lbrace v = u + w \mid u \in U, w \in W \rbrace$
   $\text{dim}(W + U) = \text{dim}(W) + \text{dim}(U) - \text{dim}(W \cap U)$
 - **Direct Sum:**
   $U \oplus W \rightarrow \text{dim}(U \cap W) = 0$ (একে direct sum বলে)

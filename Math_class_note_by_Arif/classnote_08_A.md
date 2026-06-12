@@ -1,6 +1,9 @@
 <!-- Page 071 -->
 **# $2 \times 2$ matrices:**
-$\sigma_1 = \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix}$
+
+$$
+\sigma_1 = \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix}
+$$
 
 Check whether the vectors are linearly independent.
 
@@ -10,11 +13,20 @@ $c_1 v_1 + c_2 v_2 + \dots + c_n v_n = [0]$
 - $0$ না হলে (at least one non-zero) $\rightarrow$ dependent.
 
 Set,
-$c_1 \sigma_1 + c_2 \sigma_2 + c_3 \sigma_3 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$ (zero matrix of $2 \times 2$)
 
-$\Rightarrow c_1 \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix} + c_2 \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} + c_3 \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$
+$$
+c_1 \sigma_1 + c_2 \sigma_2 + c_3 \sigma_3 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
+$$
 
-$\Rightarrow \begin{pmatrix} 2c_1 + 2c_2 + 2c_3 & 2c_1 + 2c_3 \\ 2c_1 & 2c_1 + 2c_2 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$
+(zero matrix of $2 \times 2$)
+
+$$
+\Rightarrow c_1 \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix} + c_2 \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} + c_3 \begin{pmatrix} 2 & 2 \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
+$$
+
+$$
+\Rightarrow \begin{pmatrix} 2c_1 + 2c_2 + 2c_3 & 2c_1 + 2c_3 \\ 2c_1 & 2c_1 + 2c_2 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}
+$$
 
 From the matrix equation:
 - $2c_1 = 0 \Rightarrow c_1 = 0$
@@ -61,7 +73,7 @@ Let $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ (or in general $T: V(\mathbb{R}) 
 
 **Image of $T$ ($\text{Im } T$):**
 সেই সকল সেট of image are called $\text{Im } T$.
-The set of $\{w_1, w_2, \dots, w_n\}$ are called the image of the linear mapping.
+The set of $\lbrace w_1, w_2, \dots, w_n\rbrace$ are called the image of the linear mapping.
 
 ```
        Domain (V)                      Codomain (W)
@@ -79,7 +91,7 @@ $y = x^2$ mapping from $\mathbb{R} \rightarrow \mathbb{R}$
 - $2 \rightarrow 4$
 - $3 \rightarrow 9$
 - $4 \rightarrow 16$
-$\{1, 4, 9, 16\}$ image তৈরি করবে। যে vector গুলো image তৈরি করবে তাদের সেটই হলো Image of $T$.
+$\lbrace 1, 4, 9, 16\rbrace$ image তৈরি করবে। যে vector গুলো image তৈরি করবে তাদের সেটই হলো Image of $T$.
 
 **Kernel of $T$ ($\text{Ker } T$):**
 ডোমেইনের vector গুলোর মধ্যে যে vector গুলো zero $(0,0,0)$ তে mapping করবে তারাই kernel.
@@ -114,12 +126,12 @@ Find a basis and dimension of:
 
 *Ans:*
 The usual basis (or standard basis) of $\mathbb{R}^3$ is:
-$\{(1, 0, 0), (0, 1, 0), (0, 0, 1)\}$
+$\lbrace(1, 0, 0), (0, 1, 0), (0, 0, 1)\rbrace$
 which generates $\mathbb{R}^3$.
 (cause these 3 vectors can generate the whole vectors of $\mathbb{R}^3$, সব vector কে নিচ্ছি না)
 
 <!-- Page 074 -->
-Then the basis images $\{T(1, 0, 0), T(0, 1, 0), T(0, 0, 1)\}$ will generate $\text{Im } T$.
+Then the basis images $\lbrace T(1, 0, 0), T(0, 1, 0), T(0, 0, 1)\rbrace$ will generate $\text{Im } T$.
 - $V \in \mathbb{R}^3 \rightarrow$ Domain
 - $T(v) \in \mathbb{R}^3 \rightarrow$ Codomain
 
@@ -128,7 +140,7 @@ $T(1, 0, 0) = (1, 0, 1)$
 $T(0, 1, 0) = (2, 1, 0)$
 $T(0, 0, 1) = (0, -1, 2)$
 
-So the image set generators are $\{(1, 0, 1), (2, 1, 0), (0, -1, 2)\}$.
+So the image set generators are $\lbrace(1, 0, 1), (2, 1, 0), (0, -1, 2)\rbrace$.
 
 Now, we will generate a matrix and reduce it to its echelon form to find the linearly independent vectors:
 
@@ -149,7 +161,7 @@ $$
 $$
 
 We see there are two independent vectors: $(1, 0, 1)$ and $(0, -1, 2)$.
-Hence, $\{(1, 0, 1), (0, -1, 2)\}$ is a basis of $\text{Im } T$.
+Hence, $\lbrace(1, 0, 1), (0, -1, 2)\rbrace$ is a basis of $\text{Im } T$.
 The number of elements in the basis is 2, so:
 
 $$
@@ -186,7 +198,7 @@ Say, $z$ is the free variable. Set $z = 1$:
 $\Rightarrow y = 1$
 $\Rightarrow x = -2$
 
-Thus, $\{(-2, 1, 1)\}$ is a basis of $\text{Ker } T$.
+Thus, $\lbrace(-2, 1, 1)\rbrace$ is a basis of $\text{Ker } T$.
 The number of elements in the basis is 1, so:
 
 $$
@@ -213,18 +225,18 @@ Find:
 > $T^2(x, y) = T(T(x, y))$
 
 *Proof for (i):*
-The standard basis of $\mathbb{R}^2$ is $\{(1, 0), (0, 1)\}$ which generates $\mathbb{R}^2$.
-Then $\{T(1, 0), T(0, 1)\}$ will generate $\text{Im } T$.
+The standard basis of $\mathbb{R}^2$ is $\lbrace(1, 0), (0, 1)\rbrace$ which generates $\mathbb{R}^2$.
+Then $\lbrace T(1, 0), T(0, 1)\rbrace$ will generate $\text{Im } T$.
 
 Now,
 - $T(1, 0) = (1, 0)$
 - $T(0, 1) = (0, 0)$
-So, $3T = \{(3, 0), (0, 0)\}$
+So, $3T = \lbrace(3, 0), (0, 0)\rbrace$
 
 And,
 - $T'(1, 0) = (0, 1)$
 - $T'(0, 1) = (1, 0)$
-So, $3T' = \{(0, 3), (3, 0)\}$
+So, $3T' = \lbrace(0, 3), (3, 0)\rbrace$
 
 <!-- Page 077 -->
 
@@ -242,7 +254,7 @@ $3T(x, y) + 3T'(x, y) = 3(x, 0) + 3(y, x) = (3x + 3y, 3x)$
 ### Matrix Representation of a Linear Mapping
 
 Let $T: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ be defined by $T(x, y) = (5x+y, -4x+3y)$.
-Find the matrix representation of $T$ with respect to the basis $\{v_1 = (3, 1), v_2 = (5, 2)\}$.
+Find the matrix representation of $T$ with respect to the basis $\lbrace v_1 = (3, 1), v_2 = (5, 2)\rbrace$.
 
 ```
       Domain A                        Codomain B
@@ -253,7 +265,7 @@ Find the matrix representation of $T$ with respect to the basis $\{v_1 = (3, 1),
     f: A ----------> B (m-dimensional independent vectors)
 ```
 
-In general, let $T(v_1), T(v_2), \dots, T(v_n)$ be the images of the domain basis vectors. Express them as linear combinations of the codomain basis $\{w_1, w_2, \dots, w_m\}$:
+In general, let $T(v_1), T(v_2), \dots, T(v_n)$ be the images of the domain basis vectors. Express them as linear combinations of the codomain basis $\lbrace w_1, w_2, \dots, w_m\rbrace$:
 $T(v_1) = a_{11}w_1 + a_{12}w_2 + \dots + a_{1m}w_m$
 $T(v_2) = a_{21}w_1 + a_{22}w_2 + \dots + a_{2m}w_m$
 $\vdots$
@@ -279,7 +291,7 @@ Here $v_1 = (3, 1)$ and $v_2 = (5, 2)$.
 $T(v_1) = T(3, 1) = (5(3)+1, -4(3)+3(1)) = (16, -9)$
 $T(v_2) = T(5, 2) = (5(5)+2, -4(5)+3(2)) = (27, -14)$
 
-Expressing $T(v_1)$ and $T(v_2)$ as linear combinations of the basis $\{v_1, v_2\}$:
+Expressing $T(v_1)$ and $T(v_2)$ as linear combinations of the basis $\lbrace v_1, v_2\rbrace$:
 Let $T(v_1) = a v_1 + b v_2$
 $\Rightarrow (16, -9) = a(3, 1) + b(5, 2) = (3a + 5b, a + 2b)$
 
@@ -367,7 +379,19 @@ $(2, 0, 0)$ and $(0, 2, 0)$ since $\langle u, v \rangle = 0$, but $\|u\| = 2$ an
 
 ---
 
-**# Find the angle between the matrices $u = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$ and $v = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$.**
+**# Find the angle between the matrices
+
+$$
+u = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+$$
+
+and
+
+$$
+v = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}.
+$$
+
+**
 
 *Ans:*
 $\langle u, v \rangle = \text{sum of products of corresponding elements} = 1(1) + 0(1) + 0(1) + 1(1) = 2$

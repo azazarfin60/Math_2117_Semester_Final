@@ -26,14 +26,14 @@ Since all 10 axioms hold true, $\mathbb{R}^n$ is a vector space over $\mathbb{R}
 **Question:** **Construct a non-trivial subspace of $\mathbb{R}^5$ that is not spanned by standard basis vectors.**
 
 **Answer:**
-A subspace is non-trivial if it is neither the zero subspace $\{0\}$ nor the entire space $\mathbb{R}^5$. It is not spanned by standard basis vectors $e_1, e_2, e_3, e_4, e_5$ if its basis vectors are not a subset of these standard vectors.
+A subspace is non-trivial if it is neither the zero subspace $\lbrace 0\rbrace$ nor the entire space $\mathbb{R}^5$. It is not spanned by standard basis vectors $e_1, e_2, e_3, e_4, e_5$ if its basis vectors are not a subset of these standard vectors.
 
-Let $W = \text{span}\{(1, 1, 1, 1, 1)\}$.
+Let $W = \text{span}\lbrace(1, 1, 1, 1, 1)\rbrace$.
 
 This is a one-dimensional subspace of $\mathbb{R}^5$. The vector $(1, 1, 1, 1, 1)$ cannot be written as a scalar multiple of any single standard basis vector. The space generated is simply all vectors of the form $(a, a, a, a, a)$ for $a \in \mathbb{R}$. This forms a valid non-trivial subspace.
 
 ## Q3 (04)
-**Question:** **Test whether the set $V = \{(x, y) \in \mathbb{R}^2 : xy = 0\}$ is a vector space.**
+**Question:** **Test whether the set $V = \lbrace(x, y) \in \mathbb{R}^2 : xy = 0\rbrace$ is a vector space.**
 
 **Answer:**
 For a subset to be a vector space, it must be closed under vector addition.
@@ -52,7 +52,7 @@ For the sum $(1, 1)$, the product of the coordinates is $1 \cdot 1 = 1 \neq 0$. 
 Since $V$ is not closed under addition, it is not a vector space.
 
 ## Q4 (05)
-**Question:** **Let $V = \mathbb{R}^4$. Prove that the set $W = \{(x, y, z, w) : x + y + z + w = 0\}$ is a subspace and find its dimension.**
+**Question:** **Let $V = \mathbb{R}^4$. Prove that the set $W = \lbrace(x, y, z, w) : x + y + z + w = 0\rbrace$ is a subspace and find its dimension.**
 
 **Answer:**
 To prove $W$ is a subspace, we must verify three properties:
@@ -72,10 +72,10 @@ $$
 (x, y, z, -x-y-z) = x(1, 0, 0, -1) + y(0, 1, 0, -1) + z(0, 0, 1, -1)
 $$
 
-The set of vectors $\{(1, 0, 0, -1), (0, 1, 0, -1), (0, 0, 1, -1)\}$ spans $W$ and is linearly independent. Therefore, the basis has 3 vectors, meaning $\dim(W) = 3$.
+The set of vectors $\lbrace(1, 0, 0, -1), (0, 1, 0, -1), (0, 0, 1, -1)\rbrace$ spans $W$ and is linearly independent. Therefore, the basis has 3 vectors, meaning $\dim(W) = 3$.
 
 ## Q5 (05)
-**Question:** **Let $W = \{(x, y, z) \in \mathbb{R}^3 : x + 2y + 3z = 0\}$. Show that $W$ is a subspace and find its dimension.**
+**Question:** **Let $W = \lbrace(x, y, z) \in \mathbb{R}^3 : x + 2y + 3z = 0\rbrace$. Show that $W$ is a subspace and find its dimension.**
 
 **Answer:**
 **Proof of Subspace:**
@@ -89,14 +89,14 @@ $W$ is a subspace.
 
 **Dimension of $W$:**
 From the equation, $x = -2y - 3z$. Vectors in $W$ are of the form $(-2y - 3z, y, z) = y(-2, 1, 0) + z(-3, 0, 1)$.
-The set $\{(-2, 1, 0), (-3, 0, 1)\}$ forms a basis because they are linearly independent and span $W$. Hence, $\dim(W) = 2$.
+The set $\lbrace(-2, 1, 0), (-3, 0, 1)\rbrace$ forms a basis because they are linearly independent and span $W$. Hence, $\dim(W) = 2$.
 
 ## Q6 (04)
 **Question:** **Give an example of a subset of a vector space that is closed under addition but not scalar multiplication.**
 
 **Answer:**
 Consider the vector space $V = \mathbb{R}^2$ over the field $\mathbb{R}$.
-Let $W = \{(x, y) \in \mathbb{R}^2 : x \geq 0 \text{ and } y \geq 0\}$. This is the first quadrant of the Cartesian plane.
+Let $W = \lbrace(x, y) \in \mathbb{R}^2 : x \geq 0 \text{ and } y \geq 0\rbrace$. This is the first quadrant of the Cartesian plane.
 
 **Closed under addition:** If $u = (x_1, y_1)$ and $v = (x_2, y_2)$ are in $W$, then $x_1, x_2, y_1, y_2 \geq 0$. Their sum is $u + v = (x_1+x_2, y_1+y_2)$. Since the sum of non-negative numbers is non-negative, $x_1+x_2 \geq 0$ and $y_1+y_2 \geq 0$. Thus $u + v \in W$.
 
@@ -109,7 +109,7 @@ Therefore, $W$ is closed under addition but not under scalar multiplication.
 **Question:** **Prove that the intersection of any collection of subspaces is a subspace.**
 
 **Answer:**
-Let $\{W_i\}_{i \in I}$ be a collection of subspaces of a vector space $V$. Let $W = \bigcap_{i \in I} W_i$.
+Let $\lbrace W_i\rbrace_{i \in I}$ be a collection of subspaces of a vector space $V$. Let $W = \bigcap_{i \in I} W_i$.
 
 1. Since each $W_i$ is a subspace, the zero vector $0 \in W_i$ for all $i \in I$. Thus $0 \in W$.
 2. Let $u, v \in W$. This implies $u, v \in W_i$ for all $i \in I$. Since each $W_i$ is closed under addition, $u + v \in W_i$ for all $i \in I$. Therefore, $u + v \in W$.
@@ -122,7 +122,7 @@ Since $W$ contains the zero vector and is closed under both vector addition and 
 
 **Answer:**
 **Proof that $U + W$ is a subspace:**
-Let $U + W = \{u + w : u \in U, w \in W\}$.
+Let $U + W = \lbrace u + w : u \in U, w \in W\rbrace$.
 1. Since $0 \in U$ and $0 \in W$, $0 = 0 + 0 \in U + W$.
 2. Let $v_1, v_2 \in U + W$. Then $v_1 = u_1 + w_1$ and $v_2 = u_2 + w_2$ for some $u_1, u_2 \in U$ and $w_1, w_2 \in W$.
 $v_1 + v_2 = (u_1 + u_2) + (w_1 + w_2)$. Since $U, W$ are subspaces, $u_1+u_2 \in U$ and $w_1+w_2 \in W$. Thus $v_1 + v_2 \in U + W$.
@@ -133,11 +133,11 @@ Hence, $U + W$ is a subspace.
 
 **Dimension Formula:**
 Let $\dim(U \cap W) = k$, $\dim U = m$, and $\dim W = n$.
-Let $\{v_1, \dots, v_k\}$ be a basis for $U \cap W$.
-Extend this to a basis of $U$: $\{v_1, \dots, v_k, u_{k+1}, \dots, u_m\}$.
-Extend the same basis to a basis of $W$: $\{v_1, \dots, v_k, w_{k+1}, \dots, w_n\}$.
+Let $\lbrace v_1, \dots, v_k\rbrace$ be a basis for $U \cap W$.
+Extend this to a basis of $U$: $\lbrace v_1, \dots, v_k, u_{k+1}, \dots, u_m\rbrace$.
+Extend the same basis to a basis of $W$: $\lbrace v_1, \dots, v_k, w_{k+1}, \dots, w_n\rbrace$.
 
-The set $B = \{v_1, \dots, v_k, u_{k+1}, \dots, u_m, w_{k+1}, \dots, w_n\}$ spans $U + W$.
+The set $B = \lbrace v_1, \dots, v_k, u_{k+1}, \dots, u_m, w_{k+1}, \dots, w_n\rbrace$ spans $U + W$.
 To show linear independence, suppose:
 
 $$
@@ -151,7 +151,7 @@ x = -a_1v_1 - \dots - a_kv_k - c_{k+1}w_{k+1} - \dots - c_nw_n
 $$
 
 Since the RHS is in $W$, $x \in W$. But $x \in U$ by definition. So $x \in U \cap W$.
-Since $x \in U \cap W$, it can be written as a linear combination of $v_1, \dots, v_k$. However, $\{v_1, \dots, u_m\}$ is a basis for $U$, so the $u_i$ coefficients ($b_j$) must be zero.
+Since $x \in U \cap W$, it can be written as a linear combination of $v_1, \dots, v_k$. However, $\lbrace v_1, \dots, u_m\rbrace$ is a basis for $U$, so the $u_i$ coefficients ($b_j$) must be zero.
 
 Substituting $b_j = 0$ into the original equation leaves only $v_i$ and $w_j$ vectors, which form a basis for $W$, so their coefficients must also be zero. Thus $B$ is linearly independent. The number of vectors in $B$ is $k + (m - k) + (n - k) = m + n - k$.
 
@@ -172,7 +172,7 @@ Since $W$ satisfies all the vector space axioms under the operations of $V$, it 
 **Question:** **Show that the union of two subspaces is not necessarily a subspace.**
 
 **Answer:**
-Consider the vector space $V = \mathbb{R}^2$. Let $U = \{(x, 0) : x \in \mathbb{R}\}$ (the x-axis) and $W = \{(0, y) : y \in \mathbb{R}\}$ (the y-axis). Both $U$ and $W$ are valid one-dimensional subspaces of $\mathbb{R}^2$.
+Consider the vector space $V = \mathbb{R}^2$. Let $U = \lbrace(x, 0) : x \in \mathbb{R}\rbrace$ (the x-axis) and $W = \lbrace(0, y) : y \in \mathbb{R}\rbrace$ (the y-axis). Both $U$ and $W$ are valid one-dimensional subspaces of $\mathbb{R}^2$.
 
 Now consider their union $U \cup W$, which consists of all vectors lying on either the x-axis or the y-axis. Take the vector $u = (1, 0) \in U$ and $w = (0, 1) \in W$. Both vectors are in $U \cup W$.
 

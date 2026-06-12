@@ -20,7 +20,7 @@ This forms a Banach space because the uniform limit of a Cauchy sequence of cont
 
 **Answer:**
 Let $V$ be an $n$-dimensional normed linear space with norm $\|\cdot\|$. We must show every Cauchy sequence in $V$ converges to a limit in $V$.
-Let $\{e_1, e_2, \dots, e_n\}$ be a basis for $V$. Any vector $x \in V$ can be uniquely written as $x = \sum_{i=1}^n \alpha_i e_i$.
+Let $\lbrace e_1, e_2, \dots, e_n\rbrace$ be a basis for $V$. Any vector $x \in V$ can be uniquely written as $x = \sum_{i=1}^n \alpha_i e_i$.
 
 Define a standard reference norm on $V$, such as $\|x\|_1 = \sum_{i=1}^n |\alpha_i|$. In a finite-dimensional space, all norms are equivalent. Thus, there exist constants $c, C > 0$ such that $c\|x\|_1 \leq \|x\| \leq C\|x\|_1$ for all $x \in V$.
 

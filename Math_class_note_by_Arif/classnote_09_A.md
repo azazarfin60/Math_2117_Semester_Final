@@ -34,7 +34,7 @@ $$
 
 ---
 
-**# Show that $\{(1, 0, 0), (0, 1, 0), (0, 0, 1)\}$ forms an orthonormal basis of $\mathbb{R}^3$.**
+**# Show that $\lbrace(1, 0, 0), (0, 1, 0), (0, 0, 1)\rbrace$ forms an orthonormal basis of $\mathbb{R}^3$.**
 
 *Proof:*
 Let,
@@ -54,10 +54,10 @@ Let,
 - Similarly, the angle between $e_1$ and $e_3$ is also $90^\circ$.
 
 Since the vectors are mutually orthogonal and each has a unit norm, the basis is orthonormal.
-Therefore, $\{(1, 0, 0), (0, 1, 0), (0, 0, 1)\}$ forms an orthonormal basis of $\mathbb{R}^3$.
+Therefore, $\lbrace(1, 0, 0), (0, 1, 0), (0, 0, 1)\rbrace$ forms an orthonormal basis of $\mathbb{R}^3$.
 
 > [!NOTE]
-> $\mathbb{R}^n$ এর orthonormal basis: $\{(1, 0, \dots, 0), (0, 1, \dots, 0), \dots, (0, 0, \dots, 1)\}$ ($n$-tuples).
+> $\mathbb{R}^n$ এর orthonormal basis: $\lbrace(1, 0, \dots, 0), (0, 1, \dots, 0), \dots, (0, 0, \dots, 1)\rbrace$ ($n$-tuples).
 
 ---
 

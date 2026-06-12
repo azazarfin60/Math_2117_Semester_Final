@@ -27,15 +27,11 @@ Let $T: V \to W$ be a linear transformation between vector spaces $V$ and $W$.
 
 *   **Kernel (Null Space) of $T$:** The set of all vectors in the domain $V$ that map to the zero vector in $W$.
 
-
-
 $$
 \text{ker}(T) = \lbracev \in V \mid T(v) = 0_W\rbrace
 $$
 
 *   **Range (Image) of $T$:** The set of all vectors in the codomain $W$ that are the image of at least one vector in $V$ under the transformation $T$.
-
-
 
 $$
 \text{range}(T) = \lbraceT(v) \mid v \in V\rbrace
@@ -43,15 +39,11 @@ $$
 
 *   **Nullity of $T$:** The dimension of the kernel of $T$.
 
-
-
 $$
 \text{nullity}(T) = \dim(\text{ker}(T))
 $$
 
 *   **Rank of $T$:** The dimension of the range of $T$.
-
-
 
 $$
 \text{rank}(T) = \dim(\text{range}(T))
@@ -81,7 +73,7 @@ $$
 
 **(ii) Range of $T$**:
 $T(x, y, z) = x(1, 0) + y(1, 1) + z(0, 1)$.
-The range is spanned by $\{(1, 0), (1, 1), (0, 1)\}$. The vectors $(1, 0)$ and $(0, 1)$ are linearly independent and span $\mathbb{R}^2$.
+The range is spanned by $\lbrace(1, 0), (1, 1), (0, 1)\rbrace$. The vectors $(1, 0)$ and $(0, 1)$ are linearly independent and span $\mathbb{R}^2$.
 Thus, $\text{range}(T) = \mathbb{R}^2$.
 
 **(iii) Rank and Nullity**:
@@ -106,8 +98,18 @@ $$
 
 **2. Rank and Nullity**:
 We find the reduced row echelon form (RREF) of $A$:
-$R_3 \to R_3 - R_1$: $\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & -1 & 1 \end{pmatrix}$
-$R_3 \to R_3 + R_2$: $\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{pmatrix}$
+$R_3 \to R_3 - R_1$:
+
+$$
+\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & -1 & 1 \end{pmatrix}
+$$
+
+$R_3 \to R_3 + R_2$:
+
+$$
+\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{pmatrix}
+$$
+
 The matrix has 3 non-zero rows (pivots in every column). Thus, $\text{rank}(T) = 3$.
 Since the rank is 3, the null space only contains the zero vector. Thus, $\text{nullity}(T) = 0$.
 
@@ -130,18 +132,18 @@ $$
 $$
 
 ## Q21 (04)
-**Question:** **Prove that a linear transformation $T: V \to W$ is injective if and only if $\text{ker}(T) = \{0\}$.**
+**Question:** **Prove that a linear transformation $T: V \to W$ is injective if and only if $\text{ker}(T) = \lbrace 0\rbrace$.**
 
 **Answer:**
 **$(\Rightarrow)$ Assume $T$ is injective (one-to-one):**
-We must show $\text{ker}(T) = \{0\}$.
+We must show $\text{ker}(T) = \lbrace 0\rbrace$.
 Let $v \in \text{ker}(T)$. Then $T(v) = 0$. Since $T$ is linear, we also know $T(0) = 0$. So $T(v) = T(0)$.
-Because $T$ is injective, this implies $v = 0$. Thus, the only element in the kernel is the zero vector, so $\text{ker}(T) = \{0\}$.
+Because $T$ is injective, this implies $v = 0$. Thus, the only element in the kernel is the zero vector, so $\text{ker}(T) = \lbrace 0\rbrace$.
 
-**$(\Leftarrow)$ Assume $\text{ker}(T) = \{0\}$:**
+**$(\Leftarrow)$ Assume $\text{ker}(T) = \lbrace 0\rbrace$:**
 We must show $T$ is injective.
 Suppose there are vectors $u, v \in V$ such that $T(u) = T(v)$. By linearity, $T(u) - T(v) = 0 \implies T(u - v) = 0$.
-This means the vector $(u - v)$ is in the kernel of $T$. Since $\text{ker}(T) = \{0\}$, it must be that $u - v = 0$, which implies $u = v$.
+This means the vector $(u - v)$ is in the kernel of $T$. Since $\text{ker}(T) = \lbrace 0\rbrace$, it must be that $u - v = 0$, which implies $u = v$.
 Therefore, $T$ maps distinct elements to distinct elements, meaning $T$ is injective.
 
 ## Q22 (05)
@@ -179,7 +181,7 @@ $$
 So, $T^{-1}(x, y) = (x - 2y, -x + 3y)$.
 
 ## Q23 (05)
-**Question:** **Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x + y, x - y)$. Let $B = \{(1, 1), (1, -1)\}$. Find the matrix of $T$ with respect to the basis $B$.**
+**Question:** **Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x + y, x - y)$. Let $B = \lbrace(1, 1), (1, -1)\rbrace$. Find the matrix of $T$ with respect to the basis $B$.**
 
 **Answer:**
 Let the basis vectors be $b_1 = (1, 1)$ and $b_2 = (1, -1)$.
@@ -193,14 +195,22 @@ This gives a system:
 $c_1 + c_2 = 2$
 $c_1 - c_2 = 0 \implies c_1 = c_2$
 So $2c_1 = 2 \implies c_1 = 1$, and $c_2 = 1$.
-Therefore, $[T(b_1)]_B = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+Therefore,
+
+$$
+[T(b_1)]_B = \begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+$$
 
 Let $(0, 2) = d_1b_1 + d_2b_2 = (d_1+d_2, d_1-d_2)$.
 This gives:
 $d_1 + d_2 = 0 \implies d_1 = -d_2$
 $d_1 - d_2 = 2 \implies -d_2 - d_2 = 2 \implies -2d_2 = 2 \implies d_2 = -1$.
 So $d_1 = 1$.
-Therefore, $[T(b_2)]_B = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+Therefore,
+
+$$
+[T(b_2)]_B = \begin{pmatrix} 1 \\ -1 \end{pmatrix}.
+$$
 
 The matrix of $T$ with respect to $B$ is formed by these coordinate vectors as columns:
 
@@ -212,11 +222,11 @@ $$
 **Question:** **Show that a linear transformation is injective if and only if its nullity is zero.**
 
 **Answer:**
-Let $T: V \to W$ be a linear transformation. We previously proved that $T$ is injective if and only if its kernel contains only the zero vector: $\text{ker}(T) = \{0\}$.
+Let $T: V \to W$ be a linear transformation. We previously proved that $T$ is injective if and only if its kernel contains only the zero vector: $\text{ker}(T) = \lbrace 0\rbrace$.
 
 The nullity of $T$ is defined as the dimension of the kernel: $\text{nullity}(T) = \dim(\text{ker}(T))$.
 The dimension of a vector space is $0$ if and only if the space consists of exactly the zero vector.
-Therefore, $\text{ker}(T) = \{0\}$ is logically equivalent to $\dim(\text{ker}(T)) = 0$, which means $\text{nullity}(T) = 0$.
+Therefore, $\text{ker}(T) = \lbrace 0\rbrace$ is logically equivalent to $\dim(\text{ker}(T)) = 0$, which means $\text{nullity}(T) = 0$.
 
 By transitivity, $T$ is injective if and only if $\text{nullity}(T) = 0$.
 
