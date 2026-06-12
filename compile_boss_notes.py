@@ -68,7 +68,19 @@ def post_process_tex(tex_content, theme="light"):
     tcolorbox_setup = r"""
 \usepackage[most]{tcolorbox}
 \renewenvironment{quote}
-  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=3pt,boxrule=0.5pt,leftrule=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt]}
+  {\begin{tcolorbox}[
+     colback=calloutbg,
+     colframe=calloutframe,
+     colupper=callouttext,
+     arc=3pt,
+     boxrule=0.5pt,
+     leftrule=0.5pt,
+     borderline west={3pt}{0pt}{calloutaccent},
+     left=8pt,
+     right=8pt,
+     top=6pt,
+     bottom=6pt
+   ]}
   {\end{tcolorbox}}
 """
     
@@ -97,11 +109,13 @@ def post_process_tex(tex_content, theme="light"):
         color_setup = r"""
 \usepackage{xcolor}
 \usepackage{eso-pic}
-\definecolor{darkbg}{HTML}{1E1E1E}
-\definecolor{lighttext}{HTML}{E0E0E0}
-\definecolor{calloutbg}{HTML}{2D3748}
-\definecolor{calloutframe}{HTML}{3182CE}
-\definecolor{headercolor}{HTML}{63B3ED}
+\definecolor{darkbg}{HTML}{0D1117}
+\definecolor{lighttext}{HTML}{C9D1D9}
+\definecolor{calloutbg}{HTML}{161B22}
+\definecolor{calloutframe}{HTML}{30363D}
+\definecolor{calloutaccent}{HTML}{58A6FF}
+\definecolor{callouttext}{HTML}{C9D1D9}
+\definecolor{headercolor}{HTML}{58A6FF}
 \AddToShipoutPictureBG{\color{darkbg}\AtPageLowerLeft{\rule{\paperwidth}{\paperheight}}}
 \color{lighttext}
 \hypersetup{
@@ -116,8 +130,10 @@ def post_process_tex(tex_content, theme="light"):
         color_setup = r"""
 \usepackage{xcolor}
 \definecolor{calloutbg}{HTML}{F0F8FF}
-\definecolor{calloutframe}{HTML}{1D4ED8}
-\definecolor{headercolor}{HTML}{1E3A8A}
+\definecolor{calloutframe}{HTML}{D0D7DE}
+\definecolor{calloutaccent}{HTML}{0969DA}
+\definecolor{callouttext}{HTML}{000000}
+\definecolor{headercolor}{HTML}{0969DA}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,

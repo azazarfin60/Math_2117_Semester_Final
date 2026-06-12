@@ -70,8 +70,10 @@
 
 \usepackage{xcolor}
 \definecolor{calloutbg}{HTML}{F0F8FF}
-\definecolor{calloutframe}{HTML}{1D4ED8}
-\definecolor{headercolor}{HTML}{1E3A8A}
+\definecolor{calloutframe}{HTML}{D0D7DE}
+\definecolor{calloutaccent}{HTML}{0969DA}
+\definecolor{callouttext}{HTML}{000000}
+\definecolor{headercolor}{HTML}{0969DA}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,
@@ -82,7 +84,19 @@
 
 \usepackage[most]{tcolorbox}
 \renewenvironment{quote}
-  {\begin{tcolorbox}[colback=calloutbg,colframe=calloutframe,arc=3pt,boxrule=0.5pt,leftrule=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt]}
+  {\begin{tcolorbox}[
+     colback=calloutbg,
+     colframe=calloutframe,
+     colupper=callouttext,
+     arc=3pt,
+     boxrule=0.5pt,
+     leftrule=0.5pt,
+     borderline west={3pt}{0pt}{calloutaccent},
+     left=8pt,
+     right=8pt,
+     top=6pt,
+     bottom=6pt
+   ]}
   {\end{tcolorbox}}
 
 \usepackage{enumitem}
