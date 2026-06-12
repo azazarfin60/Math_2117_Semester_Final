@@ -19,4 +19,3 @@
 ### 🖥️ CSE Department (Math 2113)
 
 *   [CSE Department Exam Questions Index](../CSE_Dept._Prev_Year/00-index.md)
-

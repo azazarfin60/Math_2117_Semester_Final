@@ -6,13 +6,13 @@
 
 ---
 
-### Q1. Find constants $a, b, c$ so that 
+### Q1. Find constants $a, b, c$ so that
 
 $$
 \vec{F} = (x + 2y + az)\hat{i} + (bx - 3y - z)\hat{j} + (4x + cy + 2z)\hat{k}
 $$
 
- is a conservative force field. Also obtain the scalar potential. (03+06)
+is a conservative force field. Also obtain the scalar potential. (03+06)
 
 **Answer:**
 
@@ -63,7 +63,7 @@ $$
 b - 2 = 0 \implies b = 2
 $$
 
-So, the constants are 
+So, the constants are
 
 $$
 a = 4, \quad b = 2, \quad c = -1
@@ -194,19 +194,19 @@ $$
 
 ---
 
-### Q3. If 
+### Q3. If
 
 $$
 \vec{F} = (5xy - 6x^2)\hat{i} + (2y - 4x)\hat{j}
 $$
 
-, evaluate 
+, evaluate
 
 $$
 \int_C \vec{F} \cdot d\vec{r}
 $$
 
- along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
+along the curve $C$ in the $xy$ plane, $y = x^3$ from the point $(1, 1)$ to $(2, 8)$. (06)
 
 **Answer:**
 

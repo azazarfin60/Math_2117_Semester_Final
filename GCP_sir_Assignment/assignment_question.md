@@ -13,9 +13,11 @@
 7. Prove that the intersection of any collection of subspaces is a subspace.
 8. Let $U, W \subseteq V$. Prove that $U + W$ is a subspace and
 
-   $$
-   \dim(U + W) = \dim U + \dim W - \dim(U \cap W)
-   $$
+
+
+$$
+\dim(U + W) = \dim U + \dim W - \dim(U \cap W)
+$$
 
 9. Prove that every subspace of a vector space is itself a vector space.
 10. Show that the union of two subspaces is not necessarily a subspace.
@@ -36,9 +38,9 @@
 
 16. Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined by $T(x, y) = (x^2, y)$. Check whether $T$ is a linear transformation. Justify your answer.
 17. Define kernel, range, rank, and nullity of a linear transformation.
-18. Let $T: \mathbb{R}^3 \to \mathbb{R}^2$ be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation?  
+18. Let $T: \mathbb{R}^3 \to \mathbb{R}^2$ be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation?
     Find: (i) Kernel of $T$, (ii) Range of $T$, (iii) Rank and Nullity.
-19. Let $T: \mathbb{R}^3 \to \mathbb{R}^3$ be defined by $T(x, y, z) = (x + y, y + z, z + x)$.  
+19. Let $T: \mathbb{R}^3 \to \mathbb{R}^3$ be defined by $T(x, y, z) = (x + y, y + z, z + x)$.
     Find the matrix of $T$, its rank, nullity, and verify the rank-nullity theorem.
 20. Find the matrix of the linear transformation $T: \mathbb{R}^2 \to \mathbb{R}^2$, defined by $T(x, y) = (2x + y, x - y)$, with respect to the standard basis.
 21. Prove that a linear transformation $T: V \to W$ is injective if and only if $\text{ker}(T) = \{0\}$.

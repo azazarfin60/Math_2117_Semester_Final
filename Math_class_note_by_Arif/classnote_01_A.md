@@ -271,8 +271,10 @@ homogenous এর unique এর সল্যুশন নাই।
 
 $AX = B$
 $A = egin{pmatrix} a_{11} & a_{12} & \dots & a_{1n} \ a_{21} & a_{22} & \dots & a_{2n} \ a_{n1} & a_{n2} & \dots & a_{nn} \end{pmatrix} \leftarrow 	ext{coefficient of the unknowns}$
-$X = egin{pmatrix} x_1 \ x_2 \ dots \ x_n \end{pmatrix}$
-$B = egin{pmatrix} b_1 \ b_2 \ dots \ b_n \end{pmatrix}$
+$X = egin{pmatrix} x_1 \ x_2 \
+dots \ x_n \end{pmatrix}$
+$B = egin{pmatrix} b_1 \ b_2 \
+dots \ b_n \end{pmatrix}$
 
 $[A:B]$
 solution থাকলে consistent
@@ -295,7 +297,7 @@ $
 ightarrow$ system should be written into $AX=B$ form
 $
 ightarrow$ Augmented matrix বৃদ্ধি করা (concatenated)
-$[A:B] 
+$[A:B]
 ightarrow$ horizontal cat
 
 $\Rightarrow$ convert augmented $
@@ -313,7 +315,7 @@ solution can be
 - unique solution (rank of augmented matrix = rank of A and equal to number of unkowns or variables)
 - more than one solution (rank same but rank of $[A:B] = 	ext{rank of } A < 	ext{number of unknown}$)
 
-if $	ext{rank}(A) 
+if $	ext{rank}(A)
 eq 	ext{rank}[A:B]$
 then the system has no solution.
 
@@ -331,20 +333,23 @@ $B = egin{bmatrix} 2 \ -2 \ 3 \end{bmatrix}$
 matrix form of the system
 
 Now, the augmented matrix is
-$[A:B] = egin{bmatrix} 1 & -2 & -5 & dots & 2 \ -1 & 1 & 3 & dots & -2 \ 2 & 1 & 1 & dots & 3 \end{bmatrix}$
+$[A:B] = egin{bmatrix} 1 & -2 & -5 &
+dots & 2 \ -1 & 1 & 3 &
+dots & -2 \ 2 & 1 & 1 &
+dots & 3 \end{bmatrix}$
 matrix গুলো vertical cat করা হয়েছে
 horizontal cat
 
 convert this to echelon form
 $egin{bmatrix} 1 & -2 & -5 & 2 \ -1 & 1 & 3 & -2 \ 2 & 1 & 1 & 3 \end{bmatrix}$
 
-$R_2 
+$R_2
 ightarrow R_1 + R_2$
-$R_3 
+$R_3
 ightarrow R_3 - 2R_1$
 $egin{bmatrix} 1 & -2 & -5 & 2 \ 0 & -1 & -2 & 0 \ 0 & 5 & 11 & -1 \end{bmatrix}$
 
-$R_3 
+$R_3
 ightarrow 5R_2 + R_3$
 $egin{bmatrix} 1 & -2 & -5 & 2 \ 0 & -1 & -2 & 0 \ 0 & 0 & 1 & -1 \end{bmatrix}$
 
@@ -364,27 +369,56 @@ so the system has a unique solution.
 <b>Class 8 | Mam</b>
 
 $\# x = 3\cos t$, $y = 3\sin t$, $z = 4t$
-$ec{r} = 3\cos t \hat{i} + 3\sin t \hat{j} + 4t\hat{k}$
-$rac{dec{r}}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}$
+$
+ec{r} = 3\cos t \hat{i} + 3\sin t \hat{j} + 4t\hat{k}$
+$
+rac{d
+ec{r}}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}$
 
-$\left| rac{dec{r}}{dt} 
+$\left|
+rac{d
+ec{r}}{dt}
 ight| = 5$
 
-$T = rac{rac{dec{r}}{dt}}{\left| rac{dec{r}}{dt} 
-ight|} = rac{-3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}}{5} = -rac{3}{5}\sin t \hat{i} + rac{3}{5}\cos t \hat{j} + rac{4}{5}\hat{k}$
+$T =
+rac{
+rac{d
+ec{r}}{dt}}{\left|
+rac{d
+ec{r}}{dt}
+ight|} =
+rac{-3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}}{5} = -
+rac{3}{5}\sin t \hat{i} +
+rac{3}{5}\cos t \hat{j} +
+rac{4}{5}\hat{k}$
 
-$rac{dT}{ds} = kN$
-$rac{dT}{dt} 	imes rac{dt}{ds} = kN$
-$rac{dT}{dt} 	imes rac{1}{\left| rac{dec{r}}{dt} 
+$
+rac{dT}{ds} = kN$
+$
+rac{dT}{dt} 	imes
+rac{dt}{ds} = kN$
+$
+rac{dT}{dt} 	imes
+rac{1}{\left|
+rac{d
+ec{r}}{dt}
 ight|} = kN$
 
-$rac{1}{5} \left(-rac{3}{5}\cos t \hat{i} - rac{3}{5}\sin t \hat{j}
+$
+rac{1}{5} \left(-
+rac{3}{5}\cos t \hat{i} -
+rac{3}{5}\sin t \hat{j}
 ight) = kN$
-$rac{1}{25} (-3\cos t \hat{i} - 3\sin t \hat{j}) = kN$
+$
+rac{1}{25} (-3\cos t \hat{i} - 3\sin t \hat{j}) = kN$
 
 $|N| = 1$
-$\left| rac{1}{25} (-3\cos t \hat{i} - 3\sin t \hat{j}) 
+$\left|
+rac{1}{25} (-3\cos t \hat{i} - 3\sin t \hat{j})
 ight| = |k||N|$
-$rac{1}{25} \sqrt{9\cos^2 t + 9\sin^2 t} = |k|$
-$|k| = rac{3}{25}$
-$k = rac{3}{25}$
+$
+rac{1}{25} \sqrt{9\cos^2 t + 9\sin^2 t} = |k|$
+$|k| =
+rac{3}{25}$
+$k =
+rac{3}{25}$

@@ -8,7 +8,7 @@ For $T$ to be a linear transformation, it must satisfy the additivity and scalar
 1. $T(u + v) = T(u) + T(v)$
 2. $T(cu) = cT(u)$
 
-Let's test the scalar multiplication property. 
+Let's test the scalar multiplication property.
 Let $u = (1, 1)$ and scalar $c = 2$.
 $T(u) = T(1, 1) = (1^2, 1) = (1, 1)$.
 Then $cT(u) = 2(1, 1) = (2, 2)$.
@@ -27,27 +27,35 @@ Let $T: V \to W$ be a linear transformation between vector spaces $V$ and $W$.
 
 *   **Kernel (Null Space) of $T$:** The set of all vectors in the domain $V$ that map to the zero vector in $W$.
 
-    $$
-    \text{ker}(T) = \{v \in V \mid T(v) = 0_W\}
-    $$
+
+
+$$
+\text{ker}(T) = \lbracev \in V \mid T(v) = 0_W\rbrace
+$$
 
 *   **Range (Image) of $T$:** The set of all vectors in the codomain $W$ that are the image of at least one vector in $V$ under the transformation $T$.
 
-    $$
-    \text{range}(T) = \{T(v) \mid v \in V\}
-    $$
+
+
+$$
+\text{range}(T) = \lbraceT(v) \mid v \in V\rbrace
+$$
 
 *   **Nullity of $T$:** The dimension of the kernel of $T$.
 
-    $$
-    \text{nullity}(T) = \dim(\text{ker}(T))
-    $$
+
+
+$$
+\text{nullity}(T) = \dim(\text{ker}(T))
+$$
 
 *   **Rank of $T$:** The dimension of the range of $T$.
 
-    $$
-    \text{rank}(T) = \dim(\text{range}(T))
-    $$
+
+
+$$
+\text{rank}(T) = \dim(\text{range}(T))
+$$
 
 ## Q18 (05)
 **Question:** **Let $T: \mathbb{R}^3 \to \mathbb{R}^2$ be given by $T(x, y, z) = (x + y, y + z)$. Is it a linear transformation? Find: (i) Kernel of $T$, (ii) Range of $T$, (iii) Rank and Nullity.**
@@ -68,7 +76,7 @@ $y + z = 0 \implies z = -y$
 Vectors in the kernel are of the form $(-y, y, -y) = y(-1, 1, -1)$.
 
 $$
-\text{ker}(T) = \text{span}\{(-1, 1, -1)\}
+\text{ker}(T) = \text{span}\lbrace(-1, 1, -1)\rbrace
 $$
 
 **(ii) Range of $T$**:

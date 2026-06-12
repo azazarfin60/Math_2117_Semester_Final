@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "context_Bhagwan_singh_Vishwakarma_Vector_Space/13_Vector_Space_Dimension_of_Sum_of_subspace/13.2_visual_analysis.md",
+                "file": "context_Bhagwan_singh_Vishwakarma_Vector_Space/15_Vector_Space_Linear_Transformation_and_its_Properties/15.2_visual_analysis.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13.2_visual_analysis"
+              "title": "15.2_visual_analysis"
             }
           }
         ],
@@ -200,6 +200,11 @@
   },
   "active": "3ae7ba81d6a5152b",
   "lastOpenFiles": [
+    "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/19.2_visual_analysis.md",
+    "context_Bhagwan_singh_Vishwakarma_Vector_Space/00_playlist_index.md",
+    "context_Bhagwan_singh_Vishwakarma_Vector_Space/18_Vector_Space_Fundamental_Theorem_of_Vector_Space_homomorphism/18.2_visual_analysis.md",
+    "context_Bhagwan_singh_Vishwakarma_Vector_Space/18_Vector_Space_Fundamental_Theorem_of_Vector_Space_homomorphism/18.1_audio_transcript_en.md",
+    "context_Bhagwan_singh_Vishwakarma_Vector_Space/13_Vector_Space_Dimension_of_Sum_of_subspace/13.2_visual_analysis.md",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0287_47m40s.jpg",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0286_47m30s.jpg",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0285_47m20s.jpg",
@@ -210,7 +215,6 @@
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0280_46m30s.jpg",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0279_46m20s.jpg",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0278_46m10s.jpg",
-    "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames/frame_0277_46m00s.jpg",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/frames",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/19.1_audio_transcript_en.md",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/19.1_audio_transcript.md",
@@ -233,10 +237,6 @@
     "Vector_Analysis_Book/01.vectors_and_scalars_part2.md",
     "Vector_Analysis_Book/01.vectors_and_scalars_part1.md",
     "Vector_Analysis_marked_question_bank/06.divergence_stokes_integral_theorems_part4.md",
-    "Vector_Analysis_marked_question_bank/06.divergence_stokes_integral_theorems_part3.md",
-    "Vector_Analysis_marked_question_bank/06.divergence_stokes_integral_theorems_part2.md",
-    "Vector_Analysis_marked_question_bank/06.divergence_stokes_integral_theorems_part1.md",
-    "Vector_Analysis_marked_question_bank/05.vector_integration_part3.md",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/temp_audio.wav",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/temp_video.mp4",
     "context_Bhagwan_singh_Vishwakarma_Vector_Space/19_Vector_Space_Matrix_Representation_of_Linear_Transformation/temp_video.temp.mp4",

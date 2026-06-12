@@ -7,7 +7,7 @@
 Let $U$ and $W$ be subspaces of a vector space $V$. The sum of the two subspaces, denoted as $U + W$, is defined as the set of all possible sums of a vector from $U$ and a vector from $W$:
 
 $$
-U + W = \{u + w : u \in U, w \in W\}
+U + W = \lbraceu + w : u \in U, w \in W\rbrace
 $$
 
 **Example:** Consider $V = \mathbb{R}^3$. Let $U$ be the x-axis, $U = \{(x, 0, 0) : x \in \mathbb{R}\}$, and $W$ be the y-axis, $W = \{(0, y, 0) : y \in \mathbb{R}\}$. The sum $U + W$ consists of vectors of the form $(x, 0, 0) + (0, y, 0) = (x, y, 0)$. Thus, $U + W$ is the xy-plane in $\mathbb{R}^3$.
@@ -85,7 +85,7 @@ The sum $U + W$ consists of all vectors formed by adding a vector from $U$ to a 
 However, the intersection $U \cap W$ is the set of vectors in both $U$ and $W$. Since $U \subset W$, their intersection is simply $U$.
 
 $$
-U \cap W = \text{span}\{(1, 0)\} \neq \{(0, 0)\}
+U \cap W = \text{span}\lbrace(1, 0)\rbrace \neq \lbrace(0, 0)\rbrace
 $$
 
 Because the intersection is not merely the zero vector, the sum is not a direct sum. Therefore, $U + W \neq U \oplus W$.

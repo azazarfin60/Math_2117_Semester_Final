@@ -36,18 +36,24 @@ where the vectors are $v_1, v_2, v_3, v_4$.
 **Example:**
 $v_1 = (1, 2, 3)$, $v_2 = (4, 5, 6)$, $v_3 = (1, 1, 1)$.
 
-$$A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{pmatrix}$$
+$$
+A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{pmatrix}
+$$
 
 Applying row operations:
 $R_2 \rightarrow 4R_1 - R_2$
 $R_3 \rightarrow R_1 - R_3$
 
-$$\sim \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 1 & 2 \end{pmatrix}$$
+$$
+\sim \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 1 & 2 \end{pmatrix}
+$$
 
 Applying row operation:
 $R_3 \rightarrow 3R_3 - R_2$
 
-$$\sim \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{pmatrix}$$
+$$
+\sim \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{pmatrix}
+$$
 
 Here, $\text{Rank} = 2$.
 It has two non-zero rows. That's why it is of rank 2. So the vectors are linearly dependent.
@@ -77,7 +83,9 @@ $c_1v_1 + c_2v_2 + \dots + c_nv_n = 0_{\text{vector}}$
 **Example:**
 $c_1(1, 2) + c_2(3, 2) = (0, 0)$
 
-$$\left. \begin{aligned} c_1 + 3c_2 &= 0 \\ 2c_1 + 2c_2 &= 0 \end{aligned} \right\} \Rightarrow \begin{aligned} c_1 &= 0 \\ c_2 &= 0 \end{aligned}$$
+$$
+\left. \begin{aligned} c_1 + 3c_2 &= 0 \\ 2c_1 + 2c_2 &= 0 \end{aligned} \right\rbrace \Rightarrow \begin{aligned} c_1 &= 0 \\ c_2 &= 0 \end{aligned}
+$$
 
 Since both coefficients are 0, the vectors are linearly independent.
 
@@ -190,7 +198,9 @@ Let $U$ and $V$ be two vector spaces. A mapping $T: U \rightarrow V$ is called a
 - $\frac{d}{dx}(3x^2) = 3 \frac{d}{dx}(x^2) \rightarrow$ Homogeneity (since it is a linear operator)
 - $\frac{d}{dx}(x^2 + x^3) = \frac{d}{dx}(x^2) + \frac{d}{dx}(x^3) \rightarrow$ Superposition
 
-$$\text{Superposition} + \text{Homogeneity} = \text{Linearity condition}$$
+$$
+\text{Superposition} + \text{Homogeneity} = \text{Linearity condition}
+$$
 
 <b>Class 29 | sir</b>
 <div align="right"><b>13-04-26</b></div>

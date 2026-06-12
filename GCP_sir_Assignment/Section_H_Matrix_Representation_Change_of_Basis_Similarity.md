@@ -9,24 +9,28 @@ Let $T: V \to W$ be a linear transformation. Let $B = \{v_1, v_2, \dots, v_n\}$ 
 1.  **Apply Transformation:** Apply the linear transformation $T$ to each basis vector in the domain basis $B$. This yields the image vectors $T(v_1), T(v_2), \dots, T(v_n)$ in $W$.
 2.  **Express as Linear Combinations:** Express each of these image vectors as a linear combination of the basis vectors in the codomain basis $C$. For the $j$-th vector $T(v_j)$:
 
-    $$
-    T(v_j) = a_{1j}w_1 + a_{2j}w_2 + \dots + a_{mj}w_m
-    $$
+
+
+$$
+T(v_j) = a_{1j}w_1 + a_{2j}w_2 + \dots + a_{mj}w_m
+$$
 
 3.  **Extract Coordinate Vectors:** Extract the coefficients $(a_{1j}, a_{2j}, \dots, a_{mj})$ to form the coordinate vector $[T(v_j)]_C$.
 4.  **Construct Matrix:** Construct the $m \times n$ matrix $[T]_B^C$ by using these coordinate vectors as its columns:
 
-    $$
-    [T]_B^C = \begin{pmatrix}
-    [T(v_1)]_C & [T(v_2)]_C & \dots & [T(v_n)]_C
-    \end{pmatrix} =
-    \begin{pmatrix}
-    a_{11} & a_{12} & \dots & a_{1n} \\
-    a_{21} & a_{22} & \dots & a_{2n} \\
-    \vdots & \vdots & \ddots & \vdots \\
-    a_{m1} & a_{m2} & \dots & a_{mn}
-    \end{pmatrix}
-    $$
+
+
+$$
+[T]_B^C = \begin{pmatrix}
+[T(v_1)]_C & [T(v_2)]_C & \dots & [T(v_n)]_C
+\end{pmatrix} =
+\begin{pmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{pmatrix}
+$$
 
 This matrix satisfies the fundamental property $[T(x)]_C = [T]_B^C [x]_B$ for any vector $x \in V$.
 

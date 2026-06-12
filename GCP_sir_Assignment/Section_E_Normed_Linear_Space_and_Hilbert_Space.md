@@ -34,33 +34,41 @@ Let $V$ be an inner product space with inner product $\langle x, y \rangle$. We 
 1. **Positivity:** By the definition of an inner product, $\langle x, x \rangle \geq 0$, so $\|x\| = \sqrt{\langle x, x \rangle} \geq 0$. Moreover, $\langle x, x \rangle = 0$ if and only if $x = 0$, so $\|x\| = 0 \iff x = 0$.
 2. **Homogeneity:** For any scalar $\alpha$ and vector $x$:
 
-   $$
-   \|\alpha x\| = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x, x \rangle} = \sqrt{|\alpha|^2 \langle x, x \rangle} = |\alpha| \sqrt{\langle x, x \rangle} = |\alpha| \|x\|
-   $$
+
+
+$$
+\|\alpha x\| = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x, x \rangle} = \sqrt{|\alpha|^2 \langle x, x \rangle} = |\alpha| \sqrt{\langle x, x \rangle} = |\alpha| \|x\|
+$$
 
 3. **Triangle Inequality:** Consider $\|x + y\|^2$:
 
-   $$
-   \|x + y\|^2 = \langle x + y, x + y \rangle = \langle x, x \rangle + \langle x, y \rangle + \langle y, x \rangle + \langle y, y \rangle
-   $$
 
-   $$
-   \|x + y\|^2 = \|x\|^2 + \langle x, y \rangle + \overline{\langle x, y \rangle} + \|y\|^2 = \|x\|^2 + 2\text{Re}(\langle x, y \rangle) + \|y\|^2
-   $$
 
-   By the Cauchy-Schwarz inequality ($|\langle x, y \rangle| \leq \|x\| \|y\|$) and the fact that $\text{Re}(z) \leq |z|$, we have:
+$$
+\|x + y\|^2 = \langle x + y, x + y \rangle = \langle x, x \rangle + \langle x, y \rangle + \langle y, x \rangle + \langle y, y \rangle
+$$
 
-   $$
-   2\text{Re}(\langle x, y \rangle) \leq 2|\langle x, y \rangle| \leq 2\|x\|\|y\|
-   $$
+$$
+\|x + y\|^2 = \|x\|^2 + \langle x, y \rangle + \overline{\langle x, y \rangle} + \|y\|^2 = \|x\|^2 + 2\text{Re}(\langle x, y \rangle) + \|y\|^2
+$$
 
-   Substituting this back:
+By the Cauchy-Schwarz inequality ($|\langle x, y \rangle| \leq \|x\| \|y\|$) and the fact that $\text{Re}(z) \leq |z|$, we have:
 
-   $$
-   \|x + y\|^2 \leq \|x\|^2 + 2\|x\|\|y\| + \|y\|^2 = (\|x\| + \|y\|)^2
-   $$
 
-   Taking the square root of both sides gives $\|x + y\| \leq \|x\| + \|y\|$.
+
+$$
+2\text{Re}(\langle x, y \rangle) \leq 2|\langle x, y \rangle| \leq 2\|x\|\|y\|
+$$
+
+Substituting this back:
+
+
+
+$$
+\|x + y\|^2 \leq \|x\|^2 + 2\|x\|\|y\| + \|y\|^2 = (\|x\| + \|y\|)^2
+$$
+
+Taking the square root of both sides gives $\|x + y\| \leq \|x\| + \|y\|$.
 
 Since all three axioms hold, the induced norm makes the inner product space a normed linear space.
 

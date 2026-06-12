@@ -195,7 +195,6 @@ $\gamma = \cos^{-1}\left(\frac{2}{7}\right) = 73.4^\circ$
 
 $\cos^{-1}\left(\frac{\text{যার সাথে angle তার সহগ}}{|A|}\right)$
 
-
 <!-- Page 017 -->
 **# Find projection of $\vec{A} = \hat{i} - 2\hat{j} + \hat{k}$ on vector $\vec{B} = 4\hat{i} - 4\hat{j} + 7\hat{k}$**
 $\frac{\vec{A} \cdot \vec{B}}{|\vec{B}|} = \frac{4 + 8 + 7}{\sqrt{4^2 + (-4)^2 + 7^2}} = \frac{19}{9}$

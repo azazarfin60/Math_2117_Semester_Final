@@ -141,7 +141,7 @@ $$
 i_1 + 26 = 8 \implies i_1 = -18
 $$
 
-So, the mesh currents are 
+So, the mesh currents are
 
 $$
 i_1 = -18, \quad i_2 = 19, \quad i_3 = 16
@@ -240,7 +240,7 @@ So, there is no value of $k$ that gives infinitely many solutions.
 
 ---
 
-### Q3. What is meant by the rank of a matrix? Reduce the matrix 
+### Q3. What is meant by the rank of a matrix? Reduce the matrix
 
 $$
 A = \begin{bmatrix}
@@ -250,7 +250,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
- (07)
+(07)
 *   **(i)** to echelon form
 *   **(ii)** to row canonical form, and
 *   **(iii)** determine the rank of the matrix.

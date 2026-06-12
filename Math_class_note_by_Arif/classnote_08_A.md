@@ -91,7 +91,9 @@ $\rightarrow$ যারা $(0,0,0)$ তে ম্যাপ করবে।
 - **Kernel of vector** is the set of vectors that map to the $(0, 0, 0)$ vector. Basis একটাই, dimension এক।
 - **Image of mapping** (যেগুলো সেট তৈরি করে তাকে) $\rightarrow$ যে vector গুলো map করে তাদের সেট।
 
-$$\text{Ker}(T) = \{ v \in V \mid T(v) = 0 \}$$
+$$
+\text{Ker}(T) = \lbrace v \in V \mid T(v) = 0 \rbrace
+$$
 
 ---
 
@@ -130,25 +132,37 @@ So the image set generators are $\{(1, 0, 1), (2, 1, 0), (0, -1, 2)\}$.
 
 Now, we will generate a matrix and reduce it to its echelon form to find the linearly independent vectors:
 
-$$A = \begin{pmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 0 & -1 & 2 \end{pmatrix}$$
+$$
+A = \begin{pmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 0 & -1 & 2 \end{pmatrix}
+$$
 
 Applying row operation $R_2 \rightarrow 2R_1 - R_2$:
 
-$$\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & -1 & 2 \end{pmatrix}$$
+$$
+\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & -1 & 2 \end{pmatrix}
+$$
 
 Applying row operation $R_3 \rightarrow R_2 - R_3$:
 
-$$\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & 0 & 0 \end{pmatrix}$$
+$$
+\sim \begin{pmatrix} 1 & 0 & 1 \\ 0 & -1 & 2 \\ 0 & 0 & 0 \end{pmatrix}
+$$
 
 We see there are two independent vectors: $(1, 0, 1)$ and $(0, -1, 2)$.
 Hence, $\{(1, 0, 1), (0, -1, 2)\}$ is a basis of $\text{Im } T$.
 The number of elements in the basis is 2, so:
-$$\text{dim}(\text{Im } T) = 2$$
+
+$$
+\text{dim}(\text{Im } T) = 2
+$$
 
 <!-- Page 075 -->
 **(ii) Finding basis and dimension of $\text{Ker } T$:**
 
-$$\text{Ker } T = \{ (x, y, z) \in \mathbb{R}^3 \mid T(x, y, z) = (0, 0, 0) \}$$
+$$
+\text{Ker } T = \lbrace (x, y, z) \in \mathbb{R}^3 \mid T(x, y, z) = (0, 0, 0) \rbrace
+$$
+
 $\text{Ker } T$ is the set of vectors whose image contains the zero $(0, 0, 0)$ vector.
 
 i.e.,
@@ -174,7 +188,10 @@ $\Rightarrow x = -2$
 
 Thus, $\{(-2, 1, 1)\}$ is a basis of $\text{Ker } T$.
 The number of elements in the basis is 1, so:
-$$\text{dim}(\text{Ker } T) = 1$$
+
+$$
+\text{dim}(\text{Ker } T) = 1
+$$
 
 ---
 
@@ -210,7 +227,10 @@ And,
 So, $3T' = \{(0, 3), (3, 0)\}$
 
 <!-- Page 077 -->
-$$3T + 3T' = \{(3, 3), (3, 0)\}$$
+
+$$
+3T + 3T' = \lbrace(3, 3), (3, 0)\rbrace
+$$
 
 **Final answer:**
 $3T(x, y) + 3T'(x, y) = 3(x, 0) + 3(y, x) = (3x + 3y, 3x)$
@@ -242,12 +262,14 @@ $T(v_n) = a_{n1}w_1 + a_{n2}w_2 + \dots + a_{nm}w_m$
 <!-- Page 078 -->
 Then the matrix representation is the transpose of the coefficient matrix:
 
-$$T_W = \begin{pmatrix} 
-a_{11} & a_{12} & \dots & a_{1m} \\ 
-a_{21} & a_{22} & \dots & a_{2m} \\ 
-\vdots & \vdots & \ddots & \vdots \\ 
-a_{n1} & a_{n2} & \dots & a_{nm} 
-\end{pmatrix}^t$$
+$$
+T_W = \begin{pmatrix}
+a_{11} & a_{12} & \dots & a_{1m} \\
+a_{21} & a_{22} & \dots & a_{2m} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \dots & a_{nm}
+\end{pmatrix}^t
+$$
 
 > [!TIP]
 > constant দিয়ে matrix form এর transpose নিতে হবে।
@@ -283,7 +305,9 @@ So, $(27, -14) = 124(3, 1) - 69(5, 2)$ ---- (ii)
 <!-- Page 079 -->
 The required matrix representation is:
 
-$$T = \begin{pmatrix} 77 & -43 \\ 124 & -69 \end{pmatrix}^t = \begin{pmatrix} 77 & 124 \\ -43 & -69 \end{pmatrix}$$
+$$
+T = \begin{pmatrix} 77 & -43 \\ 124 & -69 \end{pmatrix}^t = \begin{pmatrix} 77 & 124 \\ -43 & -69 \end{pmatrix}
+$$
 
 > [!NOTE]
 > $T: V \rightarrow W$
@@ -308,10 +332,16 @@ Axioms of Inner Product (for real/complex vector space):
 4. **Positive Definiteness:** $\langle u, u \rangle = 0 \iff u = 0$
 
 **Norm:**
-$$\|v\| = \sqrt{\langle v, v \rangle}$$
+
+$$
+\|v\| = \sqrt{\langle v, v \rangle}
+$$
 
 **Angle between two vectors:**
-$$\cos\theta = \frac{\langle u, v \rangle}{\|u\| \|v\|}$$
+
+$$
+\cos\theta = \frac{\langle u, v \rangle}{\|u\| \|v\|}
+$$
 
 <!-- Page 080 -->
 **# Find the angle between $v_1 = (1, 2, 3)$ and $v_2 = (1, 1, 1)$.**
@@ -321,8 +351,13 @@ $\langle v_1, v_2 \rangle = 1(1) + 2(1) + 3(1) = 6$
 $\|v_1\| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}$
 $\|v_2\| = \sqrt{1^2 + 1^2 + 1^2} = \sqrt{3}$
 
-$$\cos\theta = \frac{6}{\sqrt{14}\sqrt{3}} = \frac{6}{\sqrt{42}}$$
-$$\theta = \cos^{-1}\left( \frac{6}{\sqrt{42}} \right)$$
+$$
+\cos\theta = \frac{6}{\sqrt{14}\sqrt{3}} = \frac{6}{\sqrt{42}}
+$$
+
+$$
+\theta = \cos^{-1}\left( \frac{6}{\sqrt{42}} \right)
+$$
 
 - If $\theta = 90^\circ$, then the vectors are **orthogonal**.
 - If the norm of each orthogonal vector is 1, they are called **orthonormal** vectors.
@@ -339,5 +374,10 @@ $\langle u, v \rangle = \text{sum of products of corresponding elements} = 1(1) 
 $\|u\| = \sqrt{1^2 + 0^2 + 0^2 + 1^2} = \sqrt{2}$
 $\|v\| = \sqrt{1^2 + 1^2 + 1^2 + 1^2} = \sqrt{4} = 2$
 
-$$\cos\theta = \frac{2}{\sqrt{2}\sqrt{4}} = \frac{2}{2\sqrt{2}} = \frac{1}{\sqrt{2}}$$
-$$\theta = 45^\circ$$
+$$
+\cos\theta = \frac{2}{\sqrt{2}\sqrt{4}} = \frac{2}{2\sqrt{2}} = \frac{1}{\sqrt{2}}
+$$
+
+$$
+\theta = 45^\circ
+$$

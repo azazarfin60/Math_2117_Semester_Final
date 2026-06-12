@@ -40,7 +40,7 @@ $$
 3x + 5y + kz = 10
 $$
 
-**3.** What is meant by the rank of a matrix? Reduce the matrix 
+**3.** What is meant by the rank of a matrix? Reduce the matrix
 
 $$
 A = \begin{bmatrix}
@@ -50,7 +50,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
- **(07)**
+**(07)**
 
 *   (i) to echelon form
 *   (ii) to row canonical form, and

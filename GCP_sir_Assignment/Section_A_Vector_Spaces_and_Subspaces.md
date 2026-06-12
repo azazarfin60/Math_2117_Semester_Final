@@ -36,9 +36,9 @@ This is a one-dimensional subspace of $\mathbb{R}^5$. The vector $(1, 1, 1, 1, 1
 **Question:** **Test whether the set $V = \{(x, y) \in \mathbb{R}^2 : xy = 0\}$ is a vector space.**
 
 **Answer:**
-For a subset to be a vector space, it must be closed under vector addition. 
+For a subset to be a vector space, it must be closed under vector addition.
 
-Let $u = (1, 0)$ and $v = (0, 1)$. 
+Let $u = (1, 0)$ and $v = (0, 1)$.
 Both $u$ and $v$ belong to $V$ because their components satisfy the condition $x \cdot y = 0$.
 
 Now consider their sum:
@@ -57,7 +57,7 @@ Since $V$ is not closed under addition, it is not a vector space.
 **Answer:**
 To prove $W$ is a subspace, we must verify three properties:
 1. **Zero vector:** $(0, 0, 0, 0)$ satisfies $0 + 0 + 0 + 0 = 0$, so $0 \in W$.
-2. **Closure under addition:** Let $u = (x_1, y_1, z_1, w_1) \in W$ and $v = (x_2, y_2, z_2, w_2) \in W$. Then $x_1+y_1+z_1+w_1 = 0$ and $x_2+y_2+z_2+w_2 = 0$. 
+2. **Closure under addition:** Let $u = (x_1, y_1, z_1, w_1) \in W$ and $v = (x_2, y_2, z_2, w_2) \in W$. Then $x_1+y_1+z_1+w_1 = 0$ and $x_2+y_2+z_2+w_2 = 0$.
 The sum is $u + v = (x_1+x_2, y_1+y_2, z_1+z_2, w_1+w_2)$.
 $(x_1+x_2) + (y_1+y_2) + (z_1+z_2) + (w_1+w_2) = (x_1+y_1+z_1+w_1) + (x_2+y_2+z_2+w_2) = 0 + 0 = 0$. So $u + v \in W$.
 3. **Closure under scalar multiplication:** Let $c \in \mathbb{R}$. $cu = (cx_1, cy_1, cz_1, cw_1)$.
@@ -151,7 +151,7 @@ x = -a_1v_1 - \dots - a_kv_k - c_{k+1}w_{k+1} - \dots - c_nw_n
 $$
 
 Since the RHS is in $W$, $x \in W$. But $x \in U$ by definition. So $x \in U \cap W$.
-Since $x \in U \cap W$, it can be written as a linear combination of $v_1, \dots, v_k$. However, $\{v_1, \dots, u_m\}$ is a basis for $U$, so the $u_i$ coefficients ($b_j$) must be zero. 
+Since $x \in U \cap W$, it can be written as a linear combination of $v_1, \dots, v_k$. However, $\{v_1, \dots, u_m\}$ is a basis for $U$, so the $u_i$ coefficients ($b_j$) must be zero.
 
 Substituting $b_j = 0$ into the original equation leaves only $v_i$ and $w_j$ vectors, which form a basis for $W$, so their coefficients must also be zero. Thus $B$ is linearly independent. The number of vectors in $B$ is $k + (m - k) + (n - k) = m + n - k$.
 
@@ -161,7 +161,7 @@ Therefore, $\dim(U + W) = \dim U + \dim W - \dim(U \cap W)$.
 **Question:** **Prove that every subspace of a vector space is itself a vector space.**
 
 **Answer:**
-Let $W$ be a subspace of a vector space $V$. 
+Let $W$ be a subspace of a vector space $V$.
 By definition of a subspace, $W$ is closed under vector addition and scalar multiplication. Since $W \subseteq V$, the operations are inherited from $V$, meaning commutativity, associativity, and distributivity hold automatically for all vectors in $W$.
 
 $W$ contains the zero vector $0 \in V$ because $0 \cdot w = 0$ for any $w \in W$, and closure under scalar multiplication ensures $0 \in W$. For every $w \in W$, its additive inverse $-w$ is also in $W$ because $-1 \cdot w = -w$, which is in $W$ by closure under scalar multiplication.
@@ -182,6 +182,6 @@ $$
 u + w = (1, 0) + (0, 1) = (1, 1)
 $$
 
-The resulting vector $(1, 1)$ does not lie on the x-axis (since $y \neq 0$) and does not lie on the y-axis (since $x \neq 0$). Therefore, $(1, 1) \notin U \cup W$. 
+The resulting vector $(1, 1)$ does not lie on the x-axis (since $y \neq 0$) and does not lie on the y-axis (since $x \neq 0$). Therefore, $(1, 1) \notin U \cup W$.
 
 Since $U \cup W$ is not closed under vector addition, it is not a subspace.

@@ -2,20 +2,34 @@
 ### Angle between two functions
 
 **Inner product of two functions:**
-$$\langle f, g \rangle = \int_{a}^{b} f(x)g(x) \, dx$$
+
+$$
+\langle f, g \rangle = \int_{a}^{b} f(x)g(x) \, dx
+$$
+
 where $f$ and $g$ are defined over $[a, b]$.
 
 **Example:**
 Let $f(x) = \sin x$ and $g(x) = \cos x$ defined on $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
 
-$$\langle \sin x, \cos x \rangle = \int_{-\pi/2}^{\pi/2} \sin x \cos x \, dx = 0$$
+$$
+\langle \sin x, \cos x \rangle = \int_{-\pi/2}^{\pi/2} \sin x \cos x \, dx = 0
+$$
+
 (দুইটার মধ্যবর্তী কোণ $90^\circ$)
 
-$$\langle 1, \sin x \rangle = \int_{-\pi/2}^{\pi/2} 1 \cdot \sin x \, dx = 0$$
+$$
+\langle 1, \sin x \rangle = \int_{-\pi/2}^{\pi/2} 1 \cdot \sin x \, dx = 0
+$$
+
 ($1$ এবং $\sin x$ এর মধ্যবর্তী কোণ $90^\circ$)
 
 **Fourier basis:**
-$$\{1, \sin x, \cos x, \sin 2x, \cos 2x, \dots\}$$
+
+$$
+\lbrace1, \sin x, \cos x, \sin 2x, \cos 2x, \dots\rbrace
+$$
+
 (এর মধ্যে যেকোনো দুইটির মধ্যবর্তী কোণ $90^\circ$)
 
 ---
@@ -48,7 +62,11 @@ Therefore, $\{(1, 0, 0), (0, 1, 0), (0, 0, 1)\}$ forms an orthonormal basis of $
 ---
 
 **# Find the distance between $u = (1, 2, 3)$ and $v = (4, 5, 6)$:**
-$$d(u, v) = \|u - v\| = \sqrt{(1-4)^2 + (2-5)^2 + (3-6)^2} = \sqrt{9 + 9 + 9} = \sqrt{27}$$
+
+$$
+d(u, v) = \|u - v\| = \sqrt{(1-4)^2 + (2-5)^2 + (3-6)^2} = \sqrt{9 + 9 + 9} = \sqrt{27}
+$$
+
 (বিয়োগ করে distance বের করতে হয়)
 
 > [!NOTE]
