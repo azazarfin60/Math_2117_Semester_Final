@@ -154,7 +154,13 @@ $$
 \int_{C_3} = \int_0^1 20(1)z^2 dz = \left[\frac{20}{3}z^3\right]_0^1 = \frac{20}{3}
 $$
 
-Total Integral = $1 + 0 + \frac{20}{3} = \frac{23}{3}$.
+Total Integral =
+
+$$
+1 + 0 + \frac{20}{3} = \frac{23}{3}
+$$
+
+.
 
 ---
 

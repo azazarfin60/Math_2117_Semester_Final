@@ -196,7 +196,19 @@ $$
 $$
 
 > [!NOTE]
-> Mathematically, to write $A$ as $B+C$ where $B$ is Hermitian and $C$ is skew-Hermitian, the expression is $A = \frac{1}{2}(A + A^\theta) + \frac{1}{2}(A - A^\theta)$. The notes define $C = \frac{1}{2}(A^\theta - A)$, which means $A = B - C$.
+> Mathematically, to write $A$ as $B+C$ where $B$ is Hermitian and $C$ is skew-Hermitian, the expression is
+
+$$
+A = \frac{1}{2}(A + A^\theta) + \frac{1}{2}(A - A^\theta)
+$$
+
+. The notes define
+
+$$
+C = \frac{1}{2}(A^\theta - A)
+$$
+
+, which means $A = B - C$.
 
 **Now,**
 

@@ -510,7 +510,13 @@ $$
 \end{bmatrix}
 $$
 
-Scale $R_2 \to \frac{1}{9}R_2$:
+Scale
+
+$$
+R_2 \to \frac{1}{9}R_2
+$$
+
+:
 
 $$
 \begin{bmatrix}

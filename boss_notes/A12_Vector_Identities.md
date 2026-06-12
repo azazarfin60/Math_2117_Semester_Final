@@ -95,7 +95,13 @@ $$
 (\nabla \times \vec{V})_x = \frac{\partial^2 A_y}{\partial y \partial x} - \frac{\partial^2 A_x}{\partial y^2} - \frac{\partial^2 A_x}{\partial z^2} + \frac{\partial^2 A_z}{\partial z \partial x}
 $$
 
-Add and subtract $\frac{\partial^2 A_x}{\partial x^2}$:
+Add and subtract
+
+$$
+\frac{\partial^2 A_x}{\partial x^2}
+$$
+
+:
 
 $$
 (\nabla \times \vec{V})_x = \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_y}{\partial y \partial x} + \frac{\partial^2 A_z}{\partial z \partial x} \right) - \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right)
@@ -125,7 +131,13 @@ $$
 
 **Proof**:
 
-Let $r = \sqrt{x^2 + y^2 + z^2}$. We know $\frac{\partial r}{\partial x} = \frac{x}{r}$, etc.
+Let $r = \sqrt{x^2 + y^2 + z^2}$. We know
+
+$$
+\frac{\partial r}{\partial x} = \frac{x}{r}
+$$
+
+, etc.
 
 First, find the gradient of $r^{-1}$:
 
@@ -172,7 +184,13 @@ $$
 ## Exam Patterns
 
 - The $\nabla \times (\nabla \times \vec{A})$ identity proof is tedious but important (appeared in 2018 and 2021). Write out the x-component clearly, then use symmetry.
-- $\nabla^2(1/r) = 0$ is a classic vector calculus result. The trick is using $\frac{\partial r}{\partial x} = \frac{x}{r}$ correctly with the quotient rule.
+- $\nabla^2(1/r) = 0$ is a classic vector calculus result. The trick is using
+
+$$
+\frac{\partial r}{\partial x} = \frac{x}{r}
+$$
+
+correctly with the quotient rule.
 
 ---
 

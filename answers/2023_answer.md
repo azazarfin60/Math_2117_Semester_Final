@@ -142,7 +142,13 @@ $$
 \tau = \frac{(\vec{r}' \times \vec{r}'') \cdot \vec{r}'''}{|\vec{r}' \times \vec{r}''|^2} = \frac{8}{4(2t^2 + 1)^2} = \frac{2}{(2t^2 + 1)^2}
 $$
 
-So the torsion is $\tau = \frac{2}{(2t^2 + 1)^2}$.
+So the torsion is
+
+$$
+\tau = \frac{2}{(2t^2 + 1)^2}
+$$
+
+.
 
 ---
 
@@ -817,7 +823,13 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R\_2 \to R\_2 - \frac{5}{2}R\_3$:
+Perform the operation
+
+$$
+R\_2 \to R\_2 - \frac{5}{2}R\_3
+$$
+
+:
 
 $$
 \begin{bmatrix}

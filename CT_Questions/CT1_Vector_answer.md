@@ -103,12 +103,19 @@ The dot product of each pair is zero. So, the vectors are mutually orthogonal.
 
 ---
 
-### Q2. State Frenet-Serret formulas. Show that $\vec{r} = e^{-t}(\vec{A} \cos 2t + \vec{B} \sin 2t)$, where $\vec{A}$ and $\vec{B}$ are constant vectors, is a solution of the differential equation $\frac{d^2\vec{r}}{dt^2} + 2\frac{d\vec{r}}{dt} + 5\vec{r} = 0$. (2+8)
+### Q2.
+State Frenet-Serret formulas.
+Show that $\vec{r} = e^{-t}(\vec{A} \cos 2t + \vec{B} \sin 2t)$, where $\vec{A}$ and $\vec{B}$ are constant vectors, is a solution of the differential equation $\frac{d^2\vec{r}}{dt^2} + 2\frac{d\vec{r}}{dt} + 5\vec{r} = 0$. (2+8)
 
 **Answer:**
 
 #### 1. Frenet-Serret Formulas
-Let $s$ be the arc length along a space curve. Let $\vec{T}$ be the unit tangent vector. Let $\vec{N}$ be the unit principal normal vector. Let $\vec{B}\_b$ be the unit binormal vector. Let $\kappa$ be curvature. Let $\tau$ be torsion.
+Let $s$ be the arc length along a space curve.
+Let $\vec{T}$ be the unit tangent vector.
+Let $\vec{N}$ be the unit principal normal vector.
+Let $\vec{B}\_b$ be the unit binormal vector.
+Let $\kappa$ be curvature.
+Let $\tau$ be torsion.
 The Frenet-Serret formulas are:
 1.
 

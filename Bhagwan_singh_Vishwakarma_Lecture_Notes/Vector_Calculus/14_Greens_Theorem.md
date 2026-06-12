@@ -44,12 +44,27 @@ $$
 \oint_C (e^{-x} \sin y \, dx + e^{-x} \cos y \, dy),
 $$
 
-Where $C$ is the rectangle with vertices $(0,0), (\pi, 0), (\pi, \frac{\pi}{2}), (0, \frac{\pi}{2})$.
+Where $C$ is the rectangle with vertices
+
+$$
+(0,0), (\pi, 0), (\pi, \frac{\pi}{2}), (0, \frac{\pi}{2})
+$$
+
+.
 
 **Solution:**
 We identify the components $P$ and $Q$ from the integral form $\oint_C (P \, dx + Q \, dy)$:
-*   $P = e^{-x} \sin y \implies \frac{\partial P}{\partial y} = e^{-x} \cos y$
-*   $Q = e^{-x} \cos y \implies \frac{\partial Q}{\partial x} = -e^{-x} \cos y$
+*
+
+$$
+P = e^{-x} \sin y \implies \frac{\partial P}{\partial y} = e^{-x} \cos y
+$$
+
+*
+
+$$
+Q = e^{-x} \cos y \implies \frac{\partial Q}{\partial x} = -e^{-x} \cos y
+$$
 
 Compute the integrand for the double integral:
 
@@ -120,7 +135,19 @@ $$
 = \int_0^{2\pi} (3\cos^2\theta - 2\sin^2\theta) \, d\theta
 $$
 
-Using double-angle formulas ($\cos^2\theta = \frac{1+\cos 2\theta}{2}$ and $\sin^2\theta = \frac{1-\cos 2\theta}{2}$):
+Using double-angle formulas (
+
+$$
+\cos^2\theta = \frac{1+\cos 2\theta}{2}
+$$
+
+ and
+
+$$
+\sin^2\theta = \frac{1-\cos 2\theta}{2}
+$$
+
+):
 
 $$
 = \int_0^{2\pi} \left[ 3\left(\frac{1+\cos 2\theta}{2}\right) - 2\left(\frac{1-\cos 2\theta}{2}\right) \right] d\theta = \int_0^{2\pi} \left( \frac{1}{2} + \frac{5}{2}\cos 2\theta \right) d\theta
@@ -177,11 +204,27 @@ $$
 I_2 = \int_1^0 \left[ (x^2 + x^2) + x^2 \right] dx = \int_1^0 3x^2 \, dx = [x^3]_1^0 = -1
 $$
 
-Summing the paths: $\text{LHS} = \frac{19}{20} - 1 = -\frac{1}{20}$.
+Summing the paths:
+
+$$
+\text{LHS} = \frac{19}{20} - 1 = -\frac{1}{20}
+$$
+
+.
 
 **Part 2: Double Integral (RHS)**
-$P = xy + y^2 \implies \frac{\partial P}{\partial y} = x + 2y$.
-$Q = x^2 \implies \frac{\partial Q}{\partial x} = 2x$.
+
+$$
+P = xy + y^2 \implies \frac{\partial P}{\partial y} = x + 2y
+$$
+
+.
+
+$$
+Q = x^2 \implies \frac{\partial Q}{\partial x} = 2x
+$$
+
+.
 
 $$
 \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 2x - (x + 2y) = x - 2y

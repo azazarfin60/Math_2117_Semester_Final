@@ -44,7 +44,11 @@ $$
 
 Find magnitude and area:
 $\lvert \vec{PQ} \times \vec{PR} \rvert = \sqrt{(-10)^2 + (-7)^2 + 4^2} = \sqrt{100 + 49 + 16} = \sqrt{165}$
-Area $= \frac{\sqrt{165}}{2}$
+Area
+
+$$
+= \frac{\sqrt{165}}{2}
+$$
 
 ---
 
@@ -64,7 +68,9 @@ C_x & C_y & C_z
 $$
 
 **Geometric Proof**:
-The cross product $\vec{B} \times \vec{C}$ gives a normal vector whose magnitude is the area of the base. The dot product $\vec{A} \cdot (\vec{B} \times \vec{C})$ projects the third edge $\vec{A}$ onto this normal vector, effectively multiplying the base area by the perpendicular height. Thus:
+The cross product $\vec{B} \times \vec{C}$ gives a normal vector whose magnitude is the area of the base.
+The dot product $\vec{A} \cdot (\vec{B} \times \vec{C})$ projects the third edge $\vec{A}$ onto this normal vector, effectively multiplying the base area by the perpendicular height.
+Thus:
 
 $$
 \text{Volume} = \lvert \vec{A} \cdot (\vec{B} \times \vec{C}) \rvert

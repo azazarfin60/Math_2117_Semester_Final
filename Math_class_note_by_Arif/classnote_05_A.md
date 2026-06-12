@@ -402,8 +402,13 @@ $$
 A \times r = \hat{i}(zA_2 - yA_3) + \hat{j}(xA_3 - zA_1) + \hat{k}(yA_1 - xA_2)
 $$
 
-$\nabla \cdot (A \times r) = \frac{\partial}{\partial x}(zA_2 - yA_3) + \frac{\partial}{\partial y}(xA_3 - zA_1) + \frac{\partial}{\partial z}(yA_1 - xA_2)$
-$= z \left(\frac{\partial A_2}{\partial x} - \frac{\partial A_1}{\partial y}\right) + x \left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial z}\right) + y \left(\frac{\partial A_1}{\partial z} - \frac{\partial A_3}{\partial x}\right)$
+$$
+\nabla \cdot (A \times r) = \frac{\partial}{\partial x}(zA_2 - yA_3) + \frac{\partial}{\partial y}(xA_3 - zA_1) + \frac{\partial}{\partial z}(yA_1 - xA_2)
+$$
+
+$$
+= z \left(\frac{\partial A_2}{\partial x} - \frac{\partial A_1}{\partial y}\right) + x \left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial z}\right) + y \left(\frac{\partial A_1}{\partial z} - \frac{\partial A_3}{\partial x}\right)
+$$
 
 $$
 = (x\hat{i} + y\hat{j} + z\hat{k}) \cdot (\nabla \times A)
@@ -637,10 +642,16 @@ $V_2 = (b_1, b_2, \dots, b_n) \in \mathbb{R}^n$
 $V_1, V_2 \in \mathbb{R}^n$
 
 If the angle between two vectors is $\theta$:
-$\cos\theta = \frac{\langle V_1, V_2 \rangle}{||V_1|| \, ||V_2||} = \frac{V_1 \cdot V_2}{||V_1|| \, ||V_2||} = \frac{a_1b_1 + a_2b_2 + \dots + a_nb_n}{\sqrt{\sum a_i^2}\sqrt{\sum b_i^2}}$
+
+$$
+\cos\theta = \frac{\langle V_1, V_2 \rangle}{||V_1|| \, ||V_2||} = \frac{V_1 \cdot V_2}{||V_1|| \, ||V_2||} = \frac{a_1b_1 + a_2b_2 + \dots + a_nb_n}{\sqrt{\sum a_i^2}\sqrt{\sum b_i^2}}
+$$
 
 For $V_1 = (1, 0)$, $V_2 = (0, 1)$:
-$\cos\theta = \frac{0+0}{\sqrt{1}\sqrt{1}} = 0 \Rightarrow \theta = 90^\circ$
+
+$$
+\cos\theta = \frac{0+0}{\sqrt{1}\sqrt{1}} = 0 \Rightarrow \theta = 90^\circ
+$$
 
 - $\theta = 0^\circ \Rightarrow$ dependent
 - $\theta \neq 0^\circ \Rightarrow$ independent

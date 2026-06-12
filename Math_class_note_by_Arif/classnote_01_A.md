@@ -312,8 +312,14 @@ $$
 
 important in image processing also.
 
-$\frac{d}{dx}(x^2) = 2x$
-$\frac{d}{dx} : \text{conti} \rightarrow \text{conti}$
+$$
+\frac{d}{dx}(x^2) = 2x
+$$
+
+$$
+\frac{d}{dx} : \text{conti} \rightarrow \text{conti}
+$$
+
 $f: R \rightarrow R$
 
 **# write down the workflow of conversion to cannonical form.**
@@ -381,9 +387,17 @@ $$
 \end{pmatrix}
 $$
 
-$R_1 \rightarrow \frac{1}{6} R_1$
-$R_2 \rightarrow \frac{1}{6} R_2$
-$R_3 \rightarrow \frac{1}{2} R_3$
+$$
+R_1 \rightarrow \frac{1}{6} R_1
+$$
+
+$$
+R_2 \rightarrow \frac{1}{6} R_2
+$$
+
+$$
+R_3 \rightarrow \frac{1}{2} R_3
+$$
 
 $$
 \begin{pmatrix}
@@ -401,7 +415,11 @@ which is row reduced echelon matrix
 
 **Vector differenciation**
 
-$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$ (average $\rightarrow$ limit $\rightarrow$ তাৎক্ষনিক)
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+$$
+
+(average $\rightarrow$ limit $\rightarrow$ তাৎক্ষনিক)
 
 **parametric equation**
 $x^2 + y^2 = r^2 \rightarrow \text{Cartesian}$

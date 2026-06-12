@@ -13,8 +13,17 @@ A particle's motion in space is described by its position vector $\vec{r}(t)$. T
 ## The Core Formulas
 
 Given a position vector $\vec{r}(t)$:
-1. **Velocity**: $\vec{v}(t) = \frac{d\vec{r}}{dt}$
-2. **Acceleration**: $\vec{a}(t) = \frac{d\vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}$
+1. **Velocity**:
+
+$$
+\vec{v}(t) = \frac{d\vec{r}}{dt}
+$$
+
+2. **Acceleration**:
+
+$$
+\vec{a}(t) = \frac{d\vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}
+$$
 
 If asked for a component of velocity or acceleration in a specific direction, take the dot product of your result with the **unit vector** $\hat{u}$ of that direction.
 
@@ -89,7 +98,8 @@ $$
 \vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}
 $$
 
-where $\omega$ is constant. Show that velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that $\vec{r} \times \vec{v}$ is a constant vector.
+where $\omega$ is constant.
+Show that velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that $\vec{r} \times \vec{v}$ is a constant vector.
 
 **Solution**:
 **Step 1: Velocity**

@@ -10,7 +10,13 @@ $$
 where $f$ and $g$ are defined over $[a, b]$.
 
 **Example:**
-Let $f(x) = \sin x$ and $g(x) = \cos x$ defined on $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
+Let $f(x) = \sin x$ and $g(x) = \cos x$ defined on
+
+$$
+[-\frac{\pi}{2}, \frac{\pi}{2}]
+$$
+
+.
 
 $$
 \langle \sin x, \cos x \rangle = \int_{-\pi/2}^{\pi/2} \sin x \cos x \, dx = 0
@@ -49,8 +55,18 @@ Let,
 
 <!-- Page 082 -->
 **Angles between vectors:**
-- $\cos\theta_{12} = \frac{\langle e_1, e_2 \rangle}{\|e_1\| \|e_2\|} = \frac{0}{1 \cdot 1} = 0 \Rightarrow \theta_{12} = 90^\circ$
-- $\cos\theta_{23} = \frac{\langle e_2, e_3 \rangle}{\|e_2\| \|e_3\|} = \frac{0}{1 \cdot 1} = 0 \Rightarrow \theta_{23} = 90^\circ$
+-
+
+$$
+\cos\theta_{12} = \frac{\langle e_1, e_2 \rangle}{\|e_1\| \|e_2\|} = \frac{0}{1 \cdot 1} = 0 \Rightarrow \theta_{12} = 90^\circ
+$$
+
+-
+
+$$
+\cos\theta_{23} = \frac{\langle e_2, e_3 \rangle}{\|e_2\| \|e_3\|} = \frac{0}{1 \cdot 1} = 0 \Rightarrow \theta_{23} = 90^\circ
+$$
+
 - Similarly, the angle between $e_1$ and $e_3$ is also $90^\circ$.
 
 Since the vectors are mutually orthogonal and each has a unit norm, the basis is orthonormal.

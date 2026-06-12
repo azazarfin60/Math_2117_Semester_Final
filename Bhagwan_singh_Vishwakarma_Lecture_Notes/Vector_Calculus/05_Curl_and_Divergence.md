@@ -24,7 +24,8 @@ Because it is a vector operator acting on a vector function, we can do this in t
 
 ## Divergence of a Vector
 
-The **divergence** of a vector field $\vec{F}$ is defined as the dot product of the Del operator and $\vec{F}$. It is written as $\text{div }\vec{F}$ or $\nabla \cdot \vec{F}$.
+The **divergence** of a vector field $\vec{F}$ is defined as the dot product of the Del operator and $\vec{F}$.
+It is written as $\text{div }\vec{F}$ or $\nabla \cdot \vec{F}$.
 
 $$
 \text{div }\vec{F} = \left(\hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z}\right) \cdot (F_1\hat{i} + F_2\hat{j} + F_3\hat{k})
@@ -43,7 +44,8 @@ If the divergence of a vector field is zero everywhere ($\nabla \cdot \vec{F} = 
 
 ## Curl of a Vector
 
-The **curl** of a vector field $\vec{F}$ is defined as the cross product of the Del operator and $\vec{F}$. It is written as $\text{curl }\vec{F}$ or $\nabla \times \vec{F}$.
+The **curl** of a vector field $\vec{F}$ is defined as the cross product of the Del operator and $\vec{F}$.
+It is written as "curl $\vec{F}$" or $\nabla \times \vec{F}$.
 
 We compute this using the standard cross product determinant:
 
@@ -65,7 +67,13 @@ $$
 Because it is a cross product, the curl is a **vector quantity**. Physically, it measures the rotational tendency or "spin" of the vector field at a point (like a vortex or whirlpool).
 
 ### Irrotational Vectors
-If the curl of a vector field is the zero vector everywhere ($\nabla \times \vec{F} = \vec{0}$), the vector is called **irrotational**. This means the field has absolutely no rotational flow or twisting motion.
+If the curl of a vector field is the zero vector everywhere, i.e.
+
+$$
+\nabla \times \vec{F} = \vec{0}
+$$
+
+the vector is called **irrotational**. This means the field has absolutely no rotational flow or twisting motion.
 
 ---
 
@@ -229,10 +237,11 @@ $$
 \nabla \times (\vec{A} \times \vec{B}) = \vec{A}(\nabla \cdot \vec{B}) - \vec{B}(\nabla \cdot \vec{A}) + (\vec{B} \cdot \nabla)\vec{A} - (\vec{A} \cdot \nabla)\vec{B}
 $$
 
-Let $\vec{A} = \vec{r}$ and $\vec{B} = \vec{a}$. 
-Since $\vec{a}$ is constant, $\nabla \cdot \vec{a} = 0$ and $(\vec{r} \cdot \nabla)\vec{a} = \vec{0}$.
-From earlier problems, we know $\nabla \cdot \vec{r} = 3$.
-Finally, applying $(\vec{a} \cdot \nabla)$ to $\vec{r}$ yields $\vec{a}$.
+Let $A = r$ and $B = a$.
+
+- Since $a$ is constant: $\nabla \cdot a = 0$ and $(r \cdot \nabla)a = 0$
+- From earlier: $\nabla \cdot r = 3$
+- $(a \cdot \nabla)r = a$
 Substitute these into the identity:
 
 $$
@@ -240,10 +249,22 @@ $$
 $$
 
 ### Problem 6: Operations on
-**Question:** Prove that $\text{div}(r^n \vec{r}) = (n + 3)r^n$. For what value of $n$ is it solenoidal?
+**Question:** Prove that
+
+$$
+\text{div}(r^n \vec{r}) = (n + 3)r^n.
+$$
+
+For what value of $n$ is it solenoidal?
 
 **Solution:**
-First, note that $\frac{\partial r}{\partial x} = \frac{x}{r}$, and similarly for $y$ and $z$.
+First, note that
+
+$$
+\frac{\partial r}{\partial x} = \frac{x}{r}
+$$
+
+and similarly for $y$ and $z$.
 Compute the divergence:
 
 $$

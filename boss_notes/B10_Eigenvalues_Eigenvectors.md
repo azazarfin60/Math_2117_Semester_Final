@@ -445,7 +445,13 @@ When an eigenvalue has multiplicity $m$ (it appears $m$ times as a root), the nu
 
 ### Complex Eigenvalues
 
-If the characteristic equation has complex roots, the eigenvectors will also have complex entries. Complex eigenvalues always come in conjugate pairs for real matrices. See the class notes for the worked example with $\lambda = \frac{3 \pm i\sqrt{3}}{2}$.
+If the characteristic equation has complex roots, the eigenvectors will also have complex entries. Complex eigenvalues always come in conjugate pairs for real matrices. See the class notes for the worked example with
+
+$$
+\lambda = \frac{3 \pm i\sqrt{3}}{2}
+$$
+
+.
 
 ---
 

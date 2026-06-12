@@ -240,7 +240,13 @@ where $C$ is any path from $(1,0,0)$ to $(2,1,4)$.
 
 **Solution:**
 Since the integral is path-independent (it specifies "any path"), we choose the straight line connecting the two points.
-The equation of the line is $\frac{x - 1}{2 - 1} = \frac{y - 0}{1 - 0} = \frac{z - 0}{4 - 0} = t$.
+The equation of the line is
+
+$$
+\frac{x - 1}{2 - 1} = \frac{y - 0}{1 - 0} = \frac{z - 0}{4 - 0} = t
+$$
+
+.
 This gives parametric equations: $x = t + 1, y = t, z = 4t$.
 Differentiating gives: $dx = dt, dy = dt, dz = 4dt$.
 At $(1,0,0)$, $t = 0$. At $(2,1,4)$, $t = 1$.

@@ -14,7 +14,9 @@
 ## Prerequisites
 Before we dive into vector calculus, we must review basic vectors from high school. A scalar is a quantity with only magnitude, like speed or weight. A vector has both magnitude and direction, like velocity. 
 
-We represent a point in 3D space with a position vector from the origin $O$ to a point $A$. We call this $\vec{OA}$. We define vectors using the unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$ along the $X$, $Y$, and $Z$ axes.
+We represent a point in 3D space with a position vector from the origin $O$ to a point $A$.
+We call this $\vec{OA}$.
+We define vectors using the unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$ along the $X$, $Y$, and $Z$ axes.
 
 We also have two ways to multiply vectors:
 1.  **Scalar Product (Dot Product)**: The result is a scalar number.
@@ -48,7 +50,8 @@ $$
 f(x, y, z) = xy + x^2z
 $$
 
-Notice there are no $\hat{i}$, $\hat{j}$, or $\hat{k}$ unit vectors here. Let us evaluate this function at the point $(1, 2, -1)$:
+Notice there are no $\hat{i}$, $\hat{j}$, or $\hat{k}$ unit vectors here.
+Let us evaluate this function at the point $(1, 2, -1)$:
 
 $$
 f(1, 2, -1) = (1)(2) + (1)^2(-1) = 2 - 1 = 1
@@ -110,7 +113,9 @@ Physical examples include velocity fields of fluid flow or gravitational force f
 ## Key Takeaways
 
 *   **Scalar Point Function**: Input is a 3D point. Output is a scalar number. The function formula has no unit vectors.
-*   **Vector Point Function**: Input is a 3D point. Output is a vector. The function formula uses $\hat{i}$, $\hat{j}$, and $\hat{k}$.
+*   **Vector Point Function**: Input is a 3D point.
+Output is a vector.
+The function formula uses $\hat{i}$, $\hat{j}$, and $\hat{k}$.
 *   Vector calculus lets us study these 3D functions just like we study standard 1D functions in normal calculus.
 
 ## What Comes Next

@@ -28,7 +28,13 @@ $$
 
 Where:
 - $\nabla\phi$ is the gradient vector evaluated at point $P$.
-- $\hat{a} = \frac{\vec{a}}{\lvert \vec{a} \rvert}$ is the unit vector in the direction of vector $\vec{a}$.
+-
+
+$$
+\hat{a} = \frac{\vec{a}}{\lvert \vec{a} \rvert}
+$$
+
+is the unit vector in the direction of vector $\vec{a}$.
 
 Because the dot product yields a scalar, the directional derivative is a scalar magnitude.
 
@@ -149,7 +155,8 @@ $$
 \nabla\phi|_{(1,2,-1)} = (4a + 3c)\hat{i} + (4a - b)\hat{j} + (2b - 2c)\hat{k}
 $$
 
-The directional derivative is maximum in the direction of the gradient. For this maximum to occur parallel to the $Z$-axis (the $\hat{k}$ direction), the $\hat{i}$ and $\hat{j}$ components must be zero:
+The directional derivative is maximum in the direction of the gradient.
+For this maximum to occur parallel to the $Z$-axis (the $\hat{k}$ direction), the $\hat{i}$ and $\hat{j}$ components must be zero:
 1.
 
 $$
@@ -206,7 +213,13 @@ $$
 \vec{n}_2 = 4\hat{i} - 2\hat{j} - \hat{k}
 $$
 
-Use the dot product formula $\cos\theta = \frac{\vec{n}_1 \cdot \vec{n}_2}{\lvert \vec{n}_1 \rvert\lvert \vec{n}_2 \rvert}$ to find the angle:
+Use the dot product formula
+
+$$
+\cos\theta = \frac{\vec{n}_1 \cdot \vec{n}_2}{\lvert \vec{n}_1 \rvert\lvert \vec{n}_2 \rvert}
+$$
+
+to find the angle:
 
 $$
 |\vec{n}_1| = \sqrt{16+4+16} = 6

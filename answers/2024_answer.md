@@ -238,7 +238,9 @@ $$
 \vec{r} - \vec{B} = (x - 1)\hat{i} + (y - 5)\hat{j} + (z - 3)\hat{k}
 $$
 
-The plane is perpendicular to vector $\vec{A}$. So, the vector $\vec{r} - \vec{B}$ must be perpendicular to $\vec{A}$. Their dot product is zero:
+The plane is perpendicular to vector $\vec{A}$.
+So, the vector $\vec{r} - \vec{B}$ must be perpendicular to $\vec{A}$.
+Their dot product is zero:
 
 $$
 (\vec{r} - \vec{B}) \cdot \vec{A} = 0
@@ -276,7 +278,8 @@ $$
 \vec{r} = \cos \omega t \hat{i} + \sin \omega t \hat{j}
 $$
 
- where $\omega$ is constant. Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector. (04)
+where $\omega$ is constant.
+Show that the velocity $\vec{v}$ of the particle is perpendicular to $\vec{r}$, also show that $\vec{r} \times \vec{v} = \vec{a}$ constant vector. (04)
 
 **Answer:**
 
@@ -918,7 +921,13 @@ $$
 \end{bmatrix}
 $$
 
-We scale the third row ($R\_3 \to -\frac{1}{8}R\_3$):
+We scale the third row (
+
+$$
+R\_3 \to -\frac{1}{8}R\_3
+$$
+
+):
 
 $$
 \begin{bmatrix}
@@ -1416,7 +1425,13 @@ $$
 \end{bmatrix}
 $$
 
-We scale the second row ($R\_2 \to -\frac{1}{2}R\_2$):
+We scale the second row (
+
+$$
+R\_2 \to -\frac{1}{2}R\_2
+$$
+
+):
 
 $$
 \begin{bmatrix}

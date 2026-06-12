@@ -87,7 +87,13 @@ $$
 \end{pmatrix}
 $$
 
-Scale $R_3 \to \frac{1}{2}R_3$. Then $R_4 \to R_4 + R_3$:
+Scale
+
+$$
+R_3 \to \frac{1}{2}R_3
+$$
+
+. Then $R_4 \to R_4 + R_3$:
 
 $$
 \begin{pmatrix}
@@ -98,7 +104,13 @@ $$
 \end{pmatrix}
 $$
 
-Scale $R_4 \to \frac{1}{14}R_4$. Now clear upward using column operations.
+Scale
+
+$$
+R_4 \to \frac{1}{14}R_4
+$$
+
+. Now clear upward using column operations.
 
 $C_2 \to C_2 + 2C_1$, $C_3 \to C_3 + 2C_1$, $C_4 \to C_4 - C_1$:
 

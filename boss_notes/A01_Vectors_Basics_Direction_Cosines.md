@@ -110,9 +110,30 @@ $$
 Magnitude $\lvert \vec{PQ} \rvert = \sqrt{4 + 4 + 1} = 3$
 
 Direction cosines:
-$\cos\alpha = \frac{2}{3} \implies \alpha = \cos^{-1}\left(\frac{2}{3}\right)$
-$\cos\beta = -\frac{2}{3}$. For the acute angle, take the absolute value: $\beta = \cos^{-1}\left(\frac{2}{3}\right)$
-$\cos\gamma = -\frac{1}{3}$. For the acute angle, take the absolute value: $\gamma = \cos^{-1}\left(\frac{1}{3}\right)$
+
+$$
+\cos\alpha = \frac{2}{3} \implies \alpha = \cos^{-1}\left(\frac{2}{3}\right)
+$$
+
+$$
+\cos\beta = -\frac{2}{3}
+$$
+
+. For the acute angle, take the absolute value:
+
+$$
+\beta = \cos^{-1}\left(\frac{2}{3}\right)
+$$
+
+$$
+\cos\gamma = -\frac{1}{3}
+$$
+
+. For the acute angle, take the absolute value:
+
+$$
+\gamma = \cos^{-1}\left(\frac{1}{3}\right)
+$$
 
 ---
 

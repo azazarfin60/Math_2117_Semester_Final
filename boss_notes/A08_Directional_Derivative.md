@@ -31,7 +31,13 @@ It gives the rate of change of $\phi$ at $P$ in the direction $\hat{u}$.
 ## The Three-Step Method
 
 1. **Find the gradient** $\nabla\phi$ and evaluate at the given point.
-2. **Find the unit direction vector** $\hat{u} = \frac{\vec{d}}{\lvert \vec{d} \rvert}$.
+2. **Find the unit direction vector**
+
+$$
+\hat{u} = \frac{\vec{d}}{\lvert \vec{d} \rvert}
+$$
+
+.
 3. **Dot product**: $D_{\hat{u}}\phi = \nabla\phi \cdot \hat{u}$.
 
 ---

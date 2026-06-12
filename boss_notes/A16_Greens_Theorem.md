@@ -76,8 +76,14 @@ where $C$ is the boundary of the region between $y = x^2$ and $y^2 = x$.
 
 **Solution**:
 Identify $P$ and $Q$:
-$P = 2x + y^2 \implies \frac{\partial P}{\partial y} = 2y$
-$Q = 3y - 4x \implies \frac{\partial Q}{\partial x} = -4$
+
+$$
+P = 2x + y^2 \implies \frac{\partial P}{\partial y} = 2y
+$$
+
+$$
+Q = 3y - 4x \implies \frac{\partial Q}{\partial x} = -4
+$$
 
 Apply Green's theorem:
 
@@ -108,8 +114,14 @@ $$
 **Solution**:
 
 **Step 1: Evaluate via Double Integral (Green's Theorem)**
-$P = xy + y^2 \implies \frac{\partial P}{\partial y} = x + 2y$
-$Q = x^2 \implies \frac{\partial Q}{\partial x} = 2x$
+
+$$
+P = xy + y^2 \implies \frac{\partial P}{\partial y} = x + 2y
+$$
+
+$$
+Q = x^2 \implies \frac{\partial Q}{\partial x} = 2x
+$$
 
 $$
 \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 2x - (x + 2y) = x - 2y
@@ -138,7 +150,13 @@ $$
 \int_1^0 (x^2 + x^2)dx + x^2 dx = \int_1^0 3x^2 dx = [x^3]_1^0 = -1
 $$
 
-Total line integral = $\frac{19}{20} - 1 = -\frac{1}{20}$.
+Total line integral =
+
+$$
+\frac{19}{20} - 1 = -\frac{1}{20}
+$$
+
+.
 
 Since both equal $-\frac{1}{20}$, the theorem is verified.
 
@@ -148,7 +166,13 @@ Since both equal $-\frac{1}{20}$, the theorem is verified.
 
 - "Verify Green's theorem" means you must compute BOTH the line integral (summing along all paths) and the double integral independently to show they match. This takes time, be careful with signs.
 - The proof of Green's theorem is a high-value question. Memorize the algebraic steps for Part 1.
-- Sometimes evaluating the double integral just yields the Area of the region (e.g., if $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = -1$). Don't overcomplicate it if it's a known shape like a triangle.
+- Sometimes evaluating the double integral just yields the Area of the region (e.g., if
+
+$$
+\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = -1
+$$
+
+). Don't overcomplicate it if it's a known shape like a triangle.
 
 ---
 

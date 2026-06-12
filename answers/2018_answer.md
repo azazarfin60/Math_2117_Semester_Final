@@ -655,7 +655,13 @@ $$
 (\nabla \times \bar{V})_x = \frac{\partial^2 A_y}{\partial y \partial x} - \frac{\partial^2 A_x}{\partial y^2} - \frac{\partial^2 A_x}{\partial z^2} + \frac{\partial^2 A_z}{\partial z \partial x}
 $$
 
-We add and subtract $\frac{\partial^2 A\_x}{\partial x^2}$ to the expression:
+We add and subtract
+
+$$
+\frac{\partial^2 A\_x}{\partial x^2}
+$$
+
+to the expression:
 
 $$
 (\nabla \times \bar{V})_x = \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_y}{\partial y \partial x} + \frac{\partial^2 A_z}{\partial z \partial x} \right) - \left( \frac{\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right)

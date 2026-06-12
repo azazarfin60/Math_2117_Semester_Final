@@ -202,7 +202,19 @@ $$
 \end{bmatrix}
 $$
 
-Scale: $R_2 \to -\frac{1}{3}R_2$ and $R_3 \to -\frac{1}{4}R_3$:
+Scale:
+
+$$
+R_2 \to -\frac{1}{3}R_2
+$$
+
+ and
+
+$$
+R_3 \to -\frac{1}{4}R_3
+$$
+
+:
 
 $$
 \begin{bmatrix}

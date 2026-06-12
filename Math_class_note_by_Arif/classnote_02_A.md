@@ -178,7 +178,10 @@ $(m+n)A = mA + nA$
 $m(A+B) = mA + mB$
 
 **Unit vector:** vector having unit magnitude. If $A$ is a vector with magnitude $A \neq 0$ then $\vec{A}/A$ is a unit vector having the same direction with $A$.
-$a = \frac{\vec{A}}{|\vec{A}|}$
+
+$$
+a = \frac{\vec{A}}{|\vec{A}|}
+$$
 
 **# Proof that magnitude $A$ of vector
 
@@ -341,7 +344,10 @@ find angle
 $A = \sqrt{2^2 + 2^2 + (-1)^2} = 3$
 $B = \sqrt{6^2 + (-3)^2 + 2^2} = 7$
 $AB = 21$
-$\vec{A} \cdot \vec{B} = AB\cos\theta \Rightarrow \theta = \cos^{-1}\left(\frac{\vec{A} \cdot \vec{B}}{AB}\right) = \cos^{-1}\left(\frac{12 - 6 - 2}{21}\right) = 79.01^\circ$
+
+$$
+\vec{A} \cdot \vec{B} = AB\cos\theta \Rightarrow \theta = \cos^{-1}\left(\frac{\vec{A} \cdot \vec{B}}{AB}\right) = \cos^{-1}\left(\frac{12 - 6 - 2}{21}\right) = 79.01^\circ
+$$
 
 **#
 
@@ -361,10 +367,17 @@ $$
 \alpha = \cos^{-1}\frac{\vec{A} \cdot \hat{i}}{|A||\hat{i}|} = \cos^{-1}\left(\frac{3}{7}\right) = 64.6^\circ
 $$
 
-$\beta = \cos^{-1}\left(\frac{-6}{7}\right) = 149^\circ$
-$\gamma = \cos^{-1}\left(\frac{2}{7}\right) = 73.4^\circ$
+$$
+\beta = \cos^{-1}\left(\frac{-6}{7}\right) = 149^\circ
+$$
 
-$\cos^{-1}\left(\frac{\text{যার সাথে angle তার সহগ}}{|A|}\right)$
+$$
+\gamma = \cos^{-1}\left(\frac{2}{7}\right) = 73.4^\circ
+$$
+
+$$
+\cos^{-1}\left(\frac{\text{যার সাথে angle তার সহগ}}{|A|}\right)
+$$
 
 <!-- Page 017 -->
 **# Find projection of
@@ -380,7 +393,10 @@ $$
 $$
 
 **
-$\frac{\vec{A} \cdot \vec{B}}{|\vec{B}|} = \frac{4 + 8 + 7}{\sqrt{4^2 + (-4)^2 + 7^2}} = \frac{19}{9}$
+
+$$
+\frac{\vec{A} \cdot \vec{B}}{|\vec{B}|} = \frac{4 + 8 + 7}{\sqrt{4^2 + (-4)^2 + 7^2}} = \frac{19}{9}
+$$
 
 **# Find a unit vector perpendicular to the plane of
 
@@ -417,8 +433,14 @@ $$
 $$
 
 **Ordinary derivatives of vectors**
-$\frac{\Delta R}{\Delta u} = \frac{R(u + \Delta u) - R(u)}{\Delta u}$
-$\frac{dR}{du} = \lim_{\Delta u \to 0} \frac{\Delta R}{\Delta u} = \lim_{\Delta u \to 0} \frac{R(u + \Delta u) - R(u)}{\Delta u}$
+
+$$
+\frac{\Delta R}{\Delta u} = \frac{R(u + \Delta u) - R(u)}{\Delta u}
+$$
+
+$$
+\frac{dR}{du} = \lim_{\Delta u \to 0} \frac{\Delta R}{\Delta u} = \lim_{\Delta u \to 0} \frac{R(u + \Delta u) - R(u)}{\Delta u}
+$$
 
 space curve:
 
@@ -537,14 +559,25 @@ $B$ is called the binormal $B = T \times N$
 
 Frenet-Serret formula:
 $\frac{dT}{ds} = kN$
-$\frac{dN}{ds} = \tau B - kT$
-$\frac{dB}{ds} = -\tau N$
+
+$$
+\frac{dN}{ds} = \tau B - kT
+$$
+
+$$
+\frac{dB}{ds} = -\tau N
+$$
 
 $k = \text{curvature}$
 $\tau = \text{torsion}$
-$\sigma = \frac{1}{\tau}$
 
-$T = \frac{\frac{dr}{dt}}{\left|\frac{dr}{dt}\right|} = \frac{dr}{dt} / \frac{ds}{dt} = \frac{dr}{ds}$
+$$
+\sigma = \frac{1}{\tau}
+$$
+
+$$
+T = \frac{\frac{dr}{dt}}{\left|\frac{dr}{dt}\right|} = \frac{dr}{dt} / \frac{ds}{dt} = \frac{dr}{ds}
+$$
 
 **#
 
@@ -559,7 +592,10 @@ $$
 $$
 
 **
-$\frac{dR}{du} = \lim_{\Delta u \to 0} \frac{R(u+\Delta u) - R(u)}{\Delta u}$
+
+$$
+\frac{dR}{du} = \lim_{\Delta u \to 0} \frac{R(u+\Delta u) - R(u)}{\Delta u}
+$$
 
 <!-- Page 020 -->
 
@@ -582,7 +618,18 @@ R = \sin t \hat{i} + \cos t \hat{j} + t \hat{k}
 $$
 
 **
-find (a) $\frac{dR}{dt}$ (b) $\frac{d^2R}{dt^2}$ (c) $\left|\frac{dR}{dt}\right|$ (d) $\left|\frac{d^2R}{dt^2}\right|$
+find (a) $\frac{dR}{dt}$ (b) $\frac{d^2R}{dt^2}$ (c)
+
+$$
+\left|\frac{dR}{dt}\right|
+$$
+
+ (d)
+
+$$
+\left|\frac{d^2R}{dt^2}\right|
+$$
+
 (a)
 
 $$
@@ -595,8 +642,17 @@ $$
 \frac{d^2R}{dt^2} = \frac{d}{dt}\left(\frac{dR}{dt}\right) = \frac{d}{dt}(\cos t)\hat{i} - \frac{d}{dt}(\sin t)\hat{j} + \frac{d}{dt}(1)\hat{k} = -\sin t \hat{i} - \cos t \hat{j}
 $$
 
-(c) $\left|\frac{dR}{dt}\right| = \sqrt{\cos^2 t + (-\sin t)^2 + 1^2} = \sqrt{2}$
-(d) $\left|\frac{d^2R}{dt^2}\right| = \sqrt{(-\sin t)^2 + (-\cos t)^2} = 1$
+(c)
+
+$$
+\left|\frac{dR}{dt}\right| = \sqrt{\cos^2 t + (-\sin t)^2 + 1^2} = \sqrt{2}
+$$
+
+(d)
+
+$$
+\left|\frac{d^2R}{dt^2}\right| = \sqrt{(-\sin t)^2 + (-\cos t)^2} = 1
+$$
 
 **# $x = e^{-t}, y = 2\cos 3t, z = 2\sin 3t$**
 velocity and acceleration magnitudes at $t=0$

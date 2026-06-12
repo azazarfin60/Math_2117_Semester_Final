@@ -42,9 +42,23 @@ $$
 Because the surface $S$ exists in 3D space, we cannot integrate $dS$ directly. We must **project** the 3D surface onto one of the 2D coordinate planes ($xy$, $yz$, or $zx$). This allows us to establish the limits of integration for the two projected variables.
 
 The formulas for the projected area element $dS$ are:
-1.  **Projection on $xy$-plane**: $dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}$
-2.  **Projection on $yz$-plane**: $dS = \frac{dy \, dz}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{i}} \rvert}$
-3.  **Projection on $zx$-plane**: $dS = \frac{dz \, dx}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{j}} \rvert}$
+1.  **Projection on $xy$-plane**:
+
+$$
+dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}
+$$
+
+2.  **Projection on $yz$-plane**:
+
+$$
+dS = \frac{dy \, dz}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{i}} \rvert}
+$$
+
+3.  **Projection on $zx$-plane**:
+
+$$
+dS = \frac{dz \, dx}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{j}} \rvert}
+$$
 
 *Rule of thumb: The denominator is the dot product of $\hat{\mathbf{n}}$ and the unit vector of the axis orthogonal to the projection plane.*
 
@@ -107,18 +121,36 @@ $$
 
 **Step 3: Choose a Projection Plane**
 We project the surface $S$ onto the **$xy$-plane**. Let's call this 2D projected region $S_1$.
-The projection formula for $dS$ on the $xy$-plane is $dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}$.
+The projection formula for $dS$ on the $xy$-plane is
+
+$$
+dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}
+$$
+
+.
 
 $$
 \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} = \frac{1}{7}(2\hat{\mathbf{i}} + 3\hat{\mathbf{j}} + 6\hat{\mathbf{k}}) \cdot \hat{\mathbf{k}} = \frac{6}{7}
 $$
 
-Thus, $dS = \frac{dx \, dy}{6/7} = \frac{7}{6} dx \, dy$.
+Thus,
+
+$$
+dS = \frac{dx \, dy}{6/7} = \frac{7}{6} dx \, dy
+$$
+
+.
 
 **Step 4: Establish Limits of Integration for $S_1$**
 On the $xy$-plane ($z=0$), the plane equation becomes $2x + 3y = 12$. This line bounds the triangular region $S_1$.
 -   $x$ varies from $0$ to $6$.
--   For a given $x$, $y$ varies from $0$ to the line $y = \frac{12 - 2x}{3}$.
+-   For a given $x$, $y$ varies from $0$ to the line
+
+$$
+y = \frac{12 - 2x}{3}
+$$
+
+.
 
 **Step 5: Compute $\mathbf{F} \cdot \hat{\mathbf{n}}$**
 

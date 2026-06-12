@@ -32,7 +32,9 @@ C =
 \end{pmatrix}
 $$
 
-$B = \frac{1}{2}(A + A^T)$
+$$
+B = \frac{1}{2}(A + A^T)
+$$
 
 $$
 = \frac{1}{2}\left[
@@ -52,7 +54,9 @@ $$
 \end{pmatrix} = \begin{pmatrix} 1 & 3 & 2 \\ 3 & 5 & 4 \\ 2 & 4 & 1 \end{pmatrix}
 $$
 
-$C = \frac{1}{2}(A - A^T)$
+$$
+C = \frac{1}{2}(A - A^T)
+$$
 
 $$
 = \frac{1}{2}\left[
@@ -99,13 +103,23 @@ $A^\theta$ or $A^H$ or $A^\oplus = (\bar{A})^T = (\overline{A^T})$
 $A^\theta = A \Rightarrow$ hermitian
 $A^\theta = -A \Rightarrow$ skew hermitian
 
-$B = \frac{1}{2}(A^\theta + A)$
-$C = \frac{1}{2}(A - A^\theta)$
+$$
+B = \frac{1}{2}(A^\theta + A)
+$$
 
-$A = \frac{1}{2}(A^\theta + A) + \frac{1}{2}(A - A^\theta) = B + C$
+$$
+C = \frac{1}{2}(A - A^\theta)
+$$
+
+$$
+A = \frac{1}{2}(A^\theta + A) + \frac{1}{2}(A - A^\theta) = B + C
+$$
 
 Now,
-$B = \frac{1}{2}(A^\theta + A) = \frac{1}{2}((\bar{A})^T + A)$
+
+$$
+B = \frac{1}{2}(A^\theta + A) = \frac{1}{2}((\bar{A})^T + A)
+$$
 
 $$
 = \frac{1}{2} \left[
@@ -139,7 +153,10 @@ $$
 - main diagonal এ real number থাকা লাগবে।
 
 <!-- Page 033 -->
-$C = \frac{1}{2}[A - A^\theta]$
+
+$$
+C = \frac{1}{2}[A - A^\theta]
+$$
 
 $$
 = \frac{1}{2} \left[
@@ -325,16 +342,29 @@ $n = \text{unit normal vector}$
 $S = \text{surface}$
 $A = \text{vector field / area}$
 
-$ds = \frac{dx \, dy}{|n \cdot k|}$ (where $k$ is normal to the plane of projection)
+$$
+ds = \frac{dx \, dy}{|n \cdot k|}
+$$
 
-$ds = \frac{dx \, dz}{|n \cdot j|}$
-$ds = \frac{dy \, dz}{|n \cdot i|}$
+(where $k$ is normal to the plane of projection)
+
+$$
+ds = \frac{dx \, dz}{|n \cdot j|}
+$$
+
+$$
+ds = \frac{dy \, dz}{|n \cdot i|}
+$$
 
 surface কে region এ convert করে ফেলেছি।
 
 $2x+3y+6z = 12$
 $2x+3y = 12 \quad (z=0)$
-$y = \frac{12-2x}{3} \quad (y=0)$
+
+$$
+y = \frac{12-2x}{3} \quad (y=0)
+$$
+
 $x = 6 \quad (x=0)$
 
 <!-- Page 037 -->

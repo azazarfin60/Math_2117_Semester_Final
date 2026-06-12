@@ -23,7 +23,8 @@ $$
 \nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z}
 $$
 
-Because it contains the unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$, it acts like a vector. We apply this operator to functions to find their rates of change in 3D space.
+Because it contains the unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$, it acts like a vector.
+We apply this operator to functions to find their rates of change in 3D space.
 
 ## The Gradient
 When we apply the del operator to a **scalar point function** $\phi$, we get the **gradient** of $\phi$. We write this as $\text{grad }\phi$ or $\nabla\phi$.
@@ -146,7 +147,8 @@ $$
 **Question:** If $\vec{a}$ and $\vec{b}$ are constant vectors, prove that $\nabla[\vec{r}\ \vec{a}\ \vec{b}] = \vec{a} \times \vec{b}$.
 
 **Solution:**
-Let the cross product $\vec{A} = \vec{a} \times \vec{b}$. Since $\vec{a}$ and $\vec{b}$ are constant, $\vec{A}$ is also a constant vector.
+Let the cross product $\vec{A} = \vec{a} \times \vec{b}$.
+Since $\vec{a}$ and $\vec{b}$ are constant, $\vec{A}$ is also a constant vector.
 The scalar triple product becomes a simple dot product:
 
 $$

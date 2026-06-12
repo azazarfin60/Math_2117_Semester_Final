@@ -61,7 +61,13 @@ $$
 $$
 
 2. Integrate (1) with respect to $x$. Add a function $g(y, z)$ instead of a constant $C$.
-3. Differentiate your result with respect to $y$, and equate it to (2) to find $\frac{\partial g}{\partial y}$.
+3. Differentiate your result with respect to $y$, and equate it to (2) to find
+
+$$
+\frac{\partial g}{\partial y}
+$$
+
+.
 4. Integrate to find $g(y, z)$, adding a function $h(z)$.
 5. Substitute $g(y, z)$ back into your $\phi$ equation.
 6. Differentiate with respect to $z$, equate to (3) to find $h'(z)$.
@@ -92,9 +98,23 @@ $$
 \end{vmatrix}
 $$
 
-- $\hat{i}$-component: $\frac{\partial}{\partial y}(3xz^2 - y) - \frac{\partial}{\partial z}(3x^2 - z) = -1 - (-1) = 0$
-- $\hat{j}$-component: $\frac{\partial}{\partial z}(6xy + z^3) - \frac{\partial}{\partial x}(3xz^2 - y) = 3z^2 - 3z^2 = 0$
-- $\hat{k}$-component: $\frac{\partial}{\partial x}(3x^2 - z) - \frac{\partial}{\partial y}(6xy + z^3) = 6x - 6x = 0$
+- $\hat{i}$-component:
+
+$$
+\frac{\partial}{\partial y}(3xz^2 - y) - \frac{\partial}{\partial z}(3x^2 - z) = -1 - (-1) = 0
+$$
+
+- $\hat{j}$-component:
+
+$$
+\frac{\partial}{\partial z}(6xy + z^3) - \frac{\partial}{\partial x}(3xz^2 - y) = 3z^2 - 3z^2 = 0
+$$
+
+- $\hat{k}$-component:
+
+$$
+\frac{\partial}{\partial x}(3x^2 - z) - \frac{\partial}{\partial y}(6xy + z^3) = 6x - 6x = 0
+$$
 
 Curl is zero. It is irrotational.
 
@@ -197,9 +217,23 @@ x + 2y + az & bx - 3y - z & 4x + cy + 2z
 \end{vmatrix} = 0
 $$
 
-- $\hat{i}$-component: $\frac{\partial}{\partial y}(4x + cy + 2z) - \frac{\partial}{\partial z}(bx - 3y - z) = c - (-1) = c + 1 = 0 \implies c = -1$
-- $\hat{j}$-component: $\frac{\partial}{\partial z}(x + 2y + az) - \frac{\partial}{\partial x}(4x + cy + 2z) = a - 4 = 0 \implies a = 4$
-- $\hat{k}$-component: $\frac{\partial}{\partial x}(bx - 3y - z) - \frac{\partial}{\partial y}(x + 2y + az) = b - 2 = 0 \implies b = 2$
+- $\hat{i}$-component:
+
+$$
+\frac{\partial}{\partial y}(4x + cy + 2z) - \frac{\partial}{\partial z}(bx - 3y - z) = c - (-1) = c + 1 = 0 \implies c = -1
+$$
+
+- $\hat{j}$-component:
+
+$$
+\frac{\partial}{\partial z}(x + 2y + az) - \frac{\partial}{\partial x}(4x + cy + 2z) = a - 4 = 0 \implies a = 4
+$$
+
+- $\hat{k}$-component:
+
+$$
+\frac{\partial}{\partial x}(bx - 3y - z) - \frac{\partial}{\partial y}(x + 2y + az) = b - 2 = 0 \implies b = 2
+$$
 
 Constants are $a = 4, b = 2, c = -1$.
 

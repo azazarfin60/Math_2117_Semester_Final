@@ -30,8 +30,20 @@ $$
 dS = \frac{dx dy}{|\hat{n} \cdot \hat{k}|}
 $$
 
-If projecting onto the $yz$-plane: $dS = \frac{dy dz}{\lvert \hat{n} \cdot \hat{i} \rvert}$.
-If projecting onto the $zx$-plane: $dS = \frac{dz dx}{\lvert \hat{n} \cdot \hat{j} \rvert}$.
+If projecting onto the $yz$-plane:
+
+$$
+dS = \frac{dy dz}{\lvert \hat{n} \cdot \hat{i} \rvert}
+$$
+
+.
+If projecting onto the $zx$-plane:
+
+$$
+dS = \frac{dz dx}{\lvert \hat{n} \cdot \hat{j} \rvert}
+$$
+
+.
 
 ---
 

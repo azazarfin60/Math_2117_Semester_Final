@@ -78,7 +78,13 @@ $$
 I_V = \int_{-2}^2 42\sqrt{4-x^2} \, dx
 $$
 
-Using the standard integration formula $\int \sqrt{a^2-x^2} \, dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)$:
+Using the standard integration formula
+
+$$
+\int \sqrt{a^2-x^2} \, dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)
+$$
+
+:
 
 $$
 I_V = 42 \left[ \frac{x}{2}\sqrt{4-x^2} + \frac{4}{2}\sin^{-1}\left(\frac{x}{2}\right) \right]_{-2}^2
@@ -202,8 +208,26 @@ $$
 
 Now, we simply use the known geometric formulas for a solid cone:
 *   The cone has a height $h = 1$ and a base radius $R = 1$ (since $x^2+y^2=z^2$ at $z=1$).
-*   The volume of a cone is $V = \frac{1}{3}\pi R^2 h = \frac{1}{3}\pi (1)^2 (1) = \frac{1}{3}\pi$.
-*   The center of gravity of a solid right circular cone lies on its axis at $\bar{z} = \frac{3}{4}h$. Since $h=1$, $\bar{z} = \frac{3}{4}$.
+*   The volume of a cone is
+
+$$
+V = \frac{1}{3}\pi R^2 h = \frac{1}{3}\pi (1)^2 (1) = \frac{1}{3}\pi
+$$
+
+.
+*   The center of gravity of a solid right circular cone lies on its axis at
+
+$$
+\bar{z} = \frac{3}{4}h
+$$
+
+. Since $h=1$,
+
+$$
+\bar{z} = \frac{3}{4}
+$$
+
+.
 
 Substitute these known values:
 

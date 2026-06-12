@@ -302,7 +302,13 @@ These topics have appeared **only** in CSE papers and are unique preparation ite
 | Hilbert Space (definition & matrix representation) | 2024 | 5 |
 | Involutory matrix → idempotent proof | 2023 | 3 |
 | Commutator linear map $F(A)=AM-MA$ | 2024 | 5 |
-| Acceleration decomposition $\vec{a}=\frac{dv}{dt}\vec{T}+\frac{v^2}{\rho}\vec{N}$ | 2023 | 4 |
+| Acceleration decomposition
+
+$$
+\vec{a}=\frac{dv}{dt}\vec{T}+\frac{v^2}{\rho}\vec{N}
+$$
+
+| 2023 | 4 |
 | Curvature & torsion formula proofs | 2023 | 5 |
 | Subspace intersection $U \cap W$ and sum $U+W$ | 2024 | 5 |
 

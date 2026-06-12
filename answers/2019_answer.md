@@ -276,7 +276,13 @@ $$
 2 \left( \vec{A} \cdot \frac{d\vec{A}}{dt} \right) = 0 \implies \vec{A} \cdot \frac{d\vec{A}}{dt} = 0
 $$
 
-Since the dot product of $\vec{A}$ and $\frac{d\vec{A}}{dt}$ is zero, and neither vector is zero (given $\left|\frac{d\vec{A}}{dt}\right| \neq 0$ and magnitude of $\vec{A}$ is a non-zero constant), the vectors must be perpendicular.
+Since the dot product of $\vec{A}$ and $\frac{d\vec{A}}{dt}$ is zero, and neither vector is zero (given
+
+$$
+\left|\frac{d\vec{A}}{dt}\right| \neq 0
+$$
+
+and magnitude of $\vec{A}$ is a non-zero constant), the vectors must be perpendicular.
 
 ---
 
@@ -302,9 +308,23 @@ $$
 
 Evaluate this gradient at the point $(1, -2, 1)$:
 
-*   $\frac{\partial\phi}{\partial x} = 2(1)(-2)(1) + 4(1)^2 = -4 + 4 = 0$
-*   $\frac{\partial\phi}{\partial y} = (1)^2(1) = 1$
-*   $\frac{\partial\phi}{\partial z} = (1)^2(-2) + 8(1)(1) = -2 + 8 = 6$
+*
+
+$$
+\frac{\partial\phi}{\partial x} = 2(1)(-2)(1) + 4(1)^2 = -4 + 4 = 0
+$$
+
+*
+
+$$
+\frac{\partial\phi}{\partial y} = (1)^2(1) = 1
+$$
+
+*
+
+$$
+\frac{\partial\phi}{\partial z} = (1)^2(-2) + 8(1)(1) = -2 + 8 = 6
+$$
 
 So the gradient vector is:
 
@@ -434,7 +454,13 @@ $$
 \vec{\nabla}\left(\frac{1}{r}\right) = -\frac{x\hat{i} + y\hat{j} + z\hat{k}}{r^3} = -\frac{\vec{r}}{r^3}
 $$
 
-The Laplacian $\nabla^2\left(\frac{1}{r}\right)$ is the divergence of the gradient:
+The Laplacian
+
+$$
+\nabla^2\left(\frac{1}{r}\right)
+$$
+
+is the divergence of the gradient:
 
 $$
 \nabla^2\left(\frac{1}{r}\right) = \vec{\nabla} \cdot \vec{\nabla}\left(\frac{1}{r}\right) = -\left[ \frac{\partial}{\partial x}\left(\frac{x}{r^3}\right) + \frac{\partial}{\partial y}\left(\frac{y}{r^3}\right) + \frac{\partial}{\partial z}\left(\frac{z}{r^3}\right) \right]
@@ -853,7 +879,13 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 3 ($R\_3 \to \frac{1}{2}R\_3$):
+Scale row 3 (
+
+$$
+R\_3 \to \frac{1}{2}R\_3
+$$
+
+):
 
 $$
 \begin{pmatrix}
@@ -875,7 +907,13 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 4 ($R\_4 \to \frac{1}{14}R\_4$):
+Scale row 4 (
+
+$$
+R\_4 \to \frac{1}{14}R\_4
+$$
+
+):
 
 $$
 \begin{pmatrix}
@@ -989,8 +1027,17 @@ $$
 $$
 
 Scale row 2 and row 3:
-*   $R\_2 \to -\frac{1}{3} R\_2$
-*   $R\_3 \to -\frac{1}{4} R\_3$
+*
+
+$$
+R\_2 \to -\frac{1}{3} R\_2
+$$
+
+*
+
+$$
+R\_3 \to -\frac{1}{4} R\_3
+$$
 
 This gives:
 
@@ -1107,7 +1154,13 @@ $$
 \end{bmatrix}
 $$
 
-Scale row 3 ($R\_3 \to -\frac{1}{3} R\_3$):
+Scale row 3 (
+
+$$
+R\_3 \to -\frac{1}{3} R\_3
+$$
+
+):
 
 $$
 \begin{bmatrix}

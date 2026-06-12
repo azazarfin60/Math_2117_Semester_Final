@@ -43,7 +43,13 @@ $$
 
 ## Must-Know Proof: Constant Magnitude (PYQ 2019)
 
-**Problem**: If $\vec{A}$ has a constant magnitude, show that $\vec{A}$ and $\frac{d\vec{A}}{dt}$ are perpendicular, provided $\left\lvert \frac{d\vec{A}}{dt}\right\rvert  \neq 0$.
+**Problem**: If $\vec{A}$ has a constant magnitude, show that $\vec{A}$ and $\frac{d\vec{A}}{dt}$ are perpendicular, provided
+
+$$
+\left\lvert \frac{d\vec{A}}{dt}\right\rvert  \neq 0
+$$
+
+.
 
 **Proof**:
 Let the constant magnitude of $\vec{A}$ be $\lvert \vec{A} \rvert = c$ (where $c$ is a constant).

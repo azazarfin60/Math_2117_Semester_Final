@@ -69,7 +69,13 @@ $$
 = \int_0^{2\pi} \left( 3\cos^2\phi - 2(1 - \cos^2\phi) \right) d\phi = \int_0^{2\pi} (5\cos^2\phi - 2) \, d\phi
 $$
 
-Convert using the double angle formula $\cos^2\phi = \frac{1 + \cos 2\phi}{2}$:
+Convert using the double angle formula
+
+$$
+\cos^2\phi = \frac{1 + \cos 2\phi}{2}
+$$
+
+:
 
 $$
 = \int_0^{2\pi} \left( \frac{5}{2}(1 + \cos 2\phi) - 2 \right) d\phi = \int_0^{2\pi} \left( \frac{1}{2} + \frac{5}{2}\cos 2\phi \right) d\phi

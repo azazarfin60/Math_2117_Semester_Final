@@ -138,7 +138,13 @@ $$
 
 **Solution**:
 
-We know $\frac{\partial r}{\partial x} = \frac{x}{r}$, and similarly for $y$ and $z$.
+We know
+
+$$
+\frac{\partial r}{\partial x} = \frac{x}{r}
+$$
+
+, and similarly for $y$ and $z$.
 
 $$
 \nabla \cdot (r^n x\hat{i} + r^n y\hat{j} + r^n z\hat{k}) = \frac{\partial}{\partial x}(r^n x) + \frac{\partial}{\partial y}(r^n y) + \frac{\partial}{\partial z}(r^n z)

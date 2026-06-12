@@ -219,7 +219,13 @@ v_1 =
 \end{bmatrix}.
 $$
 
-For $\lambda = 4$: $2x - 3y = 0 \implies x = \frac{3}{2}y$. Eigenvector:
+For $\lambda = 4$:
+
+$$
+2x - 3y = 0 \implies x = \frac{3}{2}y
+$$
+
+. Eigenvector:
 
 $$
 v_2 =

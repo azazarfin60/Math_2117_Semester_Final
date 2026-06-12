@@ -327,7 +327,13 @@ $$
 \end{bmatrix}
 $$
 
-Scale $R_2 \to -\frac{1}{2}R_2$:
+Scale
+
+$$
+R_2 \to -\frac{1}{2}R_2
+$$
+
+:
 
 $$
 \begin{bmatrix}
@@ -347,7 +353,13 @@ $$
 \end{bmatrix}
 $$
 
-Scale $R_3 \to \frac{2}{5}R_3$, then back-substitute upward. After all operations:
+Scale
+
+$$
+R_3 \to \frac{2}{5}R_3
+$$
+
+, then back-substitute upward. After all operations:
 
 $$
 A^{-1} = \frac{1}{5}
@@ -395,7 +407,19 @@ $$
 \end{bmatrix}
 $$
 
-Scale $R_2 \to -\frac{1}{2}R_2$ and $R_3 \to -\frac{1}{4}R_3$. Then back-substitute:
+Scale
+
+$$
+R_2 \to -\frac{1}{2}R_2
+$$
+
+ and
+
+$$
+R_3 \to -\frac{1}{4}R_3
+$$
+
+. Then back-substitute:
 
 $$
 A^{-1} = \frac{1}{8}

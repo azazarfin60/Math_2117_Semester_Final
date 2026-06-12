@@ -327,7 +327,13 @@ $$
 [\bar{\nabla} \times (\bar{\nabla} \times \bar{V})]_x = \frac{\partial^2 V_y}{\partial y \partial x} - \frac{\partial^2 V_x}{\partial y^2} - \frac{\partial^2 V_x}{\partial z^2} + \frac{\partial^2 V_z}{\partial z \partial x}
 $$
 
-Add and subtract the term $\frac{\partial^2 V\_x}{\partial x^2}$:
+Add and subtract the term
+
+$$
+\frac{\partial^2 V\_x}{\partial x^2}
+$$
+
+:
 
 $$
 [\bar{\nabla} \times (\bar{\nabla} \times \bar{V})]_x = \left(\frac{\partial^2 V_x}{\partial x^2} + \frac{\partial^2 V_y}{\partial y \partial x} + \frac{\partial^2 V_z}{\partial z \partial x}\right) - \left(\frac{\partial^2 V_x}{\partial x^2} + \frac{\partial^2 V_x}{\partial y^2} + \frac{\partial^2 V_x}{\partial z^2}\right)
@@ -415,7 +421,13 @@ $$
 \cos\theta = \frac{16}{6\sqrt{21}} = \frac{8}{3\sqrt{21}} \implies \theta = \cos^{-1}\left( \frac{8}{3\sqrt{21}} \right)
 $$
 
-So the angle between the surfaces is $\cos^{-1}\left( \frac{8}{3\sqrt{21}} \right)$.
+So the angle between the surfaces is
+
+$$
+\cos^{-1}\left( \frac{8}{3\sqrt{21}} \right)
+$$
+
+.
 
 ---
 
@@ -775,7 +787,19 @@ $$
 A = \frac{1}{2}(A + A^T) + \frac{1}{2}(A - A^T)
 $$
 
-Let $P = \frac{1}{2}(A + A^T)$ and $Q = \frac{1}{2}(A - A^T)$.
+Let
+
+$$
+P = \frac{1}{2}(A + A^T)
+$$
+
+ and
+
+$$
+Q = \frac{1}{2}(A - A^T)
+$$
+
+.
 
 ##### Show $P$ is symmetric
 
@@ -885,7 +909,19 @@ $$
 \end{pmatrix}
 $$
 
-Simplify row 3 and row 4 ($R\_3 \to \frac{1}{11}R\_3$, $R\_4 \to \frac{1}{11}R\_4$):
+Simplify row 3 and row 4 (
+
+$$
+R\_3 \to \frac{1}{11}R\_3
+$$
+
+,
+
+$$
+R\_4 \to \frac{1}{11}R\_4
+$$
+
+):
 
 $$
 \begin{pmatrix}
@@ -931,7 +967,13 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 2 ($R\_2 \to \frac{1}{5}R\_2$):
+Scale row 2 (
+
+$$
+R\_2 \to \frac{1}{5}R\_2
+$$
+
+):
 
 $$
 \begin{pmatrix}
@@ -943,8 +985,17 @@ $$
 $$
 
 Clear the second row using column operations:
-*   $C\_3 \to C\_3 - \frac{3}{5}C\_2$
-*   $C\_4 \to C\_4 - \frac{7}{5}C\_2$
+*
+
+$$
+C\_3 \to C\_3 - \frac{3}{5}C\_2
+$$
+
+*
+
+$$
+C\_4 \to C\_4 - \frac{7}{5}C\_2
+$$
 
 This gives:
 
@@ -957,7 +1008,13 @@ $$
 \end{pmatrix}
 $$
 
-Scale row 3 ($R\_3 \to \frac{1}{3}R\_3$):
+Scale row 3 (
+
+$$
+R\_3 \to \frac{1}{3}R\_3
+$$
+
+):
 
 $$
 \begin{pmatrix}
@@ -968,7 +1025,13 @@ $$
 \end{pmatrix}
 $$
 
-Clear the third column element ($C\_4 \to C\_4 - \frac{2}{3}C\_3$):
+Clear the third column element (
+
+$$
+C\_4 \to C\_4 - \frac{2}{3}C\_3
+$$
+
+):
 
 $$
 \begin{pmatrix}
@@ -1067,7 +1130,13 @@ $$
 \end{bmatrix}
 $$
 
-Perform the operation $R\_2 \to R\_2 - \frac{3}{2}R\_3$:
+Perform the operation
+
+$$
+R\_2 \to R\_2 - \frac{3}{2}R\_3
+$$
+
+:
 
 $$
 \begin{bmatrix}

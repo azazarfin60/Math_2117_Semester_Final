@@ -77,13 +77,36 @@ $$
 
 $A$ has a constant magnitude, $A \cdot A = \text{constant}$
 
-$\frac{d}{dt}(A \cdot A) = A \cdot \frac{dA}{dt} + \frac{dA}{dt} \cdot A = 0$
-$\Rightarrow 2 A \cdot \frac{dA}{dt} = 0 \Rightarrow A \cdot \frac{dA}{dt} = 0$
+$$
+\frac{d}{dt}(A \cdot A) = A \cdot \frac{dA}{dt} + \frac{dA}{dt} \cdot A = 0
+$$
 
-Thus, $A \cdot \frac{dA}{dt} = 0$ and $A$ is perpendicular to $\frac{dA}{dt}$ provided $\left|\frac{dA}{dt}\right| \neq 0$.
+$$
+\Rightarrow 2 A \cdot \frac{dA}{dt} = 0 \Rightarrow A \cdot \frac{dA}{dt} = 0
+$$
+
+Thus,
+
+$$
+A \cdot \frac{dA}{dt} = 0
+$$
+
+ and $A$ is perpendicular to $\frac{dA}{dt}$ provided
+
+$$
+\left|\frac{dA}{dt}\right| \neq 0
+$$
+
+.
 
 <!-- Page 022 -->
-**# show $\vec{A} \cdot \frac{d\vec{A}}{dt} = A \frac{dA}{dt}$**
+**# show
+
+$$
+\vec{A} \cdot \frac{d\vec{A}}{dt} = A \frac{dA}{dt}
+$$
+
+**
 
 $$
 \vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}
@@ -91,9 +114,17 @@ $$
 
 $A = \sqrt{A_1^2 + A_2^2 + A_3^2}$
 
-$\frac{dA}{dt} = \frac{1}{2}(A_1^2 + A_2^2 + A_3^2)^{-1/2} \left(2A_1\frac{dA_1}{dt} + 2A_2\frac{dA_2}{dt} + 2A_3\frac{dA_3}{dt}\right)$
-$\frac{dA}{dt} = \frac{A_1\frac{dA_1}{dt} + A_2\frac{dA_2}{dt} + A_3\frac{dA_3}{dt}}{(A_1^2 + A_2^2 + A_3^2)^{1/2}} = \frac{\vec{A} \cdot \frac{d\vec{A}}{dt}}{A}$
-$\Rightarrow A \frac{dA}{dt} = \vec{A} \cdot \frac{d\vec{A}}{dt}$
+$$
+\frac{dA}{dt} = \frac{1}{2}(A_1^2 + A_2^2 + A_3^2)^{-1/2} \left(2A_1\frac{dA_1}{dt} + 2A_2\frac{dA_2}{dt} + 2A_3\frac{dA_3}{dt}\right)
+$$
+
+$$
+\frac{dA}{dt} = \frac{A_1\frac{dA_1}{dt} + A_2\frac{dA_2}{dt} + A_3\frac{dA_3}{dt}}{(A_1^2 + A_2^2 + A_3^2)^{1/2}} = \frac{\vec{A} \cdot \frac{d\vec{A}}{dt}}{A}
+$$
+
+$$
+\Rightarrow A \frac{dA}{dt} = \vec{A} \cdot \frac{d\vec{A}}{dt}
+$$
 
 **# $\phi(x,y,z) = xy^2z$,
 
@@ -101,7 +132,13 @@ $$
 A = xz\hat{i} - xy^2\hat{j} + yz^2\hat{k},
 $$
 
-Find $\frac{\partial^3}{\partial x^2 \partial z}(\phi A)$ at $(2, -1, 1)$**
+Find
+
+$$
+\frac{\partial^3}{\partial x^2 \partial z}(\phi A)
+$$
+
+at $(2, -1, 1)$**
 
 $$
 \phi A = x^2 y^2 z^2 \hat{i} - x^2 y^4 z \hat{j} + x y^3 z^3 \hat{k}
@@ -126,11 +163,23 @@ $$
 $$
 
 ~~**# prove Frenet-Serret formulas**~~
-since $T \cdot T = 1$, $T \cdot \frac{dT}{ds} = 0$, $\frac{dT}{ds}$ perpendicular to $T$
+since $T \cdot T = 1$,
+
+$$
+T \cdot \frac{dT}{ds} = 0
+$$
+
+, $\frac{dT}{ds}$ perpendicular to $T$
 $N$ unit
 $\frac{dT}{ds} = kN$
-$\frac{dB}{ds} = -\tau N$
-$\frac{dN}{ds} = \tau B - kT$
+
+$$
+\frac{dB}{ds} = -\tau N
+$$
+
+$$
+\frac{dN}{ds} = \tau B - kT
+$$
 
 **# $x = 3\cos t$, $y = 3\sin t$, $z = 4t$**
 (a) unit tangent $T$
@@ -147,7 +196,9 @@ $$
 \frac{dR}{dt} = -3\sin t \hat{i} + 3\cos t \hat{j} + 4\hat{k}
 $$
 
-$\left|\frac{dR}{dt}\right| = 5$
+$$
+\left|\frac{dR}{dt}\right| = 5
+$$
 
 $$
 T = \frac{dr/dt}{|dr/dt|} = -\frac{3}{5}\sin t \hat{i} + \frac{3}{5}\cos t \hat{j} + \frac{4}{5}\hat{k}
@@ -165,10 +216,18 @@ $$
 $$
 
 $\frac{dT}{ds} = kN$
-$\left|\frac{dT}{ds}\right| = |k||N| = k \quad (k \geq 0)$
 
-$k = \left|\frac{dT}{ds}\right| = \sqrt{\left(-\frac{3}{25}\cos t\right)^2 + \left(-\frac{3}{25}\sin t\right)^2} = \frac{3}{25}$
-$\rho = \frac{1}{k} = \frac{25}{3}$
+$$
+\left|\frac{dT}{ds}\right| = |k||N| = k \quad (k \geq 0)
+$$
+
+$$
+k = \left|\frac{dT}{ds}\right| = \sqrt{\left(-\frac{3}{25}\cos t\right)^2 + \left(-\frac{3}{25}\sin t\right)^2} = \frac{3}{25}
+$$
+
+$$
+\rho = \frac{1}{k} = \frac{25}{3}
+$$
 
 $$
 \frac{dT}{ds} = kN \Rightarrow N = \frac{1}{k}\frac{dT}{ds} = \frac{25}{3}\left(-\frac{3}{25}\cos t \hat{i} - \frac{3}{25}\sin t \hat{j}\right) = -\cos t \hat{i} - \sin t \hat{j}
@@ -197,8 +256,13 @@ $$
 -\tau N = -\tau (-\cos t \hat{i} - \sin t \hat{j}) = \frac{4}{25}\cos t \hat{i} + \frac{4}{25}\sin t \hat{j}
 $$
 
-$\Rightarrow \tau = \frac{4}{25}$
-$\sigma = \frac{1}{\tau} = \frac{25}{4}$
+$$
+\Rightarrow \tau = \frac{4}{25}
+$$
+
+$$
+\sigma = \frac{1}{\tau} = \frac{25}{4}
+$$
 
 <!-- Page 024 -->
 **# $x = t$, $y = t^2$, $z = \frac{2}{3}t^3$**
@@ -214,7 +278,10 @@ $$
 $$
 
 (a)
-$\frac{ds}{dt} = \left|\frac{dr}{dt}\right| = \sqrt{1^2 + (2t)^2 + (2t^2)^2} = \sqrt{1+4t^2+4t^4} = 1+2t^2$
+
+$$
+\frac{ds}{dt} = \left|\frac{dr}{dt}\right| = \sqrt{1^2 + (2t)^2 + (2t^2)^2} = \sqrt{1+4t^2+4t^4} = 1+2t^2
+$$
 
 $$
 T = \frac{dr/dt}{ds/dt} = \frac{\hat{i} + 2t\hat{j} + 2t^2\hat{k}}{1+2t^2}
@@ -228,8 +295,13 @@ $$
 \frac{dT}{ds} = \frac{dT/dt}{ds/dt} = \frac{-4t\hat{i} + (2-4t^2)\hat{j} + 4t\hat{k}}{(1+2t^2)^3}
 $$
 
-$\left|\frac{dT}{ds}\right| = |k||N| = k = \sqrt{\frac{(-4t)^2 + (2-4t^2)^2 + (4t)^2}{(1+2t^2)^6}} = \frac{2}{(1+2t^2)^2}$
-$\rho = \frac{1}{k} = \frac{(1+2t^2)^2}{2}$
+$$
+\left|\frac{dT}{ds}\right| = |k||N| = k = \sqrt{\frac{(-4t)^2 + (2-4t^2)^2 + (4t)^2}{(1+2t^2)^6}} = \frac{2}{(1+2t^2)^2}
+$$
+
+$$
+\rho = \frac{1}{k} = \frac{(1+2t^2)^2}{2}
+$$
 
 (b)
 
@@ -254,7 +326,9 @@ $$
 -\tau N = \frac{4t\hat{i} + (4t^2-2)\hat{j} - 4t\hat{k}}{(1+2t^2)^3}
 $$
 
-$\Rightarrow \tau = \frac{2}{(1+2t^2)^2} = k \text{ for this curve}$
+$$
+\Rightarrow \tau = \frac{2}{(1+2t^2)^2} = k \text{ for this curve}
+$$
 
 <!-- Page 025 -->
 <div align="right"><b>03-01-2026</b></div>
@@ -338,9 +412,18 @@ $$
 $$
 
 <!-- Page 026 -->
-$R_1 \rightarrow \frac{1}{6}R_1$
-$R_2 \rightarrow \frac{1}{12}R_2$
-$R_3 \rightarrow \frac{1}{3}R_3$
+
+$$
+R_1 \rightarrow \frac{1}{6}R_1
+$$
+
+$$
+R_2 \rightarrow \frac{1}{12}R_2
+$$
+
+$$
+R_3 \rightarrow \frac{1}{3}R_3
+$$
 
 $$
 \begin{bmatrix}
@@ -544,21 +627,63 @@ Page - Pdf - 100, book - 93
 **# Every square matrix can be written as the sum of a symmetric matrix and a skew symmetric matrix.**
 
 Let, $A$ be a square matrix.
-Then, $A = \frac{1}{2}(A+A^T) + \frac{1}{2}(A-A^T)$
-$A = B + C$ where $B = \frac{1}{2}(A+A^T)$ and $C = \frac{1}{2}(A-A^T)$
+Then,
 
-$B^T = \left[\frac{1}{2}(A+A^T)\right]^T$
-$= \frac{1}{2}(A+A^T)^T$
-$= \frac{1}{2}(A^T + (A^T)^T)$
-$= \frac{1}{2}(A^T + A)$
-$B^T = \frac{1}{2}(A+A^T)$
+$$
+A = \frac{1}{2}(A+A^T) + \frac{1}{2}(A-A^T)
+$$
+
+$A = B + C$ where
+
+$$
+B = \frac{1}{2}(A+A^T)
+$$
+
+ and
+
+$$
+C = \frac{1}{2}(A-A^T)
+$$
+
+$$
+B^T = \left[\frac{1}{2}(A+A^T)\right]^T
+$$
+
+$$
+= \frac{1}{2}(A+A^T)^T
+$$
+
+$$
+= \frac{1}{2}(A^T + (A^T)^T)
+$$
+
+$$
+= \frac{1}{2}(A^T + A)
+$$
+
+$$
+B^T = \frac{1}{2}(A+A^T)
+$$
+
 $\boxed{B^T = B}$
 Hence, $B$ is a symmetric matrix.
 
-$C^T = \left[\frac{1}{2}(A-A^T)\right]^T$
-$= \frac{1}{2}(A-A^T)^T$
-$= \frac{1}{2}(A^T - A)$
-$= -\frac{1}{2}(A-A^T)$
+$$
+C^T = \left[\frac{1}{2}(A-A^T)\right]^T
+$$
+
+$$
+= \frac{1}{2}(A-A^T)^T
+$$
+
+$$
+= \frac{1}{2}(A^T - A)
+$$
+
+$$
+= -\frac{1}{2}(A-A^T)
+$$
+
 $\boxed{C^T = -C}$
 Hence, $C$ is a skew symmetric matrix.
 

@@ -24,10 +24,17 @@ $\mathbb{Z} = \lbrace\dots, -3, -2, -1, 0, 1, 2, 3\rbrace$ not satisfy.
 $\mathbb{R}$ satisfy (0 বাদ দিতে হবে).
 
 $\mathbb{R} - \lbrace 0\rbrace \rightarrow$ field under multiplication.
-$0 \cdot \frac{1}{0} \neq 1$
+
+$$
+0 \cdot \frac{1}{0} \neq 1
+$$
 
 **# set of all rational numbers is field?**
-$\mathbb{Q} = \lbrace\frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0\rbrace$
+
+$$
+\mathbb{Q} = \lbrace\frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0\rbrace
+$$
+
 হ্যাঁ, যোগের under এ field.
 গুনের check: 0, 1 আছে কিনা $\Rightarrow$ zero বাদে multiply এর under এ field হয়।
 
@@ -335,7 +342,11 @@ v_2
 \end{pmatrix}
 $$
 
-for $\lambda = \frac{3+i\sqrt{3}}{2}$
+for
+
+$$
+\lambda = \frac{3+i\sqrt{3}}{2}
+$$
 
 $$
 (A-\lambda I)V = 0 \Rightarrow
@@ -345,8 +356,13 @@ $$
 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$
 
-$\left(\frac{1-i\sqrt{3}}{2}\right)x + y = 0 \Rightarrow y = -\left(\frac{1-i\sqrt{3}}{2}\right)x$
-$-x - \left(\frac{1+i\sqrt{3}}{2}\right)y = 0 \Rightarrow -x = \left(\frac{1+i\sqrt{3}}{2}\right)\left(-\frac{1-i\sqrt{3}}{2}\right)x = -x$
+$$
+\left(\frac{1-i\sqrt{3}}{2}\right)x + y = 0 \Rightarrow y = -\left(\frac{1-i\sqrt{3}}{2}\right)x
+$$
+
+$$
+-x - \left(\frac{1+i\sqrt{3}}{2}\right)y = 0 \Rightarrow -x = \left(\frac{1+i\sqrt{3}}{2}\right)\left(-\frac{1-i\sqrt{3}}{2}\right)x = -x
+$$
 
 Let $x = 2 \Rightarrow y = -1+i\sqrt{3}$.
 
@@ -368,7 +384,11 @@ w_2
 \end{pmatrix}
 $$
 
-for $\lambda = \frac{3-i\sqrt{3}}{2}$
+for
+
+$$
+\lambda = \frac{3-i\sqrt{3}}{2}
+$$
 
 $$
 W_2 =
@@ -437,7 +457,10 @@ By Cayley-Hamilton theorem, we replace $\lambda$ by $A$:
 $-A^3 + 5A^2 - 3A + 3I = 0$
 $\Rightarrow -A^{-1}A^3 + 5A^{-1}A^2 - 3A^{-1}A + 3A^{-1}I = 0$
 $\Rightarrow -A^2 + 5A - 3I + 3A^{-1} = 0$
-$\Rightarrow A^{-1} = \frac{1}{3}[A^2 - 5A + 3I]$
+
+$$
+\Rightarrow A^{-1} = \frac{1}{3}[A^2 - 5A + 3I]
+$$
 
 $$
 = \frac{1}{3}\left[
@@ -483,7 +506,12 @@ $\rightarrow$ closed under vector addition and scalar multiplication.
 **Example:**
 $y = x$
 $y = 2x$
-$(2, 2) + (2, 4) = (4, 6) \Rightarrow y = \frac{3}{2}x$ (যোগ করলে সরে যাবে)
+
+$$
+(2, 2) + (2, 4) = (4, 6) \Rightarrow y = \frac{3}{2}x
+$$
+
+(যোগ করলে সরে যাবে)
 
 **Case 1:**
 $(0, 0) + (1, 1) + (2, 2) = (3, 3)$
@@ -495,7 +523,10 @@ $(0, 0) + (1, 1) = (1, 1)$
 **Case 3:**
 $(1, 1) + (-1, -1) = (0, 0)$
 
-$M_1 \rightarrow 3\lbrace(1, 1) + (2, 4)\rbrace = (3, 3) + (6, 12) = (9, 15) \Rightarrow y = \frac{15}{9}x = \frac{5}{3}x$
+$$
+M_1 \rightarrow 3\lbrace(1, 1) + (2, 4)\rbrace = (3, 3) + (6, 12) = (9, 15) \Rightarrow y = \frac{15}{9}x = \frac{5}{3}x
+$$
+
 $M_2 \rightarrow (3+2)(1, 1) = 3(1, 1) + 2(1, 1) = (5, 5)$
 $M_3 \rightarrow (ab)v = a(bv) \Rightarrow 2 \times 3(1, 1) = 6(1, 1) = (6, 6)$
 

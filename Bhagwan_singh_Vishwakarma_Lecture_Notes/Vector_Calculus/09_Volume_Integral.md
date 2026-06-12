@@ -174,7 +174,13 @@ $$
 I = \int_{-2}^2 42\sqrt{4-x^2} \, dx
 $$
 
-Use the standard integral formula: $\int \sqrt{a^2 - x^2} \, dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)$. Here $a = 2$, so $a^2 = 4$.
+Use the standard integral formula:
+
+$$
+\int \sqrt{a^2 - x^2} \, dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)
+$$
+
+. Here $a = 2$, so $a^2 = 4$.
 
 $$
 I = 42 \left[ \frac{x}{2}\sqrt{4-x^2} + 2\sin^{-1}\left(\frac{x}{2}\right) \right]_{-2}^2
@@ -186,7 +192,19 @@ $$
 = 42 \left[ \left( 0 + 2\sin^{-1}(1) \right) - \left( 0 + 2\sin^{-1}(-1) \right) \right]
 $$
 
-Since $\sin^{-1}(1) = \frac{\pi}{2}$ and $\sin^{-1}(-1) = -\frac{\pi}{2}$:
+Since
+
+$$
+\sin^{-1}(1) = \frac{\pi}{2}
+$$
+
+ and
+
+$$
+\sin^{-1}(-1) = -\frac{\pi}{2}
+$$
+
+:
 
 $$
 = 42 \left[ 2\left(\frac{\pi}{2}\right) - 2\left(-\frac{\pi}{2}\right) \right] = 42 [\pi - (-\pi)] = 42(2\pi) = 84\pi

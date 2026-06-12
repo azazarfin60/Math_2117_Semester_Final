@@ -118,7 +118,13 @@ $$
 
 The equation of the tangent plane is $7x - 3y + 8z = 26$.
 
-*(Note: If the question also asked for the normal line, it would be: $\frac{x-1}{7} = \frac{y+1}{-3} = \frac{z-2}{8}$)*
+*(Note: If the question also asked for the normal line, it would be:
+
+$$
+\frac{x-1}{7} = \frac{y+1}{-3} = \frac{z-2}{8}
+$$
+
+)*
 
 ---
 

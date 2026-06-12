@@ -56,8 +56,20 @@ $$
 dS = \frac{dy \, dz}{|\hat{\mathbf{n}} \cdot \hat{\mathbf{i}}|}
 $$
 
-Compute the dot product: $\hat{\mathbf{n}} \cdot \hat{\mathbf{i}} = \frac{2}{7}$.
-So, $dS = \frac{dy \, dz}{2/7} = \frac{7}{2} dy \, dz$.
+Compute the dot product:
+
+$$
+\hat{\mathbf{n}} \cdot \hat{\mathbf{i}} = \frac{2}{7}
+$$
+
+.
+So,
+
+$$
+dS = \frac{dy \, dz}{2/7} = \frac{7}{2} dy \, dz
+$$
+
+.
 
 **Step 3: Establish Limits on the $yz$-plane**
 Set $x = 0$ in the plane equation: $3y + 6z = 12 \implies y + 2z = 4$.
@@ -66,7 +78,13 @@ This line forms a triangle with the $y$ and $z$ axes.
 - $z$ varies from $0$ to the line $z = 2 - \frac{y}{2}$
 
 **Step 4: Compute the Integrand**
-We already know $\mathbf{F} \cdot \hat{\mathbf{n}} = \frac{1}{7}(12z - 12 + 6y)$.
+We already know
+
+$$
+\mathbf{F} \cdot \hat{\mathbf{n}} = \frac{1}{7}(12z - 12 + 6y)
+$$
+
+.
 Because we are integrating with respect to $y$ and $z$, there is no $x$ variable to eliminate. We can use this directly!
 
 **Step 5: Evaluate the Integral**
@@ -126,8 +144,20 @@ Project the sphere onto the $xy$-plane. The projection is a quarter circle (sinc
 - $x$ varies from $0$ to $1$.
 - $y$ varies from $0$ to $\sqrt{1 - x^2}$.
 
-The area element is $dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}$.
-Since $\hat{\mathbf{n}} \cdot \hat{\mathbf{k}} = z$, we have $dS = \frac{dx \, dy}{z}$.
+The area element is
+
+$$
+dS = \frac{dx \, dy}{\lvert \hat{\mathbf{n}} \cdot \hat{\mathbf{k}} \rvert}
+$$
+
+.
+Since $\hat{\mathbf{n}} \cdot \hat{\mathbf{k}} = z$, we have
+
+$$
+dS = \frac{dx \, dy}{z}
+$$
+
+.
 Substitute into the integral:
 
 $$

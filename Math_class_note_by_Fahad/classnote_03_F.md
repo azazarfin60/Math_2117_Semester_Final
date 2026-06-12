@@ -39,7 +39,11 @@ $$
 
 ---
 
-*Prove that* $\frac{d\vec{T}}{ds} = \kappa \vec{N}$
+*Prove that*
+
+$$
+\frac{d\vec{T}}{ds} = \kappa \vec{N}
+$$
 
 **Ans:-**
 

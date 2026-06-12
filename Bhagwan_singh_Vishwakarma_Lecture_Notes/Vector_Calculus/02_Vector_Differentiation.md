@@ -105,7 +105,13 @@ $$
 \vec{v} = (2t-3)\hat{i} + \hat{j} - t\hat{k},
 $$
 
-Find $\frac{d}{dt}(\vec{u} \cdot \vec{v})$ at $t=1$.
+Find
+
+$$
+\frac{d}{dt}(\vec{u} \cdot \vec{v})
+$$
+
+at $t=1$.
 
 **Solution:**
 First, compute the dot product algebraically:
@@ -131,7 +137,13 @@ $$
 $$
 
 ### Problem 3: Exponential Derivative Identity
-**Question:** If $\vec{r} = \vec{a} e^{nt} + \vec{b} e^{-nt}$, where $\vec{a}$ and $\vec{b}$ are constant vectors, prove that $\frac{d^2\vec{r}}{dt^2} - n^2\vec{r} = 0$.
+**Question:** If $\vec{r} = \vec{a} e^{nt} + \vec{b} e^{-nt}$, where $\vec{a}$ and $\vec{b}$ are constant vectors, prove that
+
+$$
+\frac{d^2\vec{r}}{dt^2} - n^2\vec{r} = 0
+$$
+
+.
 
 **Solution:**
 Compute the first derivative. Since $\vec{a}$ and $\vec{b}$ are constant, only the exponential terms change:
@@ -169,7 +181,8 @@ $$
 \vec{r} = \cos \omega t\hat{i} + \sin \omega t\hat{j},
 $$
 
-Where $\omega$ is a constant. Show that the velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that the acceleration $\vec{a}$ is directed towards the origin.
+Where $\omega$ is a constant.
+Show that the velocity $\vec{v}$ is perpendicular to $\vec{r}$, and that the acceleration $\vec{a}$ is directed towards the origin.
 
 **Solution:**
 First, compute velocity:

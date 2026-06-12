@@ -182,7 +182,13 @@ $$
 
 A square matrix $A$ is singular if $\lvert A \rvert = 0$. It is non-singular if $\lvert A \rvert \neq 0$.
 
-A singular matrix has no inverse. A non-singular matrix is invertible and $A^{-1} = \frac{1}{\lvert A \rvert}\text{adj}(A)$.
+A singular matrix has no inverse. A non-singular matrix is invertible and
+
+$$
+A^{-1} = \frac{1}{\lvert A \rvert}\text{adj}(A)
+$$
+
+.
 
 This definition is often asked as a 1-2 mark opener before a proof question.
 

@@ -23,9 +23,21 @@ $$
 $$
 
 - $\kappa \rightarrow$ kappa (curvature)
-- $\rho = \frac{1}{\kappa} \rightarrow$ radius of curvature
+-
+
+$$
+\rho = \frac{1}{\kappa} \rightarrow
+$$
+
+radius of curvature
 - $\tau \rightarrow$ tau (Torsion)
-- $\sigma = \frac{1}{\tau} \rightarrow$ radius of torsion
+-
+
+$$
+\sigma = \frac{1}{\tau} \rightarrow
+$$
+
+radius of torsion
 
 Box:
 
@@ -44,7 +56,11 @@ $$
 $$
 
 * $A = 5t^2\vec{i} + t\vec{j} - t^3\vec{k} ; \quad B = \sin t\,\vec{i} - \cos t\,\vec{j}$
-  then $\frac{d}{dt}(A \times B) = ?$
+then
+
+$$
+\frac{d}{dt}(A \times B) = ?
+$$
 
 Ans:-
 
@@ -62,7 +78,19 @@ $$
 \frac{d}{dt}B = \cos t\,\vec{i} + \sin t\,\vec{j}
 $$
 
-Let $C_1 = \frac{dA}{dt} \times B$ and $C_2 = A \times \frac{dB}{dt}$.
+Let
+
+$$
+C_1 = \frac{dA}{dt} \times B
+$$
+
+ and
+
+$$
+C_2 = A \times \frac{dB}{dt}
+$$
+
+.
 
 $$
 C_1 =
@@ -115,7 +143,13 @@ $$
 $$
 
 * $A = (2x^2y - x^4)\vec{i} + (e^{xy} - y\sin x)\vec{j} + (x^2\cos y)\vec{k}$
-  find that $\frac{\partial^2 A}{\partial x\partial y} = \frac{\partial^2 A}{\partial y\partial x}$.
+find that
+
+$$
+\frac{\partial^2 A}{\partial x\partial y} = \frac{\partial^2 A}{\partial y\partial x}
+$$
+
+.
 
 Ans:-
 

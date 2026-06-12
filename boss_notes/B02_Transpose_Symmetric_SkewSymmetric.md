@@ -128,9 +128,21 @@ $$
 
 Taking transpose: $A^T = P' - Q'$.
 
-Adding the two equations: $A + A^T = 2P'$, so $P' = \frac{1}{2}(A + A^T) = P$.
+Adding the two equations: $A + A^T = 2P'$, so
 
-Subtracting: $A - A^T = 2Q'$, so $Q' = \frac{1}{2}(A - A^T) = Q$.
+$$
+P' = \frac{1}{2}(A + A^T) = P
+$$
+
+.
+
+Subtracting: $A - A^T = 2Q'$, so
+
+$$
+Q' = \frac{1}{2}(A - A^T) = Q
+$$
+
+.
 
 The decomposition is unique.
 
@@ -185,7 +197,19 @@ Correct.
 ## Exam Patterns
 
 - "Define symmetric, skew-symmetric, Hermitian matrices" is a 2-3 mark definition question. Write the formula and one example each.
-- The decomposition proof (symmetric + skew-symmetric) appeared in 2020 and 2021. Memorize the formulas $P = \frac{1}{2}(A + A^T)$ and $Q = \frac{1}{2}(A - A^T)$.
+- The decomposition proof (symmetric + skew-symmetric) appeared in 2020 and 2021. Memorize the formulas
+
+$$
+P = \frac{1}{2}(A + A^T)
+$$
+
+ and
+
+$$
+Q = \frac{1}{2}(A - A^T)
+$$
+
+.
 - The uniqueness part adds 1-2 extra marks if you include it.
 
 ---

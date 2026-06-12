@@ -214,8 +214,20 @@ Let $U$ and $V$ be two vector spaces. A mapping $T: U \rightarrow V$ is called a
 
 <!-- Page 067 -->
 **Example:**
-- $\frac{d}{dx}(3x^2) = 3 \frac{d}{dx}(x^2) \rightarrow$ Homogeneity (since it is a linear operator)
-- $\frac{d}{dx}(x^2 + x^3) = \frac{d}{dx}(x^2) + \frac{d}{dx}(x^3) \rightarrow$ Superposition
+-
+
+$$
+\frac{d}{dx}(3x^2) = 3 \frac{d}{dx}(x^2) \rightarrow
+$$
+
+Homogeneity (since it is a linear operator)
+-
+
+$$
+\frac{d}{dx}(x^2 + x^3) = \frac{d}{dx}(x^2) + \frac{d}{dx}(x^3) \rightarrow
+$$
+
+Superposition
 
 $$
 \text{Superposition} + \text{Homogeneity} = \text{Linearity condition}

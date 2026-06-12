@@ -47,7 +47,13 @@ v_2
 \end{bmatrix}
 $$
 
-be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i$.
+be an eigen vector corresponding to the eigen value
+
+$$
+\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i
+$$
+
+.
 
 $\therefore$ we know,
 
@@ -83,7 +89,13 @@ $$
 \end{bmatrix}
 $$
 
-is an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i$.
+is an eigen vector corresponding to the eigen value
+
+$$
+\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i
+$$
+
+.
 
 ---
 
@@ -99,7 +111,13 @@ w_2
 \end{bmatrix}
 $$
 
-be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} - \frac{\sqrt{3}}{2}i$.
+be an eigen vector corresponding to the eigen value
+
+$$
+\lambda = \frac{3}{2} - \frac{\sqrt{3}}{2}i
+$$
+
+.
 
 $$
 \therefore (2-\lambda)w_1 + w_2 = 0 \quad \dots \text{ (iii)}
@@ -125,7 +143,13 @@ $$
 \end{bmatrix}
 $$
 
-is an eigen vector corresponding to the eigen values $\lambda = \frac{3 - \sqrt{3}i}{2}$.
+is an eigen vector corresponding to the eigen values
+
+$$
+\lambda = \frac{3 - \sqrt{3}i}{2}
+$$
+
+.
 
 $\star$ **Prove that $\operatorname{adj}(AB) = \operatorname{adj}(B) \cdot \operatorname{adj}(A)$**
 
@@ -279,7 +303,13 @@ $$
 2. $xy = yx$ for all $x, y \in F$.
 3. $(xy)z = x(yz)$ for all $x, y, z \in F$. $\rightarrow$ **Associative Law**
 4. $F$ contains an element $1 \neq 0$ such that $1 \cdot x = x$, for every $x \in F$.
-5. $x \in F$ and $x \neq 0$ then there exists an element $\frac{1}{x} \in F$ such that $x \cdot \frac{1}{x} = 1$.
+5. $x \in F$ and $x \neq 0$ then there exists an element $\frac{1}{x} \in F$ such that
+
+$$
+x \cdot \frac{1}{x} = 1
+$$
+
+.
 
 $\star$ **Identity element = 1.**
 

@@ -67,7 +67,13 @@ $$
 
 ## Worked Example: Calculating and (PYQ 2020, 2023)
 
-**Problem**: For the space curve $x = t, y = t^2, z = \frac{2}{3}t^3$, find the curvature $K$ and the torsion $T$.
+**Problem**: For the space curve
+
+$$
+x = t, y = t^2, z = \frac{2}{3}t^3
+$$
+
+, find the curvature $K$ and the torsion $T$.
 
 **Solution**:
 **Step 1: Find Derivatives**
@@ -131,7 +137,13 @@ In this specific curve, curvature equals torsion!
 ---
 
 ## Exam Patterns
-- This specific problem ($x=t, y=t^2, z=\frac{2}{3}t^3$) is practically the only curvature/torsion problem asked. The trick is recognizing that $1 + 4t^2 + 4t^4$ is a perfect square $(2t^2 + 1)^2$.
+- This specific problem (
+
+$$
+x=t, y=t^2, z=\frac{2}{3}t^3
+$$
+
+) is practically the only curvature/torsion problem asked. The trick is recognizing that $1 + 4t^2 + 4t^4$ is a perfect square $(2t^2 + 1)^2$.
 - Be able to state the Frenet-Serret formulas verbatim.
 
 ---

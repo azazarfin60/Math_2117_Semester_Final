@@ -37,9 +37,24 @@ are mutually orthogonal unit vectors.
 Magnitude check for unit vectors:
 $\lvert \vec{A} \rvert = \sqrt{(2/3)^2 + (-2/3)^2 + (1/3)^2} = \sqrt{9/9} = 1$. (Same applies for $\vec{B}$ and $\vec{C}$).
 Dot product check for orthogonality:
-$\vec{A} \cdot \vec{B} = \frac{1}{9}(2(1) + (-2)(2) + 1(2)) = \frac{1}{9}(2 - 4 + 2) = 0$.
-$\vec{B} \cdot \vec{C} = \frac{1}{9}(1(2) + 2(1) + 2(-2)) = \frac{1}{9}(2 + 2 - 4) = 0$.
-$\vec{C} \cdot \vec{A} = \frac{1}{9}(2(2) + 1(-2) + (-2)(1)) = \frac{1}{9}(4 - 2 - 2) = 0$.
+
+$$
+\vec{A} \cdot \vec{B} = \frac{1}{9}(2(1) + (-2)(2) + 1(2)) = \frac{1}{9}(2 - 4 + 2) = 0
+$$
+
+.
+
+$$
+\vec{B} \cdot \vec{C} = \frac{1}{9}(1(2) + 2(1) + 2(-2)) = \frac{1}{9}(2 + 2 - 4) = 0
+$$
+
+.
+
+$$
+\vec{C} \cdot \vec{A} = \frac{1}{9}(2(2) + 1(-2) + (-2)(1)) = \frac{1}{9}(4 - 2 - 2) = 0
+$$
+
+.
 Since all magnitudes are 1 and all dot products are 0, they are mutually orthogonal unit vectors.
 
 ---

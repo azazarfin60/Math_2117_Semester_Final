@@ -667,7 +667,19 @@ $$
 A = \frac{1}{2}(A + A^T) + \frac{1}{2}(A - A^T)
 $$
 
-Let $P = \frac{1}{2}(A + A^T)$ and $Q = \frac{1}{2}(A - A^T)$.
+Let
+
+$$
+P = \frac{1}{2}(A + A^T)
+$$
+
+ and
+
+$$
+Q = \frac{1}{2}(A - A^T)
+$$
+
+.
 
 #### 1. Show $P$ is symmetric
 

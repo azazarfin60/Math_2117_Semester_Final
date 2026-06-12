@@ -71,7 +71,13 @@ We find the intercepts of the plane $2x + y + 2z = 6$:
 *   $z$-intercept (set $x=y=0$): $2z = 6 \implies z = 3$
 
 The limits are established by working from the top down to the base projection:
-1.  **$z$-limits:** From the floor ($z=0$) to the slanted roof ($z = \frac{6 - 2x - y}{2}$).
+1.  **$z$-limits:** From the floor ($z=0$) to the slanted roof (
+
+$$
+z = \frac{6 - 2x - y}{2}
+$$
+
+).
 2.  **$y$-limits:** On the floor projection ($z=0$), the plane becomes the line $2x + y = 6 \implies y = 6 - 2x$. So, $y$ goes from $0$ to $6 - 2x$.
 3.  **$x$-limits:** From the origin to the $x$-intercept ($x=3$). So, $x$ goes from $0$ to $3$.
 
@@ -162,7 +168,13 @@ $$
 Notice that $\iiint_V dV$ is simply the geometric volume of the solid region $V$.
 The region is a sphere with equation $x^2 + y^2 + (z - 1)^2 = 1$, which has a radius $R = 1$ and is centered at $(0,0,1)$.
 
-The geometric volume of a sphere is $V = \frac{4}{3}\pi R^3$. For $R = 1$:
+The geometric volume of a sphere is
+
+$$
+V = \frac{4}{3}\pi R^3
+$$
+
+. For $R = 1$:
 
 $$
 V = \frac{4}{3}\pi (1)^3 = \frac{4}{3}\pi
