@@ -4,31 +4,65 @@
 
 **GCP HW**
 
-$\star$ **$A = \begin{bmatrix} 2 & 1 \\ -1 & 1 \end{bmatrix}$. Find eigen values and eigen vectors.**
+$\star$ **
+
+$$
+A = \begin{bmatrix} 2 & 1 \\ -1 & 1 \end{bmatrix}.
+$$
+
+Find eigen values and eigen vectors.**
 
 **Ans:-**
 Ch. matrix:
-$$A - \lambda I = \begin{bmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{bmatrix}$$
+
+$$
+A - \lambda I = \begin{bmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{bmatrix}
+$$
 
 $\therefore$ Ch. eq.
-$$\lambda^2 - 3\lambda + 3 = 0$$
-$$\therefore \lambda = \frac{3 \pm \sqrt{3}i}{2}$$
+
+$$
+\lambda^2 - 3\lambda + 3 = 0
+$$
+
+$$
+\therefore \lambda = \frac{3 \pm \sqrt{3}i}{2}
+$$
 
 Let,
-$$V = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}$$
+
+$$
+V = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}
+$$
+
 be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i$.
 
 $\therefore$ we know,
-$$(A - \lambda I)v = 0 \quad \rightarrow \quad \begin{bmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
-$$\Rightarrow (2-\lambda)v_1 + v_2 = 0 \quad \dots \text{ (i)}$$
-$$-v_1 + (1-\lambda)v_2 = 0 \quad \dots \text{ (ii)}$$
+
+$$
+(A - \lambda I)v = 0 \quad \rightarrow \quad \begin{bmatrix} 2-\lambda & 1 \\ -1 & 1-\lambda \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$
+
+$$
+\Rightarrow (2-\lambda)v_1 + v_2 = 0 \quad \dots \text{ (i)}
+$$
+
+$$
+-v_1 + (1-\lambda)v_2 = 0 \quad \dots \text{ (ii)}
+$$
 
 Both equations give the same relation.
 $\therefore$ From (i),
 Let, $v_1 = 1$
-$$\therefore v_2 = -(2-\lambda) = -\left( 2 - \left(\frac{3}{2} + \frac{\sqrt{3}}{2}i\right) \right) = -\frac{1}{2} + \frac{\sqrt{3}}{2}i$$
 
-$$\therefore V = \begin{bmatrix} 1 \\ -\frac{1}{2} + \frac{\sqrt{3}}{2}i \end{bmatrix}$$
+$$
+\therefore v_2 = -(2-\lambda) = -\left( 2 - \left(\frac{3}{2} + \frac{\sqrt{3}}{2}i\right) \right) = -\frac{1}{2} + \frac{\sqrt{3}}{2}i
+$$
+
+$$
+\therefore V = \begin{bmatrix} 1 \\ -\frac{1}{2} + \frac{\sqrt{3}}{2}i \end{bmatrix}
+$$
+
 is an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \frac{\sqrt{3}}{2}i$.
 
 ---
@@ -36,27 +70,51 @@ is an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} + \fr
 ## Page 72
 
 Again, Let,
-$$W = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}$$
+
+$$
+W = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}
+$$
+
 be an eigen vector corresponding to the eigen value $\lambda = \frac{3}{2} - \frac{\sqrt{3}}{2}i$.
 
-$$\therefore (2-\lambda)w_1 + w_2 = 0 \quad \dots \text{ (iii)}$$
-$$-w_1 + (1-\lambda)w_2 = 0 \quad \dots \text{ (iv)}$$
+$$
+\therefore (2-\lambda)w_1 + w_2 = 0 \quad \dots \text{ (iii)}
+$$
+
+$$
+-w_1 + (1-\lambda)w_2 = 0 \quad \dots \text{ (iv)}
+$$
 
 both equations give the same relation.
 $\therefore$ From (iii),
 let, $w_1 = 1$
-$$\therefore w_2 = -(2-\lambda) = -\left( 2 - \left(\frac{3}{2} - \frac{\sqrt{3}}{2}i\right) \right) = -\frac{1}{2} - \frac{\sqrt{3}}{2}i$$
 
-$$\therefore W = \begin{bmatrix} 1 \\ -\frac{1}{2} - \frac{\sqrt{3}}{2}i \end{bmatrix}$$
+$$
+\therefore w_2 = -(2-\lambda) = -\left( 2 - \left(\frac{3}{2} - \frac{\sqrt{3}}{2}i\right) \right) = -\frac{1}{2} - \frac{\sqrt{3}}{2}i
+$$
+
+$$
+\therefore W = \begin{bmatrix} 1 \\ -\frac{1}{2} - \frac{\sqrt{3}}{2}i \end{bmatrix}
+$$
+
 is an eigen vector corresponding to the eigen values $\lambda = \frac{3 - \sqrt{3}i}{2}$.
 
 $\star$ **Prove that $\operatorname{adj}(AB) = \operatorname{adj}(B) \cdot \operatorname{adj}(A)$**
 
 **Ans:-**
 For any n-square matrix $M$,
-$$M \operatorname{adj}(M) = \det(M) I$$
-$$\therefore (AB) \operatorname{adj}(AB) = \det(AB) \cdot I$$
-$$\therefore (AB) \operatorname{adj}(AB) = \det(A) \det(B) I \quad \dots \text{ (i)}$$
+
+$$
+M \operatorname{adj}(M) = \det(M) I
+$$
+
+$$
+\therefore (AB) \operatorname{adj}(AB) = \det(AB) \cdot I
+$$
+
+$$
+\therefore (AB) \operatorname{adj}(AB) = \det(A) \det(B) I \quad \dots \text{ (i)}
+$$
 
 > [!NOTE]
 > We know using determinant property:
@@ -67,15 +125,36 @@ $$\therefore (AB) \operatorname{adj}(AB) = \det(A) \det(B) I \quad \dots \text{ 
 ## Page 73
 
 Now, Let $X = \operatorname{adj}(B) \operatorname{adj}(A)$
-$$\therefore AB X = A [ B \operatorname{adj}(B) ] \operatorname{adj}(A)$$
-$$= A [ \det(B) \cdot I ] \operatorname{adj}(A)$$
-$$= \det(B) \cdot A \operatorname{adj}(A)$$
-$$= \det(B) \cdot \det(A) \cdot I$$
-$$\therefore AB X = \det(A) \det(B) I \quad \dots \text{ (ii)}$$
+
+$$
+\therefore AB X = A [ B \operatorname{adj}(B) ] \operatorname{adj}(A)
+$$
+
+$$
+= A [ \det(B) \cdot I ] \operatorname{adj}(A)
+$$
+
+$$
+= \det(B) \cdot A \operatorname{adj}(A)
+$$
+
+$$
+= \det(B) \cdot \det(A) \cdot I
+$$
+
+$$
+\therefore AB X = \det(A) \det(B) I \quad \dots \text{ (ii)}
+$$
 
 From (i) and (ii) we have,
-$$X = \operatorname{adj}(AB)$$
-$$\therefore \operatorname{adj}(AB) = \operatorname{adj}(B) \operatorname{adj}(A) \quad \text{(proved)}$$
+
+$$
+X = \operatorname{adj}(AB)
+$$
+
+$$
+\therefore \operatorname{adj}(AB) = \operatorname{adj}(B) \operatorname{adj}(A) \quad \text{(proved)}
+$$
 
 ---
 
@@ -86,18 +165,34 @@ $$\therefore \operatorname{adj}(AB) = \operatorname{adj}(B) \operatorname{adj}(A
 
 ### Fields:-
 We taking into account 2 elements from a space.
-A vector $\{ (1,2), (2,3) \}$ taken from $\mathbb{R}^2$
-$$\mathbb{R}^2 = \{ (a, b) \mid a, b \in \mathbb{R} \}$$
+A vector $\lbrace (1,2), (2,3) \rbrace$ taken from $\mathbb{R}^2$
 
-$$\rightarrow \text{এই দুটি যোগ করলে } 3\hat{i} + 5\hat{j} \text{ - যা এই set এর মধ্যে নাই।}$$
-$$\rightarrow \text{closure property মানে না।}$$
+$$
+\mathbb{R}^2 = \lbrace (a, b) \mid a, b \in \mathbb{R} \rbrace
+$$
 
-$$\{ (0,0) \} \rightarrow (0\hat{i} + 0\hat{j}) + (0\hat{i} + 0\hat{j}) = 0\hat{i} + 0\hat{j} \quad \text{যা same set-এর ভিতরে আছে :: closure property আছে।}$$
+$$
+\rightarrow \text{এই দুটি যোগ করলে } 3\hat{i} + 5\hat{j} \text{ - যা এই set এর মধ্যে নাই।}
+$$
+
+$$
+\rightarrow \text{closure property মানে না।}
+$$
+
+$$
+\lbrace (0,0) \rbrace \rightarrow (0\hat{i} + 0\hat{j}) + (0\hat{i} + 0\hat{j}) = 0\hat{i} + 0\hat{j} \quad \text{যা same set-এর ভিতরে আছে :: closure property আছে।}
+$$
 
 ### Binary operation:-
 Binary operation is a operation that:
-$$f : A \times A \rightarrow A$$
-$$g : A \rightarrow A \quad \rightarrow \text{Unary operation.}$$
+
+$$
+f : A \times A \rightarrow A
+$$
+
+$$
+g : A \rightarrow A \quad \rightarrow \text{Unary operation.}
+$$
 
 $\star$ **To knows fields we need binary addition and multiplication.**
 
@@ -114,22 +209,40 @@ A non-empty set $F$ with plus and multiplication.
 4. $0+x = x$ for every $x \in F$. $\rightarrow$ **Identity law.**
 5. For every $x \in F$, there exists $-x \in F$ such that $x + (-x) = 0$. $\rightarrow$ **Additive inverse.**
 
-$$\mathbb{R}_+ \rightarrow \text{Does not contain 0 :: not valid.}$$
-$$\mathbb{Z} \rightarrow \text{Contains 0 :: valid}$$
-$$\therefore 0 \rightarrow \text{Identity element.}$$
+$$
+\mathbb{R}_+ \rightarrow \text{Does not contain 0 :: not valid.}
+$$
+
+$$
+\mathbb{Z} \rightarrow \text{Contains 0 :: valid}
+$$
+
+$$
+\therefore 0 \rightarrow \text{Identity element.}
+$$
 
 > [!NOTE]
 > এই 5টি Law মেনে চললে Field under addition হবে।
 
-$$\star \ \{ 0, 1, 2, 3 \dots \} \rightarrow \text{Not a field under addition.}$$
-$$\star \ \mathbb{R} \rightarrow \text{A field under addition.}$$
+$$
+\star \ \lbrace 0, 1, 2, 3 \dots \rbrace \rightarrow \text{Not a field under addition.}
+$$
+
+$$
+\star \ \mathbb{R} \rightarrow \text{A field under addition.}
+$$
 
 ---
 
 ## Page 76
 
-$$\text{Additive inverse} = -x$$
-$$\text{Multiplicative inverse} = \frac{1}{x}$$
+$$
+\text{Additive inverse} = -x
+$$
+
+$$
+\text{Multiplicative inverse} = \frac{1}{x}
+$$
 
 ### Group under multiplication:-
 
@@ -142,25 +255,53 @@ $$\text{Multiplicative inverse} = \frac{1}{x}$$
 
 $\star$ **Identity element = 1.**
 
-$$\mathbb{Z} = \{ \dots -2, -1, 0, 1, 2 \dots \} \rightarrow \text{is a field under addition but not under multiplication.}$$
-$$\{ \mathbb{R} - 0 \} \rightarrow \text{Field under multiplication} \quad \because \frac{1}{0} = \text{undefined.}$$
+$$
+\mathbb{Z} = \lbrace \dots -2, -1, 0, 1, 2 \dots \rbrace \rightarrow \text{is a field under addition but not under multiplication.}
+$$
+
+$$
+\lbrace \mathbb{R} - 0 \rbrace \rightarrow \text{Field under multiplication} \quad \because \frac{1}{0} = \text{undefined.}
+$$
 
 ---
 
 ## Page 77
 
-$$\rightarrow \text{Field under addition \& field under multiplication } \rightarrow \text{ Vector Space.}$$
+$$
+\rightarrow \text{Field under addition \& field under multiplication } \rightarrow \text{ Vector Space.}
+$$
 
 $\star$ **Set of all rational number**
-$$Q = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, \ q \neq 0 \right\}$$
-$$\text{field under addition. not under multiplication cause 0 exists.}$$
+
+$$
+Q = \left\lbrace  \frac{p}{q} \mid p, q \in \mathbb{Z}, \ q \neq 0 \right\rbrace
+$$
+
+$$
+\text{field under addition. not under multiplication cause 0 exists.}
+$$
 
 ### Vector space and sub-space
-$$V = \{ \text{set of vectors defined on a field } k \}$$
-$$= \left\{ \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix} \right\} \rightarrow \mathbb{R} \quad \text{(not closed under addition)}$$
-$$= \{ x^2, x^2 + 1 \} \rightarrow \text{polynomials}$$
-$$= \left\{ \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \end{bmatrix} \dots \right\} \rightarrow \text{column vectors}$$
-$$= \{ (0, 1), (0, 2), (0, 3) \} \rightarrow \text{Row}$$
+
+$$
+V = \lbrace \text{set of vectors defined on a field } k \rbrace
+$$
+
+$$
+= \left\lbrace  \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix} \right\rbrace  \rightarrow \mathbb{R} \quad \text{(not closed under addition)}
+$$
+
+$$
+= \lbrace x^2, x^2 + 1 \rbrace \rightarrow \text{polynomials}
+$$
+
+$$
+= \left\lbrace  \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \end{bmatrix} \dots \right\rbrace  \rightarrow \text{column vectors}
+$$
+
+$$
+= \lbrace (0, 1), (0, 2), (0, 3) \rbrace \rightarrow \text{Row}
+$$
 
 > [!NOTE]
 > * none are vector space.
@@ -176,25 +317,47 @@ $\star$ **must be closed under addition and scalar multiplication**
 ### First Law Condition of vector space:-
 1. Must follow be closed under addition & scalar multiplication.
 
-$$\text{(1 lec miss).}$$
+$$
+\text{(1 lec miss).}
+$$
 
 **Math-2117**
 **(GCP Sir) (6 Apr, 26)**
 
 ### Linear Combination of vectors:-
-$$v_1, v_2 \dots v_n \in V \text{ defined on } \mathbb{R}, \ c_1, c_2 \dots c_n \in \mathbb{R}$$
-$$v = c_1v_1 + c_2v_2 + \dots + c_nv_n \rightarrow \text{Linear combination of vectors.}$$
+
+$$
+v_1, v_2 \dots v_n \in V \text{ defined on } \mathbb{R}, \ c_1, c_2 \dots c_n \in \mathbb{R}
+$$
+
+$$
+v = c_1v_1 + c_2v_2 + \dots + c_nv_n \rightarrow \text{Linear combination of vectors.}
+$$
 
 > [!NOTE]
 > $c_1, c_2 \dots c_n \rightarrow$ span of $v$.
 
-$$\mathbb{R}^3 \quad \{ (1,0,0), (0,1,0), (0,0,1) \}$$
-$$e_1 = (1, 0, 0)$$
-$$e_2 = (0, 1, 0)$$
-$$e_3 = (0, 0, 1)$$
+$$
+\mathbb{R}^3 \quad \lbrace (1,0,0), (0,1,0), (0,0,1) \rbrace
+$$
+
+$$
+e_1 = (1, 0, 0)
+$$
+
+$$
+e_2 = (0, 1, 0)
+$$
+
+$$
+e_3 = (0, 0, 1)
+$$
 
 $\star$ **Linear dependent and independent of vectors**
-$$v_1 = (1, 2, 3) \ ; \ v_2 = (4, 5, 6) \ ; \ v_3 = (1, 1, 1)$$
+
+$$
+v_1 = (1, 2, 3) \ ; \ v_2 = (4, 5, 6) \ ; \ v_3 = (1, 1, 1)
+$$
 
 ---
 
@@ -202,9 +365,14 @@ $$v_1 = (1, 2, 3) \ ; \ v_2 = (4, 5, 6) \ ; \ v_3 = (1, 1, 1)$$
 
 **Ans:-**
 First we form the following matrix with the row vectors, as
-$$A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{bmatrix}$$
 
-$$\text{eachalon } \rightarrow \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{pmatrix}$$
+$$
+A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 1 & 1 & 1 \end{bmatrix}
+$$
+
+$$
+\text{eachalon } \rightarrow \begin{pmatrix} 1 & 2 & 3 \\ 0 & 3 & 6 \\ 0 & 0 & 0 \end{pmatrix}
+$$
 
 Which is the echelon form of the matrix $A$.
 It has 2 non-zero rows. $(\text{Rank} = 2)$.
@@ -222,15 +390,29 @@ $\therefore$ The vectors are dependent.
 $\star$ **Green's theorem in the plane:- $1, 2, 6, 8, 9, 12 \quad \text{pg-112}$**
 $\star$ **Stokes theorem, divergence theorem.**
 
-$$\iint_S \vec{A} \cdot \hat{n} \, ds = \iiint_V \vec{\nabla} \cdot \vec{A} \, dv$$
+$$
+\iint_S \vec{A} \cdot \hat{n} \, ds = \iiint_V \vec{\nabla} \cdot \vec{A} \, dv
+$$
 
 > [!NOTE]
 > (8 No) করে আনতে হবে
 
-$$\vec{A} = (A_1\hat{i} + A_2\hat{j} + A_3\hat{k}) \quad \hat{n} = \vec{A} \cdot \hat{n}$$
-$$\vec{\nabla} \cdot \vec{A} = \frac{\partial}{\partial x} A_1 + \frac{\partial}{\partial y} A_2 + \frac{\partial}{\partial z} A_3$$
+$$
+\vec{A} = (A_1\hat{i} + A_2\hat{j} + A_3\hat{k}) \quad \hat{n} = \vec{A} \cdot \hat{n}
+$$
 
-$$\iint_S A_1\hat{i} \cdot \hat{n} \, ds + \iint_S A_2\hat{j} \cdot \hat{n} \, ds + \iint_S A_3\hat{k} \cdot \hat{n} \, ds = \iiint_V \frac{\partial}{\partial x} A_1 \, dv + \iiint_V \frac{\partial}{\partial y} A_2 \, dv + \iiint_V \frac{\partial}{\partial z} A_3 \, dv$$
+$$
+\vec{\nabla} \cdot \vec{A} = \frac{\partial}{\partial x} A_1 + \frac{\partial}{\partial y} A_2 + \frac{\partial}{\partial z} A_3
+$$
 
-$$\star \ ds_2 = \frac{dx dy}{\hat{k}_2 \cdot \hat{n}} \ ; \ ds_1 = \frac{dx dy}{-\hat{k}_1 \cdot \hat{n}}$$
-$$\text{↳ } dx dy = \hat{k}_2 \cdot \hat{n} \, ds_2 \ ; \ dx dy = -\hat{k}_1 \cdot \hat{n} \, ds_1$$
+$$
+\iint_S A_1\hat{i} \cdot \hat{n} \, ds + \iint_S A_2\hat{j} \cdot \hat{n} \, ds + \iint_S A_3\hat{k} \cdot \hat{n} \, ds = \iiint_V \frac{\partial}{\partial x} A_1 \, dv + \iiint_V \frac{\partial}{\partial y} A_2 \, dv + \iiint_V \frac{\partial}{\partial z} A_3 \, dv
+$$
+
+$$
+\star \ ds_2 = \frac{dx dy}{\hat{k}_2 \cdot \hat{n}} \ ; \ ds_1 = \frac{dx dy}{-\hat{k}_1 \cdot \hat{n}}
+$$
+
+$$
+\text{↳ } dx dy = \hat{k}_2 \cdot \hat{n} \, ds_2 \ ; \ dx dy = -\hat{k}_1 \cdot \hat{n} \, ds_1
+$$

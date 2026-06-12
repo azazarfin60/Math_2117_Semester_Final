@@ -28,13 +28,13 @@ Let $T: V \to W$ be a linear transformation between vector spaces $V$ and $W$.
 *   **Kernel (Null Space) of $T$:** The set of all vectors in the domain $V$ that map to the zero vector in $W$.
 
 $$
-\text{ker}(T) = \lbracev \in V \mid T(v) = 0_W\rbrace
+\text{ker}(T) = \lbrace v \in V \mid T(v) = 0_W\rbrace
 $$
 
 *   **Range (Image) of $T$:** The set of all vectors in the codomain $W$ that are the image of at least one vector in $V$ under the transformation $T$.
 
 $$
-\text{range}(T) = \lbraceT(v) \mid v \in V\rbrace
+\text{range}(T) = \lbrace T(v) \mid v \in V\rbrace
 $$
 
 *   **Nullity of $T$:** The dimension of the kernel of $T$.

@@ -7,7 +7,7 @@
 Let $U$ and $W$ be subspaces of a vector space $V$. The sum of the two subspaces, denoted as $U + W$, is defined as the set of all possible sums of a vector from $U$ and a vector from $W$:
 
 $$
-U + W = \lbraceu + w : u \in U, w \in W\rbrace
+U + W = \lbrace u + w : u \in U, w \in W\rbrace
 $$
 
 **Example:** Consider $V = \mathbb{R}^3$. Let $U$ be the x-axis, $U = \lbrace(x, 0, 0) : x \in \mathbb{R}\rbrace$, and $W$ be the y-axis, $W = \lbrace(0, y, 0) : y \in \mathbb{R}\rbrace$. The sum $U + W$ consists of vectors of the form $(x, 0, 0) + (0, y, 0) = (x, y, 0)$. Thus, $U + W$ is the xy-plane in $\mathbb{R}^3$.

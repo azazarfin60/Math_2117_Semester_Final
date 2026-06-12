@@ -1,61 +1,306 @@
-# Math Formatting & Rendering Fixes Guideline
+# Math Formatting Rules for GitHub Rendering
 
-This document serves as a comprehensive checklist and guideline for all the LaTeX and Markdown rendering issues that were identified and fixed across the `Math_2117_Semester_Final` repository. 
+**This file is the single source of truth for all LaTeX math formatting in this repository.**
 
-Review this guideline before making your final commit to ensure you understand the changes and can maintain these standards in future additions.
-
----
-
-## 1. Math Expressions in Markdown Headings
-**The Problem:**
-Placing complex LaTeX expressions (such as vectors, integrals, or fractions) directly inside Markdown headings (e.g., `## $\vec{F}$`) caused severe rendering issues. The viewer attempted to force the tall mathematical symbols into the strict line-height of a heading, resulting in vertical overlapping and unreadable text.
-
-**The Fix:**
-- **Extrication:** All LaTeX math was programmatically removed from heading lines.
-- **Standardization:** Headings were rewritten to clean, plain-text titles containing only the question number and marks (e.g., `## Q1 (04)`).
-- **Relocation:** The actual mathematical questions were moved to standard paragraph text immediately below the heading. 
-
-## 2. Subscripts inside Math Blocks
-**The Problem:**
-Escaping underscores as `\_` inside mathematical equations (both inline `$ ... $` and block math `$$ ... $$`) causes LaTeX engines (like MathJax/KaTeX) to render them as literal underscore characters (e.g. $A_1$ displaying with a visible underscore `A_1`), rather than subscripts.
-
-**The Fix:**
-- **Unescaped Standard Subscripts:** Always use standard LaTeX subscript notation `_` (e.g., `$A_1$`, `$$ A_1 $$`) inside math environments.
-- **Italics Conflict resolution:** In modern Markdown editors (like VS Code or Obsidian), math blocks are parsed as math and are inherently immune to the italics conflict. If an italics conflict occurs in other environments due to multiple underscores, wrap the expressions in block math or ensure they are isolated from standard Markdown italics indicators.
-
-
-## 3. Multi-line Inline Matrices
-**The Problem:**
-Matrices defined over multiple lines using `\begin{vmatrix} ... \end{vmatrix}` but wrapped in inline math delimiters (`$ ... $`) failed to render. The parser choked on the line breaks inside an inline string, displaying raw LaTeX source code instead of a formatted matrix.
-
-**The Fix:**
-- **Block Conversion:** Any inline math block containing multi-line environments (like matrices or arrays) was upgraded to display block math using double dollar signs (`$$ ... $$`).
-
-## 4. Inline Integrals Stretching Line Heights
-**The Problem:**
-Mathematical operators with large vertical heights—such as double integrals (`\iint`), triple integrals (`\iiint`), line integrals (`\int`), and closed integrals (`\oint`)—caused layout distortion when used inside standard text paragraphs. The viewer struggled to balance the line heights, pushing the surrounding text out of alignment.
-
-**The Fix:**
-- **Block Conversion:** Every inline integral was extracted from the paragraph and converted into display block math (`$$ ... $$`) on its own line.
-- **Punctuation:** Surrounding punctuation (like commas or periods) was cleanly separated, preserving grammatical correctness without compromising the math render.
-
-## 5. The "Wrapping Hat" Bug (Unit Vectors Dropping Down)
-**The Problem:**
-This was the most visually jarring bug. When a long inline vector equation (e.g., `$\vec{F} = 3xy\hat{i} - y^2\hat{j}$`) reached the edge of the viewer window, it automatically wrapped the text at an operator like `+` or `-`. However, the viewer miscalculated the baseline of the wrapped text. As a result, tall accented characters like `\hat{j}` or `\hat{k}` on the new line dropped entirely below the text baseline or overlapped with sentences below them.
-
-**The Fix:**
-- **Targeted Block Conversion:** A script was executed across the repository to locate **all** inline math expressions that defined vector equations (containing both an equals sign `=` or operators like `+`/`-` AND a hat symbol `\hat`).
-- These long inline vector definitions were converted into display block math (`$$ ... $$`), which natively handles wrapping and vertical alignment perfectly.
-- **Vector Lists:** Sequences of three inline vectors (e.g., $\vec{A} = ...$, $\vec{B} = ...$, $\vec{C} = ...$) were combined into a single, highly readable display math block separated by `\quad`.
+Every agent or contributor writing markdown files with math equations MUST follow these rules. GitHub uses MathJax to render math. Its markdown parser (GFM) pre-processes the raw text *before* the math engine runs. Most rendering bugs come from GFM interfering with LaTeX syntax. These rules prevent that.
 
 ---
 
-## Maintenance Checklist for Future Updates
+## Quick Reference (Copy-Paste Checklist)
 
-If you add new questions or answers to the repository, please adhere to these formatting rules to prevent rendering bugs from returning:
+Before committing any file, verify ALL of the following:
 
-1. [ ] **Keep headings clean:** Never put `$` or `$$` inside a `#` or `##` heading.
-2. [ ] **Use unescaped subscripts inside math:** Use standard `_` (not `\_`) inside all `$ ... $` and `$$ ... $$` math blocks.
-3. [ ] **Use block math for matrices:** Always use `$$ ... $$` for `\begin{pmatrix}` or `\begin{vmatrix}`.
-4. [ ] **Use block math for integrals:** Always use `$$ ... $$` for `\int`, `\iint`, `\iiint`, and `\oint`.
-5. [ ] **Use block math for vector equations:** If you are defining a vector with unit vectors like `\hat{i}, \hat{j}, \hat{k}` (e.g., $\vec{A} = x\hat{i} + y\hat{j}$), put it in `$$ ... $$` to prevent the wrapping baseline bug. Standalone short vectors (like $\vec{A}$) can remain inline.
+- [ ] No `$` or `$$` inside markdown headings (`#`, `##`, etc.)
+- [ ] No `\_` inside math blocks — use plain `_` for subscripts
+- [ ] No `\{` or `\}` anywhere — use `\lbrace` and `\rbrace` instead
+- [ ] Every `\lbrace` or `\rbrace` has a **space** before the next letter/digit
+- [ ] Every `\begin{pmatrix}`, `\begin{bmatrix}`, `\begin{vmatrix}`, `\begin{array}` is inside `$$ ... $$`, never `$ ... $`
+- [ ] Every `\int`, `\iint`, `\iiint`, `\oint` equation is inside `$$ ... $$`
+- [ ] Every vector equation with `\hat{i}`, `\hat{j}`, `\hat{k}` and operators is inside `$$ ... $$`
+- [ ] Every `$$` starts at column 0 (no leading spaces or tabs)
+- [ ] A blank line exists before every opening `$$` and after every closing `$$`
+- [ ] No blank lines exist *inside* a `$$ ... $$` block
+- [ ] No line inside `$$` starts with `+ `, `- `, or `* ` (operator then space)
+- [ ] Trailing punctuation (`.`, `,`) is inside the block math, not dangling outside
+
+---
+
+## Rule 1: No Math in Headings
+
+**Bad:**
+```markdown
+## Find $\vec{F} = 3\hat{i} + 2\hat{j}$
+```
+
+**Good:**
+```markdown
+## Q1 (04)
+**Question:** Find $\vec{F} = 3\hat{i} + 2\hat{j}$
+```
+
+GFM forces heading content into a strict line-height. Tall math symbols (fractions, integrals, hats) overflow and overlap with other text.
+
+---
+
+## Rule 2: Use Plain `_` for Subscripts in Math
+
+**Bad:** `$A\_1$`, `$x\_{ij}$`
+**Good:** `$A_1$`, `$x_{ij}$`
+
+Inside `$ ... $` and `$$ ... $$`, the backslash-escaped underscore `\_` renders as a literal underscore character instead of a subscript. Use plain `_` only.
+
+---
+
+## Rule 3: Use `\lbrace` and `\rbrace` Instead of `\{` and `\}`
+
+This is the #1 cause of recurring bugs. GFM's text parser strips the backslash from `\{` before MathJax sees it. The math engine then receives a raw `{` which breaks parsing.
+
+**Bad:**
+```latex
+S = \{ v \in V \mid T(v) = 0 \}
+\left\{ x \right\}
+```
+
+**Good:**
+```latex
+S = \lbrace v \in V \mid T(v) = 0 \rbrace
+\left\lbrace x \right\rbrace
+```
+
+### Critical: Add a Space After `\lbrace` / `\rbrace` Before Letters or Digits
+
+If `\lbrace` directly touches an alphanumeric character, LaTeX treats it as a single unknown command and throws an error.
+
+**Bad:** `\lbracev`, `\lbrace1`, `\lbraceT(v)`, `\rbrace\mathbf`
+**Good:** `\lbrace v`, `\lbrace 1`, `\lbrace T(v)`, `\rbrace \mathbf`
+
+If the next character is a space, parenthesis, backslash-command, or end-of-line, no extra space is needed:
+- `\lbrace (1,0)` — OK (parenthesis follows)
+- `\lbrace \vec{A}` — OK (backslash-command follows)
+- `\rbrace$` — OK (delimiter follows)
+- `\rbrace.` — OK (punctuation follows)
+
+---
+
+## Rule 4: Block Math for Matrices and Arrays
+
+Any `\begin{pmatrix}`, `\begin{bmatrix}`, `\begin{vmatrix}`, `\begin{matrix}`, or `\begin{array}` MUST be in display block math.
+
+**Bad:**
+```markdown
+The eigenvector is $v = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+```
+
+**Good:**
+```markdown
+The eigenvector is
+
+$$
+v = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+$$
+```
+
+Note: the trailing period goes *inside* the block, before `$$`.
+
+---
+
+## Rule 5: Block Math for Integrals
+
+Display integrals (`\int`, `\iint`, `\iiint`, `\oint`) inline causes line-height distortion.
+
+**Bad:**
+```markdown
+We compute $\int_0^1 x^2 dx = \frac{1}{3}$.
+```
+
+**Good:**
+```markdown
+We compute
+
+$$
+\int_0^1 x^2 dx = \frac{1}{3}.
+$$
+```
+
+Short references like "apply $\int$" or "using $\oint_C$" (no full equation) are fine inline.
+
+---
+
+## Rule 6: Block Math for Long Vector Equations
+
+When a vector equation with `\hat{i}`, `\hat{j}`, `\hat{k}` wraps across lines, the baseline breaks. The hat characters drop below the text line.
+
+**Bad:**
+```markdown
+$\vec{F} = 3xy\hat{i} - y^2\hat{j} + 2z\hat{k}$
+```
+
+**Good:**
+```markdown
+$$
+\vec{F} = 3xy\hat{i} - y^2\hat{j} + 2z\hat{k}
+$$
+```
+
+Short standalone vector names like $\vec{A}$ or $\hat{i}$ can stay inline.
+
+---
+
+## Rule 7: `$$` Must Start at Column 0
+
+If `$$` is indented (e.g. under a list item), GFM may treat it as a code block or skip it entirely.
+
+**Bad:**
+```markdown
+* Kernel of T:
+    $$
+    \text{ker}(T) = \lbrace v \mid T(v) = 0 \rbrace
+    $$
+```
+
+**Good:**
+```markdown
+* Kernel of T:
+
+$$
+\text{ker}(T) = \lbrace v \mid T(v) = 0 \rbrace
+$$
+```
+
+Both the opening `$$` and closing `$$` must be at column 0 on their own lines.
+
+---
+
+## Rule 8: Blank Lines Around `$$` Blocks, Never Inside
+
+**Required:** One blank line before opening `$$` and one blank line after closing `$$`.
+
+**Forbidden:** Blank lines *inside* a `$$ ... $$` block. GFM interprets a blank line as the end of a paragraph, which splits the math block.
+
+**Bad:**
+```markdown
+$$
+x + y = z
+
+a + b = c
+$$
+```
+
+**Good:**
+```markdown
+$$
+x + y = z \\
+a + b = c
+$$
+```
+
+Use `\\` or `\\[6pt]` for line breaks within a math block. Or use `\begin{aligned}`.
+
+---
+
+## Rule 9: No Leading `+ `, `- `, `* ` Inside Math Blocks
+
+If a line inside `$$` starts with `+`, `-`, or `*` followed by a space, GFM treats it as a list item bullet.
+
+**Bad:**
+```latex
+$$
+a
++ b
+- c
+$$
+```
+
+**Good (remove the space):**
+```latex
+$$
+a
++b
+-c
+$$
+```
+
+**Also Good (keep operator on previous line):**
+```latex
+$$
+a +
+b -
+c
+$$
+```
+
+---
+
+## Rule 10: Trailing Punctuation Goes Inside Block Math
+
+When converting inline math to block math, move any trailing period/comma inside.
+
+**Bad:**
+```markdown
+$$
+A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}
+$$
+.
+```
+
+**Good:**
+```markdown
+$$
+A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}.
+$$
+```
+
+---
+
+## Rule 11: Pipe Characters `|` in Inline Math
+
+GFM may interpret `|` as a markdown table column separator. Inside inline math `$ ... $`, absolute value bars `|x|` can trigger this.
+
+**Safe alternatives:**
+- Use `\lvert x \rvert` instead of `|x|`
+- Use `\mid` for set-builder notation (e.g. `\lbrace x \mid x > 0 \rbrace`)
+- Block math `$$ ... $$` does not have this problem — pipes are safe inside `$$`
+
+---
+
+## Rule 12: Dollar Sign Spacing
+
+The opening `$` must touch the first character of the math expression. The closing `$` must touch the last character. Spaces around the dollar sign can cause GFM to not recognize it as math.
+
+**Bad:** `$ x + y $` (spaces inside), `$x +y$` (may work but inconsistent)
+**Good:** `$x + y$`
+
+For block math, `$$` must be on its own line with nothing else on that line.
+
+---
+
+## Template: Correct Block Math Layout
+
+```markdown
+Some text before the equation.
+
+$$
+\text{ker}(T) = \lbrace v \in V \mid T(v) = 0 \rbrace
+$$
+
+Some text after the equation.
+```
+
+Structure:
+1. Text paragraph
+2. Blank line
+3. `$$` alone on its own line at column 0
+4. Math content (no blank lines, no leading `+ `)
+5. `$$` alone on its own line at column 0
+6. Blank line
+7. Next text paragraph
+
+---
+
+## Template: Correct Inline Math
+
+```markdown
+The eigenvalue is $\lambda = 3$ and the set is $S = \lbrace v_1, v_2 \rbrace$.
+```
+
+Keep inline math short. If it contains matrices, integrals, or vector equations with hats, convert to block math.

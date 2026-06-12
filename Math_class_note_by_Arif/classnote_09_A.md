@@ -27,7 +27,7 @@ $$
 **Fourier basis:**
 
 $$
-\lbrace1, \sin x, \cos x, \sin 2x, \cos 2x, \dots\rbrace
+\lbrace 1, \sin x, \cos x, \sin 2x, \cos 2x, \dots\rbrace
 $$
 
 (এর মধ্যে যেকোনো দুইটির মধ্যবর্তী কোণ $90^\circ$)
