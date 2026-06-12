@@ -9,4 +9,22 @@ GEMINI.md
 
 .obsidian/
 
+# LaTeX
+*.aux
+
+*.dvi
+
+*.log
+
+*.out
+
+*.synctex.gz
+
+*.tex~
+
+*.toc
+
+*.tex
+# Python
+
 *.py
