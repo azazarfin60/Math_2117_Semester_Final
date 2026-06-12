@@ -192,7 +192,7 @@ $$
 \bar{z} = \frac{\iiint_V z \, dV}{V}.
 $$
 
-. Therefore, $\iiint_V z \, dV = V\bar{z}$.
+Therefore, $\iiint_V z \, dV = V\bar{z}$.
 
 Substitute these in:
 

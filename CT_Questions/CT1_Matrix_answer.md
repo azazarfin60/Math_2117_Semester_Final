@@ -147,7 +147,6 @@ $$
 i_1 = -18, \quad i_2 = 19, \quad i_3 = 16
 $$
 
-
 ---
 
 ### Q2. Find the value(s) of $k$ for which the following system of three linear equations in three variables has (i) a unique solution, (ii) no solution, and (iii) infinitely many solutions: (06)

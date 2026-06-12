@@ -12,7 +12,6 @@ $$
 \vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k})
 $$
 
-
 $$
 \vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k})
 $$
@@ -111,9 +110,23 @@ The dot product of each pair is zero. So, the vectors are mutually orthogonal.
 #### 1. Frenet-Serret Formulas
 Let $s$ be the arc length along a space curve. Let $\vec{T}$ be the unit tangent vector. Let $\vec{N}$ be the unit principal normal vector. Let $\vec{B}\_b$ be the unit binormal vector. Let $\kappa$ be curvature. Let $\tau$ be torsion.
 The Frenet-Serret formulas are:
-1. $\frac{d\vec{T}}{ds} = \kappa \vec{N}$
-2. $\frac{d\vec{N}}{ds} = -\kappa \vec{T} + \tau \vec{B}\_b$
-3. $\frac{d\vec{B}\_b}{ds} = -\tau \vec{N}$
+1.
+
+$$
+\frac{d\vec{T}}{ds} = \kappa \vec{N}
+$$
+
+2.
+
+$$
+\frac{d\vec{N}}{ds} = -\kappa \vec{T} + \tau \vec{B}\_b
+$$
+
+3.
+
+$$
+\frac{d\vec{B}\_b}{ds} = -\tau \vec{N}
+$$
 
 #### 2. Verification of Differential Equation
 We are given:

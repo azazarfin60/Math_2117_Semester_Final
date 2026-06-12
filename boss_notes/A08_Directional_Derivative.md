@@ -44,7 +44,6 @@ $$
 2\hat{i} - \hat{j} - 2\hat{k}.
 $$
 
-
 **Solution**:
 
 **Step 1**: Gradient.
@@ -121,12 +120,11 @@ $$
 \vec{AB} = 2\hat{i} + 3\hat{j} + 2\hat{k}.
 $$
 
-. Unit vector:
+Unit vector:
 
 $$
 \hat{u} = \frac{2\hat{i}+3\hat{j}+2\hat{k}}{\sqrt{17}}.
 $$
-
 
 Gradient:
 
@@ -134,13 +132,11 @@ $$
 \nabla f = (2x+y)\hat{i} + x\hat{j} + 2z\hat{k}.
 $$
 
-
 At $(1,-1,-1)$:
 
 $$
 \nabla f = \hat{i} + \hat{j} - 2\hat{k}.
 $$
-
 
 $$
 D_{\hat{u}}f = \frac{2 + 3 - 4}{\sqrt{17}} = \frac{1}{\sqrt{17}}
@@ -156,7 +152,6 @@ $$
 2\hat{i} - \hat{j} - 2\hat{k}.
 $$
 
-
 **Solution**:
 
 At $(1,-2,1)$:
@@ -164,7 +159,6 @@ At $(1,-2,1)$:
 $$
 \nabla\phi = 0\hat{i} + \hat{j} + 6\hat{k}.
 $$
-
 
 $$
 D_{\hat{u}}\phi = \frac{0(2) + 1(-1) + 6(-2)}{3} = \frac{-13}{3}

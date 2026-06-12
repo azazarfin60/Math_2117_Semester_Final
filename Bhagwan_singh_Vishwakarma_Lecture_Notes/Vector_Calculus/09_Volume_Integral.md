@@ -44,42 +44,60 @@ The total integral is: $I = I_1 + I_2 + I_3 + I_4 + I_5 + I_6$.
 *   **Area Element:** Projection is on the $yz$-plane, so $dS = dy \, dz$.
 *   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = 4xz$. Since $x = a$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 4az$.
 *   **Integral:** 
-    $$I_1 = \int_0^a \int_0^a 4az \, dy \, dz = 4a \int_0^a z \, dz \int_0^a dy = 4a \left( \frac{a^2}{2} \right) (a) = 2a^4$$
+
+$$
+I_1 = \int_0^a \int_0^a 4az \, dy \, dz = 4a \int_0^a z \, dz \int_0^a dy = 4a \left( \frac{a^2}{2} \right) (a) = 2a^4
+$$
 
 **2. Back Face ($x = 0$)**
 *   **Normal:** Outward normal points in the $-x$ direction, so $\hat{\mathbf{n}} = -\hat{\mathbf{i}}$.
 *   **Area Element:** $dS = dy \, dz$.
 *   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = -4xz$. Since $x = 0$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 0$.
 *   **Integral:** 
-    $$I_2 = 0$$
+
+$$
+I_2 = 0
+$$
 
 **3. Right Face ($y = a$)**
 *   **Normal:** Outward normal points in the $+y$ direction, so $\hat{\mathbf{n}} = \hat{\mathbf{j}}$.
 *   **Area Element:** $dS = dx \, dz$.
 *   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = -y^2$. Since $y = a$, $\mathbf{F} \cdot \hat{\mathbf{n}} = -a^2$.
 *   **Integral:** 
-    $$I_3 = \int_0^a \int_0^a -a^2 \, dx \, dz = -a^2 (a)(a) = -a^4$$
+
+$$
+I_3 = \int_0^a \int_0^a -a^2 \, dx \, dz = -a^2 (a)(a) = -a^4
+$$
 
 **4. Left Face ($y = 0$)**
 *   **Normal:** Outward normal points in the $-y$ direction, so $\hat{\mathbf{n}} = -\hat{\mathbf{j}}$.
 *   **Area Element:** $dS = dx \, dz$.
 *   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = y^2$. Since $y = 0$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 0$.
 *   **Integral:** 
-    $$I_4 = 0$$
+
+$$
+I_4 = 0
+$$
 
 **5. Top Face ($z = a$)**
 *   **Normal:** Outward normal points in the $+z$ direction, so $\hat{\mathbf{n}} = \hat{\mathbf{k}}$.
 *   **Area Element:** $dS = dx \, dy$.
 *   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = yz$. Since $z = a$, $\mathbf{F} \cdot \hat{\mathbf{n}} = ay$.
 *   **Integral:** 
-    $$I_5 = \int_0^a \int_0^a ay \, dx \, dy = a \int_0^a y \, dy \int_0^a dx = a \left( \frac{a^2}{2} \right) (a) = \frac{a^4}{2}$$
+
+$$
+I_5 = \int_0^a \int_0^a ay \, dx \, dy = a \int_0^a y \, dy \int_0^a dx = a \left( \frac{a^2}{2} \right) (a) = \frac{a^4}{2}
+$$
 
 **6. Bottom Face ($z = 0$)**
 *   **Normal:** Outward normal points in the $-z$ direction, so $\hat{\mathbf{n}} = -\hat{\mathbf{k}}$.
 *   **Area Element:** $dS = dx \, dy$.
 *   **Integrand:** $\mathbf{F} \cdot \hat{\mathbf{n}} = -yz$. Since $z = 0$, $\mathbf{F} \cdot \hat{\mathbf{n}} = 0$.
 *   **Integral:** 
-    $$I_6 = 0$$
+
+$$
+I_6 = 0
+$$
 
 **Total Integral:**
 Summing the results from all $6$ faces:

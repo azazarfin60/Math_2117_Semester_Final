@@ -39,7 +39,6 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}.
 $$
 
-
 Calculate the dot product:
 
 $$
@@ -139,7 +138,6 @@ So,
 $$
 \nabla(r^{-1}) = -\frac{x\hat{i} + y\hat{j} + z\hat{k}}{r^3} = -\frac{\vec{r}}{r^3}.
 $$
-
 
 Now find the divergence of this gradient (which is $\nabla^2$):
 

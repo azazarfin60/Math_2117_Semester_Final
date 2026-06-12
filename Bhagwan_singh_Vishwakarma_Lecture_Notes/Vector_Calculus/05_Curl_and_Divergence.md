@@ -18,7 +18,7 @@ $$
 \vec{F}(x, y, z) = F_1\hat{i} + F_2\hat{j} + F_3\hat{k}.
 $$
 
-. Because it is a vector operator acting on a vector function, we can do this in two ways: via a dot product (Divergence) or a cross product (Curl).
+Because it is a vector operator acting on a vector function, we can do this in two ways: via a dot product (Divergence) or a cross product (Curl).
 
 ---
 
@@ -69,13 +69,13 @@ There are two critical identities involving these operations:
 1.  **Divergence of Curl is Zero**: The divergence of the curl of any vector field is always exactly zero. 
 
 $$
-    \text{div }(\text{curl }\vec{F}) = \nabla \cdot (\nabla \times \vec{F}) = 0
+\text{div }(\text{curl }\vec{F}) = \nabla \cdot (\nabla \times \vec{F}) = 0
 $$
 
 2.  **Curl of Gradient is Zero**: The curl of the gradient of any scalar field is always the zero vector.
 
 $$
-    \text{curl }(\text{grad }\phi) = \nabla \times (\nabla \phi) = \vec{0}
+\text{curl }(\text{grad }\phi) = \nabla \times (\nabla \phi) = \vec{0}
 $$
 
 ---
@@ -160,7 +160,7 @@ $$
 \hat{i}(0-0) - \hat{j}(0-0) + \hat{k}(0-0) = \vec{0}.
 $$
 
-. Both properties are proven.
+Both properties are proven.
 
 ### Problem 4: Evaluating Irrotational Flow
 **Question:** Show that

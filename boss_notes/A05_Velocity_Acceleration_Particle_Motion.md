@@ -28,7 +28,6 @@ $$
 \vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}.
 $$
 
-
 **Solution**:
 **Step 1: Setup**
 Position:

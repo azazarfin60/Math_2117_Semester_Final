@@ -30,25 +30,25 @@ To represent $T$ as a matrix, we must fix an **ordered basis** for both spaces:
 2.  **Express Images using the Co-Domain Basis**: Since $T(u_j) \in V$, we can write it uniquely as a linear combination of the basis vectors in $B'$:
 
 $$
-    T(u_1) = a_{11}v_1 + a_{12}v_2 + \dots + a_{1m}v_m
+T(u_1) = a_{11}v_1 + a_{12}v_2 + \dots + a_{1m}v_m
 $$
 
 $$
-    T(u_2) = a_{21}v_1 + a_{22}v_2 + \dots + a_{2m}v_m
+T(u_2) = a_{21}v_1 + a_{22}v_2 + \dots + a_{2m}v_m
 $$
 
 $$
-    \vdots
+\vdots
 $$
 
 $$
-    T(u_n) = a_{n1}v_1 + a_{n2}v_2 + \dots + a_{nm}v_m
+T(u_n) = a_{n1}v_1 + a_{n2}v_2 + \dots + a_{nm}v_m
 $$
 
 3.  **Construct the Matrix**: We take the scalar coefficients from each linear combination and place them as **columns** in a matrix. The resulting matrix is the matrix representation of $T$ relative to the bases $B$ and $B'$, denoted as $[T]_{B}^{B'}$.
 
 $$
-[T]_{B}^{B'} = 
+[T]_{B}^{B'} =
 \begin{bmatrix}
 a_{11} & a_{21} & \dots & a_{n1} \\
 a_{12} & a_{22} & \dots & a_{n2} \\

@@ -120,13 +120,13 @@ We want to show $L(S) = S$. To show two sets are equal, we prove they contain ea
     Let $x \in L(S)$. Then $x$ is a linear combination:
 
 $$
-    x = a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n \quad (\text{where } \alpha_i \in S)
+x = a_1\alpha_1 + a_2\alpha_2 + \dots + a_n\alpha_n \quad (\text{where } \alpha_i \in S)
 $$
 
     Because $S$ is given as a subspace, it is closed under linear combinations. Therefore, this sum must belong to $S$.
 
 $$
-    x \in S
+x \in S
 $$
 
     Thus, $L(S) \subseteq S$.

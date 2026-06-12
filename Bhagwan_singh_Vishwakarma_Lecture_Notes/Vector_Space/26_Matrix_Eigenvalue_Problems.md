@@ -22,14 +22,14 @@ Let $A$ be a square matrix.
 1.  **Find Eigenvalues**: Solve the characteristic equation for $\lambda$:
 
 $$
-    \det(A - \lambda I) = 0
+\det(A - \lambda I) = 0
 $$
 
     This yields a polynomial (quadratic for $2 \times 2$, cubic for $3 \times 3$). The roots of this polynomial are the eigenvalues.
 2.  **Find Eigenvectors**: For each eigenvalue $\lambda$, solve the homogeneous system of linear equations:
 
 $$
-    (A - \lambda I)X = \bar{0}
+(A - \lambda I)X = \bar{0}
 $$
 
     Reduce the matrix $(A - \lambda I)$ to row echelon form to find the free variables. Assign values to the free variables to generate linearly independent eigenvectors.
@@ -181,11 +181,24 @@ $$
 We have 3 variables and only 1 equation, meaning we have $3 - 1 = 2$ free parameters. We make two separate sets of choices to find two linearly independent eigenvectors:
 
 *   **Choice A:** Let $x_3 = 1$ and $x_2 = -1$.
-    $$2x_1 - (-1) + 1 = 0 \implies 2x_1 = -2 \implies x_1 = -1$$
-    $$X^{(2)} = \begin{bmatrix} -1 \\ -1 \\ 1 \end{bmatrix}$$
+
+$$
+2x_1 - (-1) + 1 = 0 \implies 2x_1 = -2 \implies x_1 = -1
+$$
+
+$$
+X^{(2)} = \begin{bmatrix} -1 \\ -1 \\ 1 \end{bmatrix}
+$$
+
 *   **Choice B:** Let $x_3 = 0$ and $x_2 = 2$.
-    $$2x_1 - (2) + 0 = 0 \implies 2x_1 = 2 \implies x_1 = 1$$
-    $$X^{(3)} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}$$
+
+$$
+2x_1 - (2) + 0 = 0 \implies 2x_1 = 2 \implies x_1 = 1
+$$
+
+$$
+X^{(3)} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}
+$$
 
 The eigenspace for $\lambda = 2$ is the span of these two vectors:
 

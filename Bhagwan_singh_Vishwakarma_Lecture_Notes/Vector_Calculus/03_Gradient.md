@@ -45,19 +45,19 @@ The gradient acts very much like a standard derivative. Let $f$ and $g$ be two s
 1.  **Sum/Difference Rule**:
 
 $$
-    \nabla(f \pm g) = \nabla f \pm \nabla g
+\nabla(f \pm g) = \nabla f \pm \nabla g
 $$
 
 2.  **Product Rule**:
 
 $$
-    \nabla(fg) = f\nabla g + g\nabla f
+\nabla(fg) = f\nabla g + g\nabla f
 $$
 
 3.  **Quotient Rule**:
 
 $$
-    \nabla\left(\frac{f}{g}\right) = \frac{g\nabla f - f\nabla g}{g^2}
+\nabla\left(\frac{f}{g}\right) = \frac{g\nabla f - f\nabla g}{g^2}
 $$
 
 4.  **Operator on Position Vector**: If
@@ -69,7 +69,7 @@ $$
 Then:
 
 $$
-    (\vec{a} \cdot \nabla)\vec{r} = \vec{a}
+(\vec{a} \cdot \nabla)\vec{r} = \vec{a}
 $$
 
 ---
@@ -165,7 +165,7 @@ $$
 \vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}.
 $$
 
-. Expand the dot product:
+Expand the dot product:
 
 $$
 \vec{r} \cdot \vec{A} = A_1 x + A_2 y + A_3 z

@@ -69,25 +69,25 @@ The vector space must follow these rules connecting scalars and vectors:
 *   **Distributive Law over Vector Addition**:
 
 $$
-    a \cdot (\alpha + \beta) = a \cdot \alpha + a \cdot \beta \quad \text{for all } a \in F, \alpha, \beta \in V
+a \cdot (\alpha + \beta) = a \cdot \alpha + a \cdot \beta \quad \text{for all } a \in F, \alpha, \beta \in V
 $$
 
 *   **Distributive Law over Scalar Addition**:
 
 $$
-    (a + b) \cdot \alpha = a \cdot \alpha + b \cdot \alpha \quad \text{for all } a, b \in F, \alpha \in V
+(a + b) \cdot \alpha = a \cdot \alpha + b \cdot \alpha \quad \text{for all } a, b \in F, \alpha \in V
 $$
 
 *   **Associative Law for Scalar Multiplication**:
 
 $$
-    (ab) \cdot \alpha = a \cdot (b \cdot \alpha) \quad \text{for all } a, b \in F, \alpha \in V
+(ab) \cdot \alpha = a \cdot (b \cdot \alpha) \quad \text{for all } a, b \in F, \alpha \in V
 $$
 
 *   **Identity Scalar Multiplication**:
 
 $$
-    1 \cdot \alpha = \alpha \quad \text{for all } \alpha \in V
+1 \cdot \alpha = \alpha \quad \text{for all } \alpha \in V
 $$
 
     where $1$ is the multiplicative identity of the field $F$.

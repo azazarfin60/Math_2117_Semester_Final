@@ -405,7 +405,7 @@ $$
 \iiint_V \Phi dV
 $$
 
-. (06)
+(06)
 
 **Answer:**
 
@@ -486,7 +486,7 @@ $$
 x^2 + y^2 = 4, \quad z = 0, \quad z = 3
 $$
 
-. (06)
+(06)
 
 **Answer:**
 
@@ -633,7 +633,7 @@ $$
 \bar{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}
 $$
 
-. We calculate the curl of $\bar{A}$:
+We calculate the curl of $\bar{A}$:
 
 $$
 \nabla \times \bar{A} = \left( \frac{\partial A_z}{\partial y} - \frac{\partial A_y}{\partial z} \right)\hat{i} + \left( \frac{\partial A_x}{\partial z} - \frac{\partial A_z}{\partial x} \right)\hat{j} + \left( \frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y} \right)\hat{k}
@@ -733,7 +733,7 @@ $$
 2\hat{i} - \hat{j} - 2\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -749,7 +749,7 @@ $$
 \vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}
 $$
 
-. The unit direction vector $\hat{u}$ is:
+The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{9}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}
@@ -916,7 +916,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -1177,7 +1177,7 @@ B = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-. (06)
+(06)
 
 **Answer:**
 

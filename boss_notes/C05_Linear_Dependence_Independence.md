@@ -32,11 +32,9 @@ $$
 \vec{A} = 2\hat{i} + \hat{j} - 3\hat{k},
 $$
 
-
 $$
 \vec{B} = \hat{i} - 4\hat{k},
 $$
-
 
 $$
 \vec{C} = 4\hat{i} + 3\hat{j} - \hat{k}

@@ -80,7 +80,7 @@ $$
 \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}.
 $$
 
-. Then $r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}$.
+Then $r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}$.
 
 Two absolute must-know facts:
 

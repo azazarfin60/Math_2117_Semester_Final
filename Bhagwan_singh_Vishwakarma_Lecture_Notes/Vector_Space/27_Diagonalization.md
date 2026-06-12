@@ -25,19 +25,19 @@ Suppose we want to determine if an $n \times n$ square matrix $A$ is diagonaliza
 3.  **Transition (Modal) Matrix ($P$)**: Construct the transition matrix $P$ by placing the $n$ linearly independent eigenvectors as its columns:
 
 $$
-    P = \begin{bmatrix} X_1 & X_2 & \dots & X_n \end{bmatrix}
+P = \begin{bmatrix} X_1 & X_2 & \dots & X_n \end{bmatrix}
 $$
 
 4.  **Inverse Modal Matrix ($P^{-1}$)**: Compute the inverse of the transition matrix. For smaller matrices, use the adjoint method:
 
 $$
-    P^{-1} = \frac{1}{\det(P)} \text{adj}(P)
+P^{-1} = \frac{1}{\det(P)} \text{adj}(P)
 $$
 
 5.  **Compute $P^{-1} A P$**: Multiply the matrices. If the matrix is diagonalizable, the result will exactly equal a diagonal matrix $D$, whose diagonal entries are the eigenvalues of $A$ in the exact same order as their corresponding eigenvectors appear in $P$.
 
 $$
-    P^{-1} A P = D = \begin{bmatrix} \lambda_1 & 0 & \dots & 0 \\ 0 & \lambda_2 & \dots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dots & \lambda_n \end{bmatrix}
+P^{-1} A P = D = \begin{bmatrix} \lambda_1 & 0 & \dots & 0 \\ 0 & \lambda_2 & \dots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dots & \lambda_n \end{bmatrix}
 $$
 
 ---
@@ -55,7 +55,7 @@ From our previous lecture, we already computed:
 *   Eigenvectors:
 
 $$
-    X_1 = \begin{bmatrix} 2 \\ -3 \end{bmatrix}, \quad X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+X_1 = \begin{bmatrix} 2 \\ -3 \end{bmatrix}, \quad X_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
 $$
 
 **Step 1: Construct the Modal Matrix $P$**
@@ -120,13 +120,13 @@ $$
 *   **Eigenvector for $\lambda = 8$**: Solving $(A - 8I)X = \bar{0}$ yields:
 
 $$
-    X_1 = \begin{bmatrix} 2 \\ 1 \\ 2 \end{bmatrix}
+X_1 = \begin{bmatrix} 2 \\ 1 \\ 2 \end{bmatrix}
 $$
 
 *   **Eigenvectors for $\lambda = -1$**: Solving $(A + 1I)X = \bar{0}$ yields the single equation $2x_1 + x_2 + 2x_3 = 0$. By setting $(x_1=1, x_3=0)$ and then $(x_1=0, x_3=1)$, we extract two linearly independent eigenvectors:
 
 $$
-    X_2 = \begin{bmatrix} 1 \\ -2 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} 0 \\ -2 \\ 1 \end{bmatrix}
+X_2 = \begin{bmatrix} 1 \\ -2 \\ 0 \end{bmatrix}, \quad X_3 = \begin{bmatrix} 0 \\ -2 \\ 1 \end{bmatrix}
 $$
 
 **Step 2: Modal Matrix $P$**

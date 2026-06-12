@@ -24,7 +24,7 @@ $$
 \bar{B} = 4\hat{i} + 3\hat{j} - \hat{k}
 $$
 
-. (03)
+(03)
 
 **Answer:**
 
@@ -244,7 +244,7 @@ $$
 \hat{i} - 3\hat{j} + 2\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -254,7 +254,7 @@ $$
 \vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}
 $$
 
-. The unit direction vector $\hat{u}$ is:
+The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}

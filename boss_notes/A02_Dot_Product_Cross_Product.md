@@ -24,11 +24,9 @@ $$
 \vec{A} = \frac{1}{3}(2\hat{i} - 2\hat{j} + \hat{k}),
 $$
 
-
 $$
 \vec{B} = \frac{1}{3}(\hat{i} + 2\hat{j} + 2\hat{k}),
 $$
-
 
 $$
 \vec{C} = \frac{1}{3}(2\hat{i} + \hat{j} - 2\hat{k})

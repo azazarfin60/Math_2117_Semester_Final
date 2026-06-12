@@ -53,13 +53,13 @@ Often, a vector function depends on a single scalar parameter, like time $t$. Fo
 *   **Velocity**: The first derivative of a position vector with respect to time gives the velocity vector $\vec{v}$.
 
 $$
-    \vec{v} = \frac{d\vec{r}}{dt}
+\vec{v} = \frac{d\vec{r}}{dt}
 $$
 
 *   **Acceleration**: The second derivative of the position vector gives the acceleration vector $\vec{a}$.
 
 $$
-    \vec{a} = \frac{d^2\vec{r}}{dt^2}
+\vec{a} = \frac{d^2\vec{r}}{dt^2}
 $$
 
 ## Solved Problems

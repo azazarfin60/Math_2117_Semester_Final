@@ -25,7 +25,7 @@ For $T$ to have an inverse $T^{-1} : W \to V$, the transformation must be a perf
 2.  **Non-Singularity**: The determinant of the transformation matrix must be non-zero.
 
 $$
-    |A| \neq 0
+|A| \neq 0
 $$
 
     If $\lvert A \rvert \neq 0$, the linear transformation is called **non-singular** and is guaranteed to be invertible. If $\lvert A \rvert = 0$, it is singular and cannot be inverted (information was lost, meaning the kernel is not just the zero vector).
@@ -42,19 +42,19 @@ If the transformation is invertible, its inverse is perfectly represented by the
 3.  **Compute the Inverse Matrix**: Use the standard formula for matrix inversion:
 
 $$
-    A^{-1} = \frac{\text{adj}(A)}{|A|}
+A^{-1} = \frac{\text{adj}(A)}{|A|}
 $$
 
     This inverse matrix *is* the matrix representation of the inverse transformation:
 
 $$
-    [T^{-1}]_B = A^{-1}
+[T^{-1}]_B = A^{-1}
 $$
 
 4.  **Derive the Formula**: Multiply the inverse matrix by a general column vector to find the explicit formula for $T^{-1}$:
 
 $$
-    T^{-1}(x, y, z) = A^{-1} \begin{bmatrix} x \\ y \\ z \end{bmatrix}
+T^{-1}(x, y, z) = A^{-1} \begin{bmatrix} x \\ y \\ z \end{bmatrix}
 $$
 
 ---

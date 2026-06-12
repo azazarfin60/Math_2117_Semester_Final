@@ -20,13 +20,13 @@ We also have two ways to multiply vectors:
 1.  **Scalar Product (Dot Product)**: The result is a scalar number.
 
 $$
-    \vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3
+\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3
 $$
 
 2.  **Vector Product (Cross Product)**: The result is a new vector that is perpendicular to both original vectors.
 
 $$
-    \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}
+\vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}
 $$
 
 ---

@@ -26,7 +26,7 @@ A mapping $f : U \to V$ is an **Isomorphism** if it satisfies three strict condi
     Every input gets a unique output. No two different vectors in $U$ map to the same vector in $V$.
 
 $$
-    f(\alpha) = f(\beta) \implies \alpha = \beta
+f(\alpha) = f(\beta) \implies \alpha = \beta
 $$
 
 2.  **It is Onto (Surjective)**:
@@ -36,7 +36,7 @@ $$
     It perfectly preserves linear combinations.
 
 $$
-    f(a\alpha + b\beta) = a f(\alpha) + b f(\beta)
+f(a\alpha + b\beta) = a f(\alpha) + b f(\beta)
 $$
 
 If such a mapping exists between two spaces, we say the spaces are **Isomorphic** and we write:

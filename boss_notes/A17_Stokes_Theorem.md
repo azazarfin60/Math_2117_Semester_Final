@@ -33,7 +33,7 @@ $$
 \vec{A} = A_1\hat{i} + A_2\hat{j} + A_3\hat{k}.
 $$
 
-. We prove it for $A_1$ first:
+We prove it for $A_1$ first:
 
 $$
 \oint_C A_1 dx = \iint_S [\nabla \times (A_1\hat{i})] \cdot \hat{n} dS.

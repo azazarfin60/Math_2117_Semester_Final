@@ -168,13 +168,13 @@ The boundary $C$ has two paths traversed in an anticlockwise loop:
 1.  **$C_1$ (Lower Curve):** Along $y = x^2$ from $x=0$ to $x=1$. ($dy = 2x \, dx$)
 
 $$
-    I_1 = \int_0^1 \left[ (x(x^2) + (x^2)^2) + x^2(2x) \right] dx = \int_0^1 (3x^3 + x^4) \, dx = \left[ \frac{3}{4}x^4 + \frac{1}{5}x^5 \right]_0^1 = \frac{19}{20}
+I_1 = \int_0^1 \left[ (x(x^2) + (x^2)^2) + x^2(2x) \right] dx = \int_0^1 (3x^3 + x^4) \, dx = \left[ \frac{3}{4}x^4 + \frac{1}{5}x^5 \right]_0^1 = \frac{19}{20}
 $$
 
 2.  **$C_2$ (Upper Curve):** Along $y = x$ from $x=1$ to $x=0$. ($dy = dx$)
 
 $$
-    I_2 = \int_1^0 \left[ (x^2 + x^2) + x^2 \right] dx = \int_1^0 3x^2 \, dx = [x^3]_1^0 = -1
+I_2 = \int_1^0 \left[ (x^2 + x^2) + x^2 \right] dx = \int_1^0 3x^2 \, dx = [x^3]_1^0 = -1
 $$
 
 Summing the paths: $\text{LHS} = \frac{19}{20} - 1 = -\frac{1}{20}$.

@@ -25,7 +25,7 @@ $$
 \bar{B} = \hat{i} + 5\hat{j} + 3\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -85,7 +85,7 @@ $$
 \bar{C} = 3\hat{i} - \hat{j} + 2\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -182,7 +182,7 @@ $$
 \hat{i} - 3\hat{j} + 2\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -192,7 +192,7 @@ $$
 \vec{d} = \hat{i} - 3\hat{j} + 2\hat{k}
 $$
 
-. The unit direction vector $\hat{u}$ is:
+The unit direction vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{1^2 + (-3)^2 + 2^2}} = \frac{\hat{i} - 3\hat{j} + 2\hat{k}}{\sqrt{14}}
@@ -286,7 +286,7 @@ $$
 2\hat{i} - \hat{j} - 2\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -318,7 +318,7 @@ $$
 \vec{d} = 2\hat{i} - \hat{j} - 2\hat{k}
 $$
 
-. The unit vector $\hat{u}$ is:
+The unit vector $\hat{u}$ is:
 
 $$
 \hat{u} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{\sqrt{2^2 + (-1)^2 + (-2)^2}} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}

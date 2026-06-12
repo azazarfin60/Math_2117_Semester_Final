@@ -110,7 +110,7 @@ $$
 \vec{r} = x\hat{i} + y\hat{j}
 $$
 
-. So we have:
+So we have:
 
 $$
 d\vec{r} = dx\hat{i} + dy\hat{j}
@@ -465,7 +465,7 @@ $$
 \oint_C P dx
 $$
 
-. The closed boundary curve $C$ consists of two parts:
+The closed boundary curve $C$ consists of two parts:
 *   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
 *   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
@@ -849,7 +849,7 @@ $$
 \end{pmatrix}
 $$
 
-. (05)
+(05)
 
 **Answer:**
 
@@ -931,7 +931,7 @@ $$
 \end{pmatrix}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -982,7 +982,7 @@ $$
 \end{bmatrix}
 $$
 
-. (06)
+(06)
 
 **Answer:**
 
@@ -1180,7 +1180,7 @@ $$
 \end{bmatrix}
 $$
 
-. (12)
+(12)
 
 **Answer:**
 
@@ -1390,7 +1390,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-. Hence evaluate $e^A$, and then solve $\frac{dx\_1}{dt} = x\_2$, $\frac{dx\_2}{dt} = x\_1$. (12)
+Hence evaluate $e^A$, and then solve $\frac{dx\_1}{dt} = x\_2$, $\frac{dx\_2}{dt} = x\_1$. (12)
 
 **Answer:**
 
@@ -1405,7 +1405,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-. Its eigenvalues are the diagonal entries:
+Its eigenvalues are the diagonal entries:
 
 $$
 \lambda_1 = 1, \quad \lambda_2 = 1
@@ -1435,7 +1435,7 @@ x \\
 \end{bmatrix}
 $$
 
-. So there is only one linearly independent eigenvector:
+So there is only one linearly independent eigenvector:
 
 $$
 X_1 = \begin{bmatrix}
@@ -1478,7 +1478,7 @@ B^2 = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-. So $B^n = 0$ for all $n \geq 2$.
+So $B^n = 0$ for all $n \geq 2$.
 
 Using the series definition for $e^B$:
 

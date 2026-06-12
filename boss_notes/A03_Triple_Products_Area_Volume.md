@@ -67,11 +67,9 @@ $$
 \vec{A} = 2\hat{i} - 3\hat{j} + 4\hat{k},
 $$
 
-
 $$
 \vec{B} = \hat{i} + 2\hat{j} - \hat{k},
 $$
-
 
 $$
 \vec{C} = 3\hat{i} - \hat{j} + 2\hat{k}.
@@ -104,11 +102,9 @@ $$
 2\hat{i} - \hat{j} + \hat{k},
 $$
 
-
 $$
 \hat{i} + 2\hat{j} - 3\hat{k},
 $$
-
 
 $$
 3\hat{i} + a\hat{j} + 5\hat{k}

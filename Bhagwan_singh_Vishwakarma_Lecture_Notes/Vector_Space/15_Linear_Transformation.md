@@ -27,7 +27,7 @@ Specifically, it must satisfy two conditions:
 1.  **Preservation of Addition**: For any two vectors $x, y \in U$:
 
 $$
-    f(x + y) = f(x) + f(y)
+f(x + y) = f(x) + f(y)
 $$
 
     *(Adding vectors first then mapping them gives the same result as mapping them first then adding them in the target space.)*
@@ -35,7 +35,7 @@ $$
 2.  **Preservation of Scalar Multiplication**: For any scalar $a \in F$ and any vector $x \in U$:
 
 $$
-    f(ax) = a f(x)
+f(ax) = a f(x)
 $$
 
     *(Scaling a vector first then mapping it gives the same result as mapping it first then scaling it in the target space.)*

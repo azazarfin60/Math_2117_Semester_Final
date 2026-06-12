@@ -127,7 +127,7 @@ $$
 \vec{a} = 12\cos 2t\hat{i} - 8\sin 2t\hat{j} + 16t\hat{k}.
 $$
 
-. Find velocity $\vec{v}$ and displacement $\vec{r}$ given that at $t = 0$, $\vec{v} = 0$ and $\vec{r} = 0$.
+Find velocity $\vec{v}$ and displacement $\vec{r}$ given that at $t = 0$, $\vec{v} = 0$ and $\vec{r} = 0$.
 
 **Solution:**
 Integrate acceleration to find velocity $\vec{v}(t)$:

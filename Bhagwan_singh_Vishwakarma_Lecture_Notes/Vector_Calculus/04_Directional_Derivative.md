@@ -60,7 +60,6 @@ $$
 \vec{a} = yz\hat{i} + zx\hat{j} + xy\hat{k}.
 $$
 
-
 **Solution:**
 First, compute the gradient $\nabla\phi$:
 
@@ -151,7 +150,12 @@ $$
 $$
 
 The directional derivative is maximum in the direction of the gradient. For this maximum to occur parallel to the $Z$-axis (the $\hat{k}$ direction), the $\hat{i}$ and $\hat{j}$ components must be zero:
-1.  $4a + 3c = 0 \implies c = -\frac{4}{3}a$
+1.
+
+$$
+4a + 3c = 0 \implies c = -\frac{4}{3}a
+$$
+
 2.  $4a - b = 0 \implies b = 4a$
 
 Also, the magnitude of the gradient must equal the maximum magnitude of $64$. Since only the $\hat{k}$ component survives, it must be positive and equal to $64$:

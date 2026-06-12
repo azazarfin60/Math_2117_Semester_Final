@@ -46,7 +46,12 @@ The direction of $\nabla\phi$ points toward the direction of greatest increase.
 
 1. $\nabla(f \pm g) = \nabla f \pm \nabla g$
 2. $\nabla(fg) = f\nabla g + g\nabla f$
-3. $\nabla\left(\frac{f}{g}\right) = \frac{g\nabla f - f\nabla g}{g^2}$
+3.
+
+$$
+\nabla\left(\frac{f}{g}\right) = \frac{g\nabla f - f\nabla g}{g^2}
+$$
+
 4. $\nabla r^n = nr^{n-2}\vec{r}$ where $r = \lvert \vec{r} \rvert$
 
 ---
@@ -113,7 +118,6 @@ $$
 \nabla f = 4\hat{i} + 2\hat{j} - 4\hat{k}.
 $$
 
-
 Magnitude: $\lvert \nabla f \rvert = \sqrt{16 + 4 + 16} = 6$.
 
 $$
@@ -144,13 +148,11 @@ $$
 \nabla f_1 = 2x\hat{i} + 2y\hat{j} + 2z\hat{k}.
 $$
 
-
 At $(2, -1, 2)$:
 
 $$
 \vec{n}_1 = 4\hat{i} - 2\hat{j} + 4\hat{k}.
 $$
-
 
 Surface 2: $f_2 = x^2 + y^2 - z - 3$. Gradient:
 
@@ -158,13 +160,11 @@ $$
 \nabla f_2 = 2x\hat{i} + 2y\hat{j} - \hat{k}.
 $$
 
-
 At $(2, -1, 2)$:
 
 $$
 \vec{n}_2 = 4\hat{i} - 2\hat{j} - \hat{k}.
 $$
-
 
 Dot product: $\vec{n}_1 \cdot \vec{n}_2 = 16 + 4 - 4 = 16$.
 

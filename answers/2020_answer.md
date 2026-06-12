@@ -22,7 +22,7 @@ $$
 \vec{r}_2 = \hat{i} + 2\hat{j} + \hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -803,7 +803,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-. (05)
+(05)
 
 **Answer:**
 
@@ -951,7 +951,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-. (06)
+(06)
 
 **Answer:**
 

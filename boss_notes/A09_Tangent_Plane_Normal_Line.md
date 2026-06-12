@@ -26,7 +26,6 @@ $$
 \vec{n} = A\hat{i} + B\hat{j} + C\hat{k}.
 $$
 
-
 ### Equation of the Tangent Plane
 
 The tangent plane passes through $P$ and is perpendicular to $\vec{n}$. Its equation is:
@@ -96,7 +95,6 @@ The normal vector is
 $$
 \vec{n} = 7\hat{i} - 3\hat{j} + 8\hat{k}.
 $$
-
 
 **Step 4**: Write the equation of the tangent plane.
 

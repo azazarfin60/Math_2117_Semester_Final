@@ -45,9 +45,23 @@ Let $s$ be the arc length along a space curve.
 - $\tau$ = torsion
 
 The three formulas are:
-1. $\frac{d\vec{T}}{ds} = \kappa \vec{N}$
-2. $\frac{d\vec{N}}{ds} = -\kappa \vec{T} + \tau \vec{B}_b$
-3. $\frac{d\vec{B}_b}{ds} = -\tau \vec{N}$
+1.
+
+$$
+\frac{d\vec{T}}{ds} = \kappa \vec{N}
+$$
+
+2.
+
+$$
+\frac{d\vec{N}}{ds} = -\kappa \vec{T} + \tau \vec{B}_b
+$$
+
+3.
+
+$$
+\frac{d\vec{B}_b}{ds} = -\tau \vec{N}
+$$
 
 ---
 

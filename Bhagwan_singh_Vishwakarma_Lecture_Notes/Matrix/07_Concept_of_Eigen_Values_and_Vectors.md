@@ -79,7 +79,6 @@ $$
 X_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}.
 $$
 
-
 ## What Comes Next
 The next lecture states and proves the Cayley-Hamilton Theorem, a powerful result connecting a matrix with its own characteristic equation.
 

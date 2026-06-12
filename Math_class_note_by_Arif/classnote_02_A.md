@@ -385,22 +385,80 @@ $$
 
 <!-- Page 018 -->
 **differentiation formulas:**
-1. $\frac{d}{du}(A+B) = \frac{dA}{du} + \frac{dB}{du}$
-2. $\frac{d}{du}(A \cdot B) = A \cdot \frac{dB}{du} + \frac{dA}{du} \cdot B$
-3. $\frac{d}{du}(A \times B) = A \times \frac{dB}{du} + \frac{dA}{du} \times B$
-4. $\frac{d}{du}(\phi A) = \phi \frac{dA}{du} + \frac{d\phi}{du} A$
-5. $\frac{d}{du}(A \cdot B \times C) = A \cdot B \times \frac{dC}{du} + A \cdot \frac{dB}{du} \times C + \frac{dA}{du} \cdot B \times C$
-6. $\frac{d}{du}(A \times (B \times C)) = A \times (B \times \frac{dC}{du}) + A \times (\frac{dB}{du} \times C) + \frac{dA}{du} \times (B \times C)$
+1.
+
+$$
+\frac{d}{du}(A+B) = \frac{dA}{du} + \frac{dB}{du}
+$$
+
+2.
+
+$$
+\frac{d}{du}(A \cdot B) = A \cdot \frac{dB}{du} + \frac{dA}{du} \cdot B
+$$
+
+3.
+
+$$
+\frac{d}{du}(A \times B) = A \times \frac{dB}{du} + \frac{dA}{du} \times B
+$$
+
+4.
+
+$$
+\frac{d}{du}(\phi A) = \phi \frac{dA}{du} + \frac{d\phi}{du} A
+$$
+
+5.
+
+$$
+\frac{d}{du}(A \cdot B \times C) = A \cdot B \times \frac{dC}{du} + A \cdot \frac{dB}{du} \times C + \frac{dA}{du} \cdot B \times C
+$$
+
+6.
+
+$$
+\frac{d}{du}(A \times (B \times C)) = A \times (B \times \frac{dC}{du}) + A \times (\frac{dB}{du} \times C) + \frac{dA}{du} \times (B \times C)
+$$
 
 $A, B, C$ are differentiable vector functions of a scalar $u$, and $\phi$ is a differentiable scalar function of $u$.
 
 **Partial derivatives of vectors:**
-1. $\frac{\partial A}{\partial x} = \lim_{\Delta x \to 0} \frac{A(x+\Delta x, y, z) - A(x, y, z)}{\Delta x}$
-2. $\frac{\partial A}{\partial y} = \lim_{\Delta y \to 0} \frac{A(x, y+\Delta y, z) - A(x, y, z)}{\Delta y}$
-3. $\frac{\partial A}{\partial z} = \lim_{\Delta z \to 0} \frac{A(x, y, z+\Delta z) - A(x, y, z)}{\Delta z}$
-4. $\frac{\partial}{\partial x}(A \cdot B) = A \cdot \frac{\partial B}{\partial x} + \frac{\partial A}{\partial x} \cdot B$
-5. $\frac{\partial}{\partial x}(A \times B) = A \times \frac{\partial B}{\partial x} + \frac{\partial A}{\partial x} \times B$
-6. $\frac{\partial^2}{\partial y \partial x}(A \cdot B) = \frac{\partial}{\partial y}\left(\frac{\partial}{\partial x}(A \cdot B)\right) = \dots$
+1.
+
+$$
+\frac{\partial A}{\partial x} = \lim_{\Delta x \to 0} \frac{A(x+\Delta x, y, z) - A(x, y, z)}{\Delta x}
+$$
+
+2.
+
+$$
+\frac{\partial A}{\partial y} = \lim_{\Delta y \to 0} \frac{A(x, y+\Delta y, z) - A(x, y, z)}{\Delta y}
+$$
+
+3.
+
+$$
+\frac{\partial A}{\partial z} = \lim_{\Delta z \to 0} \frac{A(x, y, z+\Delta z) - A(x, y, z)}{\Delta z}
+$$
+
+4.
+
+$$
+\frac{\partial}{\partial x}(A \cdot B) = A \cdot \frac{\partial B}{\partial x} + \frac{\partial A}{\partial x} \cdot B
+$$
+
+5.
+
+$$
+\frac{\partial}{\partial x}(A \times B) = A \times \frac{\partial B}{\partial x} + \frac{\partial A}{\partial x} \times B
+$$
+
+6.
+
+$$
+\frac{\partial^2}{\partial y \partial x}(A \cdot B) = \frac{\partial}{\partial y}\left(\frac{\partial}{\partial x}(A \cdot B)\right) = \dots
+$$
 
 <!-- Page 019 -->
 **Differentials of vectors:**
@@ -418,7 +476,11 @@ $$
 
 2. $d(A \cdot B) = A \cdot dB + dA \cdot B$
 3. $d(A \times B) = A \times dB + dA \times B$
-4. $A = A(x,y,z)$ then $dA = \frac{\partial A}{\partial x}dx + \frac{\partial A}{\partial y}dy + \frac{\partial A}{\partial z}dz$
+4.
+
+$$
+A = A(x,y,z)$ then $dA = \frac{\partial A}{\partial x}dx + \frac{\partial A}{\partial y}dy + \frac{\partial A}{\partial z}dz
+$$
 
 **Differential geometry:**
 $\frac{dr}{du}$ is a vector in direction of the tangent

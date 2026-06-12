@@ -55,21 +55,21 @@ $$
 -\hat{i}
 $$
 
-. It points left with a length of 1.
+It points left with a length of 1.
 *   At $(0, -1)$, the vector is 
 
 $$
 -\hat{j}
 $$
 
-. It points down with a length of 1.
+It points down with a length of 1.
 *   At $(2, 2)$, the vector is 
 
 $$
 2\hat{i} + 2\hat{j}
 $$
 
-. It points diagonally outward with a length of $2\sqrt{2}$.
+It points diagonally outward with a length of $2\sqrt{2}$.
 
 This field looks like a source. All vectors point radially outward from the center.
 
@@ -88,14 +88,14 @@ $$
 -\hat{i}
 $$
 
-. It points left with a length of 1.
+It points left with a length of 1.
 *   At $(0, 1)$, the vector is 
 
 $$
 -\hat{j}
 $$
 
-. It points down with a length of 1.
+It points down with a length of 1.
 *   At $(-1, 0)$, the vector is $\hat{i}$. It points right with a length of 1.
 *   At $(0, -1)$, the vector is $\hat{j}$. It points up with a length of 1.
 *   At $(2, 2)$, the vector is 
@@ -104,7 +104,7 @@ $$
 -2\hat{i} - 2\hat{j}
 $$
 
-. It points diagonally inward with a length of $2\sqrt{2}$.
+It points diagonally inward with a length of $2\sqrt{2}$.
 
 This field looks like a sink. All vectors point radially inward toward the center.
 
@@ -220,7 +220,7 @@ $$
 \vec{B} = \hat{i} + 5\hat{j} + 3\hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -320,7 +320,7 @@ $$
 \vec{a} = \omega\hat{k}
 $$
 
-. We get:
+We get:
 
 $$
 \vec{r} \times \vec{v} = \vec{a}
@@ -672,7 +672,7 @@ $$
 \oint_C Q dy
 $$
 
-. The boundary curve $C$ consists of:
+The boundary curve $C$ consists of:
 *   $C\_1$ is the left curve $x = x\_1(y)$ going from $y = d$ to $y = c$.
 *   $C\_2$ is the right curve $x = x\_2(y)$ going from $y = c$ to $y = d$.
 

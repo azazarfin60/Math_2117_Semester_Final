@@ -87,7 +87,7 @@ $$
 \vec{B} = 4\hat{i} + 3\hat{j} - \hat{k}
 $$
 
-. (04)
+(04)
 
 **Answer:**
 
@@ -483,7 +483,7 @@ $$
 \vec{F} = 2xz\hat{i} - x\hat{j} + y^2\hat{k}
 $$
 
-. Evaluate 
+Evaluate
 
 $$
 \iiint_V \vec{F} dV
@@ -583,7 +583,7 @@ $$
 \oint_C P dx
 $$
 
-. The closed boundary curve $C$ consists of two parts:
+The closed boundary curve $C$ consists of two parts:
 *   Path $C\_1$: Along the curve $y = y\_1(x)$ from $x=a$ to $x=b$.
 *   Path $C\_2$: Along the curve $y = y\_2(x)$ from $x=b$ to $x=a$.
 
@@ -686,7 +686,7 @@ $$
 \hat{n} = -\hat{k}
 $$
 
-. Since $z=0$, 
+Since $z=0$,
 
 $$
 \vec{A} \cdot \hat{n} = -z^2 = 0
@@ -698,7 +698,7 @@ $$
 \hat{n} = \hat{k}
 $$
 
-. Here 
+Here
 
 $$
 \vec{A} \cdot \hat{n} = z^2 = 9
@@ -716,7 +716,7 @@ $$
 \hat{n} = \frac{x\hat{i} + y\hat{j}}{2}
 $$
 
-. Calculate the dot product:
+Calculate the dot product:
 
 $$
 \vec{A} \cdot \hat{n} = (4x\hat{i} - 2y^2\hat{j} + z^2\hat{k}) \cdot \left( \frac{x\hat{i} + y\hat{j}}{2} \right) = 2x^2 - y^3
@@ -1222,7 +1222,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-. (06)
+(06)
 
 **Answer:**
 
