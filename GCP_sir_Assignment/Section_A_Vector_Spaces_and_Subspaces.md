@@ -28,7 +28,7 @@ Since all 10 axioms hold true, $\mathbb{R}^n$ is a vector space over $\mathbb{R}
 **Answer:**
 A subspace is non-trivial if it is neither the zero subspace $\{0\}$ nor the entire space $\mathbb{R}^5$. It is not spanned by standard basis vectors $e_1, e_2, e_3, e_4, e_5$ if its basis vectors are not a subset of these standard vectors.
 
-Let $W = \operatorname{span}\{(1, 1, 1, 1, 1)\}$.
+Let $W = \text{span}\{(1, 1, 1, 1, 1)\}$.
 
 This is a one-dimensional subspace of $\mathbb{R}^5$. The vector $(1, 1, 1, 1, 1)$ cannot be written as a scalar multiple of any single standard basis vector. The space generated is simply all vectors of the form $(a, a, a, a, a)$ for $a \in \mathbb{R}$. This forms a valid non-trivial subspace.
 
@@ -42,9 +42,11 @@ Let $u = (1, 0)$ and $v = (0, 1)$.
 Both $u$ and $v$ belong to $V$ because their components satisfy the condition $x \cdot y = 0$.
 
 Now consider their sum:
+
 $$
 u + v = (1, 0) + (0, 1) = (1, 1)
 $$
+
 For the sum $(1, 1)$, the product of the coordinates is $1 \cdot 1 = 1 \neq 0$. Thus, $(1, 1) \notin V$.
 
 Since $V$ is not closed under addition, it is not a vector space.
@@ -65,9 +67,11 @@ Thus, $W$ is a subspace.
 
 **Dimension of $W$:**
 The condition $x + y + z + w = 0$ implies $w = -x - y - z$. Any vector in $W$ can be written as:
+
 $$
 (x, y, z, -x-y-z) = x(1, 0, 0, -1) + y(0, 1, 0, -1) + z(0, 0, 1, -1)
 $$
+
 The set of vectors $\{(1, 0, 0, -1), (0, 1, 0, -1), (0, 0, 1, -1)\}$ spans $W$ and is linearly independent. Therefore, the basis has 3 vectors, meaning $\dim(W) = 3$.
 
 ## Q5 (05)
@@ -135,13 +139,17 @@ Extend the same basis to a basis of $W$: $\{v_1, \dots, v_k, w_{k+1}, \dots, w_n
 
 The set $B = \{v_1, \dots, v_k, u_{k+1}, \dots, u_m, w_{k+1}, \dots, w_n\}$ spans $U + W$.
 To show linear independence, suppose:
+
 $$
 a_1v_1 + \dots + a_kv_k + b_{k+1}u_{k+1} + \dots + b_mu_m + c_{k+1}w_{k+1} + \dots + c_nw_n = 0
 $$
+
 Let $x = b_{k+1}u_{k+1} + \dots + b_mu_m$. Then:
+
 $$
 x = -a_1v_1 - \dots - a_kv_k - c_{k+1}w_{k+1} - \dots - c_nw_n
 $$
+
 Since the RHS is in $W$, $x \in W$. But $x \in U$ by definition. So $x \in U \cap W$.
 Since $x \in U \cap W$, it can be written as a linear combination of $v_1, \dots, v_k$. However, $\{v_1, \dots, u_m\}$ is a basis for $U$, so the $u_i$ coefficients ($b_j$) must be zero. 
 
@@ -169,9 +177,11 @@ Consider the vector space $V = \mathbb{R}^2$. Let $U = \{(x, 0) : x \in \mathbb{
 Now consider their union $U \cup W$, which consists of all vectors lying on either the x-axis or the y-axis. Take the vector $u = (1, 0) \in U$ and $w = (0, 1) \in W$. Both vectors are in $U \cup W$.
 
 Now consider their sum:
+
 $$
 u + w = (1, 0) + (0, 1) = (1, 1)
 $$
+
 The resulting vector $(1, 1)$ does not lie on the x-axis (since $y \neq 0$) and does not lie on the y-axis (since $x \neq 0$). Therefore, $(1, 1) \notin U \cup W$. 
 
 Since $U \cup W$ is not closed under vector addition, it is not a subspace.

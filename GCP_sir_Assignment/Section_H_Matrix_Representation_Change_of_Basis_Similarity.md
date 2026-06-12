@@ -8,11 +8,14 @@ Let $T: V \to W$ be a linear transformation. Let $B = \{v_1, v_2, \dots, v_n\}$ 
 
 1.  **Apply Transformation:** Apply the linear transformation $T$ to each basis vector in the domain basis $B$. This yields the image vectors $T(v_1), T(v_2), \dots, T(v_n)$ in $W$.
 2.  **Express as Linear Combinations:** Express each of these image vectors as a linear combination of the basis vectors in the codomain basis $C$. For the $j$-th vector $T(v_j)$:
+
     $$
     T(v_j) = a_{1j}w_1 + a_{2j}w_2 + \dots + a_{mj}w_m
     $$
+
 3.  **Extract Coordinate Vectors:** Extract the coefficients $(a_{1j}, a_{2j}, \dots, a_{mj})$ to form the coordinate vector $[T(v_j)]_C$.
 4.  **Construct Matrix:** Construct the $m \times n$ matrix $[T]_B^C$ by using these coordinate vectors as its columns:
+
     $$
     [T]_B^C = \begin{pmatrix}
     [T(v_1)]_C & [T(v_2)]_C & \dots & [T(v_n)]_C
@@ -33,8 +36,8 @@ This matrix satisfies the fundamental property $[T(x)]_C = [T]_B^C [x]_B$ for an
 **Answer:**
 Let $T: V \to V$ be a linear transformation on a finite-dimensional vector space $V$.
 
-*   **Non-Singular Transformation:** A linear transformation $T$ is non-singular if its kernel contains only the zero vector, i.e., $\operatorname{ker}(T) = \{0\}$. Equivalently, $T$ is non-singular if it is a bijective (invertible) mapping. If $T(v) = 0$, then $v$ must be $0$.
-*   **Singular Transformation:** A linear transformation $T$ is singular if its kernel contains non-zero vectors, i.e., $\operatorname{ker}(T) \neq \{0\}$. This means there exists some $v \neq 0$ such that $T(v) = 0$. A singular transformation is not invertible.
+*   **Non-Singular Transformation:** A linear transformation $T$ is non-singular if its kernel contains only the zero vector, i.e., $\text{ker}(T) = \{0\}$. Equivalently, $T$ is non-singular if it is a bijective (invertible) mapping. If $T(v) = 0$, then $v$ must be $0$.
+*   **Singular Transformation:** A linear transformation $T$ is singular if its kernel contains non-zero vectors, i.e., $\text{ker}(T) \neq \{0\}$. This means there exists some $v \neq 0$ such that $T(v) = 0$. A singular transformation is not invertible.
 
 **Relation to Matrices:**
 Let $A$ be the $n \times n$ matrix representation of the transformation $T$ with respect to some basis.

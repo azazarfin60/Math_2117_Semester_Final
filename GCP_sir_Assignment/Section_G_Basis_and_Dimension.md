@@ -13,12 +13,12 @@
 **Question:** **Prove that every finite-dimensional vector space has a basis.**
 
 **Answer:**
-Let $V$ be a finite-dimensional vector space. By definition, there exists a finite spanning set $S = \{v_1, v_2, \dots, v_n\}$ such that $\operatorname{span}(S) = V$.
+Let $V$ be a finite-dimensional vector space. By definition, there exists a finite spanning set $S = \{v_1, v_2, \dots, v_n\}$ such that $\text{span}(S) = V$.
 We construct a basis by an iterative process of removing redundant vectors:
 
 1. If $S$ is linearly independent, then $S$ is a basis, and we are done.
 2. If $S$ is linearly dependent, there exists some vector $v_k \in S$ that can be written as a linear combination of the other vectors in $S$.
-3. Remove $v_k$ from $S$ to form a new set $S_1 = S \setminus \{v_k\}$. Since $v_k$ was already a linear combination of the remaining vectors, its removal does not change the span. Thus, $\operatorname{span}(S_1) = \operatorname{span}(S) = V$.
+3. Remove $v_k$ from $S$ to form a new set $S_1 = S \setminus \{v_k\}$. Since $v_k$ was already a linear combination of the remaining vectors, its removal does not change the span. Thus, $\text{span}(S_1) = \text{span}(S) = V$.
 4. Check if $S_1$ is linearly independent. If it is, $S_1$ is a basis. If not, repeat the process.
 
 Since $S$ is finite (contains $n$ elements), this removal process must terminate after at most $n$ steps. It cannot result in the empty set (unless $V = \{0\}$, which trivially has an empty basis). When the process terminates, the resulting subset $S_k \subseteq S$ will be linearly independent and will still span $V$. Therefore, $S_k$ is a basis for $V$. Thus, every finite-dimensional vector space has a basis.
@@ -47,7 +47,7 @@ This combined set clearly spans $V$ because it contains $B$, which already spans
 To reduce this spanning set to a basis while keeping all elements of $S$:
 
 1. Start with the set $S$. Since $S$ is linearly independent, we retain all $k$ vectors.
-2. Consider $e_1$. Check if $e_1 \in \operatorname{span}(S)$.
+2. Consider $e_1$. Check if $e_1 \in \text{span}(S)$.
    *   If yes, discard $e_1$.
    *   If no, add $e_1$ to the set. The new set $S \cup \{e_1\}$ is still linearly independent.
 3. Repeat this process for each $e_i$ in $B$, one by one. Check if $e_i$ is in the span of the previously accepted vectors. If not, append it; if it is, discard it.

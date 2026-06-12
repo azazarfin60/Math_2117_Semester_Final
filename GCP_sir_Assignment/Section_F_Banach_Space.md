@@ -8,9 +8,11 @@ A Banach space is defined as a complete normed linear space. That is, it is a ve
 
 **Example:**
 The space $C[a, b]$ consisting of all continuous real-valued functions on the closed interval $[a, b]$, equipped with the supremum norm (or uniform norm):
+
 $$
 \|f\|_\infty = \sup_{t \in [a, b]} |f(t)|
 $$
+
 This forms a Banach space because the uniform limit of a Cauchy sequence of continuous functions is guaranteed to be a continuous function, thus remaining in the space.
 
 ## Q34 (05)
@@ -24,9 +26,11 @@ Define a standard reference norm on $V$, such as $\|x\|_1 = \sum_{i=1}^n |\alpha
 
 Let $(x^{(m)})$ be a Cauchy sequence in $V$ with respect to the given norm $\|\cdot\|$. Because the norms are equivalent, it is also a Cauchy sequence with respect to $\|\cdot\|_1$.
 Let $x^{(m)} = \sum_{i=1}^n \alpha_i^{(m)} e_i$. Since $(x^{(m)})$ is Cauchy in $\|\cdot\|_1$, for any given $\epsilon > 0$, there exists $N$ such that for $p, q > N$:
+
 $$
 \|x^{(p)} - x^{(q)}\|_1 = \sum_{i=1}^n |\alpha_i^{(p)} - \alpha_i^{(q)}| < \epsilon
 $$
+
 This implies that for each fixed $i$, the coordinate sequence $(\alpha_i^{(m)})_{m=1}^\infty$ is a Cauchy sequence of real (or complex) numbers. Since $\mathbb{R}$ (and $\mathbb{C}$) is complete, each coordinate sequence converges to a limit $\alpha_i$.
 
 Let $x = \sum_{i=1}^n \alpha_i e_i$. Clearly, $x \in V$.
@@ -41,9 +45,11 @@ The space $\ell^\infty$ consists of all bounded sequences of complex (or real) n
 To show it is a Banach space, we must show it is complete.
 
 Let $(x^{(n)})$ be a Cauchy sequence in $\ell^\infty$. For any $\epsilon > 0$, there exists an integer $N$ such that for all $n, m > N$, we have:
+
 $$
 \|x^{(n)} - x^{(m)}\|_\infty = \sup_{i} |x_i^{(n)} - x_i^{(m)}| < \epsilon
 $$
+
 For each fixed coordinate $i$, $|x_i^{(n)} - x_i^{(m)}| \leq \|x^{(n)} - x^{(m)}\|_\infty < \epsilon$.
 Thus, for every fixed $i$, the sequence of scalars $(x_i^{(n)})_{n=1}^\infty$ is a Cauchy sequence in $\mathbb{C}$. Since $\mathbb{C}$ is complete, it converges to a limit $x_i$.
 
@@ -61,9 +67,11 @@ Since every Cauchy sequence converges to a point in $\ell^\infty$, the space is 
 Consider the space $P[a, b]$ of all polynomial functions on the closed interval $[a, b]$, equipped with the supremum norm $\|f\|_\infty = \sup_{t \in [a, b]} |f(t)|$.
 
 This space is a valid normed linear space because polynomials form a vector space and the supremum norm satisfies all norm properties. However, it is not complete. We can construct a sequence of polynomials that converges to a non-polynomial function. For example, consider the Taylor polynomials for the exponential function on $[0, 1]$:
+
 $$
 P_n(t) = 1 + t + \frac{t^2}{2!} + \dots + \frac{t^n}{n!}
 $$
+
 The sequence $(P_n)$ is a Cauchy sequence in the supremum norm because the series converges uniformly on the compact interval $[0, 1]$. However, the limit of this sequence is the exponential function $e^t$, which is not a polynomial. Since the limit is not contained within the space $P[a, b]$, the space is not complete.
 
 ## Q37 (04)
