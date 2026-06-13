@@ -1,100 +1,200 @@
-# Rank of Matrix By Determinant and Echelon Form
+# Lecture 03: Rank of Matrix By Determinant and Echelon Form
 
-**Series**: Matrix Theory
-**Lecture**: 03
-**YouTube**: https://www.youtube.com/watch?v=DNFrfWb7RpM
+> **Series**: Matrix Theory
+> **Lecture**: 03 of 09
+> **Video**: https://www.youtube.com/watch?v=DNFrfWb7RpM
 
 ---
 
 **Navigation**
 [< Previous Lecture](02_Rank_of_Matrix_Concept.md) | [Index](README.md) | [Next Lecture >](04_Rank_by_Normal_Canonical_Form.md)
 
+---
+
 ## Prerequisites
 - Understanding of matrix rank and minors.
 - Familiarity with elementary row operations.
 
-## Core Content
+---
 
-Calculating the rank of a large matrix by evaluating all possible minors becomes computationally expensive. We use systematic methods like Echelon form to simplify this process.
+## 1. Problem 1: Determinant vs Echelon Form
 
-### Elementary Row Operations
-We can transform a matrix into a simpler, equivalent form without changing its rank. The valid elementary row operations are:
-1. Interchanging any two rows ($R_i \leftrightarrow R_j$).
-2. Multiplying a row by a non-zero scalar ($R_i \to kR_i$).
-3. Adding a scalar multiple of one row to another row ($R_i \to R_i + kR_j$).
-
-Two matrices are called equivalent ($A \sim B$) if one can be obtained from the other through a sequence of elementary row operations. Equivalent matrices have the same rank.
-
-### Echelon Form
-A matrix is in Echelon form if it satisfies the following conditions:
-1. All non-zero rows are above any rows of all zeroes.
-2. The leading coefficient (the first non-zero number from the left, also called the pivot) of a non-zero row is always strictly to the right of the leading coefficient of the row above it.
-3. All entries in a column below a leading coefficient are zeroes.
-
-### Rank using Echelon Form
-To find the rank of a matrix using Echelon form:
-1. Apply elementary row operations to transform the matrix into Echelon form.
-2. Count the number of non-zero rows in the resulting matrix.
-3. The rank of the matrix is equal to the number of non-zero rows.
-
-This method is highly systematic and preferred over the minor method.
-
-## Solved Example
-
-Let us find the rank of matrix $A$:
+**Problem:** Find the rank of the matrix using both the Determinant method and the Echelon form method:
 
 $$
-A =
-\begin{bmatrix}
-1 & 2 & 3 \\
-2 & 3 & 4 \\
-3 & 4 & 5
-\end{bmatrix}
+A = \begin{bmatrix} 1 & 2 & 3 \\ 1 & 4 & 2 \\ 2 & 6 & 5 \end{bmatrix}
 $$
 
-Apply row operations to make entries below the first pivot zero:
+### Method 1: Determinant Method
+Calculate the largest minor (the determinant of the $3 \times 3$ matrix):
 
 $$
-R_2 \to R_2 - 2R_1
+|A| = \begin{vmatrix} 1 & 2 & 3 \\ 1 & 4 & 2 \\ 2 & 6 & 5 \end{vmatrix}
+$$
+
+Expanding along the first row:
+
+$$
+|A| = 1(20 - 12) - 2(5 - 4) + 3(6 - 8)
 $$
 
 $$
-R_3 \to R_3 - 3R_1
+|A| = 8 - 2(1) + 3(-2) = 8 - 2 - 6 = 0
 $$
 
-This gives the equivalent matrix:
+Since $|A| = 0$, the rank cannot be 3 ($\rho(A) < 3$). We now choose a minor of order 2:
 
 $$
-A \sim
-\begin{bmatrix}
-1 & 2 & 3 \\
-0 & -1 & -2 \\
-0 & -2 & -4
-\end{bmatrix}
+M = \begin{vmatrix} 1 & 2 \\ 1 & 4 \end{vmatrix} = 4 - 2 = 2 \neq 0
 $$
 
-Apply row operation to make entry below the second pivot zero:
-
+Since a non-zero minor of order 2 exists, the rank is:
 $$
-R_3 \to R_3 - 2R_2
-$$
-
-This gives the matrix in Echelon form:
-
-$$
-A \sim
-\begin{bmatrix}
-1 & 2 & 3 \\
-0 & -1 & -2 \\
-0 & 0 & 0
-\end{bmatrix}
+\rho(A) = 2
 $$
 
-There are two non-zero rows in the Echelon form matrix.
-Therefore, the rank is $\rho(A) = 2$.
+### Method 2: Echelon Form Method
+Apply elementary row operations to $A$:
+**Step 1:** $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - 2R_1$:
 
-## What Comes Next
-The next lecture covers the Normal (Canonical) Form method. This technique uses both row and column operations to reduce a matrix into an identity submatrix to read its rank directly.
+$$
+A \sim \begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & -1 \\ 0 & 2 & -1 \end{bmatrix}
+$$
+
+**Step 2:** $R_3 \to R_3 - R_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & -1 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+**Step 3:** Divide $R_2$ by 2 ($R_2 \to R_2 / 2$):
+
+$$
+A \sim \begin{bmatrix} 1 & 2 & 3 \\ 0 & 1 & -1/2 \\ 0 & 0 & 0 \end{bmatrix}
+$$
+
+The matrix is now in Echelon form.
+*   **Number of non-zero rows**: 2
+*   **Rank**: $\rho(A) = 2$
+*   **Nullity**: $\text{Order} - \text{Rank} = 3 - 2 = 1$
+
+---
+
+## 2. Problem 2: Echelon Form of a $4 \times 4$ Matrix
+
+**Problem:** Find the rank and nullity of:
+
+$$
+A = \begin{bmatrix} 1^2 & 2^2 & 3^2 & 4^2 \\ 2^2 & 3^2 & 4^2 & 5^2 \\ 3^2 & 4^2 & 5^2 & 6^2 \\ 4^2 & 5^2 & 6^2 & 7^2 \end{bmatrix} = \begin{bmatrix} 1 & 4 & 9 & 16 \\ 4 & 9 & 16 & 25 \\ 9 & 16 & 25 & 36 \\ 16 & 25 & 36 & 49 \end{bmatrix}
+$$
+
+**Solution (Simplification):**
+Apply $R_2 \to R_2 - R_1$, $R_3 \to R_3 - R_2$, $R_4 \to R_4 - R_3$:
+
+$$
+A \sim \begin{bmatrix} 1 & 4 & 9 & 16 \\ 3 & 5 & 7 & 9 \\ 5 & 7 & 9 & 11 \\ 7 & 9 & 11 & 13 \end{bmatrix}
+$$
+
+Apply $R_3 \to R_3 - R_2$, $R_4 \to R_4 - R_3$:
+
+$$
+A \sim \begin{bmatrix} 1 & 4 & 9 & 16 \\ 3 & 5 & 7 & 9 \\ 2 & 2 & 2 & 2 \\ 2 & 2 & 2 & 2 \end{bmatrix}
+$$
+
+Apply $R_4 \to R_4 - R_3$ and $R_3 \to R_3 / 2$:
+
+$$
+A \sim \begin{bmatrix} 1 & 4 & 9 & 16 \\ 3 & 5 & 7 & 9 \\ 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+**Converting to Echelon Form:**
+Swap $R_1$ and $R_3$ ($R_1 \leftrightarrow R_3$):
+
+$$
+A \sim \begin{bmatrix} 1 & 1 & 1 & 1 \\ 3 & 5 & 7 & 9 \\ 1 & 4 & 9 & 16 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Apply $R_2 \to R_2 - 3R_1$ and $R_3 \to R_3 - R_1$:
+
+$$
+A \sim \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 2 & 4 & 6 \\ 0 & 3 & 8 & 15 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Divide $R_2$ by 2 ($R_2 \to R_2 / 2$):
+
+$$
+A \sim \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 3 \\ 0 & 3 & 8 & 15 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Apply $R_3 \to R_3 - 3R_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 2 & 6 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Divide $R_3$ by 2 ($R_3 \to R_3 / 2$):
+
+$$
+A \sim \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+*   **Number of non-zero rows**: 3
+*   **Rank**: $\rho(A) = 3$
+*   **Nullity**: $\text{Order} - \text{Rank} = 4 - 3 = 1$
+
+---
+
+## 3. Problem 3: Rank of a Rectangular Matrix
+
+**Problem:** Find the rank and nullity of the $3 \times 4$ matrix:
+
+$$
+A = \begin{bmatrix} 1 & 3 & 4 & 3 \\ 3 & 9 & 12 & 9 \\ 1 & 3 & 4 & 1 \end{bmatrix}
+$$
+
+**Solution:**
+Apply $R_2 \to R_2 - 3R_1$ and $R_3 \to R_3 - R_1$:
+
+$$
+A \sim \begin{bmatrix} 1 & 3 & 4 & 3 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & -2 \end{bmatrix}
+$$
+
+Divide $R_3$ by $-2$ ($R_3 \to R_3 / -2$) and swap $R_2$ and $R_3$ ($R_2 \leftrightarrow R_3$):
+
+$$
+A \sim \begin{bmatrix} 1 & 3 & 4 & 3 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+*   **Number of non-zero rows**: 2
+*   **Rank**: $\rho(A) = 2$
+*   *(Note: Nullity is strictly defined for square matrices, but conceptually using the maximum square submatrix order, it is $3 - 2 = 1$.)*
+
+---
+
+## 4. Problem 4: Rank of another $4 \times 4$ Matrix
+
+**Problem:** Find the rank and nullity of:
+
+$$
+A = \begin{bmatrix} 1 & 2 & 1 & 2 \\ 1 & 3 & 2 & 2 \\ 2 & 4 & 3 & 4 \\ 3 & 7 & 4 & 6 \end{bmatrix}
+$$
+
+**Solution:**
+Apply $R_2 \to R_2 - R_1$, $R_3 \to R_3 - 2R_1$, $R_4 \to R_4 - 3R_1$:
+
+$$
+A \sim \begin{bmatrix} 1 & 2 & 1 & 2 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 1 & 0 \end{bmatrix}
+$$
+
+Apply $R_4 \to R_4 - R_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & 2 & 1 & 2 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+*   **Number of non-zero rows**: 3
+*   **Rank**: $\rho(A) = 3$
+*   **Nullity**: $\text{Order} - \text{Rank} = 4 - 3 = 1$
 
 ---
 

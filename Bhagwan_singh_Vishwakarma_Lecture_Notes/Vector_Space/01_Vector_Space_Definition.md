@@ -192,9 +192,83 @@ $$
 = a\alpha + a\beta
 $$
 
-The other distribution and associative laws can be proven using the exact same simple algebra. Since all conditions are met, $\mathbb{R}^2$ is a vector space over $\mathbb{R}$.
+Let us prove the second distributive law. We want to show $(a + b)\alpha = a\alpha + b\alpha$.
+Let $\alpha = (x_1, y_1)$.
 
-Other common examples include the complex plane $\mathbb{C}$ over $\mathbb{R}$, or 3D space $\mathbb{R}^3$ over $\mathbb{R}$.
+$$
+(a + b)\alpha = (a + b)(x_1, y_1)
+$$
+
+$$
+= ((a + b)x_1, (a + b)y_1)
+$$
+
+$$
+= (ax_1 + bx_1, ay_1 + by_1)
+$$
+
+$$
+= (ax_1, ay_1) + (bx_1, by_1)
+$$
+
+$$
+= a(x_1, y_1) + b(x_1, y_1)
+$$
+
+$$
+= a\alpha + b\alpha
+$$
+
+Next, let us prove scalar associativity. We want to show $(ab)\alpha = a(b\alpha)$.
+
+$$
+(ab)\alpha = (ab)(x_1, y_1)
+$$
+
+$$
+= ((ab)x_1, (ab)y_1)
+$$
+
+$$
+= (a(bx_1), a(by_1))
+$$
+
+$$
+= a(bx_1, by_1)
+$$
+
+$$
+= a(b(x_1, y_1))
+$$
+
+$$
+= a(b\alpha)
+$$
+
+Finally, identity scalar multiplication:
+
+$$
+1 \cdot \alpha = 1(x_1, y_1)
+$$
+
+$$
+= (1 \cdot x_1, 1 \cdot y_1)
+$$
+
+$$
+= (x_1, y_1)
+$$
+
+$$
+= \alpha
+$$
+
+Since all conditions are met, $\mathbb{R}^2$ is a vector space over $\mathbb{R}$.
+
+### Other Common Examples
+
+*   **Example 2:** The set of complex numbers $\mathbb{C} = \lbrace a + ib \mid a, b \in \mathbb{R} \rbrace$ is a vector space over the field of real numbers $\mathbb{R}$.
+*   **Example 3:** The set of 3D coordinates $V = \mathbb{R}^3 = \lbrace (x, y, z) \mid x, y, z \in \mathbb{R} \rbrace$ is a vector space over the field of real numbers $\mathbb{R}$.
 
 ---
 

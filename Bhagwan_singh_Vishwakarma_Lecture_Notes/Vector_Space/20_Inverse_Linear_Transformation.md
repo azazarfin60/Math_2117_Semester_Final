@@ -140,7 +140,17 @@ $$
 , the transformation is non-singular and invertible.
 
 **Step 3: Compute the Inverse Matrix $A^{-1}$**
-Find the adjoint matrix by computing all 9 cofactors (omitting the tedious arithmetic here):
+Find the adjoint matrix by computing all 9 cofactors $A_{ij}$:
+
+*   $A_{11} = (-1)^{1+1} (1(-2) - 0) = -2$
+*   $A_{12} = (-1)^{1+2} (1(-2) - 2) = 4$
+*   $A_{13} = (-1)^{1+3} (0 - 1) = -1$
+*   $A_{21} = (-1)^{2+1} (1(-2) - 0) = 2$
+*   $A_{22} = (-1)^{2+2} (2(-2) - 1) = -5$
+*   $A_{23} = (-1)^{2+3} (0 - 1) = 1$
+*   $A_{31} = (-1)^{3+1} (2 - 1) = 1$
+*   $A_{32} = (-1)^{3+2} (4 - 1) = -3$
+*   $A_{33} = (-1)^{3+3} (2 - 1) = 1$
 
 $$
 \text{adj}(A) =

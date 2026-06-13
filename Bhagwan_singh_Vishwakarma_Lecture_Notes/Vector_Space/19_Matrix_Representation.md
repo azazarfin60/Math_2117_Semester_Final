@@ -209,14 +209,79 @@ $$
 \end{bmatrix}
 $$
 
-### The Power of Matrix Representation
-With this matrix, we can evaluate the transformation using pure matrix multiplication. For any vector $\alpha$:
+### Part 3: Verification of the Relation
+
+Let's verify the relation $[T]_{B'} [\alpha]_{B'} = [T(\alpha)]_{B'}$ for any vector $\alpha = (a, b, c) \in V_3(\mathbb{R})$.
+
+**1. Express $[\alpha]_{B'}$ in Matrix Form**
+Using our derived coordinate formula ($x=c, y=b-c, z=a-b$):
 
 $$
-[T]_{B'} [\alpha]_{B'} = [T(\alpha)]_{B'}
+[\alpha]_{B'} =
+\begin{bmatrix}
+c \\
+b-c \\
+a-b
+\end{bmatrix}
 $$
 
-Multiplying the transformation matrix by the coordinate vector of the input gives the coordinate vector of the output.
+**2. Express $[T(\alpha)]_{B'}$ in Matrix Form**
+We know $T(\alpha) = (2b+c, a-4b, 3a)$. Let $a' = 2b+c$, $b' = a-4b$, and $c' = 3a$.
+Applying the coordinate formula ($x=c', y=b'-c', z=a'-b'$):
+*   $x = 3a$
+*   $y = (a-4b) - 3a = -2a - 4b$
+*   $z = (2b+c) - (a-4b) = -a + 6b + c$
+
+$$
+[T(\alpha)]_{B'} =
+\begin{bmatrix}
+3a \\
+-2a - 4b \\
+-a + 6b + c
+\end{bmatrix}
+$$
+
+**3. Compute the Matrix Product**
+
+$$
+[T]_{B'} [\alpha]_{B'} =
+\begin{bmatrix}
+3 & 3 & 3 \\
+-6 & -6 & -2 \\
+6 & 5 & -1
+\end{bmatrix}
+\begin{bmatrix}
+c \\
+b-c \\
+a-b
+\end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix}
+3c + 3(b-c) + 3(a-b) \\
+-6c - 6(b-c) - 2(a-b) \\
+6c + 5(b-c) - (a-b)
+\end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix}
+3c + 3b - 3c + 3a - 3b \\
+-6c - 6b + 6c - 2a + 2b \\
+6c + 5b - 5c - a + b
+\end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix}
+3a \\
+-2a - 4b \\
+-a + 6b + c
+\end{bmatrix}
+$$
+
+Since $[T]_{B'} [\alpha]_{B'} = [T(\alpha)]_{B'}$, the relation is verified and proved. This demonstrates that the matrix perfectly encapsulates the transformation!
 
 ---
 

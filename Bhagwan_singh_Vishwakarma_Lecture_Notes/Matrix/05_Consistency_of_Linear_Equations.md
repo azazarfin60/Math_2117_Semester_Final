@@ -1,71 +1,125 @@
-# Consistency of System of Linear Equations
+# Lecture 05: Consistency of System of Linear Equations
 
-**Series**: Matrix Theory
-**Lecture**: 05
-**YouTube**: https://www.youtube.com/watch?v=bAJLtUzhBQI
+> **Series**: Matrix Theory
+> **Lecture**: 05 of 09
+> **Video**: https://www.youtube.com/watch?v=bAJLtUzhBQI
 
 ---
 
 **Navigation**
 [< Previous Lecture](04_Rank_by_Normal_Canonical_Form.md) | [Index](README.md) | [Next Lecture >](06_Questions_Consistency_of_Linear_Equations.md)
 
+---
+
 ## Prerequisites
 - Proficiency in calculating the rank of a matrix.
 - Understanding of Echelon form reductions.
 
-## Core Content
+---
 
-A system of linear equations is a collection of one or more linear equations involving the same set of variables. We use matrix theory to determine whether a system has a solution (consistent) or no solution (inconsistent).
+## 1. Recalling School Concepts: 2 Simultaneous Equations
 
-### System Representation
-Consider a system of $m$ non-homogeneous linear equations with $n$ variables $x_1, x_2, \dots, x_n$:
-
-$$
-a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1
-$$
+Before generalizing to matrices, let's recall the algebraic conditions for a system of 2 simultaneous linear equations in two variables:
 
 $$
-a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = b_2
+a_1 x + b_1 y + c_1 = 0
 $$
 
 $$
-\vdots
+a_2 x + b_2 y + c_2 = 0
+$$
+
+**Three Algebraic Conditions:**
+*   **Case 1: Unique Solution** (Lines intersect)
+    
+    $$
+    \frac{a_1}{a_2} \neq \frac{b_1}{b_2}
+    $$
+
+*   **Case 2: No Solution** (Lines are parallel)
+    
+    $$
+    \frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}
+    $$
+
+*   **Case 3: Infinite Solutions** (Lines are coincident)
+    
+    $$
+    \frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}
+    $$
+
+### Determinant Link for Case 1
+The unique solution condition directly links to matrices. If we rearrange:
+
+$$
+\frac{a_1}{a_2} \neq \frac{b_1}{b_2} \implies a_1 b_2 - a_2 b_1 \neq 0
+$$
+
+This is the determinant of the coefficient matrix:
+
+$$
+\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix} \neq 0
+$$
+
+---
+
+## 2. Terminology and System Representation
+
+### Definitions
+*   **Consistent System**: A system of equations having one or more valid solutions (i.e., it has either a unique solution or infinite solutions).
+*   **Inconsistent System**: A system of equations having absolutely no solution.
+
+### System of 3 Equations in 3 Variables
+Consider the standard system:
+
+$$
+a_1 x + b_1 y + c_1 z = d_1
 $$
 
 $$
-a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n = b_m
+a_2 x + b_2 y + c_2 z = d_2
 $$
 
-This system can be written in matrix form as $AX = B$:
-
 $$
-\begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{m1} & a_{m2} & \dots & a_{mn}
-\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix} = \begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{bmatrix}
+a_3 x + b_3 y + c_3 z = d_3
 $$
 
-Where:
-- $A$ is the coefficient matrix.
-- $X$ is the column vector of variables.
-- $B$ is the column vector of constants.
+This system can be written compactly in matrix form as $A X = B$:
+
+$$
+\begin{bmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} d_1 \\ d_2 \\ d_3 \end{bmatrix}
+$$
+
+*   **Homogeneous vs. Non-homogeneous**:
+    *   **Non-homogeneous system**: When the constant matrix $B$ is not entirely zero ($B \neq O$). The system is $A X = B$.
+    *   **Homogeneous system**: When the constant matrix $B$ is the zero matrix ($B = O$). The system is $A X = O$.
 
 ### The Augmented Matrix
-The augmented matrix $[A:B]$ is formed by appending the constant vector $B$ as an additional column to the coefficient matrix $A$.
+The augmented matrix is formed by combining the coefficient matrix $A$ and the constant column matrix $B$, separated by a line:
 
 $$
-[A:B] = \left[ \begin{array}{cccc|c} a_{11} & a_{12} & \dots & a_{1n} & b_1 \\ a_{21} & a_{22} & \dots & a_{2n} & b_2 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ a_{m1} & a_{m2} & \dots & a_{mn} & b_m \end{array} \right]
+[A : B] = \left[ \begin{array}{ccc|c} a_1 & b_1 & c_1 & d_1 \\ a_2 & b_2 & c_2 & d_2 \\ a_3 & b_3 & c_3 & d_3 \end{array} \right]
 $$
 
-### Conditions for Consistency (Rouché-Capelli Theorem)
-To analyze consistency, we reduce the augmented matrix $[A:B]$ to Echelon form and determine the rank of the coefficient matrix $\rho(A)$ and the rank of the augmented matrix $\rho([A:B])$.
+The order of this augmented matrix is $3 \times 4$.
 
-There are three possible outcomes:
-1. **Inconsistent System (No Solution)**: If $\rho(A) \neq \rho([A:B])$. The system has no valid solution.
-2. **Consistent System (Unique Solution)**: If $\rho(A) = \rho([A:B]) = n$, where $n$ is the number of variables. The system yields exactly one unique solution for each variable.
-3. **Consistent System (Infinite Solutions)**: If $\rho(A) = \rho([A:B]) = r < n$. The system has infinitely many solutions. We must choose $n - r$ variables arbitrarily as free parameters (e.g., $k_1, k_2$) and solve for the remaining variables in terms of these parameters.
+---
+
+## 3. Working Rule to Test Consistency ($A X = B$)
+
+To test the consistency of a non-homogeneous system of linear equations using matrix rank, follow this procedure:
+
+1.  Write the given system of equations in matrix form $A X = B$.
+2.  Form the augmented matrix $[A : B]$.
+3.  Transform the augmented matrix $[A : B]$ into **Echelon form** using row operations only.
+4.  Find the rank of the coefficient matrix $A$, denoted as $\rho(A)$, and the rank of the augmented matrix $[A : B]$, denoted as $\rho([A : B])$.
+5.  Apply the following criteria to conclude:
+    *   **Case 3.1**: If $\rho(A) \neq \rho([A : B])$, the system is **Inconsistent** (No Solution).
+    *   **Case 3.2**: If $\rho(A) = \rho([A : B])$, the system is **Consistent**.
+        *   **Subcase 3.2 (a)**: If $\rho(A) = \rho([A : B]) = n$ (where $n$ is the total number of unknown variables), the system has a **Unique Solution**.
+        *   **Subcase 3.2 (b)**: If $\rho(A) = \rho([A : B]) = r < n$, the system has **Infinite Solutions**. To solve it, we must choose $n - r$ variables arbitrarily.
+
+---
 
 ## What Comes Next
 The next lecture provides practical applications of this working rule. We will solve multiple numerical questions to test the consistency of different linear systems.

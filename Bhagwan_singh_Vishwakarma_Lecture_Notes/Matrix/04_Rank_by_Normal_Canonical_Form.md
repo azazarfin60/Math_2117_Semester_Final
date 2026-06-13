@@ -1,139 +1,193 @@
-# Rank of Matrix By Normal / Canonical Form
+# Lecture 04: Rank of Matrix By Normal / Canonical Form
 
-**Series**: Matrix Theory
-**Lecture**: 04
-**YouTube**: https://www.youtube.com/watch?v=gXwEtwX8g8M
+> **Series**: Matrix Theory
+> **Lecture**: 04 of 09
+> **Video**: https://www.youtube.com/watch?v=gXwEtwX8g8M
 
 ---
 
 **Navigation**
 [< Previous Lecture](03_Rank_by_Determinant_and_Echelon_Form.md) | [Index](README.md) | [Next Lecture >](05_Consistency_of_Linear_Equations.md)
 
+---
+
 ## Prerequisites
 - Knowledge of matrix rank.
 - Understanding of elementary row and column operations.
 
-## Core Content
+---
 
-The Normal form, also known as the Canonical form, is a standard form used to determine the rank of a matrix. Unlike the Echelon form which only uses row operations, reducing a matrix to Normal form involves applying both elementary row and elementary column operations.
-
-### Normal Form Definition
-Every non-zero matrix $A$ of rank $r$ can be reduced, by a sequence of elementary row and column operations, to one of the following forms:
+## 1. Normal (Canonical) Form Review
+Every non-zero matrix $A$ of rank $r$ can be reduced, by a sequence of elementary row **and** column operations, to one of the following forms:
 
 $$
-\begin{bmatrix}
-I_r & O \\
-O & O
-\end{bmatrix}, \quad \begin{bmatrix} I_r \\ O \end{bmatrix}, \quad \begin{bmatrix} I_r & O \end{bmatrix}, \quad \text{or} \quad I_r
+\begin{bmatrix} I_r & 0 \\ 0 & 0 \end{bmatrix}, \quad \begin{bmatrix} I_r \\ 0 \end{bmatrix}, \quad \begin{bmatrix} I_r & 0 \end{bmatrix}, \quad \text{or} \quad I_r
 $$
 
-Here, $I_r$ represents an identity matrix of order $r$, and $O$ represents a zero matrix. The value $r$ gives the rank of the original matrix $A$.
+where $I_r$ represents an identity matrix of order $r$, and $0$ represents a zero matrix. The value $r$ gives the rank of the original matrix $A$.
 
-### Procedure for Normal Form Reduction
-1. Locate a non-zero element in the matrix. If the element $a_{11}$ is not $1$, interchange rows or columns to bring a $1$ to the $(1,1)$ position. This simplifies calculations.
-2. Use elementary row operations to make all other elements in the first column zero.
-3. Use elementary column operations to make all other elements in the first row zero.
-4. Move to the next diagonal element $a_{22}$. Make it $1$ and use row and column operations to clear out the rest of the second column and second row.
-5. Repeat this process down the main diagonal until the matrix is reduced to the identity block $I_r$ and zeros everywhere else.
+---
 
-### Advantages of Normal Form
-- It provides a definitive, clear-cut identification of rank. The rank is simply the order of the identity submatrix generated.
-- It is useful for finding the equivalence matrices $P$ and $Q$ such that $PAQ$ is in Normal form.
+## 2. Problem 1: Identical Rows
 
-## Solved Example
-
-Let us reduce matrix $A$ to Normal form to find its rank:
+**Problem:** Find the rank and nullity of:
 
 $$
-A =
-\begin{bmatrix}
-1 & 2 & -1 \\
-2 & 5 & 0 \\
-3 & 7 & -1
-\end{bmatrix}
+A = \begin{bmatrix} 1 & a & b & 0 \\ 0 & c & d & 1 \\ 1 & a & b & 0 \\ 0 & c & d & 1 \end{bmatrix}
 $$
 
-Use row operations to clear the first column below the $(1,1)$ pivot:
+**Solution:**
+We can easily spot identical rows. Apply row operations $R_3 \to R_3 - R_1$ and $R_4 \to R_4 - R_2$:
 
 $$
-R_2 \to R_2 - 2R_1
+A \sim \begin{bmatrix} 1 & a & b & 0 \\ 0 & c & d & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
 $$
 
-$$
-R_3 \to R_3 - 3R_1
-$$
+The matrix is now in Echelon form with 2 non-zero rows.
+*   **Rank**: $\rho(A) = 2$
+*   **Nullity**: $\text{Order} - \text{Rank} = 4 - 2 = 2$
+
+---
+
+## 3. Problem 2: Normal Form of a $4 \times 4$ Matrix
+
+**Problem:** Find the rank of the matrix using Normal Form:
 
 $$
-A \sim
-\begin{bmatrix}
-1 & 2 & -1 \\
-0 & 1 & 2 \\
-0 & 1 & 2
-\end{bmatrix}
+A = \begin{bmatrix} -2 & -1 & -3 & -1 \\ 1 & 2 & -3 & -1 \\ 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & -1 \end{bmatrix}
 $$
 
-Use column operations to clear the first row to the right of the $(1,1)$ pivot:
+**Solution:**
+**Step-by-step Row Operations:**
+Swap $R_1 \leftrightarrow R_3$:
 
 $$
-C_2 \to C_2 - 2C_1
+A \sim \begin{bmatrix} 1 & 0 & 1 & 1 \\ 1 & 2 & -3 & -1 \\ -2 & -1 & -3 & -1 \\ 0 & 1 & 1 & -1 \end{bmatrix}
 $$
 
-$$
-C_3 \to C_3 + C_1
-$$
+Apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 + 2R_1$:
 
 $$
-A \sim
-\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & 2 \\
-0 & 1 & 2
-\end{bmatrix}
+A \sim \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 2 & -4 & -2 \\ 0 & -1 & -1 & 1 \\ 0 & 1 & 1 & -1 \end{bmatrix}
 $$
 
-Use row operation to clear below the $(2,2)$ pivot:
+Divide $R_2$ by 2 ($R_2 \to R_2 / 2$):
 
 $$
-R_3 \to R_3 - R_2
+A \sim \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & -2 & -1 \\ 0 & -1 & -1 & 1 \\ 0 & 1 & 1 & -1 \end{bmatrix}
 $$
 
-$$
-A \sim
-\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & 2 \\
-0 & 0 & 0
-\end{bmatrix}
-$$
-
-Use column operation to clear to the right of the $(2,2)$ pivot:
+Apply $R_3 \to R_3 + R_2$ and $R_4 \to R_4 - R_2$:
 
 $$
-C_3 \to C_3 - 2C_2
+A \sim \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & -2 & -1 \\ 0 & 0 & -3 & 0 \\ 0 & 0 & 3 & 0 \end{bmatrix}
 $$
 
-$$
-A \sim
-\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & 0
-\end{bmatrix}
-$$
-
-This is the Normal form block:
+Apply $R_4 \to R_4 + R_3$ and divide $R_3$ by $-3$ ($R_3 \to R_3 / -3$):
 
 $$
-\begin{bmatrix}
-I_2 & O \\
-O & O
-\end{bmatrix}
+A \sim \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & -2 & -1 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
 $$
 
-The identity block is of order $2$. Therefore, the rank is $\rho(A) = 2$.
+*(The matrix is now in Echelon form, and we can already see the rank is 3. We now proceed to Normal Form using column operations.)*
 
-## What Comes Next
-With the foundation of rank established, the next lecture applies these tools to determine the consistency of systems of linear equations using the Rouché-Capelli theorem.
+**Step-by-step Column Operations:**
+Apply $C_3 \to C_3 - C_1$ and $C_4 \to C_4 - C_1$:
+
+$$
+A \sim \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & -2 & -1 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Apply $C_3 \to C_3 + 2C_2$ and $C_4 \to C_4 + C_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+This is the Normal Form block matrix:
+
+$$
+A \sim \begin{bmatrix} I_3 & 0 \\ 0 & 0 \end{bmatrix}
+$$
+
+*   **Rank**: $\rho(A) = 3$
+*   **Nullity**: $\text{Order} - \text{Rank} = 4 - 3 = 1$
+
+---
+
+## 4. Problem 3: Normal Form of another $4 \times 4$ Matrix
+
+**Problem:** Find the rank and nullity of:
+
+$$
+A = \begin{bmatrix} 2 & 3 & -1 & -1 \\ 1 & -1 & -2 & -4 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{bmatrix}
+$$
+
+**Solution:**
+**Step-by-step Row Operations:**
+Swap $R_1 \leftrightarrow R_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & -1 & -2 & -4 \\ 2 & 3 & -1 & -1 \\ 3 & 1 & 3 & -2 \\ 6 & 3 & 0 & -7 \end{bmatrix}
+$$
+
+Apply $R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$, $R_4 \to R_4 - 6R_1$:
+
+$$
+A \sim \begin{bmatrix} 1 & -1 & -2 & -4 \\ 0 & 5 & 3 & 7 \\ 0 & 4 & 9 & 10 \\ 0 & 9 & 12 & 17 \end{bmatrix}
+$$
+
+Apply $R_2 \to R_2 - R_3$:
+
+$$
+A \sim \begin{bmatrix} 1 & -1 & -2 & -4 \\ 0 & 1 & -6 & -3 \\ 0 & 4 & 9 & 10 \\ 0 & 9 & 12 & 17 \end{bmatrix}
+$$
+
+Apply $R_3 \to R_3 - 4R_2$ and $R_4 \to R_4 - 9R_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & -1 & -2 & -4 \\ 0 & 1 & -6 & -3 \\ 0 & 0 & 33 & 22 \\ 0 & 0 & 66 & 44 \end{bmatrix}
+$$
+
+Apply $R_4 \to R_4 - 2R_3$ and divide $R_3$ by 11 ($R_3 \to R_3 / 11$):
+
+$$
+A \sim \begin{bmatrix} 1 & -1 & -2 & -4 \\ 0 & 1 & -6 & -3 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+**Step-by-step Column Operations:**
+Apply $C_2 \to C_2 + C_1$, $C_3 \to C_3 + 2C_1$, $C_4 \to C_4 + 4C_1$:
+
+$$
+A \sim \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & -6 & -3 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Apply $C_3 \to C_3 + 6C_2$ and $C_4 \to C_4 + 3C_2$:
+
+$$
+A \sim \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 3 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Divide $C_3$ by 3 ($C_3 \to C_3 / 3$):
+
+$$
+A \sim \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+Apply $C_4 \to C_4 - 2C_3$:
+
+$$
+A \sim \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+This gives the Normal Form:
+
+$$
+A \sim \begin{bmatrix} I_3 & 0 \\ 0 & 0 \end{bmatrix}
+$$
+
+*   **Rank**: $\rho(A) = 3$
+*   **Nullity**: $\text{Order} - \text{Rank} = 4 - 3 = 1$
 
 ---
 

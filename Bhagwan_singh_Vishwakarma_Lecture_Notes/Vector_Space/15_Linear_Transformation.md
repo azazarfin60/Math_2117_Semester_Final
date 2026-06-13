@@ -266,6 +266,16 @@ $$
 f(\alpha - \beta) = f(\alpha) - f(\beta)
 $$
 
+### Property 4: Preservation of Generalized Linear Combinations
+
+For any scalars $a_1, a_2, \dots, a_n \in F$ and vectors $\alpha_1, \alpha_2, \dots, \alpha_n \in U$:
+
+$$
+f(a_1 \alpha_1 + a_2 \alpha_2 + \dots + a_n \alpha_n) = a_1 f(\alpha_1) + a_2 f(\alpha_2) + \dots + a_n f(\alpha_n)
+$$
+
+This states that the linear transformation property extends to combinations of any finite number of vectors. This can be formally proved using mathematical induction on $n$.
+
 ## Key Takeaways
 *   A **Linear Transformation** is a function between vector spaces that preserves vector addition and scalar multiplication ($f(ax + by) = af(x) + bf(y)$).
 *   Formulas involving powers, constants, or coordinate multiplication are generally not linear.

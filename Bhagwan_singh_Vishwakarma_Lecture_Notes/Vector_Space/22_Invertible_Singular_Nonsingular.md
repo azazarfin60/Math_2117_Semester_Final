@@ -87,6 +87,22 @@ $$
 
 *(Where $I_V$ and $I_U$ are the identity mappings that do nothing to the vectors in $V$ and $U$ respectively.)*
 
+**Proof:**
+1.  Let $\beta \in V$. Since $T$ is invertible, let $T^{-1}(\beta) = \alpha \in U \implies T(\alpha) = \beta$.
+    
+    $$
+    (T T^{-1})(\beta) = T(T^{-1}(\beta)) = T(\alpha) = \beta = I_V(\beta)
+    $$
+    
+    Since this holds for all $\beta \in V$, we have $T T^{-1} = I_V$.
+2.  Let $\alpha \in U$. Let $T(\alpha) = \beta \in V \implies T^{-1}(\beta) = \alpha$.
+    
+    $$
+    (T^{-1} T)(\alpha) = T^{-1}(T(\alpha)) = T^{-1}(\beta) = \alpha = I_U(\alpha)
+    $$
+    
+    Since this holds for all $\alpha \in U$, we have $T^{-1} T = I_U$.
+
 ---
 
 ## 2. Singular and Nonsingular Transformations
